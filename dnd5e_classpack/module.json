@@ -10,7 +10,8 @@
     }
   ],
   "esmodules": [
-    "scripts/migrate-new-icon-to-spell.mjs"
+    "scripts/migrate-new-icon-to-spell.mjs",
+    "scripts/api.mjs"
   ],
   "packs": [
     {
@@ -327,7 +328,7 @@
         "XGE": "XGE.珊娜萨的万事指南",
         "VGM": "VGM.瓦罗的怪物指南",
         "MTF": "MTF.魔邓肯的众敌卷册",
-        "ERLW":"ERLW.艾伯伦.从终末战争中崛起",
+        "ERLW": "ERLW.艾伯伦.从终末战争中崛起",
         "MOT": "MOT.塞洛斯之神话奥德赛",
         "VRGR": "VRGR.范·里希腾的鸦阁魔域指南",
         "MPMM": "MPMM.魔邓肯巨献：多元宇宙的怪物",
@@ -377,6 +378,16 @@
           "minimum": "13.0.59"
         }
       }
+    ],
+    "requires": [
+      {
+        "id": "socketlib",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.1.2"
+        }
+      }
     ]
-  }
+  },
+  "socket": true
 }

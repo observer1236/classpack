@@ -63,6 +63,18 @@ jobs:
           console.log(`module.json: version=${data.version} download=${data.download}`);
           EOF
 
+      # Bundle the split API source (scripts/api/*.mjs imported by
+      # scripts/api.mjs) into a single scripts/api.mjs for the release archive.
+      # The repository keeps the implementation split for maintainability; the
+      # release ships one self-contained ES module.
+      - name: Bundle API module
+        working-directory: dnd5e_classpack
+        run: |
+          npx --yes esbuild scripts/api.mjs --bundle --format=esm --platform=browser --target=es2022 --outfile=scripts/api.bundled.mjs
+          mv scripts/api.bundled.mjs scripts/api.mjs
+          node --check scripts/api.mjs
+          rm -rf scripts/api
+
       # Compile every pack from the JSON source. `--inputDirectory` points at the
       # pack's JSON, which may be organized into Folder subdirectories; the
       # `--recursive` flag descends into those. `--outputDirectory` places the
