@@ -214,11 +214,15 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
         case "selectOption": {
           const selects = [];
           for (const option of options) {
+            const rawOptions = option.options?.options ?? ["none"];
+            const selectOptions = rawOptions.length && rawOptions[0]?.label === undefined
+              ? rawOptions.map(value => ({ value, label: value }))
+              : rawOptions;
             selects.push({
               label: option.label,
               name: option.name,
               currentValue: option.options?.currentValue ?? "none",
-              options: option.options?.options ?? ["none"],
+              options: selectOptions,
               image: option.options?.image ?? undefined
             });
           }

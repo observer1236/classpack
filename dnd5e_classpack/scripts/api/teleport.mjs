@@ -2,7 +2,7 @@
  * Teleport (modelled after chris-premades Teleport).
  */
 
-import { mergeMultiple } from "./utils.mjs";
+import { mergeMultiple, resolveOriginPoint } from "./utils.mjs";
 import { aimCrosshair, ClasspackCrosshairs } from "./crosshairs.mjs";
 
 /* -------------------------------------------------------------------------- *
@@ -16,6 +16,7 @@ class ClasspackTeleport {
     this.tokenTexture = this.tokens[0].document.texture.src;
     this.options = options;
     this.updates = options?.updates ?? {};
+    this.commit = options?.commit ?? this._updateTokens.bind(this);
   }
 
   static async group(tokens, target, options = {}) {
@@ -51,6 +52,33 @@ class ClasspackTeleport {
     await teleport.go(teleport.crosshairsConfigTarget, merged.minimizeSheet);
   }
 
+  /**
+   * Teleport one or more tokens to a freely chosen point. The crosshair is
+   * anchored on the first token (or `options.centerpoint`) and the destination
+   * can be picked anywhere within `options.range`.
+   */
+  static async point(tokens, options = {}) {
+    const list = Array.isArray(tokens) ? tokens : [tokens];
+    if (!list.length) return;
+
+    const defaults = {
+      animation: "none",
+      isSynchronous: true,
+      crosshairsConfig: {},
+      callbacks: {},
+      range: 100,
+      updates: {},
+      minimizeSheet: true,
+      centerpoint: null
+    };
+    const merged = foundry.utils.mergeObject(defaults, options);
+    merged.isGroup = list.length > 1;
+
+    const teleport = new ClasspackTeleport(list, list[0], merged);
+    teleport.tokenTexture = list[0].document.texture.src;
+    await teleport.go(teleport.crosshairsConfig, merged.minimizeSheet);
+  }
+
   async go(crosshairsConfig, minimizeSheet = true) {
     this.controllingToken.actor?.sheet?.rendered && minimizeSheet && this.controllingToken.actor.sheet.minimize();
 
@@ -62,7 +90,9 @@ class ClasspackTeleport {
       customCallbacks: this.options?.callbacks,
       validityFunctions: this.options?.validityFunctions
     };
-    if (this.options.centerpoint) aimConfig.centerpoint = this.options.centerpoint;
+    if (this.options.centerpoint) {
+      aimConfig.centerpoint = await resolveOriginPoint(this.options.centerpoint);
+    }
 
     this.template = await aimCrosshair(aimConfig);
 
@@ -81,7 +111,7 @@ class ClasspackTeleport {
 
     await this._playAnimation("pre", token, coords);
     const update = mergeMultiple(this.updates, coords, { _id: token.id });
-    await this._updateTokens([update]);
+    await this.commit([update]);
     await this._playAnimation("post", token, coords);
   }
 
@@ -95,7 +125,7 @@ class ClasspackTeleport {
       const coords = this.getCoords(token);
       await this._playAnimation("pre", token, coords);
       const update = mergeMultiple(this.updates, coords, { _id: token.id });
-      await this._updateTokens([update]);
+      await this.commit([update]);
       await this._playAnimation("post", token, coords);
     }));
   }
@@ -108,7 +138,7 @@ class ClasspackTeleport {
     }));
 
     const updates = this.tokens.map((token, index) => mergeMultiple(this.updates, { _id: token.id }, coordsList[index]));
-    await this._updateTokens(updates);
+    await this.commit(updates);
 
     await Promise.all(this.tokens.map(async (token, index) => {
       await this._playAnimation("post", token, coordsList[index]);
