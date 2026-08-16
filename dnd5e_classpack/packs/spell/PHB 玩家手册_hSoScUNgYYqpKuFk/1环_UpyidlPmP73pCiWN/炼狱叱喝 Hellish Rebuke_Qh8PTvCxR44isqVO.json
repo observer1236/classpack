@@ -32,13 +32,68 @@
         "somatic"
       ],
       "riders": {
-        "activity": [],
-        "effect": []
+        "activity": []
       }
     }
   },
   "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_Incinerate.png",
-  "effects": [],
+  "effects": [
+    {
+      "name": "炼狱叱喝 Hellish Rebuke",
+      "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_Incinerate.png",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.Qh8PTvCxR44isqVO",
+      "type": "base",
+      "_id": "lll4GhR0fo5XjFC3",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "!item.prepared",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1786882525282,
+        "modifiedTime": 1786882531588,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a"
+      },
+      "_key": "!items.effects!Qh8PTvCxR44isqVO.lll4GhR0fo5XjFC3"
+    }
+  ],
   "system": {
     "description": {
       "value": "<div class=\"description \"> 你伸指一点，伤害你的生物立刻被炼狱的烈焰包围。该生物必须进行一次敏捷豁免，豁免失败则受到2d10点火焰伤害，豁免成功则伤害减半。\n<br /><strong>升环施法效应。</strong>使用2环或更高法术位施展该法术时，你使用的法术位每比1环高一环，伤害就增加1d10。\n<br /></div>",
@@ -180,7 +235,7 @@
           }
         },
         "sort": 0,
-        "useConditionText": "reaction === 'isDamaged'",
+        "useConditionText": "reaction === 'isDamaged' && computeDistance(actor, workflow.token) <= 60 && canSee(actor, workflow.token)",
         "useConditionReason": "",
         "effectConditionText": "",
         "macroData": {
@@ -221,7 +276,13 @@
         "otherActivityId": "",
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "appliedEffects": [],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       }
     },
     "identifier": "hellish-rebuke"

@@ -37,11 +37,7 @@
         "vocal",
         "somatic",
         "material"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      ]
     }
   },
   "img": "icons/magic/acid/projectile-bolts-salvo-green.webp",
@@ -228,7 +224,11 @@
         },
         "effects": [
           {
-            "_id": "rd4Cw0bftP6Rzm6R"
+            "_id": "rd4Cw0bftP6Rzm6R",
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -304,7 +304,7 @@
         "midiProperties": {
           "ignoreTraits": [],
           "triggeredActivityId": "伤害",
-          "triggeredActivityConditionText": "workflow.hitTargets.size ==== 0",
+          "triggeredActivityConditionText": "!workflow.hitTargets.size",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
           "forceDialog": false,
@@ -318,7 +318,9 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": false,
+          "triggeredActivityConfigure": false
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
@@ -334,15 +336,22 @@
         "img": "",
         "appliedEffects": [
           "rd4Cw0bftP6Rzm6R"
-        ]
+        ],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       },
       "dnd5eactivity200": {
         "_id": "dnd5eactivity200",
         "type": "damage",
         "activation": {
-          "type": "action",
+          "type": "",
           "value": null,
-          "override": false
+          "override": true,
+          "condition": ""
         },
         "consumption": {
           "targets": [],
@@ -350,7 +359,7 @@
             "allowed": false,
             "max": ""
           },
-          "spellSlot": true
+          "spellSlot": false
         },
         "description": {
           "chatFlavor": ""
@@ -358,11 +367,12 @@
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": true
         },
         "effects": [],
         "range": {
-          "override": false
+          "override": true,
+          "special": ""
         },
         "target": {
           "prompt": true,
@@ -373,7 +383,7 @@
           "affects": {
             "choice": false
           },
-          "override": false
+          "override": true
         },
         "uses": {
           "spent": 0,
@@ -446,7 +456,13 @@
         },
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "appliedEffects": [],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       }
     },
     "identifier": "acid-arrow"

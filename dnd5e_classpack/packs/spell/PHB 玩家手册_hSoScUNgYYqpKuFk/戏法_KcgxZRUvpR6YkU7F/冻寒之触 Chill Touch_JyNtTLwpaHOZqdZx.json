@@ -44,7 +44,14 @@
   "img": "modules/dnd5e_classpack/Nicons/ability_deathknight_icygrip.jpg",
   "effects": [
     {
-      "changes": [],
+      "changes": [
+        {
+          "key": "system.traits.di.value",
+          "mode": 2,
+          "value": "healing",
+          "priority": 20
+        }
+      ],
       "description": "<p>无法恢复任何生命值</p>",
       "disabled": false,
       "duration": {
@@ -73,7 +80,9 @@
           "showIcon": false,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": ""
         },
         "ActiveAuras": {
           "isAura": false,
@@ -91,28 +100,33 @@
           "onlyOnce": false,
           "wallsBlock": "system"
         },
-        "core": {}
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
       },
       "name": "坏死",
       "origin": "Compendium.dnd5e_classpack.spell.Item.JyNtTLwpaHOZqdZx",
       "tint": "#ffffff",
       "transfer": false,
-      "statuses": [
-        "Convenient Effect: 腐败"
-      ],
+      "statuses": [],
       "_id": "p4yNpjzQ3lv8d8D8",
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
         "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
+        "modifiedTime": 1786882690565,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "compendiumSource": "ActiveEffect.ilU9VJbeqIWepoJp",
         "duplicateSource": null,
         "exportSource": null
       },
-      "img": "Icon/RPG_skills_and_abilities/violet/fs_978.PNG",
+      "img": "modules/dnd5e_classpack/Nicons/ability_deathknight_icygrip.jpg",
       "type": "base",
       "system": {},
       "sort": 0,

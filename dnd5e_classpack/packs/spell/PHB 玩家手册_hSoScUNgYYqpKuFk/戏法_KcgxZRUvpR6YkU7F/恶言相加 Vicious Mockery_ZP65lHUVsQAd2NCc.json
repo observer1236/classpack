@@ -74,8 +74,11 @@
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [
-            "1Attack"
-          ]
+            "1Attack",
+            "turnEnd"
+          ],
+          "enableCondition": "",
+          "disableCondition": ""
         },
         "ActiveAuras": {
           "isAura": false,
@@ -92,16 +95,24 @@
           "hostile": false,
           "onlyOnce": false,
           "wallsBlock": "system"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
         }
       },
       "tint": "#ffffff",
       "_stats": {
         "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
         "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
+        "modifiedTime": 1786882906342,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null

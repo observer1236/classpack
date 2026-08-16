@@ -28,11 +28,7 @@
       "migratedProperties": [
         "vocal",
         "somatic"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      ]
     },
     "chris-premades": {
       "info": {
@@ -242,7 +238,7 @@
         "sort": 0,
         "useConditionText": "",
         "useConditionReason": "",
-        "effectConditionText": "",
+        "effectConditionText": "[\"humanoid\"].includes(typeOrRace)",
         "macroData": {
           "name": "",
           "command": ""

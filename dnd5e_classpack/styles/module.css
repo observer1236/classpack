@@ -1,0 +1,101 @@
+/* Dialog styles for the classpack ApplicationV2 dialog. */
+
+form .classpack-dialog .form-group input[type="radio"] {
+    flex: 0;
+    margin: 0px 5px;
+    top: 0px;
+}
+
+form .classpack-dialog .form-group > div {
+    margin: 0px 5px;
+}
+
+form .classpack-dialog .form-group > div.row-display {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+form .classpack-dialog .form-group img.label-image {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+form .classpack-dialog .form-group .row-display img.label-image {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    float: left;
+}
+
+form .classpack-dialog .form-group .row-display p.label-text {
+    padding: 1%;
+    text-align: center;
+    font-size: 15px;
+}
+
+form .classpack-dialog .form-group button.form-button {
+    padding: 0 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    height: calc(1.25 * var(--input-height));
+}
+
+form .classpack-dialog .form-group button.form-button:has(img) {
+    height: calc(2.25 * var(--input-height));
+}
+
+form .classpack-dialog .form-group img.button-image {
+    position: relative;
+    width: 50px !important;
+    height: 50px !important;
+    border: 0px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+form .classpack-dialog .form-group p.button-text {
+    width: 100%;
+    padding: 1%;
+    font-size: 15px;
+}
+
+form .classpack-dialog .content {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+form .classpack-dialog .form-group .flex-col button.form-button {
+    padding: 0 0;
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+form .classpack-dialog .form-group .flexcol > div.select-many {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+form .classpack-dialog .form-group .flexcol > div.select-many > label {
+    width: 100%;
+    flex: 1;
+}
+
+form .classpack-dialog .form-group .flexcol > div.select-many > multi-select {
+    width: 100%;
+    flex: 2;
+    margin: 0.625em 0 0.625em 0;
+}

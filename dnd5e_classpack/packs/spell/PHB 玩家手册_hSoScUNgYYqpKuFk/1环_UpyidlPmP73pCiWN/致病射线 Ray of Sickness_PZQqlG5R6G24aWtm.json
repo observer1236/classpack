@@ -33,8 +33,7 @@
         "somatic"
       ],
       "riders": {
-        "activity": [],
-        "effect": []
+        "activity": []
       }
     }
   },
@@ -103,7 +102,7 @@
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \">\n<div class=\"description \">一道恶心的浅绿射线朝施法距离内一个生物射去。你对目标进行一次远程法术攻击。若命中，则目标受到2d8 的毒素伤害且必须进行一次体质豁免，豁免失败则目标陷入中毒，该中毒效应持续至你的下一回合结束。</div>\n<div class=\"description \"> </div>\n<div class=\"description \">升环施法效应。</div>\n<div class=\"description \">使用2 环或更高法术位施展该法术时，你使用的法术位每比1 环高一环，伤害就增加1d8。</div>\n</div>",
+      "value": "<p>一道恶心的浅绿射线朝施法距离内一个生物射去。你对目标进行一次远程法术攻击。若命中，则目标受到2d8 的毒素伤害且必须进行一次体质豁免，豁免失败则目标陷入中毒，该中毒效应持续至你的下一回合结束。</p><p>升环施法效应。</p><p>使用2 环或更高法术位施展该法术时，你使用的法术位每比1 环高一环，伤害就增加1d8。</p>",
       "chat": ""
     },
     "source": {
@@ -159,8 +158,7 @@
     },
     "properties": [
       "vocal",
-      "somatic",
-      "mgc"
+      "somatic"
     ],
     "activities": {
       "dnd5eactivity000": {
@@ -295,9 +293,10 @@
         "_id": "dnd5eactivity100",
         "type": "save",
         "activation": {
-          "type": "action",
+          "type": "",
           "value": null,
-          "override": false
+          "override": true,
+          "condition": ""
         },
         "consumption": {
           "targets": [],
@@ -305,7 +304,7 @@
             "allowed": false,
             "max": ""
           },
-          "spellSlot": true
+          "spellSlot": false
         },
         "description": {
           "chatFlavor": ""
@@ -313,26 +312,34 @@
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": true
         },
         "effects": [
           {
-            "_id": "MITs13tMeg5LTR6P"
+            "_id": "MITs13tMeg5LTR6P",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
-          "override": false
+          "override": true,
+          "special": ""
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "type": ""
           },
           "affects": {
-            "choice": false
+            "choice": false,
+            "type": ""
           },
-          "override": false
+          "override": true
         },
         "uses": {
           "spent": 0,
@@ -397,7 +404,13 @@
         "otherActivityId": "",
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "appliedEffects": [],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       }
     },
     "identifier": "ray-of-sickness"
