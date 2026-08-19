@@ -47,7 +47,8 @@
           "targets": [
             {
               "type": "itemUses",
-              "value": "1"
+              "value": "1",
+              "target": ""
             }
           ]
         },
@@ -61,10 +62,18 @@
         },
         "effects": [
           {
-            "_id": "f3WYikh5TP5RvI66"
+            "_id": "f3WYikh5TP5RvI66",
+            "level": {
+              "min": null,
+              "max": null
+            }
           },
           {
-            "_id": "gb9aEytaugsvy5wD"
+            "_id": "gb9aEytaugsvy5wD",
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -80,7 +89,8 @@
           },
           "affects": {
             "choice": false,
-            "type": ""
+            "type": "self",
+            "special": ""
           },
           "override": false,
           "prompt": true
@@ -100,8 +110,8 @@
         "useConditionReason": "",
         "effectConditionText": "",
         "macroData": {
-          "name": "",
-          "command": ""
+          "name": "Midi Use",
+          "command": "const activityId = \"threat-aura-activate\";\nconst saveId = \"threat-aura-save\";\n\nif (workflow.activity.midiProperties.identifier !== activityId) return;\n\nif (workflow.macroPass === \"preActiveEffects\") {\n  const sourceToken = workflow.token;\n  if (!sourceToken) return;\n\n  const saveActivity = workflow.item.system.activities.find(\n    a => a.type === 'save'\n  );\n  if (!saveActivity) return;\n\n  const targets = MidiQOL.findNearby(-1, sourceToken, 30, {\n    includeToken: false,\n    includeIncapacitated: true,\n    relative: true\n  }).filter(t => t.actor);\n\n  workflow.threatAuraInitialTargets =\n    targets.map(t => t.actor.uuid);\n\n  if (!targets.length) return;\n\n  await MidiQOL.completeActivityUse(\n    saveActivity,\n    {\n      midiOptions: {\n        targetUuids: targets.map(t => t.document.uuid),\n        ignoreUserTargets: true,\n        workflowOptions: {\n          noOnUseMacro: true,\n        }\n      }\n    },\n    { configure: false },\n    { create: true }\n  );\n}\n\nelse if (workflow.macroPass === \"postActiveEffects\") {\n  const aura = workflow.actor.effects.find(\n    effect =>\n      effect.type === \"auraeffects.aura\" &&\n      effect.getFlag(\"dae\", \"activity\") === workflow.activity.uuid\n  );\n\n  if (!aura) return;\n\n  const initialTargets = workflow.threatAuraInitialTargets ?? [];\n\n  // 等待 Aura Effects 创建初始子效果\n  for (let i = 0; i < 40; i++) {\n    const ready = initialTargets.every(actorUuid => {\n      const actor = fromUuidSync(actorUuid);\n      return actor?.effects.some(e => e.origin === aura.uuid);\n    });\n\n    if (ready) break;\n    await new Promise(resolve => setTimeout(resolve, 50));\n  }\n\n  await aura.update({\n    \"flags.dae.threatAuraInitial\": false\n  });\n}"
         },
         "ignoreTraits": {
           "idi": false,
@@ -121,7 +131,7 @@
           "autoTargetAction": "default",
           "automationOnly": false,
           "otherActivityCompatible": true,
-          "identifier": "",
+          "identifier": "threat-aura-activate",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
@@ -140,7 +150,158 @@
         "appliedEffects": [
           "f3WYikh5TP5RvI66",
           "gb9aEytaugsvy5wD"
-        ]
+        ],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "R1QlIK5PHS0sJ60E": {
+        "type": "save",
+        "_id": "R1QlIK5PHS0sJ60E",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "YI6lX87775gtNufF",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "damage": {
+          "onSave": "half",
+          "critical": {
+            "allow": false
+          },
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": true,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "saveRemoves": false,
+          "rollAs": "source",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "turnChoice": "start"
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "friendlySave": "friendlySuccess",
+        "name": ""
       }
     },
     "identifier": "",
@@ -152,7 +313,9 @@
       "level": null,
       "repeatable": false
     },
-    "properties": []
+    "properties": [
+      "mgc"
+    ]
   },
   "effects": [
     {
@@ -194,23 +357,6 @@
         },
         "core": {
           "overlay": false
-        },
-        "ActiveAuras": {
-          "isAura": false,
-          "aura": "None",
-          "nameOverride": "",
-          "radius": "",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": false,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
         }
       },
       "tint": "#ffffff",
@@ -240,20 +386,45 @@
       "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.8zoMnbYdejOaDvXu",
       "transfer": false,
       "_id": "gb9aEytaugsvy5wD",
-      "type": "base",
-      "system": {},
+      "type": "auraeffects.aura",
+      "system": {
+        "showRadius": true,
+        "applyToSelf": false,
+        "bestFormula": "",
+        "canStack": false,
+        "collisionTypes": [
+          "move"
+        ],
+        "color": null,
+        "combatOnly": true,
+        "disableOnHidden": true,
+        "distanceFormula": "30",
+        "disposition": -1,
+        "evaluatePreApply": false,
+        "opacity": 0.25,
+        "overrideName": "",
+        "script": "",
+        "stashedChanges": [],
+        "stashedStatuses": []
+      },
       "changes": [
         {
-          "key": "macro.execute",
+          "key": "macro.itemMacro",
           "mode": 0,
-          "value": "威胁灵光",
+          "value": "",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.ActivityOverTime",
+          "mode": 2,
+          "value": "save",
           "priority": 20
         }
       ],
       "disabled": false,
       "duration": {
         "startTime": null,
-        "seconds": null,
+        "seconds": 3600,
         "combat": null,
         "rounds": null,
         "turns": null,
@@ -278,7 +449,8 @@
           "showIcon": false,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "threatAuraInitial": true
         },
         "dnd5e": {
           "riders": {
@@ -288,22 +460,8 @@
         "core": {
           "overlay": false
         },
-        "ActiveAuras": {
-          "isAura": true,
-          "aura": "Enemy",
-          "nameOverride": "",
-          "radius": "30",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": true,
-          "hostile": false,
-          "onlyOnce": true,
-          "wallsBlock": "system",
-          "statuses": []
+        "auraeffects": {
+          "originalType": "base"
         }
       },
       "_stats": {
@@ -327,7 +485,14 @@
       "_id": "YI6lX87775gtNufF",
       "type": "base",
       "system": {},
-      "changes": [],
+      "changes": [
+        {
+          "key": "flags.midi-qol.grants.advantage.attack.all",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        }
+      ],
       "disabled": false,
       "duration": {
         "startTime": null,
@@ -357,7 +522,7 @@
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [
-            ""
+            "isDamaged"
           ]
         },
         "dnd5e": {
@@ -367,23 +532,6 @@
         },
         "core": {
           "overlay": false
-        },
-        "ActiveAuras": {
-          "isAura": false,
-          "aura": "None",
-          "nameOverride": "",
-          "radius": "",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": false,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
         }
       },
       "_stats": {
@@ -417,11 +565,7 @@
     },
     "dnd5e": {
       "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      "migratedUses": 1
     },
     "midi-qol": {
       "rollAttackPerTarget": "default",
@@ -429,7 +573,8 @@
       "itemCondition": "",
       "reactionCondition": "",
       "otherCondition": "",
-      "effectCondition": ""
+      "effectCondition": "",
+      "onUseMacroName": "[preActiveEffects]ActivityMacro-o0UE3jH8xIR8KK6z,[postActiveEffects]ActivityMacro-o0UE3jH8xIR8KK6z"
     },
     "midiProperties": {
       "autoFailFriendly": false,
@@ -442,12 +587,12 @@
     },
     "dae": {
       "macro": {
-        "name": "复仇天使",
+        "name": "复仇天使 Avenging Angel",
         "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_Archangel.png",
         "type": "script",
         "scope": "global",
-        "command": "if (args[0].macroPass === \"preActiveEffects\" || args[0].tag === \"OnUse\") {\n  return await game.modules.get(\"ActiveAuras\").api.AAHelpers.applyTemplate(args);\n}",
-        "author": "WqWGW8MuBm7BNHxt",
+        "command": "if (args[0] == 'off') return;\n\nif (!effect?.getFlag(\"auraeffects\", \"fromAura\")) return;\n\n// 初次激活时，真正的豁免已经由 Save Activity 完成\nif (effect.getFlag(\"dae\", \"threatAuraInitial\")) return;\n\nconst activationActivity = fromUuidSync(\n  effect.getFlag(\"dae\", \"activity\")\n);\n\nconst saveActivity = activationActivity?.item?.system.activities.find(\n  a => a.type === \"save\"\n);\n\nif (!saveActivity) return;\n\nconst targetUuid =\n  token?.document?.uuid ??\n  actor?.getActiveTokens(false, true)?.[0]?.document?.uuid;\n\nif (!targetUuid) return;\n\nawait MidiQOL.completeActivityUse(\n  saveActivity,\n  {\n    midiOptions: {\n      targetUuids: [targetUuid],\n      ignoreUserTargets: true,\n      workflowOptions: {\n        noOnUseMacro: true,\n        noTargetOnUseMacro: true,\n        noProvokeReaction: true\n      }\n    }\n  },\n  { configure: false },\n  { create: true }\n);",
+        "author": "TEhQZHmGMOcY5c4a",
         "ownership": {
           "default": 3
         },
@@ -456,14 +601,15 @@
         "sort": 0,
         "flags": {},
         "_stats": {
-          "coreVersion": "12.343",
+          "coreVersion": "13.351",
           "systemId": "dnd5e",
-          "systemVersion": "4.4.4",
+          "systemVersion": "5.3.3",
           "createdTime": null,
           "modifiedTime": null,
           "lastModifiedBy": null,
           "compendiumSource": null,
-          "duplicateSource": null
+          "duplicateSource": null,
+          "exportSource": null
         }
       }
     }

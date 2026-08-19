@@ -40,12 +40,6 @@
       "_id": "nw3ImLyoMz5AlhRP",
       "changes": [
         {
-          "key": "system.traits.dr.midi.msak",
-          "mode": 2,
-          "value": "+1",
-          "priority": 20
-        },
-        {
           "key": "system.traits.dr.midi.spell",
           "mode": 2,
           "value": "+1",
@@ -67,7 +61,7 @@
       "flags": {
         "dae": {
           "disableCondition": "",
-          "disableIncapacitated": false,
+          "disableIncapacitated": true,
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
@@ -82,22 +76,8 @@
         "core": {
           "overlay": false
         },
-        "ActiveAuras": {
-          "isAura": true,
-          "aura": "Allies",
-          "nameOverride": "10",
-          "radius": "",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": true,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
+        "auraeffects": {
+          "originalType": "base"
         }
       },
       "tint": "#ffffff",
@@ -114,8 +94,27 @@
       },
       "name": "获得法术伤害抗性",
       "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_PowerWordShield.png",
-      "type": "base",
-      "system": {},
+      "type": "auraeffects.aura",
+      "system": {
+        "showRadius": true,
+        "applyToSelf": true,
+        "bestFormula": "",
+        "canStack": false,
+        "collisionTypes": [
+          "move"
+        ],
+        "color": null,
+        "combatOnly": true,
+        "disableOnHidden": true,
+        "distanceFormula": "@scale.paladin.aura-radius",
+        "disposition": 1,
+        "evaluatePreApply": false,
+        "opacity": 0.25,
+        "overrideName": "",
+        "script": "",
+        "stashedChanges": [],
+        "stashedStatuses": []
+      },
       "description": "",
       "statuses": [],
       "sort": 0,

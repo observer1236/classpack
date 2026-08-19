@@ -63,7 +63,7 @@
       "flags": {
         "dae": {
           "disableCondition": "",
-          "disableIncapacitated": false,
+          "disableIncapacitated": true,
           "stackable": "none",
           "showIcon": false,
           "durationExpression": "",
@@ -78,22 +78,8 @@
         "core": {
           "overlay": false
         },
-        "ActiveAuras": {
-          "isAura": true,
-          "aura": "Allies",
-          "nameOverride": "",
-          "radius": "10",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": false,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
+        "auraeffects": {
+          "originalType": "base"
         }
       },
       "tint": "#ffffff",
@@ -110,8 +96,27 @@
       },
       "name": "获得恐慌免疫",
       "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
-      "type": "base",
-      "system": {},
+      "type": "auraeffects.aura",
+      "system": {
+        "showRadius": true,
+        "applyToSelf": true,
+        "bestFormula": "",
+        "canStack": false,
+        "collisionTypes": [
+          "move"
+        ],
+        "color": null,
+        "combatOnly": true,
+        "disableOnHidden": true,
+        "distanceFormula": "@scale.paladin.aura-radius",
+        "disposition": 1,
+        "evaluatePreApply": false,
+        "opacity": 0.25,
+        "overrideName": "",
+        "script": "",
+        "stashedChanges": [],
+        "stashedStatuses": []
+      },
       "description": "",
       "statuses": [],
       "sort": 0,

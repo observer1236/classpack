@@ -148,6 +148,12 @@
           "mode": 2,
           "value": "turn=start,allowIncapacitated=true,saveDamage=nodamage,saveRemove=true,saveMagic=true,damageRoll=10,damageType=healing,rollMode=publicroll,",
           "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.grants.disadvantage.save.all",
+          "mode": 2,
+          "value": "checkDistance(tokenUuid, targetUuid, 10) &&\nfromUuidSync(tokenUuid)?.disposition !== 0 &&\nfromUuidSync(targetUuid)?.disposition === -fromUuidSync(tokenUuid)?.disposition",
+          "priority": 20
         }
       ],
       "disabled": false,
@@ -185,23 +191,6 @@
         },
         "core": {
           "overlay": false
-        },
-        "ActiveAuras": {
-          "isAura": false,
-          "aura": "None",
-          "nameOverride": "",
-          "radius": "",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": false,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
         }
       },
       "_stats": {

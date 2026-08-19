@@ -139,7 +139,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=end,allowIncapacitated=true,rollType=save,saveAbility=str,dex,saveDamage=nodamage,saveRemove=true,saveMagic=true,actionSave=dialog,rollMode=publicroll,",
+          "value": "turn=end, label=引导神力：自然之怒 Channel Divinity: Nature's Wrath, saveAbility=str, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-, actionSave=dialog, rollMode=publicroll, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -178,23 +178,6 @@
         },
         "core": {
           "overlay": false
-        },
-        "ActiveAuras": {
-          "isAura": false,
-          "aura": "None",
-          "nameOverride": "",
-          "radius": "",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": false,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
         }
       },
       "_stats": {

@@ -124,7 +124,14 @@
       "_id": "Yk10F4sypwkLZigt",
       "type": "base",
       "system": {},
-      "changes": [],
+      "changes": [
+        {
+          "key": "flags.midi-qol.grants.advantage.attack.all",
+          "mode": 2,
+          "value": "workflow.token.uuid == '@tokenUuid'",
+          "priority": 20
+        }
+      ],
       "disabled": false,
       "duration": {
         "startTime": null,
@@ -139,7 +146,29 @@
       "tint": "#ffffff",
       "statuses": [],
       "sort": 0,
-      "flags": {},
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,

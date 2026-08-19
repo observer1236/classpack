@@ -41,8 +41,27 @@
       "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_AngelicBulwark.png",
       "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.QE4gvV6X8gTjJcb9",
       "_id": "C81L5FYTFg9Yytst",
-      "type": "base",
-      "system": {},
+      "type": "auraeffects.aura",
+      "system": {
+        "showRadius": true,
+        "applyToSelf": true,
+        "bestFormula": "",
+        "canStack": false,
+        "collisionTypes": [
+          "move"
+        ],
+        "color": null,
+        "combatOnly": true,
+        "disableOnHidden": true,
+        "distanceFormula": "@scale.paladin.aura-radius",
+        "disposition": 1,
+        "evaluatePreApply": false,
+        "opacity": 0.25,
+        "overrideName": "",
+        "script": "",
+        "stashedChanges": [],
+        "stashedStatuses": []
+      },
       "changes": [
         {
           "key": "system.bonuses.abilities.save",
@@ -71,7 +90,7 @@
           "disableCondition": "",
           "disableIncapacitated": false,
           "stackable": "noneName",
-          "showIcon": false,
+          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": []
@@ -84,22 +103,8 @@
         "core": {
           "overlay": false
         },
-        "ActiveAuras": {
-          "isAura": true,
-          "aura": "Allies",
-          "nameOverride": "",
-          "radius": "10",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": true,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
+        "auraeffects": {
+          "originalType": "base"
         }
       },
       "_stats": {

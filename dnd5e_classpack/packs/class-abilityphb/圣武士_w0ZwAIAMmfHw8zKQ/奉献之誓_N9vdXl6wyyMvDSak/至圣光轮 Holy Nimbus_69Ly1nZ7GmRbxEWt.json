@@ -57,7 +57,11 @@
         },
         "effects": [
           {
-            "_id": "3aYd9OtsR7CeGanM"
+            "_id": "3aYd9OtsR7CeGanM",
+            "level": {}
+          },
+          {
+            "_id": "njeCvkQovfoqGjsk"
           }
         ],
         "range": {
@@ -144,13 +148,32 @@
       "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.69Ly1nZ7GmRbxEWt",
       "transfer": false,
       "_id": "3aYd9OtsR7CeGanM",
-      "type": "base",
-      "system": {},
+      "type": "auraeffects.aura",
+      "system": {
+        "showRadius": true,
+        "applyToSelf": false,
+        "bestFormula": "",
+        "canStack": false,
+        "collisionTypes": [
+          "move"
+        ],
+        "color": null,
+        "combatOnly": true,
+        "disableOnHidden": true,
+        "distanceFormula": "30",
+        "disposition": -1,
+        "evaluatePreApply": false,
+        "opacity": 0.25,
+        "overrideName": "",
+        "script": "",
+        "stashedChanges": [],
+        "stashedStatuses": []
+      },
       "changes": [
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=start,allowIncapacitated=true,damageRoll=10,damageType=radiant,rollMode=publicroll,",
+          "value": "turn=start, label=至圣光轮, rollType=damage, damageRoll=10, damageType=radiant, rollMode=publicroll, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -172,7 +195,7 @@
         "dae": {
           "enableCondition": "",
           "disableCondition": "",
-          "disableIncapacitated": false,
+          "disableIncapacitated": true,
           "selfTarget": false,
           "selfTargetAlways": false,
           "dontApply": false,
@@ -190,22 +213,8 @@
         "core": {
           "overlay": false
         },
-        "ActiveAuras": {
-          "isAura": true,
-          "aura": "Enemy",
-          "nameOverride": "",
-          "radius": "30",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": true,
-          "height": false,
-          "hidden": false,
-          "displayTemp": true,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
+        "auraeffects": {
+          "originalType": "base"
         }
       },
       "_stats": {
@@ -220,6 +229,72 @@
         "exportSource": null
       },
       "_key": "!items.effects!69Ly1nZ7GmRbxEWt.3aYd9OtsR7CeGanM"
+    },
+    {
+      "name": "对抗不死与邪魔法术优势",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_Cascade.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.69Ly1nZ7GmRbxEWt",
+      "transfer": false,
+      "_id": "njeCvkQovfoqGjsk",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.advantage.save.all",
+          "mode": 2,
+          "value": "workflow.item.type == 'spell' && [\"fiend\",\"undead\"].includes(actor.typeOrRace)",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": 60,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1787067588983,
+        "modifiedTime": 1787069151118,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a"
+      },
+      "_key": "!items.effects!69Ly1nZ7GmRbxEWt.njeCvkQovfoqGjsk"
     }
   ],
   "folder": "N9vdXl6wyyMvDSak",
@@ -231,11 +306,7 @@
     },
     "dnd5e": {
       "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      "migratedUses": 1
     },
     "midi-qol": {
       "rollAttackPerTarget": "default",
