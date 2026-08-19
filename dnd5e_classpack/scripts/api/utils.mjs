@@ -150,3 +150,47 @@ export async function resolveOriginPoint(origin) {
   log("warn", "resolveOriginPoint: could not resolve the reference origin to a point.");
   return undefined;
 }
+
+/**
+ * Get the first active non-GM owner of a document, modelled after CPR's
+ * firstOwner helper. Accepts Actor, TokenDocument, Token placeable, Item, or
+ * ActiveEffect documents. Falls back to the active GM when no player owner is
+ * found.
+ *
+ * @param {*} doc             Actor/Token/Item/ActiveEffect document or placeable
+ * @param {boolean} [asId]    Return a user id instead of a User instance
+ * @returns {*}               User instance or user id, or undefined
+ */
+export function firstOwner(doc, asId = false) {
+  if (!doc) return undefined;
+
+  // Normalise to an Actor document.
+  if (doc?.document?.documentName === "Token") doc = doc.document.actor;
+  if (doc?.documentName === "Token") doc = doc.actor;
+  if (doc?.documentName === "Item" || doc?.documentName === "ActiveEffect") {
+    doc = doc.actor ?? doc.parent;
+  }
+  if (!doc) return undefined;
+
+  const ownership = foundry.utils.getProperty(doc, "ownership") ?? {};
+  const ownerLevel = CONST.DOCUMENT_OWNERSHIP_LEVELS?.OWNER ?? 3;
+
+  const ownerIds = Object.entries(ownership)
+    .filter(([userId, level]) => {
+      const user = game.users?.get(userId);
+      return user && !user.isGM && user.active && level === ownerLevel;
+    })
+    .map(([userId]) => userId);
+
+  let ownerId;
+  if (ownerIds.length) {
+    ownerId = doc.documentName === "Actor"
+      ? ownerIds.find(id => game.users.get(id)?.character?.uuid === doc.uuid) ?? ownerIds[0]
+      : ownerIds[0];
+  } else {
+    ownerId = game.users?.activeGM?.id ?? game.users?.find(user => user.active && user.isGM)?.id;
+  }
+
+  if (!ownerId) return undefined;
+  return asId ? ownerId : game.users.get(ownerId);
+}

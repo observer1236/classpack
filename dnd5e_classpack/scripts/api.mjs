@@ -17,12 +17,12 @@
  * `scripts/api.mjs` file.
  */
 
-import { canUpdateToken, log, MODULE_ID, SOCKET_NAME, registerHandlebarsHelpers, resolveToken, resolveUserId, toSocketSafeOptions } from "./api/utils.mjs";
+import { canUpdateToken, firstOwner, log, MODULE_ID, SOCKET_NAME, registerHandlebarsHelpers, resolveOriginPoint, resolveToken, resolveUserId, toSocketSafeOptions } from "./api/utils.mjs";
 import { ClasspackDialogApp } from "./api/dialog-app.mjs";
 import { ClasspackCrosshairs } from "./api/crosshairs.mjs";
 import { ClasspackTeleport } from "./api/teleport.mjs";
 import { createDialogUtils } from "./api/dialog-utils.mjs";
-import { calculatePushUpdates, resolveOriginPoint } from "./api/push.mjs";
+import { calculatePushUpdates } from "./api/push.mjs";
 import { socketFunctions } from "./api/socket-functions.mjs";
 
 const api = {
@@ -233,6 +233,7 @@ const api = {
 };
 
 api.dialogUtils = createDialogUtils((...args) => api.dialog(...args));
+api.firstOwner = firstOwner;
 
 /* -------------------------------------------------------------------------- *
  *  Registration
