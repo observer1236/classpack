@@ -39,11 +39,14 @@ const socketFunctions = {
 
   /**
    * Apply already-computed push/pull token updates. `updates` is an array of
-   * TokenDocument update objects.
+   * TokenDocument update objects; `updateOptions` carries the animation wish
+   * from the requesting client (`animate` / `animation`).
    */
-  pushUpdate: async function (updates) {
+  pushUpdate: async function (updates, updateOptions = {}) {
     if (!updates?.length) return;
-    await canvas.scene.updateEmbeddedDocuments("Token", updates, { isPaste: true });
+    const options = { animate: updateOptions.animate !== false };
+    if (updateOptions.animation) options.animation = updateOptions.animation;
+    await canvas.scene.updateEmbeddedDocuments("Token", updates, options);
   },
 
   /**

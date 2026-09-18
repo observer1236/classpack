@@ -1,28 +1,39 @@
 /**
- * Crosshairs helper (modelled after chris-premades Crosshairs).
+ * Interactive crosshair built on Foundry's MeasuredTemplate placeable.
+ *
+ * A crosshair is a short lived preview template that tracks the pointer until
+ * the user left-clicks (confirm) or right-clicks (cancel). Teleport helpers use
+ * it to let a player pick a destination on the canvas.
  */
 
 import { sleep } from "./utils.mjs";
 
-/* -------------------------------------------------------------------------- *
- *  Crosshairs helper (modelled after chris-premades Crosshairs)
- * -------------------------------------------------------------------------- */
+const HAZARD_ICON = "icons/svg/hazard.svg";
+const TARGET_ICON = "icons/svg/dice-target.svg";
+
+const OUTLINE_ALPHA = 0.75;
+const PAN_AFTER_MS = 1000;
+const MOVE_THROTTLE_MS = 20;
+const RIGHT_CLICK_SLOP_PX = 10;
+const MIN_SIZE_INCREASE = 0.25;
 
 class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
+  static ERROR_TEXTURE = HAZARD_ICON;
+
   constructor(config = {}, callbacks = {}) {
-    const templateData = {
+    const params = {
       t: config.shape ?? "circle",
       user: game.user.id,
       distance: config.size,
       x: config.x,
       y: config.y,
-      document: { fillColor: config.fillColor },
       width: 1,
       texture: config.texture,
-      direction: config.direction
+      direction: config.direction,
+      document: { fillColor: config.fillColor }
     };
 
-    super(new CONFIG.MeasuredTemplate.documentClass(templateData, { parent: canvas.scene }));
+    super(new CONFIG.MeasuredTemplate.documentClass(params, { parent: canvas.scene }));
 
     this.icon = config.icon ?? ClasspackCrosshairs.ERROR_TEXTURE;
     this.label = config.label;
@@ -35,18 +46,22 @@ class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
     this.lockSize = config.lockSize;
     this.lockPosition = config.lockPosition;
     this.resolution = config.resolution;
-    this.callbacks = callbacks;
+    this.hooks = callbacks ?? {};
+
     this.inFlight = false;
     this.cancelled = true;
-    this.rightX = 0;
-    this.rightY = 0;
     this.radius = this.document.distance * this.scene.grid.size / 2;
+
+    this._listeners = [];
+    this._rightClick = { x: 0, y: 0 };
+    this._lastMove = 0;
+    this._armedAt = 0;
   }
 
   static defaultCrosshairsConfig() {
     return {
       size: canvas.dimensions.distance,
-      icon: "icons/svg/dice-target.svg",
+      icon: TARGET_ICON,
       label: "",
       labelOffset: { x: 0, y: 0 },
       tag: "crosshairs",
@@ -64,52 +79,42 @@ class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
     };
   }
 
+  /**
+   * Show a crosshair and resolve with its final template data once the user
+   * confirms (or with `cancelled: true` once they cancel).
+   */
   static async showCrosshairs(config = {}, callbacks = {}) {
-    let controlledTokens = [];
+    let remembered = [];
     config = foundry.utils.mergeObject(config, ClasspackCrosshairs.defaultCrosshairsConfig(), { overwrite: false });
 
-    if (config.rememberControlled) {
-      controlledTokens = canvas.tokens.controlled;
-    }
+    if (config.rememberControlled) remembered = canvas.tokens.controlled;
 
-    if (!Object.prototype?.hasOwnProperty?.call(config, "x") && !Object.prototype?.hasOwnProperty?.call(config, "y")) {
+    const placed = "x" in config || "y" in config;
+    if (!placed) {
       const pointer = canvas.app.renderer.events.pointer.getLocalPosition(canvas.app.stage);
-      const snapped = ClasspackCrosshairs.getSnappedPosition(pointer, config.resolution);
-      config.x = snapped.x;
-      config.y = snapped.y;
+      Object.assign(config, ClasspackCrosshairs.getSnappedPosition(pointer, config.resolution));
     }
 
     const crosshair = new ClasspackCrosshairs(config, callbacks);
     await crosshair.drawPreview();
     const result = crosshair.toObject();
 
-    for (const token of controlledTokens) token.control({ releaseOthers: false });
+    for (const token of remembered) token.control({ releaseOthers: false });
 
     return result;
   }
 
-  toObject() {
-    const obj = foundry.utils.mergeObject(this.document.toObject(), {
-      cancelled: this.cancelled,
-      scene: this.scene,
-      radius: this.radius,
-      size: this.document.distance
-    });
-    delete obj.width;
-    return obj;
-  }
-
   static collectPlaceables(template, type = "Token", contains = ClasspackCrosshairs._containsCenter) {
-    const multipleTypes = Array.isArray(type);
-    const types = multipleTypes ? type : [type];
+    const types = Array.isArray(type) ? type : [type];
+    const collected = {};
 
-    const collections = types.reduce((acc, collectionType) => {
-      const collection = template.scene.getEmbeddedCollection(collectionType).filter(placeable => contains(placeable.object, template));
-      acc[collectionType] = collection;
-      return acc;
-    }, {});
+    for (const collection of types) {
+      collected[collection] = template.scene
+        .getEmbeddedCollection(collection)
+        .filter(placeable => contains(placeable.object, template));
+    }
 
-    return multipleTypes ? collections : collections[types[0]];
+    return Array.isArray(type) ? collected : collected[types[0]];
   }
 
   static _containsCenter(placeable, template) {
@@ -117,85 +122,111 @@ class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
   }
 
   static getCrosshair(tag) {
-    return canvas.templates.preview.children.find(t => t.tag === tag);
+    return canvas.templates.preview.children.find(child => child.tag === tag);
   }
 
   static getSnappedPosition({ x, y }, resolution) {
-    const offset = resolution < 0 ? canvas.grid.size / 2 : 0;
-    const point = canvas.grid.getSnappedPoint({ x: x - offset, y: y - offset }, { mode: 1, resolution });
-    return { x: point.x + offset, y: point.y + offset };
+    const shift = resolution < 0 ? canvas.grid.size / 2 : 0;
+    const snapped = canvas.grid.getSnappedPoint({ x: x - shift, y: y - shift }, { mode: 1, resolution });
+    return { x: snapped.x + shift, y: snapped.y + shift };
   }
 
-  static ERROR_TEXTURE = "icons/svg/hazard.svg";
+  toObject() {
+    const result = foundry.utils.mergeObject(this.document.toObject(), {
+      cancelled: this.cancelled,
+      scene: this.scene,
+      radius: this.radius,
+      size: this.document.distance
+    });
+    delete result.width;
+    return result;
+  }
+
+  /* -------------------------------------------------------------------- *
+   *  Rendering
+   * -------------------------------------------------------------------- */
 
   async drawPreview() {
     await this.draw();
     this.layer.preview.addChild(this);
     this.layer.interactiveChildren = false;
     this.inFlight = true;
-    this.activatePreviewListeners();
-    this.callbacks?.show?.(this);
+
+    this._bind();
+    this.hooks?.show?.(this);
     await this.waitFor(() => !this.inFlight, -1);
-    if (this.activeHandlers) this.clearHandlers();
+    this._unbind();
+
     return this;
   }
 
   async draw() {
     this.clear();
+
     const texture = this.document.texture;
-    this._texture = texture ? await loadTexture(texture, { fallback: "icons/svg/hazard.svg" }) : null;
-    this.template = this.addChild(new PIXI.Graphics);
-    this.controlIcon = this.addChild(this._drawControlIcon());
-    this.ruler = this.addChild(this._drawRulerText());
+    this._texture = texture ? await loadTexture(texture, { fallback: HAZARD_ICON }) : null;
+
+    this.template = this.addChild(new PIXI.Graphics());
+    this.controlIcon = this.addChild(this._makeMarker());
+    this.ruler = this.addChild(this._makeCaption());
+
     this.refresh();
-    this._setRulerText();
     if (this.id) this.activateListeners();
+
     return this;
   }
 
-  _setRulerText() {
-    this.ruler.text = this.label;
-    this.ruler.position.set(-this.ruler.width / 2 + this.labelOffset.x, this.template.height / 2 + 5 + this.labelOffset.y);
-  }
-
-  _drawRulerText() {
+  _makeCaption() {
     const style = CONFIG.canvasTextStyle.clone();
     style.fontSize = Math.max(Math.round(0.36 * canvas.dimensions.size * 12) / 12, 36);
-    const text = new foundry.canvas.containers.PreciseText(null, style);
-    text.anchor.set(0, 0);
-    return text;
+    const caption = new foundry.canvas.containers.PreciseText(null, style);
+    caption.anchor.set(0, 0);
+    return caption;
   }
 
-  _drawControlIcon() {
+  _makeMarker() {
     const size = Math.max(20 * Math.round(0.5 * canvas.dimensions.size / 20), 40);
-    const icon = new foundry.canvas.containers.ControlIcon({ texture: this.icon, size });
-    icon.visible = this.drawIcon;
-    icon.pivot.set(0.5 * size, 0.5 * size);
-    icon.angle = this.document.direction;
-    return icon;
+    const marker = new foundry.canvas.containers.ControlIcon({ texture: this.icon, size });
+    marker.visible = this.drawIcon;
+    marker.pivot.set(0.5 * size, 0.5 * size);
+    marker.angle = this.document.direction;
+    return marker;
+  }
+
+  _layoutCaption() {
+    this.ruler.text = this.label;
+    this.ruler.position.set(
+      -this.ruler.width / 2 + this.labelOffset.x,
+      this.template.height / 2 + 5 + this.labelOffset.y
+    );
   }
 
   refresh() {
-    if (!this.template || this._destroyed) return;
-    const dimensions = canvas.dimensions;
+    if (!this.template || this._destroyed) return this;
+
     const template = this.document;
+    const cellSize = canvas.dimensions.size;
     this.position.set(template.x, template.y);
 
-    let { direction, distance } = template;
-    distance *= dimensions.size / 2;
-    direction = Math.toRadians(direction);
-
-    this.ray = foundry.canvas.geometry.Ray.fromAngle(template.x, template.y, direction, distance);
+    const reach = template.distance * cellSize / 2;
+    this.ray = foundry.canvas.geometry.Ray.fromAngle(
+      template.x,
+      template.y,
+      Math.toRadians(template.direction),
+      reach
+    );
     this.t = this.computeShape(this);
 
-    this.template.clear().lineStyle(this._borderThickness, this.document.borderColor, this.drawOutline ? 0.75 : 0);
+    this.template
+      .clear()
+      .lineStyle(this._borderThickness, this.document.borderColor, this.drawOutline ? OUTLINE_ALPHA : 0);
 
     if (this._texture) {
-      const scale = this.tileTexture ? 1 : (2 * distance) / this._texture.width;
-      const translate = this.tileTexture ? 0 : distance;
+      const scale = this.tileTexture ? 1 : (2 * reach) / this._texture.width;
+      const shift = this.tileTexture ? 0 : reach;
       this.template.beginTextureFill({
         texture: this._texture,
-        matrix: new PIXI.Matrix().scale(scale, scale).translate(-translate, -translate)
+        matrix: new PIXI.Matrix().scale(scale, scale).translate(-shift, -shift)
       });
     } else {
       this.template.beginFill(this.document.fillColor, this.fillAlpha);
@@ -203,13 +234,11 @@ class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
 
     this.template.drawShape(this.t);
 
-    if (this.drawIcon) {
-      this.controlIcon.visible = true;
-      this.controlIcon.border.visible = this._hover;
-      this.controlIcon.angle = template.direction;
-    }
+    this.controlIcon.visible = this.drawIcon;
+    this.controlIcon.border.visible = this._hover;
+    this.controlIcon.angle = template.direction;
 
-    this._setRulerText();
+    this._layoutCaption();
     return this;
   }
 
@@ -217,103 +246,49 @@ class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
     return canvas.activeLayer;
   }
 
-  activatePreviewListeners() {
-    this.moveTime = 0;
-    this.initTime = Date.now();
-    this.removeAllListeners();
+  /* -------------------------------------------------------------------- *
+   *  Pointer interaction
+   * -------------------------------------------------------------------- */
 
-    this.activeMoveHandler = this._mouseMoveHandler.bind(this);
-    this.activeLeftClickHandler = this._leftClickHandler.bind(this);
-    this.rightDownHandler = this._rightDownHandler.bind(this);
-    this.rightUpHandler = this._rightUpHandler.bind(this);
-    this.activeWheelHandler = this._mouseWheelHandler.bind(this);
-    this.clearHandlers = this._clearHandlers.bind(this);
+  _bind() {
+    this._unbind();
+    this._armedAt = Date.now();
+    this._lastMove = 0;
 
-    canvas.stage.on("pointermove", this.activeMoveHandler);
-    canvas.stage.on("pointerdown", this.activeLeftClickHandler);
-    canvas.app.view.onwheel = this.activeWheelHandler;
-    canvas.app.view.onmousedown = this.rightDownHandler;
-    canvas.app.view.onmouseup = this.rightUpHandler;
+    this._moveFn = this._onMove.bind(this);
+    this._downFn = this._onDown.bind(this);
+    this._wheelFn = this._onWheel.bind(this);
+    this._rightDownFn = this._onRightDown.bind(this);
+    this._rightUpFn = this._onRightUp.bind(this);
+
+    canvas.stage.on("pointermove", this._moveFn);
+    canvas.stage.on("pointerdown", this._downFn);
+    canvas.app.view.onwheel = this._wheelFn;
+    canvas.app.view.onmousedown = this._rightDownFn;
+    canvas.app.view.onmouseup = this._rightUpFn;
   }
 
-  _mouseMoveHandler(event) {
-    event.stopPropagation();
-    if (this.lockPosition) return;
-
-    const now = Date.now();
-    if (now - this.moveTime <= 20) return;
-
-    const pointer = event.data.getLocalPosition(this.layer);
-    const { x, y } = ClasspackCrosshairs.getSnappedPosition(pointer, this.resolution);
-    this.document.updateSource({ x, y });
-    this.refresh();
-    this.moveTime = now;
-
-    if (now - this.initTime > 1000) canvas._onDragCanvasPan(event.data.originalEvent);
-  }
-
-  _leftClickHandler(event) {
-    if (event.data?.button !== 0) return;
-    event.stopPropagation();
-
-    const template = this.document;
-    const gridSize = this.scene.grid.size;
-    const snapped = ClasspackCrosshairs.getSnappedPosition(this.document, this.resolution);
-
-    this.radius = template.distance * gridSize / 2;
-    this.cancelled = false;
-    this.document.updateSource({ ...snapped });
-    this.clearHandlers(event);
-    return true;
-  }
-
-  _mouseWheelHandler(event) {
-    if (event.ctrlKey) event.preventDefault();
-    if (!event.altKey) event.stopPropagation();
-
-    const step = canvas.grid.type > CONST.GRID_TYPES.SQUARE ? 30 : 15;
-    const delta = event.ctrlKey ? step : 5;
-    const template = this.document;
-    const gridSize = this.scene.grid.size;
-
-    if (event.shiftKey && !this.lockSize) {
-      let distance = template.distance + 0.25 * Math.sign(event.deltaY);
-      distance = Math.max(distance, 0.25);
-      this.document.updateSource({ distance });
-      this.radius = distance * gridSize / 2;
-    } else if (!event.altKey) {
-      const direction = template.direction + delta * Math.sign(event.deltaY);
-      this.document.updateSource({ direction });
-    }
-
-    this.refresh();
-  }
-
-  _rightDownHandler(event) {
-    if (event.button === 2) {
-      this.rightX = event.screenX;
-      this.rightY = event.screenY;
-    }
-  }
-
-  _rightUpHandler(event) {
-    if (event.button !== 2) return;
-    const withinThreshold = (a, b) => Math.abs(a - b) < 10;
-    if (withinThreshold(this.rightX, event.screenX) && withinThreshold(this.rightY, event.screenY)) {
-      this.cancelled = true;
-      this.clearHandlers(event);
-    }
-  }
-
-  _clearHandlers(event) {
-    this.inFlight = false;
-    canvas.stage.off("pointermove", this.activeMoveHandler);
-    canvas.stage.off("pointerdown", this.activeLeftClickHandler);
+  _unbind() {
+    if (this._moveFn) canvas.stage.off("pointermove", this._moveFn);
+    if (this._downFn) canvas.stage.off("pointerdown", this._downFn);
+    canvas.app.view.onwheel = null;
     canvas.app.view.onmousedown = null;
     canvas.app.view.onmouseup = null;
-    canvas.app.view.onwheel = null;
+
+    this._moveFn = null;
+    this._downFn = null;
+    this._wheelFn = null;
+    this._rightDownFn = null;
+    this._rightUpFn = null;
+  }
+
+  /** Stop the interaction and tear the preview template down. */
+  _finish() {
+    this.inFlight = false;
+    this._unbind();
     this.actorSheet?.maximize?.();
     this.layer.interactiveChildren = true;
+
     setTimeout(() => {
       if (this.template && !this.template.destroyed) this.template.destroy();
       this._destroyed = true;
@@ -321,17 +296,85 @@ class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
     }, 0);
   }
 
+  _onMove(event) {
+    event.stopPropagation();
+    if (this.lockPosition) return;
+
+    const now = Date.now();
+    if (now - this._lastMove <= MOVE_THROTTLE_MS) return;
+
+    const pointer = event.data.getLocalPosition(this.layer);
+    this.document.updateSource(ClasspackCrosshairs.getSnappedPosition(pointer, this.resolution));
+    this.refresh();
+    this._lastMove = now;
+
+    if (now - this._armedAt > PAN_AFTER_MS) canvas._onDragCanvasPan(event.data.originalEvent);
+  }
+
+  _onDown(event) {
+    if (event.data?.button !== 0) return;
+    event.stopPropagation();
+
+    const template = this.document;
+    this.radius = template.distance * this.scene.grid.size / 2;
+    this.cancelled = false;
+    this.document.updateSource(ClasspackCrosshairs.getSnappedPosition(template, this.resolution));
+    this._finish();
+
+    return true;
+  }
+
+  _onWheel(event) {
+    if (event.ctrlKey) event.preventDefault();
+    if (!event.altKey) event.stopPropagation();
+
+    const turn = canvas.grid.type > CONST.GRID_TYPES.SQUARE ? 30 : 15;
+    const delta = (event.ctrlKey ? turn : 5) * Math.sign(event.deltaY);
+    const template = this.document;
+
+    if (event.shiftKey && !this.lockSize) {
+      const distance = Math.max(template.distance + MIN_SIZE_INCREASE * Math.sign(event.deltaY), MIN_SIZE_INCREASE);
+      this.document.updateSource({ distance });
+      this.radius = distance * this.scene.grid.size / 2;
+    } else if (!event.altKey) {
+      this.document.updateSource({ direction: template.direction + delta });
+    }
+
+    this.refresh();
+  }
+
+  _onRightDown(event) {
+    if (event.button === 2) this._rightClick = { x: event.screenX, y: event.screenY };
+  }
+
+  _onRightUp(event) {
+    if (event.button !== 2) return;
+
+    const close = (a, b) => Math.abs(a - b) < RIGHT_CLICK_SLOP_PX;
+    if (close(this._rightClick.x, event.screenX) && close(this._rightClick.y, event.screenY)) {
+      this.cancelled = true;
+      this._finish();
+    }
+  }
+
+  /* -------------------------------------------------------------------- *
+   *  Geometry / async helpers
+   * -------------------------------------------------------------------- */
+
   computeShape(shape) {
     const result = shape._computeShape();
+
     if (shape.document.t === "rect") {
       const size = this.document.distance * this.scene.grid.size;
       result.height = size;
       result.width = size;
-      result.y = this.scene.grid.size / -2;
       result.x = this.scene.grid.size / -2;
-    } else if (shape.document.t !== "ray" && shape.document.t === "circle" && !game.settings.get("core", "gridTemplates")) {
-      result.radius = Math.round(result.radius / (canvas.grid.size / 2)) * (canvas.grid.size / 2);
+      result.y = this.scene.grid.size / -2;
+    } else if (shape.document.t === "circle" && !game.settings.get("core", "gridTemplates")) {
+      const half = canvas.grid.size / 2;
+      result.radius = Math.round(result.radius / half) * half;
     }
+
     return result;
   }
 
@@ -350,7 +393,9 @@ class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
 }
 
 /**
- * Aim a crosshair from a token, optionally limiting its range.
+ * Aim a crosshair from a token, optionally limiting it to a maximum range.
+ * Returns the chosen template data plus a `valid` flag describing whether the
+ * final position passed the range / collision checks.
  */
 async function aimCrosshair({
   token,
@@ -363,7 +408,8 @@ async function aimCrosshair({
   fudgeDistance = 0,
   validityFunctions = []
 }) {
-  let boundaryGraphics, boundaryContainer;
+  let boundaryGraphics;
+  let boundaryContainer;
   let travelled = 0;
   let offset = 0;
 
@@ -380,18 +426,20 @@ async function aimCrosshair({
 
   let valid = true;
 
-  const callbacks = {
+  const hooks = {
     show: async crosshair => {
       if (maxRange && drawBoundries) {
         const radius = canvas.grid.size * ((maxRange + fudgeDistance + offset) / canvas.grid.distance);
         boundaryGraphics = new PIXI.Graphics();
         boundaryGraphics.lineStyle(5, 0xFFFFFF);
-        if (game.settings.get("core", "gridTemplates") && game.settings.get("core", "gridDiagonals") !== CONST.GRID_DIAGONALS.EXACT) {
+        if (game.settings.get("core", "gridTemplates")
+          && game.settings.get("core", "gridDiagonals") !== CONST.GRID_DIAGONALS.EXACT) {
           boundaryGraphics.drawPolygon(canvas.grid.getCircle(centerpoint, maxRange + fudgeDistance + offset));
         } else {
           boundaryGraphics.drawCircle(centerpoint.x, centerpoint.y, radius);
         }
         boundaryGraphics.tint = 0x32CD32;
+
         boundaryContainer = new PIXI.Container();
         boundaryContainer.addChild(boundaryGraphics);
         canvas.drawings.addChild(boundaryContainer);
@@ -399,43 +447,35 @@ async function aimCrosshair({
 
       while (crosshair.inFlight) {
         await sleep(100);
-        if (trackDistance) {
-          travelled = canvas.grid.measurePath([centerpoint, crosshair]).distance.toNearest(0.01);
-          travelled = Math.max(0, travelled - offset);
-          const blocked = token.checkCollision(crosshair, { origin: token.center, type: "move", mode: "any" });
-          const outOfRange = maxRange ? travelled > maxRange : false;
-          const invalid = validityFunctions.some(fn => !fn(crosshair));
-          if (blocked || outOfRange || invalid) {
-            crosshair.icon = "icons/svg/hazard.svg";
-            if (boundaryGraphics) boundaryGraphics.tint = 0xFF0000;
-            valid = false;
-          } else {
-            crosshair.icon = crosshairsConfig?.icon ?? crosshair.icon;
-            if (boundaryGraphics) boundaryGraphics.tint = 0x32CD32;
-            valid = true;
-          }
-          crosshair.draw();
-          crosshair.label = `${travelled}/${maxRange}ft.`;
-        }
+        if (!trackDistance) continue;
+
+        travelled = Math.max(0, canvas.grid.measurePath([centerpoint, crosshair]).distance.toNearest(0.01) - offset);
+        const blocked = token.checkCollision(crosshair, { origin: token.center, type: "move", mode: "any" });
+        const outOfRange = maxRange ? travelled > maxRange : false;
+        const rejected = validityFunctions.some(test => !test(crosshair));
+        valid = !blocked && !outOfRange && !rejected;
+
+        crosshair.icon = valid ? (crosshairsConfig?.icon ?? crosshair.icon) : HAZARD_ICON;
+        if (boundaryGraphics) boundaryGraphics.tint = valid ? 0x32CD32 : 0xFF0000;
+        crosshair.label = `${travelled}/${maxRange}ft.`;
+        crosshair.draw();
       }
     },
-    ...customCallbacks ?? {}
+    ...(customCallbacks ?? {})
   };
 
-  let config = {};
-  if (trackDistance) config.label = "0ft";
+  let config = trackDistance ? { label: "0ft" } : {};
   config = { ...config, ...crosshairsConfig };
   if (token?.document?.rotation) config.direction = token.document.rotation;
 
   if (!maxRange) return await ClasspackCrosshairs.showCrosshairs(config);
 
-  const result = await ClasspackCrosshairs.showCrosshairs(config, callbacks);
+  const result = await ClasspackCrosshairs.showCrosshairs(config, hooks);
 
-  if (boundaryGraphics) boundaryGraphics.destroy();
-  if (boundaryContainer) boundaryContainer.destroy();
+  boundaryGraphics?.destroy();
+  boundaryContainer?.destroy();
 
   return { ...result, valid };
 }
-
 
 export { ClasspackCrosshairs, aimCrosshair };

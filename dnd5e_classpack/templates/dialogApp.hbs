@@ -1,201 +1,126 @@
-<div id="dialog-app" class="dialog-content classpack-dialog scrollable">
-    <p class="content"> {{{localize content}}} </p>
-    {{#each inputs}}
-        <div class="form-group">
-        {{#if isButton}}
-            {{#if displayAsRows}}
-                <div class="flex-col">
-                    {{#each options}}
-                        <button type="submit" class="form-button" data-action="confirm" id="i{{@../index}}j{{@index}}" name="{{name}}"{{#if tooltip}} data-tooltip="{{tooltip}}"{{/if}}{{#if reference}} data-reference-tooltip="{{reference}}"{{/if}}>
-                            {{#if image}}<img class="button-image" src={{image}}>{{/if}}
-                            <p class="button-text" >{{localize label}}</p>
-                        </button>
-                    {{/each}}
-                </div>
-            {{else}}
-                {{#each options}}
-                    <button type="submit" class="form-button" data-action="confirm" id="i{{@../index}}j{{@index}}" name="{{name}}"{{#if reference}} data-reference-tooltip="{{reference}}"{{/if}}>
-                        {{#if image}}<img class="button-image" src={{image}}>{{/if}}
-                        <p class="button-text" {{#if tooltip}}data-tooltip="{{tooltip}}"{{/if}}>{{localize label}}</p>
+<div class="cp-dialog scrollable">
+    <p class="cp-dialog-lead">{{{localize content}}}</p>
+
+    {{#each groups}}
+        {{#if (eq kind "buttons")}}
+            <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
+                {{#each slots}}
+                    <button type="submit" class="cp-dialog-tile" data-action="confirm" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}">
+                        {{#if image}}<img class="cp-dialog-tile-image" src="{{image}}" alt="">{{/if}}
+                        <span class="cp-dialog-tile-text"{{#if tooltip}} data-tooltip="{{tooltip}}"{{/if}}{{#if reference}} data-reference-tooltip="{{reference}}"{{/if}}>{{localize label}}</span>
                     </button>
                 {{/each}}
-            {{/if}}
-        {{else if isCheckbox}}
-            {{#if displayAsRows}}
-                <div class="row-display">
-                    {{#each options}}
-                        <input type="checkbox" {{#if (gte ../currentNum ../totalMax)}}{{#unless isChecked}}disabled{{/unless}}{{/if}} id="i{{@../index}}j{{@index}}" name="{{name}}" {{#if isChecked}}checked{{/if}}>
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
+            </div>
+
+        {{else if (eq kind "toggles")}}
+            <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
+                {{#each slots}}
+                    <div class="cp-dialog-slot">
+                        <input type="checkbox" id="cp-switch-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" {{#if (gte ../picked ../limit)}}{{#unless checked}}disabled{{/unless}}{{/if}} {{#if checked}}checked{{/if}}>
+                        <label class="cp-dialog-caption" for="cp-switch-{{@../index}}-{{@index}}">
+                            {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
+                            <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
-                    {{/each}}
-                </div>
-            {{else}}
-                {{#each options}}
-                    <input type="checkbox" {{#if (gte ../currentNum ../totalMax)}}{{#unless isChecked}}disabled{{/unless}}{{/if}} id="i{{@../index}}j{{@index}}" name="{{name}}" {{#if isChecked}}checked{{/if}}>
-                    <label for="i{{@../index}}j{{@index}}">
-                        {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                        <p class="label-text">{{localize label}}</p>
-                    </label>
-                {{/each}}
-            {{/if}}
-        {{else if isRadio}}
-            {{#if displayAsRows}}
-                <div class="row-display">
-                    {{#each options}}
-                        <input type="radio" id="i{{@../index}}j{{@index}}" name="{{../radioName}}" value="{{name}}" {{#if isChecked}}checked{{/if}}>
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
-                        </label>
-                    {{/each}}
-                </div>
-            {{else}}
-                {{#each options}}
-                    <input type="radio" id="i{{@../index}}j{{@index}}" name="{{../radioName}}" value="{{name}}" {{#if isChecked}}checked{{/if}}>
-                    <label for="i{{@../index}}j{{@index}}">
-                        {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                        <p class="label-text">{{localize label}}</p>
-                    </label>
-                {{/each}}
-            {{/if}}
-        {{else if isSelectAmount}}
-            {{#if displayAsRows}}
-                <div class="row-display">
-                    {{#each options}}
-                        <select id="i{{@../index}}j{{@index}}" name="{{name}}">
-                            {{#each options}}
-                                <option value="{{this}}" {{#if (gt this ../currentMaxAmount)}}disabled{{/if}} {{#if (eq this ../currentAmount)}}selected{{/if}}>{{this}}</option>
-                            {{/each}}
-                        </select>
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
-                        </label>
-                    {{/each}}
-                </div>
-            {{else}}
-                {{#each options}}
-                    <div>
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
-                        </label>
-                        <select id="i{{@../index}}j{{@index}}" name="{{name}}">
-                            {{#each options}}
-                                <option value="{{this}}" {{#if (gt this ../currentMaxAmount)}}disabled{{/if}} {{#if (eq this ../currentAmount)}}selected{{/if}}>{{this}}</option>
-                            {{/each}}
-                        </select>
                     </div>
                 {{/each}}
-            {{/if}}
-        {{else if isSelectOption}}
-            {{#if displayAsRows}}
-                <div class="row-display">
-                    {{#each options}}
-                        <select id="i{{@../index}}j{{@index}}" name="{{name}}">
-                            {{#each options}}
-                                <option value="{{value}}" {{#if (eq value ../currentValue)}}selected{{/if}}>{{localize label}}</option>
-                            {{/each}}
-                        </select>
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
+            </div>
+
+        {{else if (eq kind "radios")}}
+            <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
+                {{#each slots}}
+                    <div class="cp-dialog-slot">
+                        <input type="radio" id="cp-radio-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{../group}}" value="{{name}}" {{#if checked}}checked{{/if}}>
+                        <label class="cp-dialog-caption" for="cp-radio-{{@../index}}-{{@index}}">
+                            {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
+                            <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
-                    {{/each}}
-                </div>
-            {{else}}
-                {{#each options}}
-                    <div>
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
-                        </label>
-                        <select id="i{{@../index}}j{{@index}}" name="{{name}}">
-                            {{#each options}}
-                                <option value="{{value}}" {{#if (eq value ../currentValue)}}selected{{/if}}>{{localize label}}</option>
-                            {{/each}}
-                        </select>
                     </div>
                 {{/each}}
-            {{/if}}
-        {{else if isSelectMany}}
-            <div class="flexcol">
-                {{#each options}}
-                    <div class="select-many">
-                        <label for="i{{@../index}}j{{@index}}">{{localize label option=i18nOption}}</label>
-                        <multi-select id="i{{@../index}}j{{@index}}" name="{{name}}" {{#if isDisabled}}disabled{{/if}} {{#if tooltip}}data-tooltip="{{tooltip}}"{{/if}}>
-                            {{#each options}}
-                                <option value="{{value}}" {{#if isSelected}}selected{{/if}} {{#if isDisabled}}disabled{{/if}} {{#if tooltip}}data-tooltip="{{tooltip}}"{{/if}}>
-                                    {{localize label}}
-                                </option>
+            </div>
+
+        {{else if (eq kind "amounts")}}
+            <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
+                {{#each slots}}
+                    <div class="cp-dialog-slot">
+                        <select id="cp-amount-{{@../index}}-{{@index}}" class="cp-dialog-select" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}">
+                            {{#each choices}}
+                                <option value="{{this}}" {{#if (gt this ../ceiling)}}disabled{{/if}} {{#if (eq this ../value)}}selected{{/if}}>{{this}}</option>
+                            {{/each}}
+                        </select>
+                        <label class="cp-dialog-caption" for="cp-amount-{{@../index}}-{{@index}}">
+                            {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
+                            <span class="cp-dialog-text">{{localize label}}</span>
+                        </label>
+                    </div>
+                {{/each}}
+            </div>
+
+        {{else if (eq kind "menus")}}
+            <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
+                {{#each slots}}
+                    <div class="cp-dialog-slot">
+                        <select id="cp-menu-{{@../index}}-{{@index}}" class="cp-dialog-select" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}">
+                            {{#each entries}}
+                                <option value="{{value}}" {{#if (eq value ../value)}}selected{{/if}}>{{localize label}}</option>
+                            {{/each}}
+                        </select>
+                        <label class="cp-dialog-caption" for="cp-menu-{{@../index}}-{{@index}}">
+                            {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
+                            <span class="cp-dialog-text">{{localize label}}</span>
+                        </label>
+                    </div>
+                {{/each}}
+            </div>
+
+        {{else if (eq kind "multiMenus")}}
+            <div class="cp-dialog-set">
+                {{#each slots}}
+                    <div class="cp-dialog-multi">
+                        <label class="cp-dialog-text" for="cp-multi-{{@../index}}-{{@index}}">{{localize label option=i18nOption}}</label>
+                        <multi-select id="cp-multi-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" {{#if disabled}}disabled{{/if}} {{#if tooltip}}data-tooltip="{{tooltip}}"{{/if}}>
+                            {{#each entries}}
+                                <option value="{{value}}" {{#if selected}}selected{{/if}} {{#if disabled}}disabled{{/if}} {{#if tooltip}}data-tooltip="{{tooltip}}"{{/if}}>{{localize label}}</option>
                             {{/each}}
                         </multi-select>
                     </div>
                 {{/each}}
             </div>
-        {{else if isText}}
-            {{#if displayAsRows}}
-                <div class="row-display">
-                    {{#each options}}
-                        <input type="text" id="i{{@../index}}j{{@index}}" name="{{name}}" value="{{value}}">
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
+
+        {{else if (eq kind "texts")}}
+            <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
+                {{#each slots}}
+                    <div class="cp-dialog-slot">
+                        <input type="text" id="cp-text-{{@../index}}-{{@index}}" class="cp-dialog-input" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" value="{{value}}">
+                        <label class="cp-dialog-caption" for="cp-text-{{@../index}}-{{@index}}">
+                            {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
+                            <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
-                    {{/each}}
-                </div>
-            {{else}}
-                {{#each options}}
-                    <div>
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
-                        </label>
-                        <input type="text" id="i{{@../index}}j{{@index}}" name="{{name}}" value="{{value}}">
                     </div>
                 {{/each}}
-            {{/if}}
-        {{else if isNumber}}
-            {{#if displayAsRows}}
-                <div class="row-display">
-                    {{#each options}}
-                        <input type="number" id="i{{@../index}}j{{@index}}" name="{{name}}" value="{{value}}">
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
+            </div>
+
+        {{else if (eq kind "numbers")}}
+            <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
+                {{#each slots}}
+                    <div class="cp-dialog-slot">
+                        <input type="number" id="cp-number-{{@../index}}-{{@index}}" class="cp-dialog-input" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" value="{{value}}">
+                        <label class="cp-dialog-caption" for="cp-number-{{@../index}}-{{@index}}">
+                            {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
+                            <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
-                    {{/each}}
-                </div>
-            {{else}}
-                {{#each options}}
-                    <div>
-                        <label for="i{{@../index}}j{{@index}}">
-                            {{#if image}}<img class="label-image" src={{image}}>{{/if}}
-                            <p class="label-text">{{localize label}}</p>
-                        </label>
-                        <input type="number" id="i{{@../index}}j{{@index}}" name="{{name}}" value="{{value}}">
                     </div>
                 {{/each}}
-            {{/if}}
-        {{else if isFilePicker}}
-            {{#if displayAsRows}}
-                <div class="row-display">
-                    {{#each options}}
-                        <label for="i{{@../index}}j{{@index}}"><p class="label-text">{{localize label}}</p></label>
-                        <file-picker id="i{{@../index}}j{{@index}}" name="{{name}}" type="{{type}}" value="{{value}}"></file-picker>
-                    {{/each}}
-                </div>
-            {{else}}
-                {{#each options}}
-                    <div>
-                        <label for="i{{@../index}}j{{@index}}"><p class="label-text">{{localize label}}</p></label>
-                        <file-picker id="i{{@../index}}j{{@index}}" name="{{name}}" type="{{type}}" value="{{value}}"></file-picker>
+            </div>
+
+        {{else if (eq kind "paths")}}
+            <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
+                {{#each slots}}
+                    <div class="cp-dialog-slot">
+                        <label class="cp-dialog-text" for="cp-path-{{@../index}}-{{@index}}">{{localize label}}</label>
+                        <file-picker id="cp-path-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" type="{{type}}" value="{{value}}"></file-picker>
                     </div>
                 {{/each}}
-            {{/if}}
+            </div>
         {{/if}}
-        </div>
     {{/each}}
 </div>

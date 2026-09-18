@@ -3,10 +3,10 @@
  *
  * Exposes:
  * - socketlib-backed remote functions (updateTargets / teleport)
- * - ClasspackDialogApp: an ApplicationV2-based dialog (similar to CPR's DialogApp)
+ * - ClasspackDialogApp: an ApplicationV2-based dialog window
  * - ClasspackTeleport: point-and-click token teleporting
  * - ClasspackCrosshairs: the measured-template crosshairs helper used by teleport
- * - dialogUtils: CPR-style dialog helpers (buttonDialog, selectTargetDialog, ...)
+ * - dialogUtils: dialog helpers (buttonDialog, selectTargetDialog, ...)
  *
  * Global access:
  *   globalThis.dnd5eClasspack / globalThis.classpack
@@ -32,7 +32,7 @@ const api = {
   Teleport: ClasspackTeleport,
 
   /**
-   * Open an ApplicationV2 dialog. Signature matches CPR:
+   * Open an ApplicationV2 dialog:
    * dialog(title, content, inputs, buttons, options?)
    *
    * The optional fifth argument may include `userId` (or `user`). When that
@@ -186,9 +186,13 @@ const api = {
    * `{x, y}` point.
    *
    * The movement is collision-aware (`options.checkCollision`, default true)
-   * and snaps to the grid. If the local user lacks permission to update the
-   * targets, only the computed token updates are sent to a GM client via
-   * socketlib.
+   * and snaps to the grid. It is applied through Foundry's movement pipeline so
+   * the displacement animates using each token's own movement action (walk,
+   * fly, swim, ...). Set `options.animate` to `false` for an instant jump, or
+   * pass `options.animation` (e.g. `{duration: 400}`) to steer the animation.
+   *
+   * If the local user lacks permission to update the targets, only the computed
+   * token updates are sent to a GM client via socketlib.
    */
   push: async function (targets, origin, distance, options = {}) {
     const resolved = [];
@@ -211,16 +215,23 @@ const api = {
       return;
     }
 
+    // Route through Foundry's movement pipeline so the displacement is animated.
+    // `isPaste` must NOT be set: it tags the waypoints as "displace", and
+    // `CONFIG.Token.movement.actions.displace` has a zero animation duration.
+    // `options.animate === false` opts back into an instant jump.
+    const updateOptions = { animate: options.animate !== false };
+    if (options.animation) updateOptions.animation = options.animation;
+
     const localCanMove = resolved.every(canUpdateToken);
     if (!localCanMove && api.socket) {
-      return await api.socket.executeAsGM("pushUpdate", updates);
+      return await api.socket.executeAsGM("pushUpdate", updates, updateOptions);
     }
     if (!localCanMove) {
       log("warn", "push: no permission to move the targets and socketlib is not ready.");
       return;
     }
 
-    await canvas.scene.updateEmbeddedDocuments("Token", updates, { isPaste: true });
+    await canvas.scene.updateEmbeddedDocuments("Token", updates, updateOptions);
     return updates;
   },
 

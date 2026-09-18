@@ -1,8 +1,7 @@
 /**
- * Dialog utility functions, modelled after chris-premades' internal dialog
- * helpers. All helpers accept a `userId` option and route through the open
- * dialog function provided by the entry point (so socketlib routing is
- * applied automatically).
+ * Dialog helpers used by the classpack macros. Every helper accepts a `userId`
+ * option and routes through the open-dialog function supplied by the entry
+ * point, so socketlib routing is applied automatically.
  */
 
 function stripHtml(value) {

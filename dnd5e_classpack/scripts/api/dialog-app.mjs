@@ -1,32 +1,43 @@
 /**
- * ApplicationV2 dialog (modelled after chris-premades DialogApp).
+ * An ApplicationV2 based form dialog used by the classpack API.
+ *
+ * The dialog is driven by a compact `inputs` descriptor:
+ *
+ *   [ "text", [ { label, name, options } ], { displayAsRows } ]
+ *
+ * `ClasspackDialogApp.dialog(title, content, inputs, buttons, options)`
+ * resolves with the collected values, or `null` when the window is closed.
  */
 
 import { log, localize, sleep } from "./utils.mjs";
 
-/* -------------------------------------------------------------------------- *
- *  ApplicationV2 dialog (modelled after chris-premades DialogApp)
- * -------------------------------------------------------------------------- */
-
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
+const TEMPLATE = "modules/dnd5e_classpack/templates/dialogApp.hbs";
+
 class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
-  constructor(args) {
-    let title, content, inputs, buttons, options;
-    if (args?.length) ([title, content, inputs, buttons, options] = args);
+  #collected;
+  #formContext;
 
-    super(options?.id ? { id: options.id } : {});
+  constructor(args = []) {
+    const [title, content, inputs, buttons, options] = args;
 
-    if (args?.length) {
-      this.position ??= {};
-      this.position.width = options?.width ?? "auto";
-      this.position.height = options?.height ?? "auto";
-      this.windowTitle = game.i18n.localize(title);
-      this.content = content;
-      this.inputs = inputs ?? [];
-      this.buttons = buttons;
-      this.buttonTemplate = { type: "submit", label: "label", name: "name", action: "confirm" };
-    }
+    // ApplicationV2 freezes `this.options` and only keeps an explicit size while
+    // it lives in `options.position`. Re-renders otherwise reset the window to
+    // "auto" and it shrinks to fit. `position` therefore has to go through super.
+    const position = {};
+    if (Number.isFinite(options?.width)) position.width = options.width;
+    if (Number.isFinite(options?.height)) position.height = options.height;
+
+    super({
+      ...(options?.id ? { id: options.id } : {}),
+      position
+    });
+
+    this.dialogTitle = game.i18n.localize(title);
+    this.content = content;
+    this.inputs = inputs ?? [];
+    this.buttons = buttons;
   }
 
   static DEFAULT_OPTIONS = {
@@ -35,29 +46,26 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
       handler: ClasspackDialogApp.formHandler,
       submitOnChange: false,
       closeOnSubmit: false,
-      id: "classpack-dialog-app-window"
+      id: "classpack-dialog-form"
     },
     actions: { confirm: ClasspackDialogApp.confirm },
-    window: { title: "Default Title", contentClasses: ["standard-form"] }
+    window: { title: "ClassPack", contentClasses: ["standard-form"] }
   };
 
   static PARTS = {
-    form: {
-      template: "modules/dnd5e_classpack/templates/dialogApp.hbs",
-      scrollable: [""]
-    },
+    form: { template: TEMPLATE, scrollable: [""] },
     footer: { template: "templates/generic/form-footer.hbs" }
   };
 
-  static async dialog(...args) {
+  static dialog(...args) {
     return new Promise(resolve => {
       const app = new ClasspackDialogApp(args);
       app.addEventListener("close", () => resolve(null), { once: true });
-      app.render({ force: true });
-      app.submit = async result => {
+      app.submit = result => {
         resolve(result);
         app.close();
       };
+      app.render({ force: true });
     });
   }
 
@@ -80,325 +88,298 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
   }
 
   get title() {
-    return this.windowTitle;
+    return this.dialogTitle;
   }
 
   get results() {
-    return this._results;
+    return this.#collected;
   }
 
   set results(value) {
-    this._results = value;
+    this.#collected = value;
   }
 
   get context() {
-    return this._context;
+    return this.#formContext;
   }
 
   set context(value) {
-    this._context = value;
+    this.#formContext = value;
   }
 
-  makeButton(label, name) {
+  /* -------------------------------------------------------------------- *
+   *  Descriptor -> template context
+   * -------------------------------------------------------------------- */
+
+  static footerButton(label, name) {
     return { type: "submit", action: "confirm", label, name };
   }
 
-  makeArray(min, max) {
+  integerRange(min, max) {
     const values = [];
-    for (let i = min; i < max + 1; i++) values.push(i);
+    for (let value = min; value <= max; value++) values.push(value);
     return values;
   }
 
-  formatInputs() {
-    const context = {};
-    context.content = this.content;
-    context.inputs = [];
-    context.buttons = [];
-
-    for (const [type, options, config] of this.inputs) {
-      switch (type) {
-        case "button": {
-          const buttons = [];
-          for (const option of options) {
-            buttons.push({
-              label: option.label,
-              name: option.name,
-              image: option.options?.image ?? undefined,
-              tooltip: option.options?.tooltip ?? undefined,
-              reference: option.options?.reference ?? undefined
-            });
-          }
-          context.inputs.push({ isButton: true, displayAsRows: config?.displayAsRows ?? false, options: buttons });
-          break;
-        }
-        case "checkbox": {
-          const checkboxes = [];
-          for (const option of options) {
-            checkboxes.push({
-              label: option.label,
-              name: option.name,
-              isChecked: option.options?.isChecked ?? false,
-              image: option.options?.image ?? undefined
-            });
-          }
-          context.inputs.push({
-            isCheckbox: true,
-            displayAsRows: config?.displayAsRows ?? false,
-            options: checkboxes,
-            totalMax: config?.totalMax ?? 99,
-            currentNum: checkboxes.filter(o => o.isChecked).length
-          });
-          break;
-        }
-        case "radio": {
-          const radios = [];
-          for (const option of options) {
-            radios.push({
-              label: option.label,
-              name: option.name,
-              isChecked: option.options?.isChecked ?? false,
-              image: option.options?.image ?? undefined
-            });
-          }
-          context.inputs.push({
-            isRadio: true,
-            displayAsRows: config?.displayAsRows ?? false,
-            options: radios,
-            radioName: config?.radioName ?? "radio"
-          });
-          break;
-        }
-        case "selectAmount": {
-          const amounts = [];
-          for (const option of options) {
-            amounts.push({
-              label: option.label,
-              name: option.name,
-              minAmount: option.options?.minAmount ?? 0,
-              maxAmount: option.options?.maxAmount ?? 10,
-              currentAmount: option.options?.currentAmount ?? 0,
-              currentMaxAmount: option.options?.maxAmount ?? 10,
-              weight: option.options?.weight ?? 1,
-              options: this.makeArray(option.options?.minAmount ?? 0, option.options?.maxAmount ?? 10),
-              image: option.options?.image ?? undefined
-            });
-          }
-          context.inputs.push({
-            isSelectAmount: true,
-            totalMax: config?.totalMax,
-            displayAsRows: config?.displayAsRows ?? false,
-            options: amounts
-          });
-          context.inputs[context.inputs.length - 1] = this.currentMaxAmounts(context.inputs[context.inputs.length - 1]);
-          break;
-        }
-        case "selectMany": {
-          const selects = [];
-          for (const option of options) {
-            const selected = option.options?.value ?? [];
-            selects.push({
-              label: option.label,
-              name: option.name,
-              value: selected,
-              options: (option.options?.options ?? []).map(entry => ({
-                label: entry.label,
-                value: entry.value,
-                isSelected: selected.includes(entry.value)
-              })),
-              image: option.options?.image ?? undefined
-            });
-          }
-          context.inputs.push({ isSelectMany: true, displayAsRows: config?.displayAsRows ?? false, options: selects });
-          break;
-        }
-        case "selectOption": {
-          const selects = [];
-          for (const option of options) {
-            const rawOptions = option.options?.options ?? ["none"];
-            const selectOptions = rawOptions.length && rawOptions[0]?.label === undefined
-              ? rawOptions.map(value => ({ value, label: value }))
-              : rawOptions;
-            selects.push({
-              label: option.label,
-              name: option.name,
-              currentValue: option.options?.currentValue ?? "none",
-              options: selectOptions,
-              image: option.options?.image ?? undefined
-            });
-          }
-          context.inputs.push({ isSelectOption: true, displayAsRows: config?.displayAsRows ?? false, options: selects });
-          break;
-        }
-        case "text": {
-          const texts = [];
-          for (const option of options) {
-            texts.push({
-              label: option.label,
-              name: option.name,
-              value: option.options?.currentValue ?? "",
-              image: option.options?.image ?? undefined
-            });
-          }
-          context.inputs.push({ isText: true, displayAsRows: config?.displayAsRows ?? false, options: texts });
-          break;
-        }
-        case "number": {
-          const numbers = [];
-          for (const option of options) {
-            numbers.push({
-              label: option.label,
-              name: option.name,
-              value: option.options?.currentValue ?? 0,
-              image: option.options?.image ?? undefined
-            });
-          }
-          context.inputs.push({ isNumber: true, displayAsRows: config?.displayAsRows ?? false, options: numbers });
-          break;
-        }
-        case "filePicker": {
-          const pickers = [];
-          for (const option of options) {
-            pickers.push({
-              label: option.label,
-              name: option.name,
-              value: option.options?.currentValue ?? "",
-              type: option.options?.type ?? "any"
-            });
-          }
-          context.inputs.push({ isFilePicker: true, displayAsRows: config?.displayAsRows ?? false, options: pickers });
-          break;
-        }
-        default:
-          log("warn", `Unknown dialog input type: ${type}`);
-      }
-    }
-
+  buildFooter() {
     switch (this.buttons) {
       case "yesNo":
-        context.buttons.push(
-          this.makeButton(localize("Yes"), "true"),
-          this.makeButton(localize("No"), "false")
-        );
-        break;
+        return [
+          ClasspackDialogApp.footerButton(localize("Yes"), "true"),
+          ClasspackDialogApp.footerButton(localize("No"), "false")
+        ];
       case "okCancel":
-        context.buttons.push(
-          this.makeButton(localize("OK", "OK"), "true"),
-          this.makeButton(localize("Cancel"), "false")
-        );
-        break;
+        return [
+          ClasspackDialogApp.footerButton(localize("OK", "OK"), "true"),
+          ClasspackDialogApp.footerButton(localize("Cancel"), "false")
+        ];
       case "ok":
-        context.buttons.push(this.makeButton(localize("OK", "OK"), "true"));
-        break;
+        return [ClasspackDialogApp.footerButton(localize("OK", "OK"), "true")];
       case "cancel":
-        context.buttons.push(this.makeButton(localize("Cancel"), "false"));
-        break;
+        return [ClasspackDialogApp.footerButton(localize("Cancel"), "false")];
       default:
-        break;
+        return [];
+    }
+  }
+
+  /**
+   * Turn one `[type, options, config]` descriptor into a group of slots.
+   */
+  buildGroup(type, options, config = {}) {
+    const rows = config?.displayAsRows ?? false;
+    const common = option => ({
+      label: option.label,
+      name: option.name,
+      image: option.options?.image
+    });
+
+    switch (type) {
+      case "button":
+        return {
+          kind: "buttons",
+          rows,
+          slots: options.map(option => ({
+            ...common(option),
+            tooltip: option.options?.tooltip,
+            reference: option.options?.reference
+          }))
+        };
+
+      case "checkbox": {
+        const slots = options.map(option => ({
+          ...common(option),
+          checked: option.options?.isChecked ?? false
+        }));
+        return {
+          kind: "toggles",
+          rows,
+          limit: config?.totalMax ?? 99,
+          picked: slots.filter(slot => slot.checked).length,
+          slots
+        };
+      }
+
+      case "radio":
+        return {
+          kind: "radios",
+          rows,
+          group: config?.radioName ?? "radio",
+          slots: options.map(option => ({
+            ...common(option),
+            checked: option.options?.isChecked ?? false
+          }))
+        };
+
+      case "selectAmount": {
+        const slots = options.map(option => {
+          const floor = option.options?.minAmount ?? 0;
+          const max = option.options?.maxAmount ?? 10;
+          return {
+            ...common(option),
+            weight: option.options?.weight ?? 1,
+            floor,
+            max,
+            value: option.options?.currentAmount ?? 0,
+            choices: this.integerRange(floor, max),
+            ceiling: max
+          };
+        });
+        return this.applyBudget({ kind: "amounts", rows, budget: config?.totalMax, slots });
+      }
+
+      case "selectMany":
+        return {
+          kind: "multiMenus",
+          rows,
+          slots: options.map(option => {
+            const chosen = option.options?.value ?? [];
+            return {
+              ...common(option),
+              value: chosen,
+              entries: (option.options?.options ?? []).map(entry => ({
+                label: entry.label,
+                value: entry.value,
+                selected: chosen.includes(entry.value)
+              }))
+            };
+          })
+        };
+
+      case "selectOption":
+        return {
+          kind: "menus",
+          rows,
+          slots: options.map(option => {
+            const raw = option.options?.options ?? ["none"];
+            const entries = raw.length && typeof raw[0] === "object"
+              ? raw.map(entry => ({ value: entry.value, label: entry.label }))
+              : raw.map(value => ({ value, label: value }));
+            return {
+              ...common(option),
+              value: option.options?.currentValue ?? "none",
+              entries
+            };
+          })
+        };
+
+      case "text":
+        return {
+          kind: "texts",
+          rows,
+          slots: options.map(option => ({
+            ...common(option),
+            value: option.options?.currentValue ?? ""
+          }))
+        };
+
+      case "number":
+        return {
+          kind: "numbers",
+          rows,
+          slots: options.map(option => ({
+            ...common(option),
+            value: option.options?.currentValue ?? 0
+          }))
+        };
+
+      case "filePicker":
+        return {
+          kind: "paths",
+          rows,
+          slots: options.map(option => ({
+            label: option.label,
+            name: option.name,
+            value: option.options?.currentValue ?? "",
+            type: option.options?.type ?? "any"
+          }))
+        };
+
+      default:
+        log("warn", `Unknown dialog input type: ${type}`);
+        return null;
+    }
+  }
+
+  /**
+   * Clamp an "amount" group against its optional point budget. Every slot keeps
+   * the highest value it can still afford given the other slots' current picks.
+   */
+  applyBudget(group) {
+    if (group.budget === undefined) {
+      for (const slot of group.slots) slot.ceiling = slot.max;
+      return group;
     }
 
-    this.context = context;
+    let spent = 0;
+    for (const slot of group.slots) spent += slot.value * slot.weight;
+    const remaining = group.budget - spent;
+
+    for (const slot of group.slots) {
+      const affordable = Math.floor((remaining + slot.value * slot.weight) / slot.weight);
+      slot.ceiling = Math.max(slot.floor, Math.min(slot.max, affordable));
+    }
+    return group;
+  }
+
+  buildContext() {
+    const groups = [];
+    for (const [type, options, config] of this.inputs) {
+      const group = this.buildGroup(type, options ?? [], config);
+      if (group) groups.push(group);
+    }
+    return { content: this.content, groups, buttons: this.buildFooter() };
   }
 
   async _prepareContext() {
-    if (!this.context) this.formatInputs();
+    if (!this.context) this.context = this.buildContext();
     return this.context;
   }
 
-  currentMaxAmounts(input) {
-    const context = foundry.utils.deepClone(input);
-    const totalMax = context.totalMax;
-    let remaining = totalMax;
-    if (remaining === undefined) return context;
-    for (const option of context.options) remaining -= option.currentAmount * option.weight;
-    for (const option of context.options) {
-      option.currentMaxAmount = Math.floor((remaining + option.currentAmount * option.weight) / option.weight);
-    }
-    return context;
-  }
+  /* -------------------------------------------------------------------- *
+   *  Interaction
+   * -------------------------------------------------------------------- */
 
   async _onChangeForm(formConfig, event) {
-    const target = event.target;
-    const context = this.context;
-    const match = target.id.match(/i(\d+)j(\d+)/);
-    if (!match) return;
-    const inputIndex = parseInt(match[1]);
-    const optionIndex = parseInt(match[2]);
-    let input = context.inputs[inputIndex];
-    if (!input) return;
+    const element = event.target;
+    const groupIndex = Number(element.dataset?.cpGroup);
+    const slotIndex = Number(element.dataset?.cpSlot);
+    if (!Number.isInteger(groupIndex) || !Number.isInteger(slotIndex)) return;
 
-    switch (target.type) {
-      case "checkbox": {
-        input.options[optionIndex].isChecked = target.checked;
-        input.currentNum = input.options.reduce((acc, option) => (option.isChecked ? acc + 1 : acc), 0);
-        break;
+    const group = this.context?.groups?.[groupIndex];
+    const slot = group?.slots?.[slotIndex];
+    if (!slot) return;
+
+    const tag = element.localName;
+
+    if (element.type === "checkbox") {
+      slot.checked = element.checked;
+      group.picked = group.slots.filter(entry => entry.checked).length;
+    } else if (element.type === "radio") {
+      for (const entry of group.slots) entry.checked = false;
+      slot.checked = true;
+    } else if (tag === "select") {
+      if (group.kind === "amounts") {
+        slot.value = Number(element.value);
+        this.context.groups[groupIndex] = this.applyBudget(group);
+      } else {
+        slot.value = element.value;
       }
-      case "select-one": {
-        if (input.isSelectAmount) {
-          input.options[optionIndex].currentAmount = Number(target.value);
-          if (input.options[optionIndex]?.weight) {
-            input = this.currentMaxAmounts(input);
-            context.inputs[inputIndex] = input;
-          }
-        } else {
-          input.options[optionIndex].currentValue = target.value;
-        }
-        break;
-      }
-      case "text":
-      case "number":
-        input.options[optionIndex].value = target.value;
-        break;
-      case "radio": {
-        input.options.forEach(option => (option.isChecked = false));
-        input.options[optionIndex].isChecked = target.checked;
-        break;
-      }
-      default:
-        if (target.tagName?.toLowerCase() === "multi-select") {
-          input.options[optionIndex].value = target.value;
-          input.options[optionIndex].options.forEach(option => {
-            option.isSelected = target.value.includes(option.value);
-          });
-        }
+    } else if (tag === "multi-select") {
+      slot.value = Array.from(element.value ?? []);
+      for (const entry of slot.entries ?? []) entry.selected = slot.value.includes(entry.value);
+    } else if (tag === "file-picker") {
+      slot.value = element.value;
+    } else if (element.type === "text" || element.type === "number") {
+      slot.value = element.value;
     }
 
-    if (target.localName === "file-picker") {
-      input.options[optionIndex].value = target.value;
-    }
-
-    this.context = context;
-    this.render(true);
+    this.render();
   }
 
+  /**
+   * Ping / highlight the referenced token when the user clicks or hovers an
+   * option image. Options without a matching canvas token are ignored.
+   */
   _onRender(context) {
-    const labels = this.element.querySelectorAll(".label-image");
-    for (const label of labels) {
-      const parentFor = label.parentElement?.getAttribute("for");
-      const match = parentFor?.match(/i(\d+)j(\d+)/);
-      if (!match) continue;
-      const inputIndex = parseInt(match[1]);
-      const optionIndex = parseInt(match[2]);
-      const option = context.inputs[inputIndex]?.options?.[optionIndex];
-      if (!option) continue;
+    const nodes = this.element?.querySelectorAll("[data-cp-token]") ?? [];
+    for (const node of nodes) {
+      const tokenId = node.dataset.cpToken;
+      if (!tokenId) continue;
 
-      label.addEventListener("click", async () => {
-        const token = canvas.tokens.get(option.name);
-        if (token) await canvas.ping(token.center);
+      const find = () => canvas.tokens?.get(tokenId);
+      const hover = state => {
+        const token = find();
+        if (!token) return;
+        token.hover = state;
+        token.refresh();
+      };
+
+      node.addEventListener("click", () => {
+        const token = find();
+        if (token) canvas.ping(token.center);
       });
-      label.addEventListener("mouseover", () => {
-        const token = canvas.tokens.get(option.name);
-        if (token) {
-          token.hover = true;
-          token.refresh();
-        }
-      });
-      label.addEventListener("mouseout", () => {
-        const token = canvas.tokens.get(option.name);
-        if (token) {
-          token.hover = false;
-          token.refresh();
-        }
-      });
+      node.addEventListener("mouseenter", () => hover(true));
+      node.addEventListener("mouseleave", () => hover(false));
     }
   }
 }
