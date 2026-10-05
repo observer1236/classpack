@@ -7,6 +7,7 @@
  */
 
 import { sleep } from "./utils.mjs";
+import { legacyPlacementAvailable, cancelUnavailablePlacement } from "../compatibility.mjs";
 
 const HAZARD_ICON = "icons/svg/hazard.svg";
 const TARGET_ICON = "icons/svg/dice-target.svg";
@@ -17,10 +18,14 @@ const MOVE_THROTTLE_MS = 20;
 const RIGHT_CLICK_SLOP_PX = 10;
 const MIN_SIZE_INCREASE = 0.25;
 
-class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
+// Keep the entry module importable when the legacy placeable is unavailable.
+// This fallback is never used for placement; it is removed in Phase 2.
+const LegacyTemplate = globalThis.foundry?.canvas?.placeables?.MeasuredTemplate ?? class {};
+class ClasspackCrosshairs extends LegacyTemplate {
   static ERROR_TEXTURE = HAZARD_ICON;
 
   constructor(config = {}, callbacks = {}) {
+    if (!legacyPlacementAvailable()) throw new Error("ClassPack legacy placement is unavailable; use showCrosshairs to cancel safely.");
     const params = {
       t: config.shape ?? "circle",
       user: game.user.id,
@@ -84,6 +89,7 @@ class ClasspackCrosshairs extends foundry.canvas.placeables.MeasuredTemplate {
    * confirms (or with `cancelled: true` once they cancel).
    */
   static async showCrosshairs(config = {}, callbacks = {}) {
+    if (!legacyPlacementAvailable()) return cancelUnavailablePlacement(config);
     let remembered = [];
     config = foundry.utils.mergeObject(config, ClasspackCrosshairs.defaultCrosshairsConfig(), { overwrite: false });
 
@@ -408,6 +414,7 @@ async function aimCrosshair({
   fudgeDistance = 0,
   validityFunctions = []
 }) {
+  if (!legacyPlacementAvailable()) return cancelUnavailablePlacement(crosshairsConfig);
   let boundaryGraphics;
   let boundaryContainer;
   let travelled = 0;

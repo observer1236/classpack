@@ -24,9 +24,11 @@ import { ClasspackTeleport } from "./api/teleport.mjs";
 import { createDialogUtils } from "./api/dialog-utils.mjs";
 import { calculatePushUpdates } from "./api/push.mjs";
 import { socketFunctions } from "./api/socket-functions.mjs";
+import { checkCompatibility, isCompatibleVersion } from "./compatibility.mjs";
 
 const api = {
   socket: null,
+  compatibility: null,
   DialogApp: ClasspackDialogApp,
   Crosshairs: ClasspackCrosshairs,
   Teleport: ClasspackTeleport,
@@ -258,7 +260,9 @@ Hooks.once("init", () => {
 
 Hooks.once("socketlib.ready", () => {
   const socketlib = globalThis.socketlib;
-  if (!socketlib) {
+  const dependency = Array.from(game.modules.get(MODULE_ID).relationships.requires).find(entry => entry.id === "socketlib");
+  const installed = game.modules.get("socketlib");
+  if (!socketlib || !installed?.active || !isCompatibleVersion(installed.version, dependency?.compatibility)) {
     log("warn", "socketlib is not available; remote functions will be disabled.");
     return;
   }
@@ -276,6 +280,7 @@ Hooks.once("socketlib.ready", () => {
 });
 
 Hooks.once("ready", () => {
+  api.compatibility = checkCompatibility();
   Hooks.callAll("dnd5eClasspackReady", api);
 });
 
