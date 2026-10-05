@@ -1,488 +1,216 @@
-/**
- * Interactive crosshair built on Foundry's MeasuredTemplate placeable.
- *
- * A crosshair is a short lived preview template that tracks the pointer until
- * the user left-clicks (confirm) or right-clicks (cancel). Teleport helpers use
- * it to let a player pick a destination on the canvas.
- */
+import { pointDistance, positionAtCenter, tokenCenter } from "./geometry.mjs";
+import { resolveOriginPoint } from "./utils.mjs";
 
-import { sleep } from "./utils.mjs";
-import { legacyPlacementAvailable, cancelUnavailablePlacement } from "../compatibility.mjs";
-
-const HAZARD_ICON = "icons/svg/hazard.svg";
+const active = new Map();
 const TARGET_ICON = "icons/svg/dice-target.svg";
+const HAZARD_ICON = "icons/svg/hazard.svg";
 
-const OUTLINE_ALPHA = 0.75;
-const PAN_AFTER_MS = 1000;
-const MOVE_THROTTLE_MS = 20;
-const RIGHT_CLICK_SLOP_PX = 10;
-const MIN_SIZE_INCREASE = 0.25;
-
-// Keep the entry module importable when the legacy placeable is unavailable.
-// This fallback is never used for placement; it is removed in Phase 2.
-const LegacyTemplate = globalThis.foundry?.canvas?.placeables?.MeasuredTemplate ?? class {};
-class ClasspackCrosshairs extends LegacyTemplate {
+/** Public facade; Foundry owns the transient Region and its event listeners. */
+class ClasspackCrosshairs {
   static ERROR_TEXTURE = HAZARD_ICON;
-
   constructor(config = {}, callbacks = {}) {
-    if (!legacyPlacementAvailable()) throw new Error("ClassPack legacy placement is unavailable; use showCrosshairs to cancel safely.");
-    const params = {
-      t: config.shape ?? "circle",
-      user: game.user.id,
-      distance: config.size,
-      x: config.x,
-      y: config.y,
-      width: 1,
-      texture: config.texture,
-      direction: config.direction,
-      document: { fillColor: config.fillColor }
-    };
-
-    super(new CONFIG.MeasuredTemplate.documentClass(params, { parent: canvas.scene }));
-
-    this.icon = config.icon ?? ClasspackCrosshairs.ERROR_TEXTURE;
-    this.label = config.label;
-    this.labelOffset = config.labelOffset;
-    this.tag = config.tag;
-    this.drawIcon = config.drawIcon;
-    this.drawOutline = config.drawOutline;
-    this.fillAlpha = config.fillAlpha;
-    this.tileTexture = config.tileTexture;
-    this.lockSize = config.lockSize;
-    this.lockPosition = config.lockPosition;
-    this.resolution = config.resolution;
-    this.hooks = callbacks ?? {};
-
-    this.inFlight = false;
+    this.config = { ...ClasspackCrosshairs.defaultCrosshairsConfig(), ...config };
+    Object.assign(this, this.config);
+    this.hooks = callbacks;
+    this.elevation ??= canvas.level?.elevation ?? 0;
+    this.scene = canvas.scene;
+    this.radius = this.size * this.scene.grid.size / this.scene.grid.distance / 2;
+    this.valid = false;
     this.cancelled = true;
-    this.radius = this.document.distance * this.scene.grid.size / 2;
-
-    this._listeners = [];
-    this._rightClick = { x: 0, y: 0 };
-    this._lastMove = 0;
-    this._armedAt = 0;
-  }
-
-  static defaultCrosshairsConfig() {
-    return {
-      size: canvas.dimensions.distance,
-      icon: TARGET_ICON,
-      label: "",
-      labelOffset: { x: 0, y: 0 },
-      tag: "crosshairs",
-      drawIcon: true,
-      drawOutline: true,
-      resolution: 2,
-      fillAlpha: 0,
-      tileTexture: false,
-      lockSize: true,
-      lockPosition: false,
-      rememberControlled: false,
-      texture: null,
-      direction: 0,
-      fillColor: game.user.color
-    };
-  }
-
-  /**
-   * Show a crosshair and resolve with its final template data once the user
-   * confirms (or with `cancelled: true` once they cancel).
-   */
-  static async showCrosshairs(config = {}, callbacks = {}) {
-    if (!legacyPlacementAvailable()) return cancelUnavailablePlacement(config);
-    let remembered = [];
-    config = foundry.utils.mergeObject(config, ClasspackCrosshairs.defaultCrosshairsConfig(), { overwrite: false });
-
-    if (config.rememberControlled) remembered = canvas.tokens.controlled;
-
-    const placed = "x" in config || "y" in config;
-    if (!placed) {
-      const pointer = canvas.app.renderer.events.pointer.getLocalPosition(canvas.app.stage);
-      Object.assign(config, ClasspackCrosshairs.getSnappedPosition(pointer, config.resolution));
-    }
-
-    const crosshair = new ClasspackCrosshairs(config, callbacks);
-    await crosshair.drawPreview();
-    const result = crosshair.toObject();
-
-    for (const token of remembered) token.control({ releaseOthers: false });
-
-    return result;
-  }
-
-  static collectPlaceables(template, type = "Token", contains = ClasspackCrosshairs._containsCenter) {
-    const types = Array.isArray(type) ? type : [type];
-    const collected = {};
-
-    for (const collection of types) {
-      collected[collection] = template.scene
-        .getEmbeddedCollection(collection)
-        .filter(placeable => contains(placeable.object, template));
-    }
-
-    return Array.isArray(type) ? collected : collected[types[0]];
-  }
-
-  static _containsCenter(placeable, template) {
-    return Math.hypot(placeable.center.x - template.x, placeable.center.y - template.y) <= template.radius;
-  }
-
-  static getCrosshair(tag) {
-    return canvas.templates.preview.children.find(child => child.tag === tag);
-  }
-
-  static getSnappedPosition({ x, y }, resolution) {
-    const shift = resolution < 0 ? canvas.grid.size / 2 : 0;
-    const snapped = canvas.grid.getSnappedPoint({ x: x - shift, y: y - shift }, { mode: 1, resolution });
-    return { x: snapped.x + shift, y: snapped.y + shift };
-  }
-
-  toObject() {
-    const result = foundry.utils.mergeObject(this.document.toObject(), {
-      cancelled: this.cancelled,
-      scene: this.scene,
-      radius: this.radius,
-      size: this.document.distance
-    });
-    delete result.width;
-    return result;
-  }
-
-  /* -------------------------------------------------------------------- *
-   *  Rendering
-   * -------------------------------------------------------------------- */
-
-  async drawPreview() {
-    await this.draw();
-    this.layer.preview.addChild(this);
-    this.layer.interactiveChildren = false;
-    this.inFlight = true;
-
-    this._bind();
-    this.hooks?.show?.(this);
-    await this.waitFor(() => !this.inFlight, -1);
-    this._unbind();
-
-    return this;
-  }
-
-  async draw() {
-    this.clear();
-
-    const texture = this.document.texture;
-    this._texture = texture ? await loadTexture(texture, { fallback: HAZARD_ICON }) : null;
-
-    this.template = this.addChild(new PIXI.Graphics());
-    this.controlIcon = this.addChild(this._makeMarker());
-    this.ruler = this.addChild(this._makeCaption());
-
-    this.refresh();
-    if (this.id) this.activateListeners();
-
-    return this;
-  }
-
-  _makeCaption() {
-    const style = CONFIG.canvasTextStyle.clone();
-    style.fontSize = Math.max(Math.round(0.36 * canvas.dimensions.size * 12) / 12, 36);
-    const caption = new foundry.canvas.containers.PreciseText(null, style);
-    caption.anchor.set(0, 0);
-    return caption;
-  }
-
-  _makeMarker() {
-    const size = Math.max(20 * Math.round(0.5 * canvas.dimensions.size / 20), 40);
-    const marker = new foundry.canvas.containers.ControlIcon({ texture: this.icon, size });
-    marker.visible = this.drawIcon;
-    marker.pivot.set(0.5 * size, 0.5 * size);
-    marker.angle = this.document.direction;
-    return marker;
-  }
-
-  _layoutCaption() {
-    this.ruler.text = this.label;
-    this.ruler.position.set(
-      -this.ruler.width / 2 + this.labelOffset.x,
-      this.template.height / 2 + 5 + this.labelOffset.y
-    );
-  }
-
-  refresh() {
-    if (!this.template || this._destroyed) return this;
-
-    const template = this.document;
-    const cellSize = canvas.dimensions.size;
-    this.position.set(template.x, template.y);
-
-    const reach = template.distance * cellSize / 2;
-    this.ray = foundry.canvas.geometry.Ray.fromAngle(
-      template.x,
-      template.y,
-      Math.toRadians(template.direction),
-      reach
-    );
-    this.t = this.computeShape(this);
-
-    this.template
-      .clear()
-      .lineStyle(this._borderThickness, this.document.borderColor, this.drawOutline ? OUTLINE_ALPHA : 0);
-
-    if (this._texture) {
-      const scale = this.tileTexture ? 1 : (2 * reach) / this._texture.width;
-      const shift = this.tileTexture ? 0 : reach;
-      this.template.beginTextureFill({
-        texture: this._texture,
-        matrix: new PIXI.Matrix().scale(scale, scale).translate(-shift, -shift)
-      });
-    } else {
-      this.template.beginFill(this.document.fillColor, this.fillAlpha);
-    }
-
-    this.template.drawShape(this.t);
-
-    this.controlIcon.visible = this.drawIcon;
-    this.controlIcon.border.visible = this._hover;
-    this.controlIcon.angle = template.direction;
-
-    this._layoutCaption();
-    return this;
-  }
-
-  get layer() {
-    return canvas.activeLayer;
-  }
-
-  /* -------------------------------------------------------------------- *
-   *  Pointer interaction
-   * -------------------------------------------------------------------- */
-
-  _bind() {
-    this._unbind();
-    this._armedAt = Date.now();
-    this._lastMove = 0;
-
-    this._moveFn = this._onMove.bind(this);
-    this._downFn = this._onDown.bind(this);
-    this._wheelFn = this._onWheel.bind(this);
-    this._rightDownFn = this._onRightDown.bind(this);
-    this._rightUpFn = this._onRightUp.bind(this);
-
-    canvas.stage.on("pointermove", this._moveFn);
-    canvas.stage.on("pointerdown", this._downFn);
-    canvas.app.view.onwheel = this._wheelFn;
-    canvas.app.view.onmousedown = this._rightDownFn;
-    canvas.app.view.onmouseup = this._rightUpFn;
-  }
-
-  _unbind() {
-    if (this._moveFn) canvas.stage.off("pointermove", this._moveFn);
-    if (this._downFn) canvas.stage.off("pointerdown", this._downFn);
-    canvas.app.view.onwheel = null;
-    canvas.app.view.onmousedown = null;
-    canvas.app.view.onmouseup = null;
-
-    this._moveFn = null;
-    this._downFn = null;
-    this._wheelFn = null;
-    this._rightDownFn = null;
-    this._rightUpFn = null;
-  }
-
-  /** Stop the interaction and tear the preview template down. */
-  _finish() {
     this.inFlight = false;
-    this._unbind();
-    this.actorSheet?.maximize?.();
-    this.layer.interactiveChildren = true;
-
-    setTimeout(() => {
-      if (this.template && !this.template.destroyed) this.template.destroy();
-      this._destroyed = true;
-      if (this.parent) this.layer.preview.removeChild(this);
-    }, 0);
   }
-
-  _onMove(event) {
-    event.stopPropagation();
-    if (this.lockPosition) return;
-
-    const now = Date.now();
-    if (now - this._lastMove <= MOVE_THROTTLE_MS) return;
-
-    const pointer = event.data.getLocalPosition(this.layer);
-    this.document.updateSource(ClasspackCrosshairs.getSnappedPosition(pointer, this.resolution));
+  static defaultCrosshairsConfig() {
+    return { size: globalThis.canvas?.scene?.grid.distance ?? 5, icon: TARGET_ICON,
+      label: "", tag: "crosshairs", direction: 0, drawIcon: true, drawOutline: true,
+      fillAlpha: 0, lockSize: true, lockPosition: false, resolution: 2, rememberControlled: false };
+  }
+  static show(config = {}, callbacks = {}) { return this.showCrosshairs(config, callbacks); }
+  static async showCrosshairs(config = {}, callbacks = {}) {
+    if (!globalThis.canvas?.ready || typeof canvas.regions?.placeRegion !== "function" || config.signal?.aborted) {
+      return { x: config.x ?? 0, y: config.y ?? 0, direction: config.direction ?? 0,
+        elevation: config.elevation ?? 0, valid: false, cancelled: true };
+    }
+    return new this(config, callbacks).drawPreview();
+  }
+  static getCrosshair(tag) { return active.get(tag); }
+  static getSnappedPosition(point, resolution = 2) {
+    if (!resolution || canvas.grid.isGridless) return { x: point.x, y: point.y };
+    const mode = resolution < 0 ? CONST.GRID_SNAPPING_MODES.VERTEX : CONST.GRID_SNAPPING_MODES.CENTER;
+    return canvas.grid.getSnappedPoint(point, { mode, resolution: Math.abs(resolution) });
+  }
+  static _containsCenter(placeable, crosshair) {
+    const center = placeable.document?.documentName === "Token" ? tokenCenter(placeable) : placeable.center;
+    return center && Math.hypot(center.x - crosshair.x, center.y - crosshair.y) <= crosshair.radius;
+  }
+  static collectPlaceables(crosshair, type = "Token", contains = this._containsCenter) {
+    const types = Array.isArray(type) ? type : [type], result = {};
+    for (const name of types) result[name] = Array.from((crosshair.scene ?? canvas.scene).getEmbeddedCollection(name))
+      .filter(doc => doc.object && contains(doc.object, crosshair));
+    return Array.isArray(type) ? result : result[types[0]];
+  }
+  toObject() {
+    return { x: this.x ?? 0, y: this.y ?? 0, direction: this.direction,
+      elevation: this.elevation, valid: this.valid && !this.cancelled, cancelled: this.cancelled };
+  }
+  refresh() {
+    if (this.preview && !this.preview.destroyed) {
+      this.preview.document.color = this.valid ? (this.config.fillColor ?? game.user.color) : "#ff3333";
+      this.preview.renderFlags.set({ refresh: true });
+    }
+    return this;
+  }
+  async draw() { return this.refresh(); }
+  _callback(name) {
+    try {
+      const result = this.hooks[name]?.(this);
+      if (name === "confirm" && result?.then) {
+        result.catch(error => console.error("ClassPack crosshairs confirm", error));
+        this.cancel();
+        return false;
+      }
+      if (result?.then) result.catch(error => { console.error(`ClassPack crosshairs ${name}`, error); this.cancel(); });
+      return result;
+    } catch (error) {
+      console.error(`ClassPack crosshairs ${name}`, error);
+      this.cancel();
+      return false;
+    }
+  }
+  cancel() {
+    // Core has no public cancel method. Only cancel the context owned by this facade.
+    if (this.preview && this.layer?._placementContext?.preview === this.preview) this.layer._cancelPlacement();
+  }
+  _validate() {
+    try {
+      this.valid = (this.config.validityFunctions ?? []).every(test => {
+        const value = test(this);
+        if (value?.then) {
+          value.catch(error => console.error("ClassPack placement validator", error));
+          throw new TypeError("ClassPack placement validators must be synchronous.");
+        }
+        return value !== false;
+      });
+    } catch (error) {
+      this.valid = false;
+      console.error("ClassPack placement validation failed", error);
+      this.cancel();
+    }
     this.refresh();
-    this._lastMove = now;
-
-    if (now - this._armedAt > PAN_AFTER_MS) canvas._onDragCanvasPan(event.data.originalEvent);
+    return this.valid;
   }
-
-  _onDown(event) {
-    if (event.data?.button !== 0) return;
-    event.stopPropagation();
-
-    const template = this.document;
-    this.radius = template.distance * this.scene.grid.size / 2;
-    this.cancelled = false;
-    this.document.updateSource(ClasspackCrosshairs.getSnappedPosition(template, this.resolution));
-    this._finish();
-
-    return true;
-  }
-
-  _onWheel(event) {
-    if (event.ctrlKey) event.preventDefault();
-    if (!event.altKey) event.stopPropagation();
-
-    const turn = canvas.grid.type > CONST.GRID_TYPES.SQUARE ? 30 : 15;
-    const delta = (event.ctrlKey ? turn : 5) * Math.sign(event.deltaY);
-    const template = this.document;
-
-    if (event.shiftKey && !this.lockSize) {
-      const distance = Math.max(template.distance + MIN_SIZE_INCREASE * Math.sign(event.deltaY), MIN_SIZE_INCREASE);
-      this.document.updateSource({ distance });
-      this.radius = distance * this.scene.grid.size / 2;
-    } else if (!event.altKey) {
-      this.document.updateSource({ direction: template.direction + delta });
+  async drawPreview() {
+    const layer = this.layer = canvas.regions, scene = this.scene;
+    const levelId = canvas.level?.id;
+    const sameView = () => canvas.scene === scene && canvas.level?.id === levelId;
+    const remembered = this.rememberControlled ? [...canvas.tokens.controlled] : [];
+    active.get(this.tag)?.cancel();
+    active.set(this.tag, this);
+    this.inFlight = true;
+    let timer, shown = false;
+    const signal = this.config.signal, abort = () => this.cancel();
+    const initialize = ({ document, preview }) => {
+      this.document = document;
+      if (preview) this.preview = preview;
+      if (!shown) {
+        shown = true;
+        this._callback("show");
+      }
+    };
+    try {
+      this.x ??= canvas.mousePosition.x; this.y ??= canvas.mousePosition.y;
+      const shape = { type: "circle", x: this.x, y: this.y, radius: Math.max(1, this.radius) };
+      const promise = layer.placeRegion({ name: this.label || "ClassPack", shapes: [shape],
+        color: this.config.fillColor ?? game.user.color, levels: canvas.level ? [canvas.level.id] : [],
+        visibility: CONST.REGION_VISIBILITY.ALWAYS, displayMeasurements: true }, {
+        create: false, allowRotation: true,
+        onMove: context => {
+          initialize(context);
+          const point = this.lockPosition ? { x: this.x, y: this.y }
+            : this.config.snapPoint ? this.config.snapPoint(context.position)
+              : ClasspackCrosshairs.getSnappedPosition(context.position, this.resolution);
+          this.x = point.x; this.y = point.y;
+          context.shape.move(point, { snap: false });
+          return false;
+        },
+        onRotate: context => {
+          initialize(context);
+          this.direction = (this.direction + (context.precise ? 5 : 15) * Math.sign(context.event.delta) + 360) % 360;
+          this._validate(); this._callback("rotate");
+          return false;
+        },
+        onChange: context => {
+          initialize(context);
+          this.x = context.shape.x; this.y = context.shape.y;
+          this._validate(); this._callback("move");
+        },
+        preConfirm: context => {
+          initialize(context);
+          if (!sameView()) { this.cancel(); return false; }
+          if (!this._validate()) {
+            ui.notifications.warn("ClassPack：落点无效，请重新选择，或右键取消。");
+            return false;
+          }
+          return this._callback("confirm") !== false;
+        },
+        preCommit: () => sameView() && !signal?.aborted && this._validate()
+      });
+      this.preview ??= layer._placementContext?.preview;
+      if (Number.isFinite(this.config.timeout) && this.config.timeout > 0) timer = setTimeout(abort, this.config.timeout);
+      signal?.addEventListener("abort", abort, { once: true });
+      if (signal?.aborted) abort();
+      const document = await promise;
+      if (document?.shapes.length && sameView() && !signal?.aborted) {
+        this.x = document.shapes[0].x; this.y = document.shapes[0].y;
+        this.cancelled = !this._validate();
+      }
+    } catch (error) {
+      this.cancel();
+      console.error("ClassPack Region placement failed", error);
+      ui.notifications.warn("ClassPack：放置失败，已取消操作。");
+    } finally {
+      clearTimeout(timer);
+      signal?.removeEventListener("abort", abort);
+      this.inFlight = false;
+      if (active.get(this.tag) === this) active.delete(this.tag);
+      if (sameView()) for (const token of remembered) {
+        if (!token.destroyed && token.document.parent === scene) token.control({ releaseOthers: false });
+      }
     }
-
-    this.refresh();
-  }
-
-  _onRightDown(event) {
-    if (event.button === 2) this._rightClick = { x: event.screenX, y: event.screenY };
-  }
-
-  _onRightUp(event) {
-    if (event.button !== 2) return;
-
-    const close = (a, b) => Math.abs(a - b) < RIGHT_CLICK_SLOP_PX;
-    if (close(this._rightClick.x, event.screenX) && close(this._rightClick.y, event.screenY)) {
-      this.cancelled = true;
-      this._finish();
-    }
-  }
-
-  /* -------------------------------------------------------------------- *
-   *  Geometry / async helpers
-   * -------------------------------------------------------------------- */
-
-  computeShape(shape) {
-    const result = shape._computeShape();
-
-    if (shape.document.t === "rect") {
-      const size = this.document.distance * this.scene.grid.size;
-      result.height = size;
-      result.width = size;
-      result.x = this.scene.grid.size / -2;
-      result.y = this.scene.grid.size / -2;
-    } else if (shape.document.t === "circle" && !game.settings.get("core", "gridTemplates")) {
-      const half = canvas.grid.size / 2;
-      result.radius = Math.round(result.radius / half) * half;
-    }
-
-    return result;
-  }
-
-  async waitFor(condition, maxIterations = 600, interval = 100) {
-    let iteration = 0;
-    while (!condition(iteration, iteration * interval) && (maxIterations < 0 || iteration < maxIterations)) {
-      iteration++;
-      await this.wait(interval);
-    }
-    return iteration !== maxIterations;
-  }
-
-  async wait(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return this.toObject();
   }
 }
 
-/**
- * Aim a crosshair from a token, optionally limiting it to a maximum range.
- * Returns the chosen template data plus a `valid` flag describing whether the
- * final position passed the range / collision checks.
- */
-async function aimCrosshair({
-  token,
-  maxRange,
-  crosshairsConfig,
-  centerpoint,
-  drawBoundries,
-  customCallbacks,
-  trackDistance = true,
-  fudgeDistance = 0,
-  validityFunctions = []
-}) {
-  if (!legacyPlacementAvailable()) return cancelUnavailablePlacement(crosshairsConfig);
-  let boundaryGraphics;
-  let boundaryContainer;
-  let travelled = 0;
-  let offset = 0;
-
-  if (maxRange) maxRange = Number(maxRange);
-
-  if (!centerpoint) {
-    const halfWidth = token.document.width / 2;
-    offset += canvas.grid.distance * Math.floor(halfWidth);
-    if (!fudgeDistance || offset === halfWidth * canvas.grid.distance) fudgeDistance = 2.5;
-    fudgeDistance += offset;
+/** Validate range and elevation on the scene grid at confirmation and commit. */
+async function aimCrosshair({ token, maxRange, crosshairsConfig = {}, centerpoint, customCallbacks = {},
+  validityFunctions = [], checkCollision = false, drawBoundries = true } = {}) {
+  if (!globalThis.canvas?.ready || !canvas.regions?.placeRegion) return ClasspackCrosshairs.showCrosshairs(crosshairsConfig);
+  const scene = canvas.scene;
+  const origin = centerpoint ? await resolveOriginPoint(centerpoint) : tokenCenter(token);
+  if (!origin) return { x: 0, y: 0, direction: 0, elevation: 0, valid: false, cancelled: true };
+  const tests = [crosshair => !Number.isFinite(Number(maxRange))
+    || pointDistance(scene, origin, crosshair) <= Number(maxRange) + 1e-6,
+    crosshair => !checkCollision || !token?.checkCollision(crosshair, { origin, type: "move", mode: "any" }),
+    ...validityFunctions];
+  const config = { x: origin.x, y: origin.y, elevation: origin.elevation ?? 0, ...crosshairsConfig,
+    validityFunctions: [...tests, ...(crosshairsConfig.validityFunctions ?? [])] };
+  if (token && !config.snapPoint) config.snapPoint = point => tokenCenter(token, positionAtCenter(token, { ...point, elevation: config.elevation }));
+  let boundary;
+  try {
+    if (drawBoundries && Number.isFinite(Number(maxRange)) && Number(maxRange) > 0
+      && globalThis.PIXI?.Graphics && canvas.stage?.addChild) {
+      boundary = new PIXI.Graphics();
+      boundary.eventMode = "none";
+      boundary.lineStyle(2, 0x66ccff, 0.9).beginFill(0x66ccff, 0.06)
+        .drawPolygon(scene.grid.getCircle(origin, Number(maxRange))).endFill();
+      canvas.stage.addChild(boundary);
+    }
+    return await ClasspackCrosshairs.showCrosshairs(config, customCallbacks);
+  } finally {
+    if (boundary && !boundary.destroyed) {
+      boundary.parent?.removeChild(boundary);
+      boundary.destroy({ children: true });
+    }
   }
-
-  centerpoint = centerpoint ?? token.center;
-
-  let valid = true;
-
-  const hooks = {
-    show: async crosshair => {
-      if (maxRange && drawBoundries) {
-        const radius = canvas.grid.size * ((maxRange + fudgeDistance + offset) / canvas.grid.distance);
-        boundaryGraphics = new PIXI.Graphics();
-        boundaryGraphics.lineStyle(5, 0xFFFFFF);
-        if (game.settings.get("core", "gridTemplates")
-          && game.settings.get("core", "gridDiagonals") !== CONST.GRID_DIAGONALS.EXACT) {
-          boundaryGraphics.drawPolygon(canvas.grid.getCircle(centerpoint, maxRange + fudgeDistance + offset));
-        } else {
-          boundaryGraphics.drawCircle(centerpoint.x, centerpoint.y, radius);
-        }
-        boundaryGraphics.tint = 0x32CD32;
-
-        boundaryContainer = new PIXI.Container();
-        boundaryContainer.addChild(boundaryGraphics);
-        canvas.drawings.addChild(boundaryContainer);
-      }
-
-      while (crosshair.inFlight) {
-        await sleep(100);
-        if (!trackDistance) continue;
-
-        travelled = Math.max(0, canvas.grid.measurePath([centerpoint, crosshair]).distance.toNearest(0.01) - offset);
-        const blocked = token.checkCollision(crosshair, { origin: token.center, type: "move", mode: "any" });
-        const outOfRange = maxRange ? travelled > maxRange : false;
-        const rejected = validityFunctions.some(test => !test(crosshair));
-        valid = !blocked && !outOfRange && !rejected;
-
-        crosshair.icon = valid ? (crosshairsConfig?.icon ?? crosshair.icon) : HAZARD_ICON;
-        if (boundaryGraphics) boundaryGraphics.tint = valid ? 0x32CD32 : 0xFF0000;
-        crosshair.label = `${travelled}/${maxRange}ft.`;
-        crosshair.draw();
-      }
-    },
-    ...(customCallbacks ?? {})
-  };
-
-  let config = trackDistance ? { label: "0ft" } : {};
-  config = { ...config, ...crosshairsConfig };
-  if (token?.document?.rotation) config.direction = token.document.rotation;
-
-  if (!maxRange) return await ClasspackCrosshairs.showCrosshairs(config);
-
-  const result = await ClasspackCrosshairs.showCrosshairs(config, hooks);
-
-  boundaryGraphics?.destroy();
-  boundaryContainer?.destroy();
-
-  return { ...result, valid };
 }
 
 export { ClasspackCrosshairs, aimCrosshair };

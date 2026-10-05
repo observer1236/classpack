@@ -47,20 +47,7 @@ export function checkCompatibility() {
   const report = inspectCompatibility();
   for (const issue of report.issues) console.warn(`[${MODULE_ID}] ${issue.severity}: ${issue.message}`);
   if (report.issues.length && game.user.isGM) {
-    ui.notifications.warn(`ClassPack 5.x 兼容检查：${report.issues.map(issue => issue.message).join(" ")}`);
+    ui.notifications.warn(`ClassPack 6.0.x 兼容检查：${report.issues.map(issue => issue.message).join(" ")}`);
   }
   return report;
-}
-
-/** Transitional import safety only. Phase 2 replaces the legacy placement API. */
-export function legacyPlacementAvailable() {
-  return typeof globalThis.foundry?.canvas?.placeables?.MeasuredTemplate === "function"
-    && typeof globalThis.CONFIG?.MeasuredTemplate?.documentClass === "function"
-    && Boolean(globalThis.canvas?.templates?.preview);
-}
-
-export function cancelUnavailablePlacement(config = {}) {
-  ui.notifications.warn("ClassPack：旧放置 API 在当前环境不可用，已取消操作。Region 放置将在迁移第二阶段接入。");
-  return { x: config.x ?? 0, y: config.y ?? 0, direction: config.direction ?? 0,
-    elevation: config.elevation ?? 0, valid: false, cancelled: true };
 }

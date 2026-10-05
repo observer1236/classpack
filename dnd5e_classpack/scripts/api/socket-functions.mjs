@@ -2,9 +2,8 @@
  * Socket-backed functions.
  */
 
-import { resolveToken } from "./utils.mjs";
+import { moveTokens } from "./movement.mjs";
 import { ClasspackDialogApp } from "./dialog-app.mjs";
-import { ClasspackTeleport } from "./teleport.mjs";
 
 /* -------------------------------------------------------------------------- *
  *  Local API + socket functions
@@ -27,64 +26,13 @@ const socketFunctions = {
     canvas.tokens?.setTargets(ids);
   },
 
-  /**
-   * Apply already-computed token position updates. Used when the crosshair UI
-   * runs on a player client but the player lacks permission to move the tokens.
-   * `updates` is an array of TokenDocument update objects.
-   */
-  teleportUpdate: async function (updates) {
-    if (!updates?.length) return;
-    await canvas.scene.updateEmbeddedDocuments("Token", updates, { isPaste: true });
-  },
+  /** Movement commits always name the originating scene. */
+  teleportUpdate: (sceneId, updates, options = {}) => moveTokens(sceneId, updates, { ...options, teleport: true }),
+  pushUpdate: (sceneId, updates, options = {}) => moveTokens(sceneId, updates, { ...options, teleport: false }),
 
-  /**
-   * Apply already-computed push/pull token updates. `updates` is an array of
-   * TokenDocument update objects; `updateOptions` carries the animation wish
-   * from the requesting client (`animate` / `animation`).
-   */
-  pushUpdate: async function (updates, updateOptions = {}) {
-    if (!updates?.length) return;
-    const options = { animate: updateOptions.animate !== false };
-    if (updateOptions.animation) options.animation = updateOptions.animation;
-    await canvas.scene.updateEmbeddedDocuments("Token", updates, options);
-  },
-
-  /**
-   * Teleport one or more tokens to a freely chosen point on the executing
-   * client. `tokens` is an array of TokenDocument UUIDs.
-   */
-  teleportPoint: async function (tokenUuids, options = {}) {
-    const tokens = [];
-    const list = Array.isArray(tokenUuids) ? tokenUuids : [tokenUuids];
-    for (const uuid of list) {
-      const token = await resolveToken(uuid);
-      if (token) tokens.push(token);
-    }
-    if (!tokens.length) return;
-
-    await ClasspackTeleport.point(tokens, options);
-  },
-
-  /**
-   * Teleport tokens to a destination token, using crosshairs on the executing
-   * client. `tokens` is an array of TokenDocument UUIDs; `targetUuid` is the
-   * UUID of the destination token.
-   */
-  teleport: async function (tokenUuids, targetUuid, options = {}) {
-    const tokens = [];
-    const list = Array.isArray(tokenUuids) ? tokenUuids : [tokenUuids];
-    for (const uuid of list) {
-      const token = await resolveToken(uuid);
-      if (token) tokens.push(token);
-    }
-    if (!tokens.length) return;
-
-    const target = await resolveToken(targetUuid);
-    if (!target) return;
-
-    if (tokens.length > 1) await ClasspackTeleport.group(tokens, target, options);
-    else await ClasspackTeleport.target(tokens[0], target, options);
-  }
+  // Re-enter the public API on the selected client so permission/GM forwarding
+  // and scene validation are identical to local calls.
+  teleportPoint: (uuids, options = {}) => globalThis.dnd5eClasspack.teleport(uuids, null, { ...options, userId: game.user.id }),
+  teleport: (uuids, target, options = {}) => globalThis.dnd5eClasspack.teleport(uuids, target, { ...options, userId: game.user.id })
 };
-
 export { socketFunctions };

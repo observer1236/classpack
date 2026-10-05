@@ -5,7 +5,7 @@
  * - socketlib-backed remote functions (updateTargets / teleport)
  * - ClasspackDialogApp: an ApplicationV2-based dialog window
  * - ClasspackTeleport: point-and-click token teleporting
- * - ClasspackCrosshairs: the measured-template crosshairs helper used by teleport
+ * - ClasspackCrosshairs: the Region placement facade used by teleport
  * - dialogUtils: dialog helpers (buttonDialog, selectTargetDialog, ...)
  *
  * Global access:
@@ -24,6 +24,8 @@ import { ClasspackTeleport } from "./api/teleport.mjs";
 import { createDialogUtils } from "./api/dialog-utils.mjs";
 import { calculatePushUpdates } from "./api/push.mjs";
 import { socketFunctions } from "./api/socket-functions.mjs";
+import { moveTokens, registerMovementActions } from "./api/movement.mjs";
+import { tokenDocument } from "./api/geometry.mjs";
 import { checkCompatibility, isCompatibleVersion } from "./compatibility.mjs";
 
 const api = {
@@ -99,142 +101,52 @@ const api = {
    * - `userId` / `user`: run the teleport (including its crosshair UI) on that
    *   user's client via socketlib.
    * - If no user is specified and the local user lacks update permission for
-   *   the tokens (or destination token), the crosshair UI still runs on the
+   *   the moved tokens, the crosshair UI still runs on the
    *   local client, and only the final token position updates are sent to a GM
    *   client via socketlib.
    */
   teleport: async function (tokens, target = null, options = {}) {
-    const resolved = [];
-    const list = Array.isArray(tokens) ? tokens : [tokens];
-    for (const tokenish of list) {
-      const token = await resolveToken(tokenish);
-      if (token) resolved.push(token);
+    const list = Array.isArray(tokens) || tokens instanceof Set ? Array.from(tokens) : [tokens];
+    const resolved = (await Promise.all(list.map(resolveToken))).filter(Boolean);
+    if (!resolved.length) return;
+    const sceneId = tokenDocument(resolved[0]).parent.id;
+    if (sceneId !== canvas.scene?.id) throw new Error("ClassPack placement requires the originating scene to be viewed.");
+    const reference = target == null ? null : await resolveToken(target);
+    if (target != null && !reference) return;
+    const requested = resolveUserId(options.userId ?? options.user);
+    if (requested && requested !== game.user.id && api.socket) {
+      const remote = toSocketSafeOptions({ ...options,
+        centerpoint: options.centerpoint ? await resolveOriginPoint(options.centerpoint) : undefined }, requested);
+      const uuids = resolved.map(token => tokenDocument(token).uuid);
+      return reference ? api.socket.executeAsUser("teleport", requested, uuids, tokenDocument(reference).uuid, remote)
+        : api.socket.executeAsUser("teleportPoint", requested, uuids, remote);
     }
-    if (!resolved.length) {
-      log("warn", "teleport: no tokens could be resolved to canvas placeables.");
-      return;
+    const local = resolved.every(canUpdateToken);
+    if (!local && !api.socket) {
+      log("warn", "No permission to move these tokens; socketlib is unavailable.");
+      return { x: 0, y: 0, direction: 0, elevation: 0, valid: false, cancelled: true };
     }
-
-    const tokenUuids = resolved.map(token => token.document?.uuid ?? token.document?.id ?? token.id);
-    const requestedUserId = resolveUserId(options.userId ?? options.user);
-
-    // Resolve an optional destination token.
-    let targetToken = null;
-    if (target !== null && target !== undefined) {
-      targetToken = await resolveToken(target);
-      if (!targetToken) return;
-    }
-
-    // Point mode: no destination token, choose any point within range.
-    if (!targetToken) {
-      if (requestedUserId && requestedUserId !== game.user.id) {
-        if (!api.socket) {
-          log("warn", "socketlib is not ready; teleporting on the local client instead.");
-        } else {
-          const remoteOptions = toSocketSafeOptions(options, requestedUserId);
-          return await api.socket.executeAsUser("teleportPoint", requestedUserId, tokenUuids, remoteOptions);
-        }
-      }
-
-      const localCanMove = resolved.every(canUpdateToken);
-      if (!localCanMove && api.socket) {
-        const gmCommit = async updates => api.socket.executeAsGM("teleportUpdate", updates);
-        await ClasspackTeleport.point(resolved, { ...options, commit: gmCommit });
-        return;
-      }
-      if (!localCanMove) {
-        log("warn", "No permission to move the target tokens and socketlib is not ready; teleport was not performed.");
-        return;
-      }
-
-      await ClasspackTeleport.point(resolved, options);
-      return;
-    }
-
-    const targetUuid = targetToken.document?.uuid ?? targetToken.document?.id ?? targetToken.id;
-
-    // Token mode: explicitly requested a different client.
-    if (requestedUserId && requestedUserId !== game.user.id) {
-      if (!api.socket) {
-        log("warn", "socketlib is not ready; teleporting on the local client instead.");
-      } else {
-        const remoteOptions = toSocketSafeOptions(options, requestedUserId);
-        return await api.socket.executeAsUser("teleport", requestedUserId, tokenUuids, targetUuid, remoteOptions);
-      }
-    }
-
-    // Token mode, lacking permission locally? Keep the crosshair UI local and
-    // send only the resulting token updates to a GM client via socketlib.
-    const localCanMove = resolved.every(canUpdateToken) && canUpdateToken(targetToken);
-    if (!localCanMove && api.socket) {
-      const gmCommit = async updates => api.socket.executeAsGM("teleportUpdate", updates);
-      if (resolved.length > 1) await ClasspackTeleport.group(resolved, targetToken, { ...options, commit: gmCommit });
-      else await ClasspackTeleport.target(resolved[0], targetToken, { ...options, commit: gmCommit });
-      return;
-    }
-    if (!localCanMove) {
-      log("warn", "No permission to move the target tokens and socketlib is not ready; teleport was not performed.");
-      return;
-    }
-
-    if (resolved.length > 1) await ClasspackTeleport.group(resolved, targetToken, options);
-    else await ClasspackTeleport.target(resolved[0], targetToken, options);
+    const settings = local ? options : { ...options, commit: updates => api.socket.executeAsGM("teleportUpdate", sceneId, updates,
+      { animate: options.animate === true, animation: options.movementAnimation }) };
+    return reference ? (resolved.length > 1 ? ClasspackTeleport.group(resolved, reference, settings)
+      : ClasspackTeleport.target(resolved[0], reference, settings)) : ClasspackTeleport.point(resolved, settings);
   },
 
-  /**
-   * Push targets away from (positive distance) or pull them toward (negative
-   * distance) a reference origin. The origin may be a Token, a
-   * MeasuredTemplate (its source point is used), a UUID string, or a plain
-   * `{x, y}` point.
-   *
-   * The movement is collision-aware (`options.checkCollision`, default true)
-   * and snaps to the grid. It is applied through Foundry's movement pipeline so
-   * the displacement animates using each token's own movement action (walk,
-   * fly, swim, ...). Set `options.animate` to `false` for an instant jump, or
-   * pass `options.animation` (e.g. `{duration: 400}`) to steer the animation.
-   *
-   * If the local user lacks permission to update the targets, only the computed
-   * token updates are sent to a GM client via socketlib.
-   */
+  /** Push/pull in scene units, using a zero-cost forced movement action. */
   push: async function (targets, origin, distance, options = {}) {
-    const resolved = [];
-    const list = Array.isArray(targets) ? targets : [targets];
-    for (const tokenish of list) {
-      const token = await resolveToken(tokenish);
-      if (token) resolved.push(token);
-    }
-    if (!resolved.length) {
-      log("warn", "push: no targets could be resolved to canvas placeables.");
-      return;
-    }
-
-    const originPoint = await resolveOriginPoint(origin);
-    if (!originPoint) return;
-
-    const updates = calculatePushUpdates(resolved, originPoint, distance, options);
-    if (!updates.length) {
-      log("warn", "push: no targets could be moved; the path may be blocked or the distance is zero.");
-      return;
-    }
-
-    // Route through Foundry's movement pipeline so the displacement is animated.
-    // `isPaste` must NOT be set: it tags the waypoints as "displace", and
-    // `CONFIG.Token.movement.actions.displace` has a zero animation duration.
-    // `options.animate === false` opts back into an instant jump.
-    const updateOptions = { animate: options.animate !== false };
-    if (options.animation) updateOptions.animation = options.animation;
-
-    const localCanMove = resolved.every(canUpdateToken);
-    if (!localCanMove && api.socket) {
-      return await api.socket.executeAsGM("pushUpdate", updates, updateOptions);
-    }
-    if (!localCanMove) {
-      log("warn", "push: no permission to move the targets and socketlib is not ready.");
-      return;
-    }
-
-    await canvas.scene.updateEmbeddedDocuments("Token", updates, updateOptions);
-    return updates;
+    const list = Array.isArray(targets) || targets instanceof Set ? Array.from(targets) : [targets];
+    const resolved = (await Promise.all(list.map(resolveToken))).filter(Boolean);
+    if (!resolved.length) return {};
+    const sceneId = tokenDocument(resolved[0]).parent.id;
+    if (resolved.some(token => tokenDocument(token).parent.id !== sceneId)) throw new Error("ClassPack push requires one scene.");
+    const point = await resolveOriginPoint(origin);
+    if (!point) return {};
+    const updates = calculatePushUpdates(resolved, point, Number(distance), options);
+    const movementOptions = { animate: options.animate !== false, animation: options.animation };
+    if (resolved.every(canUpdateToken)) return moveTokens(sceneId, updates, movementOptions);
+    if (api.socket) return api.socket.executeAsGM("pushUpdate", sceneId, updates, movementOptions);
+    log("warn", "No permission to move these tokens; socketlib is unavailable.");
+    return {};
   },
 
   /**
@@ -254,6 +166,7 @@ api.firstOwner = firstOwner;
 
 Hooks.once("init", () => {
   registerHandlebarsHelpers();
+  registerMovementActions();
   const module = game.modules?.get?.(MODULE_ID);
   if (module) module.api = api;
 });
