@@ -78,7 +78,7 @@
       "system": {
         "changes": [
           {
-            "key": "ATL.light.dim",
+            "key": "token.light.dim",
             "value": 20,
             "priority": 50,
             "type": "override",
@@ -88,7 +88,7 @@
             "replacement": ""
           },
           {
-            "key": "ATL.light.bright",
+            "key": "token.light.bright",
             "value": 20,
             "priority": 50,
             "type": "override",
@@ -98,7 +98,7 @@
             "replacement": ""
           },
           {
-            "key": "ATL.light.color",
+            "key": "token.light.color",
             "value": "#f98026",
             "priority": 50,
             "type": "override",
@@ -108,8 +108,8 @@
             "replacement": ""
           },
           {
-            "key": "ATL.light.alpha",
-            "value": 0.4,
+            "key": "token.light.alpha",
+            "value": 0.16000000000000003,
             "priority": 50,
             "type": "override",
             "phase": "initial",
@@ -118,16 +118,32 @@
             "replacement": ""
           },
           {
-            "key": "ATL.light.animation",
-            "value": {
-              "type": "torch",
-              "speed": 1,
-              "intensity": 1
-            },
+            "key": "token.light.animation.type",
+            "value": "torch",
             "priority": 50,
             "type": "override",
             "phase": "initial",
             "_id": "PbQlIEYJBMVnkC24",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "token.light.animation.speed",
+            "value": 1,
+            "priority": 50,
+            "type": "override",
+            "phase": "initial",
+            "_id": "14bee96c488914c0",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "token.light.animation.intensity",
+            "value": 1,
+            "priority": 50,
+            "type": "override",
+            "phase": "initial",
+            "_id": "69040335ae7df782",
             "conditions": "{}",
             "replacement": ""
           }

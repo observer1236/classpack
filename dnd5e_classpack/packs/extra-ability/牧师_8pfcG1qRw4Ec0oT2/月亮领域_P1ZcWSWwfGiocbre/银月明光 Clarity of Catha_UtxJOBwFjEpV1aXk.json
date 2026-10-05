@@ -210,10 +210,10 @@
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.advantage.save.wis",
+            "key": "system.abilities.wis.save.roll.mode",
             "value": 1,
             "priority": 20,
-            "type": "custom",
+            "type": "add",
             "phase": "initial",
             "_id": "geYrFUumx54AbzBV",
             "conditions": "{}",
@@ -253,7 +253,6 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "specialDuration": [
             "isSave.wis"
@@ -278,7 +277,7 @@
         "exportSource": null
       },
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!UtxJOBwFjEpV1aXk.qYEr97lx5TP1xjPN"
     }

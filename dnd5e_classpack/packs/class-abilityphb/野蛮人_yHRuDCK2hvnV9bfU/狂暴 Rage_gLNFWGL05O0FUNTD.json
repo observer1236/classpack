@@ -232,7 +232,6 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "specialDuration": []
         },
@@ -261,7 +260,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.bonuses.mwak.damage",
+            "key": "system.rolls.damage.mwak.bonus",
             "value": "+ @scale.barbarian.rage-damage",
             "priority": 20,
             "type": "add",
@@ -301,20 +300,20 @@
             "replacement": ""
           },
           {
-            "key": "flags.midi-qol.advantage.save.str",
+            "key": "system.abilities.str.save.roll.mode",
             "value": 1,
             "priority": 20,
-            "type": "custom",
+            "type": "add",
             "phase": "initial",
             "_id": "Qt2LKxTCR7bq1SwI",
             "conditions": "{}",
             "replacement": ""
           },
           {
-            "key": "flags.midi-qol.advantage.check.str",
+            "key": "system.abilities.str.check.roll.mode",
             "value": 1,
             "priority": 20,
-            "type": "custom",
+            "type": "add",
             "phase": "initial",
             "_id": "x1QdekKUZocxr9zE",
             "conditions": "{}",
@@ -336,7 +335,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!gLNFWGL05O0FUNTD.gHVr8Rjfy69bsjZy"
     }

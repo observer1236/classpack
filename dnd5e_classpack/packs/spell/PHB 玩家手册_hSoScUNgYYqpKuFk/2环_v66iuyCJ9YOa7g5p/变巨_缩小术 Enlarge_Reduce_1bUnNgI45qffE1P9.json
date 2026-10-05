@@ -23,7 +23,7 @@
             "replacement": ""
           },
           {
-            "key": "flags.midi-qol.advantage.check.str",
+            "key": "system.abilities.str.check.roll.mode",
             "value": 1,
             "priority": 20,
             "type": "add",
@@ -33,7 +33,7 @@
             "replacement": ""
           },
           {
-            "key": "flags.midi-qol.advantage.save.str",
+            "key": "system.abilities.str.save.roll.mode",
             "value": 1,
             "priority": 20,
             "type": "add",
@@ -43,7 +43,7 @@
             "replacement": ""
           },
           {
-            "key": "system.bonuses.weapon.damage",
+            "key": "system.rolls.damage.weapon.bonus",
             "value": "1d4",
             "priority": 20,
             "type": "add",
@@ -133,8 +133,8 @@
             "replacement": ""
           },
           {
-            "key": "flags.midi-qol.disadvantage.check.str",
-            "value": 1,
+            "key": "system.abilities.str.check.roll.mode",
+            "value": -1,
             "priority": 20,
             "type": "add",
             "phase": "initial",
@@ -143,8 +143,8 @@
             "replacement": ""
           },
           {
-            "key": "flags.midi-qol.disadvantage.save.str",
-            "value": 1,
+            "key": "system.abilities.str.save.roll.mode",
+            "value": -1,
             "priority": 20,
             "type": "add",
             "phase": "initial",
@@ -153,7 +153,7 @@
             "replacement": ""
           },
           {
-            "key": "system.bonuses.weapon.damage",
+            "key": "system.rolls.damage.weapon.bonus",
             "value": "-1d4",
             "priority": 20,
             "type": "add",

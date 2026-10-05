@@ -46,21 +46,21 @@
       "system": {
         "showRadius": true,
         "applyToSelf": true,
-        "bestFormula": "",
+        "bestFormula": "@abilities.cha.mod",
         "canStack": false,
         "color": null,
         "combatOnly": true,
         "disableOnHidden": true,
         "distanceFormula": "@scale.paladin.aura-radius",
         "disposition": 1,
-        "evaluatePreApply": false,
+        "evaluatePreApply": true,
         "overrideName": "",
         "script": "",
         "stashedChanges": [],
         "stashedStatuses": [],
         "changes": [
           {
-            "key": "system.bonuses.abilities.save",
+            "key": "system.rolls.ability.save.bonus",
             "value": "+@abilities.cha.mod",
             "priority": 20,
             "type": "add",
@@ -101,7 +101,6 @@
           "disableCondition": "",
           "disableIncapacitated": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": []
@@ -128,7 +127,7 @@
         "exportSource": null
       },
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!QE4gvV6X8gTjJcb9.C81L5FYTFg9Yytst"
     }

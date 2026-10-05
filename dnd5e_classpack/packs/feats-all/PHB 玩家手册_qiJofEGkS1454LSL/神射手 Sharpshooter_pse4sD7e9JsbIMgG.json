@@ -20,7 +20,6 @@
           "disableCondition": "",
           "disableIncapacitated": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "specialDuration": [
             "None"
@@ -55,7 +54,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.bonuses.rwak.attack",
+            "key": "system.rolls.attack.rwak.bonus",
             "value": "- 5",
             "priority": 20,
             "type": "add",
@@ -65,7 +64,7 @@
             "replacement": ""
           },
           {
-            "key": "system.bonuses.rwak.damage",
+            "key": "system.rolls.damage.rwak.bonus",
             "value": "+ 10",
             "priority": 20,
             "type": "add",
@@ -90,7 +89,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!pse4sD7e9JsbIMgG.Fefy2ckg4LllSlos"
     }

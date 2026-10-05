@@ -41,7 +41,7 @@
       "duration": {
         "value": 6,
         "units": "seconds",
-        "expiry": "turnStart",
+        "expiry": "targetStart",
         "expired": false
       },
       "disabled": false,
@@ -57,9 +57,7 @@
           "selfTargetAlways": false,
           "stackable": "noneName",
           "durationExpression": "",
-          "specialDuration": [
-            "turnStart"
-          ],
+          "specialDuration": [],
           "macroRepeat": "none",
           "enableCondition": "",
           "disableCondition": "",

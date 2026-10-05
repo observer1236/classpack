@@ -45,7 +45,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.bonuses.abilities.save",
+            "key": "system.rolls.ability.save.bonus",
             "value": "-1d4",
             "priority": 20,
             "type": "add",
@@ -72,7 +72,7 @@
       "duration": {
         "value": 1,
         "units": "rounds",
-        "expiry": "turnStart",
+        "expiry": "sourceEnd",
         "expired": false
       },
       "description": "",
@@ -91,8 +91,7 @@
           "showIcon": false,
           "durationExpression": "",
           "specialDuration": [
-            "isSave",
-            "turnEndSource"
+            "isSave"
           ],
           "macroRepeat": "none"
         },

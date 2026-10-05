@@ -9296,7 +9296,6 @@
               "selfTargetAlways": false,
               "dontApply": false,
               "stackable": "noneName",
-              "showIcon": true,
               "durationExpression": "",
               "macroRepeat": "none",
               "specialDuration": []
@@ -9349,7 +9348,7 @@
           },
           "sort": 0,
           "start": null,
-          "showIcon": 1,
+          "showIcon": 2,
           "folder": null,
           "_key": "!actors.items.effects!DAbPZaKtmWjM0WDE.S77Tcw9Z5Pvcyi3s.Sk7gkZux1d2oYVvr"
         }
@@ -10041,7 +10040,6 @@
               "selfTargetAlways": false,
               "dontApply": false,
               "stackable": "noneName",
-              "showIcon": true,
               "durationExpression": "",
               "macroRepeat": "none",
               "specialDuration": [],
@@ -10102,7 +10100,7 @@
           },
           "sort": 0,
           "start": null,
-          "showIcon": 1,
+          "showIcon": 2,
           "folder": null,
           "_key": "!actors.items.effects!DAbPZaKtmWjM0WDE.GNYJz9YvZ2CNgFHo.5yjyYW7CMJH7Kwmq"
         }
@@ -10397,7 +10395,7 @@
           "duration": {
             "value": 1,
             "units": "rounds",
-            "expiry": "turnStart",
+            "expiry": "sourceStart",
             "expired": false
           },
           "disabled": false,
@@ -10412,12 +10410,9 @@
               "selfTargetAlways": false,
               "dontApply": false,
               "stackable": "noneName",
-              "showIcon": true,
               "durationExpression": "",
               "macroRepeat": "none",
-              "specialDuration": [
-                "turnStartSource"
-              ]
+              "specialDuration": []
             },
             "ActiveAuras": {
               "isAura": false,
@@ -10498,7 +10493,7 @@
           },
           "sort": 0,
           "start": null,
-          "showIcon": 1,
+          "showIcon": 2,
           "folder": null,
           "_key": "!actors.items.effects!DAbPZaKtmWjM0WDE.lqlDFIHC8OrgQG9l.Ml8YuWTeg8LjB5s6"
         }
@@ -11309,7 +11304,7 @@
           "duration": {
             "value": 1,
             "units": "rounds",
-            "expiry": "turnStart",
+            "expiry": "targetStart",
             "expired": false
           },
           "disabled": false,
@@ -11324,12 +11319,9 @@
               "selfTargetAlways": false,
               "dontApply": false,
               "stackable": "noneName",
-              "showIcon": true,
               "durationExpression": "",
               "macroRepeat": "none",
-              "specialDuration": [
-                "turnStart"
-              ]
+              "specialDuration": []
             },
             "ActiveAuras": {
               "isAura": false,
@@ -11379,7 +11371,7 @@
           },
           "sort": 0,
           "start": null,
-          "showIcon": 1,
+          "showIcon": 2,
           "folder": null,
           "_key": "!actors.items.effects!DAbPZaKtmWjM0WDE.2hNLAqTqVIjBAXdD.ySTes614ntCDk0Aa"
         }
@@ -12226,7 +12218,7 @@
           "duration": {
             "value": 6,
             "units": "seconds",
-            "expiry": "turnStart",
+            "expiry": "targetStart",
             "expired": false
           },
           "disabled": false,
@@ -12242,9 +12234,7 @@
               "selfTargetAlways": false,
               "stackable": "noneName",
               "durationExpression": "",
-              "specialDuration": [
-                "turnStart"
-              ],
+              "specialDuration": [],
               "macroRepeat": "none"
             },
             "core": {
@@ -13218,7 +13208,6 @@
               "selfTargetAlways": false,
               "dontApply": false,
               "stackable": "noneName",
-              "showIcon": true,
               "durationExpression": "",
               "macroRepeat": "none",
               "specialDuration": []
@@ -13282,7 +13271,7 @@
           },
           "sort": 0,
           "start": null,
-          "showIcon": 1,
+          "showIcon": 2,
           "folder": null,
           "_key": "!actors.items.effects!DAbPZaKtmWjM0WDE.1ogux8HAXp61NllL.mgg9ctjXZDyXR9q6"
         }
@@ -15257,7 +15246,6 @@
               "selfTargetAlways": false,
               "dontApply": false,
               "stackable": "noneName",
-              "showIcon": true,
               "durationExpression": "",
               "macroRepeat": "none",
               "specialDuration": []
@@ -15310,7 +15298,7 @@
           },
           "sort": 0,
           "start": null,
-          "showIcon": 1,
+          "showIcon": 2,
           "folder": null,
           "_key": "!actors.items.effects!DAbPZaKtmWjM0WDE.o7jZwlW3m4WGO07d.KqoO6YMACsipILrX"
         }

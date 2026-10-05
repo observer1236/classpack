@@ -56,7 +56,6 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [],
@@ -87,7 +86,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.bonuses.All-Damage",
+            "key": "system.rolls.damage.all.bonus",
             "value": "+1d4[radiant]",
             "priority": 20,
             "type": "add",
@@ -97,7 +96,7 @@
             "replacement": ""
           },
           {
-            "key": "system.bonuses.mwak.damage",
+            "key": "system.rolls.damage.mwak.bonus",
             "value": "",
             "priority": 20,
             "type": "add",
@@ -122,7 +121,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!RPhG8GsHq9wkUygO.W42jKt8C1Merlj9d"
     }

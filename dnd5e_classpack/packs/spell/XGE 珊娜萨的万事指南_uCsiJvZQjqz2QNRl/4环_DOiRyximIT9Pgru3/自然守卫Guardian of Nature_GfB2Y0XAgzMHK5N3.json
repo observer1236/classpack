@@ -45,7 +45,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.attributes.movement.walk",
+            "key": "system.attributes.movement.speeds.walk",
             "value": "+10",
             "priority": 20,
             "type": "add",
@@ -55,7 +55,7 @@
             "replacement": ""
           },
           {
-            "key": "system.attributes.senses.darkvision",
+            "key": "system.attributes.senses.ranges.darkvision",
             "value": "+120",
             "priority": 20,
             "type": "add",
@@ -75,7 +75,7 @@
             "replacement": ""
           },
           {
-            "key": "system.bonuses.mwak.damage",
+            "key": "system.rolls.damage.mwak.bonus",
             "value": "+1d6[force]",
             "priority": 20,
             "type": "add",
@@ -155,8 +155,8 @@
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.advantage.save.con",
-            "value": "+1",
+            "key": "system.abilities.con.save.roll.mode",
+            "value": 1,
             "priority": 20,
             "type": "add",
             "phase": "initial",

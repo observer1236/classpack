@@ -69,7 +69,13 @@
           "override": false,
           "expiry": null
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "b8jOgHndeuTasjp7",
+            "uuid": null,
+            "level": {}
+          }
+        ],
         "range": {
           "units": "self",
           "special": "",
@@ -215,7 +221,7 @@
         "expired": false
       },
       "origin": "Compendium.dnd5e_classpack.extra-ability.blzFbMN0WrOEGDXX",
-      "transfer": true,
+      "transfer": false,
       "flags": {},
       "tint": "#ffffff",
       "_stats": {
@@ -235,7 +241,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.attributes.movement.fly",
+            "key": "system.attributes.movement.speeds.fly",
             "value": 30,
             "priority": null,
             "type": "upgrade",

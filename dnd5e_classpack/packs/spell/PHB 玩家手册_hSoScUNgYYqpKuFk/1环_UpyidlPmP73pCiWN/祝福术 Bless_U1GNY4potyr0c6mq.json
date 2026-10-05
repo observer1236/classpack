@@ -83,7 +83,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.bonuses.All-Attacks",
+            "key": "system.rolls.attack.mwak.bonus",
             "value": "+1d4",
             "priority": 20,
             "type": "add",
@@ -93,7 +93,37 @@
             "replacement": ""
           },
           {
-            "key": "system.bonuses.abilities.save",
+            "key": "system.rolls.attack.rwak.bonus",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "4242c4fdb2034b36",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.rolls.attack.msak.bonus",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "e72cb6e777ce49dc",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.rolls.attack.rsak.bonus",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "d911d88ebe93d79e",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.rolls.ability.save.bonus",
             "value": "+1d4",
             "priority": 20,
             "type": "add",

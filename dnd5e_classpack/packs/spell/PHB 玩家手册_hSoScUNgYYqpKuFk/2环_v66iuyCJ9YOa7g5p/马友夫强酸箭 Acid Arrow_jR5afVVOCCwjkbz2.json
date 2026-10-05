@@ -40,7 +40,7 @@
       "duration": {
         "value": null,
         "units": "seconds",
-        "expiry": null,
+        "expiry": "targetEnd",
         "expired": false
       },
       "flags": {
@@ -57,12 +57,9 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": [
-            "turnEnd"
-          ],
+          "specialDuration": [],
           "enableCondition": "",
           "disableCondition": ""
         },
@@ -120,7 +117,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!jR5afVVOCCwjkbz2.rd4Cw0bftP6Rzm6R"
     }

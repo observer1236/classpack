@@ -84,7 +84,7 @@
             "replacement": ""
           },
           {
-            "key": "flags.midi-qol.advantage.save.dex",
+            "key": "system.abilities.dex.save.roll.mode",
             "value": 1,
             "priority": 20,
             "type": "add",
@@ -94,12 +94,52 @@
             "replacement": ""
           },
           {
-            "key": "system.attributes.movement.all",
-            "value": "*2",
+            "key": "system.attributes.movement.speeds.walk",
+            "value": 2,
             "priority": 20,
-            "type": "custom",
+            "type": "multiply",
             "phase": "initial",
             "_id": "BwybkEZp8FS2cEW4",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.attributes.movement.speeds.fly",
+            "value": 2,
+            "priority": 20,
+            "type": "multiply",
+            "phase": "initial",
+            "_id": "7e13ef0919a85e70",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.attributes.movement.speeds.swim",
+            "value": 2,
+            "priority": 20,
+            "type": "multiply",
+            "phase": "initial",
+            "_id": "4723bd7f1c503222",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.attributes.movement.speeds.climb",
+            "value": 2,
+            "priority": 20,
+            "type": "multiply",
+            "phase": "initial",
+            "_id": "6bbba0734ef6a213",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.attributes.movement.speeds.burrow",
+            "value": 2,
+            "priority": 20,
+            "type": "multiply",
+            "phase": "initial",
+            "_id": "0ca0fe5f3b9a31dd",
             "conditions": "{}",
             "replacement": ""
           }

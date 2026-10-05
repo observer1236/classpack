@@ -252,7 +252,7 @@
       "duration": {
         "value": 1,
         "units": "rounds",
-        "expiry": "turnStart",
+        "expiry": "sourceStart",
         "expired": false
       },
       "disabled": false,
@@ -269,9 +269,7 @@
           "stackable": "noneName",
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": [
-            "turnStartSource"
-          ],
+          "specialDuration": [],
           "disableIncapacitated": false,
           "dontApply": false,
           "showIcon": false,

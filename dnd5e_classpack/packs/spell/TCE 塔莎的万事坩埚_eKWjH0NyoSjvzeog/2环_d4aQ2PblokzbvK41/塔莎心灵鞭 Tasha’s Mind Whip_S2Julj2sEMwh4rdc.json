@@ -35,7 +35,7 @@
       "duration": {
         "value": null,
         "units": "seconds",
-        "expiry": null,
+        "expiry": "targetEnd",
         "expired": false
       },
       "flags": {
@@ -59,9 +59,7 @@
           "stackable": "count",
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": [
-            "turnEnd"
-          ],
+          "specialDuration": [],
           "disableIncapacitated": false,
           "dontApply": false,
           "showIcon": false,

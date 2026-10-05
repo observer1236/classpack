@@ -225,7 +225,7 @@
       "duration": {
         "value": 1,
         "units": "rounds",
-        "expiry": "turnStart",
+        "expiry": "sourceEnd",
         "expired": false
       },
       "description": "",
@@ -244,9 +244,7 @@
           "showIcon": false,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": [
-            "turnEndSource"
-          ]
+          "specialDuration": []
         },
         "dnd5e": {
           "riders": {}

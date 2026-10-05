@@ -331,7 +331,7 @@
       "duration": {
         "value": 1,
         "units": "rounds",
-        "expiry": "turnStart",
+        "expiry": "sourceStart",
         "expired": false
       },
       "description": "",
@@ -350,8 +350,7 @@
           "showIcon": false,
           "durationExpression": "",
           "specialDuration": [
-            "Reaction",
-            "turnStartSource"
+            "Reaction"
           ],
           "macroRepeat": "none"
         },

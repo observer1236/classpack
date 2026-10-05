@@ -34,7 +34,7 @@
       "duration": {
         "value": 1,
         "units": "rounds",
-        "expiry": "turnStart",
+        "expiry": "sourceEnd",
         "expired": false
       },
       "disabled": false,
@@ -49,12 +49,10 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [
-            "1Attack",
-            "turnEndSource"
+            "1Attack"
           ]
         }
       },
@@ -75,7 +73,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.bonuses.All-Attacks",
+            "key": "system.rolls.attack.bonus",
             "value": "+1",
             "priority": 20,
             "type": "add",
@@ -110,7 +108,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!u4hnRPRScguoZKwp.noJRFjAW1NYvgyw5"
     }

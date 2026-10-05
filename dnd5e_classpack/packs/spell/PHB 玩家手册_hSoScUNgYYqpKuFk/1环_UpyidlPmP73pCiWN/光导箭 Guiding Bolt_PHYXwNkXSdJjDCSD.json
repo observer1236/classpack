@@ -73,7 +73,7 @@
       "duration": {
         "value": null,
         "units": "seconds",
-        "expiry": null,
+        "expiry": "sourceEnd",
         "expired": false
       },
       "description": "",
@@ -92,8 +92,7 @@
           "showIcon": false,
           "durationExpression": "",
           "specialDuration": [
-            "isAttacked",
-            "turnEndSource"
+            "isAttacked"
           ],
           "macroRepeat": "none"
         },

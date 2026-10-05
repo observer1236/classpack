@@ -213,7 +213,7 @@
       "duration": {
         "value": null,
         "units": "seconds",
-        "expiry": null,
+        "expiry": "sourceEnd",
         "expired": false
       },
       "disabled": false,
@@ -233,8 +233,7 @@
           "durationExpression": "",
           "specialDuration": [
             "1Attack",
-            "1Spell",
-            "turnEndSource"
+            "1Spell"
           ],
           "macroRepeat": "none"
         },

@@ -39,7 +39,7 @@
       "duration": {
         "value": 1,
         "units": "rounds",
-        "expiry": "turnStart",
+        "expiry": "targetEnd",
         "expired": false
       },
       "disabled": false,
@@ -54,12 +54,9 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": [
-            "turnEnd"
-          ],
+          "specialDuration": [],
           "enableCondition": "",
           "disableCondition": ""
         },
@@ -87,7 +84,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.attributes.movement.walk",
+            "key": "system.attributes.movement.speeds.walk",
             "value": 0.5,
             "priority": 20,
             "type": "multiply",
@@ -112,7 +109,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!wMEtvmN9ZcwU6o82.mfedas8D5jCzoFKf"
     }

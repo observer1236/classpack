@@ -36,7 +36,7 @@
       "duration": {
         "value": 1,
         "units": "rounds",
-        "expiry": "turnStart",
+        "expiry": "targetEnd",
         "expired": false
       },
       "disabled": false,
@@ -51,12 +51,10 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [
-            "1Attack",
-            "turnEnd"
+            "1Attack"
           ],
           "enableCondition": "",
           "disableCondition": ""
@@ -110,7 +108,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!ZP65lHUVsQAd2NCc.bI3K48QYoCLCcCcc"
     }

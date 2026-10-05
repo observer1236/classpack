@@ -14,7 +14,7 @@
         "expired": false
       },
       "origin": null,
-      "transfer": true,
+      "transfer": false,
       "flags": {},
       "tint": "#ffffff",
       "_stats": {
@@ -34,7 +34,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.attributes.movement.walk",
+            "key": "system.attributes.movement.speeds.walk",
             "value": 10,
             "priority": null,
             "type": "add",
@@ -176,7 +176,13 @@
           "override": false,
           "expiry": null
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "lZWkUzZnN8JTqkDT",
+            "uuid": null,
+            "level": {}
+          }
+        ],
         "range": {
           "override": false,
           "units": "self"

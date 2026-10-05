@@ -325,7 +325,7 @@
       "duration": {
         "value": 6,
         "units": "seconds",
-        "expiry": "turnStart",
+        "expiry": "targetEnd",
         "expired": false
       },
       "description": "",
@@ -345,9 +345,7 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": [
-            "turnEnd"
-          ],
+          "specialDuration": [],
           "macroRepeat": "none"
         },
         "dnd5e": {

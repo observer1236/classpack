@@ -14,7 +14,7 @@
         "expired": false
       },
       "origin": "Compendium.dnd5e_classpack.itempack.1EE4F4CB01751D2E",
-      "transfer": true,
+      "transfer": false,
       "flags": {},
       "tint": "#ffffff",
       "name": "获得 60 尺飞行速度",
@@ -36,7 +36,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.attributes.movement.fly",
+            "key": "system.attributes.movement.speeds.fly",
             "value": 60,
             "priority": null,
             "type": "upgrade",
@@ -199,7 +199,13 @@
           "override": false,
           "expiry": null
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "7jkoBiacHbwj65w8",
+            "uuid": null,
+            "level": {}
+          }
+        ],
         "range": {
           "units": "self",
           "special": "",

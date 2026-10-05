@@ -250,7 +250,6 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "specialDuration": [
             "1Attack:mwak"
@@ -277,7 +276,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.bonuses.mwak.attack",
+            "key": "system.rolls.attack.mwak.bonus",
             "value": "- 5",
             "priority": 20,
             "type": "add",
@@ -287,7 +286,7 @@
             "replacement": ""
           },
           {
-            "key": "system.bonuses.mwak.damage",
+            "key": "system.rolls.damage.mwak.bonus",
             "value": "+ 10",
             "priority": 20,
             "type": "add",
@@ -312,7 +311,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!kQmEVRSXBdXHaI7v.gRBkT5XGeqYmaqF1"
     }

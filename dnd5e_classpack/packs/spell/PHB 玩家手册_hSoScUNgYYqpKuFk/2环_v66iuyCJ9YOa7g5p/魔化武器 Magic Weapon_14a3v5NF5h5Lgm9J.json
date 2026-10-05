@@ -53,7 +53,6 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [],
@@ -84,7 +83,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.bonuses.weapon.attack",
+            "key": "system.rolls.attack.weapon.bonus",
             "value": "+1",
             "priority": 20,
             "type": "add",
@@ -94,7 +93,7 @@
             "replacement": ""
           },
           {
-            "key": "system.bonuses.weapon.damage",
+            "key": "system.rolls.damage.weapon.bonus",
             "value": "+1",
             "priority": 20,
             "type": "add",
@@ -119,7 +118,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!14a3v5NF5h5Lgm9J.utghpIeDpFSgwHdv"
     },

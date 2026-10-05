@@ -238,7 +238,6 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [],
@@ -269,7 +268,7 @@
       "system": {
         "changes": [
           {
-            "key": "system.attributes.movement.fly",
+            "key": "system.attributes.movement.speeds.fly",
             "value": "+60",
             "priority": 20,
             "type": "add",
@@ -279,7 +278,7 @@
             "replacement": ""
           },
           {
-            "key": "system.attributes.senses.blindsight",
+            "key": "system.attributes.senses.ranges.blindsight",
             "value": "+60",
             "priority": 20,
             "type": "add",
@@ -314,7 +313,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!p0HwQvm5DXHoQDgy.0uacPy6kvOWs77dz"
     }
