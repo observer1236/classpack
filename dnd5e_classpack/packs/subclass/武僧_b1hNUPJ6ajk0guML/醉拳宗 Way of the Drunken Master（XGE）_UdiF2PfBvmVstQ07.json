@@ -8,9 +8,9 @@
   "sort": 87696,
   "flags": {},
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -34,84 +34,101 @@
     },
     "identifier": "way-of-the-drunken-master",
     "classIdentifier": "monk",
-    "advancement": [
-      {
+    "advancement": {
+      "t6syhxntg6gb7f7r": {
         "_id": "t6syhxntg6gb7f7r",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.nuM7CwcvvLx2uQaO",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "ya6uqp8hw4r54zsx": {
         "_id": "ya6uqp8hw4r54zsx",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.C4S9XNPQwd2uilha",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.rzP2m3P2fpTodEGE",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "itghiv65p8swreh0": {
         "_id": "itghiv65p8swreh0",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.Il7oiu5wAWIjE0lI",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 11,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "as1m1irim28remsg": {
         "_id": "as1m1irim28remsg",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.bm2e5C25S0klCPH7",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 17,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "G9R2NAgAdb50E84W": {
         "_id": "G9R2NAgAdb50E84W",
         "type": "Trait",
         "configuration": {
@@ -127,11 +144,12 @@
           "chosen": []
         },
         "level": 3,
-        "title": "",
         "hint": "",
-        "icon": null
+        "name": "",
+        "img": null,
+        "flags": {}
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",

@@ -24,18 +24,7 @@
       "removeAttackDamageButtons": "default",
       "reactionCondition": ""
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "崩坏现实Reality Break",
@@ -69,32 +58,15 @@
   "effects": [
     {
       "name": "崩坏现实Reality Break",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gqGklSk6EiHsGrlr",
+      "origin": null,
       "duration": {
-        "rounds": 10,
-        "startTime": null,
-        "seconds": 60,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "_id": "GPOHshHCCBp5bbd6",
-      "changes": [
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 2,
-          "value": "turn=end, label=崩坏现实Reality Break, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
-          "priority": 20
-        },
-        {
-          "key": "macro.itemMacro",
-          "mode": 0,
-          "value": "",
-          "priority": 20
-        }
-      ],
       "description": "",
       "transfer": false,
       "statuses": [],
@@ -113,9 +85,7 @@
           "disableCondition": ""
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -123,9 +93,9 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1786655803164,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
@@ -135,28 +105,76 @@
       },
       "img": "icons/magic/lightning/orb-ball-purple.webp",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end, label=崩坏现实Reality Break, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ymZdo99mGWYmZsFS",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "macro.itemMacro",
+            "value": "",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "Mr5bcY55RaTrNCKn",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.gqGklSk6EiHsGrlr",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!gqGklSk6EiHsGrlr.GPOHshHCCBp5bbd6"
     },
     {
       "name": "目盲",
       "img": "icons/magic/lightning/orb-ball-purple.webp",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gqGklSk6EiHsGrlr",
+      "origin": null,
       "transfer": false,
       "_id": "wBvjaodmGEn4HXgL",
       "type": "base",
-      "system": {},
-      "changes": [],
+      "system": {
+        "changes": [],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.gqGklSk6EiHsGrlr",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": 1,
-        "startRound": null,
-        "startTurn": null
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -178,9 +196,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -189,34 +205,47 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756710800042,
         "modifiedTime": 1756710917562,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!gqGklSk6EiHsGrlr.wBvjaodmGEn4HXgL"
     },
     {
       "name": "震慑 stun",
       "img": "icons/magic/lightning/orb-ball-purple.webp",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gqGklSk6EiHsGrlr",
+      "origin": null,
       "transfer": false,
       "_id": "pJlnsN9U7QNOnqHv",
       "type": "base",
-      "system": {},
-      "changes": [],
+      "system": {
+        "changes": [],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.gqGklSk6EiHsGrlr",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": 1,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -239,9 +268,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -250,34 +277,47 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756710800782,
         "modifiedTime": 1756710908379,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!gqGklSk6EiHsGrlr.pJlnsN9U7QNOnqHv"
     },
     {
       "name": "倒地",
       "img": "icons/magic/lightning/orb-ball-purple.webp",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gqGklSk6EiHsGrlr",
+      "origin": null,
       "transfer": false,
       "_id": "HvIPjZQqS9kbyvQs",
       "type": "base",
-      "system": {},
-      "changes": [],
+      "system": {
+        "changes": [],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.gqGklSk6EiHsGrlr",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": 1,
-        "startRound": null,
-        "startTurn": null
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -299,9 +339,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -310,20 +348,23 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756710802819,
         "modifiedTime": 1756710892531,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!gqGklSk6EiHsGrlr.HvIPjZQqS9kbyvQs"
     }
   ],
   "system": {
     "description": {
-      "value": "<p>你将现实与时间线之间的壁垒粉碎，使一个生物陷入混沌与疯狂。目标必须通过一个感知豁免，否则将无法执行任何反应直到法术结束。被影响的生物必须在其回合开始时roll一个d10，其结果决定目标身上发生了什么。参照下方表格“崩坏现实效果”<br />在其回合结束时，受影响的生物能重复其感知豁免，若成功，则法术结束。</p>\n<p>崩坏现实效果<br />d10   效果<br />1–2   遥远国度之瞥。目标受到6d12点心灵伤害并且陷入震慑到本轮结束。<br />3–5   崩碎裂缝。目标必须通过一个敏捷豁免，若失败则受到8d12点力场伤害，若豁免成功则受到一半伤害。<br />6–8   虫洞。该目标与其身上所着装、携带的一切东西被传送到他30尺内你能看到的未被占据的空间。目标受到12d10点力场伤害并倒地。<br />9–10   暗虚之冻。 目标受到12d10点寒冷伤害并且目盲到本回合结束。</p>",
+      "value": "<p>你将现实与时间线之间的壁垒粉碎，使一个生物陷入混沌与疯狂。目标必须通过一个感知豁免，否则将无法执行任何反应直到法术结束。被影响的生物必须在其回合开始时roll一个d10，其结果决定目标身上发生了什么。参照下方表格“崩坏现实效果”<br>在其回合结束时，受影响的生物能重复其感知豁免，若成功，则法术结束。</p>\n<p>崩坏现实效果<br>d10   效果<br>1–2   遥远国度之瞥。目标受到6d12点心灵伤害并且陷入震慑到本轮结束。<br>3–5   崩碎裂缝。目标必须通过一个敏捷豁免，若失败则受到8d12点力场伤害，若豁免成功则受到一半伤害。<br>6–8   虫洞。该目标与其身上所着装、携带的一切东西被传送到他30尺内你能看到的未被占据的空间。目标受到12d10点力场伤害并倒地。<br>9–10   暗虚之冻。 目标受到12d10点寒冷伤害并且目盲到本回合结束。</p>",
       "chat": ""
     },
     "source": {
@@ -341,7 +382,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -351,9 +393,10 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -374,10 +417,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -404,27 +443,33 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "GPOHshHCCBp5bbd6",
-            "onSave": false
+            "onSave": false,
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -450,7 +495,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -464,7 +510,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -472,7 +519,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -483,18 +529,67 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": ""
+        "otherActivityId": "",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "reality-break"
+    "identifier": "reality-break",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -503,8 +598,8 @@
   "sort": 150000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711685243872,
     "modifiedTime": 1757260508490,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

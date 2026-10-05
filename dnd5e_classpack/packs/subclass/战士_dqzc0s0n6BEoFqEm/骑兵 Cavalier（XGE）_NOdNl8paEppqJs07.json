@@ -8,9 +8,9 @@
   "sort": 87891,
   "flags": {},
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -34,106 +34,128 @@
     },
     "identifier": "cavalier",
     "classIdentifier": "fighter",
-    "advancement": [
-      {
+    "advancement": {
+      "9gd70onmans30zvr": {
         "_id": "9gd70onmans30zvr",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.vJkOB99fOh8tjAFW",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.LqBlv1BYu1IQVkgj",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.g3kghdNQIYypDRIG",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "xrbp5zb11dgdzq36": {
         "_id": "xrbp5zb11dgdzq36",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.iWd81TlNiudP2qNo",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 7,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "a3dzqoxh385uu51q": {
         "_id": "a3dzqoxh385uu51q",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.8uvP0ZcWTUZV7JGX",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 10,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "ac1adrmivci6ryf4": {
         "_id": "ac1adrmivci6ryf4",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.70pWX5593uWhDFSO",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 15,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "ohit44ogojqgyzso": {
         "_id": "ohit44ogojqgyzso",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.JZ9i7lYZdnucDdGF",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 18,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "VSZp1aroEEBOddQ9": {
         "_id": "VSZp1aroEEBOddQ9",
         "type": "Trait",
         "configuration": {
@@ -159,11 +181,12 @@
           "chosen": []
         },
         "level": 3,
-        "title": "",
         "hint": "",
-        "icon": null
+        "name": "",
+        "img": null,
+        "flags": {}
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",

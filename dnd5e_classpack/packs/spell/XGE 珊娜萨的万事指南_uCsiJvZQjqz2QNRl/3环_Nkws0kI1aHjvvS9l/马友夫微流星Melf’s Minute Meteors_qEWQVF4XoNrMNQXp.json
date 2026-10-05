@@ -29,42 +29,21 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "img": "modules/dnd5e_classpack/Nicons/ability_warlock_burningembers.png",
   "effects": [
     {
       "name": "马友夫微流星Melf’s Minute Meteors",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.qEWQVF4XoNrMNQXp",
+      "origin": null,
       "duration": {
-        "rounds": 10,
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 10,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "_id": "AYy2cbyHvMwFLaRz",
-      "changes": [
-        {
-          "key": "macro.createItem",
-          "mode": 0,
-          "value": "Compendium.dnd5e_classpack.itempack.Item.qArSIVB9hoDrZbQQ",
-          "priority": 20
-        }
-      ],
       "description": "",
       "transfer": false,
       "statuses": [],
@@ -83,9 +62,7 @@
           "disableCondition": ""
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -93,9 +70,9 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1753200882986,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -105,8 +82,36 @@
       },
       "img": "modules/dnd5e_classpack/Nicons/ability_warlock_burningembers.png",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "macro.createItem",
+            "value": "Compendium.dnd5e_classpack.itempack.Item.qArSIVB9hoDrZbQQ",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "AUHSLqH9CILQhoDM",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.qEWQVF4XoNrMNQXp",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!qEWQVF4XoNrMNQXp.AYy2cbyHvMwFLaRz"
     }
   ],
@@ -128,7 +133,8 @@
     },
     "duration": {
       "value": "10",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -138,9 +144,10 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -160,10 +167,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -190,26 +193,32 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "AYy2cbyHvMwFLaRz"
+            "_id": "AYy2cbyHvMwFLaRz",
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -239,7 +248,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -247,7 +257,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -258,18 +267,66 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "melfs-minute-meteors"
+    "identifier": "melfs-minute-meteors",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -278,8 +335,8 @@
   "sort": 10900000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711700770700,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

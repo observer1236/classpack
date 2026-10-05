@@ -4,7 +4,7 @@
   "img": "modules/dnd5e_classpack/Nicons/ability_evoker_return2.png",
   "system": {
     "description": {
-      "value": "<p>你创造一道闪着银光的力场，环绕在施法距离内你所选择的一个生物周围（你可以选择你自己）。该力场散发<span>5</span>尺微光光照。被力场保护的生物获得以下好处：<span><br />      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">掩护</span></strong>：该生物具有半身掩护。<span><br />      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">伤害抗力</span></strong>：该生物获得对强酸，寒冷，火焰，闪电以及毒素伤害的抗性。<span><br />      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">反射闪避</span></strong>：如果该生物受到可以由成功通过敏捷豁免来使伤害减半的效应影响，该生物在成功通过豁免时改为不受任何伤害，失败则受到一半伤害。<span><br />      </span>在之后的回合内以一个附赠动作，你可以将该力场移动至力场周围<span>60</span>尺内的另一个生物身上。<span><br /></span></p>",
+      "value": "<p>你创造一道闪着银光的力场，环绕在施法距离内你所选择的一个生物周围（你可以选择你自己）。该力场散发<span>5</span>尺微光光照。被力场保护的生物获得以下好处：<span><br>      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">掩护</span></strong>：该生物具有半身掩护。<span><br>      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">伤害抗力</span></strong>：该生物获得对强酸，寒冷，火焰，闪电以及毒素伤害的抗性。<span><br>      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">反射闪避</span></strong>：如果该生物受到可以由成功通过敏捷豁免来使伤害减半的效应影响，该生物在成功通过豁免时改为不受任何伤害，失败则受到一半伤害。<span><br>      </span>在之后的回合内以一个附赠动作，你可以将该力场移动至力场周围<span>60</span>尺内的另一个生物身上。<span><br></span></p>",
       "chat": ""
     },
     "source": {
@@ -20,7 +20,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -30,10 +31,11 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "width": "20",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -54,10 +56,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -84,29 +82,37 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "Rp3kDQGtqq7LKHji"
+            "_id": "Rp3kDQGtqq7LKHji",
+            "uuid": null,
+            "level": {}
           },
           {
-            "_id": "1SAsv9Or81yaeXf3"
+            "_id": "1SAsv9Or81yaeXf3",
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -136,7 +142,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -144,7 +151,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -155,72 +161,79 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "fizbans-platinum-shield"
+    "identifier": "fizbans-platinum-shield",
+    "method": "spell",
+    "prepared": 0
   },
   "effects": [
     {
       "name": "费茨本铂金盾Fizban's Platinum Shield",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.vP75Ws9NmLAm8uT4",
+      "origin": null,
       "duration": {
-        "rounds": 1,
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "_id": "Rp3kDQGtqq7LKHji",
-      "changes": [
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "fire",
-          "priority": 20
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "cold",
-          "priority": 20
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "acid",
-          "priority": 20
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "lightning",
-          "priority": 20
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "poison",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.superSaver.dex",
-          "mode": 2,
-          "value": "+1",
-          "priority": 20
-        }
-      ],
       "description": "",
       "transfer": false,
       "statuses": [
@@ -241,9 +254,7 @@
           "disableCondition": ""
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -251,9 +262,9 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1756664319850,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -263,8 +274,86 @@
       },
       "img": "modules/dnd5e_classpack/Nicons/ability_evoker_return2.png",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "jA4nGqEdnZQG96My",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "5SbrGsmAPBfXHkzs",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "L9DL2y2bVVvLKl6W",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "MG6ibuxnRGuDnGK7",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "R5uFxDHdSfof6krT",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.superSaver.dex",
+            "value": "+1",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "IyW64gGyd787dOwN",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.vP75Ws9NmLAm8uT4",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!vP75Ws9NmLAm8uT4.Rp3kDQGtqq7LKHji"
     }
   ],
@@ -295,18 +384,7 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_id": "vP75Ws9NmLAm8uT4",
   "folder": "4lLtCxLXuj1b7mKb",
@@ -316,8 +394,8 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711691270545,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

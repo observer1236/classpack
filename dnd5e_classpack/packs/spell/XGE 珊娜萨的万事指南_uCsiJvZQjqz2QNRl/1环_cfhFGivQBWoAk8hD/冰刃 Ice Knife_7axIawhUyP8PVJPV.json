@@ -28,15 +28,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "somatic",
-        "material"
-      ],
-      "riders": {
-        "activity": []
-      }
-    }
+    "dnd5e": {}
   },
   "img": "modules/dnd5e_classpack/Nicons/ability_mage_glacialspike.jpg",
   "effects": [],
@@ -58,7 +50,8 @@
     },
     "duration": {
       "value": "",
-      "units": "inst"
+      "units": "inst",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -68,9 +61,10 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -91,10 +85,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "atwill",
-      "prepared": false
     },
     "properties": [
       "somatic",
@@ -119,22 +109,26 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -170,14 +164,16 @@
                 "formula": ""
               },
               "number": 1,
-              "denomination": "10",
+              "denomination": 10,
               "bonus": "",
               "types": [
                 "piercing"
               ],
               "scaling": {
-                "mode": ""
-              }
+                "mode": "",
+                "number": 1
+              },
+              "modifiers": []
             }
           ]
         },
@@ -193,7 +189,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -201,7 +198,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -212,13 +208,27 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "otherActivityId": "none",
         "attackMode": "",
@@ -226,7 +236,39 @@
         "otherActivityUuid": "",
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "attackRollPerTarget": "default",
+        "fumbleThreshold": 1
       },
       "uMKeS04QogHhGnPM": {
         "type": "save",
@@ -245,12 +287,14 @@
           "targets": []
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -264,7 +308,8 @@
             "units": "ft",
             "type": "sphere",
             "size": "5",
-            "count": ""
+            "count": "",
+            "stationary": false
           },
           "affects": {
             "choice": false,
@@ -294,7 +339,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "useConditionText": "",
         "useConditionReason": "",
@@ -307,7 +353,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -315,7 +362,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -326,32 +372,75 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "otherActivityId": "none",
         "name": "",
         "img": "",
-        "appliedEffects": [],
         "visibility": {
           "level": {
             "min": null,
             "max": null
-          }
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
         },
         "flags": {
           "region-attacher": {
             "attachRegionToTemplate": false
           }
-        }
+        },
+        "behaviors": [],
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "ice-knife"
+    "identifier": "ice-knife",
+    "method": "atwill",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -360,8 +449,8 @@
   "sort": 5900000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

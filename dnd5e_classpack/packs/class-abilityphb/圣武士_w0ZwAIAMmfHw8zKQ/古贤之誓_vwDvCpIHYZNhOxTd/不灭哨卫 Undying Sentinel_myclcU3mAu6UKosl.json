@@ -32,11 +32,12 @@
     "requirements": "古贤之誓等级 15",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -44,27 +45,41 @@
     {
       "name": "不灭哨卫 Undying Sentinel",
       "img": "modules/dnd5e_classpack/Nicons/Ability_Paladin_HolyAvenger.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.myclcU3mAu6UKosl",
+      "origin": null,
       "type": "base",
       "_id": "vEnGWBaGdtu4Gx8Y",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.onUseMacroName",
-          "mode": 0,
-          "value": "ItemMacro,isDamaged",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "value": "ItemMacro,isDamaged",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "9kCQWBJvtbBYS7av",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.myclcU3mAu6UKosl",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "combat": null,
-        "seconds": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -73,9 +88,7 @@
       "sort": 0,
       "flags": {
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "dae": {
           "disableCondition": "",
@@ -94,13 +107,16 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.5",
         "createdTime": 1787076370829,
         "modifiedTime": 1787076388056,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a"
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!myclcU3mAu6UKosl.vEnGWBaGdtu4Gx8Y"
     }
   ],
@@ -116,13 +132,7 @@
       "alwaysActive": false,
       "effects": []
     },
-    "dnd5e": {
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -174,8 +184,8 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757063770246,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

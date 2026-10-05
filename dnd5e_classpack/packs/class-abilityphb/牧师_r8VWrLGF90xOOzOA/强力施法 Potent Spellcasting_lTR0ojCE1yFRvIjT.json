@@ -25,13 +25,14 @@
     "requirements": "牧师领域等级 8",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,39 +40,61 @@
     {
       "name": "强力施法PotentSpellcasting",
       "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Rebuke.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.lTR0ojCE1yFRvIjT",
+      "origin": null,
       "_id": "tKCOOB7gzCIN9bO4",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.force",
-          "mode": 5,
-          "value": "item.level === 0 && item.sourceClass === 'cleric'&& item.itemType === \"spell\"",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.force",
+            "value": "item.level === 0 && item.sourceClass === 'cleric'&& item.itemType === \"spell\"",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "WgTZI0bavyjA7HtI",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.damage.all",
+            "value": "+@abilities.wis.mod",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "AlaukKI7f051Bn0K",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.count",
+            "value": "every",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "DwV7sc2bmNJW8gkf",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.damage.all",
-          "mode": 2,
-          "value": "+@abilities.wis.mod",
-          "priority": 20
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.lTR0ojCE1yFRvIjT",
+          "message": null
         },
-        {
-          "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.count",
-          "mode": 2,
-          "value": "every",
-          "priority": 20
-        }
-      ],
+        "conditions": "{}",
+        "magical": false
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -89,9 +112,7 @@
           "macroRepeat": "none"
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -100,14 +121,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756701521468,
         "modifiedTime": 1756988727480,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!lTR0ojCE1yFRvIjT.tKCOOB7gzCIN9bO4"
     }
   ],
@@ -138,12 +162,7 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "chris-premades": {
       "info": {
         "identifier": "potentSpellcasting",
@@ -153,9 +172,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757407605432,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

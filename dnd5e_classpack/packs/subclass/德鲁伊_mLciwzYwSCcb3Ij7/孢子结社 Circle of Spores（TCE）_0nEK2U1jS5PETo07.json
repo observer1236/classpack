@@ -8,9 +8,9 @@
   "sort": 103125,
   "flags": {},
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -34,226 +34,267 @@
     },
     "identifier": "circle-of-spores",
     "classIdentifier": "druid",
-    "advancement": [
-      {
+    "advancement": {
+      "x2tq145c29gne119": {
         "_id": "x2tq145c29gne119",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.XvZtgLjExeMcMxrd",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.RakISgKJ0fWy44XM",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 2,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "rei4414g5ta5gs1p": {
         "_id": "rei4414g5ta5gs1p",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.esOkyryLICY1Aew7",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "xd4cskkm36r9j7cu": {
         "_id": "xd4cskkm36r9j7cu",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.lRPmBxHLeaBTnDC0",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 10,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "6lta4a2y3rih5biy": {
         "_id": "6lta4a2y3rih5biy",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.JjY7TB5xHKcQR8wm",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 14,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "wji0ogvrtcklzmr4": {
         "_id": "wji0ogvrtcklzmr4",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.JyNtTLwpaHOZqdZx",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": true,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 2,
-        "title": "获得结社法术",
-        "icon": null
+        "name": "获得结社法术",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "viqh72bokj5xiskt": {
         "_id": "viqh72bokj5xiskt",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.spell.uzWirpWyQshzp1l0"
+              "uuid": "Compendium.dnd5e_classpack.spell.uzWirpWyQshzp1l0",
+              "sort": 0
             },
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.spell.5GWYJBfc1aZ6415M"
+              "uuid": "Compendium.dnd5e_classpack.spell.5GWYJBfc1aZ6415M",
+              "sort": 0
             }
           ],
           "optional": false,
           "spell": {
-            "preparation": "always",
             "uses": {
               "max": "",
               "per": "",
               "requireSlot": false
             },
-            "ability": []
-          }
+            "ability": [],
+            "method": "spell",
+            "prepared": 2
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "获得结社法术",
-        "icon": null,
-        "hint": ""
+        "hint": "",
+        "name": "获得结社法术",
+        "img": null,
+        "flags": {}
       },
-      {
+      "2nvqx7xbjcpbljce": {
         "_id": "2nvqx7xbjcpbljce",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.spell.xYpJGRI4xcMa41kO"
+              "uuid": "Compendium.dnd5e_classpack.spell.xYpJGRI4xcMa41kO",
+              "sort": 0
             },
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.spell.gjE6zBmfdUOwXiae"
+              "uuid": "Compendium.dnd5e_classpack.spell.gjE6zBmfdUOwXiae",
+              "sort": 0
             }
           ],
           "optional": false,
           "spell": {
-            "preparation": "always",
             "uses": {
               "max": "",
               "per": "",
               "requireSlot": false
             },
-            "ability": []
-          }
+            "ability": [],
+            "method": "spell",
+            "prepared": 2
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 5,
-        "title": "获得结社法术",
-        "icon": null,
-        "hint": ""
+        "hint": "",
+        "name": "获得结社法术",
+        "img": null,
+        "flags": {}
       },
-      {
+      "rtkcx5keifova2u5": {
         "_id": "rtkcx5keifova2u5",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.spell.AVumturalJuP4paw"
+              "uuid": "Compendium.dnd5e_classpack.spell.AVumturalJuP4paw",
+              "sort": 0
             },
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.spell.MZ1jwLEJukFjSv1a"
+              "uuid": "Compendium.dnd5e_classpack.spell.MZ1jwLEJukFjSv1a",
+              "sort": 0
             }
           ],
           "optional": false,
           "spell": {
-            "preparation": "always",
             "uses": {
               "max": "",
               "per": "",
               "requireSlot": false
             },
-            "ability": []
-          }
+            "ability": [],
+            "method": "spell",
+            "prepared": 2
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 7,
-        "title": "获得结社法术",
-        "icon": null,
-        "hint": ""
+        "hint": "",
+        "name": "获得结社法术",
+        "img": null,
+        "flags": {}
       },
-      {
+      "4167quo94j7pkg1s": {
         "_id": "4167quo94j7pkg1s",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.spell.T39k39dbE2poIFc5"
+              "uuid": "Compendium.dnd5e_classpack.spell.T39k39dbE2poIFc5",
+              "sort": 0
             },
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.spell.gbHBG4jYU3I06JQO"
+              "uuid": "Compendium.dnd5e_classpack.spell.gbHBG4jYU3I06JQO",
+              "sort": 0
             }
           ],
           "optional": false,
           "spell": {
-            "preparation": "always",
             "uses": {
               "max": "",
               "per": "",
               "requireSlot": false
             },
-            "ability": []
-          }
+            "ability": [],
+            "method": "spell",
+            "prepared": 2
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 9,
-        "title": "获得结社法术",
-        "icon": null,
-        "hint": ""
+        "hint": "",
+        "name": "获得结社法术",
+        "img": null,
+        "flags": {}
       },
-      {
+      "b3rezql95ze38dnc": {
         "_id": "b3rezql95ze38dnc",
         "type": "ScaleValue",
         "configuration": {
@@ -286,11 +327,12 @@
           }
         },
         "value": {},
-        "title": "孢子光晕伤害",
-        "icon": null,
-        "hint": ""
+        "hint": "",
+        "name": "孢子光晕伤害",
+        "img": null,
+        "flags": {}
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",

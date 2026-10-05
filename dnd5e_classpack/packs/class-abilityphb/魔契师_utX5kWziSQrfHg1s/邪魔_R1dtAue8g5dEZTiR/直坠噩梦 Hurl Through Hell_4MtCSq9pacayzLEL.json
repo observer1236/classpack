@@ -30,13 +30,14 @@
     "requirements": "邪魔等级 14",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
@@ -46,57 +47,91 @@
     {
       "name": "直坠噩梦",
       "img": "modules/dnd5e_classpack/Nicons/Spell_Shadow_DeathsEmbrace.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.4MtCSq9pacayzLEL",
+      "origin": null,
       "_id": "x5MeMhiZixec2bsg",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.optional.直坠噩梦.activation",
-          "mode": 2,
-          "value": "![\"fiend\"].includes(typeOrRace)",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.直坠噩梦.activation",
+            "value": "![\"fiend\"].includes(typeOrRace)",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "iNu9NDhGsbCVKulI",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.直坠噩梦.damage.msak",
+            "value": "10d10[psychic]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "RcQmd42jFshsWa7p",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.直坠噩梦.damage.mwak",
+            "value": "10d10[psychic]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "I3KcZ4eD3RDBPtXo",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.直坠噩梦.damage.rsak",
+            "value": "10d10[psychic]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "TxUTMhUEgwJ2VgIq",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.直坠噩梦.damage.rwak",
+            "value": "10d10[psychic]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "2vKAjcbWBIO1G14v",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.直坠噩梦.count",
+            "value": "ItemUses.直坠噩梦 Hurl Through Hell",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "uaKIqjmsJaoj76pU",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "flags.midi-qol.optional.直坠噩梦.damage.msak",
-          "mode": 2,
-          "value": "10d10[psychic]",
-          "priority": 20
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.4MtCSq9pacayzLEL",
+          "message": null
         },
-        {
-          "key": "flags.midi-qol.optional.直坠噩梦.damage.mwak",
-          "mode": 2,
-          "value": "10d10[psychic]",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.直坠噩梦.damage.rsak",
-          "mode": 2,
-          "value": "10d10[psychic]",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.直坠噩梦.damage.rwak",
-          "mode": 2,
-          "value": "10d10[psychic]",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.直坠噩梦.count",
-          "mode": 2,
-          "value": "ItemUses.直坠噩梦 Hurl Through Hell",
-          "priority": 20
-        }
-      ],
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -114,9 +149,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -125,28 +158,24 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757274212961,
         "modifiedTime": 1757274362706,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!4MtCSq9pacayzLEL.x5MeMhiZixec2bsg"
     }
   ],
   "folder": "R1dtAue8g5dEZTiR",
   "sort": 7500000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -166,9 +195,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757274338278,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

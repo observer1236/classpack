@@ -28,60 +28,20 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "img": "modules/dnd5e_classpack/Nicons/Spell_Nature_Slow.png",
   "effects": [
     {
-      "origin": "Compendium.dnd5e_classpack.spell.Item.2AgiR8EQ7IglGbci",
+      "origin": null,
       "duration": {
-        "seconds": 60,
-        "startTime": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "_id": "yFKe55li8EeoFVKt",
-      "changes": [
-        {
-          "key": "system.attributes.ac.bonus",
-          "mode": 2,
-          "value": "-2",
-          "priority": 20
-        },
-        {
-          "key": "system.abilities.dex.bonuses.save",
-          "mode": 2,
-          "value": "-2",
-          "priority": 20
-        },
-        {
-          "key": "system.attributes.movement.all",
-          "mode": 0,
-          "value": "*0.5",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 2,
-          "value": "turn=end, label=缓慢术 Slow, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-, allowIncapacitated=true",
-          "priority": 20
-        }
-      ],
       "tint": "#ffffff",
       "transfer": false,
       "flags": {
@@ -105,18 +65,16 @@
           "overlay": false
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         }
       },
       "name": "缓慢术 Slow",
       "description": "",
       "statuses": [],
       "_stats": {
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1786654597451,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
@@ -126,14 +84,72 @@
       },
       "img": "modules/dnd5e_classpack/Nicons/Spell_Nature_Slow.png",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": -2,
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "boJdRBeIYeQDlBYq",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.abilities.dex.bonuses.save",
+            "value": -2,
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "3HD3wubhHQS2JBgh",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.attributes.movement.all",
+            "value": "*0.5",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "eFn3Rg3LX5yuWlC1",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end, label=缓慢术 Slow, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-, allowIncapacitated=true",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "RBHbKBm980wz6jpU",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.2AgiR8EQ7IglGbci",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!2AgiR8EQ7IglGbci.yFKe55li8EeoFVKt"
     }
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 你在施法距离内一处40尺立方区域内指定至多六个生物并扭曲其周围的时间流。每个目标都要进行一次感知豁免，豁免失败则受到该法术影响直至法术终止。\n<br />受术生物的速度减半，而其AC和敏捷豁免都具有－2减值，且不能执行反应。该生物在其回合内可以执行一个动作或一个附赠动作，但不能在一回合内同时执行以上两者。不论该生物拥有何种能力或魔法物品，它在其回合内只能发动一次近战或远程攻击。\n<br />如果该生物尝试施展一个施法时间为1动作的法术，则需掷一次d20。如果结果是11或更高，则该生物的法术直至其下一回合才会生效，且该生物必须在此时再使用一个动作来完成法术。\n<br />如果它做不到则它的法术就此浪费掉。\n<br />受术生物在其回合结束时要可以再进行一次感知豁免，豁免成功则其身上该法术的效应终止。\n<br /></div>",
+      "value": "<div class=\"description \"> 你在施法距离内一处40尺立方区域内指定至多六个生物并扭曲其周围的时间流。每个目标都要进行一次感知豁免，豁免失败则受到该法术影响直至法术终止。\n<br>受术生物的速度减半，而其AC和敏捷豁免都具有－2减值，且不能执行反应。该生物在其回合内可以执行一个动作或一个附赠动作，但不能在一回合内同时执行以上两者。不论该生物拥有何种能力或魔法物品，它在其回合内只能发动一次近战或远程攻击。\n<br>如果该生物尝试施展一个施法时间为1动作的法术，则需掷一次d20。如果结果是11或更高，则该生物的法术直至其下一回合才会生效，且该生物必须在此时再使用一个动作来完成法术。\n<br>如果它做不到则它的法术就此浪费掉。\n<br>受术生物在其回合结束时要可以再进行一次感知豁免，豁免成功则其身上该法术的效应终止。\n<br></div>",
       "chat": ""
     },
     "source": {
@@ -149,7 +165,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -161,7 +178,8 @@
         "type": "cube",
         "size": "40",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -182,10 +200,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -212,27 +226,33 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "yFKe55li8EeoFVKt",
-            "onSave": false
+            "onSave": false,
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -258,7 +278,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -272,7 +293,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -280,7 +302,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -291,18 +312,67 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": ""
+        "otherActivityId": "",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "slow"
+    "identifier": "slow",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -311,8 +381,8 @@
   "sort": 9900000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711694615425,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

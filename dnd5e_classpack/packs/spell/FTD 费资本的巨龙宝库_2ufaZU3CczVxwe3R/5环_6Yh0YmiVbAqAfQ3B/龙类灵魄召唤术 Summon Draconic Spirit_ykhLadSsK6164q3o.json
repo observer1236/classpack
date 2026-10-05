@@ -4,7 +4,7 @@
   "img": "modules/dnd5e_classpack/Nicons/ability_dragonriding_launch01.png",
   "system": {
     "description": {
-      "value": "<p><span><br />      </span>你唤出一只巨龙精魂。它于施法范围内一处未被占据的空间显现。该肉体形态使用龙类精魂的数据。当你施展此法术时，选择一个龙种科目：色彩龙，宝石龙，或金属龙。该生物的长相与你所选择的龙种相似，这会决定其数据中的某些特性。该生物在法术结束或其生命值降至<span>0</span>时消失。<span><br />      </span>该生物对你和你的同伴友善。在战斗中，该生物与你共享先攻，它在你的回合结束后行动。它听从你的口头命令（无需动作）。如果你不发出指令，该生物执行回避动作，并用自己的移动力来回避危险。<span><br />      </span><span class=\"GramE\"><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">升环效果</span></strong></span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">。</span></strong>当你用<span>6</span>环或更高的<span class=\"GramE\">法术位</span>施展此法术时，用对应的环数决定数据栏中与法术环数有关的数据。<span><br /></span></p>",
+      "value": "<p><span><br>      </span>你唤出一只巨龙精魂。它于施法范围内一处未被占据的空间显现。该肉体形态使用龙类精魂的数据。当你施展此法术时，选择一个龙种科目：色彩龙，宝石龙，或金属龙。该生物的长相与你所选择的龙种相似，这会决定其数据中的某些特性。该生物在法术结束或其生命值降至<span>0</span>时消失。<span><br>      </span>该生物对你和你的同伴友善。在战斗中，该生物与你共享先攻，它在你的回合结束后行动。它听从你的口头命令（无需动作）。如果你不发出指令，该生物执行回避动作，并用自己的移动力来回避危险。<span><br>      </span><span class=\"GramE\"><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">升环效果</span></strong></span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">。</span></strong>当你用<span>6</span>环或更高的<span class=\"GramE\">法术位</span>施展此法术时，用对应的环数决定数据栏中与法术环数有关的数据。<span><br></span></p>",
       "chat": ""
     },
     "source": {
@@ -20,7 +20,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "hour"
+      "units": "hour",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -28,10 +29,11 @@
         "type": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "width": "20",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -52,10 +54,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -82,12 +80,14 @@
           "targets": []
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -97,7 +97,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -124,7 +125,8 @@
           "attacks": true,
           "proficiency": false,
           "saves": true,
-          "ability": ""
+          "ability": "",
+          "disposition": false
         },
         "profiles": [
           {
@@ -135,7 +137,8 @@
             "level": {
               "min": null,
               "max": null
-            }
+            },
+            "types": []
           },
           {
             "count": "",
@@ -145,7 +148,8 @@
             "level": {
               "min": null,
               "max": null
-            }
+            },
+            "types": []
           },
           {
             "count": "",
@@ -155,7 +159,8 @@
             "level": {
               "min": null,
               "max": null
-            }
+            },
+            "types": []
           }
         ],
         "summon": {
@@ -173,7 +178,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -181,7 +187,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -192,20 +197,67 @@
           "rollMode": "default",
           "chooseEffects": true,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "otherActivityId": null,
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "friendlySummon": false
       }
     },
-    "identifier": "summon-draconic-spirit"
+    "identifier": "summon-draconic-spirit",
+    "method": "spell",
+    "prepared": 0
   },
   "effects": [],
   "flags": {
@@ -235,18 +287,7 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "chris-premades": {
       "info": {
         "identifier": "summonDraconicSpirit",
@@ -263,8 +304,8 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

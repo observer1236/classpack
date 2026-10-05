@@ -2,18 +2,7 @@
   "name": "臭云术重复效应 Stinking Cloud",
   "type": "spell",
   "flags": {
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "AoETargetType": "any",
       "AoETargetTypeIncludeSelf": true,
@@ -45,19 +34,15 @@
   "effects": [
     {
       "name": "臭云术 Stinking Cloud",
-      "origin": "Actor.bvEYS7EFkAFT4pCf.Item.wBml9095u1XhkX9e",
+      "origin": null,
       "duration": {
-        "rounds": 10,
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 10,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "_id": "M5sVYWZNRnC3rGKI",
-      "changes": [],
       "description": "",
       "transfer": false,
       "statuses": [],
@@ -76,9 +61,9 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -88,14 +73,31 @@
       },
       "img": "modules/dnd5e_classpack/Nicons/ability_monk_zenflight.png",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Actor.bvEYS7EFkAFT4pCf.Item.wBml9095u1XhkX9e",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!wltYuACh4gJ1qqKk.M5sVYWZNRnC3rGKI"
     }
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 你以施法距离内一点为中心创造出一团半径20尺的黄色恶心气体云团。云团会绕过拐角扩散，并能造成重度遮蔽。在法术持续时间结束前云团都会一直在空气中徘徊。\n<br />如果一个生物在其回合开始时完全位于云团内，则它必须进行一次对抗毒素的体质豁免。豁免失败则该生物必须因呕吐和蹒跚浪费掉其本回合的动作。如果生物不需要呼吸或对毒素免疫，则其检定直接判定为成功。\n<br />云团被和风（风速至少每小时10里）吹袭4轮后消散。而强风（风速至少每小时20英里）只需1轮就能将其吹散。\n<br /></div>",
+      "value": "<div class=\"description \"> 你以施法距离内一点为中心创造出一团半径20尺的黄色恶心气体云团。云团会绕过拐角扩散，并能造成重度遮蔽。在法术持续时间结束前云团都会一直在空气中徘徊。\n<br>如果一个生物在其回合开始时完全位于云团内，则它必须进行一次对抗毒素的体质豁免。豁免失败则该生物必须因呕吐和蹒跚浪费掉其本回合的动作。如果生物不需要呼吸或对毒素免疫，则其检定直接判定为成功。\n<br>云团被和风（风速至少每小时10里）吹袭4轮后消散。而强风（风速至少每小时20英里）只需1轮就能将其吹散。\n<br></div>",
       "chat": ""
     },
     "source": {
@@ -111,7 +113,8 @@
     },
     "duration": {
       "value": "",
-      "units": ""
+      "units": "inst",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -120,8 +123,9 @@
         "choice": false
       },
       "template": {
-        "units": "",
-        "contiguous": false
+        "units": "ft",
+        "contiguous": false,
+        "stationary": false
       }
     },
     "range": {
@@ -141,10 +145,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "atwill",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -171,27 +171,33 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "M5sVYWZNRnC3rGKI",
-            "onSave": false
+            "onSave": false,
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -217,7 +223,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -231,7 +238,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -239,7 +247,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -250,18 +257,67 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": ""
+        "otherActivityId": "",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "stinking-cloud"
+    "identifier": "stinking-cloud",
+    "method": "atwill",
+    "prepared": 0
   },
   "ownership": {
     "default": 0,
@@ -270,8 +326,8 @@
   "folder": "VSQWpB0Mj8S5uRII",
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711688706381,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

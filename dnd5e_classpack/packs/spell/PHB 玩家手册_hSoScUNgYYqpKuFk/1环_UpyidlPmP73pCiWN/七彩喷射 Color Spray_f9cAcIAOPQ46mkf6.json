@@ -28,13 +28,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material"
-      ]
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "七彩喷射 Color Spray",
@@ -66,7 +60,7 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<div class=\"description \"><p>炫目的彩光从你指间散射而出。掷一次6d10；其结果为受该法术影响生物的生命值总数。在以你为源点的15尺锥状区域内的生物以剩余生命值由小至大的顺序受法术影响（生效时忽略昏迷生物和不能视物的生物）。 <br />计算受法术影响生物时，从剩余生命值最低的生物开始逐个计算。每个受术生物均陷入目盲，直至你的下一回合结束。法术掷骰的生命值总数减去一个受术生物的生命值后，余数再用以计算生命值稍高者是否受法术影响。生物剩余生命值，必须小于等于该余数法术才能成功影响该生物。 <br /><strong>升环施法效应。</strong>使用2环或更高法术位施展该法术时，你使用的法术位每比1环高一环，法术的掷骰时就增加2d10。<br /></p></div>",
+      "value": "<div class=\"description \"><p>炫目的彩光从你指间散射而出。掷一次6d10；其结果为受该法术影响生物的生命值总数。在以你为源点的15尺锥状区域内的生物以剩余生命值由小至大的顺序受法术影响（生效时忽略昏迷生物和不能视物的生物）。 <br>计算受法术影响生物时，从剩余生命值最低的生物开始逐个计算。每个受术生物均陷入目盲，直至你的下一回合结束。法术掷骰的生命值总数减去一个受术生物的生命值后，余数再用以计算生命值稍高者是否受法术影响。生物剩余生命值，必须小于等于该余数法术才能成功影响该生物。 <br><strong>升环施法效应。</strong>使用2环或更高法术位施展该法术时，你使用的法术位每比1环高一环，法术的掷骰时就增加2d10。<br></p></div>",
       "chat": ""
     },
     "source": {
@@ -82,7 +76,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "round"
+      "units": "round",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -94,7 +89,8 @@
         "type": "cone",
         "size": "15",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -114,10 +110,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -142,27 +134,32 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "UH2PUxoRHzEpd0h3",
-            "level": {}
+            "level": {},
+            "uuid": null
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -192,7 +189,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -200,7 +198,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -211,18 +208,66 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "color-spray"
+    "identifier": "color-spray",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -231,8 +276,8 @@
   "sort": 20900000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711703635615,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

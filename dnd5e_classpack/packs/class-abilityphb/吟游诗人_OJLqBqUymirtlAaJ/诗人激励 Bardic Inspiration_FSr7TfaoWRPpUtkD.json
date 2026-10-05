@@ -57,14 +57,16 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "10",
           "units": "minute",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -81,7 +83,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -103,17 +106,103 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -121,52 +210,82 @@
     {
       "name": "诗人激励",
       "img": "modules/dnd5e_classpack/Nicons/Ability_Shaman_CleanseSpirit.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.FSr7TfaoWRPpUtkD",
+      "origin": null,
       "transfer": false,
       "_id": "vnvQLGPj8cA1lQjt",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.optional.诗人激励.attack.all",
-          "mode": 2,
-          "value": "1@scale.bard.bardic-inspiration",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.诗人激励.attack.all",
+            "value": "1@scale.bard.bardic-inspiration",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "6blsBaNwQ8XJsBJv",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.诗人激励.save.all",
+            "value": "1@scale.bard.bardic-inspiration",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "sZKEbXjH9jcqT1JY",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.诗人激励.check.all",
+            "value": "1@scale.bard.bardic-inspiration",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "d5gyiW8hnIck4q8E",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.诗人激励.label",
+            "value": "诗人激励",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "IKjhESfRepWbazKb",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.诗人激励.skill.all",
+            "value": "1@scale.bard.bardic-inspiration",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "llST27pNTzhMaBez",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "flags.midi-qol.optional.诗人激励.save.all",
-          "mode": 2,
-          "value": "1@scale.bard.bardic-inspiration",
-          "priority": 20
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.FSr7TfaoWRPpUtkD",
+          "message": null
         },
-        {
-          "key": "flags.midi-qol.optional.诗人激励.check.all",
-          "mode": 2,
-          "value": "1@scale.bard.bardic-inspiration",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.诗人激励.label",
-          "mode": 2,
-          "value": "诗人激励",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.诗人激励.skill.all",
-          "mode": 2,
-          "value": "1@scale.bard.bardic-inspiration",
-          "priority": 20
-        }
-      ],
+        "conditions": "{}",
+        "magical": false
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -187,9 +306,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          },
+          "riders": {},
           "dependents": [
             {
               "uuid": "Actor.EGpzRvpKd3haHHIR.ActiveEffect.YFU8XXG3DSprfeSa"
@@ -203,14 +320,17 @@
       "_stats": {
         "compendiumSource": "Actor.8kAJgkx5OPCuy8hD.Item.XqZE6clSCve3PQ9A.ActiveEffect.Z6EOxQ9qrzdSsDzk",
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756993708820,
         "modifiedTime": 1756993708820,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!FSr7TfaoWRPpUtkD.vnvQLGPj8cA1lQjt"
     }
   ],
@@ -241,14 +361,7 @@
       "removeAttackDamageButtons": "default",
       "reactionCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "chris-premades": {
       "info": {
         "identifier": "bardicInspiration",
@@ -258,9 +371,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757159976892,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

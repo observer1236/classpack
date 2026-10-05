@@ -48,17 +48,20 @@
             {
               "type": "itemUses",
               "value": "1",
-              "target": ""
+              "target": "",
+              "scaling": {}
             }
           ]
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
@@ -66,14 +69,16 @@
             "level": {
               "min": null,
               "max": null
-            }
+            },
+            "uuid": null
           },
           {
             "_id": "gb9aEytaugsvy5wD",
             "level": {
               "min": null,
               "max": null
-            }
+            },
+            "uuid": null
           }
         ],
         "range": {
@@ -85,7 +90,8 @@
           "template": {
             "contiguous": false,
             "units": "ft",
-            "type": ""
+            "type": "",
+            "stationary": false
           },
           "affects": {
             "choice": false,
@@ -117,7 +123,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -125,7 +132,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -136,28 +142,66 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "otherActivityId": "none",
         "name": "",
         "img": "",
-        "appliedEffects": [
-          "f3WYikh5TP5RvI66",
-          "gb9aEytaugsvy5wD"
-        ],
         "visibility": {
           "level": {
             "min": null,
             "max": null
           },
-          "identifier": ""
-        }
+          "identifier": "",
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {},
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       },
       "R1QlIK5PHS0sJ60E": {
         "type": "save",
@@ -177,12 +221,14 @@
           "targets": []
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
@@ -191,7 +237,8 @@
             "level": {
               "min": null,
               "max": null
-            }
+            },
+            "uuid": null
           }
         ],
         "flags": {},
@@ -243,7 +290,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "useConditionText": "",
         "useConditionReason": "",
@@ -301,17 +349,41 @@
         "otherActivityId": "none",
         "otherActivityAsParentType": true,
         "friendlySave": "friendlySuccess",
-        "name": ""
+        "name": "",
+        "behaviors": [],
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
@@ -320,23 +392,12 @@
   "effects": [
     {
       "_id": "f3WYikh5TP5RvI66",
-      "changes": [
-        {
-          "key": "system.attributes.movement.fly",
-          "mode": 4,
-          "value": "60",
-          "priority": 40
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": 3600,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "origin": "Compendium.dnd5e_classpack.class-abilityphb.8zoMnbYdejOaDvXu",
       "transfer": false,
@@ -351,9 +412,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -361,9 +420,9 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757095619285,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -374,16 +433,44 @@
       "name": "获得 60 尺飞行速度",
       "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_Archangel.png",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.fly",
+            "value": 60,
+            "priority": 40,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "laFYBNX6BgxA8sNC",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "description": "",
       "statuses": [],
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!8zoMnbYdejOaDvXu.f3WYikh5TP5RvI66"
     },
     {
       "name": "复仇天使",
       "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_Archangel.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.8zoMnbYdejOaDvXu",
+      "origin": null,
       "transfer": false,
       "_id": "gb9aEytaugsvy5wD",
       "type": "auraeffects.aura",
@@ -392,44 +479,58 @@
         "applyToSelf": false,
         "bestFormula": "",
         "canStack": false,
-        "collisionTypes": [
-          "move"
-        ],
         "color": null,
         "combatOnly": true,
         "disableOnHidden": true,
         "distanceFormula": "30",
         "disposition": -1,
         "evaluatePreApply": false,
-        "opacity": 0.25,
         "overrideName": "",
         "script": "",
         "stashedChanges": [],
-        "stashedStatuses": []
-      },
-      "changes": [
-        {
-          "key": "macro.itemMacro",
-          "mode": 0,
-          "value": "",
-          "priority": 20
+        "stashedStatuses": [],
+        "changes": [
+          {
+            "key": "macro.itemMacro",
+            "value": "",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "4rZUjiLnY6EP7rIh",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "value": "save",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "DoJ9cIFpYruXmBMz",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "flags.midi-qol.ActivityOverTime",
-          "mode": 2,
-          "value": "save",
-          "priority": 20
-        }
-      ],
+        "collisionType": "move",
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.8zoMnbYdejOaDvXu",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": 3600,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -453,9 +554,7 @@
           "threatAuraInitial": true
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -467,41 +566,58 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757095621075,
         "modifiedTime": 1757097374903,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!8zoMnbYdejOaDvXu.gb9aEytaugsvy5wD"
     },
     {
       "name": "恐慌",
       "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_Archangel.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.8zoMnbYdejOaDvXu",
+      "origin": null,
       "transfer": false,
       "_id": "YI6lX87775gtNufF",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.grants.advantage.attack.all",
-          "mode": 2,
-          "value": "+1",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.grants.advantage.attack.all",
+            "value": "+1",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "v2IMvqgmpuFQXTmY",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.8zoMnbYdejOaDvXu",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": 60,
-        "combat": null,
-        "rounds": null,
-        "turns": 10,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -526,9 +642,7 @@
           ]
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -537,14 +651,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757096158969,
         "modifiedTime": 1757096237664,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!8zoMnbYdejOaDvXu.YI6lX87775gtNufF"
     }
   ],
@@ -563,10 +680,7 @@
     "favtab": {
       "isFavorite": false
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -615,9 +729,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757409512770,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

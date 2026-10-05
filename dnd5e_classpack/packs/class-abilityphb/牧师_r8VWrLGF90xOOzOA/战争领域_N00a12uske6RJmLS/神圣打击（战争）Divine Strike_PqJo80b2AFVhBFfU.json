@@ -30,13 +30,14 @@
     "requirements": "战争领域等级 8",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
@@ -46,45 +47,71 @@
     {
       "name": "神圣打击（战争）",
       "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_CrusaderStrike.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.PqJo80b2AFVhBFfU",
+      "origin": null,
       "_id": "fm2eXYSIM5cMYK92",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.optional.神圣打击（战争）.damage.mwak",
-          "mode": 2,
-          "value": "+1@scale.cleric.divine-strike",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.神圣打击（战争）.damage.mwak",
+            "value": "+1@scale.cleric.divine-strike",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GeQpUdy0twVeSGW9",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.神圣打击（战争）.damage.rwak",
+            "value": "+1@scale.cleric.divine-strike",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "DbGKaahO1xmWIjYb",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.神圣打击（战争）.count",
+            "value": "ItemUses.神圣打击（战争）Divine Strike",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "j2MJuIj6K77Fodh5",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.神圣打击（战争）.criticalDamage",
+            "value": true,
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GQepMPKWCBZpqnWW",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "flags.midi-qol.optional.神圣打击（战争）.damage.rwak",
-          "mode": 2,
-          "value": "+1@scale.cleric.divine-strike",
-          "priority": 20
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.PqJo80b2AFVhBFfU",
+          "message": null
         },
-        {
-          "key": "flags.midi-qol.optional.神圣打击（战争）.count",
-          "mode": 2,
-          "value": "ItemUses.神圣打击（战争）Divine Strike",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.神圣打击（战争）.criticalDamage",
-          "mode": 2,
-          "value": "true",
-          "priority": 20
-        }
-      ],
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -102,9 +129,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -113,14 +138,17 @@
       "_stats": {
         "compendiumSource": "Compendium.dnd5e_classpack.class-abilityphb.Item.twDzAZCJeSqZnLTW.ActiveEffect.DQnaCQ8dcfCWxKRr",
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757146464133,
         "modifiedTime": 1757147527647,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!PqJo80b2AFVhBFfU.fm2eXYSIM5cMYK92"
     }
   ],
@@ -151,13 +179,7 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "chris-premades": {
       "info": {
         "identifier": "divineStrike",
@@ -167,9 +189,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757146437825,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

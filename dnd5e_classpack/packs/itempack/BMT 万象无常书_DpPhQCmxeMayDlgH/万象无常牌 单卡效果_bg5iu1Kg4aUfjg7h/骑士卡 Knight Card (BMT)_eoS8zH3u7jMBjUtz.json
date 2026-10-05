@@ -28,7 +28,6 @@
     "attuned": false,
     "identified": true,
     "equipped": true,
-    "rarity": "legendary",
     "type": {
       "value": "wondrous",
       "baseItem": ""
@@ -45,7 +44,7 @@
     "armor": {
       "value": null,
       "dex": null,
-      "magicalBonus": 0
+      "magicalBonus": "0"
     },
     "strength": null,
     "activities": {},
@@ -55,7 +54,12 @@
     },
     "container": null,
     "cover": null,
-    "crewed": false
+    "rarities": [
+      "legendary"
+    ],
+    "crew": {
+      "value": []
+    }
   },
   "img": "modules/dnd5e_classpack/Nicons/img/decks/BMT/Deck of Many Things/09-knight.webp",
   "ownership": {
@@ -85,16 +89,17 @@
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
-    }
+    },
+    "dnd5e": {}
   },
   "effects": [],
   "folder": "bg5iu1Kg4aUfjg7h",
   "_stats": {
     "compendiumSource": "Item.eoS8zH3u7jMBjUtz",
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1751788372301,
     "modifiedTime": 1751818374080,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

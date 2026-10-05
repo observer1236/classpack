@@ -6,7 +6,7 @@
   "author": "WqWGW8MuBm7BNHxt",
   "img": "icons/svg/dice-target.svg",
   "scope": "global",
-  "command": "return await (async () => {\n  const api = globalThis.dnd5eClasspack;\n  if (!api?.teleport) return ui.notifications.warn(\"请先启用 ClassPack。\");\n  const targets = Array.from(game.user.targets ?? []);\n  const controlled = canvas.tokens.controlled;\n  const target = targets.length === 1 ? targets[0] : controlled.length === 1 ? controlled[0] : null;\n  if (!target) return ui.notifications.warn(\"请先 target 或控制一个 Token。\");\n  ui.notifications.info(\"选择 60 英尺范围内的落点；右键或 Esc 取消。\");\n  return api.teleport(target, null, { range: 60, timeout: 20000, avoidOccupied: true, animate: false });\n})();\n",
+  "command": "return await (async () => {\n  const api = globalThis.dnd5eClasspack;\n  if (!api?.teleport) return ui.notifications.warn(\"请先启用 ClassPack。\");\n  const targets = Array.from(game.user.targets ?? []);\n  const controlled = canvas.tokens.controlled;\n  const target = targets.length === 1 ? targets[0] : controlled.length === 1 ? controlled[0] : null;\n  if (!target) return ui.notifications.warn(\"请先 target 或控制一个 Token。\");\n  ui.notifications.info(\"选择 60 英尺范围内的落点；右键或 Esc 取消。\");\n  return api.teleport(target, null, { range: 60, timeout: 20000, avoidOccupied: true, animate: false });\n})();",
   "sort": 0,
   "ownership": {
     "default": 0,
@@ -16,9 +16,9 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1756835893217,
     "modifiedTime": 1756835909311,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

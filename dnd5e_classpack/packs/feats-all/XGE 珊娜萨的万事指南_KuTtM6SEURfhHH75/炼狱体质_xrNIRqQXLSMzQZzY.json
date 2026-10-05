@@ -26,56 +26,40 @@
     "requirements": "提夫林",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
   "effects": [
     {
       "name": "炼狱体质",
-      "origin": "Compendium.dnd5e_classpack.feats-all.Item.xrNIRqQXLSMzQZzY",
+      "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "disabled": false,
       "flags": {
         "dnd5e": {}
       },
       "_id": "sItmZW1Zs4SJHlRv",
-      "changes": [
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "cold",
-          "priority": null
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "poison",
-          "priority": null
-        }
-      ],
       "description": "",
       "transfer": true,
       "statuses": [],
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -85,25 +69,58 @@
       },
       "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "hcdGzGKrkiVMu20U",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "afvzjtRIGh9fB8rG",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.feats-all.Item.xrNIRqQXLSMzQZzY",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!xrNIRqQXLSMzQZzY.sItmZW1Zs4SJHlRv"
     }
   ],
   "folder": "KuTtM6SEURfhHH75",
   "sort": 100025,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1724511333912,
     "modifiedTime": 1757275287302,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

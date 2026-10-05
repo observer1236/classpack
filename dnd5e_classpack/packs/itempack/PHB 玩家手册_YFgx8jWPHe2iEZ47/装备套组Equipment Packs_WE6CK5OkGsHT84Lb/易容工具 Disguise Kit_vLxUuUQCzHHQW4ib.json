@@ -5,7 +5,8 @@
   "effects": [],
   "folder": "WE6CK5OkGsHT84Lb",
   "flags": {
-    "core": {}
+    "core": {},
+    "dnd5e": {}
   },
   "system": {
     "description": {
@@ -14,17 +15,21 @@
     },
     "source": {
       "custom": "PHB pg. 154",
-      "book": "PHB"
+      "book": "PHB",
+      "revision": 1,
+      "rules": "2014"
     },
     "quantity": 1,
-    "weight": 3,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
     "price": {
       "value": 25,
       "denomination": "gp"
     },
-    "attunement": 0,
+    "attunement": "",
     "equipped": false,
-    "rarity": "",
     "identified": true,
     "ability": "int",
     "chatFlavor": "",
@@ -38,12 +43,20 @@
       "baseItem": "disg"
     },
     "container": "SpUOHGqS8W5N4FtU",
-    "properties": []
+    "properties": [],
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": []
+    },
+    "identifier": "",
+    "rarities": [],
+    "attuned": false
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1713010438952,
     "modifiedTime": 1757275698084,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

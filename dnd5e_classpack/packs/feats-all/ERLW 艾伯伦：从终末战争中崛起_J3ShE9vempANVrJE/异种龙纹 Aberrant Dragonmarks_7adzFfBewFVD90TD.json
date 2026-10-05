@@ -26,8 +26,8 @@
       "rules": "2024",
       "book": "ERLW"
     },
-    "advancement": [
-      {
+    "advancement": {
+      "UG5OxO2kRVHwk4rt": {
         "type": "AbilityScoreImprovement",
         "_id": "UG5OxO2kRVHwk4rt",
         "configuration": {
@@ -41,22 +41,25 @@
             "cha": 0
           },
           "locked": [],
-          "points": 0
+          "points": 0,
+          "recommendation": null
         },
         "value": {
           "type": "asi"
         },
         "level": 0,
-        "title": "",
-        "hint": ""
+        "hint": "",
+        "name": "",
+        "flags": {}
       }
-    ],
+    },
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "requirements": "没有龙纹",
@@ -88,14 +91,15 @@
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
-    }
+    },
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1756717691105,
     "modifiedTime": 1757350333724,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

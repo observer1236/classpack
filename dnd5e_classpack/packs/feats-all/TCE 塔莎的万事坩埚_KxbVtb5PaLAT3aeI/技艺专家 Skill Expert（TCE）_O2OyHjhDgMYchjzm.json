@@ -8,7 +8,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<p>你已磨练了自身的特定技艺，并获得了以下好处：<br />·你选择一项属性提升1，上限为20.<br />·你选择并获得一项技能的熟练项。<br />·选择一项你熟练的技能，你获得该技能的专精，可以将两倍的熟练加值加到使用该技能进行的属性检定上。你选择的技能必须未受益于其他使熟练加值翻倍的特性，例如专精特性。</p>",
+      "value": "<p>你已磨练了自身的特定技艺，并获得了以下好处：<br>·你选择一项属性提升1，上限为20.<br>·你选择并获得一项技能的熟练项。<br>·选择一项你熟练的技能，你获得该技能的专精，可以将两倍的熟练加值加到使用该技能进行的属性检定上。你选择的技能必须未受益于其他使熟练加值翻倍的特性，例如专精特性。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "",
     "activities": {},
     "identifier": "-skill-experttce",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -40,18 +41,13 @@
   "sort": 106250,
   "flags": {
     "core": {},
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_id": "O2OyHjhDgMYchjzm",
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275287302,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

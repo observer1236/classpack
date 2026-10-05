@@ -20,93 +20,113 @@
     },
     "identifier": "circle-of-the-land",
     "classIdentifier": "druid",
-    "advancement": [
-      {
+    "advancement": {
+      "hsajb6n5oahnputt": {
         "_id": "hsajb6n5oahnputt",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.KCU5siz0zvI8Evwu",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 2,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "18n4ff654jbha0pe": {
         "_id": "18n4ff654jbha0pe",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.jQTXDqRdk7L4u3fy",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "xpakmn74xcpf4lhs": {
         "_id": "xpakmn74xcpf4lhs",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.SVVsJmrNTV8gskhi",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "0v93r7wvzu1jq6ld": {
         "_id": "0v93r7wvzu1jq6ld",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.aIXN1FpSuEH3Midz",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 10,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "i5r6gk99r58e7ux9": {
         "_id": "i5r6gk99r58e7ux9",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.S42pVI3gy08lxwI4",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 14,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "13xi8i08h0egq7k7": {
         "_id": "13xi8i08h0egq7k7",
         "type": "ScaleValue",
         "configuration": {
@@ -131,9 +151,11 @@
           }
         },
         "value": {},
-        "title": "结社法术"
+        "name": "结社法术",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "SB99iSOBBjFPx7Pb": {
         "_id": "SB99iSOBBjFPx7Pb",
         "type": "ItemChoice",
         "configuration": {
@@ -147,27 +169,31 @@
           "type": "spell",
           "pool": [],
           "spell": {
-            "preparation": "",
             "uses": {
               "max": "",
               "per": "",
               "requireSlot": false
             },
-            "ability": []
+            "ability": [],
+            "prepared": 0
           },
           "restriction": {
-            "level": "0"
-          }
+            "level": "0",
+            "list": [],
+            "school": []
+          },
+          "sorting": "a"
         },
         "value": {
           "added": {},
           "replaced": {}
         },
-        "title": "附赠戏法",
         "hint": "在第2级选择该结社时，你学会一个额外的德鲁伊戏法。",
-        "icon": null
+        "name": "附赠戏法",
+        "img": null,
+        "flags": {}
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",
@@ -181,8 +207,8 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -28,14 +28,10 @@
       "reactionCondition": ""
     },
     "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "concentration"
-      ],
       "riders": {
-        "activity": [],
-        "effect": []
+        "activity": [
+          "dnd5eactivity000"
+        ]
       }
     },
     "chris-premades": {
@@ -54,29 +50,49 @@
       "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_HolySmite.png",
       "disabled": true,
       "_id": "QtcZNwSWtjGSZtCb",
-      "system": {},
-      "changes": [
-        {
-          "key": "activities[attack].damage.parts",
-          "mode": 2,
-          "value": "{ \"number\": 2, \"denomination\": 6, \"types\": [\"radiant\"] }",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "activities[attack].damage.parts",
+            "value": {
+              "number": 2,
+              "denomination": 6,
+              "types": [
+                "radiant"
+              ]
+            },
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cVa3PcYY7NdF8Mno",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "2Z9LmMUfUK3hEa1q",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
         },
-        {
-          "key": "system.properties",
-          "mode": 2,
-          "value": "mgc",
-          "priority": 20
-        }
-      ],
+        "magical": true
+      },
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "origin": null,
@@ -95,9 +111,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -106,41 +120,58 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757000549532,
         "modifiedTime": 1757427062210,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!p3rZZLMndxwp1Xs4.QtcZNwSWtjGSZtCb"
     },
     {
       "name": "神圣武器目盲Holy Weapon",
       "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_HolySmite.png",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.p3rZZLMndxwp1Xs4",
+      "origin": null,
       "transfer": false,
       "_id": "rklWebYeGHNFuzHl",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 2,
-          "value": "turn=end, label=神圣武器目盲Holy Weapon, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, damageType=radiant, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end, label=神圣武器目盲Holy Weapon, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, damageType=radiant, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "68ZUSDbpgCyJtl7t",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.p3rZZLMndxwp1Xs4",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": 60,
-        "combat": null,
-        "rounds": null,
-        "turns": 10,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -163,9 +194,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -174,34 +203,47 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757000667911,
         "modifiedTime": 1786656125347,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!p3rZZLMndxwp1Xs4.rklWebYeGHNFuzHl"
     },
     {
       "name": "神圣武器已解散",
       "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_HolySmite.png",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.p3rZZLMndxwp1Xs4",
+      "origin": null,
       "transfer": false,
       "_id": "3y1vG3fbjd9zlTVV",
       "type": "base",
-      "system": {},
-      "changes": [],
+      "system": {
+        "changes": [],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.p3rZZLMndxwp1Xs4",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": 1,
-        "combat": null,
-        "rounds": null,
-        "turns": 1,
-        "startRound": null,
-        "startTurn": null
+        "value": 1,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -222,9 +264,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -233,20 +273,23 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757000828459,
         "modifiedTime": 1757000868410,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!p3rZZLMndxwp1Xs4.3y1vG3fbjd9zlTVV"
     }
   ],
   "system": {
     "description": {
-      "value": "<p>你为你触碰的武器注入神圣的力量。直到法术结束之前，武器都会发散出30英尺半径的明亮照明和额外30英尺的微亮照明。此外，用这把武器击中时会造成额外2d8光耀伤害。武器在持续期间转变为魔法武器如果原本它并非。<br />在你自己的回合中以一个附赠动作，你可以解散这个法术并使武器爆发出强光。在武器周围30英尺内，每个由你选择的可见生物必须进行体质豁免检定。若豁免失败，生物将受到4d8光耀伤害，并且在1分钟内目盲。豁免成功将只承受一半伤害并不会目盲。在被目盲的生物每个回合结束时它都可以重新进行体质豁免检定，若成功将结束效果对自己的影响。</p>",
+      "value": "<p>你为你触碰的武器注入神圣的力量。直到法术结束之前，武器都会发散出30英尺半径的明亮照明和额外30英尺的微亮照明。此外，用这把武器击中时会造成额外2d8光耀伤害。武器在持续期间转变为魔法武器如果原本它并非。<br>在你自己的回合中以一个附赠动作，你可以解散这个法术并使武器爆发出强光。在武器周围30英尺内，每个由你选择的可见生物必须进行体质豁免检定。若豁免失败，生物将受到4d8光耀伤害，并且在1分钟内目盲。豁免成功将只承受一半伤害并不会目盲。在被目盲的生物每个回合结束时它都可以重新进行体质豁免检定，若成功将结束效果对自己的影响。</p>",
       "chat": ""
     },
     "source": {
@@ -262,7 +305,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "hour"
+      "units": "hour",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -272,9 +316,10 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -294,10 +339,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -323,31 +364,39 @@
           "spellSlot": false
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "rklWebYeGHNFuzHl",
-            "onSave": false
+            "onSave": false,
+            "uuid": null,
+            "level": {}
           },
           {
             "_id": "3y1vG3fbjd9zlTVV",
-            "onSave": true
+            "onSave": true,
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -368,14 +417,16 @@
                 "formula": ""
               },
               "number": 4,
-              "denomination": "8",
+              "denomination": 8,
               "bonus": "",
               "types": [
                 "radiant"
               ],
               "scaling": {
-                "mode": ""
-              }
+                "mode": "",
+                "number": 1
+              },
+              "modifiers": []
             }
           ],
           "critical": {
@@ -389,7 +440,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -403,7 +455,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -411,7 +464,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -422,21 +474,63 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "otherActivityId": "",
         "name": "",
         "img": "",
-        "appliedEffects": [
-          "rklWebYeGHNFuzHl",
-          "3y1vG3fbjd9zlTVV"
-        ]
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       },
       "x2enhEvUgTDexdOR": {
         "type": "enchant",
@@ -455,12 +549,14 @@
           "targets": []
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
@@ -475,7 +571,8 @@
               ],
               "effect": [],
               "item": []
-            }
+            },
+            "uuid": null
           }
         ],
         "range": {
@@ -485,7 +582,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -498,7 +596,9 @@
           "recovery": [],
           "max": ""
         },
-        "enchant": {},
+        "enchant": {
+          "self": false
+        },
         "restrictions": {
           "allowMagical": true,
           "categories": [],
@@ -516,7 +616,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -524,7 +625,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -535,22 +635,66 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "name": "",
         "img": "",
-        "appliedEffects": [
-          "QtcZNwSWtjGSZtCb"
-        ]
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "otherActivityId": null,
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
-    "identifier": "holy-weapon"
+    "identifier": "holy-weapon",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -559,8 +703,8 @@
   "sort": 12900000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

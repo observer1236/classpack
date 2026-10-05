@@ -24,43 +24,18 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "img": "modules/dnd5e_classpack/Nicons/httpcloud3steamusercontentcomugc842585136115603919A336D255C2F1853F4CB4F9D65BCED5F0E766BD10.jpg",
   "effects": [
     {
-      "changes": [
-        {
-          "key": "flags.midi-qol.disadvantage.attack.all",
-          "mode": 0,
-          "value": "1",
-          "priority": null
-        },
-        {
-          "key": "flags.midi-qol.grants.advantage.attack.all",
-          "mode": 0,
-          "value": "1",
-          "priority": null
-        }
-      ],
-      "description": "- A blinded creature can't see and automatically fails any ability check that requires sight.<br />- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
+      "description": "- A blinded creature can't see and automatically fails any ability check that requires sight.<br>- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
       "disabled": false,
       "duration": {
-        "rounds": null,
-        "seconds": null,
-        "turns": null,
-        "startTime": null,
-        "combat": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
         "dfreds-convenient-effects": {
@@ -72,7 +47,7 @@
         }
       },
       "name": "Blinded",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.Hr0MfbPsxRZmU3XL",
+      "origin": null,
       "tint": "#ffffff",
       "transfer": false,
       "statuses": [
@@ -81,9 +56,9 @@
       ],
       "_id": "iAROMWu8N7fETOUD",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -93,22 +68,56 @@
       },
       "img": "modules/dfreds-convenient-effects/images/blinded.svg",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "value": 1,
+            "priority": null,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "qJpOVJQEVWtGAY1R",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.grants.advantage.attack.all",
+            "value": 1,
+            "priority": null,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "nFcnVWsmK601oq2n",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.Hr0MfbPsxRZmU3XL",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!Hr0MfbPsxRZmU3XL.iAROMWu8N7fETOUD"
     },
     {
-      "changes": [],
       "description": "- A deafened creature can't hear and automatically fails any ability check that requires hearing.",
       "disabled": false,
       "duration": {
-        "rounds": null,
-        "seconds": null,
-        "turns": null,
-        "startTime": null,
-        "combat": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
         "dfreds-convenient-effects": {
@@ -120,7 +129,7 @@
         }
       },
       "name": "Deafened",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.Hr0MfbPsxRZmU3XL",
+      "origin": null,
       "tint": "#ffffff",
       "transfer": false,
       "statuses": [
@@ -129,9 +138,9 @@
       ],
       "_id": "hcsEt21qxn7nXE9A",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -141,14 +150,31 @@
       },
       "img": "modules/dfreds-convenient-effects/images/deafened.svg",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.Hr0MfbPsxRZmU3XL",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!Hr0MfbPsxRZmU3XL.hcsEt21qxn7nXE9A"
     }
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 你吟诵一句神圣的箴言，其中充盈了创世黎明的力量。在施法距离内指定任意数量的你能看见的生物，并迫使每个能够听到圣言的生物进行一次魅力豁免。豁免失败者基于其当前生命值承受以下效应：\n<br />生命值为50或更少：耳聋1分钟。\n<br />生命值为40或更少：耳聋并目盲10分钟。\n<br />生命值为30或更少：耳聋、目盲并被震慑1小时。\n<br />生命值为20或更少：即死。\n<br />对于受术的天界生物、元素生物、精类生物或邪魔，其豁免失败时不需考虑其当前生命值，并直接将其遣返回其原属位面（本来就处于原属位面则无效）。在随后24小时内，该生物不能通过任何方式回到当前位面，除非使用祈愿术的效应。\n<br /></div>",
+      "value": "<div class=\"description \"> 你吟诵一句神圣的箴言，其中充盈了创世黎明的力量。在施法距离内指定任意数量的你能看见的生物，并迫使每个能够听到圣言的生物进行一次魅力豁免。豁免失败者基于其当前生命值承受以下效应：\n<br>生命值为50或更少：耳聋1分钟。\n<br>生命值为40或更少：耳聋并目盲10分钟。\n<br>生命值为30或更少：耳聋、目盲并被震慑1小时。\n<br>生命值为20或更少：即死。\n<br>对于受术的天界生物、元素生物、精类生物或邪魔，其豁免失败时不需考虑其当前生命值，并直接将其遣返回其原属位面（本来就处于原属位面则无效）。在随后24小时内，该生物不能通过任何方式回到当前位面，除非使用祈愿术的效应。\n<br></div>",
       "chat": ""
     },
     "source": {
@@ -164,7 +190,8 @@
     },
     "duration": {
       "value": "",
-      "units": "inst"
+      "units": "inst",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -174,9 +201,10 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -197,10 +225,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -224,31 +248,39 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "iAROMWu8N7fETOUD",
-            "onSave": false
+            "onSave": false,
+            "uuid": null,
+            "level": {}
           },
           {
             "_id": "hcsEt21qxn7nXE9A",
-            "onSave": false
+            "onSave": false,
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -274,7 +306,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -288,7 +321,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -296,7 +330,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -307,18 +340,67 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": ""
+        "otherActivityId": "",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "divine-word"
+    "identifier": "divine-word",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -327,8 +409,8 @@
   "sort": 24900000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711725398319,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

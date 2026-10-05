@@ -26,24 +26,20 @@
     "requirements": "奇械师等级 2",
     "activities": {},
     "identifier": "-infuse-replicate-magic-item",
-    "advancement": [],
+    "advancement": {},
     "enchant": {
       "max": "",
       "period": ""
     },
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -71,8 +67,8 @@
   "sort": 400000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757408728930,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

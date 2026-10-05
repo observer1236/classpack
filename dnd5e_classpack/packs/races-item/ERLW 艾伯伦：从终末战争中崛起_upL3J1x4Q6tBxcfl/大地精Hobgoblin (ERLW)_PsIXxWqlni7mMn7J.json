@@ -15,13 +15,12 @@
       "revision": 1
     },
     "movement": {
-      "burrow": null,
-      "climb": null,
-      "fly": null,
-      "swim": null,
-      "walk": 30,
       "units": "ft",
-      "hover": false
+      "hover": false,
+      "speeds": {
+        "walk": "30"
+      },
+      "ignoredDifficultTerrain": []
     },
     "type": {
       "value": "humanoid",
@@ -29,15 +28,17 @@
       "custom": ""
     },
     "senses": {
-      "darkvision": 60,
-      "blindsight": null,
-      "truesight": null,
-      "tremorsense": null,
       "units": "ft",
-      "special": ""
+      "special": "",
+      "ranges": {
+        "darkvision": 60,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null
+      }
     },
-    "advancement": [
-      {
+    "advancement": {
+      "Kfkvg7y0px8XbKJC": {
         "_id": "Kfkvg7y0px8XbKJC",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -58,16 +59,18 @@
             "int",
             "wis",
             "cha"
-          ]
+          ],
+          "recommendation": null
         },
         "value": {
           "type": "asi"
         },
         "level": 0,
-        "title": "",
-        "hint": ""
+        "hint": "",
+        "name": "",
+        "flags": {}
       },
-      {
+      "i4Ek8dhTuU1ILIzs": {
         "_id": "i4Ek8dhTuU1ILIzs",
         "type": "Size",
         "configuration": {
@@ -79,28 +82,32 @@
           "size": "sm"
         },
         "level": 0,
-        "title": "",
-        "hint": ""
+        "hint": "",
+        "name": "",
+        "flags": {}
       },
-      {
+      "WeE2YyCDqRSvDOcU": {
         "_id": "WeE2YyCDqRSvDOcU",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.uUzBgh9QjvMEanIr",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 0,
-        "title": "特质",
-        "hint": ""
+        "hint": "",
+        "name": "特质",
+        "flags": {}
       },
-      {
+      "8pP3lR45EDyw8wwR": {
         "_id": "8pP3lR45EDyw8wwR",
         "type": "Trait",
         "configuration": {
@@ -116,10 +123,11 @@
           "chosen": []
         },
         "level": 0,
-        "title": "语言",
-        "hint": ""
+        "hint": "",
+        "name": "语言",
+        "flags": {}
       },
-      {
+      "FPxOfOw6uKHXaQee": {
         "type": "Trait",
         "_id": "FPxOfOw6uKHXaQee",
         "configuration": {
@@ -139,10 +147,11 @@
           "chosen": []
         },
         "level": 0,
-        "title": "军事训练",
-        "hint": ""
+        "hint": "",
+        "name": "军事训练",
+        "flags": {}
       },
-      {
+      "MDfkEDLkHONG7KhD": {
         "type": "Trait",
         "_id": "MDfkEDLkHONG7KhD",
         "configuration": {
@@ -157,10 +166,11 @@
           "chosen": []
         },
         "level": 0,
-        "title": "军事训练护甲",
-        "hint": ""
+        "hint": "",
+        "name": "军事训练护甲",
+        "flags": {}
       }
-    ],
+    },
     "identifier": "goblin-erlw"
   },
   "effects": [],
@@ -177,9 +187,9 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1756544912412,
     "modifiedTime": 1756544912571,
     "lastModifiedBy": "sPF2dtZDreDpJaW6",

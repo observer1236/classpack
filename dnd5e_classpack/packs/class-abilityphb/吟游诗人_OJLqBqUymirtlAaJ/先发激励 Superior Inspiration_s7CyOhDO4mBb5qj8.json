@@ -43,17 +43,20 @@
             {
               "type": "itemUses",
               "value": "-1",
-              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.FSr7TfaoWRPpUtkD"
+              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.FSr7TfaoWRPpUtkD",
+              "scaling": {}
             }
           ]
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "flags": {},
@@ -152,17 +155,41 @@
         },
         "otherActivityId": "none",
         "otherActivityAsParentType": true,
-        "name": ""
+        "name": "",
+        "behaviors": [],
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -197,9 +224,9 @@
     "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757175533576,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

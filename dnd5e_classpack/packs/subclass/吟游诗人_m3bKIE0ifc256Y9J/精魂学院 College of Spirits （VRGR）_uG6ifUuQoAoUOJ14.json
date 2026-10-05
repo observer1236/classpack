@@ -8,9 +8,9 @@
   "flags": {},
   "_id": "uG6ifUuQoAoUOJ14",
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757351795981,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -36,94 +36,111 @@
     },
     "identifier": "college-of-spirits",
     "classIdentifier": "bard",
-    "advancement": [
-      {
+    "advancement": {
+      "90ur8r9bjwaj9aol": {
         "_id": "90ur8r9bjwaj9aol",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.AVUZ9OuiFXpfOOla",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "v25ogicanjfpnasz": {
         "_id": "v25ogicanjfpnasz",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.NfG2UVzVTsJOkcct",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 14,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "g29cfo4gqwesqjti": {
         "_id": "g29cfo4gqwesqjti",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.Item.1xfvqwNyqqNINwql",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "获得法术",
-        "icon": null,
-        "hint": ""
+        "hint": "",
+        "name": "获得法术",
+        "img": null,
+        "flags": {}
       },
-      {
+      "z6auFFD2f4ymsFOe": {
         "_id": "z6auFFD2f4ymsFOe",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.Sew4Tj3ec9CwH53H",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.csxVkdUoKkeiFOjN",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.dpOHLoQUpFbxl3Nj",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.6dDa7y9Lgjt96Zf6",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性",
         "hint": "",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {}
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",

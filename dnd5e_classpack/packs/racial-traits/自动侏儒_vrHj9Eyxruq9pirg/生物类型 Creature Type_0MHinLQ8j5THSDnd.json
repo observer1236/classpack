@@ -26,7 +26,7 @@
       "subtype": ""
     },
     "properties": [],
-    "advancement": [],
+    "advancement": {},
     "activities": {},
     "identifier": "creature-type",
     "cover": null,
@@ -34,7 +34,8 @@
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     }
   },
   "ownership": {
@@ -50,10 +51,7 @@
     },
     "dnd5e": {
       "sourceId": ".pZ6HVHiVo66BrZ3G",
-      "advancementOrigin": "y6NPeywcqkjVzKyM.0KzwB4iXa11LQqHX",
-      "riders": {
-        "activity": []
-      }
+      "advancementOrigin": "y6NPeywcqkjVzKyM.0KzwB4iXa11LQqHX"
     },
     "midi-qol": {
       "rollAttackPerTarget": "default",
@@ -77,9 +75,9 @@
   "_stats": {
     "compendiumSource": "Actor.aYAJq5f5bQ2rhZ8V.Item.pZ6HVHiVo66BrZ3G",
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1754658815962,
     "modifiedTime": 1754658874131,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

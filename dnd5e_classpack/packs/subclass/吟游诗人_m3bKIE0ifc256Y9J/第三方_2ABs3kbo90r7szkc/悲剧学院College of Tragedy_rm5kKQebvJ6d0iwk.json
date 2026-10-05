@@ -16,70 +16,81 @@
       "custom": "",
       "license": ""
     },
-    "advancement": [
-      {
+    "advancement": {
+      "3w0B8bA5YEh5xr3j": {
         "type": "ItemGrant",
         "_id": "3w0B8bA5YEh5xr3j",
         "configuration": {
           "items": [
             {
               "optional": false,
-              "uuid": "Item.Kh7A9yQ2InHxZr76"
+              "uuid": "Item.Kh7A9yQ2InHxZr76",
+              "sort": 0
             },
             {
               "optional": false,
-              "uuid": "Item.cJC3k85vXEJcjDZs"
+              "uuid": "Item.cJC3k85vXEJcjDZs",
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性",
-        "hint": ""
+        "hint": "",
+        "name": "职业特性",
+        "flags": {}
       },
-      {
+      "lCuL3qgfTC5PMcuB": {
         "type": "ItemGrant",
         "_id": "lCuL3qgfTC5PMcuB",
         "configuration": {
           "items": [
             {
               "uuid": "Item.E3GBudYHMR6WTtl2",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Item.1P6VIUMBhZwRR0lM",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性",
-        "hint": ""
+        "hint": "",
+        "name": "职业特性",
+        "flags": {}
       },
-      {
+      "DXcCZXHHkNBbcQ48": {
         "type": "ItemGrant",
         "_id": "DXcCZXHHkNBbcQ48",
         "configuration": {
           "items": [
             {
               "optional": false,
-              "uuid": "Item.Iwr6P4MD45PgXerJ"
+              "uuid": "Item.Iwr6P4MD45PgXerJ",
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 14,
-        "title": "职业特性",
-        "hint": ""
+        "hint": "",
+        "name": "职业特性",
+        "flags": {}
       }
-    ],
+    },
     "classIdentifier": "bard",
     "spellcasting": {
       "progression": "none",
@@ -95,9 +106,9 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1756716117550,
     "modifiedTime": 1756716117740,
     "lastModifiedBy": "aV0bUYaBrKQMbD8k",

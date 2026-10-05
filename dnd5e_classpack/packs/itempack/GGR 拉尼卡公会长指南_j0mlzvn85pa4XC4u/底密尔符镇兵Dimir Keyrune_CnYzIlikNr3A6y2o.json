@@ -25,10 +25,8 @@
     },
     "attunement": "",
     "equipped": false,
-    "rarity": "veryRare",
     "identified": true,
     "cover": null,
-    "crewed": false,
     "uses": {
       "max": "",
       "spent": null,
@@ -36,8 +34,7 @@
     },
     "armor": {
       "value": null,
-      "dex": null,
-      "magicalBonus": null
+      "dex": null
     },
     "hp": {
       "value": null,
@@ -47,7 +44,8 @@
     },
     "speed": {
       "value": null,
-      "conditions": ""
+      "conditions": "",
+      "units": "ft"
     },
     "strength": null,
     "proficient": 1,
@@ -64,7 +62,13 @@
     ],
     "activities": {},
     "identifier": "dimir-keyrune",
-    "attuned": false
+    "attuned": false,
+    "rarities": [
+      "veryRare"
+    ],
+    "crew": {
+      "value": []
+    }
   },
   "effects": [],
   "flags": {
@@ -90,17 +94,12 @@
       "itemCondition": "",
       "effectCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1691386610101,
     "modifiedTime": 1757871242558,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

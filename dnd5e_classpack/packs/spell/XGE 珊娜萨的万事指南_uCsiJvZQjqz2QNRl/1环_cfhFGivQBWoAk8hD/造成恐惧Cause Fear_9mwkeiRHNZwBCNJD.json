@@ -24,44 +24,49 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "img": "modules/dnd5e_classpack/Nicons/ability_warlock_soulswap.png",
   "effects": [
     {
       "name": "造成恐惧Cause Fear",
       "img": "modules/dnd5e_classpack/Nicons/ability_warlock_soulswap.png",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.9mwkeiRHNZwBCNJD",
+      "origin": null,
       "transfer": false,
       "_id": "sLgPO7nmnvRu42w0",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 2,
-          "value": "turn=end, label=造成恐惧Cause Fear, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end, label=造成恐惧Cause Fear, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "T0lHzP6yaRs9yHaK",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.9mwkeiRHNZwBCNJD",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": 60,
-        "combat": null,
-        "rounds": null,
-        "turns": 10,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -84,9 +89,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -95,14 +98,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1753194945561,
         "modifiedTime": 1786654801055,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!9mwkeiRHNZwBCNJD.sLgPO7nmnvRu42w0"
     }
   ],
@@ -124,7 +130,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -134,9 +141,10 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -157,10 +165,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -185,26 +189,33 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "sLgPO7nmnvRu42w0"
+            "_id": "sLgPO7nmnvRu42w0",
+            "uuid": null,
+            "level": {},
+            "onSave": false
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -230,7 +241,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -244,7 +256,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -252,7 +265,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -263,24 +275,69 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": true,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
           "postRemoveConditionText": "",
-          "turnChoice": "end"
+          "turnChoice": "end",
+          "rollAs": "target"
         },
         "otherActivityId": "",
         "name": "",
         "img": "",
-        "appliedEffects": [
-          "sLgPO7nmnvRu42w0"
-        ]
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "cause-fear"
+    "identifier": "cause-fear",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -289,8 +346,8 @@
   "sort": 16200000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

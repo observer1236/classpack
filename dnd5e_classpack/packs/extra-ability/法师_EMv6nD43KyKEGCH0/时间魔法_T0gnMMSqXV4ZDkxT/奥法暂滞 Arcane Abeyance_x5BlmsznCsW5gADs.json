@@ -32,11 +32,12 @@
     "requirements": "时间魔法等级 10",
     "activities": {},
     "identifier": "-arcane-abeyance",
-    "advancement": [],
+    "advancement": {},
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
@@ -46,13 +47,7 @@
   "folder": "T0gnMMSqXV4ZDkxT",
   "sort": 50400000,
   "flags": {
-    "dnd5e": {
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -76,8 +71,8 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757309810482,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

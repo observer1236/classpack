@@ -29,18 +29,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "艾伐黑触手 Black Tentacles",
@@ -74,28 +63,42 @@
     {
       "name": "艾伐黑触手 Black Tentacles",
       "img": "modules/dnd5e_classpack/Nicons/spell_priest_voidtendrils.jpg",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.JMAmXdzvxTU27pP2",
+      "origin": null,
       "transfer": false,
       "_id": "46qS6lWyqqCkSFj8",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "macro.execute",
-          "mode": 0,
-          "value": "applyTentacleEffect",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "macro.execute",
+            "value": "applyTentacleEffect",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "W8Lx0vtmMsFkWGIe",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.JMAmXdzvxTU27pP2",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -115,9 +118,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -143,47 +144,68 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!v8x6SQFAOTzUIRnU.46qS6lWyqqCkSFj8"
     },
     {
       "name": "艾伐黑触手—束缚",
       "img": "modules/dnd5e_classpack/Nicons/spell_priest_voidtendrils.jpg",
-      "origin": "Item.DaFw5hy4Jm917XYy",
+      "origin": null,
       "transfer": false,
       "_id": "BGrMxlhDntW2tPxW",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 0,
-          "value": "turn=start, label=艾伐黑触手—束缚, rollType=check, saveAbility=str, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=3d6, damageType=bludgeoning, damageBeforeSave=true, saveDamage=fulldamage, saveCount=1-, actionSave=dialog, rollMode=publicroll, allowIncapacitated=true",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=start, label=艾伐黑触手—束缚, rollType=check, saveAbility=str, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=3d6, damageType=bludgeoning, damageBeforeSave=true, saveDamage=fulldamage, saveCount=1-, actionSave=dialog, rollMode=publicroll, allowIncapacitated=true",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "NZFHyIhY6fNqRStB",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "macro.execute",
+            "value": "DeleteAuraEffect",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "vRnkgQnqbLfatLRg",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "macro.execute",
-          "mode": 0,
-          "value": "DeleteAuraEffect",
-          "priority": 20
-        }
-      ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Item.DaFw5hy4Jm917XYy",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -206,9 +228,7 @@
           "macroRepeat": "none"
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -217,20 +237,23 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1786656160533,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!v8x6SQFAOTzUIRnU.BGrMxlhDntW2tPxW"
     }
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \"><p>你指定一处施法距离内你能看见的20尺方形区域，使其内布满蠕动的乌黑触须，进而使该区域成为困难地形。 <br />任何生物在一个回合内第一次进入该区域，或者在区域内开始其回合时，必须进行一次敏捷豁免。豁免失败者将受到3d6点钝击伤害，并且被触须束缚直至法术终止。生物在区域内开始其回合时，如果已受触须束缚则受到3d6点钝击伤害。 <br />受触须束缚的生物可以使用动作进行一次对抗法术豁免DC的力量检定或敏捷检定（自选其一），检定成功则挣脱束缚。 <br /></p><p>使用本法术时请从合集包的宏文件夹中导入艾伐黑触手中的所有宏</p></div>",
+      "value": "<div class=\"description \"><p>你指定一处施法距离内你能看见的20尺方形区域，使其内布满蠕动的乌黑触须，进而使该区域成为困难地形。 <br>任何生物在一个回合内第一次进入该区域，或者在区域内开始其回合时，必须进行一次敏捷豁免。豁免失败者将受到3d6点钝击伤害，并且被触须束缚直至法术终止。生物在区域内开始其回合时，如果已受触须束缚则受到3d6点钝击伤害。 <br>受触须束缚的生物可以使用动作进行一次对抗法术豁免DC的力量检定或敏捷检定（自选其一），检定成功则挣脱束缚。 <br></p><p>使用本法术时请从合集包的宏文件夹中导入艾伐黑触手中的所有宏</p></div>",
       "chat": ""
     },
     "source": {
@@ -248,7 +271,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -260,7 +284,8 @@
         "type": "square",
         "size": "20",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -281,10 +306,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -311,26 +332,32 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "46qS6lWyqqCkSFj8"
+            "_id": "46qS6lWyqqCkSFj8",
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -360,7 +387,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -368,7 +396,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -379,26 +406,74 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "black-tentacles"
+    "identifier": "black-tentacles",
+    "method": "spell",
+    "prepared": 0
   },
   "folder": "ZmO2ZE1E5wu6WU0S",
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1753358091998,
     "modifiedTime": 1757256808586,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

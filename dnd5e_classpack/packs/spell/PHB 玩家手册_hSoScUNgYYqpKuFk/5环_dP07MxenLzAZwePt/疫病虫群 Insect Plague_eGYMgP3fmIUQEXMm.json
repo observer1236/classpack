@@ -30,18 +30,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "疫病虫群 Insect Plague",
@@ -82,28 +71,42 @@
     {
       "name": "疫病虫群 Insect Plague",
       "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_FelFireNova.png",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.eGYMgP3fmIUQEXMm",
+      "origin": null,
       "transfer": false,
       "_id": "7257h7j0lSTJo4aw",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 2,
-          "value": "turn=end, label=疫病虫群 Insect Plague, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=(@flags.dnd5e.spellLevel-1)d8, damageType=piercing, saveDamage=halfdamage, allowIncapacitated=true",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end, label=疫病虫群 Insect Plague, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=(@flags.dnd5e.spellLevel-1)d8, damageType=piercing, saveDamage=halfdamage, allowIncapacitated=true",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "F1VDNjvG19ODVVLU",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.eGYMgP3fmIUQEXMm",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -124,9 +127,7 @@
           "macroRepeat": "none"
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -135,20 +136,23 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": 1754987308857,
         "modifiedTime": 1786655718353,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!eGYMgP3fmIUQEXMm.7257h7j0lSTJo4aw"
     }
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 你指定施法距离内一点，并以该点为中心使半径20尺的球状区域内堆满成群的噬人蝗虫。虫群会绕过拐角扩散并使整个区域成为困难地形，且处于轻度遮蔽。虫群在法术终止前都会持续存在。\n<br />当虫群显现时，其区域内的每个生物都必须进行一次体质豁免，豁免失败则受到4d10的穿刺伤害，豁免成功则伤害减半。\n<br />生物在一个回合内第一次进入该区域内，或者在区域内结束其回合时，也必须进行该豁免。\n<br /><strong>升环施法效应。</strong>使用6环或更高法术位施展该法术时，你使用的法术位每比6环高一环，伤害就增加1d10。\n<br /></div>",
+      "value": "<div class=\"description \"> 你指定施法距离内一点，并以该点为中心使半径20尺的球状区域内堆满成群的噬人蝗虫。虫群会绕过拐角扩散并使整个区域成为困难地形，且处于轻度遮蔽。虫群在法术终止前都会持续存在。\n<br>当虫群显现时，其区域内的每个生物都必须进行一次体质豁免，豁免失败则受到4d10的穿刺伤害，豁免成功则伤害减半。\n<br>生物在一个回合内第一次进入该区域内，或者在区域内结束其回合时，也必须进行该豁免。\n<br><strong>升环施法效应。</strong>使用6环或更高法术位施展该法术时，你使用的法术位每比6环高一环，伤害就增加1d10。\n<br></div>",
       "chat": ""
     },
     "source": {
@@ -164,7 +168,8 @@
     },
     "duration": {
       "value": "10",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -176,7 +181,8 @@
         "type": "sphere",
         "size": "20",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -197,10 +203,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -227,27 +229,33 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "7257h7j0lSTJo4aw",
-            "onSave": true
+            "onSave": true,
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -268,7 +276,7 @@
                 "formula": ""
               },
               "number": 4,
-              "denomination": "10",
+              "denomination": 10,
               "bonus": "",
               "types": [
                 "piercing"
@@ -277,7 +285,8 @@
                 "mode": "whole",
                 "number": 1,
                 "formula": ""
-              }
+              },
+              "modifiers": []
             }
           ],
           "critical": {
@@ -291,7 +300,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -305,7 +315,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -313,7 +324,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -324,23 +334,68 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "otherActivityId": "",
         "name": "",
         "img": "",
-        "appliedEffects": [
-          "7257h7j0lSTJo4aw"
-        ]
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "insect-plague"
+    "identifier": "insect-plague",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -349,8 +404,8 @@
   "sort": 33600000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

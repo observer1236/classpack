@@ -9,7 +9,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<p>你已经可以在战斗中造成精准的穿刺。你获得以下好处：<br />·你的力量或敏捷提升1，上限为20。<br />·每回合一次，当你用造成穿刺伤害的攻击命中一个生物时，你可以重投其中一个伤害骰。你必须使用重投的结果。<br />·当你用造成穿刺伤害的攻击命中一个生物并且造成重击时，你可以在计算重击伤害时投一个额外的伤害骰。</p>",
+      "value": "<p>你已经可以在战斗中造成精准的穿刺。你获得以下好处：<br>·你的力量或敏捷提升1，上限为20。<br>·每回合一次，当你用造成穿刺伤害的攻击命中一个生物时，你可以重投其中一个伤害骰。你必须使用重投的结果。<br>·当你用造成穿刺伤害的攻击命中一个生物并且造成重击时，你可以在计算重击伤害时投一个额外的伤害骰。</p>",
       "chat": ""
     },
     "source": {
@@ -26,13 +26,14 @@
     "requirements": "",
     "activities": {},
     "identifier": "-piercertce",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -41,17 +42,12 @@
   "sort": 101563,
   "flags": {
     "core": {},
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275287302,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -25,13 +25,14 @@
     "requirements": "附魔学派等级 10",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "trait"
@@ -50,12 +51,7 @@
       "alwaysActive": false,
       "effects": []
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -75,9 +71,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757092591758,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

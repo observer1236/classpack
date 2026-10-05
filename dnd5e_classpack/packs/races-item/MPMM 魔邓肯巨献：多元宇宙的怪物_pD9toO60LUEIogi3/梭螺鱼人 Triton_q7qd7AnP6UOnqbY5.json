@@ -14,22 +14,25 @@
       "rules": "2014",
       "book": "MPMM"
     },
-    "advancement": [
-      {
+    "advancement": {
+      "5JHi7TpigcoMB9Dv": {
         "type": "AbilityScoreImprovement",
         "_id": "5JHi7TpigcoMB9Dv",
         "configuration": {
           "points": 0,
           "fixed": {},
           "cap": 2,
-          "locked": []
+          "locked": [],
+          "recommendation": null
         },
         "value": {
           "type": "asi"
         },
-        "level": 0
+        "level": 0,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "yJF7aTP9xAkqkP7D": {
         "type": "Size",
         "_id": "yJF7aTP9xAkqkP7D",
         "configuration": {
@@ -38,9 +41,11 @@
           ]
         },
         "level": 0,
-        "value": {}
+        "value": {},
+        "flags": {},
+        "hint": ""
       },
-      {
+      "JlzcUw8kgx0urH4O": {
         "type": "Trait",
         "configuration": {
           "grants": [
@@ -54,50 +59,61 @@
         "value": {
           "chosen": []
         },
-        "level": 0
+        "level": 0,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "3AC5FOHsXy7nd2d5": {
         "_id": "3AC5FOHsXy7nd2d5",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.s8dLFsdHrLd8WszV",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.jip5vDcnOktYzQWr",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.wUkIW5Nfcxad3qlY",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.gzH0O3XmNxiJsH7Z",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.5621VjL1oFIWMIDt",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 0,
-        "title": "做精品棉质特性",
-        "icon": null
+        "name": "做精品棉质特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "ghHxxzGxIjSKAyIl": {
         "_id": "ghHxxzGxIjSKAyIl",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.Item.rKLSWNBCS8eqGUll",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
@@ -105,26 +121,31 @@
             "ability": [
               ""
             ],
-            "preparation": "always",
             "uses": {
               "max": "1",
               "per": "lr",
               "requireSlot": false
-            }
-          }
+            },
+            "method": "spell",
+            "prepared": 2
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 0,
-        "title": "控风操水",
-        "icon": null
+        "name": "控风操水",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "o8LRwKWNRhay3vvD": {
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.Item.cGIrpk6h4Rf8QKV6",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
@@ -132,27 +153,32 @@
             "ability": [
               ""
             ],
-            "preparation": "always",
             "uses": {
               "max": "1",
               "per": "lr",
               "requireSlot": false
-            }
-          }
+            },
+            "method": "spell",
+            "prepared": 2
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "控风操水",
-        "icon": null,
-        "_id": "o8LRwKWNRhay3vvD"
+        "_id": "o8LRwKWNRhay3vvD",
+        "name": "控风操水",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "KaB7gX7MPXhmjdUt": {
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.Item.fpEiFPEnSjOGP7wy",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
@@ -160,21 +186,25 @@
             "ability": [
               ""
             ],
-            "preparation": "always",
             "uses": {
               "max": "1",
               "per": "lr",
               "requireSlot": false
-            }
-          }
+            },
+            "method": "spell",
+            "prepared": 2
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 5,
-        "title": "控风操水",
-        "icon": null,
-        "_id": "KaB7gX7MPXhmjdUt"
+        "_id": "KaB7gX7MPXhmjdUt",
+        "name": "控风操水",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "xGLsP6Mlc9N2JAf6": {
         "_id": "xGLsP6Mlc9N2JAf6",
         "type": "Trait",
         "configuration": {
@@ -189,27 +219,30 @@
           "chosen": []
         },
         "level": 0,
-        "title": "海渊守卫",
-        "icon": null,
-        "hint": "你具有冷冻伤害的抗性，能够适应海洋深处的严寒。"
+        "hint": "你具有冷冻伤害的抗性，能够适应海洋深处的严寒。",
+        "name": "海渊守卫",
+        "img": null,
+        "flags": {}
       }
-    ],
+    },
     "movement": {
-      "burrow": null,
-      "climb": null,
-      "fly": null,
-      "swim": 30,
-      "walk": 30,
       "units": null,
-      "hover": false
+      "hover": false,
+      "speeds": {
+        "walk": "30",
+        "swim": "30"
+      },
+      "ignoredDifficultTerrain": []
     },
     "senses": {
-      "darkvision": 60,
-      "blindsight": null,
-      "tremorsense": null,
-      "truesight": null,
       "units": null,
-      "special": ""
+      "special": "",
+      "ranges": {
+        "darkvision": 60,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null
+      }
     },
     "type": {
       "value": "humanoid"
@@ -226,8 +259,8 @@
   "flags": {},
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1713019636225,
     "modifiedTime": 1757262237535,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

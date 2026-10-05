@@ -28,18 +28,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "暗黑星辰Dark Star",
@@ -74,40 +63,62 @@
     {
       "name": "暗黑星辰Dark Star",
       "img": "icons/magic/light/projectiles-star-purple.webp",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.KS5iEDJFWv7JWwb2",
+      "origin": null,
       "transfer": false,
       "_id": "nkmHVJFyqP5tl5VD",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.fail.spell.vocal",
-          "mode": 2,
-          "value": "+1",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.fail.spell.vocal",
+            "value": "+1",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Dbi3nCGN9D2dpbKM",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "thunder",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "O2k62Z2BzJoOVoAO",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=start, label=暗黑星辰Dark Star, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=8d10, damageType=force, saveDamage=halfdamage, rollMode=publicroll, allowIncapacitated=true",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "deO4S4H1HjWnLlq0",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "thunder",
-          "priority": 20
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.KS5iEDJFWv7JWwb2",
+          "message": null
         },
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 2,
-          "value": "turn=start, label=暗黑星辰Dark Star, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=8d10, damageType=force, saveDamage=halfdamage, rollMode=publicroll, allowIncapacitated=true",
-          "priority": 20
-        }
-      ],
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -131,9 +142,7 @@
           "macroRepeat": "none"
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -159,14 +168,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756709376000,
         "modifiedTime": 1786655400906,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!KS5iEDJFWv7JWwb2.nkmHVJFyqP5tl5VD"
     }
   ],
@@ -190,7 +202,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -202,7 +215,8 @@
         "type": "sphere",
         "size": "40",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -222,10 +236,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -252,26 +262,32 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "nkmHVJFyqP5tl5VD"
+            "_id": "nkmHVJFyqP5tl5VD",
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -301,7 +317,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -309,7 +326,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -320,18 +336,66 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "dark-star"
+    "identifier": "dark-star",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -340,8 +404,8 @@
   "sort": 200000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757260515425,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

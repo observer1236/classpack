@@ -45,23 +45,31 @@
           "spellSlot": true,
           "targets": [
             {
-              "type": "activityUses"
+              "type": "activityUses",
+              "value": "1",
+              "scaling": {}
             }
           ]
         },
-        "description": {},
+        "description": {
+          "value": ""
+        },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "3aYd9OtsR7CeGanM",
-            "level": {}
+            "level": {},
+            "uuid": null
           },
           {
-            "_id": "njeCvkQovfoqGjsk"
+            "_id": "njeCvkQovfoqGjsk",
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
@@ -71,7 +79,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -98,7 +107,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -106,7 +116,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -117,25 +126,72 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
@@ -145,7 +201,7 @@
     {
       "name": "至圣光轮",
       "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_Cascade.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.69Ly1nZ7GmRbxEWt",
+      "origin": null,
       "transfer": false,
       "_id": "3aYd9OtsR7CeGanM",
       "type": "auraeffects.aura",
@@ -154,38 +210,48 @@
         "applyToSelf": false,
         "bestFormula": "",
         "canStack": false,
-        "collisionTypes": [
-          "move"
-        ],
         "color": null,
         "combatOnly": true,
         "disableOnHidden": true,
         "distanceFormula": "30",
         "disposition": -1,
         "evaluatePreApply": false,
-        "opacity": 0.25,
         "overrideName": "",
         "script": "",
         "stashedChanges": [],
-        "stashedStatuses": []
+        "stashedStatuses": [],
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=start, label=至圣光轮, rollType=damage, damageRoll=10, damageType=radiant, rollMode=publicroll, allowIncapacitated=true",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "VioVfZuArxWPjcHB",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "collisionType": "move",
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.69Ly1nZ7GmRbxEWt",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
       },
-      "changes": [
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 2,
-          "value": "turn=start, label=至圣光轮, rollType=damage, damageRoll=10, damageType=radiant, rollMode=publicroll, allowIncapacitated=true",
-          "priority": 20
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": 10,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 10,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -206,9 +272,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -220,41 +284,58 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757274414157,
         "modifiedTime": 1757274537595,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!69Ly1nZ7GmRbxEWt.3aYd9OtsR7CeGanM"
     },
     {
       "name": "对抗不死与邪魔法术优势",
       "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_Cascade.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.69Ly1nZ7GmRbxEWt",
+      "origin": null,
       "transfer": false,
       "_id": "njeCvkQovfoqGjsk",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.advantage.save.all",
-          "mode": 2,
-          "value": "workflow.item.type == 'spell' && [\"fiend\",\"undead\"].includes(actor.typeOrRace)",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.advantage.save.all",
+            "value": "workflow.item.type == 'spell' && [\"fiend\",\"undead\"].includes(actor.typeOrRace)",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ywSo6A8rlNNxHoL2",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.69Ly1nZ7GmRbxEWt",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "combat": null,
-        "seconds": 60,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -262,9 +343,7 @@
       "sort": 0,
       "flags": {
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "dae": {
           "enableCondition": "",
@@ -287,13 +366,16 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.5",
         "createdTime": 1787067588983,
         "modifiedTime": 1787069151118,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a"
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!69Ly1nZ7GmRbxEWt.njeCvkQovfoqGjsk"
     }
   ],
@@ -304,10 +386,7 @@
     "entityorder": {
       "order": 111
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -334,9 +413,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757274549895,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

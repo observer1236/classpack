@@ -25,13 +25,14 @@
     "requirements": "野蛮人等级 9",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,27 +40,41 @@
     {
       "name": "凶蛮重击",
       "img": "modules/dnd5e_classpack/Nicons/Spell_DeathKnight_Butcher2.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.O8VF5zsGJp1Jhmct",
+      "origin": null,
       "_id": "Ra7BfKT43zrkDYjg",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.dnd5e.meleeCriticalDamageDice",
-          "mode": 2,
-          "value": "@scale.barbarian.brutal-critical",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.meleeCriticalDamageDice",
+            "value": "@scale.barbarian.brutal-critical",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "u9SJWASnbJFHRuAO",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.O8VF5zsGJp1Jhmct",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -77,9 +92,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -88,26 +101,24 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757182317601,
         "modifiedTime": 1757186537804,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!O8VF5zsGJp1Jhmct.Ra7BfKT43zrkDYjg"
     }
   ],
   "folder": "yHRuDCK2hvnV9bfU",
   "sort": 19300000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -127,9 +138,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757186633161,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

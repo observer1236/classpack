@@ -4,7 +4,7 @@
   "img": "modules/dnd5e_classpack/Nicons/ability_racial_visage.png",
   "system": {
     "description": {
-      "value": "<p>伴随着一声怒吼，你<span class=\"GramE\">用龙族的</span>魔法变化自身，获得<span class=\"GramE\">多种龙族</span>特征。直至法术结束，你获得以下好处：<span><br />      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">盲视</span></strong>：你获得<span>30</span>尺盲视。此范围内，任何不处于全身掩护后的东西对于你来说清晰可见，即使你处于目<span class=\"GramE\">盲状态</span>或黑暗中。此外，你可以看见隐形的生物，除非该生物对你处于躲藏状态。<span><br />      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">吐息武器</span></strong>：当你施展此法术时，以及在持续时间内随后的回合以一个附赠动作，你可以在<span>60</span>尺锥形内呼出一道闪着光的能量。范围内的每个生物都必须成功通过一次敏捷豁免，否则受到<span>6d8</span>点力场伤害，成功则伤害减半。<span><br />      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">飞翼</span></strong>：无形之翼从你背后长出，使你获得<span>60</span>尺飞行速度。<span><br /><br /></span></p>",
+      "value": "<p>伴随着一声怒吼，你<span class=\"GramE\">用龙族的</span>魔法变化自身，获得<span class=\"GramE\">多种龙族</span>特征。直至法术结束，你获得以下好处：<span><br>      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">盲视</span></strong>：你获得<span>30</span>尺盲视。此范围内，任何不处于全身掩护后的东西对于你来说清晰可见，即使你处于目<span class=\"GramE\">盲状态</span>或黑暗中。此外，你可以看见隐形的生物，除非该生物对你处于躲藏状态。<span><br>      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">吐息武器</span></strong>：当你施展此法术时，以及在持续时间内随后的回合以一个附赠动作，你可以在<span>60</span>尺锥形内呼出一道闪着光的能量。范围内的每个生物都必须成功通过一次敏捷豁免，否则受到<span>6d8</span>点力场伤害，成功则伤害减半。<span><br>      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">飞翼</span></strong>：无形之翼从你背后长出，使你获得<span>60</span>尺飞行速度。<span><br><br></span></p>",
       "chat": ""
     },
     "source": {
@@ -20,7 +20,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -30,10 +31,11 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "width": "20",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -53,10 +55,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -83,26 +81,32 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "0uacPy6kvOWs77dz"
+            "_id": "0uacPy6kvOWs77dz",
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": false,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -132,7 +136,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -140,7 +145,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -151,54 +155,79 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "draconic-transformation"
+    "identifier": "draconic-transformation",
+    "method": "spell",
+    "prepared": 0
   },
   "effects": [
     {
       "name": "龙类变形 Draconic Transformation",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.p0HwQvm5DXHoQDgy",
+      "origin": null,
       "duration": {
-        "rounds": 10,
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 10,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "_id": "0uacPy6kvOWs77dz",
-      "changes": [
-        {
-          "key": "system.attributes.movement.fly",
-          "mode": 2,
-          "value": "+60",
-          "priority": 20
-        },
-        {
-          "key": "system.attributes.senses.blindsight",
-          "mode": 2,
-          "value": "+60",
-          "priority": 20
-        },
-        {
-          "key": "",
-          "mode": 2,
-          "value": "Compendium.dnd5e_classpack.itempack.Item.3miJNGAo1VE5Dlw2",
-          "priority": 20
-        }
-      ],
       "description": "",
       "transfer": false,
       "statuses": [],
@@ -217,9 +246,7 @@
           "disableCondition": ""
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -227,9 +254,9 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1756664203411,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -239,8 +266,56 @@
       },
       "img": "modules/dnd5e_classpack/Nicons/ability_racial_visage.png",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.fly",
+            "value": "+60",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "uTR7ZlYaMq9ydILl",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.attributes.senses.blindsight",
+            "value": "+60",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "MK5hNwOOPsYkdXyW",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "",
+            "value": "Compendium.dnd5e_classpack.itempack.Item.3miJNGAo1VE5Dlw2",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "2vxj6C45dPK8B5xI",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.p0HwQvm5DXHoQDgy",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!p0HwQvm5DXHoQDgy.0uacPy6kvOWs77dz"
     }
   ],
@@ -276,18 +351,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_id": "p0HwQvm5DXHoQDgy",
   "folder": "T1MbuKkSjzui0eHq",
@@ -297,8 +361,8 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711699909889,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

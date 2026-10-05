@@ -20,59 +20,71 @@
     },
     "identifier": "college-of-lore",
     "classIdentifier": "bard",
-    "advancement": [
-      {
+    "advancement": {
+      "xc5aaw0wrli6jluk": {
         "_id": "xc5aaw0wrli6jluk",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.XVwbRWKX20xZZWQB",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "i636y9x8kmqd9es0": {
         "_id": "i636y9x8kmqd9es0",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.4gw4Jan6LIfedaPp",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "5q08qn03a7lbzlj8": {
         "_id": "5q08qn03a7lbzlj8",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.iFneTtcKYfc8e5I6",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 14,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "chwuJVtk7i0caPty": {
         "_id": "chwuJVtk7i0caPty",
         "type": "ItemChoice",
         "configuration": {
@@ -89,25 +101,29 @@
             "ability": [
               ""
             ],
-            "preparation": "",
             "uses": {
               "max": "",
               "per": "",
               "requireSlot": false
-            }
+            },
+            "prepared": 0
           },
           "restriction": {
-            "level": ""
-          }
+            "level": "",
+            "list": [],
+            "school": []
+          },
+          "sorting": "a"
         },
         "value": {
           "added": {},
           "replaced": {}
         },
-        "title": "额外魔法奥秘",
-        "hint": "第6级时，你从任意职业的法术列表里选择两个法术加入已知法术中。你选择的法术必须是你当前等级可以施展的环阶或戏法。所选法术对你而言视为吟游诗人法术，但不包含在“吟游诗人职业表”上“已知法术”一栏的所记录的数量之内。"
+        "hint": "第6级时，你从任意职业的法术列表里选择两个法术加入已知法术中。你选择的法术必须是你当前等级可以施展的环阶或戏法。所选法术对你而言视为吟游诗人法术，但不包含在“吟游诗人职业表”上“已知法术”一栏的所记录的数量之内。",
+        "name": "额外魔法奥秘",
+        "flags": {}
       },
-      {
+      "EIIPsenzbnaOqrDR": {
         "_id": "EIIPsenzbnaOqrDR",
         "type": "Trait",
         "configuration": {
@@ -127,11 +143,12 @@
           "chosen": []
         },
         "level": 3,
-        "title": "额外熟练",
         "hint": "",
-        "icon": null
+        "name": "额外熟练",
+        "img": null,
+        "flags": {}
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",
@@ -145,8 +162,8 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

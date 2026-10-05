@@ -24,12 +24,14 @@
           "targets": []
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -41,7 +43,8 @@
           "template": {
             "contiguous": false,
             "units": "ft",
-            "type": ""
+            "type": "",
+            "stationary": false
           },
           "affects": {
             "choice": false,
@@ -56,7 +59,7 @@
           "max": ""
         },
         "enchant": {
-          "identifier": ""
+          "self": false
         },
         "restrictions": {
           "allowMagical": true,
@@ -75,7 +78,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -83,7 +87,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -94,17 +97,61 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "otherActivityId": null,
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
     "uses": {
@@ -136,15 +183,12 @@
       "value": 0,
       "denomination": "gp"
     },
-    "rarity": "",
     "attunement": "required",
     "attuned": false,
     "equipped": false,
     "cover": null,
-    "crewed": false,
     "armor": {
       "value": null,
-      "magicalBonus": null,
       "dex": null
     },
     "proficient": null,
@@ -155,33 +199,51 @@
     "type": {
       "value": "",
       "baseItem": ""
+    },
+    "rarities": [],
+    "crew": {
+      "value": []
     }
   },
   "effects": [
     {
       "name": "龙触法器--先攻优势  Dragon-Touched Focus",
       "img": "modules/dnd5e_classpack/Nicons/inv_ring_ardenweald_02_green.jpg",
-      "origin": "Compendium.dnd5e_classpack.itempack.Item.1GHlYPGakpywiXUs",
+      "origin": null,
       "_id": "ywOUZ9o8Olf2DOsZ",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.dnd5e.initiativeAdv",
-          "mode": 5,
-          "value": "1",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.initiativeAdv",
+            "value": 1,
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "A6Rbc9BtxoWyNtyg",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.itempack.Item.1GHlYPGakpywiXUs",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -199,9 +261,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -210,14 +270,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757145663113,
         "modifiedTime": 1757145773210,
         "lastModifiedBy": "WlyFYC2sYFseAvyj",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!1GHlYPGakpywiXUs.ywOUZ9o8Olf2DOsZ"
     },
     {
@@ -226,59 +289,93 @@
       "img": "modules/dnd5e_classpack/Nicons/inv_ring_ardenweald_02_green.jpg",
       "disabled": true,
       "_id": "VeCalyvP8lWassIO",
-      "system": {},
-      "changes": [
-        {
-          "key": "system.rarity",
-          "mode": 5,
-          "value": "uncommon",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "system.rarity",
+            "value": "uncommon",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "QiyB2uZtvPaOl097",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.attunement",
+            "value": "required",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "EEAjvwqwwG9nfM54",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.description.value",
+            "value": "{}\n奇物(任意)，非普通(需要同调)\n\n这个奇物可以是法杖、法球、护符、水晶或其他的精制物件。它通常包含有龙的翅膀、爪子、牙齿或鳞片的象形。\n\n你的先攻检定具有优势。当你持握这件法器时，它可以作为你施展所有法术的法器。",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "EYZrukLK8tKkdZPy",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.price.value",
+            "value": 500,
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "WahwbVQH442O2H2F",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.price.denomination",
+            "value": "gp",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "L2kcW2kEXah9Uedv",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Bx6T1Zu401Amj3lF",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "name",
+            "value": "龙触{}",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "v6HkFRqMwOy08qLP",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
         },
-        {
-          "key": "system.attunement",
-          "mode": 5,
-          "value": "required",
-          "priority": 20
-        },
-        {
-          "key": "system.description.value",
-          "mode": 5,
-          "value": "{}\n奇物(任意)，非普通(需要同调)\n\n这个奇物可以是法杖、法球、护符、水晶或其他的精制物件。它通常包含有龙的翅膀、爪子、牙齿或鳞片的象形。\n\n你的先攻检定具有优势。当你持握这件法器时，它可以作为你施展所有法术的法器。",
-          "priority": 20
-        },
-        {
-          "key": "system.price.value",
-          "mode": 2,
-          "value": "500",
-          "priority": 20
-        },
-        {
-          "key": "system.price.denomination",
-          "mode": 5,
-          "value": "gp",
-          "priority": 20
-        },
-        {
-          "key": "system.properties",
-          "mode": 2,
-          "value": "mgc",
-          "priority": 20
-        },
-        {
-          "key": "name",
-          "mode": 5,
-          "value": "龙触{}",
-          "priority": 20
-        }
-      ],
+        "magical": true
+      },
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "origin": null,
@@ -297,9 +394,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -308,14 +403,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757145793830,
         "modifiedTime": 1757145950619,
         "lastModifiedBy": "WlyFYC2sYFseAvyj",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!1GHlYPGakpywiXUs.VeCalyvP8lWassIO"
     }
   ],
@@ -342,12 +440,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "chris-premades": {
       "info": {
         "identifier": "dragonTouchedFocusSlumbering",
@@ -359,9 +452,9 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1757145217476,
     "modifiedTime": 1757873096127,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

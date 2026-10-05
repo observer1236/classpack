@@ -31,34 +31,18 @@
       "idv": false,
       "ida": false
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "ritual",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Silence.png",
   "effects": [
     {
-      "changes": [],
       "description": "<p>- A deafened creature can't hear and automatically fails any ability check that requires hearing.</p>",
       "disabled": false,
       "duration": {
-        "rounds": null,
-        "seconds": null,
-        "turns": null,
-        "startTime": null,
-        "combat": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
         "dfreds-convenient-effects": {
@@ -82,7 +66,7 @@
         "core": {}
       },
       "name": "Silence",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.K8KLs8zFHqBZittr",
+      "origin": null,
       "tint": "#ffffff",
       "transfer": false,
       "statuses": [
@@ -91,9 +75,9 @@
       ],
       "_id": "FoYq5rKL3p9fzj8b",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -103,8 +87,25 @@
       },
       "img": "modules/dfreds-convenient-effects/images/magic-palm.svg",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.K8KLs8zFHqBZittr",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!K8KLs8zFHqBZittr.FoYq5rKL3p9fzj8b"
     }
   ],
@@ -126,7 +127,8 @@
     },
     "duration": {
       "value": "10",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -138,7 +140,8 @@
         "type": "sphere",
         "size": "20",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -159,10 +162,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -189,26 +188,32 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "FoYq5rKL3p9fzj8b"
+            "_id": "FoYq5rKL3p9fzj8b",
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -238,7 +243,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -246,7 +252,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -257,18 +262,66 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "silence"
+    "identifier": "silence",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -277,8 +330,8 @@
   "sort": 600000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711688227323,
     "modifiedTime": 1757419719404,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

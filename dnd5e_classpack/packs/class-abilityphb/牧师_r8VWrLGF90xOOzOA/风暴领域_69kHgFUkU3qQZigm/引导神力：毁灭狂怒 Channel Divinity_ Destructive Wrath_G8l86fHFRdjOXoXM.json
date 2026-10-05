@@ -26,12 +26,13 @@
     "requirements": "风暴领域等级 2",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
@@ -41,39 +42,61 @@
     {
       "name": "引导神力-毁灭狂怒",
       "img": "modules/dnd5e_classpack/Nicons/Warlock_SiphonLife.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.G8l86fHFRdjOXoXM",
+      "origin": null,
       "_id": "FrUmVQPlLk3jCK6d",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.activation",
-          "mode": 2,
-          "value": "['lightning', 'thunder'].some(type=>damageTypes[type])",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.activation",
+            "value": "['lightning', 'thunder'].some(type=>damageTypes[type])",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "n7o0jRd7gdn81H1o",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.damage.all",
+            "value": "reroll-max",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ni8KxazdQNmLI3LI",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.count",
+            "value": "ItemUses.引导神力 Channel Divinity",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "QUPJOJc6cgGhLyDa",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.damage.all",
-          "mode": 2,
-          "value": "reroll-max",
-          "priority": 20
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.G8l86fHFRdjOXoXM",
+          "message": null
         },
-        {
-          "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.count",
-          "mode": 2,
-          "value": "ItemUses.引导神力 Channel Divinity",
-          "priority": 20
-        }
-      ],
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -91,9 +114,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -102,14 +123,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757268059747,
         "modifiedTime": 1757268205094,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!G8l86fHFRdjOXoXM.FrUmVQPlLk3jCK6d"
     }
   ],
@@ -140,14 +164,7 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "chris-premades": {
       "info": {
         "identifier": "destructiveWrath",
@@ -160,9 +177,9 @@
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757268306673,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

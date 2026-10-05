@@ -16,7 +16,7 @@
     "cover": null,
     "uses": {
       "max": "1",
-      "spent": 0,
+      "spent": 1,
       "recovery": []
     },
     "type": {
@@ -44,17 +44,20 @@
             {
               "type": "itemUses",
               "value": "1",
-              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.2N9lOBZ0UerzDM55"
+              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.2N9lOBZ0UerzDM55",
+              "scaling": {}
             }
           ]
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
@@ -69,7 +72,8 @@
                 "7EUDmM3tZvO2MU13"
               ],
               "item": []
-            }
+            },
+            "uuid": null
           }
         ],
         "range": {
@@ -81,7 +85,8 @@
           "template": {
             "contiguous": false,
             "units": "ft",
-            "type": ""
+            "type": "",
+            "stationary": false
           },
           "affects": {
             "choice": false,
@@ -96,7 +101,7 @@
           "max": ""
         },
         "enchant": {
-          "identifier": ""
+          "self": false
         },
         "restrictions": {
           "allowMagical": true,
@@ -115,7 +120,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -123,7 +129,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -134,28 +139,71 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "name": "",
         "img": "",
-        "appliedEffects": [
-          "zc0aV0fKYvUOX8r5"
-        ]
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "otherActivityId": null,
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": 3,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
@@ -168,23 +216,33 @@
       "img": "modules/dnd5e_classpack/Nicons/ability_deathwing_grasping_tendrils.png",
       "disabled": true,
       "_id": "zc0aV0fKYvUOX8r5",
-      "system": {},
-      "changes": [
-        {
-          "key": "system.damage.base.types",
-          "mode": 2,
-          "value": "fire",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "system.damage.base.types",
+            "value": "fire",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "dlhTCpAXiQisLdqV",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "origin": null,
@@ -203,9 +261,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -214,52 +270,77 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757100507379,
         "modifiedTime": 1757100758557,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!hqnKBQJsuYZzBc9i.zc0aV0fKYvUOX8r5"
     },
     {
       "name": "火蛇利牙",
       "img": "modules/dnd5e_classpack/Nicons/ability_deathwing_grasping_tendrils.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.hqnKBQJsuYZzBc9i",
+      "origin": null,
       "_id": "7EUDmM3tZvO2MU13",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.optional.火蛇利牙.damage.mwak",
-          "mode": 2,
-          "value": "1d10[fire]",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.火蛇利牙.damage.mwak",
+            "value": "1d10[fire]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "tMfGYOgL8QFjcZwq",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.火蛇利牙.count",
+            "value": "ItemUses.气 Ki",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "aOHWtxQi13fSYT7z",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.火蛇利牙.label",
+            "value": "是否消耗1点气增加1d10火焰伤害",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "iQxv7gE3SvEXn9VJ",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "flags.midi-qol.optional.火蛇利牙.count",
-          "mode": 2,
-          "value": "ItemUses.气 Ki",
-          "priority": 20
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.hqnKBQJsuYZzBc9i",
+          "message": null
         },
-        {
-          "key": "flags.midi-qol.optional.火蛇利牙.label",
-          "mode": 2,
-          "value": "是否消耗1点气增加1d10火焰伤害",
-          "priority": 20
-        }
-      ],
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -281,9 +362,7 @@
           "dontApply": false
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -292,14 +371,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757100769794,
         "modifiedTime": 1757101007541,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!hqnKBQJsuYZzBc9i.7EUDmM3tZvO2MU13"
     }
   ],
@@ -340,10 +422,7 @@
       "reactionCondition": ""
     },
     "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
       "riders": {
-        "activity": [],
         "effect": [
           "7EUDmM3tZvO2MU13"
         ]
@@ -354,9 +433,9 @@
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757866198416,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

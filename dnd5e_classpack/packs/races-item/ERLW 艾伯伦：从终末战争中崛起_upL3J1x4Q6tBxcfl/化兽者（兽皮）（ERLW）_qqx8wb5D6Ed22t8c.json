@@ -13,8 +13,8 @@
       "rules": "2024",
       "book": "ERLW"
     },
-    "advancement": [
-      {
+    "advancement": {
+      "uSgQ2Dq1WVE7AJzB": {
         "type": "AbilityScoreImprovement",
         "_id": "uSgQ2Dq1WVE7AJzB",
         "configuration": {
@@ -35,16 +35,18 @@
             "wis",
             "cha"
           ],
-          "points": 0
+          "points": 0,
+          "recommendation": null
         },
         "value": {
           "type": "asi"
         },
         "level": 0,
-        "title": "",
-        "hint": ""
+        "hint": "",
+        "name": "",
+        "flags": {}
       },
-      {
+      "Kln6WLpzrsqyRkJt": {
         "type": "Size",
         "_id": "Kln6WLpzrsqyRkJt",
         "configuration": {
@@ -53,9 +55,11 @@
           ]
         },
         "level": 0,
-        "value": {}
+        "value": {},
+        "flags": {},
+        "hint": ""
       },
-      {
+      "PvrSP4TbAWHGOthW": {
         "type": "Trait",
         "configuration": {
           "grants": [
@@ -69,9 +73,11 @@
         "value": {
           "chosen": []
         },
-        "level": 0
+        "level": 0,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "aaHIY6S8vglptcrk": {
         "_id": "aaHIY6S8vglptcrk",
         "type": "Trait",
         "configuration": {
@@ -86,52 +92,59 @@
           "chosen": []
         },
         "level": 0,
-        "title": "天生运动健将",
-        "hint": ""
+        "hint": "",
+        "name": "天生运动健将",
+        "flags": {}
       },
-      {
+      "qOIRzC8kAJidYleV": {
         "_id": "qOIRzC8kAJidYleV",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.xGegaYIAC3bAWScN",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.LV3G4hXPeL8NW4GI",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.wUkIW5Nfcxad3qlY",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 0,
-        "title": "种族特性",
-        "hint": ""
+        "hint": "",
+        "name": "种族特性",
+        "flags": {}
       }
-    ],
+    },
     "movement": {
-      "burrow": null,
-      "climb": null,
-      "fly": null,
-      "swim": null,
-      "walk": 30,
       "units": "ft",
-      "hover": false
+      "hover": false,
+      "speeds": {
+        "walk": "30"
+      },
+      "ignoredDifficultTerrain": []
     },
     "senses": {
-      "darkvision": 60,
-      "blindsight": null,
-      "tremorsense": null,
-      "truesight": null,
       "units": "ft",
-      "special": ""
+      "special": "",
+      "ranges": {
+        "darkvision": 60,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null
+      }
     },
     "type": {
       "value": "humanoid"
@@ -143,9 +156,9 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1751976781483,
     "modifiedTime": 1757350114493,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

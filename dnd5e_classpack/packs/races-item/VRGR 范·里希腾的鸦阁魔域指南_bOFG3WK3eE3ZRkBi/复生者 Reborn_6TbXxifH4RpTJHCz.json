@@ -17,8 +17,8 @@
       "custom": "",
       "license": ""
     },
-    "advancement": [
-      {
+    "advancement": {
+      "IISBW7OCpxzbCNfU": {
         "type": "AbilityScoreImprovement",
         "_id": "IISBW7OCpxzbCNfU",
         "configuration": {
@@ -32,16 +32,19 @@
             "cha": 0
           },
           "cap": 2,
-          "locked": []
+          "locked": [],
+          "recommendation": null
         },
         "value": {
           "type": "asi"
         },
         "level": 0,
-        "title": "",
-        "icon": null
+        "name": "",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "pg9UoaMHjoClsJL7": {
         "type": "Size",
         "_id": "pg9UoaMHjoClsJL7",
         "configuration": {
@@ -51,11 +54,13 @@
           ]
         },
         "level": 0,
-        "title": "",
-        "icon": null,
-        "value": {}
+        "value": {},
+        "name": "",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "DDqMsISIarFnAyR5": {
         "type": "Trait",
         "configuration": {
           "grants": [
@@ -77,10 +82,12 @@
           "chosen": []
         },
         "level": 0,
-        "title": "",
-        "icon": null
+        "name": "",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "Hvqxda0U4yzz7flO": {
         "_id": "Hvqxda0U4yzz7flO",
         "type": "Trait",
         "configuration": {
@@ -95,34 +102,42 @@
           "chosen": []
         },
         "level": 0,
-        "title": "不死本质",
-        "icon": null
+        "name": "不死本质",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "PDabMDeyyQVDOeAA": {
         "_id": "PDabMDeyyQVDOeAA",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.GdxNJlwXObeNEZBc",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.e66Q03QEm4TRHTuF",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.X6FAYFQ522aPJuDr",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
-        "level": 0
+        "level": 0,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "a1LEy1inFM64SKiT": {
         "_id": "a1LEy1inFM64SKiT",
         "type": "Trait",
         "configuration": {
@@ -142,27 +157,29 @@
           "chosen": []
         },
         "level": 0,
-        "title": "先祖传承",
-        "icon": null,
-        "hint": "如果你将种族替换为此族裔，你可以保留该种族的下列内容：任何你从中获得的技能熟练以及任何你从中获得的攀爬、飞行或游泳速度。\n如果你没有保留任何此类内容，或你在创建角色的时候就选择此血统，则你获得你所选择的两项技能的熟练。"
+        "hint": "如果你将种族替换为此族裔，你可以保留该种族的下列内容：任何你从中获得的技能熟练以及任何你从中获得的攀爬、飞行或游泳速度。\n如果你没有保留任何此类内容，或你在创建角色的时候就选择此血统，则你获得你所选择的两项技能的熟练。",
+        "name": "先祖传承",
+        "img": null,
+        "flags": {}
       }
-    ],
+    },
     "movement": {
-      "burrow": null,
-      "climb": null,
-      "fly": null,
-      "swim": null,
-      "walk": 30,
       "units": null,
-      "hover": false
+      "hover": false,
+      "speeds": {
+        "walk": "30"
+      },
+      "ignoredDifficultTerrain": []
     },
     "senses": {
-      "darkvision": null,
-      "blindsight": null,
-      "tremorsense": null,
-      "truesight": null,
       "units": null,
-      "special": ""
+      "special": "",
+      "ranges": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null
+      }
     },
     "type": {
       "value": "humanoid"
@@ -178,8 +195,8 @@
   "flags": {},
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711693398875,
     "modifiedTime": 1757351635730,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

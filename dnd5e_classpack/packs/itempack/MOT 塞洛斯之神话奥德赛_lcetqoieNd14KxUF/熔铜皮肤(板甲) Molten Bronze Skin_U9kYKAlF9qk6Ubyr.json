@@ -27,12 +27,7 @@
       "itemCondition": "",
       "effectCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "system": {
     "description": {
@@ -56,10 +51,8 @@
     },
     "attunement": "required",
     "equipped": false,
-    "rarity": "",
     "identified": true,
     "cover": null,
-    "crewed": false,
     "uses": {
       "max": "",
       "spent": null,
@@ -67,8 +60,7 @@
     },
     "armor": {
       "value": 18,
-      "dex": 0,
-      "magicalBonus": null
+      "dex": 0
     },
     "hp": {
       "value": 0,
@@ -78,7 +70,8 @@
     },
     "speed": {
       "value": null,
-      "conditions": ""
+      "conditions": "",
+      "units": "ft"
     },
     "strength": 15,
     "proficient": null,
@@ -95,12 +88,16 @@
     ],
     "activities": {},
     "identifier": "-molten-bronze-skin",
-    "attuned": false
+    "attuned": false,
+    "rarities": [],
+    "crew": {
+      "value": []
+    }
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1692348092513,
     "modifiedTime": 1757873106896,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

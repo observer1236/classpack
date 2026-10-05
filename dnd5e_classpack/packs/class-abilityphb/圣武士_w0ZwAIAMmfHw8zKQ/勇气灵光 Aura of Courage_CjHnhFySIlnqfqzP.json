@@ -25,13 +25,14 @@
     "requirements": "圣武士等级 10",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
@@ -40,25 +41,14 @@
   "effects": [
     {
       "_id": "EXiTN2oLyFXnA8Aj",
-      "changes": [
-        {
-          "key": "system.traits.ci.value",
-          "mode": 2,
-          "value": "frightened",
-          "priority": 20
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.CjHnhFySIlnqfqzP",
+      "origin": null,
       "transfer": true,
       "flags": {
         "dae": {
@@ -71,9 +61,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -84,9 +72,9 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757272749331,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -102,24 +90,48 @@
         "applyToSelf": true,
         "bestFormula": "",
         "canStack": false,
-        "collisionTypes": [
-          "move"
-        ],
         "color": null,
         "combatOnly": true,
         "disableOnHidden": true,
         "distanceFormula": "@scale.paladin.aura-radius",
         "disposition": 1,
         "evaluatePreApply": false,
-        "opacity": 0.25,
         "overrideName": "",
         "script": "",
         "stashedChanges": [],
-        "stashedStatuses": []
+        "stashedStatuses": [],
+        "changes": [
+          {
+            "key": "system.traits.ci.value",
+            "value": "frightened",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "fh2gicCa1Xta0F1m",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "collisionType": "move",
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.CjHnhFySIlnqfqzP",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
       },
       "description": "",
       "statuses": [],
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!CjHnhFySIlnqfqzP.EXiTN2oLyFXnA8Aj"
     }
   ],
@@ -130,14 +142,7 @@
     "entityorder": {
       "order": 168
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -164,9 +169,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757272506712,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

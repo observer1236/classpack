@@ -2,17 +2,7 @@
   "name": "摄心目光(惊慌) Eyebite",
   "type": "spell",
   "flags": {
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midiProperties": {
       "confirmTargets": "always",
       "autoFailFriendly": false,
@@ -40,30 +30,13 @@
   "img": "icons/magic/perception/eye-ringed-glow-angry-large-red.webp",
   "effects": [
     {
-      "changes": [
-        {
-          "key": "flags.midi-qol.disadvantage.attack.all",
-          "value": "1",
-          "mode": 0,
-          "priority": null
-        },
-        {
-          "key": "flags.midi-qol.disadvantage.check.all",
-          "value": "1",
-          "mode": 0,
-          "priority": null
-        }
-      ],
-      "description": "- A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.<br />- The creature can't willingly move closer to the source of its fear.",
+      "description": "- A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.<br>- The creature can't willingly move closer to the source of its fear.",
       "disabled": false,
       "duration": {
-        "rounds": null,
-        "seconds": null,
-        "turns": null,
-        "startTime": null,
-        "combat": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "flags": {
         "dfreds-convenient-effects": {
@@ -75,7 +48,7 @@
         }
       },
       "name": "Frightened",
-      "origin": "Actor.bvEYS7EFkAFT4pCf.Item.qIZ8AXXoGmKiomkm",
+      "origin": null,
       "tint": "#ffffff",
       "transfer": false,
       "statuses": [
@@ -84,9 +57,9 @@
       ],
       "_id": "NorxvQaWwXQbwfIi",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1786693328345,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
@@ -96,14 +69,52 @@
       },
       "img": "modules/dfreds-convenient-effects/images/frightened.svg",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "value": 1,
+            "priority": null,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "HLcTZ1Yztp2Yt1u7",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.check.all",
+            "value": 1,
+            "priority": null,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "h2fkJlZeAo5d3VdI",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Actor.bvEYS7EFkAFT4pCf.Item.qIZ8AXXoGmKiomkm",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!FL1ww0jvWZ97B39T.NorxvQaWwXQbwfIi"
     }
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 在法术持续时间内，你的眼睛变成充满恐怖力量的漆黑空洞。\n<br />指定一个60尺内你能看见的生物，并迫使其进行一次感知豁免，豁免失败者将承受下列效应之一（由你选择）。在法术终止前的每个自己回合，你都可以使用动作来指定一个目标。不过不能指定那些已经成功通过该豁免的生物。\n<br /><strong>沉睡Asleep。</strong>目标陷入昏迷。其在受到伤害，或另一个生物使用动作摇晃它时，即可再次醒来。\n<br /><strong>惊慌Panicked。</strong>目标因你而恐慌，它必须在每个其自己回合里执行疾走Dash 动作并移动，且以最短、最安全的路径尽可能的逃离你，直至其无路可逃为止。如果目标移至离你60尺远且看不见你的地方，则法术效应终止。\n<br /><strong>患病Sickened。</strong>目标发动攻击检定和进行能力检定时具有劣势。目标在每个其自己回合结束时都可以进行另一个感知豁免，豁免成功则该效应终止。\n<br /></div>",
+      "value": "<div class=\"description \"> 在法术持续时间内，你的眼睛变成充满恐怖力量的漆黑空洞。\n<br>指定一个60尺内你能看见的生物，并迫使其进行一次感知豁免，豁免失败者将承受下列效应之一（由你选择）。在法术终止前的每个自己回合，你都可以使用动作来指定一个目标。不过不能指定那些已经成功通过该豁免的生物。\n<br><strong>沉睡Asleep。</strong>目标陷入昏迷。其在受到伤害，或另一个生物使用动作摇晃它时，即可再次醒来。\n<br><strong>惊慌Panicked。</strong>目标因你而恐慌，它必须在每个其自己回合里执行疾走Dash 动作并移动，且以最短、最安全的路径尽可能的逃离你，直至其无路可逃为止。如果目标移至离你60尺远且看不见你的地方，则法术效应终止。\n<br><strong>患病Sickened。</strong>目标发动攻击检定和进行能力检定时具有劣势。目标在每个其自己回合结束时都可以进行另一个感知豁免，豁免成功则该效应终止。\n<br></div>",
       "chat": ""
     },
     "source": {
@@ -119,7 +130,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -128,8 +140,9 @@
         "choice": false
       },
       "template": {
-        "units": "",
-        "contiguous": false
+        "units": "ft",
+        "contiguous": false,
+        "stationary": false
       }
     },
     "range": {
@@ -149,10 +162,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "atwill",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -178,27 +187,33 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "NorxvQaWwXQbwfIi",
-            "onSave": false
+            "onSave": false,
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -224,7 +239,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -238,7 +254,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -246,7 +263,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -257,18 +273,67 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": ""
+        "otherActivityId": "",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "eyebite"
+    "identifier": "eyebite",
+    "method": "atwill",
+    "prepared": 0
   },
   "ownership": {
     "default": 0,
@@ -277,8 +342,8 @@
   "folder": "gyuelnpMtSHh8291",
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711724671900,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

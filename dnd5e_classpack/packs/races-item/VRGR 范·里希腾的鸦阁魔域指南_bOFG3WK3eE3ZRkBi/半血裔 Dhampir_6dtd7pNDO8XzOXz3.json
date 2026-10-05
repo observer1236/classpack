@@ -17,8 +17,8 @@
       "custom": "",
       "license": ""
     },
-    "advancement": [
-      {
+    "advancement": {
+      "cRNqxqcEKDhWzbJB": {
         "type": "AbilityScoreImprovement",
         "_id": "cRNqxqcEKDhWzbJB",
         "configuration": {
@@ -32,16 +32,19 @@
             "cha": 0
           },
           "cap": 2,
-          "locked": []
+          "locked": [],
+          "recommendation": null
         },
         "value": {
           "type": "asi"
         },
         "level": 0,
-        "title": "",
-        "icon": null
+        "name": "",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "V8b7s2jqRBwgCJPX": {
         "type": "Size",
         "_id": "V8b7s2jqRBwgCJPX",
         "configuration": {
@@ -51,12 +54,13 @@
           ]
         },
         "level": 0,
-        "title": "",
-        "icon": null,
         "value": {},
-        "hint": "你是中型或小型。当你获得此血统时，你选择你的体型。"
+        "hint": "你是中型或小型。当你获得此血统时，你选择你的体型。",
+        "name": "",
+        "img": null,
+        "flags": {}
       },
-      {
+      "uCWHAjUijxeRKl0x": {
         "type": "Trait",
         "configuration": {
           "grants": [
@@ -78,10 +82,12 @@
           "chosen": []
         },
         "level": 0,
-        "title": "",
-        "icon": null
+        "name": "",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "a1LEy1inFM64SKiT": {
         "_id": "a1LEy1inFM64SKiT",
         "type": "Trait",
         "configuration": {
@@ -101,59 +107,70 @@
           "chosen": []
         },
         "level": 0,
-        "title": "先祖传承",
-        "icon": null,
-        "hint": "如果你将种族替换为此族裔，你可以保留该种族的下列内容：任何你从中获得的技能熟练以及任何你从中获得的攀爬、飞行或游泳速度。\n如果你没有保留任何此类内容，或你在创建角色的时候就选择此血统，则你获得你所选择的两项技能的熟练。"
+        "hint": "如果你将种族替换为此族裔，你可以保留该种族的下列内容：任何你从中获得的技能熟练以及任何你从中获得的攀爬、飞行或游泳速度。\n如果你没有保留任何此类内容，或你在创建角色的时候就选择此血统，则你获得你所选择的两项技能的熟练。",
+        "name": "先祖传承",
+        "img": null,
+        "flags": {}
       },
-      {
+      "9AvHqwsw2WsIk9Ik": {
         "_id": "9AvHqwsw2WsIk9Ik",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.GdxNJlwXObeNEZBc",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.wUkIW5Nfcxad3qlY",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.VPXRM0JKLsz9MfS0",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.CMd2o8STm2iu581z",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.H3TUUmfphVPd3u9c",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
-        "level": 0
+        "level": 0,
+        "flags": {},
+        "hint": ""
       }
-    ],
+    },
     "movement": {
-      "burrow": null,
-      "climb": 35,
-      "fly": null,
-      "swim": null,
-      "walk": 35,
       "units": null,
-      "hover": false
+      "hover": false,
+      "speeds": {
+        "walk": "35",
+        "climb": "35"
+      },
+      "ignoredDifficultTerrain": []
     },
     "senses": {
-      "darkvision": 60,
-      "blindsight": null,
-      "tremorsense": null,
-      "truesight": null,
       "units": null,
-      "special": ""
+      "special": "",
+      "ranges": {
+        "darkvision": 60,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null
+      }
     },
     "type": {
       "value": "humanoid"
@@ -169,8 +186,8 @@
   "flags": {},
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711691167662,
     "modifiedTime": 1757351628128,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

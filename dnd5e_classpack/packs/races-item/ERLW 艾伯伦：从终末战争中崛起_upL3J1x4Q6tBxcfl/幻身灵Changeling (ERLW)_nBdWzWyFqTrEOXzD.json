@@ -15,13 +15,12 @@
       "revision": 1
     },
     "movement": {
-      "burrow": null,
-      "climb": null,
-      "fly": null,
-      "swim": null,
-      "walk": 30,
       "units": "ft",
-      "hover": false
+      "hover": false,
+      "speeds": {
+        "walk": "30"
+      },
+      "ignoredDifficultTerrain": []
     },
     "type": {
       "value": "humanoid",
@@ -29,15 +28,17 @@
       "custom": ""
     },
     "senses": {
-      "darkvision": null,
-      "blindsight": null,
-      "truesight": null,
-      "tremorsense": null,
       "units": "ft",
-      "special": ""
+      "special": "",
+      "ranges": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null
+      }
     },
-    "advancement": [
-      {
+    "advancement": {
+      "Eq1UV9A4DQxtPCuV": {
         "_id": "Eq1UV9A4DQxtPCuV",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -51,15 +52,18 @@
             "cha": 2
           },
           "cap": 1,
-          "locked": []
+          "locked": [],
+          "recommendation": null
         },
         "value": {
           "type": "asi"
         },
         "level": 0,
-        "title": ""
+        "name": "",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "GMpdFy4UO65oZduu": {
         "_id": "GMpdFy4UO65oZduu",
         "type": "Size",
         "configuration": {
@@ -71,9 +75,11 @@
           "size": "med"
         },
         "level": 0,
-        "title": ""
+        "name": "",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "FN6IGIBQCOK9s2nd": {
         "_id": "FN6IGIBQCOK9s2nd",
         "type": "Trait",
         "configuration": {
@@ -96,10 +102,11 @@
           "chosen": []
         },
         "level": 0,
-        "title": "幻身灵本能",
-        "hint": ""
+        "hint": "",
+        "name": "幻身灵本能",
+        "flags": {}
       },
-      {
+      "0cLEJyhHhgBMn9h4": {
         "_id": "0cLEJyhHhgBMn9h4",
         "type": "Trait",
         "configuration": {
@@ -121,28 +128,32 @@
           "chosen": []
         },
         "level": 0,
-        "title": "语言",
-        "hint": ""
+        "hint": "",
+        "name": "语言",
+        "flags": {}
       },
-      {
+      "ltyHcxW5r9QcENYO": {
         "_id": "ltyHcxW5r9QcENYO",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.SDQUmKJUnd5f1fO1"
+              "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.SDQUmKJUnd5f1fO1",
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 0,
-        "title": "",
-        "hint": ""
+        "hint": "",
+        "name": "",
+        "flags": {}
       }
-    ],
+    },
     "identifier": "changeling-erlw"
   },
   "effects": [],
@@ -159,9 +170,9 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1756028175377,
     "modifiedTime": 1756028175535,
     "lastModifiedBy": "sPF2dtZDreDpJaW6",

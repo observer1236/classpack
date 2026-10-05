@@ -25,13 +25,14 @@
     "requirements": "圣武士等级 6",
     "activities": {},
     "identifier": "",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,7 +40,7 @@
     {
       "name": "守护灵光",
       "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_AngelicBulwark.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.QE4gvV6X8gTjJcb9",
+      "origin": null,
       "_id": "C81L5FYTFg9Yytst",
       "type": "auraeffects.aura",
       "system": {
@@ -47,38 +48,48 @@
         "applyToSelf": true,
         "bestFormula": "",
         "canStack": false,
-        "collisionTypes": [
-          "move"
-        ],
         "color": null,
         "combatOnly": true,
         "disableOnHidden": true,
         "distanceFormula": "@scale.paladin.aura-radius",
         "disposition": 1,
         "evaluatePreApply": false,
-        "opacity": 0.25,
         "overrideName": "",
         "script": "",
         "stashedChanges": [],
-        "stashedStatuses": []
+        "stashedStatuses": [],
+        "changes": [
+          {
+            "key": "system.bonuses.abilities.save",
+            "value": "+@abilities.cha.mod",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "xVxPoNj5KMnHCkgV",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "collisionType": "move",
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.QE4gvV6X8gTjJcb9",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false
       },
-      "changes": [
-        {
-          "key": "system.bonuses.abilities.save",
-          "mode": 2,
-          "value": "+@abilities.cha.mod",
-          "priority": 20
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -96,9 +107,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -110,14 +119,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757009512845,
         "modifiedTime": 1757009588097,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!QE4gvV6X8gTjJcb9.C81L5FYTFg9Yytst"
     }
   ],
@@ -128,14 +140,7 @@
     "entityorder": {
       "order": 167
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -162,9 +167,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757407353658,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

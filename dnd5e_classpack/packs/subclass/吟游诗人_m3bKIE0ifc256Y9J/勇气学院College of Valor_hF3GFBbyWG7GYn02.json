@@ -8,9 +8,9 @@
   "sort": 50782,
   "flags": {},
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -34,62 +34,74 @@
     },
     "identifier": "college-of-valor",
     "classIdentifier": "bard",
-    "advancement": [
-      {
+    "advancement": {
+      "xc5aaw0wrli6jluk": {
         "_id": "xc5aaw0wrli6jluk",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.S62wn2SfAmzrQgbh",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "i636y9x8kmqd9es0": {
         "_id": "i636y9x8kmqd9es0",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.WKQXfXbifuoCk1V1",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "5q08qn03a7lbzlj8": {
         "_id": "5q08qn03a7lbzlj8",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.NmSNYxI52kwH9IWR",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 14,
-        "title": "职业特性",
-        "icon": null
+        "name": "职业特性",
+        "img": null,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "7p88F0FIgoeyPfzl": {
         "_id": "7p88F0FIgoeyPfzl",
         "type": "Trait",
         "configuration": {
@@ -106,11 +118,12 @@
           "chosen": []
         },
         "level": 3,
-        "title": "",
         "hint": "",
-        "icon": null
+        "name": "",
+        "img": null,
+        "flags": {}
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",

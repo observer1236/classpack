@@ -29,17 +29,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "焚云术 Incendiary Cloud",
@@ -72,26 +62,15 @@
   "effects": [
     {
       "name": "焚云术 Incendiary Cloud",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.FUiSyN2j2j3ufukn",
+      "origin": null,
       "duration": {
-        "rounds": 10,
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 10,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "_id": "dYQ1DMT9jTsuwpau",
-      "changes": [
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 2,
-          "value": "turn=end, label=焚云术 Incendiary Cloud, saveAbility=dex, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=10d8, damageType=fire, saveDamage=halfdamage, allowIncapacitated=true, killAnim=true",
-          "priority": 20
-        }
-      ],
       "description": "",
       "transfer": false,
       "statuses": [],
@@ -110,9 +89,7 @@
           "disableCondition": ""
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -120,9 +97,9 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1786655877802,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
@@ -132,14 +109,42 @@
       },
       "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_WindsofWoe.png",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end, label=焚云术 Incendiary Cloud, saveAbility=dex, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=10d8, damageType=fire, saveDamage=halfdamage, allowIncapacitated=true, killAnim=true",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "47kRptg6Aqzp8Hva",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.FUiSyN2j2j3ufukn",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!FUiSyN2j2j3ufukn.dYQ1DMT9jTsuwpau"
     }
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 一片充满了炽热灰烬的旋转烟云显现，并以施法距离内一点为中心的蔓延至半径20尺的球状区域。烟云会绕过拐角扩散并使整个区域处于重度遮蔽，并在法术终止前持续存在。此外烟云还可以被和风或强度等级更高的风势（风速至少每小时10里）所吹散。\n<br />烟云出现时，每个处在其内的生物都必须进行一次敏捷豁免，豁免失败者将受到10d8的火焰伤害，豁免成功则伤害减半。生物在一个回合内第一次进入烟云内，或者在烟云内结束其回合时，也必须进行该豁免。\n<br />在你的每回合开始时，烟云会向你指定的方向直线移动10尺。\n<br /></div>",
+      "value": "<div class=\"description \"> 一片充满了炽热灰烬的旋转烟云显现，并以施法距离内一点为中心的蔓延至半径20尺的球状区域。烟云会绕过拐角扩散并使整个区域处于重度遮蔽，并在法术终止前持续存在。此外烟云还可以被和风或强度等级更高的风势（风速至少每小时10里）所吹散。\n<br>烟云出现时，每个处在其内的生物都必须进行一次敏捷豁免，豁免失败者将受到10d8的火焰伤害，豁免成功则伤害减半。生物在一个回合内第一次进入烟云内，或者在烟云内结束其回合时，也必须进行该豁免。\n<br>在你的每回合开始时，烟云会向你指定的方向直线移动10尺。\n<br></div>",
       "chat": ""
     },
     "source": {
@@ -155,7 +160,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -167,7 +173,8 @@
         "type": "sphere",
         "size": "20",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -188,10 +195,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -217,27 +220,33 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
             "_id": "dYQ1DMT9jTsuwpau",
-            "onSave": false
+            "onSave": false,
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -267,7 +276,8 @@
                 "mode": "",
                 "number": null,
                 "formula": ""
-              }
+              },
+              "modifiers": []
             }
           ],
           "critical": {
@@ -281,7 +291,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -295,7 +306,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -303,7 +315,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -314,18 +325,67 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": ""
+        "otherActivityId": "",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "incendiary-cloud"
+    "identifier": "incendiary-cloud",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -334,8 +394,8 @@
   "sort": 6400000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711691764392,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

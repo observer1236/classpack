@@ -29,16 +29,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material"
-      ],
-      "riders": {
-        "activity": []
-      }
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "睡眠术 Sleep",
@@ -70,7 +61,7 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 该法术使一些生物陷入魔法造成的沉睡中。掷一次5d8；其结果为受该法术影响生物的生命值总数。你指定施法距离一点，该点周围20尺区域内的生物以剩余生命值由小至大的顺序受法术影响（生效时忽略昏迷生物）。\n<br />计算受法术影响生物时，从剩余生命值最低的生物开始逐个计算。每个受术生物均陷入昏迷，直至法术终止。睡眠者受到伤害也会惊醒，又或者由其他人以一个动作将其摇醒或打醒。法术掷骰的生命值总数减去一个受术生物的生命值后，余数再用以计算生命值稍高者是否受法术影响。生物剩余生命值，必须小于等于该余数法术才能成功影响该生物。\n<br />不死生物以及免疫魅惑效果的生物不受该法术影响。\n<br /><strong>升环施法效应。</strong>使用2环或更高法术位施展该法术时，使用的法术位每比1环高一环，法术的掷骰就增加2d8。\n<br /></div>",
+      "value": "<div class=\"description \"> 该法术使一些生物陷入魔法造成的沉睡中。掷一次5d8；其结果为受该法术影响生物的生命值总数。你指定施法距离一点，该点周围20尺区域内的生物以剩余生命值由小至大的顺序受法术影响（生效时忽略昏迷生物）。\n<br>计算受法术影响生物时，从剩余生命值最低的生物开始逐个计算。每个受术生物均陷入昏迷，直至法术终止。睡眠者受到伤害也会惊醒，又或者由其他人以一个动作将其摇醒或打醒。法术掷骰的生命值总数减去一个受术生物的生命值后，余数再用以计算生命值稍高者是否受法术影响。生物剩余生命值，必须小于等于该余数法术才能成功影响该生物。\n<br>不死生物以及免疫魅惑效果的生物不受该法术影响。\n<br><strong>升环施法效应。</strong>使用2环或更高法术位施展该法术时，使用的法术位每比1环高一环，法术的掷骰就增加2d8。\n<br></div>",
       "chat": ""
     },
     "source": {
@@ -86,7 +77,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -98,7 +90,8 @@
         "type": "sphere",
         "size": "20",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -119,10 +112,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -148,22 +137,26 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -193,7 +186,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -201,7 +195,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -212,29 +205,70 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "otherActivityId": "none",
         "name": "",
         "img": "",
-        "appliedEffects": [
-          "pQ02FB9JXTX13Sfr"
-        ],
         "visibility": {
           "level": {
             "min": null,
             "max": null
-          }
-        }
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {},
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "sleep"
+    "identifier": "sleep",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -243,8 +277,8 @@
   "sort": 26300000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711713684414,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

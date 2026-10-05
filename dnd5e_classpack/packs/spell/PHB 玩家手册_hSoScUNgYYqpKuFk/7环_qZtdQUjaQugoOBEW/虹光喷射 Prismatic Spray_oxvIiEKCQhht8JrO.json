@@ -30,16 +30,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "虹光喷射 Prismatic Spray",
@@ -73,28 +64,42 @@
     {
       "name": "indigo",
       "img": "modules/dnd5e_classpack/Nicons/002652.png",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.oxvIiEKCQhht8JrO",
+      "origin": null,
       "transfer": false,
       "_id": "KK8eL0PBjt8i7wRv",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "macro.execute",
-          "mode": 0,
-          "value": "indigo",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "macro.execute",
+            "value": "indigo",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "yRu73OAWacsFAXKi",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.oxvIiEKCQhht8JrO",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -114,9 +119,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -125,41 +128,58 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756651117702,
         "modifiedTime": 1756651360050,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!oxvIiEKCQhht8JrO.KK8eL0PBjt8i7wRv"
     },
     {
       "name": "violet",
       "img": "modules/dnd5e_classpack/Nicons/002652.png",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.oxvIiEKCQhht8JrO",
+      "origin": null,
       "transfer": false,
       "_id": "Ky12EGwZDuJezY9Q",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.ActivityOverTime",
-          "mode": 2,
-          "value": "放逐",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "value": "放逐",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "3WNncWCM7yHUu4y5",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.oxvIiEKCQhht8JrO",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": 6,
-        "combat": null,
-        "rounds": null,
-        "turns": 1,
-        "startRound": null,
-        "startTurn": null
+        "value": 6,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -181,9 +201,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -192,41 +210,58 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756651120549,
         "modifiedTime": 1756651824220,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!oxvIiEKCQhht8JrO.Ky12EGwZDuJezY9Q"
     },
     {
       "name": "放逐",
       "img": "modules/dnd5e_classpack/Nicons/002652.png",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.oxvIiEKCQhht8JrO",
+      "origin": null,
       "transfer": false,
       "_id": "OciSsBl0djnDuWNR",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "system.traits.ci.value",
-          "mode": 2,
-          "value": "blinded",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.ci.value",
+            "value": "blinded",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "dOBn67zPVGvyljSj",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.oxvIiEKCQhht8JrO",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -250,9 +285,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -261,20 +294,23 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756651667791,
         "modifiedTime": 1756651731572,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!oxvIiEKCQhht8JrO.OciSsBl0djnDuWNR"
     }
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 八条多彩射线从你的手上闪出。每条射线颜色不同且具有不同的威力和作用。在60尺锥状区域内的每个生物必须进行一次敏捷豁免同时掷一次d8决定生效哪种颜色的射线。\n<br />1.红red。目标豁免失败时受10d6的火焰伤害，成功则伤害减半。\n<br />2.橙Orange。目标豁免失败时受10d6的强酸伤害，成功则伤害减半。\n<br />3黄Yellow。目标豁免失败时受10d6的闪电伤害，成功则伤害减半。\n<br />4.绿Green。目标豁免失败时受10d6的毒素伤害，成功则伤害减半。\n<br />5.蓝Blue。目标豁免失败时受10d6的冷冻伤害，成功则伤害减半。\n<br />6.靛Indigo。目标豁免失败时受束缚。它必须在其每回合结束时进行一次体质豁免。三次豁免成功后法术终止。三次豁免失败后目标将永久陷入石化状态。成功或失败的豁免不需要连续，只需记下两边的数量直至其中一种达到三次。\n<br />7.紫Violet。目标豁免失败时陷入目盲。其必须在你下一回合开始时进行一次感知豁免。豁免成功则目盲状态终止。豁免失败则该生物被传送到另一个DM 指定的位面并且不再目盲。（典型情况是不在家乡位面的生物被驱逐回家，而其他生物通常会被传送到星界或以太位面。）\n<br />8.特殊Special。目标被两条射线打中。再掷两次，结果为8时再重掷。\n<br /></div>",
+      "value": "<div class=\"description \"> 八条多彩射线从你的手上闪出。每条射线颜色不同且具有不同的威力和作用。在60尺锥状区域内的每个生物必须进行一次敏捷豁免同时掷一次d8决定生效哪种颜色的射线。\n<br>1.红red。目标豁免失败时受10d6的火焰伤害，成功则伤害减半。\n<br>2.橙Orange。目标豁免失败时受10d6的强酸伤害，成功则伤害减半。\n<br>3黄Yellow。目标豁免失败时受10d6的闪电伤害，成功则伤害减半。\n<br>4.绿Green。目标豁免失败时受10d6的毒素伤害，成功则伤害减半。\n<br>5.蓝Blue。目标豁免失败时受10d6的冷冻伤害，成功则伤害减半。\n<br>6.靛Indigo。目标豁免失败时受束缚。它必须在其每回合结束时进行一次体质豁免。三次豁免成功后法术终止。三次豁免失败后目标将永久陷入石化状态。成功或失败的豁免不需要连续，只需记下两边的数量直至其中一种达到三次。\n<br>7.紫Violet。目标豁免失败时陷入目盲。其必须在你下一回合开始时进行一次感知豁免。豁免成功则目盲状态终止。豁免失败则该生物被传送到另一个DM 指定的位面并且不再目盲。（典型情况是不在家乡位面的生物被驱逐回家，而其他生物通常会被传送到星界或以太位面。）\n<br>8.特殊Special。目标被两条射线打中。再掷两次，结果为8时再重掷。\n<br></div>",
       "chat": ""
     },
     "source": {
@@ -290,7 +326,8 @@
     },
     "duration": {
       "value": "",
-      "units": "inst"
+      "units": "inst",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -302,7 +339,8 @@
         "type": "cone",
         "size": "60",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -322,10 +360,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -349,15 +383,20 @@
           "spellSlot": true,
           "targets": []
         },
-        "description": {},
+        "description": {
+          "value": ""
+        },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "Ky12EGwZDuJezY9Q"
+            "_id": "Ky12EGwZDuJezY9Q",
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
@@ -367,7 +406,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -394,7 +434,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -402,7 +443,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -413,15 +453,61 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       },
       "1HUVcYlnyZUqnCF6": {
         "type": "save",
@@ -440,16 +526,21 @@
           "targets": []
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "OciSsBl0djnDuWNR"
+            "_id": "OciSsBl0djnDuWNR",
+            "uuid": null,
+            "level": {},
+            "onSave": false
           }
         ],
         "range": {
@@ -459,7 +550,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -486,7 +578,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "useConditionText": "",
         "useConditionReason": "",
@@ -499,7 +592,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -507,7 +601,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -518,24 +611,69 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": true,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
           "postRemoveConditionText": "",
-          "turnChoice": "start"
+          "turnChoice": "start",
+          "rollAs": "target"
         },
         "otherActivityId": "none",
         "name": "放逐",
         "img": "",
-        "appliedEffects": [
-          "OciSsBl0djnDuWNR"
-        ]
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "prismatic-spray"
+    "identifier": "prismatic-spray",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -544,8 +682,8 @@
   "sort": 9500000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -26,26 +26,24 @@
     "crewed": false,
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "activities": {},
     "identifier": "14-starry-form",
-    "advancement": [],
+    "advancement": {},
     "enchant": {}
   },
   "effects": [
     {
       "name": "繁星形态(14级) Starry Form",
-      "origin": "Item.qtjMuD9JzJNskXJa",
+      "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": 600,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "flags": {
@@ -67,34 +65,14 @@
         }
       },
       "_id": "NBlSpFlBWPpaJbDh",
-      "changes": [
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "piercing",
-          "priority": 20
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "bludgeoning",
-          "priority": 20
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "slashing",
-          "priority": 20
-        }
-      ],
       "description": "",
       "transfer": false,
       "statuses": [],
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -104,8 +82,56 @@
       },
       "img": "modules/dnd5e_classpack/Nicons/Spell_druid_swarm.png",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "gPvDoUCucnV23GTU",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "QYrjWVjvfChBKOJG",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ZjCrO4G84Z0tEwro",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Item.qtjMuD9JzJNskXJa",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!oUEbHQuLJ2JZjAS5.NBlSpFlBWPpaJbDh"
     }
   ],
@@ -133,13 +159,7 @@
       "effectCondition": ""
     },
     "core": {},
-    "dnd5e": {
-      "migratedUses": 2,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "chris-premades": {
       "info": {
         "identifier": "starryForm",
@@ -149,9 +169,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1725699566656,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

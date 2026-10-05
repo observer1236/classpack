@@ -33,25 +33,13 @@
       "idv": false,
       "ida": false
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "img": "modules/dnd5e_classpack/Nicons/httpcloud3steamusercontentcomugc84259084127190629761D0A3D21C73A291011A77DB5152CB73E49B2759.jpg",
   "effects": [],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 你在施法距离内指定一点，并召唤出一大片粘厚的网状物。\n<br />蛛网覆盖以该点为源点的20尺立方区域，并在法术持续时间内维持存在。蛛网使该区成为困难地形并造成轻度遮蔽。\n<br />如果蛛网没有被固定在两个固体中间（例如墙和树）或跨在一片地板、墙壁、天花板中间，则你召唤出的蛛网会自动坍塌，而导致法术在你的下一回合开始时终止。摊在平面上的蛛网深度为5尺。\n<br />任何在蛛网中开始其回合或在其回合中进入蛛网的生物必须进行一次敏捷豁免。豁免失败者将被束缚在网中，直至其离开蛛网或挣脱束缚。\n<br />被蛛网束缚的生物可以用一个动作尝试挣脱。该生物必须进行一次对抗法术豁免DC 的力量检定，检定成功则不再被束缚。\n<br />这些蛛网都是可燃物。每5尺立方的蛛网触及明火时将在1轮内被烧尽。而任何在燃烧区域内开始其回合的生物将因此受2d4点火焰伤害。\n<br /></div>",
+      "value": "<div class=\"description \"> 你在施法距离内指定一点，并召唤出一大片粘厚的网状物。\n<br>蛛网覆盖以该点为源点的20尺立方区域，并在法术持续时间内维持存在。蛛网使该区成为困难地形并造成轻度遮蔽。\n<br>如果蛛网没有被固定在两个固体中间（例如墙和树）或跨在一片地板、墙壁、天花板中间，则你召唤出的蛛网会自动坍塌，而导致法术在你的下一回合开始时终止。摊在平面上的蛛网深度为5尺。\n<br>任何在蛛网中开始其回合或在其回合中进入蛛网的生物必须进行一次敏捷豁免。豁免失败者将被束缚在网中，直至其离开蛛网或挣脱束缚。\n<br>被蛛网束缚的生物可以用一个动作尝试挣脱。该生物必须进行一次对抗法术豁免DC 的力量检定，检定成功则不再被束缚。\n<br>这些蛛网都是可燃物。每5尺立方的蛛网触及明火时将在1轮内被烧尽。而任何在燃烧区域内开始其回合的生物将因此受2d4点火焰伤害。\n<br></div>",
       "chat": ""
     },
     "source": {
@@ -67,7 +55,8 @@
     },
     "duration": {
       "value": "1",
-      "units": "hour"
+      "units": "hour",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -79,7 +68,8 @@
         "type": "cube",
         "size": "20",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -100,10 +90,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -130,22 +116,26 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -171,7 +161,8 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
         "sort": 0,
         "useConditionText": "",
@@ -185,7 +176,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -193,7 +185,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -204,15 +195,62 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "otherActivityId": ""
+        "otherActivityId": "",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       },
       "Xallbasi9GbzqzB5": {
         "type": "damage",
@@ -231,21 +269,25 @@
           "targets": []
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -277,7 +319,8 @@
               "scaling": {
                 "mode": "",
                 "number": 1
-              }
+              },
+              "modifiers": []
             }
           ]
         },
@@ -292,7 +335,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -300,7 +344,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -311,18 +354,66 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
-        "name": "点燃蛛网"
+        "name": "点燃蛛网",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "otherActivityId": null,
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
-    "identifier": "web"
+    "identifier": "web",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -331,8 +422,8 @@
   "sort": 38500000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757419719404,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

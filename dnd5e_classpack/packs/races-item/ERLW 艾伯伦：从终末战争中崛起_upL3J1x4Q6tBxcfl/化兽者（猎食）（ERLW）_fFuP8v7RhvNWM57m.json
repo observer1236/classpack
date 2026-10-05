@@ -14,8 +14,8 @@
       "rules": "2024",
       "book": "ERLW"
     },
-    "advancement": [
-      {
+    "advancement": {
+      "savBWuIRRxTnGaKG": {
         "type": "AbilityScoreImprovement",
         "_id": "savBWuIRRxTnGaKG",
         "configuration": {
@@ -36,16 +36,18 @@
             "wis",
             "cha"
           ],
-          "points": 0
+          "points": 0,
+          "recommendation": null
         },
         "value": {
           "type": "asi"
         },
         "level": 0,
-        "title": "",
-        "hint": ""
+        "hint": "",
+        "name": "",
+        "flags": {}
       },
-      {
+      "nPyUKvLIkgDyoD8U": {
         "type": "Size",
         "_id": "nPyUKvLIkgDyoD8U",
         "configuration": {
@@ -54,9 +56,11 @@
           ]
         },
         "level": 0,
-        "value": {}
+        "value": {},
+        "flags": {},
+        "hint": ""
       },
-      {
+      "sCDiPIITkce1OMjX": {
         "type": "Trait",
         "configuration": {
           "grants": [
@@ -70,9 +74,11 @@
         "value": {
           "chosen": []
         },
-        "level": 0
+        "level": 0,
+        "flags": {},
+        "hint": ""
       },
-      {
+      "KcqVEUtRvX7YjBYy": {
         "_id": "KcqVEUtRvX7YjBYy",
         "type": "Trait",
         "configuration": {
@@ -87,52 +93,59 @@
           "chosen": []
         },
         "level": 0,
-        "title": "大自然追踪者",
-        "hint": ""
+        "hint": "",
+        "name": "大自然追踪者",
+        "flags": {}
       },
-      {
+      "qaZudxlvFjMh3Il3": {
         "_id": "qaZudxlvFjMh3Il3",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.UHMM3I4oSTkmX2je"
+              "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.UHMM3I4oSTkmX2je",
+              "sort": 0
             },
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.LV3G4hXPeL8NW4GI"
+              "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.LV3G4hXPeL8NW4GI",
+              "sort": 0
             },
             {
               "optional": false,
-              "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.wUkIW5Nfcxad3qlY"
+              "uuid": "Compendium.dnd5e_classpack.racial-traits.Item.wUkIW5Nfcxad3qlY",
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 0,
-        "title": "种族特性",
-        "hint": ""
+        "hint": "",
+        "name": "种族特性",
+        "flags": {}
       }
-    ],
+    },
     "movement": {
-      "burrow": null,
-      "climb": null,
-      "fly": null,
-      "swim": null,
-      "walk": 30,
       "units": "ft",
-      "hover": false
+      "hover": false,
+      "speeds": {
+        "walk": "30"
+      },
+      "ignoredDifficultTerrain": []
     },
     "senses": {
-      "darkvision": 60,
-      "blindsight": null,
-      "tremorsense": null,
-      "truesight": null,
       "units": "ft",
-      "special": ""
+      "special": "",
+      "ranges": {
+        "darkvision": 60,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null
+      }
     },
     "type": {
       "value": "humanoid"
@@ -149,9 +162,9 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1753272860705,
     "modifiedTime": 1757350114493,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
