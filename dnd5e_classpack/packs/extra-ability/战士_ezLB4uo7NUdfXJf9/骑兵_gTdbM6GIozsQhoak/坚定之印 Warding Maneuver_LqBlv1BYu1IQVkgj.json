@@ -1,6 +1,6 @@
 {
   "_id": "LqBlv1BYu1IQVkgj",
-  "name": "坚定之印 Warding Maneuver",
+  "name": "坚定之印 Unwavering Mark",
   "type": "feat",
   "img": "modules/dnd5e_classpack/Nicons/1ability_toughness%20.png",
   "system": {
@@ -28,10 +28,10 @@
         "_id": "dnd5eactivity000",
         "type": "damage",
         "activation": {
-          "type": "special",
+          "type": "bonus",
           "value": 1,
-          "condition": "",
-          "override": false
+          "condition": "被标记者伤害了其他人后，在你的下一回合使用；先以实际武器进行有优势的近战攻击，命中后结算此额外伤害。",
+          "override": true
         },
         "consumption": {
           "targets": [],
@@ -39,10 +39,10 @@
             "allowed": false,
             "max": ""
           },
-          "spellSlot": true
+          "spellSlot": false
         },
         "description": {
-          "chatFlavor": "",
+          "chatFlavor": "这里只结算额外伤害；武器攻击、优势、力量调整值次数和长休恢复由玩家核对。",
           "value": ""
         },
         "duration": {
@@ -106,7 +106,7 @@
           ]
         },
         "sort": 0,
-        "name": "",
+        "name": "特殊攻击额外伤害",
         "img": "",
         "behaviors": [],
         "flags": {},
@@ -191,6 +191,163 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         }
+      },
+      "838f21bfb8254cba": {
+        "_id": "838f21bfb8254cba",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "近战武器攻击命中后，可标记该目标。",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "override": true,
+          "expiry": null
+        },
+        "effects": [
+          {
+            "_id": "1RD93rNfHL3XGLIY",
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "units": "spec",
+          "special": "刚被你的近战武器攻击命中的生物",
+          "override": true
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": true
+        },
+        "uses": {
+          "spent": null,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0,
+        "name": "标记（近战武器命中后）",
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
       }
     },
     "identifier": "-warding-maneuver",
@@ -207,12 +364,12 @@
   },
   "effects": [
     {
-      "name": "坚定之印 Warding Maneuver",
+      "name": "坚定之印 Unwavering Mark",
       "origin": null,
       "duration": {
-        "value": 6,
+        "value": null,
         "units": "seconds",
-        "expiry": "turnStart",
+        "expiry": "sourceStart",
         "expired": false
       },
       "disabled": false,
@@ -231,8 +388,8 @@
         }
       },
       "_id": "1RD93rNfHL3XGLIY",
-      "description": "",
-      "transfer": true,
+      "description": "<p>被标记至标记者的下一回合开始。标记者失能、死亡或目标被他人标记时，提前移除此效果。</p><p>5尺距离、攻击其他目标时的劣势及提前解除条件由玩家核对。</p>",
+      "transfer": false,
       "statuses": [],
       "tint": "#ffffff",
       "_stats": {
@@ -265,7 +422,7 @@
       },
       "sort": 0,
       "start": null,
-      "showIcon": 1,
+      "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!LqBlv1BYu1IQVkgj.1RD93rNfHL3XGLIY"
     }

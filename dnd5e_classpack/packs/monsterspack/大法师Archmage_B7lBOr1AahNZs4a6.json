@@ -5149,9 +5149,10 @@
             "_id": "dnd5eactivity000",
             "type": "damage",
             "activation": {
-              "type": "action",
+              "type": "special",
               "value": null,
-              "override": false
+              "condition": "护盾生效期间，5尺内的生物以近战攻击命中你时使用。",
+              "override": true
             },
             "consumption": {
               "targets": [],
@@ -5159,7 +5160,7 @@
                 "allowed": false,
                 "max": ""
               },
-              "spellSlot": true
+              "spellSlot": false
             },
             "description": {
               "chatFlavor": "",
@@ -5173,8 +5174,10 @@
             },
             "effects": [],
             "range": {
-              "override": false,
-              "units": "self"
+              "units": "ft",
+              "value": "5",
+              "special": "",
+              "override": true
             },
             "target": {
               "prompt": true,
@@ -5184,9 +5187,12 @@
                 "stationary": false
               },
               "affects": {
-                "choice": false
+                "type": "creature",
+                "count": "1",
+                "choice": false,
+                "special": ""
               },
-              "override": false
+              "override": true
             },
             "uses": {
               "spent": 0,
@@ -5204,7 +5210,8 @@
                   "denomination": 8,
                   "bonus": "",
                   "types": [
-                    "fire"
+                    "fire",
+                    "cold"
                   ],
                   "custom": {
                     "enabled": false,
@@ -5303,6 +5310,313 @@
               "animationType": "",
               "animationSpeed": 5,
               "animationIntensity": 5
+            },
+            "name": "护盾反击伤害"
+          },
+          "5836971307aae853": {
+            "_id": "5836971307aae853",
+            "type": "utility",
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "选择一种护盾；重施时移除之前的火焰护盾。",
+              "override": true
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": "本次只施加一种护盾。反击伤害选择火焰。",
+              "value": ""
+            },
+            "duration": {
+              "units": "minute",
+              "value": "10",
+              "concentration": false,
+              "override": true,
+              "expiry": null
+            },
+            "effects": [
+              {
+                "_id": "lVKx8swB08jm6IFE",
+                "uuid": null,
+                "level": {}
+              }
+            ],
+            "range": {
+              "units": "self",
+              "special": "",
+              "override": true
+            },
+            "target": {
+              "prompt": false,
+              "template": {
+                "contiguous": false,
+                "units": "ft",
+                "stationary": false
+              },
+              "affects": {
+                "type": "self",
+                "count": "",
+                "choice": false,
+                "special": ""
+              },
+              "override": true
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "sort": 0,
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "otherActivityId": null,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "otherActivityAsParentType": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "rollAs": "target",
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "name": "施放暖盾",
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          },
+          "56d8b6cb2b474876": {
+            "_id": "56d8b6cb2b474876",
+            "type": "utility",
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "选择一种护盾；重施时移除之前的火焰护盾。",
+              "override": true
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": "本次只施加一种护盾。反击伤害选择冷冻。",
+              "value": ""
+            },
+            "duration": {
+              "units": "minute",
+              "value": "10",
+              "concentration": false,
+              "override": true,
+              "expiry": null
+            },
+            "effects": [
+              {
+                "_id": "UUXwEKSPX4nYfDzo",
+                "uuid": null,
+                "level": {}
+              }
+            ],
+            "range": {
+              "units": "self",
+              "special": "",
+              "override": true
+            },
+            "target": {
+              "prompt": false,
+              "template": {
+                "contiguous": false,
+                "units": "ft",
+                "stationary": false
+              },
+              "affects": {
+                "type": "self",
+                "count": "",
+                "choice": false,
+                "special": ""
+              },
+              "override": true
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "sort": 0,
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "otherActivityId": null,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "otherActivityAsParentType": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "rollAs": "target",
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "name": "施放寒盾",
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
             }
           }
         },
@@ -5321,7 +5635,7 @@
         {
           "_id": "lVKx8swB08jm6IFE",
           "flags": {},
-          "disabled": true,
+          "disabled": false,
           "duration": {
             "value": 600,
             "units": "seconds",
@@ -5330,7 +5644,7 @@
           },
           "origin": null,
           "tint": "#ffffff",
-          "transfer": true,
+          "transfer": false,
           "_stats": {
             "coreVersion": "14.368",
             "systemId": "dnd5e",
@@ -5375,14 +5689,14 @@
           "statuses": [],
           "sort": 0,
           "start": null,
-          "showIcon": 1,
+          "showIcon": 2,
           "folder": null,
           "_key": "!actors.items.effects!B7lBOr1AahNZs4a6.avD5XUtkBPQQR97c.lVKx8swB08jm6IFE"
         },
         {
           "_id": "UUXwEKSPX4nYfDzo",
           "flags": {},
-          "disabled": true,
+          "disabled": false,
           "duration": {
             "value": 600,
             "units": "seconds",
@@ -5391,7 +5705,7 @@
           },
           "origin": null,
           "tint": "#ffffff",
-          "transfer": true,
+          "transfer": false,
           "_stats": {
             "coreVersion": "14.368",
             "systemId": "dnd5e",
@@ -5436,7 +5750,7 @@
           "statuses": [],
           "sort": 0,
           "start": null,
-          "showIcon": 1,
+          "showIcon": 2,
           "folder": null,
           "_key": "!actors.items.effects!B7lBOr1AahNZs4a6.avD5XUtkBPQQR97c.UUXwEKSPX4nYfDzo"
         }

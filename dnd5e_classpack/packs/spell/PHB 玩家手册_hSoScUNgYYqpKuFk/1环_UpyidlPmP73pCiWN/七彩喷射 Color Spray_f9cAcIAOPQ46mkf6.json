@@ -57,7 +57,60 @@
     }
   },
   "img": "modules/dnd5e_classpack/Nicons/000466.png",
-  "effects": [],
+  "effects": [
+    {
+      "_id": "UH2PUxoRHzEpd0h3",
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "sourceEnd",
+        "expired": false
+      },
+      "origin": null,
+      "transfer": false,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "七彩喷射：目盲",
+      "img": "modules/dnd5e_classpack/Nicons/000466.png",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.f9cAcIAOPQ46mkf6",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "description": "<p>目盲，直到施法者的下一回合结束。按6d10生命值总量选择受影响目标。</p>",
+      "statuses": [
+        "blinded"
+      ],
+      "sort": 0,
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_key": "!items.effects!f9cAcIAOPQ46mkf6.UH2PUxoRHzEpd0h3"
+    }
+  ],
   "system": {
     "description": {
       "value": "<div class=\"description \"><p>炫目的彩光从你指间散射而出。掷一次6d10；其结果为受该法术影响生物的生命值总数。在以你为源点的15尺锥状区域内的生物以剩余生命值由小至大的顺序受法术影响（生效时忽略昏迷生物和不能视物的生物）。 <br>计算受法术影响生物时，从剩余生命值最低的生物开始逐个计算。每个受术生物均陷入目盲，直至你的下一回合结束。法术掷骰的生命值总数减去一个受术生物的生命值后，余数再用以计算生命值稍高者是否受法术影响。生物剩余生命值，必须小于等于该余数法术才能成功影响该生物。 <br><strong>升环施法效应。</strong>使用2环或更高法术位施展该法术时，你使用的法术位每比1环高一环，法术的掷骰时就增加2d10。<br></p></div>",

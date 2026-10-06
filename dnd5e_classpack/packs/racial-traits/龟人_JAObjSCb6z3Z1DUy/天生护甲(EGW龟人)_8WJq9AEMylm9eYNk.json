@@ -154,7 +154,7 @@
       "max": ""
     },
     "description": {
-      "value": "",
+      "value": "<p>你的壳提供基础AC 17，敏捷调整值不影响这个数字。穿戴护甲不能提高此基础AC，盾牌仍能提供AC加值。</p>",
       "chat": ""
     },
     "identifier": "-",
@@ -178,7 +178,81 @@
       "subtype": ""
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "ZWd6tM8Ct4IiO6m5",
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "龟人：天生护甲",
+      "img": "icons/equipment/shield/heater-stone-orange.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "_id": "1a6e13b10c83d419",
+            "key": "system.attributes.ac.calcs",
+            "value": [
+              "natural"
+            ],
+            "type": "override",
+            "priority": 20,
+            "phase": "initial",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "_id": "ad3b043ce32e7574",
+            "key": "system.attributes.ac.flat",
+            "value": 17,
+            "type": "override",
+            "priority": 20,
+            "phase": "initial",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.racial-traits.Item.8WJq9AEMylm9eYNk",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "description": "<p>基础AC为17，不加敏捷或护甲数值；盾牌加值照常生效。</p>",
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_key": "!items.effects!8WJq9AEMylm9eYNk.ZWd6tM8Ct4IiO6m5"
+    }
+  ],
   "folder": "JAObjSCb6z3Z1DUy",
   "sort": 300000,
   "ownership": {
