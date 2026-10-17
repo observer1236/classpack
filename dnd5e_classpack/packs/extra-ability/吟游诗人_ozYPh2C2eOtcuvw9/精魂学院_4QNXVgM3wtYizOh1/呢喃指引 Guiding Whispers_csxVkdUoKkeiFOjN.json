@@ -26,24 +26,24 @@
     "activities": {
       "dnd5eactivity000": {
         "_id": "dnd5eactivity000",
-        "type": "utility",
+        "type": "cast",
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": "",
-          "override": false
+          "override": false,
+          "condition": ""
         },
         "consumption": {
+          "spellSlot": false,
           "targets": [],
           "scaling": {
             "allowed": false,
             "max": ""
-          },
-          "spellSlot": true
+          }
         },
         "description": {
-          "chatFlavor": "",
-          "value": ""
+          "value": "",
+          "chatFlavor": ""
         },
         "duration": {
           "concentration": false,
@@ -53,12 +53,11 @@
           "override": false,
           "expiry": null
         },
-        "effects": [],
         "range": {
           "value": "60",
           "units": "ft",
-          "special": "",
-          "override": false
+          "override": true,
+          "special": ""
         },
         "target": {
           "template": {
@@ -85,12 +84,6 @@
           "max": "",
           "recovery": []
         },
-        "roll": {
-          "formula": "1d4",
-          "name": "",
-          "prompt": false,
-          "visible": false
-        },
         "sort": 0,
         "img": null,
         "behaviors": [],
@@ -99,7 +92,7 @@
           "level": {},
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": false
+          "requireMagic": true
         },
         "useConditionText": "",
         "useConditionReason": "",
@@ -176,7 +169,20 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
-        "otherActivityAsParentType": true
+        "otherActivityAsParentType": true,
+        "name": "神导术",
+        "spell": {
+          "uuid": "Compendium.dnd5e_classpack.spell.Item.QiU2ZZ09lBye0Iy4",
+          "ability": "cha",
+          "level": 0,
+          "spellbook": true,
+          "properties": [],
+          "challenge": {
+            "override": false,
+            "attack": "",
+            "save": ""
+          }
+        }
       }
     },
     "identifier": "-guiding-whispers",

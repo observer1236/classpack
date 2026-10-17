@@ -18,7 +18,7 @@
       "rules": "2014"
     },
     "uses": {
-      "max": "2",
+      "max": "",
       "spent": 0,
       "recovery": []
     },
@@ -30,26 +30,26 @@
         "activation": {
           "type": "bonus",
           "value": 1,
-          "condition": "",
-          "override": false
+          "override": true,
+          "condition": "处于荒野变形状态时"
         },
         "consumption": {
+          "spellSlot": false,
           "targets": [
             {
-              "type": "itemUses",
-              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.pORTgCToV9NLPWo1",
+              "type": "spellSlots",
+              "target": "1",
               "value": "1",
               "scaling": {
-                "mode": "",
+                "mode": "level",
                 "formula": ""
               }
             }
           ],
           "scaling": {
-            "allowed": false,
-            "max": ""
-          },
-          "spellSlot": true
+            "allowed": true,
+            "max": "9"
+          }
         },
         "description": {
           "chatFlavor": "",
@@ -65,28 +65,22 @@
         "effects": [],
         "range": {
           "units": "self",
-          "special": "",
-          "override": false
+          "override": true,
+          "special": ""
         },
         "target": {
           "template": {
-            "count": "",
             "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
             "units": "ft",
             "stationary": false
           },
           "affects": {
-            "count": "",
             "type": "self",
-            "choice": false,
-            "special": ""
+            "count": "1",
+            "choice": false
           },
-          "prompt": true,
-          "override": false
+          "override": true,
+          "prompt": false
         },
         "uses": {
           "spent": 0,
@@ -106,7 +100,7 @@
           },
           "scaling": {
             "mode": "whole",
-            "number": null,
+            "number": 1,
             "formula": ""
           },
           "modifiers": []
@@ -195,7 +189,8 @@
           "animationType": "",
           "animationSpeed": 5,
           "animationIntensity": 5
-        }
+        },
+        "name": "战斗荒野变形治疗"
       }
     },
     "identifier": "",
