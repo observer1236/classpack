@@ -18,7 +18,7 @@
       "rules": "2014"
     },
     "uses": {
-      "max": "1",
+      "max": "0",
       "spent": 1,
       "recovery": []
     },
@@ -38,12 +38,9 @@
           "targets": [
             {
               "type": "itemUses",
-              "target": "",
               "value": "-@item.uses.spent",
-              "scaling": {
-                "mode": "",
-                "formula": ""
-              }
+              "target": "",
+              "scaling": {}
             }
           ],
           "scaling": {
@@ -53,7 +50,7 @@
         },
         "description": {
           "chatFlavor": "",
-          "value": "<p>花费八小时制造石头，恢复本物品记录的一颗石头；原有石头失效。变化宗师会消耗这颗石头，之后需先完成长休，才能再次制造。</p>"
+          "value": ""
         },
         "duration": {
           "concentration": false,
@@ -100,19 +97,23 @@
           "visible": false
         },
         "sort": 0,
-        "img": null,
+        "img": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": false
+          "requireMagic": false,
+          "identifier": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
-        "otherActivityId": null,
+        "otherActivityId": "",
         "macroData": {
           "name": "",
           "command": ""
@@ -200,7 +201,9 @@
         "subclass:school-of-transmutation"
       ]
     },
-    "properties": []
+    "properties": [
+      "mgc"
+    ]
   },
   "effects": [],
   "folder": "dE0Yf22IDy4VRZKL",
@@ -238,7 +241,28 @@
       "macro": {
         "name": "变化师之石 Transmuter's Stone",
         "type": "script",
-        "command": "const master = workflow.actor.items.find(i => i.system.identifier === \"master-transmuter\" || i._stats.compendiumSource?.endsWith(\".C1ampwBXw9dQWxDw\"));\nif (master && master.system.uses.value < 1) {\n  ui.notifications.warn(\"变化宗师使用后，必须完成长休才能重新制造变化师之石。\");\n  return false;\n}"
+        "command": "",
+        "img": "icons/commodities/gems/gem-faceted-rough-purple.webp",
+        "scope": "global",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
       }
     }
   },

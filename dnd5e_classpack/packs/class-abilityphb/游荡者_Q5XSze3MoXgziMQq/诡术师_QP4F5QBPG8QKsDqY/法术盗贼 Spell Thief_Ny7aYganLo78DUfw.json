@@ -9,7 +9,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<p>      第17级起，你获得盗取其他施法者施法知识的能力。</p>\n<p>        当一个生物施展的一个法术以你为目标，或其法术效应范围包含你所在区域时，你可以立即用你的反应强迫该生物以其施法属性调整值进行一次豁免。其DC等同于你的法术豁免DC。若其豁免失败，则你取消该法术对你的效应。如果该法术至少为1环且属于你可以施展的环阶(但不需要是法师法术)，则你还可以盗取该法术的知识。在接下来的8小时内，你视为习得该法术且能用你的法术位施展该法术。而目标生物则无法施展该法术直至8小时过去。</p>\n<p>        你必须完成一次长休后才能再次使用该特性。</p>",
+      "value": "<p>      第17级起，你获得盗取其他施法者施法知识的能力。</p><p>        当一个生物施展的一个法术以你为目标，或其法术效应范围包含你所在区域时，你可以立即用你的反应强迫该生物以其施法属性调整值进行一次豁免。其DC等同于你的法术豁免DC。若其豁免失败，则你取消该法术对你的效应。如果该法术至少为1环且属于你可以施展的环阶(但不需要是法师法术)，则你还可以盗取该法术的知识。在接下来的8小时内，你视为习得该法术且能用你的法术位施展该法术。而目标生物则无法施展该法术直至8小时过去。</p><p>        你必须完成一次长休后才能再次使用该特性。</p>",
       "chat": ""
     },
     "source": {
@@ -33,13 +33,20 @@
         "_id": "dnd5eactivity000",
         "type": "save",
         "activation": {
-          "type": "reaction",
+          "type": "",
           "value": 1,
           "condition": "",
           "override": false
         },
         "consumption": {
-          "targets": [],
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
           "scaling": {
             "allowed": false,
             "max": ""
@@ -53,12 +60,19 @@
         "duration": {
           "concentration": false,
           "value": "8",
-          "units": "hour",
+          "units": "inst",
           "special": "",
           "override": false,
           "expiry": null
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "5sEacqfREZnDsXFy",
+            "uuid": null,
+            "level": {},
+            "onSave": false
+          }
+        ],
         "range": {
           "units": "spec",
           "special": "",
@@ -77,7 +91,7 @@
           },
           "affects": {
             "count": "",
-            "type": "enemy",
+            "type": "",
             "choice": false,
             "special": ""
           },
@@ -98,15 +112,14 @@
         },
         "save": {
           "ability": [
-            "int",
-            "wis",
-            "cha"
+            "int"
           ],
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
           },
-          "visible": true
+          "visible": true,
+          "bonus": ""
         },
         "sort": 0,
         "name": "",
@@ -129,7 +142,7 @@
           "automationOnly": false,
           "otherActivityCompatible": true,
           "otherActivityAsParentType": true,
-          "identifier": "",
+          "identifier": "spell-thief-save",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
@@ -142,18 +155,22 @@
           "skipConcentrationCheck": false,
           "autoCEEffects": "default"
         },
-        "useConditionText": "item.itemType === \"spell\"",
+        "useConditionText": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": false
+          "requireMagic": false,
+          "identifier": ""
         },
         "useConditionReason": "",
         "effectConditionText": "",
-        "otherActivityId": null,
+        "otherActivityId": "",
         "macroData": {
           "name": "",
           "command": ""
@@ -196,153 +213,6 @@
         },
         "otherActivityAsParentType": true,
         "friendlySave": "default"
-      },
-      "mE6AneA2CzvsPC2B": {
-        "type": "utility",
-        "_id": "mE6AneA2CzvsPC2B",
-        "sort": 0,
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "override": false,
-          "condition": "当一个生物施展的一一个法术以你为目标，或其法术效应范围包含你所在区域时"
-        },
-        "consumption": {
-          "scaling": {
-            "allowed": false
-          },
-          "spellSlot": true,
-          "targets": []
-        },
-        "description": {
-          "chatFlavor": "",
-          "value": ""
-        },
-        "duration": {
-          "units": "inst",
-          "concentration": false,
-          "override": false,
-          "expiry": null
-        },
-        "effects": [],
-        "range": {
-          "override": false,
-          "units": "spec",
-          "special": ""
-        },
-        "target": {
-          "template": {
-            "contiguous": false,
-            "units": "ft",
-            "type": "",
-            "stationary": false
-          },
-          "affects": {
-            "choice": false,
-            "type": "enemy",
-            "count": "",
-            "special": ""
-          },
-          "override": false,
-          "prompt": true
-        },
-        "uses": {
-          "spent": 0,
-          "recovery": [],
-          "max": ""
-        },
-        "roll": {
-          "prompt": false,
-          "visible": false,
-          "name": "",
-          "formula": ""
-        },
-        "name": "",
-        "img": "",
-        "midiProperties": {
-          "triggeredActivityId": "豁免",
-          "ignoreTraits": [],
-          "triggeredActivityConditionText": "",
-          "triggeredActivityTargets": "targets",
-          "triggeredActivityRollAs": "self",
-          "triggeredActivityConsume": true,
-          "triggeredActivityConfigure": true,
-          "autoConsume": false,
-          "forceConsumeDialog": "default",
-          "forceRollDialog": "default",
-          "forceDamageDialog": "default",
-          "confirmTargets": "default",
-          "autoTargetType": "any",
-          "autoTargetAction": "default",
-          "automationOnly": false,
-          "otherActivityCompatible": true,
-          "otherActivityAsParentType": true,
-          "identifier": "",
-          "displayActivityName": false,
-          "rollMode": "default",
-          "chooseEffects": false,
-          "toggleEffect": false,
-          "ignoreFullCover": false,
-          "removeChatButtons": "default",
-          "magicEffect": false,
-          "magicDamage": false,
-          "noConcentrationCheck": false,
-          "skipConcentrationCheck": false,
-          "autoCEEffects": "default"
-        },
-        "behaviors": [],
-        "flags": {},
-        "visibility": {
-          "level": {},
-          "requireAttunement": false,
-          "requireIdentification": false,
-          "requireMagic": false
-        },
-        "useConditionText": "",
-        "useConditionReason": "",
-        "effectConditionText": "",
-        "otherActivityId": null,
-        "macroData": {
-          "name": "",
-          "command": ""
-        },
-        "ignoreTraits": {
-          "idi": false,
-          "idr": false,
-          "idv": false,
-          "ida": false,
-          "idm": false
-        },
-        "isOverTimeFlag": false,
-        "overTimeProperties": {
-          "saveRemoves": true,
-          "rollAs": "target",
-          "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
-        },
-        "regionBehavior": {
-          "enabled": false,
-          "dispositionFilter": -1,
-          "excludeSource": true,
-          "oncePerTurn": true,
-          "wallRestriction": "none",
-          "regionVisibility": 2,
-          "attachToken": "default",
-          "templateOrigin": "default",
-          "rules": []
-        },
-        "regionLight": {
-          "enabled": false,
-          "dim": 0,
-          "bright": 0,
-          "color": null,
-          "alpha": 0.5,
-          "luminosity": 0.5,
-          "animationType": "",
-          "animationSpeed": 5,
-          "animationIntensity": 5
-        },
-        "otherActivityAsParentType": true
       }
     },
     "identifier": "",
@@ -359,7 +229,150 @@
     },
     "properties": []
   },
-  "effects": [],
+  "effects": [
+    {
+      "name": "法术窃贼 Spell Thief",
+      "img": "icons/magic/control/orb-web-hold.webp",
+      "system": {
+        "magical": false,
+        "origin": {
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.Ny7aYganLo78DUfw",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "type": "custom",
+            "value": "ItemMacro,isTargeted",
+            "phase": "initial",
+            "_id": "hf02SXR1HWSrZXRH",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "conditions": "{}",
+        "rider": {
+          "statuses": []
+        }
+      },
+      "type": "base",
+      "_id": "HLwgUUISkEbyiOAK",
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.Ny7aYganLo78DUfw",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1792162828860,
+        "modifiedTime": 1792162845569,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Ny7aYganLo78DUfw.HLwgUUISkEbyiOAK"
+    },
+    {
+      "name": "法术窃取",
+      "img": "icons/magic/control/orb-web-hold.webp",
+      "system": {
+        "origin": {
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.Ny7aYganLo78DUfw",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "changes": [],
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "transfer": false,
+      "_id": "5sEacqfREZnDsXFy",
+      "type": "base",
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 8,
+        "units": "hours",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "applicationMode": "default",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1792163345703,
+        "modifiedTime": 1792163357110,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Ny7aYganLo78DUfw.5sEacqfREZnDsXFy"
+    }
+  ],
   "folder": "QP4F5QBPG8QKsDqY",
   "sort": 19000000,
   "flags": {
@@ -380,6 +393,34 @@
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
+    },
+    "dae": {
+      "macro": {
+        "name": "法术窃贼 Spell Thief",
+        "img": "icons/magic/control/orb-web-hold.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const pass = args[0].macroPass;\nconst defender = macroItem.actor;\nconst request = workflow.workflowOptions.spellThief;\n\n// 能力自身的豁免行动：在拥有者客户端记录反应并配置这次豁免。\nif (pass === \"preItemRoll\" && request) {\n  const activity = workflow.activity;\n  activity.updateSource({\n    \"save.ability\": [request.ability],\n    ...(request.steal ? {} : { effects: [] })\n  });\n  args[0].options.dialog.configure = false;\n  await MidiQOL.setReactionUsed(defender);\n  return;\n}\n\n// 禁施 AE 通过同一 ItemMacro 检查施法者的后续法术。\nif (pass === \"preItemRoll\") {\n  if (workflow.item.type !== \"spell\") return;\n  const blocked = workflow.actor.effects.some(e => {\n    const state = e.getFlag(\"world\", \"spellThief\");\n    return e.active && state && (\n      state.spell === workflow.item.uuid\n      || state.identifier === workflow.item.identifier\n    );\n  });\n  if (blocked) {\n    ui.notifications.warn(`法术窃取：当前无法施展「${workflow.item.name}」。`);\n    return false;\n  }\n  return;\n}\n\nif (pass !== \"isTargeted\" || workflow.aborted || workflow.item.type !== \"spell\") return;\nif (MidiQOL.hasUsedReaction(defender)) return;\n\nconst userId = dnd5eClasspack.firstOwner(defender, true);\nconst level = workflow.spellLevel;\nconst eligible = level >= 1 && Object.values(defender.system.spells).some(\n  slot => slot.max > 0 && slot.level >= level\n);\nconst confirmed = await dnd5eClasspack.dialogUtils.confirm(\n  \"法术窃取\",\n  `<p>是否使用反应抵御「${foundry.utils.escapeHTML(workflow.item.name)}」？</p>`,\n  { userId }\n);\nif (!confirmed) return;\n\nconst feature = await fromUuid(macroItem.uuid);\nconst save = feature.system.activities.find(a => a.identifier === \"spell-thief-save\");\nconst steal = eligible;\n\nconst result = await MidiQOL.completeActivityUse(\n  save.uuid,\n  {\n    consume: { resources: true, spellSlot: false, action: false },\n    midiOptions: {\n      asUser: userId,\n      workflowData: true,\n      targetUuids: [workflow.token.document.uuid],\n      ignoreUserTargets: true,\n      workflowOptions: {\n        noProvokeReaction: true,\n        noTargetOnUseMacro: true,\n        spellThief: { ability: workflow.activity.spellcastingAbility, steal }\n      }\n    }\n  },\n  { configure: false },\n  { create: true }\n);\nif (!result?.failedSaves?.has(workflow.token)) return;\n\nconst target = args[0].options.token;\nif (workflow.targets.size === 1) workflow.aborted = true;\nelse {\n  workflow.targets.delete(target);\n  workflow.hitTargets.delete(target);\n  workflow.hitTargetsEC.delete(target);\n}\n\nif (!steal) return;\n\nconst effect = workflow.actor.effects.find(\n  e => e.system?.origin?.message === result.itemCardUuid\n);\nif (!effect) return ui.notifications.warn(\"法术窃取：未找到豁免行动应用的禁施效果。\");\n\nawait MidiQOL.socket().executeAsGM(\"updateEffects\", {\n  actorUuid: workflow.actor.uuid,\n  updates: [{\n    _id: effect.id,\n    \"flags.world.spellThief\": {\n      spell: workflow.item.uuid, identifier: workflow.item.identifier\n    }\n  }]\n});\n\nconst source = await fromUuid(workflow.item.uuid) ?? workflow.item;\nconst data = source.toObject();\ndelete data._id;\ndata.name = `${source.name}（窃取）`;\ndata.system.method = \"spell\";\ndata.system.prepared = CONFIG.DND5E.spellPreparationStates.always.value;\ndata.system.ability = defender.spellcastingAbility;\ndata.system.sourceItem = \"\";\ndata.flags.dnd5e ??= {};\ndata.flags.dnd5e.dependentOn = effect.uuid;\ndelete data.flags.dnd5e.cachedFor;\ndelete data.flags.dnd5e.scaling;\ndata.system.uses = { spent: 0, max: \"\", recovery: [] };\nfor (const activity of Object.values(data.system.activities)) {\n  // NPC 的每日次数不转移给盗取者；实际施法行动改用自己的法术位。\n  activity.uses = { spent: 0, max: \"\", recovery: [] };\n  activity.consumption.targets = [];\n  if (activity._id !== workflow.activity.id) continue;\n  activity.consumption.spellSlot = true;\n  if (activity.save) {\n    activity.save.dc.calculation = \"spellcasting\";\n    activity.save.dc.formula = \"\";\n  }\n  if (activity.attack) {\n    if (activity.attack.flat) activity.attack.bonus = \"\";\n    activity.attack.ability = \"spellcasting\";\n    activity.attack.flat = false;\n  }\n}\nawait dnd5eClasspack.createActorItems(defender.uuid, data, { favorite: true });",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
     }
   },
   "_stats": {

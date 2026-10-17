@@ -42,12 +42,9 @@
           "targets": [
             {
               "type": "itemUses",
-              "target": "",
               "value": "1",
-              "scaling": {
-                "mode": "",
-                "formula": ""
-              }
+              "target": "",
+              "scaling": {}
             }
           ],
           "scaling": {
@@ -105,19 +102,23 @@
           "visible": false
         },
         "sort": 0,
-        "img": null,
+        "img": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": false
+          "requireMagic": false,
+          "identifier": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
-        "otherActivityId": null,
+        "otherActivityId": "",
         "macroData": {
           "name": "",
           "command": ""
@@ -189,7 +190,8 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
-        "otherActivityAsParentType": true
+        "otherActivityAsParentType": true,
+        "name": "发动武器攻击"
       }
     },
     "identifier": "",

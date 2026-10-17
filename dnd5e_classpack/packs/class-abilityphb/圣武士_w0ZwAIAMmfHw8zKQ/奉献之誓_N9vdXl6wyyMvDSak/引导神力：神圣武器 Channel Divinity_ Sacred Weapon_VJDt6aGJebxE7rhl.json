@@ -110,10 +110,10 @@
           "self": false
         },
         "restrictions": {
-          "allowMagical": false,
+          "allowMagical": true,
           "categories": [],
           "properties": [],
-          "type": ""
+          "type": "weapon"
         },
         "useConditionText": "",
         "useConditionReason": "",
@@ -172,12 +172,16 @@
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": true
+          "requireMagic": true,
+          "identifier": ""
         },
-        "otherActivityId": null,
+        "otherActivityId": "",
         "regionBehavior": {
           "enabled": false,
           "dispositionFilter": -1,
@@ -324,6 +328,16 @@
             "_id": "81wpR0sc6cI1p8ZT",
             "conditions": "{}",
             "replacement": ""
+          },
+          {
+            "key": "system.properties",
+            "type": "add",
+            "value": "mgc",
+            "phase": "initial",
+            "_id": "qukDwiEV5zc5lKIe",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
           }
         ],
         "origin": {
@@ -355,7 +369,9 @@
           "showIcon": false,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "applicationMode": "default",
+          "expiryMode": "default"
         },
         "dnd5e": {
           "riders": {}
@@ -367,12 +383,12 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "14.368",
+        "coreVersion": "14.369",
         "systemId": "dnd5e",
-        "systemVersion": "6.0.5",
+        "systemVersion": "6.0.6",
         "createdTime": 1757271701791,
-        "modifiedTime": 1757271811194,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "modifiedTime": 1792085350252,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
         "exportSource": null
       },
       "start": null,

@@ -232,7 +232,18 @@
               "effect": [],
               "item": []
             },
-            "uuid": null
+            "uuid": null,
+            "_stats": {
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "coreVersion": "14.368",
+              "systemId": "dnd5e",
+              "systemVersion": "6.0.5",
+              "createdTime": 1756830717073,
+              "modifiedTime": 1757426912830,
+              "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+              "exportSource": null
+            }
           }
         ],
         "range": {
@@ -269,8 +280,8 @@
         "useConditionReason": "",
         "effectConditionText": "",
         "macroData": {
-          "name": "元素武器",
-          "command": "// 元素武器：Midi On Use，postActiveEffects。仍由玩家把武器拖入原生聊天卡。\n// Activity 关联一个通用 enchantment AE，环阶限制留空。无需 ClassPack API 补丁或常驻 Hook。\nif (args[0]?.macroPass !== \"postActiveEffects\" || workflow.aborted) return;\nconst activity = workflow.activity;\nif (activity?.type !== \"enchant\") return;\nconst profiles = Array.from(activity.effects ?? []);\nconst profile = profiles.length === 1 ? await profiles[0].getEffect() : null;\nif (profile?.type !== \"enchantment\") {\n  return ui.notifications.warn(\"元素武器：请让附魔 Activity 只关联一个通用附魔 AE。\");\n}\nconst message = workflow.chatCard ?? await fromUuid(workflow.itemCardUuid);\nif (!message) return ui.notifications.warn(\"元素武器：未找到本次施法的聊天卡片。\");\nif (message.getFlag(\"dnd5e_classpack\", \"elementalWeapon\")?.version === 2) return;\nconst castLevel = Number(workflow.spellLevel ?? activity.getRollData().item.level);\nif (!Number.isInteger(castLevel) || castLevel < 3 || castLevel > 9) {\n  return ui.notifications.warn(\"元素武器：无法取得有效的施法环阶。\");\n}\n\n// 选择完成前关闭此卡的附魔入口，避免拖入武器时套用模板的默认元素。\nawait message.update({ \"flags.dnd5e.use.enchantmentProfile\": null });\nconst types = [\"acid\", \"cold\", \"fire\", \"lightning\", \"thunder\"];\nconst label = type => game.i18n.localize(CONFIG.DND5E.damageTypes[type].label);\nconst damageType = await foundry.applications.api.DialogV2.wait({\n  window: { title: \"元素武器：选择伤害类型\" },\n  content: \"<p>选择元素后，将武器拖入本次施法的聊天卡片。</p>\",\n  buttons: types.map(type => ({ action: type, label: label(type), callback: () => type })),\n  rejectClose: false\n});\nif (!types.includes(damageType)) return;\n\nconst bonus = Math.min(3, Math.floor((castLevel - 1) / 2));\nconst snapshot = activity.item.toObject();\nconst effect = snapshot.effects.find(effect => effect._id === profile.id);\nconst storedActivity = snapshot.system.activities[activity.id];\nif (!effect || !storedActivity) {\n  return ui.notifications.warn(\"元素武器：物品快照缺少附魔数据，请重新施法。\");\n}\nconst managed = new Set([\"name\", \"activities[attack].attack.bonus\", \"activities[attack].damage.parts\", \"system.properties\"]);\nconst changes = [\n  [\"name\", `（元素武器：${label(damageType)} +${bonus}）`],\n  [\"activities[attack].attack.bonus\", String(bonus)],\n  [\"activities[attack].damage.parts\", { number: bonus, denomination: 4, types: [damageType] }],\n  [\"system.properties\", \"mgc\"]\n].map(([key, value]) => ({ _id: foundry.utils.randomID(), key, value, type: \"add\",\n  phase: \"initial\", priority: 20, conditions: \"{}\", replacement: \"\" }));\neffect.system.changes = [...(effect.system.changes ?? []).filter(change => !managed.has(change.key)), ...changes];\neffect.name = `元素武器：${label(damageType)} +${bonus}`;\neffect.duration = { ...effect.duration, value: 1, units: \"hours\", expired: false };\nstoredActivity.effects = [{ ...storedActivity.effects[0], uuid: null, level: { min: null, max: null } }];\n\n// 原生 getAssociatedItem / getAssociatedActivity 优先解析实时 UUID。\n// 清空此卡的实时引用，让它读取系统支持的 item.data 快照；保留原物品/Activity ID 及来源信息。\n// 这样每张卡保存自己的元素和环阶，刷新或换客户端后也无需重新注册 Hook。\nconst update = {\n  \"system.item.uuid\": null, \"system.item.id\": snapshot._id,\n  \"system.activity.uuid\": null, \"system.activity.id\": activity.id,\n  \"flags.dnd5e.item.uuid\": null, \"flags.dnd5e.activity.uuid\": null,\n  \"flags.dnd5e.item.id\": snapshot._id, \"flags.dnd5e.activity.id\": activity.id,\n  \"flags.dnd5e.item.data\": snapshot,\n  \"flags.dnd5e.use.enchantmentProfile\": profile.id,\n  \"flags.dnd5e_classpack.elementalWeapon\": {\n    version: 2, sourceActivityUuid: activity.uuid, profileId: profile.id, castLevel, damageType\n  }\n};\n// 已消耗掉的物品快照具有更高读取优先级；只替换本物品，保留其他消耗记录。\nif (message.system.deltas?.deleted?.some(item => item._id === snapshot._id)) {\n  update[\"system.deltas.deleted\"] = message.system.deltas.deleted.map(item =>\n    item._id === snapshot._id ? snapshot : foundry.utils.deepClone(item));\n}\nawait message.update(update);\n"
+          "name": "Midi附魔",
+          "command": "if (args[0]?.macroPass !== \"postActiveEffects\" || workflow.aborted) return;\nconst activity = workflow.activity;\nif (activity?.type !== \"enchant\") return;\nconst profiles = Array.from(activity.effects ?? []);\nconst profile = profiles.length === 1 ? await profiles[0].getEffect() : null;\nif (profile?.type !== \"enchantment\") {\n  return ui.notifications.warn(\"元素武器：请让附魔 Activity 只关联一个通用附魔 AE。\");\n}\nconst message = workflow.chatCard ?? await fromUuid(workflow.itemCardUuid);\nif (!message) return ui.notifications.warn(\"元素武器：未找到本次施法的聊天卡片。\");\nif (message.getFlag(\"dnd5e_classpack\", \"elementalWeapon\")?.version === 2) return;\nconst castLevel = Number(workflow.spellLevel ?? activity.getRollData().item.level);\nif (!Number.isInteger(castLevel) || castLevel < 3 || castLevel > 9) {\n  return ui.notifications.warn(\"元素武器：无法取得有效的施法环阶。\");\n}\n\n// 选择完成前关闭此卡的附魔入口，避免拖入武器时套用模板的默认元素。\nawait message.update({ \"flags.dnd5e.use.enchantmentProfile\": null });\nconst types = [\"acid\", \"cold\", \"fire\", \"lightning\", \"thunder\"];\nconst label = type => game.i18n.localize(CONFIG.DND5E.damageTypes[type].label);\nconst damageType = await dnd5eClasspack.dialogUtils.selectDamageType(\n  types,\n  \"元素武器\",\n  \"选择伤害类型\",\n  { userId: dnd5eClasspack.firstOwner(workflow.actor, true) }\n);\nif (!types.includes(damageType)) return;\n\nconst bonus = Math.min(3, Math.floor((castLevel - 1) / 2));\nconst snapshot = activity.item.toObject();\nconst effect = snapshot.effects.find(effect => effect._id === profile.id);\nconst storedActivity = snapshot.system.activities[activity.id];\nif (!effect || !storedActivity) {\n  return ui.notifications.warn(\"元素武器：物品快照缺少附魔数据，请重新施法。\");\n}\nconst managed = new Set([\"name\", \"activities[attack].attack.bonus\", \"activities[attack].damage.parts\", \"system.properties\"]);\nconst changes = [\n  [\"name\", `（元素武器：${label(damageType)} +${bonus}）`],\n  [\"activities[attack].attack.bonus\", String(bonus)],\n  [\"activities[attack].damage.parts\", { number: bonus, denomination: 4, types: [damageType] }],\n  [\"system.properties\", \"mgc\"]\n].map(([key, value]) => ({ _id: foundry.utils.randomID(), key, value, type: \"add\",\n  phase: \"initial\", priority: 20, conditions: \"{}\", replacement: \"\" }));\neffect.system.changes = [...(effect.system.changes ?? []).filter(change => !managed.has(change.key)), ...changes];\neffect.name = `元素武器：${label(damageType)} +${bonus}`;\neffect.duration = { ...effect.duration, value: 1, units: \"hours\", expired: false };\nstoredActivity.effects = [{ ...storedActivity.effects[0], uuid: null, level: { min: null, max: null } }];\n\n// 原生 getAssociatedItem / getAssociatedActivity 优先解析实时 UUID。\n// 清空此卡的实时引用，让它读取系统支持的 item.data 快照；保留原物品/Activity ID 及来源信息。\n// 这样每张卡保存自己的元素和环阶，刷新或换客户端后也无需重新注册 Hook。\nconst update = {\n  \"system.item.uuid\": null, \"system.item.id\": snapshot._id,\n  \"system.activity.uuid\": null, \"system.activity.id\": activity.id,\n  \"flags.dnd5e.item.uuid\": null, \"flags.dnd5e.activity.uuid\": null,\n  \"flags.dnd5e.item.id\": snapshot._id, \"flags.dnd5e.activity.id\": activity.id,\n  \"flags.dnd5e.item.data\": snapshot,\n  \"flags.dnd5e.use.enchantmentProfile\": profile.id,\n  \"flags.dnd5e_classpack.elementalWeapon\": {\n    version: 2, sourceActivityUuid: activity.uuid, profileId: profile.id, castLevel, damageType\n  }\n};\n// 已消耗掉的物品快照具有更高读取优先级；只替换本物品，保留其他消耗记录。\nif (message.system.deltas?.deleted?.some(item => item._id === snapshot._id)) {\n  update[\"system.deltas.deleted\"] = message.system.deltas.deleted.map(item =>\n    item._id === snapshot._id ? snapshot : foundry.utils.deepClone(item));\n}\nawait message.update(update);"
         },
         "ignoreTraits": {
           "idi": false,
@@ -322,12 +333,15 @@
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
           "requireMagic": false
         },
-        "otherActivityId": null,
+        "otherActivityId": "",
         "regionBehavior": {
           "enabled": false,
           "dispositionFilter": -1,

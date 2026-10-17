@@ -210,7 +210,6 @@
   "effects": [
     {
       "_id": "0b5a78263ddcb6fe",
-      "_key": "!items.effects!bDYWBvMmi2yL8YEa.0b5a78263ddcb6fe",
       "name": "以太漫步 Ethereal Step",
       "img": "icons/magic/movement/portal-vortex-orange.webp",
       "type": "base",
@@ -227,10 +226,28 @@
       "statuses": [
         "ethereal"
       ],
-      "showIcon": 1,
+      "showIcon": 2,
       "sort": 0,
-      "flags": {},
-      "description": "以太化状态持续至当前回合结束；无需专注。",
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "applicationMode": "default",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "description": "<p>以太化状态持续至当前回合结束；无需专注。</p>",
       "tint": "#ffffff",
       "folder": null,
       "system": {
@@ -247,7 +264,19 @@
         "rider": {
           "statuses": []
         }
-      }
+      },
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": 1792135280961,
+        "modifiedTime": 1792135280961,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!bDYWBvMmi2yL8YEa.0b5a78263ddcb6fe"
     }
   ],
   "folder": "F7LXtx9L0TUvBDY9",

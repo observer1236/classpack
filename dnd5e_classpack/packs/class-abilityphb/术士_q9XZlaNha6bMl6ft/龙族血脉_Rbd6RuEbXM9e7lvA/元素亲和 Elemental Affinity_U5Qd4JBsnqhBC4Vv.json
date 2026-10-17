@@ -236,6 +236,34 @@
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
+    },
+    "dae": {
+      "macro": {
+        "name": "元素亲和 Elemental Affinity",
+        "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "if (args[0]?.macroPass !== \"postDamageRoll\" || workflow.aborted) return;\nconst actor = workflow.actor;\nif (workflow.item?.type !== \"spell\" || !actor) return;\nif (workflow.workflowOptions?.isOverTime || workflow.activity?.isOverTimeFlag) return;\nconst sorcerer = actor.items.find(item => item.type === \"class\" && item.system.identifier === \"sorcerer\");\nif (Number(sorcerer?.system.levels ?? 0) < 6) return;\nif (!actor.items.some(item => item.system.identifier === \"elemental-affinity\"\n  || item._stats?.compendiumSource?.endsWith(\".U5Qd4JBsnqhBC4Vv\"))) return;\n\nconst selected = actor.getRollData().scale?.[\"draconic-ancestry\"]?.[\"damage-type\"];\nconst damageType = typeof selected === \"string\" ? selected : String(selected?.value ?? selected ?? \"\");\nif (![\"acid\", \"cold\", \"fire\", \"lightning\", \"poison\"].includes(damageType)) {\n  return ui.notifications.warn(\"元素亲和：请先在龙族血脉升级中选择巨龙先祖。\");\n}\nconst rolls = [...(workflow.damageRolls ?? [])];\nconst index = rolls.findIndex(roll => roll.options?.type === damageType);\nif (index < 0 || workflow._classpackElementalAffinity) return;\nworkflow._classpackElementalAffinity = true;\n\n// 合并已评估的伤害骰与固定加值，保留原骰结果、伤害类型和重击结果。\nconst charisma = Number(actor.system.abilities.cha.mod);\nif (Number.isFinite(charisma) && charisma > 0) {\n  try {\n    const bonus = await new Roll(`${charisma}[元素亲和]`).evaluate();\n    rolls[index] = MidiQOL.addRollTo(rolls[index], bonus);\n    await workflow.setDamageRolls(rolls);\n  } catch (error) {\n    delete workflow._classpackElementalAffinity;\n    throw error;\n  }\n}\n\nconst classpack = globalThis.dnd5eClasspack;\nconst points = actor.items.find(item => item.system.identifier === \"sorcery-points\"\n  || item._stats?.compendiumSource?.endsWith(\".Q3AW3csi2dBTMvPm\"));\nif (!points || !classpack?.resources || classpack.resources.remaining(points) < 1) return;\nconst label = game.i18n.localize(CONFIG.DND5E.damageTypes[damageType].label);\nconst answer = await classpack.dialogUtils.buttonDialog(\n  \"元素亲和\", `是否花费 1 术法点，获得持续 1 小时的${label}伤害抗性？`,\n  [[\"获得抗性\", \"gain\"], [\"不使用\", \"skip\"]],\n  { userId: classpack.firstOwner(actor, true) }\n);\nif (answer !== \"gain\") return;\n\nlet receipt;\ntry {\n  receipt = await classpack.resources.consume([{ itemUuid: points.uuid, amount: 1 }], {\n    id: `${workflow.uuid ?? workflow.id ?? foundry.utils.randomID()}:elemental-affinity-resistance`\n  });\n  const effects = await actor.createEmbeddedDocuments(\"ActiveEffect\", [{\n    name: `元素亲和：${label}抗性`, img: \"icons/magic/symbols/elements-air-earth-fire-water.webp\",\n    type: \"base\", transfer: false,\n    duration: { value: 1, units: \"hours\", expiry: null },\n    system: {\n      magical: true, origin: { item: workflow.item.uuid },\n      changes: [{ _id: foundry.utils.randomID(), key: \"system.traits.dr.value\", value: damageType,\n        type: \"add\", phase: \"initial\", priority: 20, conditions: \"{}\", replacement: \"\" }]\n    },\n    flags: { dae: { expiryMode: \"delete\" } }\n  }]);\n  if (!effects?.length) throw new Error(\"未能创建抗性效应\");\n} catch (error) {\n  // 创建失败时，仅在资源未发生其他变化的情况下退回本次扣除。\n  for (const entry of [...(receipt?.entries ?? [])].reverse()) {\n    const item = await fromUuid(entry.itemUuid);\n    if (Number(item?.system.uses.spent) === entry.after) {\n      await item.update({ \"system.uses.spent\": entry.before });\n    }\n  }\n  console.error(\"元素亲和：抗性处理失败\", error);\n  ui.notifications.error(\"元素亲和：抗性处理失败，请检查控制台及术法点余额。\");\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
     }
   },
   "_stats": {

@@ -42,40 +42,20 @@
     {
       "name": "极效治疗",
       "img": "icons/magic/life/cross-worn-green.webp",
-      "origin": null,
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.mSQMj6rZxjKtCe7i",
       "_id": "B8p6YBtK5LV3umy5",
       "type": "base",
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.optional.极效治疗.force",
-            "value": "item.itenType === \"spell\"",
-            "priority": 20,
+            "key": "flags.midi-qol.max.damage.heal",
             "type": "add",
+            "value": "workflow.item.type == 'spell'",
             "phase": "initial",
-            "_id": "aHIsu2sBEIwyeHkD",
+            "_id": "BVbZEb9diMIV5zIO",
             "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "flags.midi-qol.optional.极效治疗.damage.heal",
-            "value": "reroll-max",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "83Z0Kn4KnGyeuWeH",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "flags.midi-qol.optional.极效治疗.count",
-            "value": "every",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "heWl7uwoaOJXkBAt",
-            "conditions": "{}",
-            "replacement": ""
+            "replacement": "",
+            "priority": null
           }
         ],
         "rider": {
@@ -111,7 +91,8 @@
           "showIcon": false,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "expiryMode": "default"
         },
         "dnd5e": {
           "riders": {}
@@ -123,12 +104,12 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "14.368",
+        "coreVersion": "14.369",
         "systemId": "dnd5e",
-        "systemVersion": "6.0.5",
+        "systemVersion": "6.0.6",
         "createdTime": 1757100964956,
-        "modifiedTime": 1757101275950,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "modifiedTime": 1792084811692,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
         "exportSource": null
       },
       "start": null,

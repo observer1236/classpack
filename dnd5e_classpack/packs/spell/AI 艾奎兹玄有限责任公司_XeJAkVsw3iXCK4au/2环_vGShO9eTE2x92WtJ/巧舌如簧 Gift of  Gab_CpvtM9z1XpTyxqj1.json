@@ -115,7 +115,7 @@
           "visible": false
         },
         "sort": 0,
-        "useConditionText": "",
+        "useConditionText": "false",
         "useConditionReason": "",
         "effectConditionText": "",
         "macroData": {
@@ -168,11 +168,14 @@
           "rollAs": "target"
         },
         "otherActivityId": "none",
-        "img": null,
+        "img": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
           "requireMagic": false
@@ -199,7 +202,8 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
-        "otherActivityAsParentType": true
+        "otherActivityAsParentType": true,
+        "name": ""
       }
     },
     "identifier": "gift-of-gab",
