@@ -1,5 +1,5 @@
 {
-  "name": "Giant Poisonous Snake (MM'14)",
+  "name": "巨毒蛇 Giant Poisonous Snake (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -645,7 +645,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Poisonous Snake",
+    "name": "巨毒蛇 Giant Poisonous Snake (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -744,7 +744,7 @@
   "items": [
     {
       "_id": "o5vWpNZBbHHBPvtF",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -756,7 +756,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 10 ft., one target. <i>Hit:</i> 6 ([[/damage 1d4 + 4 type=piercing]]) damage, and the target must make a [[/save ability=con dc=11]] saving throw, taking 10 ([[/damage 3d6 type=poison]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及10尺，单一目标。命中：6（[[/damage 1d4 + 4 type=piercing]]）点穿刺伤害，且目标必须进行一次DC11的体质豁免，豁免失败则受到10（[[/damage 3d6 type=poison]]）点毒素伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "range": {
@@ -780,7 +780,7 @@
           "NKR3sdggDVOYfh7E": {
             "_id": "NKR3sdggDVOYfh7E",
             "type": "attack",
-            "name": "Attack: 1d4 Piercing Damage",
+            "name": "攻击: 1d4 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -952,7 +952,7 @@
           "CUEi9qgwA9NOF2f4": {
             "_id": "CUEi9qgwA9NOF2f4",
             "type": "save",
-            "name": "Save: 3d6 Poison Damage",
+            "name": "豁免: 3d6 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1210,7 +1210,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 32700000,
   "ownership": {
     "default": 0,

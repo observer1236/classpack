@@ -1,5 +1,5 @@
 {
-  "name": "Behir (MM'14)",
+  "name": "青足龙蛇 Behir (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>The serpentine behir crawls along floors and clambers up walls to reach its prey. Its lightning breath can incinerate most creatures, even as more powerful foes are constricted in its coils and eaten alive.</p><p>A behir's monstrous form resembles a combination of centipede and crocodile. Its scaled hide ranges from ultramarine to deep blue in color, fading to pale blue on its underside.</p><div data-roll-name-ancestor=\"Cavern Predators\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Cavern Predators.</span></span> Behirs lair in places inaccessible to other creatures, favoring locations where would-be intruders must make a harrowing climb to reach them. Deep pits, high caves in cliff walls, and caverns reached only by narrow, twisting tunnels are prime sites for a behir ambush. A behir's dozen legs allow it to scramble through its lair site with ease. When not climbing, it moves even faster by folding its legs beside its body and slithering like a snake.</p><p>Behirs swallow their prey whole, after which they enter a period of dormancy while they digest. While dormant, a behir chooses a hiding place where intruders in its lair might overlook it.</p></div><div data-roll-name-ancestor=\"Foes of the Dragons\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Foes of the Dragons.</span></span> In times long forgotten, giants and dragons engaged in seemingly endless war. Storm giants created the first behirs as weapons against the dragons, and behirs retain a natural hatred for dragonkind.</p><p>A behir never makes its lair in an area it knows to be inhabited by a dragon. If a dragon attempts to establish a lair within a few dozen miles of a behir's lair, the behir is compelled to kill the dragon or drive it off. Only if the dragon proves too powerful to fight does a behir back down, seeking out a new lair site a great distance away.</p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>I've already eaten three giant bats, six troglodytes, and a mind flayer today, but that's okay. Plenty of room in my belly for you and your friends.</i>”</p><p><span class=\"rd__quote-by\">— Lludd the behir, confronting adventurers in the Lost Caverns of Tsojcanth</span></p></div></div></div>",
+        "value": "<h3>青足龙蛇Behir</h3><p>“我今天已经吃了三只巨蝙蝠、六个穴居人还有一个夺心魔，不过没事儿。我觉得我肚子还能放得下你和你的朋友们。”</p><p>——青足龙蛇卢德Lludd，在索吉卡斯失落洞群Lost Caverns of Tsojcanth直面冒险者们时，如是说</p><p>青足龙蛇在地面和墙壁上匍匐蛇行，追捕猎物。它的闪电吐息可以焚化大多数生物，即使更强的生物，也会被青足龙蛇绞缠勒紧，活囵生吞。</p><p>青足龙蛇的外形类似蜈蚣和鳄鱼的结合体。鳞片构成的外皮为青蓝到深蓝色，逐渐过渡到腹部的浅蓝色。</p><p><strong>洞窟掠食者Cavern Predators。</strong>青足龙蛇筑巢于其他生物难以到达的地方，破使入侵者必须进行艰苦的攀爬作业。深坑，峭壁高处的洞穴，以及只由狭窄曲折地道连通的洞窟都是青足龙蛇伏击猎物的主要场所。它的十二条腿使其能够轻松地攀爬在巢穴内外。不需要攀爬时，青足龙蛇可以把腿合拢在体侧，像蛇一样迅速滑行。</p><p>青足龙蛇通常会将猎物整个吞下，然后进入一段休眠期来进消化。在此期间，青足龙蛇会躲藏在闯入巢穴的入侵者容易忽略的隐蔽处。</p><p><strong>龙之仇敌Foes of the Dragon。</strong>在早已被遗忘的古代，巨人和龙族进行着近乎无休止的战争。风暴巨人则为此创造了第一只青足龙蛇作为其对抗龙族的兵器，因而青足龙蛇们至今仍留存着对龙族天生的仇恨。</p><p>青足龙蛇从不在有龙栖息的地区筑巢。如果在青足龙蛇巢穴几十里以内有龙试图筑巢，青足龙蛇将不得不前去将其杀死或驱逐。只有当这条龙过于强大无法对抗时，青足龙蛇才会放弃，并远走他乡以寻找新的筑巢地。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -633,7 +633,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Behir",
+    "name": "青足龙蛇 Behir (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -727,7 +727,7 @@
   "items": [
     {
       "_id": "glhPrmnEITpJosaU",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The behir makes two attacks: one with its bite and one to constrict.</p></div>",
+          "value": "<p>青足龙蛇发动两次攻击：一次啃咬，一次绞缠。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -932,7 +932,7 @@
     },
     {
       "_id": "BAsR42mLyhd6bsMI",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -944,7 +944,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+10]]{+10} to hit, reach 10 ft., one target. <i>Hit:</i> 22 ([[/damage 3d10 + 6 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+10，触及10尺，单一目标。命中：22（[[/damage 3d10 + 6 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1222,7 +1222,7 @@
     },
     {
       "_id": "OjQM2DDQjgKTR6Gb",
-      "name": "Constrict",
+      "name": "绞缠 Constrict",
       "type": "weapon",
       "system": {
         "source": {
@@ -1234,7 +1234,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+10]]{+10} to hit, reach 5 ft., one Large or smaller creature. <i>Hit:</i> 17 ([[/damage 2d10 + 6 type=bludgeoning]]) damage plus 17 ([[/damage 2d10 + 6 type=slashing]]) damage. The target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">16</span>) if the behir isn't already constricting a creature, and the target is &amp;Reference[condition=restrained] until this grapple ends.</p></div>",
+          "value": "<p>近战武器攻击：命中+10，触及5尺，单一大型或更小体型生物。命中：17（[[/damage 2d10 + 6 type=bludgeoning]]）点钝击伤害，外加17（[[/damage 2d10 + 6 type=slashing]]）点挥砍伤害。如果青足龙蛇没有勒住其他生物，则该目标被擒抱（逃脱DC 16）并受束缚直至擒抱终止。</p>",
           "chat": ""
         },
         "range": {
@@ -1528,7 +1528,7 @@
     },
     {
       "_id": "G7A5XF4bccJdeOtV",
-      "name": "Lightning Breath",
+      "name": "闪电吐息 Lightning Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1540,7 +1540,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a [[/save ability=dex dc=16]] saving throw, taking 66 ([[/damage 12d10 type=lightning]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>青足龙蛇呼出一道闪电，覆盖长20尺宽5尺的线状区域，闪电区域内的所有生物必须进行一次DC 16的敏捷豁免，豁免失败者将受到66（[[/damage 12d10 type=lightning]]）点闪电伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1786,7 +1786,7 @@
     },
     {
       "_id": "2dk74SOW39BibQC4",
-      "name": "Swallow",
+      "name": "吞咽 Swallow",
       "type": "feat",
       "system": {
         "source": {
@@ -1798,7 +1798,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is &amp;Reference[condition=blinded] and &amp;Reference[condition=restrained], it has &amp;Reference[rule=totalcover]{total cover} against attacks and other effects outside the behir, and it takes 21 ([[/damage 6d6 type=acid]]) damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.</p><p>If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a [[/save ability=con dc=14]] saving throw at the end of that turn or regurgitate the creature, which falls &amp;Reference[condition=prone] in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer &amp;Reference[condition=restrained] by it and can escape from the corpse by using 15 feet of movement, exiting &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>青足龙蛇对正被它擒抱的中型或更小体型生物发动一次啃咬攻击。如果该攻击命中，则目标被吞下，并结束其受擒状态。被吞下的目标陷入目盲且被束缚，其对于青足龙蛇身体外的攻击或效应视为处于全身掩护，并在每次青足龙蛇的回合开始时受21（[[/damage 6d6 type=acid]]）点强酸伤害。青足龙蛇不能同时吞下多于一个的生物。 若被吞下的生物在一回合内，对青足龙蛇造成至少30点伤害，则青足龙蛇在该回合结束时须进行一次DC 14的体质豁免，豁免失败则吐出该生物，并使其于青足龙蛇身边10尺内的一处空间失足倒地。如果青足龙蛇死亡，被吞下的生物将不再受束缚，且可以消耗15尺移动力逃出，然后在尸体旁现身并陷入倒地状态。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1975,7 +1975,7 @@
           "OqXs6kJksiuvsxb4": {
             "_id": "OqXs6kJksiuvsxb4",
             "type": "damage",
-            "name": "Damage: 6d6 Acid Damage",
+            "name": "伤害: 6d6 强酸 伤害",
             "activation": {
               "type": "action",
               "value": null,
@@ -2130,7 +2130,7 @@
           "RsBKD09BExNSxrUK": {
             "_id": "RsBKD09BExNSxrUK",
             "type": "damage",
-            "name": "Damage",
+            "name": "伤害",
             "activation": {
               "type": "action",
               "value": null,
@@ -2321,7 +2321,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 8400000,
   "ownership": {
     "default": 0,

@@ -1,5 +1,5 @@
 {
-  "name": "Giant Weasel (MM'14)",
+  "name": "巨鼬 Giant Weasel (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "",
+        "value": "<h3>蚊蝠Stirge</h3><p>这种可怕的飞行生物，就像一只大蝙蝠和大蚊子的混合物种。它长着带锋利钳子的脚和中空的针状长喙，到处寻找自己的下一顿大餐。</p><p>蚊蝠以活体生物的鲜血维生，它们会贴在目标身上慢慢的吸取血液。少量蚊蝠的危险性并不大，然而当它们聚齐一大群时依然不容小觑。数量上的优势，使得受害者就算把蚊蝠全拽下来却又会被重复贴上，因而难以避免被吸血而迅速被削弱。</p><p><strong>吸血Blood Drain。</strong>蚊蝠发动攻击时，会在目标身上寻找脆弱的空隙并迅速贴上，接着用长喙刺进皮肤，并用钳状脚抓紧目标。直到蚊蝠吸够了血，它就会迅速从目标身上脱离，然后飞去安静的地方消化吸收。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -635,7 +635,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Weasel",
+    "name": "巨鼬 Giant Weasel (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -729,7 +729,7 @@
   "items": [
     {
       "_id": "5XPUyI4wQXzCf6DX",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -741,7 +741,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 5 ([[/damage 1d4 + 3 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：5（[[/damage 1d4 + 3 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1019,7 +1019,7 @@
     },
     {
       "_id": "1xnXwj0hcZ1KYmxA",
-      "name": "Keen Hearing and Smell",
+      "name": "敏锐嗅听觉 Keen Hearing and Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1031,7 +1031,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The weasel has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing or smell.</p></div>",
+          "value": "<p>鼬依赖听觉或嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1087,7 +1087,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 11800000,
   "ownership": {
     "default": 0,

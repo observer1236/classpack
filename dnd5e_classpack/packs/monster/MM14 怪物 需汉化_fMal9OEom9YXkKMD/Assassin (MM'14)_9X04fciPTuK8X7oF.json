@@ -1,5 +1,5 @@
 {
-  "name": "Assassin (MM'14)",
+  "name": "刺客 Assassin (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.</p></div></div>",
+        "value": "<h3>刺客 Assassins</h3><p>精心锻炼自己用毒技巧的刺客作为无情的杀手受雇于各方的贵族、公会会长、国君，以及任何付得起钱的客户。</p>",
         "public": ""
       },
-      "alignment": "Any Non-Good Alignment",
+      "alignment": "任意非善良阵营 Any Non-Good Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -633,7 +633,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Assassin",
+    "name": "刺客 Assassin (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -727,7 +727,7 @@
   "items": [
     {
       "_id": "loqKwuZ3eWe7hbu8",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The assassin makes two shortsword attacks.</p></div>",
+          "value": "<p>刺客发动两次短剑攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -932,7 +932,7 @@
     },
     {
       "_id": "Irj8LCDSpodAWw7d",
-      "name": "Shortsword",
+      "name": "短剑 Shortsword",
       "type": "weapon",
       "system": {
         "source": {
@@ -944,7 +944,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=piercing]]) damage, and the target must make a [[/save ability=con dc=15]] saving throw, taking 24 ([[/damage 7d6 type=poison]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺。单一目标。命中：6（[[/damage 1d6 + 3 type=piercing]]）点穿刺伤害。目标必须进行一次DC 15的体质豁免检定，豁免失败则受到24（[[/damage 7d6 type=poison]]）点毒素伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "range": {
@@ -1155,7 +1155,7 @@
           "ibthXqLwRg6zIBmb": {
             "_id": "ibthXqLwRg6zIBmb",
             "type": "save",
-            "name": "Save: 7d6 Poison Damage",
+            "name": "豁免: 7d6 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1390,7 +1390,7 @@
     },
     {
       "_id": "wKPS7i4vXzQIY4Dl",
-      "name": "Light Crossbow",
+      "name": "轻弩 Light Crossbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1402,7 +1402,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, range 80/320 ft., one target. <i>Hit:</i> 7 ([[/damage 1d8 + 3 type=piercing]]) damage, and the target must make a [[/save ability=con dc=15]] saving throw, taking 24 ([[/damage 7d6 type=poison]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>远程武器攻击：命中+6，射程80/320尺，单一目标。命中：7（[[/damage 1d8 + 3 type=piercing]]）点穿刺伤害，目标必须进行一次DC 15的体质豁免，豁免失败则受到24（[[/damage 7d6 type=poison]]）点毒素伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "range": {
@@ -1614,7 +1614,7 @@
           "1EiPIr5ZFARNEfro": {
             "_id": "1EiPIr5ZFARNEfro",
             "type": "save",
-            "name": "Save: 7d6 Poison Damage",
+            "name": "豁免: 7d6 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1849,7 +1849,7 @@
     },
     {
       "_id": "YoCdfiI7nxYsCmZt",
-      "name": "Assassinate",
+      "name": "暗杀 Assassinate",
       "type": "feat",
       "system": {
         "source": {
@@ -1861,7 +1861,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a @status[surprised] creature is a critical hit.</p></div>",
+          "value": "<p>在开始战斗的首个回合，刺客对任何未开始其回合的生物发动攻击时，其攻击检定具有优势。刺客击中被突袭生物的所有攻击均被视为重击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1917,7 +1917,7 @@
     },
     {
       "_id": "N4hFux9G20eeZe9Y",
-      "name": "Evasion",
+      "name": "反射闪避 Evasion",
       "type": "feat",
       "system": {
         "source": {
@@ -1929,7 +1929,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</p></div>",
+          "value": "<p>某个敏捷豁免通过后伤害减半的效应指定刺客为目标时，其豁免成功则不受任何伤害，而豁免失败时则只受一半伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1985,7 +1985,7 @@
     },
     {
       "_id": "qcdinKnWZsK0LATu",
-      "name": "Sneak Attack (1/Turn)",
+      "name": "偷袭 Sneak Attack（1/回合）",
       "type": "feat",
       "system": {
         "source": {
@@ -1997,7 +1997,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The assassin deals an extra 14 ([[/damage 4d6]]) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't &amp;Reference[condition=incapacitated] and the assassin doesn't have disadvantage on the attack roll.</p></div>",
+          "value": "<p>刺客对目标造成伤害时，如果其攻击检定具有优势，或者如果其攻击检定没有劣势且它在该目标身边5尺范围内有一个未处于失能状态的盟友。满足以上条件时，刺客造成额外14（[[/damage 4d6]]）点伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2207,11 +2207,11 @@
     },
     {
       "_id": "dqLNZNBcJasLusrn",
-      "name": "Studded Leather Armor",
+      "name": "镶钉皮甲 Studded Leather Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p></div>",
+          "value": "<p>镶钉皮甲由坚韧而灵活的皮革制成，并以密布的铆钉或尖刺加固。</p>",
           "chat": ""
         },
         "source": {
@@ -2304,7 +2304,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 7000000,
   "ownership": {
     "default": 0,

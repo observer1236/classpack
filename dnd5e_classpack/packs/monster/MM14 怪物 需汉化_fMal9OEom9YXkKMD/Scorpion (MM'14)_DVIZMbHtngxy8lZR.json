@@ -1,5 +1,5 @@
 {
-  "name": "Scorpion (MM'14)",
+  "name": "蝎子 Scorpion (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -547,7 +547,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Scorpion",
+    "name": "蝎子 Scorpion (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -727,7 +727,7 @@
   "items": [
     {
       "_id": "NYMnYznaWWDY8SZg",
-      "name": "Sting",
+      "name": "钉刺 Sting",
       "type": "weapon",
       "system": {
         "source": {
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+2]]{+2} to hit, reach 5 ft., one creature. <i>Hit:</i> 1 piercing damage, and the target must make a [[/save ability=con dc=9]] saving throw, taking 4 ([[/damage 1d8 type=poison]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>近战武器攻击：命中+2，触及5尺，单一生物。命中：1点穿刺伤害，且目标必须成功通过一次DC 9的体质豁免，否则受到4（[[/damage 1d8 type=poison]]）点毒素伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "range": {
@@ -763,7 +763,7 @@
           "J0uzjelzThJnFhpX": {
             "_id": "J0uzjelzThJnFhpX",
             "type": "attack",
-            "name": "Attack: Piercing Damage",
+            "name": "攻击: 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -935,7 +935,7 @@
           "Jgn3TY2g1lY514WU": {
             "_id": "Jgn3TY2g1lY514WU",
             "type": "save",
-            "name": "Save: 1d8 Poison Damage",
+            "name": "豁免: 1d8 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1193,7 +1193,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 9500000,
   "ownership": {
     "default": 0,

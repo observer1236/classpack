@@ -1,5 +1,5 @@
 {
-  "name": "Mammoth (MM'14)",
+  "name": "猛犸 Mammoth (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A mammoth is an elephantine creature with thick fur and long tusks. Stockier and fiercer than normal elephants, mammoths inhabit a wide range of climes, from subarctic to subtropical.</p></div></div>",
+        "value": "<p>栖息于亚极地到亚热带不同气候环境中的猛犸mammoth，是长着厚毛皮和长牙的象类生物。它们比普通的大象更健壮，也更凶猛。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Mammoth",
+    "name": "猛犸 Mammoth (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -722,7 +722,7 @@
   "items": [
     {
       "_id": "h2k4dhiMGuzKr5EL",
-      "name": "Gore",
+      "name": "顶撞 Gore",
       "type": "weapon",
       "system": {
         "source": {
@@ -734,7 +734,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+10]]{+10} to hit, reach 10 ft., one target. <i>Hit:</i> 25 ([[/damage 4d8 + 7 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+10，触及10尺，单一目标。命中：25（[[/damage 4d8 + 7 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1012,7 +1012,7 @@
     },
     {
       "_id": "T3QFZSyyDHdvxDKG",
-      "name": "Stomp",
+      "name": "践踏 Stomp",
       "type": "weapon",
       "system": {
         "source": {
@@ -1024,7 +1024,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+10]]{+10} to hit, reach 5 ft., one &amp;Reference[condition=prone] creature. <i>Hit:</i> 29 ([[/damage 4d10 + 7 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+10，触及5尺，单一倒地生物。命中：29（[[/damage 4d10 + 7 type=bludgeoning]]）点钝击伤害。 </p>",
           "chat": ""
         },
         "range": {
@@ -1302,7 +1302,7 @@
     },
     {
       "_id": "lI5kI3PERkujaXsA",
-      "name": "Trampling Charge",
+      "name": "践踏冲锋 Trampling Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1314,7 +1314,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a [[/save ability=str dc=18]] saving throw or be knocked &amp;Reference[condition=prone]. If the target is &amp;Reference[condition=prone], the mammoth can make one stomp attack against it as a bonus action.</p></div>",
+          "value": "<p>如果象向某一生物直线移动至少20尺，且在同一回合里以顶撞攻击命中该生物，则该目标必须成功通过一次DC 18的力量豁免，否则应击倒地。如果目标倒地，则象可以用一个附赠动作对其发动一次践踏攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1529,7 +1529,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 16800000,
   "ownership": {
     "default": 0,

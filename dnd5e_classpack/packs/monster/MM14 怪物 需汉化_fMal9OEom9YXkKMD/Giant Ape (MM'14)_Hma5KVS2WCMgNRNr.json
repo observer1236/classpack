@@ -1,5 +1,5 @@
 {
-  "name": "Giant Ape (MM'14)",
+  "name": "巨猿 Giant Ape (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -630,7 +630,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Ape",
+    "name": "巨猿 Giant Ape (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -724,7 +724,7 @@
   "items": [
     {
       "_id": "W6JydYo4MheMYtzf",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -736,7 +736,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The ape makes two fist attacks.</p></div>",
+          "value": "<p>巨猿发动两次拳击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -929,7 +929,7 @@
     },
     {
       "_id": "jyQ6dSMOpuBcMcbJ",
-      "name": "Fist",
+      "name": "拳击 Fist",
       "type": "weapon",
       "system": {
         "source": {
@@ -941,7 +941,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+9]]{+9} to hit, reach 10 ft., one target. <i>Hit:</i> 22 ([[/damage 3d10 + 6 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+9，触及10尺，单一目标。命中：22（[[/damage 3d10 + 6 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1219,7 +1219,7 @@
     },
     {
       "_id": "1k9IrWenEtmLCmok",
-      "name": "Rock",
+      "name": "掷石 Rock",
       "type": "weapon",
       "system": {
         "source": {
@@ -1231,7 +1231,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+9]]{+9} to hit, range 50/100 ft., one target. <i>Hit:</i> 30 ([[/damage 7d6 + 6 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+9，射程50/100尺，单一目标。命中：30（[[/damage 7d6 + 6 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1509,7 +1509,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 12300000,
   "ownership": {
     "default": 0,

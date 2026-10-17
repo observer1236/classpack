@@ -1,5 +1,5 @@
 {
-  "name": "Noble (MM'14)",
+  "name": "贵族 Noble (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Nobles wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.</p><p>The noble's statistics can also be used to represent courtiers who aren't of noble birth.</p></div></div>",
+        "value": "<h3>贵族 Nobles</h3><p>诸贵族掌握着重要的授权，并作为社会的上层阶级拥有极大的影响力。贵族们坐拥的财富与人脉，让他们拥有如君主或将军般的力量。一名贵族出游时通常带着一队警卫作陪护，并且随身带着一群平民仆从。</p><p>贵族的资料也可以套用给一些不是贵族出身的人，比如侍臣courtiers。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Noble",
+    "name": "贵族 Noble (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "oGLAD4ILNUqKLDBz",
-      "name": "Rapier",
+      "name": "刺剑 Rapier",
       "type": "weapon",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one target. <i>Hit:</i> 5 ([[/damage 1d8 + 1 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一目标。命中：5（[[/damage 1d8 + 1 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1004,7 +1004,7 @@
     },
     {
       "_id": "KMig2s5Tw8KP0au3",
-      "name": "Parry",
+      "name": "格挡 Parry",
       "type": "feat",
       "system": {
         "source": {
@@ -1016,7 +1016,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.</p></div>",
+          "value": "<p>贵族在被一次近战攻击命中时，其AC加上2。此时该贵族必须能看见攻击者，且有在持用一把近战武器。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1209,11 +1209,11 @@
     },
     {
       "_id": "C7mDkENIBfE21RDt",
-      "name": "Breastplate",
+      "name": "胸甲 Breastplate",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.</p></div>",
+          "value": "<p>胸甲由贴身的金属胸部护板配合柔软皮革制成。它对四肢的保护较少，却能在不过分妨碍行动的情况下保护要害。</p>",
           "chat": ""
         },
         "source": {
@@ -1306,7 +1306,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 19500000,
   "ownership": {
     "default": 0,

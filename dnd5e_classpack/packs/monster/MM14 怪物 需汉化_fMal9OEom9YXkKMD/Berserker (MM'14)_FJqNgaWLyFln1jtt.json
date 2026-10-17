@@ -1,5 +1,5 @@
 {
-  "name": "Berserker (MM'14)",
+  "name": "狂战士 Berserker (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Hailing from uncivilized lands, unpredictable berserkers come together in war parties and seek conflict wherever they can find it.</p></div></div>",
+        "value": "<h3>狂战士 Berserkers</h3><p>喜怒无常的狂战士来自那些未开化的地带。他们视战争如狂欢聚会，乃至四处寻找痛快一战的机会。</p>",
         "public": ""
       },
-      "alignment": "Any Chaotic Alignment",
+      "alignment": "任意混乱阵营 Any Chaotic Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -646,7 +646,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Berserker",
+    "name": "狂战士 Berserker (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -740,7 +740,7 @@
   "items": [
     {
       "_id": "JnT9D6VQiHDx7M6m",
-      "name": "Greataxe",
+      "name": "巨斧 Greataxe",
       "type": "weapon",
       "system": {
         "source": {
@@ -752,7 +752,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 9 ([[/damage 1d12 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：9（[[/damage 1d12 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1022,7 +1022,7 @@
     },
     {
       "_id": "XBvlRHktrdrYQMyb",
-      "name": "Reckless",
+      "name": "鲁莽 Reckless",
       "type": "feat",
       "system": {
         "source": {
@@ -1034,7 +1034,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn.</p></div>",
+          "value": "<p>狂战士可以在自己回合开始时进入鲁莽状态，其发动的所有近战武器攻击的攻击检定均具有优势，所有对其发动的攻击检定也同样具有优势，持续直至他的下一回合开始。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1090,11 +1090,11 @@
     },
     {
       "_id": "ZE4z4tKhoqVbAb2q",
-      "name": "Hide Armor",
+      "name": "兽皮甲 Hide Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p></div>",
+          "value": "<p>这种粗糙的护甲由厚实的毛皮和兽皮制成，常见于野蛮人部落、邪恶类人生物，以及缺乏制作更好护甲所需工具和材料的群体。</p>",
           "chat": ""
         },
         "source": {
@@ -1187,7 +1187,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 11000000,
   "ownership": {
     "default": 0,

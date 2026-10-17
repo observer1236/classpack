@@ -1,5 +1,5 @@
 {
-  "name": "Bandit (MM'14)",
+  "name": "匪徒 Bandit (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Bandits rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.</p><p>Pirates are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels.</p></div></div>",
+        "value": "<h3>匪徒 Bandits</h3><p>四处游荡的匪徒经常由暴徒thug，老兵veteran以及施法者所带领。并不是所有匪徒都邪恶。苛政、旱灾、疾病以及饥荒都会逼迫殷实的普通民众无奈的过上匪徒生活。</p><p>海盗pirates则是公海里的匪徒。他们可能是只对宝藏和杀戮感兴趣的掠夺者，也可能是由王权默许的私掠船队，用以专门掠劫敌对国家的船只。</p>",
         "public": ""
       },
-      "alignment": "Any Non-Lawful Alignment",
+      "alignment": "任意非守序阵营 Any Non-Lawful Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -646,7 +646,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Bandit",
+    "name": "匪徒 Bandit (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -740,7 +740,7 @@
   "items": [
     {
       "_id": "DV8XqJnvXIW7Z5H6",
-      "name": "Scimitar",
+      "name": "弯刀 Scimitar",
       "type": "weapon",
       "system": {
         "source": {
@@ -752,7 +752,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one target. <i>Hit:</i> 4 ([[/damage 1d6 + 1 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一目标。命中：4（[[/damage 1d6 + 1 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1022,7 +1022,7 @@
     },
     {
       "_id": "rLWaNCyIDO3tNXO8",
-      "name": "Light Crossbow",
+      "name": "轻弩 Light Crossbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1034,7 +1034,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, range 80/320 ft., one target. <i>Hit:</i> 5 ([[/damage 1d8 + 1 type=piercing]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+3，射程80/320尺，单一目标。命中：5（[[/damage 1d8 + 1 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1305,11 +1305,11 @@
     },
     {
       "_id": "UlAmxShCfeMcGpic",
-      "name": "Leather Armor",
+      "name": "皮甲 Leather Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p></div>",
+          "value": "<p>这套护甲的胸甲和护肩由经过油煮硬化的皮革制成，其余部分使用更柔软、更灵活的材料。</p>",
           "chat": ""
         },
         "source": {
@@ -1402,7 +1402,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 32800000,
   "ownership": {
     "default": 0,

@@ -1,5 +1,5 @@
 {
-  "name": "Giant Wolf Spider (MM'14)",
+  "name": "巨狼蛛 Giant Wolf Spider (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Smaller than a giant spider, a giant wolf spider hunts prey across open ground or hides in a burrow or crevice, or in a hidden cavity beneath debris.</p></div></div>",
+        "value": "<p>巨狼蛛比巨蜘蛛小，会在开阔地面追猎，也会躲在地洞、裂缝或杂物下隐蔽的空洞中伏击猎物。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -642,7 +642,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Wolf Spider",
+    "name": "巨狼蛛 Giant Wolf Spider (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -741,7 +741,7 @@
   "items": [
     {
       "_id": "ZnESHqEPdAotDAq6",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -753,7 +753,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one creature. <i>Hit:</i> 4 ([[/damage 1d6 + 1 type=piercing]]) damage, and the target must make a [[/save ability=con dc=11]] saving throw, taking 7 ([[/damage 2d6 type=poison]]) damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but &amp;Reference[condition=poisoned] for 1 hour, even after regaining hit points, and is &amp;Reference[condition=paralyzed] while &amp;Reference[condition=poisoned] in this way.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一生物。命中：4（[[/damage 1d6 + 1 type=piercing]]）点穿刺伤害，目标必须进行一次DC 11的体质豁免，豁免失败则受到7（[[/damage 2d6 type=poison]]）点毒素伤害，豁免成功则伤害减半。如果该毒素伤害将目标生命值降至0，则目标伤势稳定但中毒1小时。恢复生命值无法让目标摆脱该中毒效应，且其在以该方式中毒期间同时陷入麻痹。 比巨蜘蛛体型小一级的巨狼蛛giant wolf spider在开阔的地域狩猎，它们也时常会躲藏在地洞、裂隙，或一些废墟下的空腔里。</p>",
           "chat": ""
         },
         "range": {
@@ -777,7 +777,7 @@
           "SWGpODFjHMKoUn9a": {
             "_id": "SWGpODFjHMKoUn9a",
             "type": "attack",
-            "name": "Attack: 1d6 Piercing Damage",
+            "name": "攻击: 1d6 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -949,7 +949,7 @@
           "cgrSrZUIH0003JwQ": {
             "_id": "cgrSrZUIH0003JwQ",
             "type": "save",
-            "name": "Save: 2d6 Poison Damage",
+            "name": "豁免: 2d6 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1207,7 +1207,7 @@
     },
     {
       "_id": "HAvbmCC51zAA2JGl",
-      "name": "Spider Climb",
+      "name": "蛛行 Spider Climb",
       "type": "feat",
       "system": {
         "source": {
@@ -1219,7 +1219,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p></div>",
+          "value": "<p>蜘蛛可以攀爬在难以攀爬的表面上，包括倒吊在天花板上，且不需要进行属性检定。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1275,7 +1275,7 @@
     },
     {
       "_id": "QWscYrfm7Z0oK3n9",
-      "name": "Web Sense",
+      "name": "蛛网感知 Web Sense",
       "type": "feat",
       "system": {
         "source": {
@@ -1287,7 +1287,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.</p></div>",
+          "value": "<p>与蛛网接触时，蜘蛛可以知晓其他与该蛛网接触生物的准确位置。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1343,7 +1343,7 @@
     },
     {
       "_id": "DpW8t8yh8EtKDkh5",
-      "name": "Web Walker",
+      "name": "蛛网行者 Web Walker",
       "type": "feat",
       "system": {
         "source": {
@@ -1355,7 +1355,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spider ignores movement restrictions caused by webbing.</p></div>",
+          "value": "<p>蜘蛛在蛛网上移动时无视蛛网造成的移动限制。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1411,7 +1411,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 21500000,
   "ownership": {
     "default": 0,

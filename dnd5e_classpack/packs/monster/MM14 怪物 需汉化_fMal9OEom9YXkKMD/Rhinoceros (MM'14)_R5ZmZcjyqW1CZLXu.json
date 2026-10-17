@@ -1,5 +1,5 @@
 {
-  "name": "Rhinoceros (MM'14)",
+  "name": "犀牛 Rhinoceros (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -547,7 +547,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Rhinoceros",
+    "name": "犀牛 Rhinoceros (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -722,7 +722,7 @@
   "items": [
     {
       "_id": "J1uGuBQbEBYBaxiT",
-      "name": "Gore",
+      "name": "顶撞 Gore",
       "type": "weapon",
       "system": {
         "source": {
@@ -734,7 +734,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 5 ft., one target. <i>Hit:</i> 14 ([[/damage 2d8 + 5 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及5尺，单一目标。命中：14（[[/damage 2d8 + 5 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1012,7 +1012,7 @@
     },
     {
       "_id": "tmlZ7elBPT5bzTiL",
-      "name": "Charge",
+      "name": "冲锋 Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1024,7 +1024,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the rhinoceros moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ([[/damage 2d8 type=bludgeoning]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=15]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>若犀牛向其目标直线移动至少20尺，且在同一回合里以顶撞攻击命中该目标，则该目标受额外9（[[/damage 2d8 type=bludgeoning]]）点钝击伤害。如果目标是生物，则该生物必须成功通过一次DC 15的力量豁免，否则应击倒地。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1394,7 +1394,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 18300000,
   "ownership": {
     "default": 0,

@@ -1,5 +1,5 @@
 {
-  "name": "Flameskull (MM'14)",
+  "name": "燃焰之颅 Flameskull (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Blazing green flames and mad, echoing laughter follow a disembodied skull as it patrols its demesne. When the undead flameskull discovers trespassers, it blasts the intruders with fiery rays from its eyes and dreadful spells called up from the dark recesses of its memory.</p><p>Dark spellcasters fashion flameskulls from the remains of dead wizards. When the ritual is complete, green flames erupt from the skull to complete its ghastly transformation.</p><div data-roll-name-ancestor=\"Legacy of Life\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Legacy of Life.</span></span> A flameskull only dimly recalls its former life. Though it might speak in its old voice and recount key events from its past, it is but an echo of its former self. However, its undead transformation grants it full access to the magic it wielded in life, letting it cast spells while ignoring the material and somatic components it can no longer employ.</p></div><div data-roll-name-ancestor=\"Eternally Bound\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Eternally Bound.</span></span> Intelligent and vigilant, a flameskull serves its creator by protecting a hidden treasure hoard, a secret chamber, or a specific individual. A flameskull carries out the directives given to it when it was created, and it interprets those commands to the letter. A flameskull's master must craft its instructions with care to ensure that the creature carries out its tasks properly.</p><div data-roll-name-ancestor=\"Wreathed in Flame\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Wreathed in Flame.</span></span> The fire wreathing a flameskull burns continually, giving off bright light that the creature controls. It uses those flames as a weapon, focusing them to loose them as fiery rays from its eye sockets.</p></div></div><div data-roll-name-ancestor=\"Eldritch Rejuvenation\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Eldritch Rejuvenation.</span></span> A flameskull's shattered fragments reform unless they are splashed with holy water or subjected to a @spell[dispel magic] or @spell[remove curse] spell. If it can no longer fulfill its intended purpose, the re-formed flameskull is beholden to no one and becomes autonomous.</p></div><div data-roll-name-ancestor=\"Undead Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Undead Nature.</span></span> A flameskull doesn't require air, food, drink, or sleep</p></div></div></div>",
+        "value": "<h3>燃焰之颅Flameskull</h3><p>一颗没有身体的头骨伴随着炽热的绿焰和疯狂回荡的笑声在它的领地巡逻。而当不死的燃焰之颅发现入侵者时，其眼中将迸出炽炎射线，并从空洞的身体里施展法术攻击入侵者。</p><p>黑暗的施法者用法师的遗骸制造燃焰之颅。当仪式结束转化完成时，绿火便会从头骨里喷涌而出。</p><p><strong>生命残片Legacy of Life。</strong>燃焰之颅只有模糊的生前记忆。虽然它会用苍老的语调提起过去的重要事情，但那也只是前生的回响。另一方面，不死转化让它完全掌握了生前的法术，并且得以在施法时忽视其中所有的材料与姿势成分。</p><p><strong>永恒束缚Eternally Bound。</strong>聪明而警觉的燃焰之颅被创造者用于守护隐藏的宝库、密室或特定的个体。燃焰之颅被创造时会接收一些指令，随后便会按其自己的理解去遵循执行。因而燃焰之颅的主人必须小心为其指引，以保证该生物正确的执行其任务。</p><p><strong>萦绕之火Wreathed in Flame。</strong>燃焰之颅全身持续燃烧，并散发出可以尤其随意控制的明亮火光。它可以将这些火焰用作武器，并将其聚焦到眼眶内作为炽炎射线迸射出来。</p><p><strong>邪能再生Eldritch Rejuvenation。</strong>除非被洒上圣水或被指定为解除魔法dispel magic或移除诅咒remove curse的目标，否则打碎的燃焰之颅残片会自行重组。如果重组后的燃焰之颅无法再执行其预定的任务，便可以不必听命于任何人的自由活动。</p><p><strong>亡灵本质Undead Nature。</strong>燃焰之颅无需空气、饮食和睡眠。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -646,7 +646,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Flameskull",
+    "name": "燃焰之颅 Flameskull (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -740,7 +740,7 @@
   "items": [
     {
       "_id": "dLDf9dNHUkiaxNsC",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -752,7 +752,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The flameskull uses Fire Ray twice.</p></div>",
+          "value": "<p>燃焰之颅发动两次火焰射线攻击</p>",
           "chat": ""
         },
         "requirements": "",
@@ -945,7 +945,7 @@
     },
     {
       "_id": "PB2byqjFxNABOkTt",
-      "name": "Fire Ray",
+      "name": "火焰射线 Fire Ray",
       "type": "weapon",
       "system": {
         "source": {
@@ -957,7 +957,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Spell Attack:</i> [[/r 1d20+5]]{+5} to hit, range 30 ft., one target. <i>Hit:</i> 10 ([[/damage 3d6 type=fire]]) damage.</p></div>",
+          "value": "<p>远程法术攻击：命中+5，射程30尺，单一目标。命中：10（[[/damage 3d6 type=fire]]）点火焰伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1235,7 +1235,7 @@
     },
     {
       "_id": "PieUe1kggo2GOijo",
-      "name": "Illumination",
+      "name": "照明 Illumination",
       "type": "feat",
       "system": {
         "source": {
@@ -1247,7 +1247,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The flameskull sheds either dim light in a 15-foot radius, or bright light in a 15-foot radius and dim light for an additional 15 feet. It can switch between the options as an action.</p></div>",
+          "value": "<p>燃焰之颅散发出15尺半径微光光照，或者15尺明亮光照以及其外15尺的微光光照。它可以用一个动作在两者间转换。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1303,7 +1303,7 @@
     },
     {
       "_id": "7Qq6z2ALRuQSQl2J",
-      "name": "Magic Resistance",
+      "name": "魔法抗性 Magic Resistance",
       "type": "feat",
       "system": {
         "source": {
@@ -1315,7 +1315,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The flameskull has advantage on saving throws against spells and other magical effects.</p></div>",
+          "value": "<p>燃焰之颅为抵抗法术和其他魔法效应而作的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1371,7 +1371,7 @@
     },
     {
       "_id": "WVxCSNQUoI1LT8y4",
-      "name": "Rejuvenation",
+      "name": "复生 Rejuvenation",
       "type": "feat",
       "system": {
         "source": {
@@ -1383,7 +1383,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the flameskull is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or a @spell[dispel magic] or @spell[remove curse] spell is cast on them.</p></div>",
+          "value": "<p>被破坏的燃焰之颅将在1小时后恢复所有生命值，除非在其遗体洒上圣水，或对其施展法术解除魔法dispel magic或移除诅咒remove curse。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1439,7 +1439,7 @@
     },
     {
       "_id": "DIylqcPoEXe8GVVr",
-      "name": "Mage Hand",
+      "name": "法师之手 Mage Hand",
       "type": "spell",
       "system": {
         "source": {
@@ -1451,7 +1451,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p></div>",
+          "value": "<p>一只漂浮的幽灵手出现在施法距离内你指定的一点。幽灵手持续存在至法术终止，或直至你以一个动作解散该法术。如果幽灵手距你的距离超过 30 尺，或者当你再次施展了该法术时，则现存的幽灵手消失不见。</p><p>你可以用动作控制幽灵手，并通过幽灵手实现一个行为：你可以操控一个物件，或者打开一扇未上锁的门或容器，或者将一件物品放入容器或从容器中取出，或者将小瓶中的内容物倾倒出来。你每次你使用幽灵手时可以令其移动至多 30 尺。</p><p>该幽灵手不能攻击，也不能激活魔法物品或承载超过 10 磅重的物质。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1707,7 +1707,7 @@
     },
     {
       "_id": "gHrUilxGWHENO4MS",
-      "name": "Magic Missile",
+      "name": "魔法飞弹 Magic Missile",
       "type": "spell",
       "system": {
         "source": {
@@ -1719,7 +1719,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals [[/damage 1d4 + 1 type=force]] damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p></div></div>",
+          "value": "<p>你创造三枚由魔法力场形成的闪光飞镖，并让每发飞镖命中施法距离内你能看见的指定生物。每发飞镖对目标造成 [[/damage 1d4+1 type=force]]{1d4+1} 的力场伤害。所有飞镖将同时命中目标，而你还可以指定它们击中同一个目标或是分别击中几个目标。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，该法术就会多制造出一支飞镖。</p>",
           "chat": ""
         },
         "level": 1,
@@ -1960,7 +1960,7 @@
     },
     {
       "_id": "itcd02N8uS4M1VDr",
-      "name": "Shield",
+      "name": "护盾术 Shield",
       "type": "spell",
       "system": {
         "source": {
@@ -1972,7 +1972,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from @spell[magic missile].</p></div>",
+          "value": "<p>一道看不见的力场制护盾浮现在你身旁，保护着你。在你的下一回合开始前，你的 AC 具有+5 加值（在触发该法术的攻击之前生效），并且不会受到魔法飞弹的伤害。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2205,7 +2205,7 @@
           "origin": null,
           "tint": "#ffffff",
           "transfer": false,
-          "name": "Shield",
+          "name": "盾牌 Shield",
           "description": "<p>Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>",
           "statuses": [],
           "_stats": {
@@ -2271,7 +2271,7 @@
     },
     {
       "_id": "bBULSVZWH9YXVnUu",
-      "name": "Blur",
+      "name": "朦胧术 Blur",
       "type": "spell",
       "system": {
         "source": {
@@ -2283,7 +2283,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with &amp;Reference[rule=truesight].</p></div>",
+          "value": "<p>你的身影变得模糊，并在别人眼里闪烁不定。在法术持续时间内，任何生物对你发动的攻击检定具有劣势。不依赖视觉（例如盲视）或可以看穿幻象（例如真实视觉）的攻击者免疫此效应。</p>",
           "chat": ""
         },
         "level": 2,
@@ -2511,7 +2511,7 @@
     },
     {
       "_id": "K3NuIrUigVSWTnP7",
-      "name": "Flaming Sphere",
+      "name": "炽焰法球 Flaming Sphere",
       "type": "spell",
       "system": {
         "source": {
@@ -2523,7 +2523,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes [[/damage 2d6 type=fire]] damage on a failed save, or half as much damage on a successful one.</p><p>As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.</p><p>When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by [[/damage 1d6]] for each slot level above 2nd.</p></div></div>",
+          "value": "<p>一个直径 5 尺的球状火焰显现在施法距离内你指定的一处未占据空间，并在法术持续时间内维持存在。任何生物在火球周围 5 尺内结束其回合时必须进行一次[[/save activity=8FeLgI16840MQgwt]]{敏捷豁免}。豁免失败者将受到 [[/damage 2d6 type=fire]]{2d6} 点火焰伤害，豁免成功则伤害减半。</p><p>你可以用一个附赠动作将火球移动 30 尺。如果你将火球推向某生物，则该生物必须进行抵抗火球伤害的豁免，而火球在该回合内停止移动。</p><p>移动火球时，你可以指引它越过不高于 5 尺的障碍，或者越过不宽过 10 尺的陷坑。火球将点燃任何未被着装或携带的可燃物件，并向其周围散发出半径 20 尺的明亮光照，以及该范围外 20 尺的微光光照。</p><p><strong>升环施法效应。</strong>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，其伤害就增加 1d6。</p>",
           "chat": ""
         },
         "level": 2,
@@ -2784,7 +2784,7 @@
     },
     {
       "_id": "otsYlNUQLLDO8fzC",
-      "name": "Fireball",
+      "name": "火球术 Fireball",
       "type": "spell",
       "system": {
         "source": {
@@ -2796,7 +2796,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes [[/damage 8d6 type=fire]] damage on a failed save, or half as much damage on a successful one.</p><p>The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 4th level or higher, the damage increases by [[/damage 1d6]] for each slot level above 3rd.</p></div></div>",
+          "value": "<p>明亮的闪光从你的指间飞驰向施法距离内你指定的一点，并随着一声低吼迸成一片烈焰。目标点周围半径 20 尺球状区域内的每个生物必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}。豁免失败者将受到 [[/damage 8d6 type=fire]]{8d6} 点火焰伤害，豁免成功则伤害减半。</p><p>迸发的火焰将绕过拐角扩散。并点燃区域内所有未被着装或携带的可燃物件。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，其伤害就增加 1d6。</p>",
           "chat": ""
         },
         "level": 3,
@@ -3056,7 +3056,7 @@
     },
     {
       "_id": "SHqfPZZrKxkLtS5w",
-      "name": "Spellcasting",
+      "name": "施法 Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -3068,7 +3068,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> The flameskull is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC <span class=\"rd__dc\">13</span>, [[/r 1d20+5]]{+5} to hit with spell attacks). It requires no somatic or material components to cast its spells. The flameskull has the following wizard spells prepared:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>Cantrips (at will): @UUID[.DIylqcPoEXe8GVVr]</p></li><li class=\"rd__li  rd__li-spell\"><p>1st level (3 slots): @UUID[.gHrUilxGWHENO4MS], @UUID[.itcd02N8uS4M1VDr]</p></li><li class=\"rd__li  rd__li-spell\"><p>2nd level (2 slots): @UUID[.bBULSVZWH9YXVnUu], @UUID[.K3NuIrUigVSWTnP7]</p></li><li class=\"rd__li  rd__li-spell\"><p>3rd level (1 slot): @UUID[.otsYlNUQLLDO8fzC]</p></li></ul></div></div>",
+          "value": "<p>燃焰之颅作为5级施法者，其施法属性为智力（法术DC 13，法术攻击命中+5）。它施法时不需要任何姿势或材料成分。燃焰之颅准备了下列法师法术： 戏法（随意）：法师之手mage hand 1环（3法术位）：魔法飞弹magic missile，护盾术shield 2环（2法术位）：朦胧术blur，炽焰法球flaming sphere 3环（1法术位）：火球术fireball</p><p>@UUID[.DIylqcPoEXe8GVVr]{法师之手 Mage Hand}、@UUID[.gHrUilxGWHENO4MS]{魔法飞弹 Magic Missile}、@UUID[.itcd02N8uS4M1VDr]{护盾术 Shield}、@UUID[.bBULSVZWH9YXVnUu]{朦胧术 Blur}、@UUID[.K3NuIrUigVSWTnP7]{炽焰法球 Flaming Sphere}、@UUID[.otsYlNUQLLDO8fzC]{火球术 Fireball}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3124,7 +3124,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "f12a539bc3086eec",
   "sort": 23400000,
   "ownership": {
     "default": 0,

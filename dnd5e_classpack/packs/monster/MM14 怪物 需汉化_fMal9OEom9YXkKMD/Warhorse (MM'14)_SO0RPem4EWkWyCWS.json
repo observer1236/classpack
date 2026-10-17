@@ -1,5 +1,5 @@
 {
-  "name": "Warhorse (MM'14)",
+  "name": "战马 Warhorse (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Warhorse Armor\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Variant: Warhorse Armor</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h4> <p>An armored warhorse has an AC based on the type of barding worn (see the Player's Handbook for more information on barding). The horse's AC includes its Dexterity modifier, where applicable. Barding doesn't alter the horse's challenge rating.</p><table class=\"w-100 rd__table  stripe-odd-table\"><thead><tr><th class=\"rd__th ve-col-6 ve-text-center \" data-rd-isroller=\"false\">AC</th><th class=\"rd__th ve-col-6 ve-text-center \" data-rd-isroller=\"false\">Barding</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-6 ve-text-center \">12</td><td class=\"rd__th ve-col-6 ve-text-center \"><span class=\"bold\" data-vet-page=\"items.html\" data-vet-source=\"phb\" data-vet-hash=\"leather%20barding_phb\">Leather</span></td></tr><tr><td class=\"rd__th ve-col-6 ve-text-center \">13</td><td class=\"rd__th ve-col-6 ve-text-center \"><span class=\"bold\" data-vet-page=\"items.html\" data-vet-source=\"phb\" data-vet-hash=\"studded%20leather%20barding_phb\">Studded leather</span></td></tr><tr><td class=\"rd__th ve-col-6 ve-text-center \">14</td><td class=\"rd__th ve-col-6 ve-text-center \"><span class=\"bold\" data-vet-page=\"items.html\" data-vet-source=\"phb\" data-vet-hash=\"ring%20mail%20barding_phb\">Ring mail</span></td></tr><tr><td class=\"rd__th ve-col-6 ve-text-center \">15</td><td class=\"rd__th ve-col-6 ve-text-center \"><span class=\"bold\" data-vet-page=\"items.html\" data-vet-source=\"phb\" data-vet-hash=\"scale%20mail%20barding_phb\">Scale mail</span></td></tr><tr><td class=\"rd__th ve-col-6 ve-text-center \">16</td><td class=\"rd__th ve-col-6 ve-text-center \"><span class=\"bold\" data-vet-page=\"items.html\" data-vet-source=\"phb\" data-vet-hash=\"chain%20mail%20barding_phb\">Chain mail</span></td></tr><tr><td class=\"rd__th ve-col-6 ve-text-center \">17</td><td class=\"rd__th ve-col-6 ve-text-center \"><span class=\"bold\" data-vet-page=\"items.html\" data-vet-source=\"phb\" data-vet-hash=\"splint%20barding_phb\">Splint</span></td></tr><tr><td class=\"rd__th ve-col-6 ve-text-center \">18</td><td class=\"rd__th ve-col-6 ve-text-center \"><span class=\"bold\" data-vet-page=\"items.html\" data-vet-source=\"phb\" data-vet-hash=\"plate%20barding_phb\">Plate</span></td></tr></tbody></table></div>",
+        "value": "<h3>变体：战马护甲</h3><p>披甲战马的护甲等级取决于所穿的马铠类型。适用时，其AC已包含敏捷调整值。马铠不改变战马的挑战等级。</p><table><thead><tr><th>AC</th><th>马铠</th></tr></thead><tbody><tr><td>12</td><td>皮甲</td></tr><tr><td>13</td><td>镶钉皮甲</td></tr><tr><td>14</td><td>环甲</td></tr><tr><td>15</td><td>鳞甲</td></tr><tr><td>16</td><td>链甲</td></tr><tr><td>17</td><td>板条甲</td></tr><tr><td>18</td><td>板甲</td></tr></tbody></table>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Warhorse",
+    "name": "战马 Warhorse (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "gK23lFKPig2f0JGE",
-      "name": "Hooves",
+      "name": "蹄击 Hooves",
       "type": "weapon",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 11 ([[/damage 2d6 + 4 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：11（[[/damage 2d6 + 4 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1013,7 +1013,7 @@
     },
     {
       "_id": "PwgZzZGYXCH3b0mI",
-      "name": "Trampling Charge",
+      "name": "践踏冲锋 Trampling Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1025,7 +1025,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a [[/save ability=str dc=14]] saving throw or be knocked &amp;Reference[condition=prone]. If the target is &amp;Reference[condition=prone], the horse can make another attack with its hooves against it as a bonus action.</p></div>",
+          "value": "<p>如果马向某一生物直线移动至少20尺，且在同一回合里以蹄击命中该生物，则该目标必须成功通过一次DC 14的力量豁免，否则应击倒地。如果目标倒地，则马可以用一个附赠动作对其发动一次蹄击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1240,7 +1240,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 19000000,
   "ownership": {
     "default": 0,

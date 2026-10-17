@@ -1,5 +1,5 @@
 {
-  "name": "Ankylosaurus (MM'14)",
+  "name": "甲龙 Ankylosaurus (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Thick armor plating covers the body of the plant-eating ankylosaurus, which defends itself against predators with a knobbed tail that delivers a devastating strike. Some varieties of ankylosaurus have spiked tails that deal piercing damage instead of bludgeoning damage.</p><div data-roll-name-ancestor=\"Dinosaurs\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dinosaurs.</span></span> Dinosaurs, or behemoths, are among the oldest reptiles in the world. Predatory dinosaurs are savage, territorial hunters. Herbivorous dinosaurs are less aggressive, but they might attack to defend their young, or if startled or harassed.</p><p>Dinosaurs come in many sizes and shapes. Larger varieties often have drab coloration, while smaller dinosaurs have colorful markings akin to birds. Dinosaurs roam rugged and isolated areas that humanoids seldom visit, including remote mountain valleys, inaccessible plateaus, tropical islands, and deep fens.</p></div></div></div>",
+        "value": "<h3>甲龙Ankylosaurus</h3><p>厚重的甲壳保护着食草甲龙的身体。此外，甲龙还会用长着巨大重锤的尾巴来应对掠食者。甲龙的某些种类还长着尖刺状的尾巴，并以穿刺伤害取代原本点钝击伤害。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Ankylosaurus",
+    "name": "甲龙 Ankylosaurus (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -722,7 +722,7 @@
   "items": [
     {
       "_id": "HTULbMOWOLEatsNI",
-      "name": "Tail",
+      "name": "尾击 Tail",
       "type": "weapon",
       "system": {
         "source": {
@@ -734,7 +734,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 10 ft., one target. <i>Hit:</i> 18 ([[/damage 4d6 + 4 type=bludgeoning]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=14]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及10尺，单一目标。命中：18（[[/damage 4d6 + 4 type=bludgeoning]]）点钝击伤害。如果目标是一个生物，则目标必须进行一次DC 14的力量豁免，豁免失败则应击倒地。</p>",
           "chat": ""
         },
         "range": {
@@ -1170,7 +1170,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 22700000,
   "ownership": {
     "default": 0,

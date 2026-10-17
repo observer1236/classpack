@@ -1,5 +1,5 @@
 {
-  "name": "恐怖铠甲Helmed Horror (MM'14)",
+  "name": "恐怖铠甲 Helmed Horror (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>This construct possesses intelligence, the ability to reason and adjust its tactics, and an unswerving devotion to its maker that persists even after its maker's demise. Resembling an animated suit of empty plate armor, a helmed horror serves without ambition or emotion.</p><div data-roll-name-ancestor=\"Magical Purpose\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Magical Purpose.</span></span> Though it takes more magical resources to create a helmed horror than a lesser suit of animated armor, the helmed horror requires less direction and maintenance as it carries out its appointed tasks. A helmed horror follows its orders with complete loyalty, and is intelligent enough to understand the difference between an order's intent and its exact wording. Unlike many constructs, it seeks to fulfill the former rather than slavishly follow the latter.</p></div><div data-roll-name-ancestor=\"Tactical Cunning\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Tactical Cunning.</span></span> A helmed horror fights with the cunning of a skilled warrior, taking to the air as it attacks weaker characters and spellcasters first. However, a helmed horror lacks the insight to change its environment, fortify it, or otherwise take active measures to improve its defensive position.</p></div><div data-roll-name-ancestor=\"Constructed Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Constructed Nature.</span></span> A helmed horror doesn't require air, food, drink, or sleep.</p></div></div></div>",
+        "value": "<h3>恐怖铠甲Helmed Horror</h3><p>这种构装生物具有智能，并且可以推理和调整战术。它对其制造者坚定不移的奉献，甚至在制造者灭亡后也会一直如此。恐怖铠甲由一套活化的空板甲组成，不带任何追求也毫无感情的为其主人提供服务。</p><p><strong>魔法意图Magical Purpose。</strong>尽管创造一副恐怖铠甲需要比一副低阶的活化护甲需要更多的魔法资源，但恐怖铠甲的优势在于执行指定任务时并不需要过多的指示和维护。它可以彻底忠诚的遵从命令，且足够聪明能够理解命令的意图与措辞指示的区别。与许多其他构装生物不同，恐怖铠甲会设法实现前者而非一成不变的遵照后者的指示。</p><p><strong>战术智慧Tactical Cunning。</strong>恐怖铠甲战斗时具有老练武者般的思维，它们会从空中攻击较弱的目标和施法者。不过恐怖铠甲缺乏洞察并改善自身处境的能力，也不懂如何采取积极措施来加强自身的防御。</p><p><strong>构装本质Constructed Nature。</strong>恐怖铠甲不需要呼吸、饮食和睡眠。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -646,7 +646,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Helmed Horror",
+    "name": "恐怖铠甲 Helmed Horror (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -745,7 +745,7 @@
   "items": [
     {
       "_id": "2P3v9FgnKDCNRJDA",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -757,7 +757,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The helmed horror makes two longsword attacks.</p></div>",
+          "value": "<p>恐怖铠甲发动两次长剑攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -950,7 +950,7 @@
     },
     {
       "_id": "1DfvlCzZfWKoYCct",
-      "name": "Longsword",
+      "name": "长剑 Longsword",
       "type": "weapon",
       "system": {
         "source": {
@@ -962,7 +962,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 8 ([[/damage 1d8 + 4 type=slashing]]) damage, or 9 ([[/damage 1d10 + 4 type=slashing]]) damage if used with two hands.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：8（[[/damage 1d8 + 4 type=slashing]]）点挥砍伤害，或使用双手时9（[[/damage 1d10 + 4 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1235,7 +1235,7 @@
     },
     {
       "_id": "L8hZOOowfhj5jEog",
-      "name": "Magic Resistance",
+      "name": "魔法抗性 Magic Resistance",
       "type": "feat",
       "system": {
         "source": {
@@ -1247,7 +1247,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The helmed horror has advantage on saving throws against spells and other magical effects.</p></div>",
+          "value": "<p>恐怖铠甲为抵抗法术和其他魔法效应而作的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1303,7 +1303,7 @@
     },
     {
       "_id": "ZgJjv3vfFOuREFm3",
-      "name": "Spell Immunity",
+      "name": "法术免疫 Spell Immunity",
       "type": "feat",
       "system": {
         "source": {
@@ -1315,7 +1315,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The helmed horror is immune to three spells chosen by its creator. Typical immunities include @spell[fireball], @spell[heat metal], and @spell[lightning bolt].</p></div>",
+          "value": "<p>恐怖铠甲免疫由其制作者指定的三项法术。通常会选择免疫火球术fireball，灼热金属heat metal和闪电束lightning bolt。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1371,11 +1371,11 @@
     },
     {
       "_id": "OHHltEu9PylLPpDl",
-      "name": "Plate Armor",
+      "name": "板甲 Plate Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p></div>",
+          "value": "<p>板甲由相互扣接、贴合身体的金属板覆盖全身。整套护甲包括护手、厚皮靴、带面罩的头盔，以及内穿的厚垫衣。扣带将重量分散到全身。</p>",
           "chat": ""
         },
         "source": {
@@ -1470,11 +1470,11 @@
     },
     {
       "_id": "KVWdAMepIVDUANhB",
-      "name": "Shield",
+      "name": "盾牌 Shield",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p></div>",
+          "value": "<p>盾牌由木材或金属制成，用一只手持用。持用盾牌使你的护甲等级提高2。你同时只能从一面盾牌获益。</p>",
           "chat": ""
         },
         "source": {

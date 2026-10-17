@@ -1,5 +1,5 @@
 {
-  "name": "Dryad (MM'14)",
+  "name": "树精 Dryad (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Travelers entering a forest might catch a glimpse of a feminine form flitting through the trees. Warm laughter hangs on the air, drawing those who hear it deeper into the emerald shadows.</p><div data-roll-name-ancestor=\"Treebound\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Treebound.</span></span> Powerful fey will sometimes bind lesser fey spirits to trees, transforming them into dryads. This is sometimes done as a punishment when the fey spirit falls in love with a mortal and that love is forbidden.</p><p>A dryad can emerge from the tree and travel the lands around it, but the tree remains her home and roots her to the world. As long as the tree remains healthy and unharmed, the dryad stays forever youthful and alluring. If the tree is harmed, she suffers. If the tree is ever destroyed, the dryad descends into madness.</p></div><div data-roll-name-ancestor=\"Reclusive Fey\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Reclusive Fey.</span></span> Dryads act as guardians of their woodland demesnes. Shy and reclusive, they watch interlopers from the trees. A dryad struck by the beauty of a stranger might investigate more closely, perhaps even try to lure the individual away to be &amp;Reference[condition=charmed].</p><p>Dryads work with other sylvan creatures to defend their forests. Unicorns, treants, and satyrs live alongside them, in addition to druids that share the dryads' devotion to the woods they call home.</p></div><div data-roll-name-ancestor=\"Woodland Magic\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Woodland Magic.</span></span> Dryads can speak with plants and animals. They can teleport from one tree to another, luring interlopers away from their groves. If pressed, a dryad can beguile humanoids with her enchantments, turning enemies into friends. They also know a handful of useful spells.</p></div></div></div>",
+        "value": "<h3>树精Dryad</h3><p>进入森林的旅者有时会在树丛中瞥见一个曼妙的女性身姿。那随风弥漫的热情欢笑，使听者不自觉的步入密林深处的绿影之中。</p><p><strong>与树相连Treebound。</strong>强大的妖精有时候会将低阶的妖精灵魂束缚到树上，以此将其转化为树精。这通常是作为一种惩戒手段，以惩罚那些与凡人发生禁断之爱的妖精个体。</p><p>树精可以进入这棵树中，并以此游历其周围的地域，而这棵树将成为她的家和存在之源。只要这棵树保持健康无恙，树精就可以永葆迷人青春。而一旦树受到伤害，她也将遭受痛苦。一旦树被摧毁，树精则会逐渐陷入疯狂。</p><p><strong>隐居妖精Reclusive Fey。</strong>树精会为其所在的林地担任护卫者。她们胆小而且行踪隐秘，会在树中远远的观察入侵者。一旦被到访者的美貌打动，树精就会更靠近对方仔细打量，或者会尝试引诱对方离群以将其魅惑。</p><p>树精与其他林地生物合作护卫它们的森林。她们与独角兽unicorns、树人treants和半羊人satyrs等生物生活在一起，还跟德鲁伊们一同热爱着它们称为家园的这片树木。</p><p><strong>林地魔法Woodland Magic。</strong>树精可以与动植物对话。她们可以从一棵树传送到另一棵树的位置，还会诱惑入侵者使其离开自己的树林。在紧要关头，树精可以魅使类人生物对自己着迷，以此将敌人转变为盟友。她们还懂得其他一些有用的法术。</p>",
         "public": ""
       },
-      "alignment": "Neutral",
+      "alignment": "绝对中立 Neutral",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Dryad",
+    "name": "树精 Dryad (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -726,7 +726,7 @@
   "items": [
     {
       "_id": "nCNxsVrtdg1uy4tr",
-      "name": "Club",
+      "name": "短棒 Club",
       "type": "weapon",
       "system": {
         "source": {
@@ -738,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+2]]{+2} to hit ([[/r 1d20+6]]{+6} to hit with shillelagh), reach 5 ft., one target. <i>Hit:</i> 2 ([[/damage 1d4 type=bludgeoning]]) damage, or 8 ([[/damage 1d8 + 4 type=bludgeoning]]) damage with shillelagh.</p></div>",
+          "value": "<p>近战武器攻击：命中+2（使用橡棍术时为+6），触及5尺，单一目标。命中：2（[[/damage 1d4 type=bludgeoning]]）点钝击伤害，或使用橡棍术时8（[[/damage 1d8 + 4 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -764,7 +764,7 @@
           "kxfJlWh4cIkNZLmi": {
             "_id": "kxfJlWh4cIkNZLmi",
             "type": "attack",
-            "name": "Attack: 1d4 Bludgeoning Damage",
+            "name": "攻击: 1d4 钝击 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -936,7 +936,7 @@
           "zEFr2pFiy7bfa0cB": {
             "_id": "zEFr2pFiy7bfa0cB",
             "type": "attack",
-            "name": "Attack: 1d8 Bludgeoning Damage",
+            "name": "攻击: 1d8 钝击 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1193,7 +1193,7 @@
     },
     {
       "_id": "y1Fg54udwxKu7Kxc",
-      "name": "Fey Charm",
+      "name": "妖精魅惑 Fey Charm",
       "type": "feat",
       "system": {
         "source": {
@@ -1205,7 +1205,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a [[/save ability=wis dc=14]] saving throw or be magically &amp;Reference[condition=charmed]. The &amp;Reference[condition=charmed] creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.</p><p>Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.</p><p>The dryad can have no more than one humanoid and up to three beasts &amp;Reference[condition=charmed] at a time.</p></div>",
+          "value": "<p>树精指定30尺内她能看见的一个类人生物或野兽。若该目标也能看见树精，则其必须进行一次DC 14的感知豁免，豁免失败者将被树精的魔法所魅惑。被魅惑的生物将该树精视为一个可信且必须顺从和保护的朋友。尽管目标并不受树精控制，但它依然会满足树精的要求，或是尽量按她意愿行事。 树精及其盟友每次对该目标造成伤害时，目标都可以再进行一次该豁免，并在豁免成功时终止其身上的效应。否则，该效应将持续24小时。树精死亡或身处与目标不同的另一存在位面时效应也将终止，而她也可以用一个附赠动作终止该效应。如果某目标的豁免检定成功，则该目标在随后24小时内免疫该树精的妖精魅惑。 树精能以该方式同时魅惑至多一个类人生物和至多三只野兽。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1420,7 +1420,7 @@
     },
     {
       "_id": "bsFhUVngF8DFx9aw",
-      "name": "Magic Resistance",
+      "name": "魔法抗性 Magic Resistance",
       "type": "feat",
       "system": {
         "source": {
@@ -1432,7 +1432,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The dryad has advantage on saving throws against spells and other magical effects.</p></div>",
+          "value": "<p>树精为抵抗法术和其他魔法效应而作的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1488,7 +1488,7 @@
     },
     {
       "_id": "mb1yoJwC6OMRJnXF",
-      "name": "Speak with Beasts and Plants",
+      "name": "与野兽和植物交谈 Speak with Beasts and Plants",
       "type": "feat",
       "system": {
         "source": {
@@ -1500,7 +1500,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The dryad can communicate with beasts and plants as if they shared a language.</p></div>",
+          "value": "<p>树精可以与野兽和植物交流，如同彼此通晓一种共同语言。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1556,7 +1556,7 @@
     },
     {
       "_id": "6eMnA8R7ioOyglIv",
-      "name": "Tree Stride",
+      "name": "树跃 Tree Stride",
       "type": "feat",
       "system": {
         "source": {
@@ -1568,7 +1568,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Once on her turn, the dryad can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger.</p></div>",
+          "value": "<p>树精每回合有一次机会，消耗其自身10尺移动力以魔法进入一棵她可以触及的活体树木中，然后从距离这棵树60尺范围内的另一棵活体树木中出现，并现身在后者周边5尺内一处未占据空间。两棵树的体型必须是大型或更大。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1624,7 +1624,7 @@
     },
     {
       "_id": "rJMNMiOYPYu4YCNY",
-      "name": "Barkskin",
+      "name": "树肤术 Barkskin",
       "type": "spell",
       "system": {
         "source": {
@@ -1636,7 +1636,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.</p></div>",
+          "value": "<p>你触碰一个自愿生物，并使目标的皮肤在法术终止前呈现粗糙的树皮状外观。期间目标无论着装何种护甲，其 AC 将不会降至 16 以下。</p>",
           "chat": ""
         },
         "level": 2,
@@ -1879,7 +1879,7 @@
           "origin": null,
           "tint": "#ffffff",
           "transfer": false,
-          "name": "Barkskin",
+          "name": "树肤术 Barkskin",
           "description": "",
           "statuses": [],
           "_stats": {
@@ -1945,7 +1945,7 @@
     },
     {
       "_id": "bJp1cdvJyLQ47eAG",
-      "name": "Pass without Trace",
+      "name": "行动无踪 Pass without Trace",
       "type": "spell",
       "system": {
         "source": {
@@ -1957,7 +1957,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (&amp;Reference[skill=Stealth]) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p></div>",
+          "value": "<p>阴影和沉默的幕障从你身上辐射而出，并隔绝任何对你和你的同伴进行的探测。持续时间内，位于你30尺内的所有你选择的生物（包括你自己）进行的[[/check ability=dex skill=ste]]{敏捷（隐匿）检定}具有+10加值，且你们的踪迹无法被追踪（魔法手段除外）。受此增益的生物在其途径之处将不会留下任何足迹或其他踪迹。</p>",
           "chat": ""
         },
         "level": 2,
@@ -2192,7 +2192,7 @@
     },
     {
       "_id": "y9Mr8bZaBWkRuzxz",
-      "name": "Shillelagh",
+      "name": "橡棍术 Shillelagh",
       "type": "spell",
       "system": {
         "source": {
@@ -2204,7 +2204,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The wood of a @item[club|phb] or @item[quarterstaff|phb] you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a [[/r d8]]. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.</p></div>",
+          "value": "<p>你将自然之力灌入手中持握的一根短棒或长棍中。你在法术持续时间内使用该武器进行近战攻击时，可以用你的施法属性值代替力量值来进行攻击检定和伤害掷骰，且该武器的伤害骰变为 d8。此外，若该武器原来不是魔法武器，则它将变成魔法武器。你再次施展该法术或丢掉该武器时，该法术也随之终止。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2335,7 +2335,7 @@
               "properties": [],
               "type": "weapon"
             },
-            "name": "Imbue Weapon",
+            "name": "灌注武器",
             "useConditionText": "",
             "useConditionReason": "",
             "effectConditionText": "",
@@ -2501,7 +2501,7 @@
             },
             "sort": 0,
             "_id": "ONVab5lmTqJwwMBC",
-            "name": "Spellcasting Attack",
+            "name": "施法攻击",
             "useConditionText": "",
             "useConditionReason": "",
             "effectConditionText": "",
@@ -2624,7 +2624,7 @@
       "effects": [
         {
           "type": "enchantment",
-          "name": "Shillelagh",
+          "name": "橡棍术 Shillelagh",
           "img": "icons/magic/fire/dagger-rune-enchant-teal.webp",
           "disabled": false,
           "_id": "QPsqj6jfS0iXSrTs",
@@ -2731,7 +2731,7 @@
     },
     {
       "_id": "Aky3BICY34u7TguA",
-      "name": "Entangle",
+      "name": "纠缠术 Entangle",
       "type": "spell",
       "system": {
         "source": {
@@ -2743,7 +2743,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into &amp;Reference[rule=difficultterrain]{difficult terrain}.</p><p>A creature in the area when you cast the spell must succeed on a Strength saving throw or be &amp;Reference[condition=restrained] by the entangling plants until the spell ends. A creature &amp;Reference[condition=restrained] by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.</p><p>When the spell ends, the conjured plants wilt away.</p></div>",
+          "value": "<p>在施法距离内的地面上指定一点，并以其为源点蔓延出 20 尺方形区域的杂草和藤蔓。在法术持续时间内，这片被植物覆盖的区域变为困难地形。</p><p>在你施展法术时，该区域内的生物必须成功通过一次[[/save activity=NChAwMHtRzKj4CzM]]{力量豁免}，否则将因为这些缠绕的植物陷入&amp;Reference[condition=restrained apply=false]{束缚}状态，直到法术终止。一个因此被束缚的生物可以使用其动作进行一次力量检定以对抗该法术的豁免 DC，检定成功则摆脱束缚。</p><p>法术终止时，所召唤的植物随即枯萎。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2979,7 +2979,7 @@
       },
       "effects": [
         {
-          "name": "Entangle",
+          "name": "纠缠术 Entangle",
           "origin": null,
           "duration": {
             "value": 60,
@@ -3052,7 +3052,7 @@
     },
     {
       "_id": "GLn7CU8UMmjNuPuO",
-      "name": "Goodberry",
+      "name": "神莓术 Goodberry",
       "type": "spell",
       "system": {
         "source": {
@@ -3064,7 +3064,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day.</p><p>The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.</p></div>",
+          "value": "<p>至多 10 个浆果出现在你手里。果子在法术持续时间内充满魔法，持有浆果的生物可用其动作吃下其中之一并以此恢复 1 生命值，且一枚浆果就可以满足该生物一整天的营养需求。</p><p>创造的浆果如果在法术施展后的 24 小时内没有被吃掉就会失去其效力。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3307,7 +3307,7 @@
     },
     {
       "_id": "1BxbEqLuF0SL1wME",
-      "name": "Druidcraft",
+      "name": "德鲁伊伎俩 Druidcraft",
       "type": "spell",
       "system": {
         "source": {
@@ -3319,7 +3319,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Whispering to the spirits of nature, you create one of the following effects within range:</p><ul class=\"rd__list\"><li class=\"rd__li \">You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.</li><li class=\"rd__li \">You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.</li><li class=\"rd__li \">You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.</li><li class=\"rd__li \">You instantly light or snuff out a candle, a torch, or a small campfire.</li></ul></div>",
+          "value": "<p>你向自然之魂低语，并创造以下效应之一：</p><ul><li>你创造一个微小而无害的感官效应，并以之预报你所在地接下来 24 小时的天气状况。该效应可表现为一个代表晴空的金球，一朵代表雨天的云彩，代表雪日而飘飞的雪花等等。该效应将持续 1 轮。</li><li>你可以立即让一朵鲜花绽放，一颗种子破壳，一片叶蕾发芽。</li><li>你创造一个微小而无害的即时感官效应，如落叶，微风，小动物的动静或者臭鼬的微弱气味。该效应只能在 5 尺的立方空间内起效。</li></ul><p>你可以立即点亮或熄灭一根蜡烛、一把火把或一处小篝火。</p>",
           "chat": ""
         },
         "level": 0,
@@ -3544,7 +3544,7 @@
     },
     {
       "_id": "xBoXxJy4g8Gcy2ow",
-      "name": "Innate Spellcasting",
+      "name": "天生施法 Innate Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -3556,7 +3556,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Innate Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Innate Spellcasting.</span></span> The dryad's innate spellcasting ability is Charisma (spell save DC <span class=\"rd__dc\">14</span>). The dryad can innately cast the following spells, requiring no material components:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>At will: @UUID[.1BxbEqLuF0SL1wME]</p></li><li class=\"rd__li  rd__li-spell\"><p>3/day each: @UUID[.Aky3BICY34u7TguA], @UUID[.GLn7CU8UMmjNuPuO]</p></li><li class=\"rd__li  rd__li-spell\"><p>1/day each: @UUID[.rJMNMiOYPYu4YCNY], @UUID[.bJp1cdvJyLQ47eAG], @UUID[.y9Mr8bZaBWkRuzxz]</p></li></ul></div></div>",
+          "value": "<p>树精天生施法属性为魅力（法术豁免DC 14），它天生即可施展以下法术且不需要任何相应的材料成分： 随意：德鲁伊伎俩druidcraft 每项3/日：纠缠术entangle，神莓术goodberry 每项1/日：树肤术barkskin，行动无踪pass without trace，橡棍术shillelagh</p><p>@UUID[.1BxbEqLuF0SL1wME]{德鲁伊伎俩 Druidcraft}、@UUID[.Aky3BICY34u7TguA]{纠缠术 Entangle}、@UUID[.GLn7CU8UMmjNuPuO]{神莓术 Goodberry}、@UUID[.rJMNMiOYPYu4YCNY]{树肤术 Barkskin}、@UUID[.bJp1cdvJyLQ47eAG]{行动无踪 Pass without Trace}、@UUID[.y9Mr8bZaBWkRuzxz]{橡棍术 Shillelagh}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3612,7 +3612,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "6748f2cd8c8f81df",
   "sort": 10600000,
   "ownership": {
     "default": 0,

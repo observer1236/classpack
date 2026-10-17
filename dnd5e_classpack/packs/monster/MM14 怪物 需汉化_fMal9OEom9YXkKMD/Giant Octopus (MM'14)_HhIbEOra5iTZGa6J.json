@@ -1,5 +1,5 @@
 {
-  "name": "Giant Octopus (MM'14)",
+  "name": "巨章鱼 Giant Octopus (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "",
+        "value": "<p>墨汁云Ink Cloud（短休或长休后充能）。章鱼在水下时可以向身边20尺半径范围内释放出墨汁。随后1分钟里该区域将处于重度遮蔽，不过一阵流经该地的水流即可以驱散墨汁。释放墨汁后，该章鱼即可用一个附赠动作来执行疾走Dash动作。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -630,7 +630,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Octopus",
+    "name": "巨章鱼 Giant Octopus (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -724,7 +724,7 @@
   "items": [
     {
       "_id": "QDrE5In7bXKp4sud",
-      "name": "Tentacles",
+      "name": "触须 Tentacles",
       "type": "weapon",
       "system": {
         "source": {
@@ -736,7 +736,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 15 ft., one target. <i>Hit:</i> 10 ([[/damage 2d6 + 3 type=bludgeoning]]) damage. If the target is a creature, it is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">16</span>). Until this grapple ends, the target is &amp;Reference[condition=restrained], and the octopus can't use its tentacles on another target.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及15尺，单一目标。命中：10（[[/damage 2d6 + 3 type=bludgeoning]]）点钝击伤害。如果目标是一生物，则其被擒抱（逃脱DC 16）。直至擒抱终止前，该目标被束缚，且章鱼无法再对另一目标使用其触须攻击。</p>",
           "chat": ""
         },
         "range": {
@@ -1014,7 +1014,7 @@
     },
     {
       "_id": "JLldzd4eYIyX6e2V",
-      "name": "Ink Cloud",
+      "name": "墨汁云 Ink Cloud",
       "type": "feat",
       "system": {
         "source": {
@@ -1026,7 +1026,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.</p></div>",
+          "value": "<p>章鱼在水下时可以向身边20尺半径范围内释放出墨汁。随后1分钟里该区域将处于重度遮蔽，不过一阵流经该地的水流即可以驱散墨汁。释放墨汁后，该章鱼即可用一个附赠动作来执行疾走Dash动作。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1231,7 +1231,7 @@
     },
     {
       "_id": "tecErd5umulQtg9X",
-      "name": "Hold Breath",
+      "name": "屏息 Hold Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1243,7 +1243,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While out of water, the octopus can hold its breath for 1 hour.</p></div>",
+          "value": "<p>离水后，章鱼可以憋气1小时。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1299,7 +1299,7 @@
     },
     {
       "_id": "skpQV61mbib6ZbEi",
-      "name": "Underwater Camouflage",
+      "name": "水下伪装 Underwater Camouflage",
       "type": "feat",
       "system": {
         "source": {
@@ -1311,7 +1311,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The octopus has advantage on Dexterity (&amp;Reference[skill=Stealth]) checks made while underwater.</p></div>",
+          "value": "<p>章鱼在水下地形中进行躲藏时所作的敏捷（隐匿）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1367,7 +1367,7 @@
     },
     {
       "_id": "Nynn0WDBZagvk17t",
-      "name": "Water Breathing",
+      "name": "水下呼吸 Water Breathing",
       "type": "feat",
       "system": {
         "source": {
@@ -1379,7 +1379,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The octopus can breathe only underwater.</p></div>",
+          "value": "<p>章鱼只能在水下呼吸。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1435,7 +1435,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 12100000,
   "ownership": {
     "default": 0,

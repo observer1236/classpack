@@ -1,5 +1,5 @@
 {
-  "name": "Gorgon (MM'14)",
+  "name": "石化铁牛 Gorgon (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Few creatures that encounter a gorgon live to tell about it. Its body is covered in iron plates, and its nostrils fume with green vapor.</p><div data-roll-name-ancestor=\"Horrific Structure\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Horrific Structure.</span></span> A gorgon's iron plates range from steely black to gleaming silver, but this natural armor in no way hinders its movement or mobility. The oils of its body lubricate the armor. A sick or inactive gorgon gathers rust like fungus or mange. When a rusty gorgon moves, its plates squeal as they rub together.</p></div><div data-roll-name-ancestor=\"Monstrous Predator\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Monstrous Predator.</span></span> When a gorgon spots potential prey, it charges with a hideous clamor of metal on metal. When the gorgon hits, it pulverizes the foe and sends its sprawling, then tramples it to death with its cruel hooves. Faced with multiple foes, the gorgon exhales its deadly vapor to overcome the creatures it touches by turning them to stone. When it grows hungry, it smashes its &amp;Reference[condition=petrified] prey to rubble and uses its strong teeth to grind the stone into a powder that provides nourishment. The crisscrossing network of trampled trails and splintered trees that surrounds a gorgon lair is strewn with the uneaten fragments of its shattered foes.</p></div></div></div>",
+        "value": "<h3>石化铁牛Gorgon</h3><p>很少有生物遇到石化铁牛后还能活着谈起这件事。它的身体覆盖着铁板，鼻孔里还弥漫着绿色的雾汽。</p><p><strong>骇人构造Horrific Structure。</strong>石化铁牛的铁板颜色从黑钢色到亮银色不等，但这种天然的护甲从不会限制它自身的移动或灵活性。它身体自身的油份让护甲得到润滑。病倒或停止活动的石化铁牛会像长霉或长疥一样生锈。而一只锈迹斑斑的石化铁牛移动时，身上的铁板将会互相摩擦并发出尖锐的声响。</p><p><strong>肉食怪物Monstrous Predator。</strong>石化铁牛发现狩猎对象时会带着身上金属发出的可怕声响向对方发动冲锋。被石化铁牛的攻击命中的敌人会被压制在地，然后被其蹄子残忍地踩死。面对复数敌人时，石化铁牛会呼出致命的蒸汽，使触及蒸汽的生物变成石头并以此获胜。石化铁牛感到饥饿时，还会将石化的猎物砸成碎石，再用强壮的牙齿将这些石头磨成粉末并从中吸收营养。石化铁牛巢穴周围纵横交错的脚印路径和破碎的树木上都会散落着它吃剩的残骸碎片。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -636,7 +636,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Gorgon",
+    "name": "石化铁牛 Gorgon (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -730,7 +730,7 @@
   "items": [
     {
       "_id": "SubVTlucbbUQgALF",
-      "name": "Gore",
+      "name": "顶撞 Gore",
       "type": "weapon",
       "system": {
         "source": {
@@ -742,7 +742,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 5 ft., one target. <i>Hit:</i> 18 ([[/damage 2d12 + 5 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及5尺，单一目标。命中：18（[[/damage 2d12 + 5 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1020,7 +1020,7 @@
     },
     {
       "_id": "H3glmrZrwaCm9pbl",
-      "name": "Hooves",
+      "name": "蹄击 Hooves",
       "type": "weapon",
       "system": {
         "source": {
@@ -1032,7 +1032,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 5 ft., one target. <i>Hit:</i> 16 ([[/damage 2d10 + 5 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及5尺，单一目标。命中：16（[[/damage 2d10 + 5 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1310,7 +1310,7 @@
     },
     {
       "_id": "xUeQnshAelfsaoEL",
-      "name": "Petrifying Breath",
+      "name": "石化吐息 Petrifying Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1322,7 +1322,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a [[/save ability=con dc=13]] saving throw. On a failed save, a target begins to turn to stone and is &amp;Reference[condition=restrained]. The &amp;Reference[condition=restrained] target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is &amp;Reference[condition=petrified] until freed by the  @spell[greater restoration] spell or other magic.</p></div>",
+          "value": "<p>石化铁牛呼出一片石化毒气并覆盖一处30尺的锥状区域，该区域内的每个生物都必须进行一次DC 13的体质豁免，豁免失败的目标开始变为石头并陷入束缚状态。被束缚的目标必须在下一个自己的回合结束时再进行一次该豁免。豁免成功，则终止该目标身上的该效应。豁免失败，则该目标陷入石化状态，直至受法术高等复原术greater restoration或其他魔法解放。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1550,7 +1550,7 @@
     },
     {
       "_id": "7I4mJ11bEEfYDnAv",
-      "name": "Trampling Charge",
+      "name": "践踏冲锋 Trampling Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1562,7 +1562,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the gorgon moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a [[/save ability=str dc=16]] saving throw or be knocked &amp;Reference[condition=prone]. If the target is &amp;Reference[condition=prone], the gorgon can make one attack with its hooves against it as a bonus action.</p></div>",
+          "value": "<p>若石化铁牛向某一生物直线移动至少20尺，且在同一回合里以顶撞攻击命中该生物，则该目标必须成功通过一次DC 16的力量豁免，否则应击倒地。如果目标倒地，则石化铁牛可以用一个附赠动作对其发动一次蹄击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1777,7 +1777,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 1300000,
   "ownership": {
     "default": 0,

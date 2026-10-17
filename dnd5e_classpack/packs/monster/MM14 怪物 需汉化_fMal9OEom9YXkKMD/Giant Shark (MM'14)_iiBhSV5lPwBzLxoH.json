@@ -1,5 +1,5 @@
 {
-  "name": "Giant Shark (MM'14)",
+  "name": "巨鲨 Giant Shark (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A giant shark is 30 feet long and normally found in deep oceans. Utterly fearless, it preys on anything that crosses its path, including whales and ships.</p></div></div>",
+        "value": "<p>在深海出没的巨鲨giant shark身长达30尺。它们会无畏的猎杀任何在其眼前的东西，包括鲸鱼和一切船只。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Shark",
+    "name": "巨鲨 Giant Shark (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -727,7 +727,7 @@
   "items": [
     {
       "_id": "XzKTb5Pn6dmkOkUe",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+9]]{+9} to hit, reach 5 ft., one target. <i>Hit:</i> 22 ([[/damage 3d10 + 6 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+9，触及5尺，单一目标。命中：22（[[/damage 3d10 + 6 type=piercing]]）点穿刺伤害。 </p>",
           "chat": ""
         },
         "range": {
@@ -1017,7 +1017,7 @@
     },
     {
       "_id": "Zm39OvP99KJsWyq9",
-      "name": "Blood Frenzy",
+      "name": "嗜血狂怒 Blood Frenzy",
       "type": "feat",
       "system": {
         "source": {
@@ -1029,7 +1029,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.</p></div>",
+          "value": "<p>鲨鱼对生命值没有全满的生物发动近战攻击时，其攻击检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1085,7 +1085,7 @@
     },
     {
       "_id": "Ix8beO1bRqEWsUdm",
-      "name": "Water Breathing",
+      "name": "水下呼吸 Water Breathing",
       "type": "feat",
       "system": {
         "source": {
@@ -1097,7 +1097,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The shark can breathe only underwater.</p></div>",
+          "value": "<p>鲨鱼只能在水下呼吸。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1153,7 +1153,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 27900000,
   "ownership": {
     "default": 0,

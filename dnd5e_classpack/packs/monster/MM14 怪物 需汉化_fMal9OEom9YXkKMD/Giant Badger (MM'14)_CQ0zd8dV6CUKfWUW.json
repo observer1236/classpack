@@ -1,5 +1,5 @@
 {
-  "name": "Giant Badger (MM'14)",
+  "name": "巨獾 Giant Badger (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -630,7 +630,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Badger",
+    "name": "巨獾 Giant Badger (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -724,7 +724,7 @@
   "items": [
     {
       "_id": "t2p12dhMw8BA29Q2",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -736,7 +736,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The badger makes two attacks: one with its bite and one with its claws.</p></div>",
+          "value": "<p>獾发动两次攻击：一次啃咬一次爪击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -929,7 +929,7 @@
     },
     {
       "_id": "Qm0GtOszsoFyxU2C",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -941,7 +941,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one target. <i>Hit:</i> 4 ([[/damage 1d6 + 1 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一目标。命中：4（[[/damage 1d6 + 1 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1219,7 +1219,7 @@
     },
     {
       "_id": "32zh3VsZxxpUaYjq",
-      "name": "Claws",
+      "name": "爪击 Claws",
       "type": "weapon",
       "system": {
         "source": {
@@ -1231,7 +1231,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 2d4 + 1 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一目标。命中：6（[[/damage 2d4 + 1 type=slashing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1509,7 +1509,7 @@
     },
     {
       "_id": "Qau5GOa0ZZE5qRgU",
-      "name": "Keen Smell",
+      "name": "敏锐嗅觉 Keen Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1521,7 +1521,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The badger has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on smell.</p></div>",
+          "value": "<p>獾依赖嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1577,7 +1577,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 8700000,
   "ownership": {
     "default": 0,

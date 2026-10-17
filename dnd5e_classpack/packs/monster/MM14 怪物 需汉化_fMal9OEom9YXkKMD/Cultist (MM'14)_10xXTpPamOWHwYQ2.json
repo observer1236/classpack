@@ -1,5 +1,5 @@
 {
-  "name": "Cultist (MM'14)",
+  "name": "邪教徒 Cultist (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Cultists swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.</p></div></div>",
+        "value": "<h3>邪教徒 Cultists</h3><p>元素亲王、恶魔领主或是大魔鬼们，各方黑暗力量各自存在着对其宣誓效忠的邪教徒cultists。这些邪教徒大多隐藏着自身的信仰，以免因此遭受他人排挤、监禁甚至处死。与邪恶的侍僧不同，邪教徒们的行为和信仰通常都更为疯狂。</p>",
         "public": ""
       },
-      "alignment": "Any Non-Good Alignment",
+      "alignment": "任意非善良阵营 Any Non-Good Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -631,7 +631,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Cultist",
+    "name": "邪教徒 Cultist (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -725,7 +725,7 @@
   "items": [
     {
       "_id": "LW9NXQ2EDLMm0Bka",
-      "name": "Scimitar",
+      "name": "弯刀 Scimitar",
       "type": "weapon",
       "system": {
         "source": {
@@ -737,7 +737,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one creature. <i>Hit:</i> 4 ([[/damage 1d6 + 1 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一生物目标。命中：4（[[/damage 1d6 + 1 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1007,7 +1007,7 @@
     },
     {
       "_id": "HQ8P3Mvy3g8uD7hn",
-      "name": "Dark Devotion",
+      "name": "黑暗忠诚 Dark Devotion",
       "type": "feat",
       "system": {
         "source": {
@@ -1019,7 +1019,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The cultist has advantage on saving throws against being &amp;Reference[condition=charmed] or &amp;Reference[condition=frightened].</p></div>",
+          "value": "<p>邪教徒为抵抗魅惑和恐慌而进行的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1075,11 +1075,11 @@
     },
     {
       "_id": "gbQONXAiJE6KoLZx",
-      "name": "Leather Armor",
+      "name": "皮甲 Leather Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p></div>",
+          "value": "<p>这套护甲的胸甲和护肩由经过油煮硬化的皮革制成，其余部分使用更柔软、更灵活的材料。</p>",
           "chat": ""
         },
         "source": {
@@ -1172,7 +1172,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 700000,
   "ownership": {
     "default": 0,

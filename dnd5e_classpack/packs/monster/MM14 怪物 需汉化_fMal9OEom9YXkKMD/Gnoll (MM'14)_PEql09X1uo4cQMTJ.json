@@ -1,5 +1,5 @@
 {
-  "name": "Gnoll (MM'14)",
+  "name": "鬣狗人 Gnoll (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Gnolls are feral humanoids that attack settlements along the frontiers and borderlands of civilization without warning, slaughtering their victims and devouring their flesh.</p><div data-roll-name-ancestor=\"Demonic Origin\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Demonic Origin.</span></span> The origin of the gnolls traces back to a time when the demon lord Yeenoghu found his way to the Material Plane and ran amok. Packs of ordinary hyenas followed in his wake, scavenging the demon lord's kills. Those hyenas were transformed into the first gnolls, parading after Yeenoghu until he was banished back to the Abyss. The gnolls then scattered across the face of the world, a dire reminder of demonic power.</p></div><div data-roll-name-ancestor=\"Nomadic Destroyers\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Nomadic Destroyers.</span></span> Gnolls are dangerous because they strike at random. They emerge from the wilderness, plunder and slaughter, then move elsewhere. They attack like a plague of locusts, pillaging settlements and leaving little behind but razed buildings, gnawed corpses, and befouled land. Gnolls choose easy targets for their raids. Armored warriors holed up in a fortified castle will survive a rampaging gnoll horde unscathed, even as the towns, villages, and farms that surround the castle are ablaze, their people slaughtered and devoured.</p><p>Gnolls rarely build permanent structures or craft anything of lasting value. They don't make weapons or armor, but scavenge such items from the corpses of their fallen victims, stringing ears, teeth, scalps, and other trophies from their foes onto their patchwork armor.</p><div data-roll-name-ancestor=\"Thirst for Blood\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Thirst for Blood.</span></span> No goodness or compassion resides in the heart of a gnoll. Like a demon, it lacks anything resembling a conscience, and can't be taught or coerced to put aside its destructive tendencies. The gnolls' frenzied bloodlust makes them an enemy to all, and when they lack a common foe, they fight among themselves. Even the most savage orcs avoid allying with gnolls.</p></div></div></div></div>",
+        "value": "<h3>鬣狗人Gnolls</h3><p>鬣狗人是野性的类人生物。它们会毫无征兆的攻击文明世界偏远地区和边境的聚居地，然后屠杀猎物再吞食其血肉。</p><p><strong>恶魔起源Demonic Origin。</strong>鬣狗人的起源可以追溯到恶魔领主耶诺古Yeenoghu曾设法来到物质位面并在其中乱窜的时候，一群普通的鬣狗尾随其后为恶魔领主清除其杀戮的遗骸。这些鬣狗随后便被改造为第一批鬣狗人，尾随着耶诺古四处游荡直到它被放逐回无底深渊。此后鬣狗人便被分散到世界各地，成为恶魔之力的可怕遗产。</p><p><strong>牧民破坏者Nomadic Destroyers。</strong>鬣狗人的危险之处在于其袭击的随机性。它们从荒野中出现，掳掠杀戮过后便迁往别处。它们像蝗灾一样攻击，并将聚居地洗劫一空，只留下被夷平的建筑，被啃光的尸体，和被污染的土地。鬣狗人会选择薄弱的目标实施劫掠。由整备的武者驻守的坚固城堡在鬣狗人部落呼啸而来时依然会毫发无损，而其周围的城镇、村庄和农场则被燃烧殆尽，其内的人民全被屠杀吞噬。</p><p>鬣狗人鲜少建造永久性的建筑或制造任何具有持久价值的东西。它们不会制造武器或护甲，而是从倒下的猎物尸体上获取这类物品，甚至将对方的耳朵、牙齿、头皮和其他残骸作为纪念品串起，加到它们自己拼凑的护甲中。</p><p><strong>鲜血渴望Thirst fot Blood。</strong>鬣狗人的心中没有一丝善良或慈悲。它们如同恶魔一样没有任何类似良心的东西，也不会接受任何能使其放下破坏倾向的教导或逼迫。鬣狗人的疯狂嗜血使它们成为所有人的敌人，而当它们在缺乏共同敌人时便会互相争斗。哪怕最野蛮的兽人也不会想要跟鬣狗人结盟。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -640,7 +640,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Gnoll",
+    "name": "鬣狗人 Gnoll (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -734,7 +734,7 @@
   "items": [
     {
       "_id": "mekS5RKJCNMH8Uez",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -746,7 +746,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 4 ([[/damage 1d4 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物。命中：4（[[/damage 1d4 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1024,7 +1024,7 @@
     },
     {
       "_id": "0EYxQ4wvkjtOyIkP",
-      "name": "Spear",
+      "name": "矛 Spear",
       "type": "weapon",
       "system": {
         "source": {
@@ -1036,7 +1036,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or Ranged Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft. or range 20/60 ft., one target. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage, or 6 ([[/damage 1d8 + 2 type=piercing]]) damage if used with two hands to make a melee attack.</p></div>",
+          "value": "<p>近战或远程武器攻击：命中+4，触及5尺或射程20/60尺，单一目标。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害，或使用双手发动近战攻击时6（[[/damage 1d8 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1310,7 +1310,7 @@
     },
     {
       "_id": "TtGgU4BGVSCizgYP",
-      "name": "Longbow",
+      "name": "长弓 Longbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1322,7 +1322,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, range 150/600 ft., one target. <i>Hit:</i> 5 ([[/damage 1d8 + 1 type=piercing]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+3，射程150/600尺，单一目标。命中：5（[[/damage 1d8 + 1 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1593,7 +1593,7 @@
     },
     {
       "_id": "ew3t85Zbnbw53cRA",
-      "name": "Rampage",
+      "name": "横行 Rampage",
       "type": "feat",
       "system": {
         "source": {
@@ -1605,7 +1605,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack.</p></div>",
+          "value": "<p>鬣狗人在其自己回合以一个近战攻击使某个生物生命值降至0时，该鬣狗人可以执行一个附赠动作以移动至多等同于其速度一半的距离并发动一次啃咬攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1798,11 +1798,11 @@
     },
     {
       "_id": "PQ1yIC8FnIl86JHk",
-      "name": "Hide Armor",
+      "name": "兽皮甲 Hide Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p></div>",
+          "value": "<p>这种粗糙的护甲由厚实的毛皮和兽皮制成，常见于野蛮人部落、邪恶类人生物，以及缺乏制作更好护甲所需工具和材料的群体。</p>",
           "chat": ""
         },
         "source": {
@@ -1895,11 +1895,11 @@
     },
     {
       "_id": "hRVvBbzhkfRB6FSE",
-      "name": "Shield",
+      "name": "盾牌 Shield",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p></div>",
+          "value": "<p>盾牌由木材或金属制成，用一只手持用。持用盾牌使你的护甲等级提高2。你同时只能从一面盾牌获益。</p>",
           "chat": ""
         },
         "source": {
@@ -1992,7 +1992,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "CsCYJKoYroMI4p63",
   "sort": 16600000,
   "ownership": {
     "default": 0,

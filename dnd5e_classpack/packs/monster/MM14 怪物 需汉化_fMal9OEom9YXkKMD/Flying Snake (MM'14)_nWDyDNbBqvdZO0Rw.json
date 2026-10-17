@@ -1,5 +1,5 @@
 {
-  "name": "Flying Snake (MM'14)",
+  "name": "飞蛇 Flying Snake (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -547,10 +547,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A flying snake is a brightly colored, winged serpent found in remote jungles. Tribespeople and cultists sometimes domesticate flying snakes to serve as messengers that deliver scrolls wrapped in their coils.</p></div></div>",
+        "value": "<h3>蚊蝠Stirge</h3><p>这种可怕的飞行生物，就像一只大蝙蝠和大蚊子的混合物种。它长着带锋利钳子的脚和中空的针状长喙，到处寻找自己的下一顿大餐。</p><p>蚊蝠以活体生物的鲜血维生，它们会贴在目标身上慢慢的吸取血液。少量蚊蝠的危险性并不大，然而当它们聚齐一大群时依然不容小觑。数量上的优势，使得受害者就算把蚊蝠全拽下来却又会被重复贴上，因而难以避免被吸血而迅速被削弱。</p><p><strong>吸血Blood Drain。</strong>蚊蝠发动攻击时，会在目标身上寻找脆弱的空隙并迅速贴上，接着用长喙刺进皮肤，并用钳状脚抓紧目标。直到蚊蝠吸够了血，它就会迅速从目标身上脱离，然后飞去安静的地方消化吸收。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -640,7 +640,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Flying Snake",
+    "name": "飞蛇 Flying Snake (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -739,7 +739,7 @@
   "items": [
     {
       "_id": "vNnVxHxhGitLwSaZ",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -751,7 +751,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 1 piercing damage plus 7 ([[/damage 3d4 type=poison]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。伤害：1点穿刺伤害，外加7（[[/damage 3d4 type=poison]]）点毒素伤害。 </p>",
           "chat": ""
         },
         "range": {
@@ -1045,7 +1045,7 @@
     },
     {
       "_id": "8IrANB7a5B0E98Rg",
-      "name": "Flyby",
+      "name": "飞掠 Flyby",
       "type": "feat",
       "system": {
         "source": {
@@ -1057,7 +1057,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach.</p></div>",
+          "value": "<p>飞蛇飞出敌人的触及范围时不会引起借机攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1113,7 +1113,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 31100000,
   "ownership": {
     "default": 0,

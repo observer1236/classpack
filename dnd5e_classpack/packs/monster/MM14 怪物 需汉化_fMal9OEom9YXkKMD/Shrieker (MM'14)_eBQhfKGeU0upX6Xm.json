@@ -1,5 +1,5 @@
 {
-  "name": "Shrieker (MM'14)",
+  "name": "尖叫菌 Shrieker (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<p>A shrieker is a human-sized mushroom that emits a piercing screech to drive off creatures that disturb it. Other creatures use the fungi as an alarm to signal the approach of prey, and various intelligent races of the Underdark cultivate shriekers on the outskirts of their communities to discourage trespassers.</p><div data-roll-name-ancestor=\"Fungi\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Fungi</span></h1> <p>With its sky of jagged stone and perpetual night, the Underdark is home to all manner of fungi. Taking the place of plants in the subterranean realm, fungi are vital to the survival of many underground species, providing nourishment and shelter in the unforgiving darkness.</p><p>Fungi spawn in organic matter, then break that matter down to consume it, feeding on filth and corpses. As they mature, fungi eject spores that drift on the lightest breeze to spawn new fungi.</p><p>Not needing sunlight or warmth to grow, fungi thrive in every corner and crevice of the Underdark. Transformed by the magic that permeates that underground realm, Underdark fungi often develop potent defensive mechanisms or abilities of mimicry and attack. The largest specimens can spread to create vast subterranean forests in which countless creatures live and feed.</p></div>",
+        "value": "<h3>尖叫菌Shrieker</h3><p>尖叫菌是像人一样大的蘑菇，会在被打扰时发出刺耳的尖叫。有些生物会利用这种真菌发出入侵的预警信号，而很多幽暗地域的智慧种族会在城市的郊区成片种植尖叫菌，用以把不速之客拒之城外。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -633,7 +633,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Shrieker",
+    "name": "尖叫菌 Shrieker (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -732,7 +732,7 @@
   "items": [
     {
       "_id": "L9H1xSgvi1C49eGa",
-      "name": "False Appearance",
+      "name": "拟形 False Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -744,7 +744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the shrieker remains motionless, it is indistinguishable from an ordinary fungus.</p></div>",
+          "value": "<p>静止不动的尖叫菌与普通的真菌一模一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -800,7 +800,7 @@
     },
     {
       "_id": "aAXTLV4fzUc9FjJ8",
-      "name": "Shriek",
+      "name": "尖叫 Shriek",
       "type": "feat",
       "system": {
         "source": {
@@ -812,7 +812,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for [[/r 1d4]] of the shrieker's turns afterward.</p></div>",
+          "value": "<p>尖叫菌在其身边30尺内出现生物或光亮时发出尖叫，其周围300尺范围内都能听到声音，尖叫声持续到干扰离开警戒范围，或是持续到尖叫菌发声[[/r 1d4]]回合。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1005,7 +1005,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "d1ec34aa6f6ca9ab",
   "sort": 24700000,
   "ownership": {
     "default": 0,

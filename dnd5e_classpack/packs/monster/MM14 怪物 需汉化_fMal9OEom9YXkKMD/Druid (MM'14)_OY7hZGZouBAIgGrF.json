@@ -1,5 +1,5 @@
 {
-  "name": "Druid (MM'14)",
+  "name": "德鲁伊 Druid (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Druids dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are tribal shamans who heal the sick, pray to animal spirits, and provide spiritual guidance.</p></div></div>",
+        "value": "<h3>德鲁伊 Druids</h3><p>德鲁伊居住在深林里或其他隐蔽的野外地点中。他们保护自然世界使之免受怪物破坏，并远离文明世界的侵蚀。某些德鲁伊会作为部族萨满tribal shamans</p><p>向动物之灵祈祷，并且为人治愈疾病或担任其他人的心灵导师。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -655,7 +655,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Druid",
+    "name": "德鲁伊 Druid (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -749,7 +749,7 @@
   "items": [
     {
       "_id": "PBVi81vlkMZyokmT",
-      "name": "Quarterstaff",
+      "name": "长棍 Quarterstaff",
       "type": "weapon",
       "system": {
         "source": {
@@ -761,7 +761,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+2]]{+2} to hit ([[/r 1d20+4]]{+4} to hit with shillelagh), reach 5 ft., one target. <i>Hit:</i> 3 ([[/damage 1d6 type=bludgeoning]]) damage, 4 ([[/damage 1d8 type=bludgeoning]]) damage if wielded with two hands, or 6 ([[/damage 1d8 + 2 type=bludgeoning]]) damage with @spell[shillelagh].</p></div>",
+          "value": "<p>近战武器攻击：命中+2（带橡棍术+4），触及5尺，单一目标。命中：3（[[/damage 1d6 type=bludgeoning]]）点钝击伤害，使用双手攻击时为4（[[/damage 1d8 type=bludgeoning]]）点钝击伤害，使用橡棍术 时为6（[[/damage 1d8 + 2 type=bludgeoning]]）点伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -787,7 +787,7 @@
           "6mamrwPFwUaHG3uO": {
             "_id": "6mamrwPFwUaHG3uO",
             "type": "attack",
-            "name": "Attack: 1d6 Bludgeoning Damage",
+            "name": "攻击: 1d6 钝击 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -959,7 +959,7 @@
           "xB0CktKVLHHv37wX": {
             "_id": "xB0CktKVLHHv37wX",
             "type": "attack",
-            "name": "Attack: 1d8 Bludgeoning Damage",
+            "name": "攻击: 1d8 钝击 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1131,7 +1131,7 @@
           "vEmVF4HLXVQELs49": {
             "_id": "vEmVF4HLXVQELs49",
             "type": "attack",
-            "name": "Attack: 1d8 Bludgeoning Damage",
+            "name": "攻击: 1d8 钝击 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1388,7 +1388,7 @@
     },
     {
       "_id": "w8ctoBejWLhqdqXK",
-      "name": "Druidcraft",
+      "name": "德鲁伊伎俩 Druidcraft",
       "type": "spell",
       "system": {
         "source": {
@@ -1400,7 +1400,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Whispering to the spirits of nature, you create one of the following effects within range:</p><ul class=\"rd__list\"><li class=\"rd__li \">You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.</li><li class=\"rd__li \">You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.</li><li class=\"rd__li \">You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.</li><li class=\"rd__li \">You instantly light or snuff out a candle, a torch, or a small campfire.</li></ul></div>",
+          "value": "<p>你向自然之魂低语，并创造以下效应之一：</p><ul><li>你创造一个微小而无害的感官效应，并以之预报你所在地接下来 24 小时的天气状况。该效应可表现为一个代表晴空的金球，一朵代表雨天的云彩，代表雪日而飘飞的雪花等等。该效应将持续 1 轮。</li><li>你可以立即让一朵鲜花绽放，一颗种子破壳，一片叶蕾发芽。</li><li>你创造一个微小而无害的即时感官效应，如落叶，微风，小动物的动静或者臭鼬的微弱气味。该效应只能在 5 尺的立方空间内起效。</li></ul><p>你可以立即点亮或熄灭一根蜡烛、一把火把或一处小篝火。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1625,7 +1625,7 @@
     },
     {
       "_id": "kGymn6GyMgSfwPGw",
-      "name": "Produce Flame",
+      "name": "燃火术 Produce Flame",
       "type": "spell",
       "system": {
         "source": {
@@ -1637,7 +1637,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.</p><p>You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes [[/damage 1d8 type=fire]] damage.</p><p>This spell's damage increases by [[/damage 1d8]] when you reach 5th level ([[/damage 2d8]]), 11th level ([[/damage 3d8]]), and 17th level ([[/damage 4d8]]).</p></div>",
+          "value": "<p>一朵摇曳的火焰出现在你手中。火焰在法术持续时间存在，并且不会伤害你和你的装备。火焰为其周边半径 10 尺范围内提供明亮光照，以及该范围外 10 尺的微光光照。法术将在再次施展该法术，或者以一个动作解除法术时终止。</p><p>此外，你还可以使用火焰发动攻击，并以此终止该法术。施展该法术时，你可以将火焰投向距你 30 尺内的一个生物，并对其发动一次远程法术攻击，命中时目标将受到 [[/damage 1d8 type=fire]]{1d8} 点火焰伤害。你也可以在施展法术后的随后回合里以一个动作实现该行为</p><p>你到达 5 级时，该法术的伤害增加 1d8（变为 2d8）。11 级时再加 1d8（变为 3d8），17 级时再加 1d8（变为 4d8）。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1900,7 +1900,7 @@
     },
     {
       "_id": "bOsx810LU2gdMNoc",
-      "name": "Shillelagh",
+      "name": "橡棍术 Shillelagh",
       "type": "spell",
       "system": {
         "source": {
@@ -1912,7 +1912,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The wood of a @item[club|phb] or @item[quarterstaff|phb] you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a [[/r d8]]. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.</p></div>",
+          "value": "<p>你将自然之力灌入手中持握的一根短棒或长棍中。你在法术持续时间内使用该武器进行近战攻击时，可以用你的施法属性值代替力量值来进行攻击检定和伤害掷骰，且该武器的伤害骰变为 d8。此外，若该武器原来不是魔法武器，则它将变成魔法武器。你再次施展该法术或丢掉该武器时，该法术也随之终止。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2038,7 +2038,7 @@
               "properties": [],
               "type": "weapon"
             },
-            "name": "Imbue Weapon",
+            "name": "灌注武器",
             "useConditionText": "",
             "useConditionReason": "",
             "effectConditionText": "",
@@ -2204,7 +2204,7 @@
             },
             "sort": 0,
             "_id": "ONVab5lmTqJwwMBC",
-            "name": "Spellcasting Attack",
+            "name": "施法攻击",
             "useConditionText": "",
             "useConditionReason": "",
             "effectConditionText": "",
@@ -2327,7 +2327,7 @@
       "effects": [
         {
           "type": "enchantment",
-          "name": "Shillelagh",
+          "name": "橡棍术 Shillelagh",
           "img": "icons/magic/fire/dagger-rune-enchant-teal.webp",
           "disabled": false,
           "_id": "QPsqj6jfS0iXSrTs",
@@ -2434,7 +2434,7 @@
     },
     {
       "_id": "bYgvMW0PJFIiII0G",
-      "name": "Entangle",
+      "name": "纠缠术 Entangle",
       "type": "spell",
       "system": {
         "source": {
@@ -2446,7 +2446,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into &amp;Reference[rule=difficultterrain]{difficult terrain}.</p><p>A creature in the area when you cast the spell must succeed on a Strength saving throw or be &amp;Reference[condition=restrained] by the entangling plants until the spell ends. A creature &amp;Reference[condition=restrained] by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.</p><p>When the spell ends, the conjured plants wilt away.</p></div>",
+          "value": "<p>在施法距离内的地面上指定一点，并以其为源点蔓延出 20 尺方形区域的杂草和藤蔓。在法术持续时间内，这片被植物覆盖的区域变为困难地形。</p><p>在你施展法术时，该区域内的生物必须成功通过一次[[/save activity=NChAwMHtRzKj4CzM]]{力量豁免}，否则将因为这些缠绕的植物陷入&amp;Reference[condition=restrained apply=false]{束缚}状态，直到法术终止。一个因此被束缚的生物可以使用其动作进行一次力量检定以对抗该法术的豁免 DC，检定成功则摆脱束缚。</p><p>法术终止时，所召唤的植物随即枯萎。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2677,7 +2677,7 @@
       },
       "effects": [
         {
-          "name": "Entangle",
+          "name": "纠缠术 Entangle",
           "origin": null,
           "duration": {
             "value": 60,
@@ -2750,7 +2750,7 @@
     },
     {
       "_id": "Oy7n1siKBmfmbmXG",
-      "name": "Longstrider",
+      "name": "大步奔行 Longstrider",
       "type": "spell",
       "system": {
         "source": {
@@ -2762,7 +2762,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a creature. The target's speed increases by 10 feet until the spell ends.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p></div></div>",
+          "value": "<p>你触碰一个生物，该目标速度在法术持续时间内增加 10 尺。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，你就可以额外指定一个目标。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2994,7 +2994,7 @@
     },
     {
       "_id": "eQawVgXLQYKJ8tVG",
-      "name": "Speak with Animals",
+      "name": "动物交谈 Speak with Animals",
       "type": "spell",
       "system": {
         "source": {
@@ -3006,7 +3006,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion.</p></div>",
+          "value": "<p>你在法术持续时间内获得理解野兽并与其沟通的能力。许多野兽智力不高，因此它们的认知水平相当有限，但它们至少能向你提供关于周围地域和怪物的情报，包括任何它们现在以及在前一日内察觉到的东西。你也许可以说服野兽帮你一些小忙，是否成功则由 DM 来判断。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3235,7 +3235,7 @@
     },
     {
       "_id": "6ZmKtcqaB3cXTS8s",
-      "name": "Thunderwave",
+      "name": "雷鸣波 Thunderwave",
       "type": "spell",
       "system": {
         "source": {
@@ -3247,7 +3247,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes [[/damage 2d8 type=thunder]] damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.</p><p>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by [[/damage 1d8]] for each slot level above 1st.</p></div></div>",
+          "value": "<p>一道雷鸣波从你的身体向外扫去。在以你为源点 15 尺立方区域内的每个生物必须进行一次[[/save activity=dnd5eactivity000]]{体质豁免}。豁免失败者将受到 [[/damage 2d8 type=thunder]]{2d8} 点雷鸣伤害，并被推离 10 尺。豁免成功则伤害减半，且不会被推离。</p><p>此外，所有完全位于该区域内且没被固定住的物件都将被自动推离 10 尺。而该法术还会发出方圆 300 尺内都能听见的雷霆巨响。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，法术的伤害就增加 1d8。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3508,7 +3508,7 @@
     },
     {
       "_id": "3n8gQjyLW6NvQZ8d",
-      "name": "Animal Messenger",
+      "name": "动物信使 Animal Messenger",
       "type": "spell",
       "system": {
         "source": {
@@ -3520,7 +3520,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as \"a man or woman dressed in the uniform of the town guard\" or \"a red-haired dwarf wearing a pointed hat.\" You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.</p><p>When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.</p></div></div>",
+          "value": "<p>该法术令你可以利用动物传递信息。在施法距离内指定一只你能看见的微型野兽（比如松鼠squirrel，蓝松鸦blue jay，或是蝙蝠bat）。再选择一个你曾造访过的地点，然后描述收信人的基本信息，如“一个穿着城镇守卫制服的男人或女人”或“一个戴着尖顶帽子的红发矮人”。最后再说出一段不超过二十五个单词的信息。目标野兽将会在法术持续时间内前往你选定的地点。会飞的信使 24 小时内可移动 50 里，不会飞的信使只能移动 25 里。</p><p>信使抵达目的地后，会模仿你的声音把信息传递给你描述的人。信使只会把信息传递给符合你描述的人。如果法术持续时间内信使未能抵达目的地则信息将遗失，而曾作为信使的野兽将自行寻路返回你施法的地点。</p><p><strong>升环施法效应。</strong>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，其法术持续时间就增加 48 小时。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3751,7 +3751,7 @@
     },
     {
       "_id": "ZVgxngeMw1rxp5fp",
-      "name": "Barkskin",
+      "name": "树肤术 Barkskin",
       "type": "spell",
       "system": {
         "source": {
@@ -3763,7 +3763,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.</p></div>",
+          "value": "<p>你触碰一个自愿生物，并使目标的皮肤在法术终止前呈现粗糙的树皮状外观。期间目标无论着装何种护甲，其 AC 将不会降至 16 以下。</p>",
           "chat": ""
         },
         "level": 2,
@@ -4001,7 +4001,7 @@
           "origin": null,
           "tint": "#ffffff",
           "transfer": false,
-          "name": "Barkskin",
+          "name": "树肤术 Barkskin",
           "description": "",
           "statuses": [],
           "_stats": {
@@ -4067,7 +4067,7 @@
     },
     {
       "_id": "n6BOh2MutOGDpg7D",
-      "name": "Spellcasting",
+      "name": "施法 Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -4079,7 +4079,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC <span class=\"rd__dc\">12</span>, [[/r 1d20+4]]{+4} to hit with spell attacks). It has the following druid spells prepared:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>Cantrips (at will): @UUID[.w8ctoBejWLhqdqXK], @UUID[.kGymn6GyMgSfwPGw], @UUID[.bOsx810LU2gdMNoc]</p></li><li class=\"rd__li  rd__li-spell\"><p>1st level (4 slots): @UUID[.bYgvMW0PJFIiII0G], @UUID[.Oy7n1siKBmfmbmXG], @UUID[.eQawVgXLQYKJ8tVG], @UUID[.6ZmKtcqaB3cXTS8s]</p></li><li class=\"rd__li  rd__li-spell\"><p>2nd level (3 slots): @UUID[.3n8gQjyLW6NvQZ8d], @UUID[.ZVgxngeMw1rxp5fp]</p></li></ul></div></div>",
+          "value": "<p>德鲁伊作为4级施法者，其施法属性为感知（法术豁免DC 12，法术攻击命中+4）。德鲁伊准备了以下德鲁伊法术： 戏法（随意）：德鲁伊伎俩druidcraft，燃火术produce flame，橡棍术shillelagh 1环（4法术位）：纠缠术entangle，大步奔行longstrider，动物交谈speak with animals，雷鸣波thunderwave 2环（3法术位）：动物信使animal messenger，树肤术barkskin</p><p>@UUID[.w8ctoBejWLhqdqXK]{德鲁伊伎俩 Druidcraft}、@UUID[.kGymn6GyMgSfwPGw]{燃火术 Produce Flame}、@UUID[.bOsx810LU2gdMNoc]{橡棍术 Shillelagh}、@UUID[.bYgvMW0PJFIiII0G]{纠缠术 Entangle}、@UUID[.Oy7n1siKBmfmbmXG]{大步奔行 Longstrider}、@UUID[.eQawVgXLQYKJ8tVG]{动物交谈 Speak with Animals}、@UUID[.6ZmKtcqaB3cXTS8s]{雷鸣波 Thunderwave}、@UUID[.3n8gQjyLW6NvQZ8d]{动物信使 Animal Messenger}、@UUID[.ZVgxngeMw1rxp5fp]{树肤术 Barkskin}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -4135,7 +4135,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 16100000,
   "ownership": {
     "default": 0,

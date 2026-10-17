@@ -1,5 +1,5 @@
 {
-  "name": "Bat (MM'14)",
+  "name": "蝙蝠 Bat (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -626,7 +626,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Bat",
+    "name": "蝙蝠 Bat (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -725,7 +725,7 @@
   "items": [
     {
       "_id": "jGL3hezOmQJApn4S",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -737,7 +737,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+0]]{+0} to hit, reach 5 ft., one creature. <i>Hit:</i> 1 piercing damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+0，触及5尺，单一生物。命中：1点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1015,7 +1015,7 @@
     },
     {
       "_id": "W6zEj6UKrjOMZi8o",
-      "name": "Echolocation",
+      "name": "回声定位 Echolocation",
       "type": "feat",
       "system": {
         "source": {
@@ -1027,7 +1027,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The bat can't use its blindsight while &amp;Reference[condition=deafened].</p></div>",
+          "value": "<p>蝙蝠陷入耳聋时无法使用盲视。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1083,7 +1083,7 @@
     },
     {
       "_id": "PJ7b6lnlGghTekUz",
-      "name": "Keen Hearing",
+      "name": "敏锐听觉 Keen Hearing",
       "type": "feat",
       "system": {
         "source": {
@@ -1095,7 +1095,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The bat has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing.</p></div>",
+          "value": "<p>蝙蝠依赖听觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1151,7 +1151,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 23300000,
   "ownership": {
     "default": 0,

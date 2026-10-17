@@ -1,5 +1,5 @@
 {
-  "name": "Quipper (MM'14)",
+  "name": "食人鱼 Quipper (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A quipper is a carnivorous fish with sharp teeth.</p><p>Quippers can adapt to any aquatic environment, including cold subterranean lakes. They frequently gather in swarms; the statistics for a swarm of quippers appear later in this appendix.</p></div></div>",
+        "value": "<p>食人鱼quipper是一种长着锋利牙齿的肉食鱼类。它们可以适应包括寒冷地下湖泊在内的任何水生环境。食人鱼群的资料在本附录的后半部分。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Quipper",
+    "name": "食人鱼 Quipper (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "1QQeI0DSkqLwTGEC",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 1 piercing damage.</p></div>",
+          "value": "<p>近战武器攻击：命中＋5，触及5尺，单一目标。命中：1点穿刺伤害。 </p>",
           "chat": ""
         },
         "range": {
@@ -1013,7 +1013,7 @@
     },
     {
       "_id": "9GuTvIEIIpxif3DJ",
-      "name": "Blood Frenzy",
+      "name": "嗜血狂怒 Blood Frenzy",
       "type": "feat",
       "system": {
         "source": {
@@ -1025,7 +1025,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points.</p></div>",
+          "value": "<p>食人鱼对生命值没有全满的生物发动近战攻击时，其攻击检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1081,7 +1081,7 @@
     },
     {
       "_id": "bR8jwC6RNN8FDwtC",
-      "name": "Water Breathing",
+      "name": "水下呼吸 Water Breathing",
       "type": "feat",
       "system": {
         "source": {
@@ -1093,7 +1093,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The quipper can breathe only underwater.</p></div>",
+          "value": "<p>食人鱼只能在水下呼吸。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1149,7 +1149,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 37800000,
   "ownership": {
     "default": 0,

@@ -1,5 +1,5 @@
 {
-  "name": "Violet Fungus (MM'14)",
+  "name": "紫腐菌 Violet Fungus (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<p>This purplish mushroom uses root-like feelers growing from its base to creep across cavern floors. The four stalks protruding from a violet fungi's central mass are used to lash out at prey, rotting flesh with the slightest touch. Any creature killed by a violet fungus decomposes rapidly. A new violet fungus sprouts from the moldering corpse, growing to full size in [[/r 2d6]] days.</p><div data-roll-name-ancestor=\"Fungi\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Fungi</span></h1> <p>With its sky of jagged stone and perpetual night, the Underdark is home to all manner of fungi. Taking the place of plants in the subterranean realm, fungi are vital to the survival of many underground species, providing nourishment and shelter in the unforgiving darkness.</p><p>Fungi spawn in organic matter, then break that matter down to consume it, feeding on filth and corpses. As they mature, fungi eject spores that drift on the lightest breeze to spawn new fungi.</p><p>Not needing sunlight or warmth to grow, fungi thrive in every corner and crevice of the Underdark. Transformed by the magic that permeates that underground realm, Underdark fungi often develop potent defensive mechanisms or abilities of mimicry and attack. The largest specimens can spread to create vast subterranean forests in which countless creatures live and feed.</p></div>",
+        "value": "<h3>紫腐菌Violet Fungus</h3><p>这种紫色的蘑菇用长在其底部的根状触须在洞窟地面上爬行。紫腐菌从伞盖中央向四周辐射状长出鞭状的茎用以抽击敌人。其轻微的触碰就可以使肉体迅速腐烂，也正因此紫腐菌杀死的生物尸体可以迅速完成分解。新的紫腐菌会在腐烂的尸体中长出，并在2d6天内成长完全。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -633,7 +633,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Violet Fungus",
+    "name": "紫腐菌 Violet Fungus (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -732,7 +732,7 @@
   "items": [
     {
       "_id": "aSRpBWwRP3THLqWL",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -744,7 +744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The fungus makes [[/r 1d4]] Rotting Touch attacks.</p></div>",
+          "value": "<p>紫腐菌发动[[/r 1d4]]次腐烂触击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -937,7 +937,7 @@
     },
     {
       "_id": "R3XWXJUUfFhiwES4",
-      "name": "Rotting Touch",
+      "name": "腐烂触击 Rotting Touch",
       "type": "weapon",
       "system": {
         "source": {
@@ -949,7 +949,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+2]]{+2} to hit, reach 10 ft., one creature. <i>Hit:</i> 4 ([[/damage 1d8 type=necrotic]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+2，触及10尺，单一生物。命中：4（[[/damage 1d8 type=necrotic]]）点暗蚀伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1227,7 +1227,7 @@
     },
     {
       "_id": "x1dFSWW8wSu9j1rF",
-      "name": "False Appearance",
+      "name": "拟形 False Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -1239,7 +1239,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the violet fungus remains motionless, it is indistinguishable from an ordinary fungus.</p></div>",
+          "value": "<p>静止的紫腐菌与普通的真菌一模一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1295,7 +1295,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "d1ec34aa6f6ca9ab",
   "sort": 19700000,
   "ownership": {
     "default": 0,

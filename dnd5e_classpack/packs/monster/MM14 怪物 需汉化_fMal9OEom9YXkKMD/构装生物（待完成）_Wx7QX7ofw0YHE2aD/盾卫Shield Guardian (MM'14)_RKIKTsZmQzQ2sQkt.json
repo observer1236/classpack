@@ -1,5 +1,5 @@
 {
-  "name": "盾卫Shield Guardian (MM'14)",
+  "name": "盾卫 Shield Guardian (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Wizards and other spellcasters create shield guardians for protection. A shield guardian treads beside its master, absorbing damage to keep its master alive as long as possible.</p><div data-roll-name-ancestor=\"Master's Amulet\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Master's Amulet.</span></span> Every shield guardian has an amulet magically linked to it. A shield guardian can have only one corresponding amulet, and if that amulet is destroyed, the shield guardian is &amp;Reference[condition=incapacitated] until a replacement amulet is created. A shield guardian's amulet is subject to direct attack if it isn't being worn or carried. It has AC 10, 10 hit points, and immunity to poison and psychic damage. Crafting an amulet requires 1 week and costs 1,000 gp in components.</p><p>A shield guardian's solitary focus is to protect the amulet's wearer. The amulet's wearer can command the guardian to attack its enemies or to guard the wielder against attack. If an attack threatens to injure the wearer, the construct can magically absorb the blow into its own body, even at a distance.</p><p>A spellcaster can store a single spell within a shield guardian, which can then cast the spell on command or under specific conditions. Many a wizard has been rendered helpless by enemies, only to surprise those foes when its shield guardian unleashes potent magical power.</p></div><div data-roll-name-ancestor=\"Magnificent Treasure\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Magnificent Treasure.</span></span> Because a shield guardian's ownership can be transferred by giving its matching amulet to another creature, some wizards collect exorbitant sums from princes, nobles, and crime lords to create shield guardians for them. At the same time, a shield guardian makes a mighty prize for anyone who slays its master and claims its amulet.</p></div><div data-roll-name-ancestor=\"Construct Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Construct Nature.</span></span> A shield guardian doesn't require air, food, drink, or sleep.</p></div></div></div>",
+        "value": "<h3>盾卫Shield Guardian</h3><p>法师和其他施法者会制作盾卫来保护自己。这些盾卫会尾随它的主人，为其排除危险，并让主人尽可能保持安全。</p><p>主控护符Master&#x27;s Amulet。每个盾卫都与唯一的一个魔法护符相连，一旦护符被摧毁，盾卫也会随之陷入失能状态直至替代的护符制作完成。未被着装或携带的盾卫护符可以直接作为攻击对象。盾卫护符拥有AC 10，10点生命值，且免疫毒素和心灵攻击。制造一个盾卫护身符需要1周时间和1,000 gp的材料。</p><p>盾卫唯一关注的就是如何保护盾卫护符的持有者。盾卫护符的持有者可以命令盾卫攻击敌人或协助抵抗攻击。即使距离甚远，盾卫也会舍身前来抵挡将要命中护符持有者的攻击。</p><p>施法者可以将一项法术储存在盾卫体内，并让其在受其命令或满足特定条件是施展。时常听到有人会埋怨法师的盾卫忽然施展强大魔力时并没能帮助抗敌，而是只能吓唬人。</p><p><strong>可观财富Magnificent Treasure。</strong>因为盾卫的所有权可以通过盾卫护符的转移而变更，某些法师会通过为王公贵族和犯罪头目制造盾卫而赚取大量金钱。同时，盾卫对那些杀死其主人而得到盾卫护符的人也是一件价值不菲的战利品。</p><p><strong>构装本质Construct Nature。</strong>盾卫不需要空气，饮食和睡眠。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -636,7 +636,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Shield Guardian",
+    "name": "盾卫 Shield Guardian (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -735,7 +735,7 @@
   "items": [
     {
       "_id": "P3eJY3UjdmSpRzqs",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -747,7 +747,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The guardian makes two fist attacks.</p></div>",
+          "value": "<p>盾卫发动两次拳击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -940,7 +940,7 @@
     },
     {
       "_id": "pz0hFHSQdUcMZSCD",
-      "name": "Fist",
+      "name": "拳击 Fist",
       "type": "weapon",
       "system": {
         "source": {
@@ -952,7 +952,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 5 ft., one target. <i>Hit:</i> 11 ([[/damage 2d6 + 4 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及5尺，单一目标。命中：11（[[/damage 2d6 + 4 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1230,7 +1230,7 @@
     },
     {
       "_id": "48xGjCyxmH8BHHyO",
-      "name": "Bound",
+      "name": "连接 Bound",
       "type": "feat",
       "system": {
         "source": {
@@ -1242,7 +1242,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The shield guardian is magically bound to an amulet. As long as the guardian and its amulet are on the same plane of existence, the amulet's wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet's wearer, half of any damage the wearer takes (rounded up) is transferred to the guardian.</p></div>",
+          "value": "<p>盾卫与一个盾卫护符以魔法相连接。只要盾卫和它的护符在同一位面，护符的着装者就可以用心灵感应呼唤盾卫向护符移动，盾卫时刻知晓自己与护符的距离以及护符所在方向。如果盾卫到护符着装者的距离小于60尺，则护符着装者所受所有伤害的一半（向上取整）都会转移给盾卫。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1298,7 +1298,7 @@
     },
     {
       "_id": "Z8SXp04MVkmrdJrt",
-      "name": "Regeneration",
+      "name": "再生 Regeneration",
       "type": "feat",
       "system": {
         "source": {
@@ -1310,7 +1310,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The shield guardian regains 10 hit points at the start of its turn if it has at least 1 hit point.</p></div>",
+          "value": "<p>盾卫在其自己的回合开始时恢复10点生命值，前提是它至少有1点生命值。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1514,7 +1514,7 @@
     },
     {
       "_id": "vHfgJMfmmPXA5NVn",
-      "name": "Spell Storing",
+      "name": "法术存储 Spell Storing",
       "type": "feat",
       "system": {
         "source": {
@@ -1526,7 +1526,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A spellcaster who wears the shield guardian's amulet can cause the guardian to store one spell of 4th level or lower. To do so, the wearer must cast the spell on the guardian. The spell has no effect but is stored within the guardian. When commanded to do so by the wearer or when a situation arises that was predefined by the spellcaster, the guardian casts the stored spell with any parameters set by the original caster, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost.</p></div>",
+          "value": "<p>着装盾卫护符的施法者可以让盾卫储存一个4环或更低环阶的法术。护符着装者必须向盾卫施展该法术以完成该过程，而该法术此时不会产生效应而是储存于盾卫体内。当着装者下令或者当满足其预先设置的条件时，该盾卫便会将储存的法术施展完整不变的施展出来，且无需任何成分。当储存的法术被施展，或一个新的法术被储存时，则任何旧有的法术也会随之消失。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1582,7 +1582,7 @@
     },
     {
       "_id": "1fF8pu17iX4qW0ll",
-      "name": "Shield",
+      "name": "护卫 Shield",
       "type": "feat",
       "system": {
         "source": {
@@ -1594,7 +1594,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>When a creature makes an attack against the wearer of the guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet of the wearer.</p></div>",
+          "value": "<p>生物攻击盾卫护符着装者时，如果盾卫与着装者的距离不超过5尺，则盾卫使着装者AC获得+2加值。</p>",
           "chat": ""
         },
         "requirements": "",

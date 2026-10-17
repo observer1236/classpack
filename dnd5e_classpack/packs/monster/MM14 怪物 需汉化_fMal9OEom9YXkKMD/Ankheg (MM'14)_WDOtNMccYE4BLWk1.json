@@ -1,5 +1,5 @@
 {
-  "name": "Ankheg (MM'14)",
+  "name": "掘地虫 Ankheg (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>An ankheg resembles an enormous many-legged insect, its long antennae twitching in response to any movement around it. Its legs end in sharp hooks adapted for burrowing and grasping its prey, and its powerful mandibles can snap a small tree in half.</p><div data-roll-name-ancestor=\"Lurkers in the Earth\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Lurkers in the Earth.</span></span> The ankheg uses its powerful mandibles to dig winding tunnels deep beneath the ground. When it hunts, an ankheg burrows upward, waiting below the surface until its antennae detect movement from above. Then it bursts from the earth and seizes prey in its mandibles, crushing and grinding while it secretes acidic digestive enzymes. These enzymes help dissolve a victim for easy swallowing, but the ankheg can also squirt acid to take down foes.</p></div><div data-roll-name-ancestor=\"Bane of Field and Forest\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Bane of Field and Forest.</span></span> Although ankhegs receive a certain portion of their nutrients from the soil through which they burrow, they must supplement their diet with fresh meat. Pastures teeming with grazing livestock and forests rife with game are an ankheg's prime hunting grounds. Ankhegs are thus the bane of farmers and rangers everywhere.</p></div><div data-roll-name-ancestor=\"Earthen Tunnels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Earthen Tunnels.</span></span> As it burrows through earth, the ankheg leaves a narrow, partially collapsed tunnel in its wake. In these tunnels, one might find the remnants of molted ankheg chitin, hatched ankheg eggs, or the grisly remains of ankheg victims, including coins or other treasures scattered during the creature's attack.</p></div></div></div>",
+        "value": "<h3>掘地虫Ankheg</h3><p>掘地虫形似巨大的多足昆虫，其长长的触须随着周围的动静而颤动，腿部末端是锋利的钩爪，适合挖掘及捕捉猎物，强壮的下颚甚至可以把小树咬成两截。</p><p><strong>潜地者Lurkers in the Earth。</strong>掘地虫用其强壮的下颌在地下深处挖掘蜿蜒的地道。每当需要捕猎时，掘地虫就会向上掘穴至地表下耐心等待，直到其触须侦测到地上有生物经过。随后它猛然冲出，并用下颚抓住猎物，边碾压边分泌酸性的消化酶，以使猎物溶解便于吞咽。掘地虫也可以喷射消化酶来消灭敌人。</p><p><strong>农林祸害Bane of Field and Forest。</strong>虽然掘地虫可以从其挖掘的泥土中获得部分营养，但其依然需要新鲜肉食补充其他养分。满是牲畜的牧场和猎物丰富的森林便成了掘地虫的主要狩猎场。因此，在任何地方，掘地虫都是农民和游侠的眼中钉。</p><p><strong>泥质地道Earthen Tunnels。</strong>掘地虫在地下掘穴时，会留下一条狭窄而不稳定的地道。在这些隧道里，人们可以找到掘地虫蜕下的壳、孵化的虫卵、人的猎物残骸，也包括散落的金银珠宝。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Ankheg",
+    "name": "掘地虫 Ankheg (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -731,7 +731,7 @@
   "items": [
     {
       "_id": "c2viKi8xPGHaHY6H",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -743,7 +743,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/damage 2d6 + 3 type=slashing]]) damage plus 3 ([[/damage 1d6 type=acid]]) damage. If the target is a Large or smaller creature, it is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">13</span>). Until this grapple ends, the ankheg can bite only the &amp;Reference[condition=grappled] creature and has advantage on attack rolls to do so.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：10（[[/damage 2d6 + 3 type=slashing]]）点挥砍伤害，外加3（[[/damage 1d6 type=acid]]）点强酸伤害。如果目标为大型或更小体型的生物，则目标被擒抱（逃脱DC 13）。直至擒抱结束前，掘地虫只能啃咬该被擒抱生物，且对其发动的攻击检定具有优势。</p>",
           "chat": ""
         },
         "range": {
@@ -1037,7 +1037,7 @@
     },
     {
       "_id": "N43TyIrJlnzdzFtr",
-      "name": "Acid Spray",
+      "name": "酸液喷射 Acid Spray",
       "type": "feat",
       "system": {
         "source": {
@@ -1049,7 +1049,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature &amp;Reference[condition=grappled]. Each creature in that line must make a [[/save ability=dex dc=13]] saving throw, taking 10 ([[/damage 3d6 type=acid]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>如果掘地虫没有擒抱生物，则它可以吐出一道酸液，覆盖长30尺宽5尺的线状区域。酸液范围内的所有生物必须进行一次DC 13的敏捷豁免，豁免失败者将受到10（[[/damage 3d6 type=acid]]）点强酸伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1295,7 +1295,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 20300000,
   "ownership": {
     "default": 0,

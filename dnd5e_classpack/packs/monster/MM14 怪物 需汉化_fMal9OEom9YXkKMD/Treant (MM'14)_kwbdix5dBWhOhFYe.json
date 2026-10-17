@@ -1,5 +1,5 @@
 {
-  "name": "Treant (MM'14)",
+  "name": "树人 Treant (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Treants are awakened trees that dwell in ancient forests. Although treants prefer to while away the days, months, and years in quiet contemplation, they fiercely protect their woodland demesnes from outside threats.</p><div data-roll-name-ancestor=\"The Sleeping Tree Awakens\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">The Sleeping Tree Awakens.</span></span> A tree destined to become a treant meditates through a long cycle of seasons, living normally for decades or centuries before realizing its potential. Trees that awaken do so only under special circumstances and in places steeped with nature's magic. Treants and powerful druids can sense when a tree has the spark of potential, and they protect such trees in secret groves as they draw near the moment of their awakening. During the long process of awakening, a tree acquires face-like features in its bark, a division of the lower trunk into legs, and long branches bending downward to serve as its arms. When it is ready, the tree pulls its legs free from the clutching earth and joins its fellows in protecting its woodland home.</p></div><div data-roll-name-ancestor=\"Legendary Guardians\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Legendary Guardians.</span></span> After a treant awakens, it continues to grow exactly as it did when it was a tree. Treants created from the mightiest trees can reach great sizes while developing an innate magical power over plants and animals. Such treants can animate plants, using them to ensnare and trap intruders. They can call wild creatures to aid them or carry messages across great distances.</p></div><div data-roll-name-ancestor=\"Protectors of the Wild\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Protectors of the Wild.</span></span> Even after awakening, a treant spends much of its time living as a tree. While rooted in place, a treant remains aware of its surroundings, and can perceive the effects of events taking place miles away based on subtle changes nearby.</p><p>Woodcutters who avoid culling healthy living trees and hunters who take only what they need of the forest's bounty are unlikely to arouse a treant's ire. Creatures careless with fire, those who poison the forest, and those who destroy great trees, especially a tree close to awakening, face the treant's wrath.</p></div></div></div>",
+        "value": "<h3>树人Treant</h3><p>树人是居住在古老森林里的启蒙树木。虽然树人偏爱在静静的沉思中度过漫长的岁月，但是它们也会猛烈地攻击威胁到林地的存在。</p><p><strong>觉醒的沉睡之树The Sleeping Tree Awakens。</strong>一棵树能够以普通的形态生活数十年甚至数个世纪，必定会在一场长久沉眠深思中觉醒为树人。普通树木受启蒙的情况只会在满足特殊条件或在浸透自然魔力的地方出现。树人和强大的德鲁伊会感知到那些带着启蒙苗头的树木。而他们也会在其觉醒前将这棵树保护在一处隐秘的树林中。其漫长的觉醒过程里，类似一张脸的特征会出现在树皮上，下部的一些树干变成腿，而垂下的长枝条则变成类似手臂一样附肢。树人准备妥当后便从大地上拔出身躯，加入到自己的同伴中一起保护森林家园。</p><p><strong>传奇卫士Legendary Guardians。</strong>完成启蒙觉醒的树人将依旧如其树木时期一样自然的生长。由最强壮的树木转化而成的树人提升其内在魔力的同时能够长到非常巨大。这些树人可以活化植物，驱使它们来围困诱捕入侵者。它们还可以召唤野生动物来协助自己，或者以之将信息带到远方。</p><p><strong>荒野驻守Protectors of the Wild。</strong>完成启蒙觉醒后，树人在绝大多少时间里也是像普通树木一样生活。即使已经在某地扎根，树人依旧可以观察其周围，并通过微小的变化察觉数里之外发生之情在此间产生的影响。</p><p>不砍伐茁壮生长树木的伐木者，以及仅从森林里获取自身所需的猎人不会让树人生气。而那些施行纵火，毒害森林，摧毁巨大古树，尤其是破坏即将觉醒古树的家伙都必须要面对树人的滔天怒火。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Good",
+      "alignment": "混乱善良 Chaotic Good",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -638,7 +638,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Treant",
+    "name": "树人 Treant (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -732,7 +732,7 @@
   "items": [
     {
       "_id": "oteKOZpcIAu8jh0y",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -744,7 +744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The treant makes two slam attacks.</p></div>",
+          "value": "<p>树人发动两次猛击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -937,7 +937,7 @@
     },
     {
       "_id": "5QbMfT9n35qdx8Qz",
-      "name": "Slam",
+      "name": "猛击 Slam",
       "type": "weapon",
       "system": {
         "source": {
@@ -949,7 +949,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+10]]{+10} to hit, reach 5 ft., one target. <i>Hit:</i> 16 ([[/damage 3d6 + 6 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+10，触及5尺，单一目标。命中：16（[[/damage 3d6 + 6 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1227,7 +1227,7 @@
     },
     {
       "_id": "ZxmyWVwnNVZxPZYF",
-      "name": "Rock",
+      "name": "掷石 Rock",
       "type": "weapon",
       "system": {
         "source": {
@@ -1239,7 +1239,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+10]]{+10} to hit, range 60/180 ft., one target. <i>Hit:</i> 28 ([[/damage 4d10 + 6 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+10，射程60/180尺，单一目标。命中：28（[[/damage 4d10 + 6 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1517,7 +1517,7 @@
     },
     {
       "_id": "kNgY4QWVmmL2bYtv",
-      "name": "Animate Trees",
+      "name": "活化树木 Animate Trees",
       "type": "feat",
       "system": {
         "source": {
@@ -1529,7 +1529,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a @creature[treant], except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.</p></div>",
+          "value": "<p>树人可以用魔法活化其周边60尺范围内它能看见的一到两棵树木。被活化的树木拥有和树人一样的资料，除以下几点：它们的智力值和魅力值为1且不能说话，其动作只有“猛击”一项。活化树木作为树人的盟友行动。这活化树木将在以下情况解除活化：被活化后经过1日或死亡；树人死亡或者离开活化树木超过120尺；树人用一个附赠动作让将其恢复成一棵树。解除活化后，树木会尽可能的尝试重新定植。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1734,7 +1734,7 @@
     },
     {
       "_id": "P7dDZ1CQD6WRvuDC",
-      "name": "False Appearance",
+      "name": "拟形 False Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -1746,7 +1746,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the treant remains motionless, it is indistinguishable from a normal tree.</p></div>",
+          "value": "<p>树人静止不动时和一棵普通的树一模一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1802,7 +1802,7 @@
     },
     {
       "_id": "s8jy7DwXtHllVC46",
-      "name": "Siege Monster",
+      "name": "攻城怪物 Siege Monster",
       "type": "feat",
       "system": {
         "source": {
@@ -1814,7 +1814,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The treant deals double damage to objects and structures.</p></div>",
+          "value": "<p>树人对物件和建筑物伤害翻倍。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1870,7 +1870,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "d1ec34aa6f6ca9ab",
   "sort": 29700000,
   "ownership": {
     "default": 0,

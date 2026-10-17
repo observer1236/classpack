@@ -1,5 +1,5 @@
 {
-  "name": "Plesiosaurus (MM'14)",
+  "name": "蛇颈龙 Plesiosaurus (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A plesiosaurus is a marine dinosaur whose compact body is driven by powerful flippers. Predatory and aggressive, it attacks any creature it encounters. Its flexible neck accounts for a third of its total length, letting it twist in any direction to deliver a powerful bite.</p><div data-roll-name-ancestor=\"Dinosaurs\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dinosaurs.</span></span> Dinosaurs, or behemoths, are among the oldest reptiles in the world. Predatory dinosaurs are savage, territorial hunters. Herbivorous dinosaurs are less aggressive, but they might attack to defend their young, or if startled or harassed.</p><p>Dinosaurs come in many sizes and shapes. Larger varieties often have drab coloration, while smaller dinosaurs have colorful markings akin to birds. Dinosaurs roam rugged and isolated areas that humanoids seldom visit, including remote mountain valleys, inaccessible plateaus, tropical islands, and deep fens.</p></div></div></div>",
+        "value": "<h3>蛇颈龙Plesiosaurus</h3><p>蛇颈龙是一种长着强壮脚蹼，紧凑身躯的海生恐龙。富有掠夺性和侵略性的蛇颈龙会袭击所遇到的任何生物。蛇颈龙灵活的脖子可以长至三倍体长，这使得蛇颈龙可以向任何方向进行强有力的啃咬。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Plesiosaurus",
+    "name": "蛇颈龙 Plesiosaurus (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -726,7 +726,7 @@
   "items": [
     {
       "_id": "s06tO7Pms3sWsjyC",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -738,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 10 ft., one target. <i>Hit:</i> 14 ([[/damage 3d6 + 4 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及10尺，单一目标。命中：14（[[/damage 3d6 + 4 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1016,7 +1016,7 @@
     },
     {
       "_id": "LeBpjDKsQMpZ32Td",
-      "name": "Hold Breath",
+      "name": "屏息 Hold Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1028,7 +1028,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The plesiosaurus can hold its breath for 1 hour.</p></div>",
+          "value": "<p>蛇颈龙可以憋气1小时。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1084,7 +1084,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 33300000,
   "ownership": {
     "default": 0,

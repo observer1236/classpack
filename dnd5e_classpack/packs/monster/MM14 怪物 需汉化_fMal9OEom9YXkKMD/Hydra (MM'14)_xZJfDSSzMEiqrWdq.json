@@ -1,5 +1,5 @@
 {
-  "name": "Hydra (MM'14)",
+  "name": "多头蛇 Hydra (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>The hydra is a reptilian horror with a crocodilian body and multiple heads on long, serpentine necks. Although its heads can be severed, the hydra magically regrows them in short order. A typical specimen has five heads. At the dawn of time, Tiamat, the Queen of Evil Dragons, slew a rival dragon god named Lernaea and cast her blood across the multiverse. Each drop that fell upon a world spawned a multi-headed hydra consumed by a hunger as great as the fallen god's hatred. Great champions are known to test their mettle against these fearsome creatures.</p><div data-roll-name-ancestor=\"Everlasting Hunger\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Everlasting Hunger.</span></span> A rapacious and gluttonous monster, a hydra snatches and tears apart its prey in a frenzy of feeding. When a hydra has cleared a territory of food and driven off any creatures smart enough to avoid it, it moves on to seek its meals elsewhere. A hydra's hunger is so great that if it can't feed, it might turn against itself, its heads attacking each other as the creature eats itself alive.</p></div><div data-roll-name-ancestor=\"Hardy Water Dwellers\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Hardy Water Dwellers.</span></span> Hydras are natural swimmers, dwelling in rivers, along lakeshores, in ocean shallows, and in wetland bogs. A hydra rarely requires shelter from the elements, so it doesn't normally have a lair. Only in colder climes are hydras drawn to the protection of sheltered caverns and ruins. When a hydra sleeps, at least one of its heads remains awake and alert, making the creature difficult to catch by surprise.</p></div></div></div>",
+        "value": "<h3>多头蛇Hydra</h3><p>多头蛇是一种恐怖的爬行动物，它们长着鳄鱼的躯体，数条蛇状长脖子上长着复数的脑袋。它们的脑袋被砍下后还可以用魔法再生。一头典型的多头蛇通常长着五颗脑袋。</p><p>太古时期，恶龙女王提亚马特Tiamat杀死了一位名为勒奈尔亚Lernaea的龙神，并将她的鲜血挥洒在多元宇宙之中。每一滴洒落的血液都在当地孕育出一只多头蛇，陨落之神的憎恨仿佛遗留在它们身上，使它们被饥渴所支配。据说伟大的角斗士们都会前去对抗这些可怕的生物，并以此测试自己的勇猛。</p><p><strong>永恒饥饿Everlasting Hunger。</strong>贪婪嗜吃的多头蛇会疯狂的咬食撕裂它的猎物。它们将一整个领地的食物吃个精光，并把所有胆敢阻挠自己的生物驱赶殆尽后，就会继续到别处寻找食物。多头蛇被强烈的饥饿感驱使，在无法获得食物时甚至会以自己为目标，它的几颗脑袋会互相攻击甚至吃掉对方来维持生命。</p><p><strong>结实的水栖者Hardy Water Dwllers。</strong>多头蛇是天生的泳者，它们栖息于河流、湖畔、浅海与湿地沼泽中。多头蛇不屑躲避元素生物，因而它们通常也不会筑巢。只有在寒冷的气候下，多头蛇才会寻找洞窟与遗迹以获得庇护。</p><p>多头蛇在睡觉时都会至少留着一颗脑袋保持清醒和警觉，因此很难成功对它们发动突袭。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Hydra",
+    "name": "多头蛇 Hydra (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "InNqCh0HWqK8EfIX",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hydra makes as many bite attacks as it has heads.</p></div>",
+          "value": "<p>多头蛇发动多次啃咬攻击，其攻击次数等同于其脑袋数量。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -928,7 +928,7 @@
     },
     {
       "_id": "3nalZFspGjvLaFDH",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -940,7 +940,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 10 ft., one target. <i>Hit:</i> 10 ([[/damage 1d10 + 5 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及10尺，单一目标。命中：10（[[/damage 1d10 + 5 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1218,7 +1218,7 @@
     },
     {
       "_id": "U7b71RcT8qkZYV0V",
-      "name": "Hold Breath",
+      "name": "屏息 Hold Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1230,7 +1230,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hydra can hold its breath for 1 hour.</p></div>",
+          "value": "<p>多头蛇可以憋气1小时。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1286,7 +1286,7 @@
     },
     {
       "_id": "tqolI8UbJ2DHfGeD",
-      "name": "Multiple Heads",
+      "name": "多头 Multiple Heads",
       "type": "feat",
       "system": {
         "source": {
@@ -1298,7 +1298,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being &amp;Reference[condition=blinded], &amp;Reference[condition=charmed], &amp;Reference[condition=deafened], &amp;Reference[condition=frightened], &amp;Reference[condition=stunned], and knocked &amp;Reference[condition=unconscious].</p><p>Whenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.</p><p>At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.</p></div>",
+          "value": "<p>多头蛇有五个脑袋，当它拥有的脑袋超过一个时，多头蛇进行抵抗目盲、魅惑、耳聋、恐慌、震慑和昏迷的豁免检定时具有优势。 当多头蛇在一回合内受到25点以上的伤害时，多头蛇的一个脑袋便会死去。当它所有脑袋死去时，多头蛇也随之死亡。 多头蛇在其自己回合结束时，会从其上一回合中死去脑袋处长出两颗新脑袋，除非它从上一回合开始的时间里曾遭受火焰伤害。每有一颗脑袋以该方式再生，多头蛇便回复10点生命值。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1502,7 +1502,7 @@
     },
     {
       "_id": "qtaQaopzR0IsLidv",
-      "name": "Reactive Heads",
+      "name": "多头反应 Reactive Heads",
       "type": "feat",
       "system": {
         "source": {
@@ -1514,7 +1514,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.</p></div>",
+          "value": "<p>多头蛇超过一个的每颗脑袋会使其多获得一次额外的反应，这些额外的反应只能用于借机攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1570,7 +1570,7 @@
     },
     {
       "_id": "E1H1GSfVTTYsuAGu",
-      "name": "Wakeful",
+      "name": "警醒 Wakeful",
       "type": "feat",
       "system": {
         "source": {
@@ -1582,7 +1582,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the hydra sleeps, at least one of its heads is awake.</p></div>",
+          "value": "<p>多头蛇在睡眠时至少留着一颗清醒的脑袋。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1638,7 +1638,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 36600000,
   "ownership": {
     "default": 0,

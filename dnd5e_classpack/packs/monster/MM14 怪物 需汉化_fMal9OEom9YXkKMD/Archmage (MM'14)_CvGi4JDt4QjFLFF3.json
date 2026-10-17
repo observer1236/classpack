@@ -1,5 +1,5 @@
 {
-  "name": "Archmage (MM'14)",
+  "name": "大法师 Archmage (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.</p><p>An archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers.</p></div></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Familiars\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Variant: Familiars</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h4> <p>Any spellcaster that can cast the <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"find%20familiar_phb\" data-vet-is-allow-redirect=\"true\">find familiar</span> spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell or some other Tiny monster, such as a <span class=\"bold\" data-vet-page=\"bestiary.html\" data-vet-source=\"MM\" data-vet-hash=\"crawling%20claw_mm\" data-vet-is-allow-redirect=\"true\">crawling claw</span>, <span class=\"bold\" data-vet-page=\"bestiary.html\" data-vet-source=\"MM\" data-vet-hash=\"imp_mm\" data-vet-is-allow-redirect=\"true\">imp</span>, <span class=\"bold\" data-vet-page=\"bestiary.html\" data-vet-source=\"MM\" data-vet-hash=\"pseudodragon_mm\" data-vet-is-allow-redirect=\"true\">pseudodragon</span>, or <span class=\"bold\" data-vet-page=\"bestiary.html\" data-vet-source=\"MM\" data-vet-hash=\"quasit_mm\" data-vet-is-allow-redirect=\"true\">quasit</span>.</p></div>",
+        "value": "<h3>大法师 Archmages</h3><p>大法师致力于奥秘技术的研究，他们是强大的（通常也是相当古老的）施法者。大法师里有辅助国君的仁义顾问，也有统治一方并追求巫妖之道的邪恶暴君。那些不倾向任何善恶阵营的大法师则把自己隔绝在遥远的塔楼里，专注于自己的魔法研究。</p><p>大法师身边通常跟着一名或多名的魔法学徒，而大法师的住处通常存放着许多充满魔力的魔杖，并由大批警卫看守随时准备抵御入侵者。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Archmage",
+    "name": "大法师 Archmage (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "H4jnEVG3BpBUEl2B",
-      "name": "Dagger",
+      "name": "匕首 Dagger",
       "type": "weapon",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or Ranged Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft. or range 20/60 ft., one target. <i>Hit:</i> 4 ([[/damage 1d4 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战或远程武器攻击：命中+6，触及5尺或射程20/60尺，单一目标。命中：4（[[/damage 1d4 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1006,7 +1006,7 @@
     },
     {
       "_id": "vh4Aa6JwACOx6BEy",
-      "name": "Magic Resistance",
+      "name": "魔法抗性 Magic Resistance",
       "type": "feat",
       "system": {
         "source": {
@@ -1018,7 +1018,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The archmage has advantage on saving throws against spells and other magical effects.</p></div>",
+          "value": "<p>大法师抵抗法术和其他魔法效应时进行的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1074,7 +1074,7 @@
     },
     {
       "_id": "jpWgZ0Vxxm7dXFvO",
-      "name": "Fire Bolt",
+      "name": "火焰箭 Fire Bolt",
       "type": "spell",
       "system": {
         "source": {
@@ -1086,7 +1086,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes [[/damage 1d10 type=fire]] damage. A flammable object hit by this spell ignites if it isn't being worn or carried.</p><p>This spell's damage increases by [[/damage 1d10]] when you reach 5th level ([[/damage 2d10]]), 11th level ([[/damage 3d10]]), and 17th level ([[/damage 4d10]]).</p></div>",
+          "value": "<p>你对施法距离内一个生物或物件掷出一把火焰，对目标进行一次远程法术攻击。若命中，则目标受到 [[/damage 1d10 type=fire]]{1d10} 点火焰伤害。未被着装或携带的可燃物件被该法术命中时将被点燃。</p><p>你到达 5 级时，该法术的伤害增加 1d10（变为 2d10）。11 级时再加 1d10（变为 3d10），17 级时再加 1d10（变为 4d10）。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1352,7 +1352,7 @@
     },
     {
       "_id": "0mhwpg1OIJAW5kZh",
-      "name": "Light",
+      "name": "光亮术 Light",
       "type": "spell",
       "system": {
         "source": {
@@ -1364,7 +1364,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.</p><p>If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.</p></div>",
+          "value": "<p>你触碰一个尺寸在任意方向上都不超过 10 尺的物件。在法术终止前，物件将在其 20 尺半径范围内发出明亮光照，并在其外 20 尺范围发出微光光照。光的颜色由你决定，该物件被不透明的东西完全遮盖时，其光照被遮挡。如果你再次施展该法术，或者使用一个动作解散该法术，则该法术终止。</p><p>如果你指定敌对生物所持握或着装的一个物件作为目标，则该生物必须进行一次敏捷豁免以尝试摆脱该法术的效应。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1607,7 +1607,7 @@
     },
     {
       "_id": "8P1K5f1xm8Vxnb6w",
-      "name": "Mage Hand",
+      "name": "法师之手 Mage Hand",
       "type": "spell",
       "system": {
         "source": {
@@ -1619,7 +1619,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p></div>",
+          "value": "<p>一只漂浮的幽灵手出现在施法距离内你指定的一点。幽灵手持续存在至法术终止，或直至你以一个动作解散该法术。如果幽灵手距你的距离超过 30 尺，或者当你再次施展了该法术时，则现存的幽灵手消失不见。</p><p>你可以用动作控制幽灵手，并通过幽灵手实现一个行为：你可以操控一个物件，或者打开一扇未上锁的门或容器，或者将一件物品放入容器或从容器中取出，或者将小瓶中的内容物倾倒出来。你每次你使用幽灵手时可以令其移动至多 30 尺。</p><p>该幽灵手不能攻击，也不能激活魔法物品或承载超过 10 磅重的物质。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1875,7 +1875,7 @@
     },
     {
       "_id": "LO74VzxM23jmIk1t",
-      "name": "Prestidigitation",
+      "name": "魔法伎俩 Prestidigitation",
       "type": "spell",
       "system": {
         "source": {
@@ -1887,7 +1887,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:</p><ul class=\"rd__list\"><li class=\"rd__li \">You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</li><li class=\"rd__li \">You instantaneously light or snuff out a candle, a torch, or a small campfire.</li><li class=\"rd__li \">You instantaneously clean or soil an object no larger than 1 cubic foot.</li><li class=\"rd__li \">You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</li><li class=\"rd__li \">You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</li><li class=\"rd__li \">You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</li></ul><p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p></div>",
+          "value": "<p>该法术是一个初级施法者用来练习的魔法小伎俩。你在施法距离内创造下列魔法效果中的一种：</p><ul><li>你创造一个立即生效的，无害的感观效应，比如一束火花，一阵风，微弱音乐或古怪的臭味。</li><li>你立即点燃或熄灭一支蜡烛，一支火把或一小型营火。</li><li>你立即使一个不大于 1 立方尺的物件变得清洁或肮脏。</li><li>你立即使一个不大于 1 立方尺的非活体物质变得冰冷、温暖或对其调味，其效应持续 1 小时。</li><li>你在一个物件或一个表面上创造一块色斑，或者一个记号，又或者一个标志，其效应持续 1 小时。</li><li>你在你手中创造出一个非魔法的小饰品或一个幻术的图像，其大小不能超过你的手掌大小，它会存在持续至下个你的回合结束为止。<br>（译注：此处的“小饰品”是Trinket，可以参考装备的饰品Trinkets一章的内容。根据设计师的说法，其本质具体取决于你的DM。）</li></ul><p>如果你多次施展该法术，则可以同时维持至多三个不同的非即时效应，并且可以用一个动作解散其中一种效应。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2116,7 +2116,7 @@
     },
     {
       "_id": "mAwOKGdcrmXwfAq6",
-      "name": "Shocking Grasp",
+      "name": "电爪 Shocking Grasp",
       "type": "spell",
       "system": {
         "source": {
@@ -2128,7 +2128,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes [[/damage 1d8 type=lightning]] damage, and it can't take reactions until the start of its next turn.</p><p>The spell's damage increases by [[/damage 1d8]] when you reach 5th level ([[/damage 2d8]]), 11th level ([[/damage 3d8]]), and 17th level ([[/damage 4d8]]).</p></div>",
+          "value": "<p>你的手上发出闪电，并对你触碰的一个生物发动电击。对目标发动一次近战法术攻击。如果目标穿着金属护甲，则你进行该检定时具有优势。若命中，则目标受到 [[/damage 1d8 type=lightning]]{1d8} 点闪电伤害，并且在其下一回合开始前不能执行任何反应。</p><p>你到达 5 级时，该法术的伤害增加 1d8（变为 2d8）。11 级时再加 1d8（变为 3d8），17 级时再加 1d8（变为 4d8）。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2394,7 +2394,7 @@
     },
     {
       "_id": "SprVP3s7ApfkEbCz",
-      "name": "Detect Magic",
+      "name": "侦测魔法 Detect Magic",
       "type": "spell",
       "system": {
         "source": {
@@ -2406,7 +2406,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its <span class=\"bold\">school of magic</span>, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p></div>",
+          "value": "<p>你在法术持续时间内能感测到30尺内存在的魔法。感测到魔法的存在后，你可以使用动作，来看到任何你能看见的具有魔法的生物或物件周围环绕着微弱的灵光，并分辨出其所属的魔法学派（若有）。该法术可以穿透大部分障碍，但仍会被1尺厚石质，或1寸厚金属质，或一层薄铅质，或3尺厚木质或泥质材料阻隔。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2642,7 +2642,7 @@
     },
     {
       "_id": "4fK2hylDKvHZeu0U",
-      "name": "Identify",
+      "name": "鉴定术 Identify",
       "type": "spell",
       "system": {
         "source": {
@@ -2654,7 +2654,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.</p><p>If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.</p></div>",
+          "value": "<p>你指定一个物件，并在施法过程中一直与其保持接触。如果该物件是魔法物品或其他附有魔力的物件，则你将知晓其属性和使用方式，以及了解是否需要与之同调。若它是充能物品则你将得知它现存的可用次数。你还可以知晓是否有法术正影响该物件，以及具体是哪些法术。如果该物件由法术所创，你将知晓具体哪项法术创造了这个物件。</p><p>你也可以改为在施法过程中一直接触一名生物，而你将知晓正在影响该生物的那些法术（若有）是哪些法术。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2885,7 +2885,7 @@
     },
     {
       "_id": "HkCQbkLlrNpgv9Rz",
-      "name": "Mage Armor",
+      "name": "法师护甲 Mage Armor",
       "type": "spell",
       "system": {
         "source": {
@@ -2897,7 +2897,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.</p></div>",
+          "value": "<p>你触碰一个未着装护甲的自愿生物，使其受一个保护性魔法力场环绕直至法术终止。目标的基础 AC 变为 13+它的敏捷调整值。目标着装护甲或你以一个动作解散该法术后法术随之终止。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3132,7 +3132,7 @@
             }
           },
           "tint": "#ffffff",
-          "name": "Mage Armor",
+          "name": "法师护甲 Mage Armor",
           "description": "<p>The target's base AC becomes 13 + its Dexterity modifier.</p>",
           "statuses": [],
           "_stats": {
@@ -3198,7 +3198,7 @@
     },
     {
       "_id": "ihyqA8ouBY4SEacv",
-      "name": "Magic Missile",
+      "name": "魔法飞弹 Magic Missile",
       "type": "spell",
       "system": {
         "source": {
@@ -3210,7 +3210,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals [[/damage 1d4 + 1 type=force]] damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p></div></div>",
+          "value": "<p>你创造三枚由魔法力场形成的闪光飞镖，并让每发飞镖命中施法距离内你能看见的指定生物。每发飞镖对目标造成 [[/damage 1d4+1 type=force]]{1d4+1} 的力场伤害。所有飞镖将同时命中目标，而你还可以指定它们击中同一个目标或是分别击中几个目标。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，该法术就会多制造出一支飞镖。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3451,7 +3451,7 @@
     },
     {
       "_id": "ytpAyAPtvJHOmKII",
-      "name": "Detect Thoughts",
+      "name": "侦测思想 Detect Thoughts",
       "type": "spell",
       "system": {
         "source": {
@@ -3463,7 +3463,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.</p><p>You initially learn the surface thoughts of the creature—what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.</p><p>Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.</p><p>You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.</p><p>Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.</p></div>",
+          "value": "<p>你在法术持续时间内能读取特定生物的思想。你可以在施展法术时，或者在法术持续时间内以一个动作实现该效应。此时，受术生物必须身处你 30 尺内并且能被你看见，而你必须对其集中注意力。如果该生物智力为 3 或更低，或者不懂任何语言，则该生物不受影响。</p><p>你最初了解的是该生物的表面想法，一般就是其此刻正想着的东西。你可以使用动作继续深入一个生物的思想，也可以用动作转移读心的目标。如果你继续深入，则目标必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}。豁免失败时，你了解到他的逻辑推理（如果有的话）、情绪状态以及他头脑中的一些大事（比如忧虑、挚爱和仇恨的事物）。豁免成功时，本法术终止。无论哪种情况，目标都会知道你正在窥探他的思想。除非你转移注意力到其他生物，否则他可以在其回合内使用动作进行一次智力检定，并与你的智力检定作对抗；生物胜出对抗时，法术终止。</p><p>向目标提问可以引导目标的思想历程，因此此法术在审讯中特别有效。</p><p>你还能用此法术侦测看不见的有思维生物。你可以在施展法术时，或者在法术持续时间内以一个动作实现该效应。此时，你可以搜寻 30 尺内的思想。该法术可以穿透大部分障碍，但仍会被 2 尺厚的石质，或 2 寸厚的金属质，或一层薄铅质材料所阻隔。你无法侦测到智力为 3 或更低的生物，也无法侦测不懂任何语言的生物。</p><p>以该方式侦测到一个生物后，你可以在法术持续时间内如上文所述的读取其思想。你甚至不需要看见该生物，但其必须在其 30 尺内。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3706,7 +3706,7 @@
     },
     {
       "_id": "1pPcRugIKyEnXa7i",
-      "name": "Mirror Image",
+      "name": "镜影术 Mirror Image",
       "type": "spell",
       "system": {
         "source": {
@@ -3718,7 +3718,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.</p><p>Each time a creature targets you with an attack during the spell's duration, roll a [[/r d20]] to determine whether the attack instead targets one of your duplicates.</p><p>If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.</p><p>A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.</p><p>A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with &amp;Reference[rule=truesight].</p></div>",
+          "value": "<p>三个与你自身一模一样的幻象分身出现在你所处的空间中。直至法术终止前，所有分身都会随你移动、模仿你的动作、并不断地变换位置，使人无法追踪判断哪个是你的分身哪个是你的真身。分身存在期间，你可以用动作来消解这些幻象分身。</p><p>在法术持续时间内，每当有生物以你为目标发动攻击时，其攻击都有概率改为以三个分身之一为目标，你掷一枚d20：</p><p>如果你有三个分身，则你必须掷出 6 或更高数值才能使此次攻击的目标改为分身；</p><p>如果你有两个分身，则你必须掷出 8 或更高数值；</p><p>如果你有一个分身，则你必须掷出 11 或更高数值。</p><p>每个分身的AC都等于10+你的敏捷调整值。如果一次攻击命中了分身，该分身将立即被摧毁。分身只会被命中它的攻击摧毁，其无视所有其他的伤害和效应。三个分身全部被毁后此法术提前终止。</p><p>如果一个生物无法视物、它可以依靠视觉之外的其他感官视物（例如盲视），又或者它可以看破幻象（例如真实视觉），则该生物将不受此法术影响。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3946,7 +3946,7 @@
     },
     {
       "_id": "Pafc8pIbnmWFlV4w",
-      "name": "Misty Step",
+      "name": "迷踪步 Misty Step",
       "type": "spell",
       "system": {
         "source": {
@@ -3958,7 +3958,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p></div>",
+          "value": "<p>你短暂地被银白的雾气所笼罩，传送到至多 30 尺内一个你能看见且未被占据的位置。</p>",
           "chat": ""
         },
         "level": 2,
@@ -4186,7 +4186,7 @@
     },
     {
       "_id": "7IgJwYyBUFb0e7Nc",
-      "name": "Counterspell",
+      "name": "法术反制 Counterspell",
       "type": "spell",
       "system": {
         "source": {
@@ -4198,7 +4198,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p></div></div>",
+          "value": "<p>你试图打断一个生物正在施展的一个法术。如果该生物正在施展三环或更低环阶法术，则其法术失败且不产生任何效应。如果该生物正在施展四环或更高环阶法术，则你以施法属性进行一次属性检定，其检定 DC 等于 10+目标法术的环阶。检定成功则目标法术失败且不产生任何效应。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，如果被打断法术的环阶不高于你所用的法术位环阶，则该目标法术直接被打断。</p>",
           "chat": ""
         },
         "level": 3,
@@ -4426,7 +4426,7 @@
     },
     {
       "_id": "SOGMdujtFeoNajJc",
-      "name": "Fly",
+      "name": "飞行术 Fly",
       "type": "spell",
       "system": {
         "source": {
@@ -4438,7 +4438,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p></div></div>",
+          "value": "<p>你触碰一个自愿生物，并使该目标在法术持续时间内获得 60 尺的飞行速度。法术终止时，如果目标仍在空中则随即坠落。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，就可以额外再指定一个生物作为法术目标。</p>",
           "chat": ""
         },
         "level": 3,
@@ -4670,7 +4670,7 @@
     },
     {
       "_id": "R39kHT7aMuDyDdTc",
-      "name": "Lightning Bolt",
+      "name": "闪电束 Lightning Bolt",
       "type": "spell",
       "system": {
         "source": {
@@ -4682,7 +4682,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes [[/damage 8d6 type=lightning]] damage on a failed save, or half as much damage on a successful one.</p><p>The lightning ignites flammable objects in the area that aren't being worn or carried.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 4th level or higher, the damage increases by [[/damage 1d6]] for each slot level above 3rd.</p></div></div>",
+          "value": "<p>一束 100 尺长，5 尺宽的线状闪电从你的位置向你指定的任意方向爆发迸出。在线状区域内的每个生物必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}，豁免失败者将受到 [[/damage 8d6 type=lightning]]{8d6} 的闪电伤害，豁免成功则伤害减半。</p><p>闪电会将区域内未被着装或携带的可燃物件点燃。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，伤害就增加 1d6。</p>",
           "chat": ""
         },
         "level": 3,
@@ -4942,7 +4942,7 @@
     },
     {
       "_id": "IsSh0EW5RdC0t4nf",
-      "name": "Banishment",
+      "name": "放逐术 Banishment",
       "type": "spell",
       "system": {
         "source": {
@@ -4954,7 +4954,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.</p><p>If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is &amp;Reference[condition=incapacitated]. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p><p>If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</p></div></div>",
+          "value": "<p>你试图将一名你能看见的生物送往另一位面。目标必须进行一次[[/save activity=dnd5eactivity000]]{魅力豁免}并成功通过，否则将被放逐。</p><p>如果目标是你所处位面的原住民，则他被放逐到一个无害的半位面。在半位面期间该生物处于&amp;Reference[condition=incapacitated apply=false]{失能}状态。法术终止时，目标重新出现在被放逐前的空间。如果该空间被占据，则它将出现在最近的未占据空间。</p><p>如果目标不是你所处位面的原住民，则他会伴随着轻微的“啪”一声被放逐回其家园位面。如果法术在 1 分钟过去之前终止，则目标将在他被放逐前的空间重新出现。如果该空间被占据，则他在最近的未占据空间出现。如果法术在持续 1 分钟后终止，则目标不会回到原地。</p><p><strong>升环施法效应。</strong>使用五环或更高法术位施展该法术时，你使用的法术位每比四环高一环，就能多指定一个目标。</p>",
           "chat": ""
         },
         "level": 4,
@@ -5190,7 +5190,7 @@
       },
       "effects": [
         {
-          "name": "Banishment",
+          "name": "放逐术 Banishment",
           "origin": null,
           "duration": {
             "value": 60,
@@ -5263,7 +5263,7 @@
     },
     {
       "_id": "YbzBsTsASBqsyhJI",
-      "name": "Fire Shield",
+      "name": "火焰护盾 Fire Shield",
       "type": "spell",
       "system": {
         "source": {
@@ -5275,7 +5275,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.</p><p>The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage.</p><p>In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes [[/damage 2d8 type=fire]] damage from a warm shield, or [[/damage 2d8 type=cold]] damage from a cold shield.</p></div>",
+          "value": "<p>轻薄缥缈的火焰在法术持续期间环绕着你的身体，散发出10尺半径的明亮光照和再延伸10尺的微光光照。你可以借由使用一个动作解消它以提早结束此法术。</p><p>这层火焰可以提供你温暖的护盾或寒冷的护盾，由你选择。温暖的护盾将赋予你对寒冷伤害的抗性，而寒冷的护盾则会赋予你对火焰伤害的抗性。</p><p>此外，每当一个距离你5尺内的生物以一次近战攻击命中你时，这个护盾将迸发出火焰袭击攻击者。温暖护盾将对攻击者造成[[/damage 2d8 type=fire]]{2d8}点火焰伤害，寒冷护盾将对攻击者造成[[/damage 2d8 type=cold]]{2d8}点寒冷伤害。</p>",
           "chat": ""
         },
         "level": 4,
@@ -5532,7 +5532,7 @@
           "origin": null,
           "tint": "#ffffff",
           "transfer": false,
-          "name": "Warm Shield",
+          "name": "暖盾 Warm Shield",
           "description": "<p>The warm shield grants you Resistance to cold damage.</p>",
           "statuses": [],
           "_stats": {
@@ -5597,7 +5597,7 @@
           "origin": null,
           "tint": "#ffffff",
           "transfer": false,
-          "name": "Chill Shield",
+          "name": "冷盾 Chill Shield",
           "description": "<p>The chill shield grants you resistance to fire damage.</p>",
           "statuses": [],
           "_stats": {
@@ -5663,7 +5663,7 @@
     },
     {
       "_id": "Pddnd3yNIYNC8wmS",
-      "name": "Stoneskin",
+      "name": "石肤术 Stoneskin",
       "type": "spell",
       "system": {
         "source": {
@@ -5675,7 +5675,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.</p></div>",
+          "value": "<p>该法术使你触碰的一个自愿生物皮肤变得硬如岩石。目标在法术终止前对非魔法的钝击、穿刺和挥砍伤害具有抗性。</p>",
           "chat": ""
         },
         "level": 4,
@@ -5914,7 +5914,7 @@
               "dedupeId": "stoneskin"
             }
           },
-          "name": "Stoneskin",
+          "name": "石肤术 Stoneskin",
           "description": "<p>The target has resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>",
           "statuses": [],
           "_stats": {
@@ -6010,7 +6010,7 @@
     },
     {
       "_id": "9HPrYi1znfnKddJk",
-      "name": "Cone of Cold",
+      "name": "寒冰锥 Cone of Cold",
       "type": "spell",
       "system": {
         "source": {
@@ -6022,7 +6022,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes [[/damage 8d8 type=cold]] damage on a failed save, or half as much damage on a successful one.</p><p>A creature killed by this spell becomes a frozen statue until it thaws.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 6th level or higher, the damage increases by [[/damage 1d8]] for each slot level above 5th.</p></div></div>",
+          "value": "<p>一片冷空气从你手上迸发而出。在 60 尺锥状区域内的每个生物必须进行一次[[/save activity=dnd5eactivity000]]{体质豁免}。豁免失败者将受到 [[/damage 8d8 type=cold]]{8d8} 点寒冷伤害，豁免成功则伤害减半。</p><p>被该法术杀死的生物将成为一尊冰冻塑像并持续至被解冻。</p><p><strong>升环施法效应。</strong>使用六环或更高法术位施展该法术时，你使用的法术位每比五环高一环，法术伤害就增加 1d8。</p>",
           "chat": ""
         },
         "level": 5,
@@ -6282,7 +6282,7 @@
     },
     {
       "_id": "ogU5u1RAdtaiKGhd",
-      "name": "Scrying",
+      "name": "探知 Scrying",
       "type": "spell",
       "system": {
         "source": {
@@ -6294,7 +6294,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Knowledge of Target\"><caption>Knowledge of Target</caption><thead><tr><th class=\"rd__th ve-col-11 \" data-rd-isroller=\"false\">Knowledge</th><th class=\"rd__th ve-col-1 ve-text-center \" data-rd-isroller=\"false\">Save Modifier</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-11 \">Secondhand (you have heard of the target)</td><td class=\"rd__th ve-col-1 ve-text-center \">+5</td></tr><tr><td class=\"rd__th ve-col-11 \">Firsthand (you have met the target)</td><td class=\"rd__th ve-col-1 ve-text-center \">+0</td></tr><tr><td class=\"rd__th ve-col-11 \">Familiar (you know the target well)</td><td class=\"rd__th ve-col-1 ve-text-center \">-5</td></tr></tbody></table><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Connection to Target\"><caption>Connection to Target</caption><thead><tr><th class=\"rd__th ve-col-11 \" data-rd-isroller=\"false\">Connection</th><th class=\"rd__th ve-col-1 ve-text-center \" data-rd-isroller=\"false\">Save Modifier</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-11 \">Likeness or picture</td><td class=\"rd__th ve-col-1 ve-text-center \">-2</td></tr><tr><td class=\"rd__th ve-col-11 \">Possession or garment</td><td class=\"rd__th ve-col-1 ve-text-center \">-4</td></tr><tr><td class=\"rd__th ve-col-11 \">Body part, lock of hair, bit of nail, or the like</td><td class=\"rd__th ve-col-1 ve-text-center \">-10</td></tr></tbody></table><p>On a successful save, the target isn't affected, and you can't use this spell against it again for 24 hours.</p><p>On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see &amp;Reference[condition=invisible] objects sees the sensor as a luminous orb about the size of your fist.</p><p>Instead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn't move.</p></div>",
+          "value": "<p>你能看见和听见一个和你处于同一存在位面上的生物。目标生物必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}；该豁免的调整值与你对目标的了解程度有关，也与你和目标之间的物理联系程度有关。如果目标知道你在施展该法术，而它又愿意被你观察，则它可以自愿放弃该豁免。</p><table><thead><tr><th><strong>了解程度</strong></th><th><strong>豁免调整值</strong></th><th></th><th><strong>联系程度</strong></th><th><strong>豁免调整值</strong></th></tr></thead><tbody><tr><td>二手信息（你曾经听说过受术者）</td><td>+5</td><td></td><td>肖像或图像</td><td>-2</td></tr><tr><td>直接信息（你曾经见过受术者）</td><td>+0</td><td></td><td>所有物或衣物</td><td>-4</td></tr><tr><td>熟悉（你对受术者很了解）</td><td>-5</td><td></td><td>身体部位，头发，指甲或类似物件</td><td>-10</td></tr></tbody></table><p>如果对方豁免成功，则目标不受该法术影响，并且在 24 小时内你不能尝试探知同一个目标。</p><p>如果对方豁免失败，则你在目标身边 10 尺内创造出一个隐形的传感器。通过传感器，你可以身临其境地看见和听见周围的环境。传感器会跟随目标移动，并在法术持续时间内始终保持在目标 10 尺之内。在能够看破隐形的生物眼中，你的探传感器是一个拳头大小的光球。</p><p>除生物之外，你也可以选择一个你以前见过的地点作为该法术的目标。这时，传感器会出现在目标地点且不会移动。</p>",
           "chat": ""
         },
         "level": 5,
@@ -6539,7 +6539,7 @@
     },
     {
       "_id": "tM0LQ6gkUO9vMDvK",
-      "name": "Wall of Force",
+      "name": "力场墙 Wall of Force",
       "type": "spell",
       "system": {
         "source": {
@@ -6551,7 +6551,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).</p><p>Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by @spell[dispel magic]. A @spell[disintegrate] spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall.</p></div>",
+          "value": "<p>由力场构成的隐形力墙出现在施法距离内你指定的一点上。这面力墙的方向由你决定：你可以使力墙成为水平或垂直的结界，亦可以使它形成一定倾角。它可以浮在空中，也可以立于地上。你可以将它塑成半球状或球状（半径最长 10 尺），也可以塑成一个由十个 10 尺×10 尺的方板块构成的平面，而每块板块都必须要和至少一块其他板块相连。不管形状如何，力墙的厚度总是 1/4 寸。力场墙将持续存在至法术终止。如果力墙形成时穿过了某个生物所占据的空间，则该生物会被推到力墙的一侧（由你决定推到哪一侧）。</p><p>没有任何事物可以通过物理方式穿过力墙。力墙免疫所有伤害，也不能被解除魔法 dispel magic所解除，但法术解离术 disintegrate可以使其立即摧毁。力墙能够延伸进以太位面，因此可以阻断进入以太位面穿过墙壁旅行。</p>",
           "chat": ""
         },
         "level": 5,
@@ -6780,7 +6780,7 @@
     },
     {
       "_id": "rKsSCpr2izXYA0uC",
-      "name": "Globe of Invulnerability",
+      "name": "法术无效结界 Globe of Invulnerability",
       "type": "spell",
       "system": {
         "source": {
@@ -6792,7 +6792,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>An immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration.</p><p>Any spell of 5th level or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th.</p></div></div>",
+          "value": "<p>一个固定的微光屏障从你周围半径 10 尺区域内涌现并在法术持续时间内维持存在。</p><p>任何在屏障外施放的五环或更低环阶的法术无法影响其内的生物或物件，这些法术即使以升环施法施展也无法突破该限制。这些法术可以以屏障内的生物或物件为目标，但无法对其生效。其效果有如屏障内的区域被排除在法术效应范围之外。</p><p><strong>升环施法效应。</strong>当你使用七环或更高法术位施展该法术时，你使用的法术位每比六环高一环，屏障能阻挡的法术就高一环。</p>",
           "chat": ""
         },
         "level": 6,
@@ -7022,7 +7022,7 @@
     },
     {
       "_id": "PXzLTnDAW0XzQW8O",
-      "name": "Teleport",
+      "name": "传送术 Teleport",
       "type": "spell",
       "system": {
         "source": {
@@ -7034,7 +7034,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature.</p><p>The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls [[/r d100]] and consults the table.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Teleportation\"><caption>Teleportation</caption><thead><tr><th class=\"rd__th ve-col-8 \" data-rd-isroller=\"false\">Familiarity</th><th class=\"rd__th ve-col-1 ve-text-center no-wrap \" data-rd-isroller=\"false\">Mishap</th><th class=\"rd__th ve-col-1 ve-text-center no-wrap \" data-rd-isroller=\"false\">Similar Area</th><th class=\"rd__th ve-col-1 ve-text-center no-wrap \" data-rd-isroller=\"false\">Off Target</th><th class=\"rd__th ve-col-1 ve-text-center no-wrap \" data-rd-isroller=\"false\">On Target</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-8 \">Permanent circle</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">—</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">—</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">—</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">01–100</td></tr><tr><td class=\"rd__th ve-col-8 \">Associated object</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">—</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">—</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">—</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">01–100</td></tr><tr><td class=\"rd__th ve-col-8 \">Very familiar</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">01–05</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">06–13</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">14–24</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">25–100</td></tr><tr><td class=\"rd__th ve-col-8 \">Seen casually</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">01–33</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">34–43</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">44–53</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">54–100</td></tr><tr><td class=\"rd__th ve-col-8 \">Viewed once</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">01–43</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">44–53</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">54–73</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">74–100</td></tr><tr><td class=\"rd__th ve-col-8 \">Description</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">01–43</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">44–53</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">54–73</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">74–100</td></tr><tr><td class=\"rd__th ve-col-8 \">False destination</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">01–50</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">51–100</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">—</td><td class=\"rd__th ve-col-1 ve-text-center no-wrap \">—</td></tr></tbody></table><div data-roll-name-ancestor=\"Familiarity\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Familiarity.</span></span> \"Permanent circle\" means a permanent teleportation circle whose sigil sequence you know. \"Associated object\" means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.</p></div><p>\"Very familiar\" is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell. \"Seen casually\" is someplace you have seen more than once but with which you aren't very familiar. \"Viewed once\" is a place you have seen once, possibly using magic. \"Description\" is a place whose location and appearance you know through someone else's description, perhaps from a map.</p><p>\"False destination\" is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.</p><div data-roll-name-ancestor=\"On Target\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">On Target.</span></span> You and your group (or the target object) appear where you want to.</p></div><div data-roll-name-ancestor=\"Off Target\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Off Target.</span></span> You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is [[/r 1d10 * 1d10]]{1d10 × 1d10} percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two [[/r d10]]s, then you would be off target by 15 percent, or 18 miles. The DM determines the direction off target randomly by rolling a [[/r d8]] and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.</p></div><div data-roll-name-ancestor=\"Similar Area\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Similar Area.</span></span> You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.</p></div><div data-roll-name-ancestor=\"Mishap\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Mishap.</span></span> The spell's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes [[/damage 3d10 type=force]] damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</p></div></div>",
+          "value": "<p>该法术将你以及施法距离内你能看见的至多八个自愿生物，或者施法距离内你能看见的一个物件传送到你指定的某处地点。如果你指定一个物件作为法术目标，则该物件必须能被整个放进一个边长 10 尺的立方体中，且必须没有被一个非自愿生物所着装或携带。</p><p>你只能指定你知道的地点作为传送目的地，而目的地必须与你位于同一个存在位面中。你对目的地的熟悉程度决定你是否能成功抵达。DM 可以掷一个 d100 并查阅下表。</p><table><thead><tr><th><strong>熟悉程度</strong></th><th><strong>遇难</strong></th><th><strong>相似地区</strong></th><th><strong>偏离地点</strong></th><th><strong>抵达地点</strong></th></tr></thead><tbody><tr><td>永久法阵</td><td>-</td><td>-</td><td>-</td><td>01~100</td></tr><tr><td>相关物件</td><td>-</td><td>-</td><td>-</td><td>01~100</td></tr><tr><td>非常熟悉</td><td>01~05</td><td>06~13</td><td>14~24</td><td>25~100</td></tr><tr><td>偶尔见过</td><td>01~33</td><td>34~43</td><td>44~53</td><td>54~100</td></tr><tr><td>见过一次</td><td>01~43</td><td>44~53</td><td>54~73</td><td>74~100</td></tr><tr><td>听过描述</td><td>01~43</td><td>44~53</td><td>54~73</td><td>74~100</td></tr><tr><td>查无此地</td><td>01~50</td><td>51~100</td><td>-</td><td>-</td></tr></tbody></table><p><strong>熟悉程度Familiarity。</strong>“永久法阵”指你知道某永久传送法阵的相关符文序列。“相关物件”指你持有一件在过去六个月内从目标地点取来的物件，例如某个法师图书馆内的一本书，某个皇家卧室里床上的亚麻线或某巫妖陵墓里的一块大理石。</p><blockquote><p><strong>“非常熟悉”</strong>指的是你常去的地方，你仔细研究过的地方，或是你在施展该法术时能看见的地方。“偶尔见过”指你见过几次的地方，但你不是很熟悉</p><p><strong>“见过一次”</strong>指你只见过一次的地方，包括通过魔法看到的地点。“听过描述”指一个你从别人那里听来位置和外观的地点，比如从地图上看来的地点。</p><p><strong>“查无此地”</strong>指根本不存在的地点。也许你尝试探知敌人的密室但看到的只是幻象，或者是一个你曾经熟悉但如今已不再存在的地点。</p></blockquote><p><strong>抵达地点On Target。</strong>你和你的队伍（或目标物件）出现在你意料中的地点。</p><p><strong>偏离</strong><strong>地点</strong><strong>Off Target。</strong>你和你的队伍（或目标物件）出现在目的地随机方向上随机距离的一点。距离误差等于原定移动距离×1d10×1d10×1%。例如，假设你尝试移动 120 里而不幸偏离目标，并且在掷距离误差时两个 d10 投出了 5 和 3，那么你的传送距离误差是原定移动距离的 15%，也就是 18 里。DM 通过掷一次 d8 来判误差出现在目的地的哪个方向。1 为正北，2 为东北，3 为正东，依此类推。如果你们想要传送到一个海滨城市但却出现在离岸 18 里远的海上，那你们可有麻烦了。</p><p><strong>相似地区Similar Area。</strong>你和你的队伍（或目标物件）出现在一个和目的地外观或氛围相似的不同地点。例如，如果你想回你自己的研究室去，则你可能会误打误撞出现在其他法师的研究室里，或是一个陈设有许多和你的研究室里相似工具的炼金用品店。通常你会出现在离目的地最近的相似地区，但由于该法术没有距离限制，你有可能会出现在同一个位面上的任何地点。</p><p><strong>遇难Mishap。</strong>该法术的意外魔法效果导致这次旅行特别艰难。尝试传送的所有生物（或目标物件）受到 [[/damage 3d10 type=force]]{3d10} 点力场伤害，随后 DM 重骰 d100 并查阅上表来决定你们出现在哪里（你们可能再次遇难，而每次遇难都要承受该伤害）。</p>",
           "chat": ""
         },
         "level": 7,
@@ -7262,7 +7262,7 @@
     },
     {
       "_id": "prun1DvNlsA030q4",
-      "name": "Mind Blank",
+      "name": "心灵屏障 Mind Blank",
       "type": "spell",
       "system": {
         "source": {
@@ -7274,7 +7274,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the &amp;Reference[condition=charmed] condition. The spell even foils @spell[wish] spells and spells or effects of similar power used to affect the target's mind or to gain information about the target.</p></div>",
+          "value": "<p>直至法术终止前，你所触碰的一个自愿生物对下列项目具有免疫：心灵伤害；任何可以感知到其情绪或阅读其思想的效应；预言法术；&amp;Reference[condition=charmed apply=false]{魅惑}状态。当目标受<em>祈愿术wish</em>或者其他威力相当的法术或效应影响心智或窃获信息时，该法术也能为其阻挡那些法术或效应。</p>",
           "chat": ""
         },
         "level": 8,
@@ -7502,7 +7502,7 @@
     },
     {
       "_id": "i1K1d1ensCViSGpD",
-      "name": "Time Stop",
+      "name": "时间停止 Time Stop",
       "type": "spell",
       "system": {
         "source": {
@@ -7514,7 +7514,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take [[/r 1d4 + 1]] turns in a row, during which you can use actions and move as normal.</p><p>This spell ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it.</p></div>",
+          "value": "<p>你使时间在除你之外所有生物的世界中暂时停止流动。你一次性进行 1d4+1 个回合，在这段过程内时间对于其他生物来说是静止的，但你可以像正常一样移动和使用动作。</p><p>在法术持续时间内，如果你的一个动作或任何你创造出来的效应影响到除你之外的任何生物，或影响到其他生物着装或携带的物件时，该法术将立即终止。此外，如果你在施法后移动离开施法位置超过 1000 尺，则法术也将因此终止。</p>",
           "chat": ""
         },
         "level": 9,
@@ -7740,7 +7740,7 @@
     },
     {
       "_id": "5Hy5nnvZQ5NSkGCj",
-      "name": "Disguise Self",
+      "name": "易容术 Disguise Self",
       "type": "spell",
       "system": {
         "source": {
@@ -7752,7 +7752,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.</p><p>The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.</p><p>To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (&amp;Reference[skill=Investigation]) check against your spell save DC.</p></div>",
+          "value": "<p>你改变自身以及随身的衣物、护甲、武器等所有物。该效应在法术终止或你使用动作主动解除时结束。肉眼看来你的身高可以有 1 尺的增减，体态可胖可瘦可匀称。但是你不能改变身体的形状，所以你变形的样子必须有四肢或类似的生理结构。此外，幻术的影响范围由你决定。</p><p>此法术产生的变化无法应对物理检查。比如，你用此法术添了一顶帽子，那么现实物件会从帽子穿过去，且任何触碰帽子的人将摸不到任何东西或者摸到的是你的头和头发。如果你用该法术让自己变得消瘦，而某个人用手摸到你时，他的手看起来就像摸着空气。</p><p>如果一个生物想要分辨你是否易容，则必须使用一个动作揭露你的伪装，并进行一次[[/check ability=int skill=inv]]{智力（调查）检定}以对抗你的法术豁免 DC。</p>",
           "chat": ""
         },
         "level": 1,
@@ -7981,7 +7981,7 @@
     },
     {
       "_id": "Tb3Ot2n7ZUuJGQCn",
-      "name": "Invisibility",
+      "name": "隐形术 Invisibility",
       "type": "spell",
       "system": {
         "source": {
@@ -7993,7 +7993,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A creature you touch becomes &amp;Reference[condition=invisible] until the spell ends. Anything the target is wearing or carrying is &amp;Reference[condition=invisible] as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p></div></div>",
+          "value": "<p>你触碰的一个生物变为隐形并维持至法术终止。目标的穿着物和携带物只要保持在其身上也随之保持隐形状态。如果目标发动攻击或施展法术，则该法术终止。</p><p><strong>升环施法效应。</strong>使用三环或更高的法术位施展该法术时，你使用的法术位每比二环高一环就可以额外指定一个目标。</p>",
           "chat": ""
         },
         "level": 2,
@@ -8218,7 +8218,7 @@
       },
       "effects": [
         {
-          "name": "Invisibility",
+          "name": "隐形 Invisibility",
           "origin": null,
           "duration": {
             "value": 3600,
@@ -8291,7 +8291,7 @@
     },
     {
       "_id": "zvyexS8vrYO0CRhc",
-      "name": "Spellcasting",
+      "name": "施法 Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -8303,7 +8303,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC <span class=\"rd__dc\">17</span>, [[/r 1d20+9]]{+9} to hit with spell attacks). The archmage can cast @UUID[.5Hy5nnvZQ5NSkGCj] and @UUID[.Tb3Ot2n7ZUuJGQCn] at will and has the following wizard spells prepared:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>Cantrips (at will): @UUID[.jpWgZ0Vxxm7dXFvO], @UUID[.0mhwpg1OIJAW5kZh], @UUID[.8P1K5f1xm8Vxnb6w], @UUID[.LO74VzxM23jmIk1t], @UUID[.mAwOKGdcrmXwfAq6]</p></li><li class=\"rd__li  rd__li-spell\"><p>1st level (4 slots): @UUID[.SprVP3s7ApfkEbCz], @UUID[.4fK2hylDKvHZeu0U], @UUID[.HkCQbkLlrNpgv9Rz]*, @UUID[.ihyqA8ouBY4SEacv]</p></li><li class=\"rd__li  rd__li-spell\"><p>2nd level (3 slots): @UUID[.ytpAyAPtvJHOmKII], @UUID[.1pPcRugIKyEnXa7i], @UUID[.Pafc8pIbnmWFlV4w]</p></li><li class=\"rd__li  rd__li-spell\"><p>3rd level (3 slots): @UUID[.7IgJwYyBUFb0e7Nc], @UUID[.SOGMdujtFeoNajJc], @UUID[.R39kHT7aMuDyDdTc]</p></li><li class=\"rd__li  rd__li-spell\"><p>4th level (3 slots): @UUID[.IsSh0EW5RdC0t4nf], @UUID[.YbzBsTsASBqsyhJI], @UUID[.Pddnd3yNIYNC8wmS]*</p></li><li class=\"rd__li  rd__li-spell\"><p>5th level (3 slots): @UUID[.9HPrYi1znfnKddJk], @UUID[.ogU5u1RAdtaiKGhd], @UUID[.tM0LQ6gkUO9vMDvK]</p></li><li class=\"rd__li  rd__li-spell\"><p>6th level (1 slot): @UUID[.rKsSCpr2izXYA0uC]</p></li><li class=\"rd__li  rd__li-spell\"><p>7th level (1 slot): @UUID[.PXzLTnDAW0XzQW8O]</p></li><li class=\"rd__li  rd__li-spell\"><p>8th level (1 slot): @UUID[.prun1DvNlsA030q4]*</p></li><li class=\"rd__li  rd__li-spell\"><p>9th level (1 slot): @UUID[.i1K1d1ensCViSGpD]</p></li></ul></div><div class=\"rd__b  rd__b--3\"><p>*The archmage casts these spells on itself before combat.</p></div></div>",
+          "value": "<p>大法师作为18级施法者，其施法属性为智力（法术豁免DC 17，法术攻击命中+9）。大法师可随意施展易容术disguise self和隐形术invisibility，且准备了以下法师法术： 戏法（随意）：火焰箭fire bolt，光亮术light，法师之手mage hand，魔法伎俩prestidigitation，电爪shocking grasp 1环（4法术位）：侦测魔法detect magic，鉴定术identify，法师护甲mage armor*，魔法飞弹magic missile 2环（3法术位）：侦测思想detect thoughts，镜影术mirror image，迷踪步misty step 3环（3法术位）：法术反制counterspell，飞行术fly，闪电束lightning bolt 4环（3法术位）：放逐术banishment，火焰护盾fire shield，石肤术stoneskin＊ 5环（3法术位）：寒冰锥cone of cold，探知术Scrying，力场墙wall of force 6环（1法术位）：法术无效结界globe of invulnerability 7环（1法术位）：传送术teleport 8环（1法术位）：心灵屏障mind blank* 9环（1法术位）：时间停止time stop *大法师在进入战斗前对自身施展这些带标记的法术。</p><p>@UUID[.5Hy5nnvZQ5NSkGCj]{易容术 Disguise Self}、@UUID[.Tb3Ot2n7ZUuJGQCn]{隐形术 Invisibility}、@UUID[.jpWgZ0Vxxm7dXFvO]{火焰箭 Fire Bolt}、@UUID[.0mhwpg1OIJAW5kZh]{光亮术 Light}、@UUID[.8P1K5f1xm8Vxnb6w]{法师之手 Mage Hand}、@UUID[.LO74VzxM23jmIk1t]{魔法伎俩 Prestidigitation}、@UUID[.mAwOKGdcrmXwfAq6]{电爪 Shocking Grasp}、@UUID[.SprVP3s7ApfkEbCz]{侦测魔法 Detect Magic}、@UUID[.4fK2hylDKvHZeu0U]{鉴定术 Identify}、@UUID[.HkCQbkLlrNpgv9Rz]{法师护甲 Mage Armor}、@UUID[.ihyqA8ouBY4SEacv]{魔法飞弹 Magic Missile}、@UUID[.ytpAyAPtvJHOmKII]{侦测思想 Detect Thoughts}、@UUID[.1pPcRugIKyEnXa7i]{镜影术 Mirror Image}、@UUID[.Pafc8pIbnmWFlV4w]{迷踪步 Misty Step}、@UUID[.7IgJwYyBUFb0e7Nc]{法术反制 Counterspell}、@UUID[.SOGMdujtFeoNajJc]{飞行术 Fly}、@UUID[.R39kHT7aMuDyDdTc]{闪电束 Lightning Bolt}、@UUID[.IsSh0EW5RdC0t4nf]{放逐术 Banishment}、@UUID[.YbzBsTsASBqsyhJI]{火焰护盾 Fire Shield}、@UUID[.Pddnd3yNIYNC8wmS]{石肤术 Stoneskin}、@UUID[.9HPrYi1znfnKddJk]{寒冰锥 Cone of Cold}、@UUID[.ogU5u1RAdtaiKGhd]{探知 Scrying}、@UUID[.tM0LQ6gkUO9vMDvK]{力场墙 Wall of Force}、@UUID[.rKsSCpr2izXYA0uC]{法术无效结界 Globe of Invulnerability}、@UUID[.PXzLTnDAW0XzQW8O]{传送术 Teleport}、@UUID[.prun1DvNlsA030q4]{心灵屏障 Mind Blank}、@UUID[.i1K1d1ensCViSGpD]{时间停止 Time Stop}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -8359,7 +8359,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 9200000,
   "ownership": {
     "default": 0,

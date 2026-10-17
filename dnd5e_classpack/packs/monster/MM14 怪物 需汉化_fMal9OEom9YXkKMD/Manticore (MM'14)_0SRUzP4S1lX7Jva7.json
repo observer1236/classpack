@@ -1,5 +1,5 @@
 {
-  "name": "Manticore (MM'14)",
+  "name": "刺尾狮 Manticore (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.</p><div data-roll-name-ancestor=\"Evil Predators\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Evil Predators.</span></span> Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.</p><p>A manticore isn't particularly bright, but it possesses a malevolent nature and the ability to converse. In the course of attacking, it denigrates its foes and offers to kill them swiftly if they beg for their lives. If a manticore sees an advantage to be gained by sparing a creature's life, it does so, asking for a tribute or sacrifice equal to its loss of food.</p></div><div data-roll-name-ancestor=\"Monstrous Relationships\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Monstrous Relationships.</span></span> Manticores serve wicked masters that treat them well and provide regular prey. A manticore might provide aerial support for an orc horde or a hobgoblin army. Another could serve as a hunting companion for a hill giant chief, or guard the entrance to a lamia's lair.</p><p>The manticores' greatest territorial rivals include chimeras, griffons, perytons, and wyverns. Manticores hunting as a pack often have the advantage of greater numbers. In addition to these creatures, manticores fear dragons and avoid them.</p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>Manticores love the taste of human flesh. That's why, on trips through the mountains, I always travel with human guards.</i>”</p><p><span class=\"rd__quote-by\">— Marthok Uldarr, dwarf copper merchant</span></p></div></div></div>",
+        "value": "<h3>刺尾狮Manticore</h3><p>“刺尾狮喜爱人类血肉的味道。所以我每次穿越山地旅行时都会带上一些人类守卫。”</p><p>——矮人铜商，玛多克?乌达 Marthok Uldarr</p><p>刺尾狮是无可争议的怪物——它长着类似类人生物的脑袋，狮子的身躯和一对龙翼。耸立的鬃毛延展至其后背，细长的尾部末端则长满了丛状尖刺。刺尾狮在捕食时可以射出这些危险的尖刺，刺穿尾部攻击范围内的任何猎物。</p><p><strong>邪恶掠食者Evil Predators。</strong>刺尾狮会在广阔的地域中进行凶残的猎杀。它们通力合作以击倒那些大型凶猛的生物，并在捕杀成功后分享猎物的鲜肉。刺尾狮发动攻击时会凌空使用尾刺扫击，并在落地后对猎物施行爪击和啃咬。在野外被敌人围攻时，刺尾狮会扇动双翼停留在空中，并维持在其尾刺攻击范围内谨慎的攻击敌人。</p><p>刺尾狮并不是特别聪明的生物，不过它们却可以进行交流且天生充满恶意。刺尾狮发动攻击的过程中，会以言语诋毁敌人并故意杀死那些恳求活命的家伙。刺尾狮在战斗中占据优势且可以直取对方性命时，会向该生物索要赠礼或是与其食物价值等同的祭品。</p><p><strong>怪物关系Monstrous Relationships。</strong>刺尾狮通常服务于那些善待自己，并且可以为自己周期性提供捕杀活动的邪恶主人。一些刺尾狮会为某支兽人部族或大地精军队提供空中支援，还有其他刺尾狮会充当山丘巨人酋长的狩猎伙伴，或是作为人身狮巢穴的入口的警卫。</p><p>刺尾狮与奇美拉、狮鹫、鹿鹰和飞龙等生物之间有着强烈的领土竞争意识。刺尾狮们会结成个数众多的团体以便随时在狩猎时占据优势。除这些生物外，刺尾狮还惧怕龙类并有意识的避免与其接触。</p>",
         "public": ""
       },
-      "alignment": "Lawful Evil",
+      "alignment": "守序邪恶 Lawful Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -643,7 +643,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Manticore",
+    "name": "刺尾狮 Manticore (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -737,7 +737,7 @@
   "items": [
     {
       "_id": "pJjSzN1cUtoF9tv7",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -749,7 +749,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.</p></div>",
+          "value": "<p>刺尾狮发动三次攻击：一次啃咬以及两次爪击，或是三次尾刺攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -942,7 +942,7 @@
     },
     {
       "_id": "V6jG4VGBbfPJm7Kv",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -954,7 +954,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 7 ([[/damage 1d8 + 3 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：7（[[/damage 1d8 + 3 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1232,7 +1232,7 @@
     },
     {
       "_id": "ei9r5Qb3fphN2aLH",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -1244,7 +1244,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：6（[[/damage 1d6 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1522,7 +1522,7 @@
     },
     {
       "_id": "XULbVkeqNN835ytZ",
-      "name": "Tail Spike",
+      "name": "尾钉 Tail Spike",
       "type": "weapon",
       "system": {
         "source": {
@@ -1534,7 +1534,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, range 100/200 ft., one target. <i>Hit:</i> 7 ([[/damage 1d8 + 3 type=piercing]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+5，射程100/200尺，单一目标。命中：7（[[/damage 1d8 + 3 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1812,7 +1812,7 @@
     },
     {
       "_id": "QfmZ5ggsVEfA3lE7",
-      "name": "Tail Spike Regrowth",
+      "name": "尾钉再生 Tail Spike Regrowth",
       "type": "feat",
       "system": {
         "source": {
@@ -1824,7 +1824,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The manticore has twenty-four tail spikes. Used spikes regrow when the manticore finishes a long rest.</p></div>",
+          "value": "<p>刺尾狮拥有二十四根尾刺，耗用掉的尾刺在其完成一次长休后得以再生。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1880,7 +1880,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 100000,
   "ownership": {
     "default": 0,

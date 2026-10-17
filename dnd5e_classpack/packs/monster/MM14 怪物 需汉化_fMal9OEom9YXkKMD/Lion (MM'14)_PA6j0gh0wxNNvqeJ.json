@@ -1,5 +1,5 @@
 {
-  "name": "Lion (MM'14)",
+  "name": "狮子 Lion (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -548,7 +548,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -638,7 +638,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Lion",
+    "name": "狮子 Lion (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -732,7 +732,7 @@
   "items": [
     {
       "_id": "2Y2TVvK3USRbKYCk",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -744,7 +744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 7 ([[/damage 1d8 + 3 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：7（[[/damage 1d8 + 3 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1022,7 +1022,7 @@
     },
     {
       "_id": "D02SGCRHhaeDf6rQ",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -1034,7 +1034,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：6（[[/damage 1d6 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1312,7 +1312,7 @@
     },
     {
       "_id": "BC5QFmASHhDhspbV",
-      "name": "Keen Smell",
+      "name": "敏锐嗅觉 Keen Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1324,7 +1324,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The lion has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on smell.</p></div>",
+          "value": "<p>狮子依赖嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1380,7 +1380,7 @@
     },
     {
       "_id": "UqoKmdbT9VeXzsZK",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1392,7 +1392,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The lion has advantage on an attack roll against a creature if at least one of the lion's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>狮子至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1448,7 +1448,7 @@
     },
     {
       "_id": "Ar2WBes1F6PfPiME",
-      "name": "Pounce",
+      "name": "猛扑 Pounce",
       "type": "feat",
       "system": {
         "source": {
@@ -1460,7 +1460,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the lion moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a [[/save ability=str dc=13]] saving throw or be knocked &amp;Reference[condition=prone]. If the target is &amp;Reference[condition=prone], the lion can make one bite attack against it as a bonus action.</p></div>",
+          "value": "<p>若狮子向目标直线移动至少20尺，然后在同一回合对其发动爪击攻击且命中该目标，则目标必须进行一次DC 13的力量豁免，豁免失败者将应击倒地。如果目标陷入倒地，则该狮子可以用一个附赠动作对目标发动一次啃咬攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1675,7 +1675,7 @@
     },
     {
       "_id": "VGM0JQaLjubP4Nx6",
-      "name": "Running Leap",
+      "name": "助跑起跳 Running Leap",
       "type": "feat",
       "system": {
         "source": {
@@ -1687,7 +1687,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>With a 10-foot running start, the lion can long jump up to 25 feet.</p></div>",
+          "value": "<p>狮子在10尺助跑后可以跳25尺远，且视为移动的一部分。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1743,7 +1743,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 16500000,
   "ownership": {
     "default": 0,

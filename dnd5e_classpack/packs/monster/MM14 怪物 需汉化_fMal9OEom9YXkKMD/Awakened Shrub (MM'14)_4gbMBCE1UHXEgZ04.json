@@ -1,5 +1,5 @@
 {
-  "name": "Awakened Shrub (MM'14)",
+  "name": "启蒙灌木 Awakened Shrub (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>An awakened shrub is an ordinary shrub given sentience and mobility by the @spell[awaken] spell or similar magic.</p></div></div>",
+        "value": "<p>一株启蒙灌木awakened shrub是由法术启蒙术awaken或其他类似魔法赋予智能和移动能力的普通灌木。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -633,7 +633,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Awakened Shrub",
+    "name": "启蒙灌木 Awakened Shrub (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -731,7 +731,7 @@
   "items": [
     {
       "_id": "HpTKyVsLXCtZMImy",
-      "name": "Rake",
+      "name": "刮擦 Rake",
       "type": "weapon",
       "system": {
         "source": {
@@ -743,7 +743,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+1]]{+1} to hit, reach 5 ft., one target. <i>Hit:</i> 1 ([[/damage 1d4 - 1 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+1，触及5尺，单一目标。命中：1（[[/damage 1d4 - 1 type=slashing]]）点挥砍伤害。 </p>",
           "chat": ""
         },
         "range": {
@@ -1021,7 +1021,7 @@
     },
     {
       "_id": "H5QwNE0Ee5r0IvQc",
-      "name": "False Appearance",
+      "name": "拟形 False Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -1033,7 +1033,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the shrub remains motionless, it is indistinguishable from a normal shrub.</p></div>",
+          "value": "<p>静止的启蒙灌木看起来与普通灌木一模一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1089,7 +1089,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "d1ec34aa6f6ca9ab",
   "sort": 3700000,
   "ownership": {
     "default": 0,

@@ -1,5 +1,5 @@
 {
-  "name": "Giant Constrictor Snake (MM'14)",
+  "name": "巨蟒 Giant Constrictor Snake (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -642,7 +642,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Constrictor Snake",
+    "name": "巨蟒 Giant Constrictor Snake (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -741,7 +741,7 @@
   "items": [
     {
       "_id": "zyyQGQIIlDOmbHJa",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -753,7 +753,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 10 ft., one creature. <i>Hit:</i> 11 ([[/damage 2d6 + 4 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及10尺，单一生物。命中：11（[[/damage 2d6 + 4 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1031,7 +1031,7 @@
     },
     {
       "_id": "4KTSLJkS4SpTz3u7",
-      "name": "Constrict",
+      "name": "绞缠 Constrict",
       "type": "weapon",
       "system": {
         "source": {
@@ -1043,7 +1043,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one creature. <i>Hit:</i> 13 ([[/damage 2d8 + 4 type=bludgeoning]]) damage, and the target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">16</span>). Until this grapple ends, the creature is &amp;Reference[condition=restrained], and the snake can't constrict another target.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一生物。命中：13（[[/damage 2d8 + 4 type=bludgeoning]]）点钝击伤害，且目标被擒抱（逃脱DC 16）。直到擒抱解除前目标被束缚，且该蛇不能绞缠另一目标。</p>",
           "chat": ""
         },
         "range": {
@@ -1321,7 +1321,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 16700000,
   "ownership": {
     "default": 0,

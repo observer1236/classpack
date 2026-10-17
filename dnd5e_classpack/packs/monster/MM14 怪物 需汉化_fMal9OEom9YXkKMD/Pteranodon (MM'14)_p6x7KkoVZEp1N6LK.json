@@ -1,5 +1,5 @@
 {
-  "name": "Pteranodon (MM'14)",
+  "name": "无齿翼龙 Pteranodon (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>These flying reptiles have wingspans of 15 to 20 feet and typically dive for small marine prey, though they are opportunists and will attack any creature that appears edible. A pteranodon has no teeth, instead using its sharp beak to stab prey too large to swallow with one gulp.</p><div data-roll-name-ancestor=\"Dinosaurs\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dinosaurs.</span></span> Dinosaurs, or behemoths, are among the oldest reptiles in the world. Predatory dinosaurs are savage, territorial hunters. Herbivorous dinosaurs are less aggressive, but they might attack to defend their young, or if startled or harassed.</p><p>Dinosaurs come in many sizes and shapes. Larger varieties often have drab coloration, while smaller dinosaurs have colorful markings akin to birds. Dinosaurs roam rugged and isolated areas that humanoids seldom visit, including remote mountain valleys, inaccessible plateaus, tropical islands, and deep fens.</p></div></div></div>",
+        "value": "<h3>无齿翼龙Pteranodon</h3><p>这些飞行蜥蜴拥有15尺到20尺的翼展并能以极小的角度向海面的猎物发动俯冲。而无齿翼龙善于把握机会，且乐于袭击任何看起来能下肚的生物。无齿翼龙如其名般没有牙齿，但会用尖长的啄碎猎物，然后整块吞下。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -635,7 +635,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Pteranodon",
+    "name": "无齿翼龙 Pteranodon (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -729,7 +729,7 @@
   "items": [
     {
       "_id": "0lW0XhWjZzOgIEVY",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -741,7 +741,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 2d4 + 1 type=piercing]]) damage</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一目标。命中：6（[[/damage 2d4 + 1 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1019,7 +1019,7 @@
     },
     {
       "_id": "XAHii3fjycvwmVkX",
-      "name": "Flyby",
+      "name": "飞掠 Flyby",
       "type": "feat",
       "system": {
         "source": {
@@ -1031,7 +1031,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The pteranodon doesn't provoke opportunity attacks when it flies out of an enemy's reach.</p></div>",
+          "value": "<p>无齿翼龙以飞行离开敌人的触及范围时不会引发对方的借机攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1087,7 +1087,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 31900000,
   "ownership": {
     "default": 0,

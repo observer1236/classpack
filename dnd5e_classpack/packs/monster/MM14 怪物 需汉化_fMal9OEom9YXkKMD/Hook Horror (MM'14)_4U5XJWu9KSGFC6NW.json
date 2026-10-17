@@ -1,5 +1,5 @@
 {
-  "name": "Hook Horror (MM'14)",
+  "name": "恐爪怪 Hook Horror (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A fierce predator of the Underdark, the hook horror aggressively defends its hunting grounds. The subterranean caverns where these creatures dwell echo with the constant clacking and scraping of their hooks as they wend their way up cliffs and along cavern walls. The monstrous hook horror has a head resembling a vulture's and the torso of an enormous beetle, with an exoskeleton studded by sharp, bony protuberances. It gains its name from its long, powerfully built arms and legs, which end in wickedly curved hooked claws.</p><div data-roll-name-ancestor=\"Echoes in the Dark\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Echoes in the Dark.</span></span> Hook horrors communicate by striking their hooks against their exoskeletons or the stone surfaces around them. What sounds to others like random clacking noise is actually a complex language that only hook horrors understand, and which carries for miles through the echoing Underdark.</p></div><div data-roll-name-ancestor=\"Pack Predators\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Pack Predators.</span></span> The omnivorous hook horrors eat lichens, fungi, plants, and any creature they can catch. A hook horror's hooked limbs give it excellent purchase on rock surfaces, and these creatures use their climbing skills to ambush prey from above. They hunt in packs, working together against the largest and most dangerous opponents. If a battle goes poorly, a hook horror quickly climbs a cavern wall to flee.</p></div><div data-roll-name-ancestor=\"Dedicated Clans\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Dedicated Clans.</span></span> Hook horrors live in extended family groups or clans. Each clan is ruled by the eldest female, who typically places her mate in charge of the clan's hunters. Hook horrors lay eggs, which are clustered in a central, well-defended area of a clan's home caverns.</p></div></div></div>",
+        "value": "<h3>恐爪怪Hook Horror</h3><p>恐爪怪是黑暗中的凶猛捕食者，是其自身狩猎场的凶狠护卫。这些生物所栖息的隐秘洞窟，因其不断地在悬崖和洞壁上来回攀爬，而回荡着它们钩爪的敲击与刮蹭声。</p><p>巨大的恐爪怪长着秃鹰一样的脑袋和巨甲虫一样的躯体，以及一副装饰着尖刺和骨突的外骨骼。它的名字正是来自其长而有力的四肢末端恐怖卷曲的钩爪。</p><p><strong>黑暗中回荡Echoes in the Dark。</strong>恐爪怪通过用自己的勾抓敲击身上的外骨骼和周围的石头表面来进行交流。这在其他人看来只是随机的噪音，实际上却是一种只有恐爪怪才懂的复杂语言，而其节奏可以在幽暗地域中传递数里远。</p><p><strong>集群捕猎者Pack Predators。</strong>杂食的恐爪怪啃食地衣、真菌、植物和任何能捕捉到的生物。恐爪怪的钩状肢使它们在岩石表面上来去自如，它们还会利用其攀爬技巧从上方伏击猎物。它们成群结队地狩猎，同心协力的对付那些最大最危险的敌人。如果战斗状况不利，恐爪怪便会迅速爬上洞窟的岩壁上逃跑。</p><p><strong>献身氏族Dedicated Clans。</strong>恐爪怪生活在大家庭或氏族中。每个氏族都由最年长的女性个体管治，而她通常会让其伴侣掌管氏族里的狩猎者。恐爪怪蛋生，它们在氏族所在洞窟的家园里聚居，并这片区域中进行严密的防守。</p>",
         "public": ""
       },
-      "alignment": "Neutral",
+      "alignment": "绝对中立 Neutral",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Hook Horror",
+    "name": "恐爪怪 Hook Horror (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -728,7 +728,7 @@
   "items": [
     {
       "_id": "ianyu70XGlk5cn29",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -740,7 +740,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hook horror makes two hook attacks.</p></div>",
+          "value": "<p>恐爪怪发动两次钩爪攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -933,7 +933,7 @@
     },
     {
       "_id": "8jLYFnpDv2CxPFs8",
-      "name": "Hook",
+      "name": "钩爪 Hook",
       "type": "weapon",
       "system": {
         "source": {
@@ -945,7 +945,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 10 ft., one target. <i>Hit:</i> 11 ([[/damage 2d6 + 4 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及10尺，单一目标，命中：11（[[/damage 2d6 + 4 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1223,7 +1223,7 @@
     },
     {
       "_id": "tUTlDwG9JaPXiM5g",
-      "name": "Echolocation",
+      "name": "回声定位 Echolocation",
       "type": "feat",
       "system": {
         "source": {
@@ -1235,7 +1235,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hook horror can't use its blindsight while &amp;Reference[condition=deafened].</p></div>",
+          "value": "<p>恐爪怪耳聋时不能用其盲视感官。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1291,7 +1291,7 @@
     },
     {
       "_id": "sfo7INbJ0VWHhvrh",
-      "name": "Keen Hearing",
+      "name": "敏锐听觉 Keen Hearing",
       "type": "feat",
       "system": {
         "source": {
@@ -1303,7 +1303,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hook horror has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing.</p></div>",
+          "value": "<p>恐爪怪依赖听力所进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1359,7 +1359,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 3600000,
   "ownership": {
     "default": 0,

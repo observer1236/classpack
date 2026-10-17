@@ -1,5 +1,5 @@
 {
-  "name": "Knight (MM'14)",
+  "name": "骑士 Knight (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight's alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.</p></div></div>",
+        "value": "<h3>骑士 Knights</h3><p>骑士是为统治者、宗教教团和贵族事业服务的武者。骑士的阵营也是其献身荣誉的程度。无论是进行一项任务还是在一个领域进行巡逻，一名骑士通常都带着一位随行人员一同旅行，其可能是一名扈从或是受雇的平民。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -631,7 +631,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Knight",
+    "name": "骑士 Knight (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -725,7 +725,7 @@
   "items": [
     {
       "_id": "g3w6jxNvC9PWunCb",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -737,7 +737,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The knight makes two melee attacks.</p></div>",
+          "value": "<p>骑士发动两次近战攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -930,7 +930,7 @@
     },
     {
       "_id": "DYUau4V9cakZs1H6",
-      "name": "Greatsword",
+      "name": "巨剑 Greatsword",
       "type": "weapon",
       "system": {
         "source": {
@@ -942,7 +942,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/damage 2d6 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：10（[[/damage 2d6 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1212,7 +1212,7 @@
     },
     {
       "_id": "LTPJUWcMcVZ9o3ia",
-      "name": "Heavy Crossbow",
+      "name": "重弩 Heavy Crossbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1224,7 +1224,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+2]]{+2} to hit, range 100/400 ft., one target. <i>Hit:</i> 5 ([[/damage 1d10 type=piercing]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+2，射程100/400尺，单一目标。命中：5（[[/damage 1d10 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1496,7 +1496,7 @@
     },
     {
       "_id": "c8pvtJnQGg0QLn2u",
-      "name": "Leadership",
+      "name": "领导 Leadership",
       "type": "feat",
       "system": {
         "source": {
@@ -1508,7 +1508,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a [[/r d4]] to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>在1分钟内，骑士可以对身边30尺内一个他能看见，且正在进行攻击检定或豁免检定的非敌对生物，说出一条特殊的指令或警告。若该生物可以听到并理解骑士的话则其可以在当前的检定结果里加上一个d4。一个生物一次只能受益于一个领导骰。骑士陷入失能时，该效应也随之终止。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1713,7 +1713,7 @@
     },
     {
       "_id": "VyaW2StdWbjccGzo",
-      "name": "Brave",
+      "name": "勇气 Brave",
       "type": "feat",
       "system": {
         "source": {
@@ -1725,7 +1725,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The knight has advantage on saving throws against being &amp;Reference[condition=frightened].</p></div>",
+          "value": "<p>骑士为抵抗恐慌而作的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1781,7 +1781,7 @@
     },
     {
       "_id": "loRAd6Q7tt4HmEzI",
-      "name": "Parry",
+      "name": "格挡 Parry",
       "type": "feat",
       "system": {
         "source": {
@@ -1793,7 +1793,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.</p></div>",
+          "value": "<p>骑士在被一次近战攻击命中时，其AC加上2。此时该骑士必须能看见攻击者，且有在持用一把近战武器。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1986,11 +1986,11 @@
     },
     {
       "_id": "S78nB5CJRQ7Ah9xN",
-      "name": "Plate Armor",
+      "name": "板甲 Plate Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p></div>",
+          "value": "<p>板甲由相互扣接、贴合身体的金属板覆盖全身。整套护甲包括护手、厚皮靴、带面罩的头盔，以及内穿的厚垫衣。扣带将重量分散到全身。</p>",
           "chat": ""
         },
         "source": {
@@ -2085,7 +2085,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 9400000,
   "ownership": {
     "default": 0,

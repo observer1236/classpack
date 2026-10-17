@@ -1,5 +1,5 @@
 {
-  "name": "Gnoll Fang of Yeenoghu (MM'14)",
+  "name": "鬣狗人·耶诺古毒牙 Gnoll Fang of Yeenoghu (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Gnolls celebrate their victories by performing demonic rituals and making blood offerings to Yeenoghu.</p><p>Sometimes the demon lord rewards his worshipers by allowing one of them to be possessed by a demonic spirit. Marked as Yeenoghu's favorite, the lucky recipient becomes a fang of Yeenoghu, the chosen of the Gnoll Lord. In much the same way Yeenoghu created the first gnolls, a hyena that feasts on a fang's slain foe undergoes a horrible transformation, becoming a full-grown adult gnoll. Depending on the number of hyenas in a region, a fang of Yeenoghu can lead to a startling increase in the gnoll population. Finding and killing the fang is the only way to keep that population in check.</p><div data-roll-name-ancestor=\"Gnolls\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Gnolls.</span></span> Gnolls are feral humanoids that attack settlements along the frontiers and borderlands of civilization without warning, slaughtering their victims and devouring their flesh.</p><div data-roll-name-ancestor=\"Demonic Origin\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Demonic Origin.</span></span> The origin of the gnolls traces back to a time when the demon lord Yeenoghu found his way to the Material Plane and ran amok. Packs of ordinary hyenas followed in his wake, scavenging the demon lord's kills. Those hyenas were transformed into the first gnolls, parading after Yeenoghu until he was banished back to the Abyss. The gnolls then scattered across the face of the world, a dire reminder of demonic power.</p><p>Gnolls rarely build permanent structures or craft anything of lasting value. They don't make weapons or armor, but scavenge such items from the corpses of their fallen victims, stringing ears, teeth, scalps, and other trophies from their foes onto their patchwork armor.</p></div><div data-roll-name-ancestor=\"Nomadic Destroyers\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Nomadic Destroyers.</span></span> Gnolls are dangerous because they strike at random. They emerge from the wilderness, plunder and slaughter, then move elsewhere. They attack like a plague of locusts, pillaging settlements and leaving little behind but razed buildings, gnawed corpses, and befouled land. Gnolls choose easy targets for their raids. Armored warriors holed up in a fortified castle will survive a rampaging gnoll horde unscathed, even as the towns, villages, and farms that surround the castle are ablaze, their people slaughtered and devoured.</p></div><div data-roll-name-ancestor=\"Thirst for Blood\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Thirst for Blood.</span></span> No goodness or compassion resides in the heart of a gnoll. Like a demon, it lacks anything resembling a conscience, and can't be taught or coerced to put aside its destructive tendencies. The gnolls' frenzied bloodlust makes them an enemy to all, and when they lack a common foe, they fight among themselves. Even the most savage orcs avoid allying with gnolls.</p></div></div></div></div>",
+        "value": "<h3>鬣狗人·耶诺古毒牙Gnoll Fang of Yeenoghu</h3><p>鬣狗人主持恶魔仪式来庆祝胜利，并为耶诺古献祭鲜血。恶魔领主有时也会奖励这些崇拜者，以让其中一名被恶魔的精魄附身。这名被标记为耶诺古宠儿的鬣狗人将幸运的被选为耶诺古毒牙，鬣狗人领主的选民。耶诺古毒牙所杀死的敌人喂食给普通鬣狗时，被喂食者便会如同耶诺古所制造的第一批鬣狗人一样，在经历一场可怕转变之后彻底成长为一名成年鬣狗人。根据军团中鬣狗的多寡，耶诺古毒牙可能会使其鬣狗人同胞的数量急剧增长。而设法找到并杀死这些毒牙是控制鬣狗人人口的唯一方法。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -641,7 +641,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Gnoll Fang of Yeenoghu",
+    "name": "鬣狗人·耶诺古毒牙 Gnoll Fang of Yeenoghu (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -735,7 +735,7 @@
   "items": [
     {
       "_id": "Gkx6AYmAvrIAvDVm",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -747,7 +747,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The gnoll makes three attacks: one with its bite and two with its claws.</p></div>",
+          "value": "<p>鬣狗人发动三次攻击：一次啃咬和两次爪击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -940,7 +940,7 @@
     },
     {
       "_id": "UDtGcmE4EtWd1AP5",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -952,7 +952,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one creature. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=piercing]]) damage, and the target must succeed on a [[/save ability=con dc=12]] saving throw or take 7 ([[/damage 2d6 type=poison]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一生物。命中：6（[[/damage 1d6 + 3 type=piercing]]）点穿刺伤害，目标必须进行一次DC 12的体质豁免，豁免失败则受到7（[[/damage 2d6 type=poison]]）点毒素伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -976,7 +976,7 @@
           "9YdNACrrVsf0EVko": {
             "_id": "9YdNACrrVsf0EVko",
             "type": "attack",
-            "name": "Attack: 1d6 Piercing Damage",
+            "name": "攻击: 1d6 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1148,7 +1148,7 @@
           "RejnzZcVPyMtFayX": {
             "_id": "RejnzZcVPyMtFayX",
             "type": "save",
-            "name": "Save: 2d6 Poison Damage",
+            "name": "豁免: 2d6 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1406,7 +1406,7 @@
     },
     {
       "_id": "twHpzm6Fr9mmsnBm",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -1418,7 +1418,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 7 ([[/damage 1d8 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：7（[[/damage 1d8 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1696,7 +1696,7 @@
     },
     {
       "_id": "6IlYpcJZY098oBDw",
-      "name": "Rampage",
+      "name": "横行 Rampage",
       "type": "feat",
       "system": {
         "source": {
@@ -1708,7 +1708,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack.</p></div>",
+          "value": "<p>鬣狗人在其自己回合以一个近战攻击使某个生物生命值降至0时，该鬣狗人可以执行一个附赠动作以移动至多等同于其速度一半的距离并发动一次啃咬攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1901,11 +1901,11 @@
     },
     {
       "_id": "zdVVqrmYxE3muVau",
-      "name": "Hide Armor",
+      "name": "兽皮甲 Hide Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p></div>",
+          "value": "<p>这种粗糙的护甲由厚实的毛皮和兽皮制成，常见于野蛮人部落、邪恶类人生物，以及缺乏制作更好护甲所需工具和材料的群体。</p>",
           "chat": ""
         },
         "source": {
@@ -1998,7 +1998,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "1e91fdd3b049cd82",
   "sort": 17500000,
   "ownership": {
     "default": 0,

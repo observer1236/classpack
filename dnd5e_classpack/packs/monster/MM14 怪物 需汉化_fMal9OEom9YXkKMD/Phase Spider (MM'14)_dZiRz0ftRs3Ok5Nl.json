@@ -1,5 +1,5 @@
 {
-  "name": "Phase Spider (MM'14)",
+  "name": "相位蜘蛛 Phase Spider (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A phase spider possesses the magical ability to phase in and out of the Ethereal Plane. It seems to appear out of nowhere and quickly vanishes after attacking. Its movement on the Ethereal Plane before coming back to the Material Plane makes it seem like it can teleport.</p></div></div>",
+        "value": "<h3>相位蜘蛛Phase Spider</h3><p>相位蜘蛛拥有在以太位面自由进出的魔法能力。它似乎从某处冒出，攻击过后又很快消失无踪。它转移回物质位面前在会在以太位面移动一段距离，这使其看起来好像可以传送一样。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -644,7 +644,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Phase Spider",
+    "name": "相位蜘蛛 Phase Spider (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -738,7 +738,7 @@
   "items": [
     {
       "_id": "oH7G4gDfDClrqOC1",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -750,7 +750,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 7 ([[/damage 1d10 + 2 type=piercing]]) damage, and the target must make a [[/save ability=con dc=11]] saving throw, taking 18 ([[/damage 4d8 type=poison]]) damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but &amp;Reference[condition=poisoned] for 1 hour, even after regaining hit points, and is &amp;Reference[condition=paralyzed] while &amp;Reference[condition=poisoned] in this way.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物。命中：7（[[/damage 1d10 + 2 type=piercing]]）点穿刺伤害，目标必须进行一次DC 11的体质豁免，豁免失败则受到18（[[/damage 4d8 type=poison]]）点毒素伤害，豁免成功则伤害减半。如果该毒素伤害将目标生命值降至0，则目标伤势稳定但中毒1小时。恢复生命值无法让目标摆脱该中毒效应，且其在以该方式中毒期间同时陷入麻痹。</p>",
           "chat": ""
         },
         "range": {
@@ -774,7 +774,7 @@
           "UYHoH4nsL1Eli1Vm": {
             "_id": "UYHoH4nsL1Eli1Vm",
             "type": "attack",
-            "name": "Attack: 1d10 Piercing Damage",
+            "name": "攻击: 1d10 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -946,7 +946,7 @@
           "gxZ2tEvQUd25YGSE": {
             "_id": "gxZ2tEvQUd25YGSE",
             "type": "save",
-            "name": "Save: 4d8 Poison Damage",
+            "name": "豁免: 4d8 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1204,7 +1204,7 @@
     },
     {
       "_id": "FY8QUbIqF8wgy7gM",
-      "name": "Ethereal Jaunt",
+      "name": "以太漫游 Ethereal Jaunt",
       "type": "feat",
       "system": {
         "source": {
@@ -1216,7 +1216,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa.</p></div>",
+          "value": "<p>作为一个附赠动作项，蜘蛛可以用魔法从物质位面转移到以太位面，反之亦然。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1409,7 +1409,7 @@
     },
     {
       "_id": "28AJDr1YTJCQl1el",
-      "name": "Spider Climb",
+      "name": "蛛行 Spider Climb",
       "type": "feat",
       "system": {
         "source": {
@@ -1421,7 +1421,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p></div>",
+          "value": "<p>蜘蛛可以攀爬在难以攀爬的表面上，包括倒吊在天花板上，且不需要进行属性检定。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1477,7 +1477,7 @@
     },
     {
       "_id": "GSCOcvVIQuR8iZw1",
-      "name": "Web Walker",
+      "name": "蛛网行者 Web Walker",
       "type": "feat",
       "system": {
         "source": {
@@ -1489,7 +1489,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spider ignores movement restrictions caused by webbing.</p></div>",
+          "value": "<p>蜘蛛在蛛网上移动时无视蛛网造成的移动限制。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1545,7 +1545,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 24200000,
   "ownership": {
     "default": 0,

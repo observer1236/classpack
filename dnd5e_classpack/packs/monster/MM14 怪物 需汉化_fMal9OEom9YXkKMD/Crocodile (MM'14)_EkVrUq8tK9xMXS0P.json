@@ -1,5 +1,5 @@
 {
-  "name": "Crocodile (MM'14)",
+  "name": "鳄鱼 Crocodile (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -548,7 +548,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Crocodile",
+    "name": "鳄鱼 Crocodile (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -726,7 +726,7 @@
   "items": [
     {
       "_id": "rm3T7VrjqrHwQlrg",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -738,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 7 ([[/damage 1d10 + 2 type=piercing]]) damage, and the target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">12</span>). Until this grapple ends, the target is &amp;Reference[condition=restrained], and the crocodile can't bite another target</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：7（[[/damage 1d10 + 2 type=piercing]]）点穿刺伤害，且目标被擒抱（逃脱DC 12）。直至擒抱解除，目标陷入被束缚状态，且该鳄鱼不能啃咬另一个目标。</p>",
           "chat": ""
         },
         "range": {
@@ -1016,7 +1016,7 @@
     },
     {
       "_id": "E3PyhyvSNSLne6Xl",
-      "name": "Hold Breath",
+      "name": "屏息 Hold Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1028,7 +1028,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The crocodile can hold its breath for 15 minutes.</p></div>",
+          "value": "<p>鳄鱼可以憋气15分钟。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1084,7 +1084,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 10300000,
   "ownership": {
     "default": 0,

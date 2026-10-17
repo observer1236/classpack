@@ -1,5 +1,5 @@
 {
-  "name": "Giant Vulture (MM'14)",
+  "name": "巨秃鹫 Giant Vulture (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A giant vulture has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering.</p></div></div>",
+        "value": "<p>巨秃鹰giant vulture有相对较高的智力并长着险恶的弓背。跟自己体型较小的近亲不同，巨秃鹫会攻击负伤的生物提前结束其生命。人们都知道巨秃鹫会跟随着受饥渴折磨的生物游荡好几天，以享受对方的痛苦。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -635,7 +635,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Vulture",
+    "name": "巨秃鹫 Giant Vulture (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -729,7 +729,7 @@
   "items": [
     {
       "_id": "RZ6BTds2N5g4icZ4",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -741,7 +741,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The vulture makes two attacks: one with its beak and one with its talons.</p></div>",
+          "value": "<p>秃鹫发动两次攻击：一次喙啄和一次爪击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -934,7 +934,7 @@
     },
     {
       "_id": "ZTjWrNp1EMflAOdr",
-      "name": "Beak",
+      "name": "喙啄 Beak",
       "type": "weapon",
       "system": {
         "source": {
@@ -946,7 +946,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 7 ([[/damage 2d4 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：7（[[/damage 2d4 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1224,7 +1224,7 @@
     },
     {
       "_id": "cY9IFiMwJyqVgsDv",
-      "name": "Talons",
+      "name": "禽爪 Talons",
       "type": "weapon",
       "system": {
         "source": {
@@ -1236,7 +1236,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 9 ([[/damage 2d6 + 2 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：9（[[/damage 2d6 + 2 type=slashing]]）点挥砍伤害。 </p>",
           "chat": ""
         },
         "range": {
@@ -1514,7 +1514,7 @@
     },
     {
       "_id": "q9IwYe05Ettj2G8z",
-      "name": "Keen Sight and Smell",
+      "name": "敏锐视嗅觉 Keen Sight and Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1526,7 +1526,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The vulture has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight or smell.</p></div>",
+          "value": "<p>秃鹫依赖视觉或嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1582,7 +1582,7 @@
     },
     {
       "_id": "kf7MwwUh4TNkYNFm",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1594,7 +1594,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>秃鹫至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1650,7 +1650,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 15800000,
   "ownership": {
     "default": 0,

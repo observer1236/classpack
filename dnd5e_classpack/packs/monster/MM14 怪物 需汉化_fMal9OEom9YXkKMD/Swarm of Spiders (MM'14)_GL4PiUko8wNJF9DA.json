@@ -1,5 +1,5 @@
 {
-  "name": "Swarm of Spiders (MM'14)",
+  "name": "蜘蛛集群 Swarm of Spiders (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"The Nature of Swarms\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"1\"> <span class=\"entry-title-inner\">The Nature of Swarms</span><span class=\"ve-flex-vh-center\"></span></h4> <p>The swarms presented here aren't ordinary or benign assemblies of little creatures. They form as a result of some sinister or unwholesome influence. A vampire can summon swarms of bats and rats from the darkest corners of the night, while the very presence of a mummy lord can cause scarab beetles to boil up from the sand-filled depths of its tomb. A hag might have the power to turn swarms of ravens against her enemies, while a @creature[yuan-ti abomination] might have @creature[swarm of poisonous snakes||swarms of poisonous snakes] slithering in its wake. Even druids can't charm these swarms, and their aggressiveness is borderline unnatural.</p></div>",
+        "value": "<h3>集群的本质</h3><p>这里的集群并不是普通、无害的小生物聚集，而是某种邪恶或不洁影响造成的。吸血鬼能从黑夜最深的角落召来蝙蝠群与鼠群；木乃伊领主的存在也能让圣甲虫从坟墓的沙土深处涌出。鬼婆可能驱使渡鸦群攻击敌人，而憎恶蛇人经过之处可能跟着毒蛇集群。即使德鲁伊也无法魅惑这些集群，它们的攻击性近乎违背自然。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -661,7 +661,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Swarm of Spiders",
+    "name": "蜘蛛集群 Swarm of Spiders (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -760,7 +760,7 @@
   "items": [
     {
       "_id": "OdUbhuYHUk2x53js",
-      "name": "Bites",
+      "name": "啃咬 Bites",
       "type": "weapon",
       "system": {
         "source": {
@@ -772,7 +772,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 0 ft., one target in the swarm's space. <i>Hit:</i> 10 ([[/damage 4d4 type=piercing]]) damage, or 5 ([[/damage 2d4 type=piercing]]) damage if the swarm has half of its hit points or fewer.</p></div>",
+          "value": "<p>近战武器攻击：命中＋3，触及0尺，单一身处集群内的目标。命中：10（[[/damage 4d4 type=piercing]]）点穿刺伤害，或者集群生命值等于或低于一半时5（[[/damage 2d4 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -796,7 +796,7 @@
           "WXIJGwD9hIfmb1iH": {
             "_id": "WXIJGwD9hIfmb1iH",
             "type": "attack",
-            "name": "Attack: 4d4 Piercing Damage",
+            "name": "攻击: 4d4 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -968,7 +968,7 @@
           "TaYGMmwuprramwNl": {
             "_id": "TaYGMmwuprramwNl",
             "type": "attack",
-            "name": "Attack: 2d4 Piercing Damage",
+            "name": "攻击: 2d4 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1222,7 +1222,7 @@
     },
     {
       "_id": "jPJ3zfTo8AU1VTnt",
-      "name": "Swarm",
+      "name": "集群 Swarm",
       "type": "feat",
       "system": {
         "source": {
@@ -1234,7 +1234,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.</p></div>",
+          "value": "<p>集群可以进驻另一生物身处的空间位置，反之亦然。而且集群可以通过任何足够一只微型昆虫通过的通道。集群不能恢复生命值也不能获得临时生命值。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1290,7 +1290,7 @@
     },
     {
       "_id": "ymujFRJpp22wxPXG",
-      "name": "Spider Climb",
+      "name": "蛛行 Spider Climb",
       "type": "feat",
       "system": {
         "source": {
@@ -1302,7 +1302,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The swarm can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p></div>",
+          "value": "<p>昆虫集群可以在困难表面上爬行。包括倒挂在天花板上活动，且不需要进行任何技能检定。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1358,7 +1358,7 @@
     },
     {
       "_id": "aHdpBzrO9lLHSi5R",
-      "name": "Web Sense",
+      "name": "蛛网感知 Web Sense",
       "type": "feat",
       "system": {
         "source": {
@@ -1370,7 +1370,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in contact with a web, the swarm knows the exact location of any other creature in contact with the same web.</p></div>",
+          "value": "<p>触碰到网上的昆虫集群可以感受到触碰同一张网的任何生物所处的位置。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1426,7 +1426,7 @@
     },
     {
       "_id": "dEEjkVPttLz6IvyE",
-      "name": "Web Walker",
+      "name": "蛛网行者 Web Walker",
       "type": "feat",
       "system": {
         "source": {
@@ -1438,7 +1438,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The swarm ignores movement restrictions caused by webbing.</p></div>",
+          "value": "<p>该集群无视蛛网造成的移动限制。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1494,7 +1494,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 11700000,
   "ownership": {
     "default": 0,

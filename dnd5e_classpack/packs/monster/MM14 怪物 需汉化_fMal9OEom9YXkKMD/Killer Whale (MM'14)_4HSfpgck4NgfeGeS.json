@@ -1,5 +1,5 @@
 {
-  "name": "Killer Whale (MM'14)",
+  "name": "虎鲸 Killer Whale (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -547,7 +547,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Killer Whale",
+    "name": "虎鲸 Killer Whale (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -727,7 +727,7 @@
   "items": [
     {
       "_id": "WcfqIUNjkKhIgq0A",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 21 ([[/damage 5d6 + 4 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：21（[[/damage 5d6 + 4 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1017,7 +1017,7 @@
     },
     {
       "_id": "1bzCxbNfmqQldvkp",
-      "name": "Echolocation",
+      "name": "回声定位 Echolocation",
       "type": "feat",
       "system": {
         "source": {
@@ -1029,7 +1029,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The whale can't use its blindsight while &amp;Reference[condition=deafened].</p></div>",
+          "value": "<p>虎鲸耳聋时不能使用其盲视感官。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1085,7 +1085,7 @@
     },
     {
       "_id": "3mIcxI5U8M9nbxn5",
-      "name": "Hold Breath",
+      "name": "屏息 Hold Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1097,7 +1097,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The whale can hold its breath for 30 minutes.</p></div>",
+          "value": "<p>虎鲸可以憋气30分钟。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1153,7 +1153,7 @@
     },
     {
       "_id": "Sy42zeHcoqM4VMok",
-      "name": "Keen Hearing",
+      "name": "敏锐听觉 Keen Hearing",
       "type": "feat",
       "system": {
         "source": {
@@ -1165,7 +1165,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The whale has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing.</p></div>",
+          "value": "<p>虎鲸依赖听觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1221,7 +1221,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 3400000,
   "ownership": {
     "default": 0,

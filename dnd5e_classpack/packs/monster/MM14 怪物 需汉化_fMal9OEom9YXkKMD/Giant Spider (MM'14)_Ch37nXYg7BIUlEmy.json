@@ -1,5 +1,5 @@
 {
-  "name": "Giant Spider (MM'14)",
+  "name": "巨蜘蛛 Giant Spider (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>To snare its prey, a giant spider spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.</p></div></div>",
+        "value": "<p>巨蜘蛛giant spider善用蛛网捕猎，它们精心编制巨网设伏，或是直接从腹部喷出粘稠的带状蛛丝进行诱捕。巨型蜘蛛常见于地底，它们在黑暗的地底裂缝中布满蛛丝筑成巢穴。巢穴里通常挂满大大小小的蛛丝茧，茧中困着捕猎来的各种生物。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -641,7 +641,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Spider",
+    "name": "巨蜘蛛 Giant Spider (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -740,7 +740,7 @@
   "items": [
     {
       "_id": "omTquWdkCHILmSCf",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -752,7 +752,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one creature. <i>Hit:</i> 7 ([[/damage 1d8 + 3 type=piercing]]) damage, and the target must make a [[/save ability=con dc=11]] saving throw, taking 9 ([[/damage 2d8 type=poison]]) damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but &amp;Reference[condition=poisoned] for 1 hour, even after regaining hit points, and is &amp;Reference[condition=paralyzed] while &amp;Reference[condition=poisoned] in this way.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一生物。命中：7（[[/damage 1d8 + 3 type=piercing]]）点穿刺伤害，目标必须进行一次DC 11的体质豁免，豁免失败则受到9（[[/damage 2d8 type=poison]]）点毒素伤害，豁免成功则伤害减半。如果该毒素伤害将目标生命值降至0，则目标伤势稳定但中毒1小时。恢复生命值无法让目标摆脱该中毒效应，且其在以该方式中毒期间同时陷入麻痹。</p>",
           "chat": ""
         },
         "range": {
@@ -776,7 +776,7 @@
           "RRqEChKq4lYcCeAH": {
             "_id": "RRqEChKq4lYcCeAH",
             "type": "attack",
-            "name": "Attack: 1d8 Piercing Damage",
+            "name": "攻击: 1d8 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -948,7 +948,7 @@
           "uBK6n2wzktWT27HB": {
             "_id": "uBK6n2wzktWT27HB",
             "type": "save",
-            "name": "Save: 2d8 Poison Damage",
+            "name": "豁免: 2d8 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1206,7 +1206,7 @@
     },
     {
       "_id": "2qft0UbpkOlBcShU",
-      "name": "Web",
+      "name": "蛛网 Web",
       "type": "weapon",
       "system": {
         "source": {
@@ -1218,7 +1218,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, range 30/60 ft., one creature. <i>Hit:</i> The target is &amp;Reference[condition=restrained] by webbing. As an action, the &amp;Reference[condition=restrained] target can make a [[/save ability=str dc=12]] check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p></div>",
+          "value": "<p>远程武器攻击：命中+5，射程30/60尺，单一生物。命中：目标受蛛网束缚。作为一个动作项，被束缚者可以进行一次DC 12的力量检定，检定通过则挣脱蛛网。蛛网可以被攻击和被破坏（AC 10，5点生命值，火焰易伤，免疫钝击、毒素和心灵伤害）。 </p>",
           "chat": ""
         },
         "range": {
@@ -1491,7 +1491,7 @@
     },
     {
       "_id": "R0ri21sfILbfSqve",
-      "name": "Spider Climb",
+      "name": "蛛行 Spider Climb",
       "type": "feat",
       "system": {
         "source": {
@@ -1503,7 +1503,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p></div>",
+          "value": "<p>蜘蛛可以攀爬在难以攀爬的表面上，包括倒吊在天花板上，且不需要进行属性检定。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1559,7 +1559,7 @@
     },
     {
       "_id": "bFFcJXiesRCn6Ygu",
-      "name": "Web Sense",
+      "name": "蛛网感知 Web Sense",
       "type": "feat",
       "system": {
         "source": {
@@ -1571,7 +1571,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.</p></div>",
+          "value": "<p>与蛛网接触时，蜘蛛可以知晓其他与该蛛网接触生物的准确位置。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1627,7 +1627,7 @@
     },
     {
       "_id": "jLzFh91GD53Go9P8",
-      "name": "Web Walker",
+      "name": "蛛网行者 Web Walker",
       "type": "feat",
       "system": {
         "source": {
@@ -1639,7 +1639,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spider ignores movement restrictions caused by webbing.</p></div>",
+          "value": "<p>蜘蛛在蛛网上移动时无视蛛网造成的移动限制。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1695,7 +1695,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 9000000,
   "ownership": {
     "default": 0,

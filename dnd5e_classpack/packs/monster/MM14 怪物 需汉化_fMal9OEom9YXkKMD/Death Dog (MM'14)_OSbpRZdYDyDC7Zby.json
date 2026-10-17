@@ -1,5 +1,5 @@
 {
-  "name": "Death Dog (MM'14)",
+  "name": "亡命恶犬 Death Dog (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A death dog is an ugly two-headed hound that roams plains, deserts, and the Underdark. Hate burns in a death dog's heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim's flesh to slowly rot off the bone.</p></div></div>",
+        "value": "<h3>亡命恶犬Death Dog</h3><p>亡命恶犬是栖息在平原、沙漠、以及幽暗地域等地的邪恶双头猎犬。这些恶犬心里燃烧着憎恨，随时准备袭击往来的旅行者和冒险者，以获得一顿鲜肉大餐。亡命恶犬的唾液带有污秽的病菌，被其咬到的伤口会逐渐受侵蚀而腐烂。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Death Dog",
+    "name": "亡命恶犬 Death Dog (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "l1NbZNAQrPcnQhdj",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The dog makes two bite attacks.</p></div>",
+          "value": "<p>恶犬发动两次啃咬攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -928,7 +928,7 @@
     },
     {
       "_id": "jxirkftYbwgUGake",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -940,7 +940,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage. If the target is a creature, it must succeed on a [[/save ability=con dc=12]] saving throw against disease or become &amp;Reference[condition=poisoned] until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 ([[/r 1d10]]) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害，如果目标是生物，则该生物必须进行一次DC 12的体质豁免，豁免失败者将感染疾病，并持续中毒直至感染的疾病得到治愈。感染该疾病的生物在24小时结束后将再次进行该豁免，再次豁免失败时，其生命值上限减损5（[[/r 1d10]]）。该减损效应持续至所感染疾病得到治愈。疾病效应将目标的生命值上限降至0时，目标死亡。</p>",
           "chat": ""
         },
         "range": {
@@ -1376,7 +1376,7 @@
     },
     {
       "_id": "U91J7GQ1hFKxI0wh",
-      "name": "Two-Headed",
+      "name": "双头 Two-Headed",
       "type": "feat",
       "system": {
         "source": {
@@ -1388,7 +1388,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The dog has advantage on Wisdom (&amp;Reference[skill=Perception]) checks and on saving throws against being &amp;Reference[condition=blinded], &amp;Reference[condition=charmed], &amp;Reference[condition=deafened], &amp;Reference[condition=frightened], &amp;Reference[condition=stunned], or knocked &amp;Reference[condition=unconscious].</p></div>",
+          "value": "<p>恶犬进行感知（察觉）检定，以及为抵抗目盲，魅惑，耳聋，恐慌，震慑和应击昏迷而进行豁免检定时具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1444,7 +1444,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 16000000,
   "ownership": {
     "default": 0,

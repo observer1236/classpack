@@ -1,5 +1,5 @@
 {
-  "name": "Polar Bear (MM'14)",
+  "name": "白熊 Polar Bear (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -548,7 +548,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Polar Bear",
+    "name": "白熊 Polar Bear (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -726,7 +726,7 @@
   "items": [
     {
       "_id": "W6d6B8g8ec64H7oX",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -738,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The bear makes two attacks: one with its bite and one with its claws.</p></div>",
+          "value": "<p>白熊发动两次攻击：一次啃咬和一次爪击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -931,7 +931,7 @@
     },
     {
       "_id": "hJ1yR32ZaG8EwCEz",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -943,7 +943,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 5 ft., one target. <i>Hit:</i> 9 ([[/damage 1d8 + 5 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及5尺，单一目标。命中：9（[[/damage 1d8 + 5 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1221,7 +1221,7 @@
     },
     {
       "_id": "4By6eC7LU3gnW7Vr",
-      "name": "Claws",
+      "name": "爪击 Claws",
       "type": "weapon",
       "system": {
         "source": {
@@ -1233,7 +1233,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 5 ft., one target. <i>Hit:</i> 12 ([[/damage 2d6 + 5 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及5尺，单一目标。命中：12（[[/damage 2d6 + 5 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1511,7 +1511,7 @@
     },
     {
       "_id": "14x1H4Q5tWK5u1xr",
-      "name": "Keen Smell",
+      "name": "敏锐嗅觉 Keen Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1523,7 +1523,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The bear has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on smell.</p></div>",
+          "value": "<p>熊依赖嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1579,7 +1579,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 21200000,
   "ownership": {
     "default": 0,

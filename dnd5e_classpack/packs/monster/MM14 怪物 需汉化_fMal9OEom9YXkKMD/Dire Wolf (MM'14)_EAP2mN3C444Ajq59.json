@@ -1,5 +1,5 @@
 {
-  "name": "Dire Wolf (MM'14)",
+  "name": "恐狼 Dire Wolf (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -547,7 +547,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -631,7 +631,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Dire Wolf",
+    "name": "恐狼 Dire Wolf (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -725,7 +725,7 @@
   "items": [
     {
       "_id": "lSAsmPwifK9faS1l",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -737,7 +737,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/damage 2d6 + 3 type=piercing]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=13]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：10（[[/damage 2d6 + 3 type=piercing]]）点穿刺伤害。如果目标是生物，则目标必须进行一次DC 13的力量豁免，豁免失败者将应击倒地。</p>",
           "chat": ""
         },
         "range": {
@@ -1173,7 +1173,7 @@
     },
     {
       "_id": "1mbyeTjpTRvIIBT2",
-      "name": "Keen Hearing and Smell",
+      "name": "敏锐嗅听觉 Keen Hearing and Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1185,7 +1185,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The wolf has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing or smell.</p></div>",
+          "value": "<p>狼依赖听觉或嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1241,7 +1241,7 @@
     },
     {
       "_id": "9YkQPwdmIHCbKr8b",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1253,7 +1253,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>狼至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1309,7 +1309,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 10100000,
   "ownership": {
     "default": 0,

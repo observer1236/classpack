@@ -1,5 +1,5 @@
 {
-  "name": "Basilisk (MM'14)",
+  "name": "石化蜥蜴 Basilisk (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Travelers sometimes find objects that look like pieces of remarkably lifelike stone carvings of wildlife. Missing parts appear to have been bitten off. Seasoned explorers regard such relics as warnings, knowing that the basilisk that created them is likely to be nearby.</p><div data-roll-name-ancestor=\"Adaptable Predators\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Adaptable Predators.</span></span> Basilisks thrive in arid, temperate, or tropical climates. They lair in caves or other sheltered sites. Most often, basilisks are encountered underground.</p><p>A basilisk born and raised in captivity can be domesticated and trained. Such a trained basilisk knows how to avoid meeting the eyes of those its master wishes to protect from its gaze, but it makes a daunting guardian beast. Because of this use, basilisk eggs are highly prized.</p></div><div data-roll-name-ancestor=\"Gaze of Stone\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Gaze of Stone.</span></span> Basilisks are ponderous for hunting creatures, but they needn't chase prey. Meeting a basilisk's supernatural gaze can be enough to affect a rapid transformation, transforming a victim into porous stone. Basilisks, with their strong jaws, are able to consume the stone. The stone returns to organic form in the basilisk's gullet.</p><p>Some alchemists are said to know how to process the basilisk's gullet and the fluids contained within. Properly handled, the gullet produces an oil that can return &amp;Reference[condition=petrified] creatures to flesh and life. Unfortunately for such a victim, any parts lost in stone form remain absent if the creature revives. Revivification using the oil is impossible if a vital part of the &amp;Reference[condition=petrified] creature, such as its head, is detached.</p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>No one carves statues of frightened warriors. If you see one, keep your eyes closed and your ears open.</i>”</p><p><span class=\"rd__quote-by\">— X the Mystic's 4th rule of dungeon survival</span></p></div></div></div>",
+        "value": "<h3>石化蜥蜴Basilisk</h3><p>“没人会造那些一脸恐慌的勇士雕像。如果你看到一尊。请务必闭上眼睛并竖起耳朵。”</p><p>——X地下城求生奥妙第4条</p><p>旅者有时会发现一些栩栩如生的野生动物雕像。其中一些残缺的石像似乎是被咬下了肢体。此时经验丰富的冒险者将认识到这是一种警报，预示着石化蜥蜴就在附近。</p><p><strong>可塑性猎食者Adaptable Predators。</strong>石化蜥蜴在温带或热带气候的干燥地区繁衍生息。它们通常会在洞穴或其他隐秘地点筑巢。事实上，大多遭遇石化蜥蜴的情况都发生在地底。</p><p>石化蜥蜴可以自幼起关在笼中驯养受训。驯服的石化蜥蜴会懂得听从主人指使避免与特定生物进行目光接触，而其本身的能力依然可以让其成为一只令人生畏的野兽护卫。石化蜥蜴的蛋也因此价值不菲。</p><p><strong>石之凝视Gaze of Stone。</strong>笨重而迟钝的石化蜥蜴难以追猎其他生物，只是它们无需辛苦捕猎。它们会用自己神奇的凝视能力将猎物迅速转变成松动的石头，再用强健的下颚将石头嚼碎，而这些石头将会在石化蜥蜴胃中转化成原本的形态再被消化。</p><p>某些炼金术师懂得如何处理石化蜥蜴的胃及其中的分泌物。处理妥当后，这些提取物可以制成一种帮被石化生物恢复原样的油膏。然而，如果对方在石化时身躯受损，这种油膏则只能恢复未受损的身体部分，不能恢复失去的生命和肢体。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Basilisk",
+    "name": "石化蜥蜴 Basilisk (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -722,7 +722,7 @@
   "items": [
     {
       "_id": "Pi8Y6OfEG2gNL2wA",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -734,7 +734,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/damage 2d6 + 3 type=piercing]]) damage plus 7 ([[/damage 2d6 type=poison]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：10（[[/damage 2d6 + 3 type=piercing]]）点穿刺伤害外加7（[[/damage 2d6 type=poison]]）点毒素伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1028,7 +1028,7 @@
     },
     {
       "_id": "ywB5CX6ZFNY5UzMh",
-      "name": "Petrifying Gaze",
+      "name": "石化凝视 Petrifying Gaze",
       "type": "feat",
       "system": {
         "source": {
@@ -1040,7 +1040,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a [[/save ability=con dc=12]] saving throw if the basilisk isn't &amp;Reference[condition=incapacitated]. On a failed save, the creature magically begins to turn to stone and is &amp;Reference[condition=restrained]. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is &amp;Reference[condition=petrified] until freed by the  @spell[greater restoration] spell or other magic.</p><p>A creature that isn't @status[surprised] can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.</p><p>If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.</p></div>",
+          "value": "<p>在石化蜥蜴周边30尺内开始其回合的生物，如果它与石化蜥蜴互相都能看见对方，且石化蜥蜴并未处于失能状态，则该石化蜥蜴可以迫使该生物进行一次DC 12的体质豁免。豁免失败则该生物受魔法影响开始转变为石头并陷入束缚。它必须在其下一回合结束时再进行一次该豁免。豁免成功则该效应终止。豁免失败则该生物陷入石化，直至其受法术高等复原术greater restoration或其他魔法解除该效应。 未遭受突袭的生物可以避开石化蜥蜴的目光，以免除在其回合开始时进行的豁免。此时，该生物视为不能看见该石化蜥蜴，直至其下一回合开始时再选择是否避开石化蜥蜴的目光。该生物在任何时候看向石化蜥蜴时，必须立即进行该豁免。 如果石化蜥蜴在明亮光照下于其身边30尺内看到自己的镜中倒影，则它将误把自己当做敌人而指定自己为凝视的目标。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1255,7 +1255,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 14000000,
   "ownership": {
     "default": 0,

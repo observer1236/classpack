@@ -1,5 +1,5 @@
 {
-  "name": "Giant Fire Beetle (MM'14)",
+  "name": "巨火甲虫 Giant Fire Beetle (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle's glands continue to shed light for [[/r 1d6]] days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.</p></div></div>",
+        "value": "<p>巨火甲虫giant fire beetle是一种夜行生物，其名字来源于它们身上一对发光的腺体。巨火甲虫的腺体在其死去后的1d6日里依然可以持续发光，而矿工和冒险者们则时常会以之为己所用。巨火甲虫通常出没在地底和密林之中。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Fire Beetle",
+    "name": "巨火甲虫 Giant Fire Beetle (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -731,7 +731,7 @@
   "items": [
     {
       "_id": "sIzqh6K2hiN9SjUX",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -743,7 +743,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+1]]{+1} to hit, reach 5 ft., one target. <i>Hit:</i> 2 ([[/damage 1d6 - 1 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+1，触及5尺，单一目标。命中：2（[[/damage 1d6 - 1 type=slashing]]）点挥砍伤害， </p>",
           "chat": ""
         },
         "range": {
@@ -1021,7 +1021,7 @@
     },
     {
       "_id": "Ra58tKaiCgSOGZ1D",
-      "name": "Illumination",
+      "name": "照明 Illumination",
       "type": "feat",
       "system": {
         "source": {
@@ -1033,7 +1033,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The beetle sheds bright light in a 10-foot radius and dim light for an additional 10 ft..</p></div>",
+          "value": "<p>甲虫向身边半径10尺范围散发出明亮光照，以及其外10尺的微光光照。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1089,7 +1089,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 34900000,
   "ownership": {
     "default": 0,

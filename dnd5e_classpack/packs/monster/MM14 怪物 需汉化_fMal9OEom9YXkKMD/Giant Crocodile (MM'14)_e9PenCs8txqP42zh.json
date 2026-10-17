@@ -1,5 +1,5 @@
 {
-  "name": "Giant Crocodile (MM'14)",
+  "name": "巨鳄鱼 Giant Crocodile (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -548,7 +548,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Crocodile",
+    "name": "巨鳄鱼 Giant Crocodile (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "1yACXpUKe3DBAhQ1",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The crocodile makes two attacks: one with its bite and one with its tail.</p></div>",
+          "value": "<p>鳄鱼发动两次攻击：啃咬和一次尾击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -928,7 +928,7 @@
     },
     {
       "_id": "3RM6OkTkx7uXNNxK",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -940,7 +940,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 5 ft., one target. <i>Hit:</i> 21 ([[/damage 3d10 + 5 type=piercing]]) damage, and the target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">16</span>). Until this grapple ends, the target is &amp;Reference[condition=restrained], and the crocodile can't bite another target.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及5尺，单一目标。命中：21（[[/damage 3d10 + 5 type=piercing]]）点穿刺伤害，目标被擒抱（逃脱DC 12）。直至擒抱解除，目标陷入被束缚状态，且该鳄鱼不能啃咬另一目标。</p>",
           "chat": ""
         },
         "range": {
@@ -1218,7 +1218,7 @@
     },
     {
       "_id": "kxx1gnpMch6gLOkf",
-      "name": "Tail",
+      "name": "尾击 Tail",
       "type": "weapon",
       "system": {
         "source": {
@@ -1230,7 +1230,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 10 ft., one target not &amp;Reference[condition=grappled] by the crocodile. <i>Hit:</i> 14 ([[/damage 2d8 + 5 type=bludgeoning]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=16]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及10尺，单一未被该鳄鱼擒抱的目标。命中：14（[[/damage 2d8 + 5 type=bludgeoning]]）点钝击伤害。如果目标是生物，则其必须成功通过一次DC 16的力量豁免，否则将应击倒地。</p>",
           "chat": ""
         },
         "range": {
@@ -1666,7 +1666,7 @@
     },
     {
       "_id": "hgn2G3RtkvRVizof",
-      "name": "Hold Breath",
+      "name": "屏息 Hold Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1678,7 +1678,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The crocodile can hold its breath for 30 minutes.</p></div>",
+          "value": "<p>鳄鱼可以憋气30分钟。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1734,7 +1734,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 24600000,
   "ownership": {
     "default": 0,

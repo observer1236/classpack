@@ -1,5 +1,5 @@
 {
-  "name": "Carrion Crawler (MM'14)",
+  "name": "食腐虫 Carrion Crawler (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Carrion crawlers scour putrid flesh from carcasses and gobble the slimy bones that remain. They aggressively attack any creature that trespasses on their territory or disturbs their feasting.</p><div data-roll-name-ancestor=\"Carrion Eaters\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Carrion Eaters.</span></span> A carrion crawler follows the scent of death to its food, but it prefers not to compete with other scavengers. These foul creatures thus hunker down in territories where death is plentiful and other carrion eaters have limited mobility. Caves, sewers, dungeons, and forested marshes are their favored lairs, but carrion crawlers are also drawn to battlefields and cemeteries. A carrion crawler roams on the hunt, its tentacles probing the air for the scent of blood or decay. In tunnels or ruins, carrion crawlers scurry across the ceiling as they move toward food. In this way, they avoid contact with oozes, otyughs, and other dangerous inhabitants of the darkness, even as they surprise potential meals that don't think to look up.</p></div><div data-roll-name-ancestor=\"Patient Predators\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Patient Predators.</span></span> Whether in subterranean darkness or while hunting at night, light signals a potential meal. A carrion crawler might follow a light source from a distance for hours, hoping to pick up the scent of blood. Despite their great size, carrion crawlers can also easily set up ambushes by waiting around blind corners for prey to come to them. When facing potential prey or intruders, a carrion crawler lets its poison do the work. Once a victim goes rigid with paralysis, the carrion crawler wraps it with its tentacles and drags it away to a high ledge or isolated passageway, where it can be killed safely. The monster then resumes patrolling its territory while waiting for its meal to ripen.</p></div></div></div>",
+        "value": "<h3>食腐虫Carrion Crawler</h3><p>食腐虫啃掉尸体上最后一丝腐肉，再吞下了剩下的黏滑骨头。任何胆敢闯入它们领地或是打扰它们进食的生物都要面对其凶猛的攻击。</p><p><strong>食腐者Carrion Eaters。</strong>食腐虫跟随死亡的气息寻找食物，却不喜欢与别的食腐者竞争。因此这些污秽的生物通常盘踞在尸体充足且其他食腐者不便活动之处。洞窟、下水道、地下城、树木丛生的沼泽都是其偏爱的筑巢地，而食腐虫也会被吸引到战场和墓地中。</p><p>食腐虫觅食时会一边游荡一边用触须探测空气中鲜血或腐烂的气息。地道和废墟中的食腐虫则习惯攀爬在天花板上扑向食物，以可以避开泥怪、食腐兽Otyughs和其他栖息在黑暗中的危险居民，也可以突袭那些忘了抬头看一眼的猎物。</p><p><strong>耐心的掠食者Patient Predators。</strong>不论是在地下还是夜晚，光亮通常意味着一顿美餐。食腐虫可能会花几小时从远处跟踪一个光源，期望从中发现血腥气味。虽然体型颇大，食腐虫依然可以轻松地躲在拐角的视野盲区等待猎物自投罗网。</p><p>食腐虫会充分利用其毒液来应对潜在的猎物与入侵者。一旦对方毒效发作，食腐虫便用触须缠住麻痹僵直的猎物，将其拖到高台或偏远地道，再确切的将猎物杀死。然后食腐虫便一边继续巡视领地，一边等待猎物腐熟以方便进食。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Carrion Crawler",
+    "name": "食腐虫 Carrion Crawler (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "enKwO1Jrh5S23rR2",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The carrion crawler makes two attacks: one with its tentacles and one with its bite.</p></div>",
+          "value": "<p>食腐虫发动两次攻击：一次触须攻击和一次啃咬。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -928,7 +928,7 @@
     },
     {
       "_id": "QZ9tKs1Oc3Gxrqlb",
-      "name": "Tentacles",
+      "name": "触须 Tentacles",
       "type": "weapon",
       "system": {
         "source": {
@@ -940,7 +940,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 10 ft., one creature. <i>Hit:</i> 4 ([[/damage 1d4 + 2 type=poison]]) damage, and the target must succeed on a [[/save ability=con dc=13]] saving throw or be &amp;Reference[condition=poisoned] for 1 minute. Until this poison ends, the target is &amp;Reference[condition=paralyzed]. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及10尺，单一生物。命中：4（[[/damage 1d4 + 2 type=poison]]）点毒素伤害，目标必须进行一次DC 13的体质豁免，豁免失败则中毒1分钟，并在中毒期间陷入麻痹。目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则该中毒效应终止。</p>",
           "chat": ""
         },
         "range": {
@@ -1376,7 +1376,7 @@
     },
     {
       "_id": "r7vHhI9otfhS8SJt",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -1388,7 +1388,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 7 ([[/damage 2d4 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：7（[[/damage 2d4 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1666,7 +1666,7 @@
     },
     {
       "_id": "RWvOrwCE2tJXaAc5",
-      "name": "Keen Smell",
+      "name": "敏锐嗅觉 Keen Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1678,7 +1678,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The carrion crawler has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on smell.</p></div>",
+          "value": "<p>食腐虫进行依赖嗅觉的感知（察觉）检定时具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1734,7 +1734,7 @@
     },
     {
       "_id": "Fgd3nYDziS4XWCs9",
-      "name": "Spider Climb",
+      "name": "蛛行 Spider Climb",
       "type": "feat",
       "system": {
         "source": {
@@ -1746,7 +1746,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The carrion crawler can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p></div>",
+          "value": "<p>食腐虫可以攀爬在难以攀爬的表面上，包括倒吊在天花板上，且不需要进行属性检定。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1802,7 +1802,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 26700000,
   "ownership": {
     "default": 0,

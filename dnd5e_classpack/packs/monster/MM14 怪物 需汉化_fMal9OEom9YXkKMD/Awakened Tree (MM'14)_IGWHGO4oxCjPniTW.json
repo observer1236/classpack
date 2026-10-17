@@ -1,5 +1,5 @@
 {
-  "name": "Awakened Tree (MM'14)",
+  "name": "启蒙树木 Awakened Tree (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>An awakened tree is an ordinary tree given sentience and mobility by the @spell[awaken] spell or similar magic.</p></div></div>",
+        "value": "<p>启蒙树木是被启蒙术或类似魔法赋予意识和行动能力的普通树木。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -633,7 +633,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Awakened Tree",
+    "name": "启蒙树木 Awakened Tree (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -727,7 +727,7 @@
   "items": [
     {
       "_id": "adiV9SBbg8OhFA73",
-      "name": "Slam",
+      "name": "猛击 Slam",
       "type": "weapon",
       "system": {
         "source": {
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 10 ft., one target. <i>Hit:</i> 14 ([[/damage 3d6 + 4 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及10尺，单一目标。命中：14（[[/damage 3d6 + 4 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1017,7 +1017,7 @@
     },
     {
       "_id": "Kp1onTrL76E1aqFi",
-      "name": "False Appearance",
+      "name": "拟形 False Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -1029,7 +1029,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the tree remains motionless, it is indistinguishable from a normal tree.</p></div>",
+          "value": "<p>静止的启蒙树木看起来与普通树木一模一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1085,7 +1085,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "d1ec34aa6f6ca9ab",
   "sort": 12500000,
   "ownership": {
     "default": 0,

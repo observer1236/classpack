@@ -1,5 +1,5 @@
 {
-  "name": "Goat (MM'14)",
+  "name": "山羊 Goat (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -548,7 +548,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -638,7 +638,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Goat",
+    "name": "山羊 Goat (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -732,7 +732,7 @@
   "items": [
     {
       "_id": "95NRKiHZ8KG2GLWw",
-      "name": "Ram",
+      "name": "冲撞 Ram",
       "type": "weapon",
       "system": {
         "source": {
@@ -744,7 +744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one target. <i>Hit:</i> 3 ([[/damage 1d4 + 1 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一目标。命中：3（[[/damage 1d4 + 1 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1022,7 +1022,7 @@
     },
     {
       "_id": "wq36eaJVdvkWTlrN",
-      "name": "Charge",
+      "name": "冲锋 Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1034,7 +1034,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 ([[/damage 1d4 type=bludgeoning]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=10]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>若山羊向其目标直线移动至少20尺，且在同一回合里以冲撞攻击命中该目标，则该目标受额外2（[[/damage 1d4 type=bludgeoning]]）点钝击伤害。如果目标是生物，则该生物必须成功通过一次DC 10的力量豁免，否则应击倒地。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1404,7 +1404,7 @@
     },
     {
       "_id": "aIlyKuc2uICpKx81",
-      "name": "Sure-Footed",
+      "name": "稳步 Sure-Footed",
       "type": "feat",
       "system": {
         "source": {
@@ -1416,7 +1416,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>山羊抵抗应击倒地效应所进行的力量和敏捷豁免具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1472,7 +1472,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 2800000,
   "ownership": {
     "default": 0,

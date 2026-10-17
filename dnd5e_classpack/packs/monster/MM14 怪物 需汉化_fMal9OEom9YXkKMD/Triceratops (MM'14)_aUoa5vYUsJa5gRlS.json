@@ -1,5 +1,5 @@
 {
-  "name": "Triceratops (MM'14)",
+  "name": "三角龙 Triceratops (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>One of the most aggressive of the herbivorous dinosaurs, a triceratops has a skull that flares out to form a protective plate of bone. With its great horns and formidable speed, a triceratops gores and tramples would-be predators to death.</p><div data-roll-name-ancestor=\"Dinosaurs\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dinosaurs.</span></span> Dinosaurs, or behemoths, are among the oldest reptiles in the world. Predatory dinosaurs are savage, territorial hunters. Herbivorous dinosaurs are less aggressive, but they might attack to defend their young, or if startled or harassed.</p><p>Dinosaurs come in many sizes and shapes. Larger varieties often have drab coloration, while smaller dinosaurs have colorful markings akin to birds. Dinosaurs roam rugged and isolated areas that humanoids seldom visit, including remote mountain valleys, inaccessible plateaus, tropical islands, and deep fens.</p></div></div></div>",
+        "value": "<h3>三角龙Triceratops</h3><p>作为食草恐龙中最有攻击性的一种，三角龙有着一个均匀而坚固的盾牌状头盖骨。其身怀的巨大犄角和恐怖速度，使之可以刺穿并践踏任何潜在的猎食者。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Triceratops",
+    "name": "三角龙 Triceratops (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -722,7 +722,7 @@
   "items": [
     {
       "_id": "RPuyetHgbESZE5mZ",
-      "name": "Gore",
+      "name": "顶撞 Gore",
       "type": "weapon",
       "system": {
         "source": {
@@ -734,7 +734,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+9]]{+9} to hit, reach 5 ft., one target. <i>Hit:</i> 24 ([[/damage 4d8 + 6 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+9，触及5尺，单一目标。命中：24（[[/damage 4d8 + 6 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1012,7 +1012,7 @@
     },
     {
       "_id": "CgELjkUm5MIDrNxe",
-      "name": "Stomp",
+      "name": "践踏 Stomp",
       "type": "weapon",
       "system": {
         "source": {
@@ -1024,7 +1024,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+9]]{+9} to hit, reach 5 ft., one &amp;Reference[condition=prone] creature. <i>Hit:</i> 22 ([[/damage 3d10 + 6 type=bludgeoning]]) damage</p></div>",
+          "value": "<p>近战武器攻击：命中+9，触及5尺，单一倒地生物。命中：22（[[/damage 3d10 + 6 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1302,7 +1302,7 @@
     },
     {
       "_id": "HsoWV44fSljv2tUy",
-      "name": "Trampling Charge",
+      "name": "践踏冲锋 Trampling Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1314,7 +1314,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the triceratops moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a [[/save ability=str dc=13]] saving throw or be knocked &amp;Reference[condition=prone]. If the target is &amp;Reference[condition=prone], the triceratops can make one stomp attack against it as a bonus action.</p></div>",
+          "value": "<p>若三角龙向某一生物直线移动至少20尺，且在同一回合里以顶撞攻击命中该生物，则该目标必须成功通过一次DC 13的力量豁免，否则应击倒地。如果目标倒地，则三角龙可以用一个附赠动作对其发动一次践踏攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1529,7 +1529,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 22600000,
   "ownership": {
     "default": 0,

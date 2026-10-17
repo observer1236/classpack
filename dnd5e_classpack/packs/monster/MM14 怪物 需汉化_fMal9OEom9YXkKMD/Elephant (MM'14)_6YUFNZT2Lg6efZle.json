@@ -1,5 +1,5 @@
 {
-  "name": "Elephant (MM'14)",
+  "name": "象 Elephant (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -547,7 +547,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Elephant",
+    "name": "象 Elephant (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -722,7 +722,7 @@
   "items": [
     {
       "_id": "MrcAOW1jdsTpVAV3",
-      "name": "Gore",
+      "name": "顶撞 Gore",
       "type": "weapon",
       "system": {
         "source": {
@@ -734,7 +734,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 5 ft., one target. <i>Hit:</i> 19 ([[/damage 3d8 + 6 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及5尺，单一目标。命中：19（[[/damage 3d8 + 6 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1012,7 +1012,7 @@
     },
     {
       "_id": "JcGzAYkvjFIaBbVA",
-      "name": "Stomp",
+      "name": "践踏 Stomp",
       "type": "weapon",
       "system": {
         "source": {
@@ -1024,7 +1024,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 5 ft., one &amp;Reference[condition=prone] creature. <i>Hit:</i> 22 ([[/damage 3d10 + 6 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及5尺，单一倒地生物。命中：22（[[/damage 3d10 + 6 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1302,7 +1302,7 @@
     },
     {
       "_id": "a7qbXD0tHEYX5Y02",
-      "name": "Trampling Charge",
+      "name": "践踏冲锋 Trampling Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1314,7 +1314,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the elephant moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a [[/save ability=str dc=12]] saving throw or be knocked &amp;Reference[condition=prone]. If the target is &amp;Reference[condition=prone], the elephant can make one stomp attack against it as a bonus action.</p></div>",
+          "value": "<p>如果象向某一生物直线移动至少20尺，且在同一回合里以顶撞攻击命中该生物，则该目标必须成功通过一次DC 12的力量豁免，否则应击倒地。如果目标倒地，则象可以用一个附赠动作对其发动一次践踏攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1529,7 +1529,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 5100000,
   "ownership": {
     "default": 0,

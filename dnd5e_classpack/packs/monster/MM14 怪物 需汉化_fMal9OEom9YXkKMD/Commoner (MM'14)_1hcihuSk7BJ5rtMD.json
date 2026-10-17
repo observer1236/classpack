@@ -1,5 +1,5 @@
 {
-  "name": "Commoner (MM'14)",
+  "name": "平民 Commoner (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.</p></div></div>",
+        "value": "<h3>平民 Commoners</h3><p>各种平民包括乡民、农奴、奴隶、仆从、朝圣者、商人、工匠，还有一些普通隐士。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -649,7 +649,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Commoner",
+    "name": "平民 Commoner (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -743,7 +743,7 @@
   "items": [
     {
       "_id": "cCPPGzl1Ke8LzSUM",
-      "name": "Club",
+      "name": "短棍 Club",
       "type": "weapon",
       "system": {
         "source": {
@@ -755,7 +755,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+2]]{+2} to hit, reach 5 ft., one target. <i>Hit:</i> 2 ([[/damage 1d4 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+2，触及5尺，单一目标。命中：2（[[/damage 1d4 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1024,7 +1024,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 1400000,
   "ownership": {
     "default": 0,

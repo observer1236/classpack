@@ -1,5 +1,5 @@
 {
-  "name": "Constrictor Snake (MM'14)",
+  "name": "蟒蛇 Constrictor Snake (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -639,7 +639,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Constrictor Snake",
+    "name": "蟒蛇 Constrictor Snake (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -738,7 +738,7 @@
   "items": [
     {
       "_id": "KW5JGhoOx60YsSB9",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -750,7 +750,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1028,7 +1028,7 @@
     },
     {
       "_id": "oam7nsW30OrW6KCS",
-      "name": "Constrict",
+      "name": "绞缠 Constrict",
       "type": "weapon",
       "system": {
         "source": {
@@ -1040,7 +1040,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 6 ([[/damage 1d8 + 2 type=bludgeoning]]) damage, and the target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">14</span>). Until this grapple ends, the creature is &amp;Reference[condition=restrained], and the snake can't constrict another target.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物。命中：6（[[/damage 1d8 + 2 type=bludgeoning]]）点钝击伤害，且目标被擒抱（逃脱 DC 14）。直至擒抱解除，目标被束缚且该蛇不能紧缚另一个目标。</p>",
           "chat": ""
         },
         "range": {
@@ -1318,7 +1318,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 5800000,
   "ownership": {
     "default": 0,

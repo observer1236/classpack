@@ -1,5 +1,5 @@
 {
-  "name": "Spy (MM'14)",
+  "name": "间谍 Spy (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Rulers, nobles, merchants, guildmasters, and other wealthy individuals use spies to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loyal spies would rather die than divulge information that could compromise them or their employers.</p></div></div>",
+        "value": "<h3>间谍Spy</h3><p>统治者、贵族、商人、公会会长和其他的富人会雇佣间谍为自己工作，以保证自己在残酷政治斗争中能够持续提升地位。间谍们都精心练就一身情报收集能力。这些训练有素的忠诚间谍们个个都守口如瓶，不会轻易泄露折损自身或雇主的任何信息。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Spy",
+    "name": "间谍 Spy (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "hZ7X2hNZqym3YsLa",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spy makes two melee attacks.</p></div>",
+          "value": "<p>间谍发动两次近战攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -928,7 +928,7 @@
     },
     {
       "_id": "EplSPe6v0dXblUOc",
-      "name": "Shortsword",
+      "name": "短剑 Shortsword",
       "type": "weapon",
       "system": {
         "source": {
@@ -940,7 +940,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1210,7 +1210,7 @@
     },
     {
       "_id": "UPIwFiSMQlFeKuku",
-      "name": "Hand Crossbow",
+      "name": "手弩 Hand Crossbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1222,7 +1222,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, range 30/120 ft., one target. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+4，射程30/120尺，单一目标。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1493,7 +1493,7 @@
     },
     {
       "_id": "JuGtQLdVFAAVzmXd",
-      "name": "Cunning Action",
+      "name": "灵巧动作 Cunning Action",
       "type": "feat",
       "system": {
         "source": {
@@ -1505,7 +1505,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action.</p></div>",
+          "value": "<p>间谍在其自己回合内可以用一个附赠动作执行疾走Dash，撤离Disengage，或躲藏Hide动作。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1698,7 +1698,7 @@
     },
     {
       "_id": "l5aZKKMjjn4Rnov3",
-      "name": "Sneak Attack (1/Turn)",
+      "name": "偷袭 Sneak Attack（1/回合）",
       "type": "feat",
       "system": {
         "source": {
@@ -1710,7 +1710,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spy deals an extra 7 ([[/damage 2d6]]) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't &amp;Reference[condition=incapacitated] and the spy doesn't have disadvantage on the attack roll.</p></div>",
+          "value": "<p>间谍对目标造成伤害时，如果其攻击检定具有优势，或者如果其攻击检定没有劣势且它在该目标身边5尺范围内有一个未处于失能状态的盟友。满足以上条件时，间谍造成额外7（[[/damage 2d6]]）点伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1920,7 +1920,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 33900000,
   "ownership": {
     "default": 0,

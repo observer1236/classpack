@@ -1,5 +1,5 @@
 {
-  "name": "Blink Dog (MM'14)",
+  "name": "闪现犬 Blink Dog (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A blink dog takes its name from its ability to blink in and out of existence, a talent it uses to aid its attacks and to avoid harm. Blink dogs harbor a long-standing hatred for displacer beasts and attack them on sight.</p></div></div>",
+        "value": "<h3>闪现犬Blink Dog</h3><p>闪现犬得名于它一闪间消失又出现的能力，这是它用以协助攻击和避免伤害的一种天赋。闪现犬跟移位兽势成水火，它们一见面就会开打。</p>",
         "public": ""
       },
-      "alignment": "Lawful Good",
+      "alignment": "守序善良 Lawful Good",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -631,7 +631,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Blink Dog",
+    "name": "闪现犬 Blink Dog (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -725,7 +725,7 @@
   "items": [
     {
       "_id": "RfQMniqsg1hzWnjq",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -737,7 +737,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one target. <i>Hit:</i> 4 ([[/damage 1d6 + 1 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一目标。命中：4（[[/damage 1d6 + 1 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1015,7 +1015,7 @@
     },
     {
       "_id": "g0JjIIiBnu8JZLUG",
-      "name": "Teleport",
+      "name": "传送 Teleport",
       "type": "feat",
       "system": {
         "source": {
@@ -1027,7 +1027,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.</p></div>",
+          "value": "<p>闪现犬连同自身着装和携带的所有装备以魔法传送到至多40尺外一处它能够看见且未占据空间位置。闪现犬可以在传送前或传送后发动一次啃咬。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1233,7 +1233,7 @@
     },
     {
       "_id": "ATISicPIXr2kmuPZ",
-      "name": "Keen Hearing and Smell",
+      "name": "敏锐嗅听觉 Keen Hearing and Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1245,7 +1245,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The dog has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing or smell.</p></div>",
+          "value": "<p>闪现犬进行依赖听觉和嗅觉的感知（察觉）检定时具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1301,7 +1301,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "6748f2cd8c8f81df",
   "sort": 7100000,
   "ownership": {
     "default": 0,

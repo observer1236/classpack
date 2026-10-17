@@ -1,5 +1,5 @@
 {
-  "name": "Winter Wolf (MM'14)",
+  "name": "冬狼 Winter Wolf (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>The arctic-dwelling winter wolf is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves' deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations.</p></div></div>",
+        "value": "<h3>冬狼Winter Wolf</h3><p>住在极地的冬狼其体型跟恐狼一样大，但却长着雪白的皮毛和淡蓝的眼睛。霜巨人们用这些邪恶生物作警卫和狩猎伙伴，以其致命的吐息武器对付敌人。冬狼用咆哮和吠叫相互交流，但也懂得用通用语和巨人语跟别人进行简单的对话。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -633,7 +633,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Winter Wolf",
+    "name": "冬狼 Winter Wolf (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -727,7 +727,7 @@
   "items": [
     {
       "_id": "dcGJaQX5x2ZJMpOo",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 11 ([[/damage 2d6 + 4 type=piercing]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=14]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：11（[[/damage 2d6 + 4 type=piercing]]）点穿刺伤害。如果目标是生物，则目标必须进行一次DC 14的力量豁免，豁免失败则应击倒地。</p>",
           "chat": ""
         },
         "range": {
@@ -1175,7 +1175,7 @@
     },
     {
       "_id": "Y7pA6LqDdikUBeyt",
-      "name": "Cold Breath",
+      "name": "冷冻吐息 Cold Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1187,7 +1187,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a [[/save ability=dex dc=12]] saving throw, taking 18 ([[/damage 4d8 type=cold]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>狼呼出冰暴并覆盖一处15尺的锥状区域，该区域内的每个生物都必须进行一次DC 12的敏捷豁免，豁免失败者将受到18（[[/damage 4d8 type=cold]]）点寒冷伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1433,7 +1433,7 @@
     },
     {
       "_id": "eIo8AyIGB7CLwPLR",
-      "name": "Keen Hearing and Smell",
+      "name": "敏锐嗅听觉 Keen Hearing and Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1445,7 +1445,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The wolf has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing or smell.</p></div>",
+          "value": "<p>狼依赖听觉或嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1501,7 +1501,7 @@
     },
     {
       "_id": "xeX4ZejTDXQaCT64",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1513,7 +1513,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>狼至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1569,7 +1569,7 @@
     },
     {
       "_id": "NQ9way9EUjtLF4zb",
-      "name": "Snow Camouflage",
+      "name": "雪地伪装 Snow Camouflage",
       "type": "feat",
       "system": {
         "source": {
@@ -1581,7 +1581,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The wolf has advantage on Dexterity (&amp;Reference[skill=Stealth]) checks made to hide in snowy terrain.</p></div>",
+          "value": "<p>狼在雪地地形中进行躲藏时所作的敏捷（隐匿）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1637,7 +1637,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 500000,
   "ownership": {
     "default": 0,

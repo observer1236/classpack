@@ -1,5 +1,5 @@
 {
-  "name": "至高天Empyrean (MM'14)",
+  "name": "至高天 Empyrean (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,7 +546,7 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Empyreans are the celestial children of the gods of the Upper Planes. They are universally beautiful, statuesque, and self-assured.</p><div data-roll-name-ancestor=\"Manifest Emotion\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Manifest Emotion.</span></span> An empyrean can experience deity-like fits of serenity or rage. It can affect the environment around it by its mood. When an empyrean is unhappy, the clouds might cry tears of salt water, the wildflowers in surrounding meadows might wilt, dead fish might wash ashore in lakes or rivers, or a nearby forest might lose the leaves from its trees. When an empyrean is jubilant, sunlight follows it everywhere, small animals frolic in its footsteps, and birds fill the sky with their pleasing songs.</p></div><div data-roll-name-ancestor=\"Evil Empyreans\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Evil Empyreans.</span></span> A few empyreans have turned to evil after venturing to the Lower Planes and becoming corrupted, or as the result of being cursed by evil gods. An evil empyrean can't survive long on the Upper Planes and usually retreats to the Material Plane, where it can rule over a kingdom of mortals as an indomitable tyrant.</p></div><div data-roll-name-ancestor=\"Immortal Titans\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Immortal Titans.</span></span> Empyreans don't age but can be slain. Because few empyreans can imagine their own demise, they fight fearlessly when drawn into battle, refusing to believe that the end is upon them even when standing at death's door. When an empyrean dies, its spirit returns to its home plane. There, one of the fallen empyrean's parents resurrects the empyrean unless he or she has a good reason not to.</p></div></div></div>",
+        "value": "<h3>至高天Empyrean</h3><p>至高天们是上层位面诸神所生的天界子孙。他们普遍拥有美丽的脸庞、完美的身材和逼人的自信。</p><p><strong>情绪显现Manifest Emotion。</strong>至高天会经历跟诸神一样的阵发性情绪变化，一会平静，一会又转为狂怒。这还会影响他们周围的环境。至高天不高兴时，云层会泣下盐水，死鱼会被冲上河岸与湖边，附近森林中的树叶也会纷纷飘落。而当他兴高采烈时，阳光会跟随他去往每个角落，小动物们在他的足迹中嬉戏，鸟儿们放声歌唱，响彻天空。</p><p><strong>邪恶至高天Evil Empyreans。</strong>少部分至高天在下层位面冒险后，遭受腐化或被邪恶神明诅咒后会变得邪恶。一名邪恶至高天无法在上层位面存活太久，因而通常会撤到物质位面，然后在那里成为一位不屈不挠的暴君，支配着凡人的国度。</p><p><strong>不朽泰坦Immortal Titans。</strong>至高天不会衰老，但依然能够被杀死。很少至高天会预计自己的死期，因此他们在战斗中往往无所畏惧。即使半只脚踏进棺材，他们也不愿相信终结会降临到自己头上。毕竟，除非刚好出什么差错，否则死去至高天其父母中的某位总会将其重新复活。</p>",
         "public": ""
       },
       "alignment": "混乱善良Chaotic Good (75%) or 中立邪恶Neutral Evil (25%)",
@@ -659,7 +659,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Empyrean",
+    "name": "至高天 Empyrean (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -770,7 +770,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+17</span><span style=\"font-family:'STHeiti light'\">，触及</span><span style=\"font-family:Calibri\">10</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">31</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">6d6+10</span><span style=\"font-family:'STHeiti light'\">）点钝击伤害。如果目标是生物，则必须进行一次</span><span style=\"font-family:Calibri\">DC 15</span><span style=\"font-family:'STHeiti light'\">的体质豁免，豁免失败则直至至高天的下一回合结束前陷入震慑。</span></p><p><em>Melee Weapon Attack:</em> [[/r 1d20+17]]{+17} to hit, reach 10 ft., one target. <em>Hit:</em> 31 ([[/damage 6d6 + 10 type=bludgeoning]]) damage. If the target is a creature, it must succeed on a [[/save ability=con dc=15]] saving throw or be &amp;Reference[condition=stunned] until the end of the empyrean's next turn.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+17</span><span style=\"font-family:'STHeiti light'\">，触及</span><span style=\"font-family:Calibri\">10</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">31</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">[[/damage 6d6 + 10 type=bludgeoning]]</span><span style=\"font-family:'STHeiti light'\">）点钝击伤害。如果目标是生物，则必须进行一次</span><span style=\"font-family:Calibri\">DC 15</span><span style=\"font-family:'STHeiti light'\">的体质豁免，豁免失败则直至至高天的下一回合结束前陷入震慑。</span></p></div>",
           "chat": ""
         },
         "range": {
@@ -1229,7 +1229,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>远程法术攻击：</em>命中</span><span style=\"font-family:Calibri\">+15</span><span style=\"font-family:'STHeiti light'\">，射程</span><span style=\"font-family:Calibri\">600</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">24</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">7d6</span><span style=\"font-family:'STHeiti light'\">）点以下类型之一的伤害（由至高天选择）：强酸、寒冷、火焰、力场、闪电、光耀或雷鸣。</span></p><p><em>Ranged Spell Attack:</em> [[/r 1d20+15]]{+15} to hit, range 600 ft., one target. <em>Hit:</em> 24 ([[/damage 7d6]]) damage of one of the following types (empyrean's choice): acid, cold, fire, force, lightning, radiant, or thunder.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>远程法术攻击：</em>命中</span><span style=\"font-family:Calibri\">+15</span><span style=\"font-family:'STHeiti light'\">，射程</span><span style=\"font-family:Calibri\">600</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">24</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">[[/damage 7d6]]</span><span style=\"font-family:'STHeiti light'\">）点以下类型之一的伤害（由至高天选择）：强酸、寒冷、火焰、力场、闪电、光耀或雷鸣。</span></p></div>",
           "chat": ""
         },
         "range": {
@@ -1539,7 +1539,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天豁免失败时，可以将其改为豁免成功。</span></p><p>If the empyrean fails a saving throw, it can choose to succeed instead.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天豁免失败时，可以将其改为豁免成功。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1768,7 +1768,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天为抵抗法术和其他魔法效应而作的豁免检定具有优势。</span></p><p>The empyrean has advantage on saving throws against spells and other magical effects.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天为抵抗法术和其他魔法效应而作的豁免检定具有优势。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1853,7 +1853,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天的武器攻击视为魔法攻击。</span></p><p>The empyrean's weapon attacks are magical.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天的武器攻击视为魔法攻击。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1938,7 +1938,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天发动一次攻击。</span></p><p>The empyrean makes one attack.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天发动一次攻击。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -2167,7 +2167,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天鼓舞身边</span><span style=\"font-family:Calibri\">120</span><span style=\"font-family:'STHeiti light'\">尺内所有非敌对生物，效应持续至其下一回合结束。受鼓舞生物不会陷入魅惑或恐慌，且在此期间进行的属性检定和豁免检定具有优势。</span></p><p>The empyrean bolsters all nonhostile creatures within 120 feet of it until the end of its next turn. Bolstered creatures can't be &amp;Reference[condition=charmed] or &amp;Reference[condition=frightened], and they gain advantage on ability checks and saving throws until the end of the empyrean's next turn.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天鼓舞身边</span><span style=\"font-family:Calibri\">120</span><span style=\"font-family:'STHeiti light'\">尺内所有非敌对生物，效应持续至其下一回合结束。受鼓舞生物不会陷入魅惑或恐慌，且在此期间进行的属性检定和豁免检定具有优势。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -2396,7 +2396,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天用巨锤击打地面引发一次地颤。除至高天自身外所有身处其周边</span><span style=\"font-family:Calibri\">60</span><span style=\"font-family:'STHeiti light'\">尺内的其他生物都必须进行一次</span><span style=\"font-family:Calibri\">DC 25</span><span style=\"font-family:'STHeiti light'\">的力量豁免，豁免失败者将应击倒地。</span></p><p>The empyrean strikes the ground with its maul, triggering an earth tremor. All other creatures on the ground within 60 feet of the empyrean must succeed on a [[/save ability=str dc=25]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天用巨锤击打地面引发一次地颤。除至高天自身外所有身处其周边</span><span style=\"font-family:Calibri\">60</span><span style=\"font-family:'STHeiti light'\">尺内的其他生物都必须进行一次</span><span style=\"font-family:Calibri\">DC 25</span><span style=\"font-family:'STHeiti light'\">的力量豁免，豁免失败者将应击倒地。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -2647,7 +2647,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天拥有</span><span style=\"font-family:Calibri\">3</span><span style=\"font-family:'STHeiti light'\">传奇动作，用来选择执行下列动作项。它每次只可选择执行一个传奇动作项，且必须在另一生物回合结束时执行。至高天在其回合开始时恢复所有消耗的传奇动作数。</span></p><p>@UUID[.ySPSQzm40j2NItHD]{攻击Attack}</p><p>@UUID[.dXExV2T37n9X0mjb]{鼓舞Bolster}</p><p>@UUID[.36DipSaywF9M2MLo]{战栗打击Trembling Strike}</p><div class=\"rd__b  rd__b--3\"><p>The empyrean can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The empyrean regains spent legendary actions at the start of its turn.</p></div><ul class=\"rd__list\"><li class=\"rd__li \">@UUID[.ySPSQzm40j2NItHD]{Attack}</li><li class=\"rd__li \">@UUID[.dXExV2T37n9X0mjb]{Bolster}</li><li class=\"rd__li \">@UUID[.36DipSaywF9M2MLo]{Trembling Strike}</li></ul></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天拥有</span><span style=\"font-family:Calibri\">3</span><span style=\"font-family:'STHeiti light'\">传奇动作，用来选择执行下列动作项。它每次只可选择执行一个传奇动作项，且必须在另一生物回合结束时执行。至高天在其回合开始时恢复所有消耗的传奇动作数。</span></p><p>@UUID[.ySPSQzm40j2NItHD]{攻击Attack}</p><p>@UUID[.dXExV2T37n9X0mjb]{鼓舞Bolster}</p><p>@UUID[.36DipSaywF9M2MLo]{战栗打击Trembling Strike}</p><ul class=\"rd__list\"><li class=\"rd__li \">@UUID[.ySPSQzm40j2NItHD]{攻击Attack}</li><li class=\"rd__li \">@UUID[.dXExV2T37n9X0mjb]{鼓舞Bolster}</li><li class=\"rd__li \">@UUID[.36DipSaywF9M2MLo]{战栗打击Trembling Strike}</li></ul></div>",
           "chat": ""
         },
         "requirements": "",
@@ -2718,7 +2718,7 @@
     },
     {
       "_id": "exlBxKwDCzb1uPk4",
-      "name": "Commune",
+      "name": "通神术 Commune",
       "type": "spell",
       "system": {
         "source": {
@@ -2730,7 +2730,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question.</p><p>Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead.</p><p>If you cast the spell two or more times before finishing your next long rest, there is a cumulative [[/r 1d100]]{25 percent} chance for each casting after the first that you get no answer. The DM makes this roll in secret.</p></div>",
+          "value": "<p>你与所信奉神或其代理人进行联系，并询问至多三个能以“是”或“否”回答的问题。你必须在法术终止前完成提问，并在随后分别获得每个问题的答案。</p><p>这些神能存在也并非全知全能，因此当问题涉及的信息超过神的认知范围时，你可能会得到一句“不确定”作为回答。另外当一个单词可能引致误导，或者与神的兴致相违背时，DM 可能会提供一句短语作为答案。</p><p>若你在两次长休之间两次或更多次的施展该法术，则法术有一定的几率不给任何答复。此概率从第二次施展起每次累计 25％。其具体结果由 DM 暗骰决定。</p>",
           "chat": ""
         },
         "level": 5,
@@ -2963,7 +2963,7 @@
     },
     {
       "_id": "83qm1DdaSobhejaa",
-      "name": "Dispel Evil and Good",
+      "name": "反制善恶 Dispel Evil and Good",
       "type": "spell",
       "system": {
         "source": {
@@ -2975,7 +2975,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.</p><p>You can end the spell early by using either of the following special functions.</p><div data-roll-name-ancestor=\"Break Enchantment\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Break Enchantment.</span></span> As your action, you touch a creature you can reach that is &amp;Reference[condition=charmed], &amp;Reference[condition=frightened], or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer &amp;Reference[condition=charmed], &amp;Reference[condition=frightened], or possessed by such creatures.</p></div><div data-roll-name-ancestor=\"Dismissal\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Dismissal.</span></span> As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.</p></div></div>",
+          "value": "<p>发光的能量环绕着你，并保护你免受来自妖精、亡灵和源于主物质位面外异域生物的伤害。天族、元素、妖精、邪魔、亡灵生物对你发动攻击检定时具有劣势。</p><p>你可以通过以下方式提前终止此法术。</p><blockquote><p><strong>破除惑控Break Enchantment。</strong>你使用动作触碰一个触及范围内的生物。如果该生物受天族、元素、妖精、邪魔或亡灵生物影响而陷入&amp;Reference[condition=charmed apply=false]{魅惑}、恐慌，或是被附身状态，则生物的这些状态即时结束。</p><p><strong>驱逐Dismissal。</strong>你使用动作发动一次近战法术攻击，攻击一个天族、元素、妖精、邪魔或亡灵生物。命中时，你可以尝试将该生物驱逐回其原属位面。该生物必须成功通过一此魅力豁免，否则将强制返回其原属位面（若已在原属位面则无效）。比如妖精会返回妖精荒野，亡灵会返回堕影冥界。</p></blockquote>",
           "chat": ""
         },
         "level": 5,
@@ -3379,7 +3379,7 @@
     },
     {
       "_id": "Dzi8dxBPSKe45Xql",
-      "name": "Earthquake",
+      "name": "地震术 Earthquake",
       "type": "spell",
       "system": {
         "source": {
@@ -3391,7 +3391,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area.</p><p>The ground in the area becomes &amp;Reference[rule=difficultterrain]{difficult terrain}. Each creature on the ground that is @status[concentration||concentrating] must make a Constitution saving throw. On a failed save, the creature's @status[concentration] is broken.</p><p>When you cast this spell and at the end of each turn you spend @status[concentration||concentrating] on it, each creature on the ground in the area must make a Dexterity saving throw. On a failed save, the creature is knocked &amp;Reference[condition=prone].</p><p>This spell can have additional effects depending on the terrain in the area, as determined by the DM.</p><div data-roll-name-ancestor=\"Fissures\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Fissures.</span></span> Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of [[/r 1d6]] such fissures open in locations chosen by the DM. Each is [[/r 1d10 * 10]]{1d10 × 10} feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens.</p><p>A fissure that opens beneath a structure causes it to automatically collapse (see below).</p></div><div data-roll-name-ancestor=\"Structures\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Structures.</span></span> The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity saving throw. On a failed save, the creature takes [[/damage 5d6 type=bludgeoning]] damage, is knocked &amp;Reference[condition=prone], and is buried in the rubble, requiring a [[/save ability=str dc=20]] (&amp;Reference[skill=Athletics]) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall &amp;Reference[condition=prone] or become buried.</p></div></div>",
+          "value": "<p>你在施法距离内一处能看见的地面上指定一点，并在其上制造地震扰动。在法术持续时间内，一阵强烈的震颤在震源周边半径 100 尺的圆形范围内传递，并使区域内地上的生物和建筑都受到震动影响。</p><p>受影响区域内的地面变为困难地形。而区域地面上的每个正在进行专注的生物都必须进行一次体质豁免，豁免失败则其专注被打断。</p><p>在你施展此法术以及随后保持专注的每回合结束时，区域地面上的每个生物都必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}，豁免失败则生物应击倒地。</p><p>根据施法区域的地形，DM 可以决定是否应用额外的效应。</p><blockquote><p><strong>裂缝Fissures。</strong>在施展此法术的下一个回合开始时，法术影响区域会撕开一道道裂缝。1d6 条裂缝在 DM 安排的位置出现。每条裂缝深 1d10×10 尺，宽 10 尺，并由影响区域的一边向另一边延伸。裂缝撕开时，将处于其位置上的生物必须成功通过一次敏捷豁免，否则将坠落其中。豁免成功则该生物移动到裂缝旁边。</p><p>任何处在裂缝上的建筑会直接崩塌（如下所示）。</p><p><strong>建筑Structures。</strong>在你施展此法术时及法术终止前你的每个回合开始时，地震对影响区域内的所有建筑都造成 50 点钝击伤害。建筑生命值降为 0 时立即崩塌，且可能对附近生物造成伤害。与该建筑距离不大于该建筑高度一半的生物，都必须进行一次敏捷豁免。豁免失败则受 [[/damage 5d6 type=bludgeoning]]{5d6} 的钝击伤害并应击倒地且埋于废墟之下。该生物可用一个动作来进行一次 DC20 的[[/check ability=str skill=ath]]{力量（运动）检定}来尝试逃离废墟。DM 可根据废墟的情况调整 DC 高低。豁免成功时伤害减半，且不会倒地或被掩埋。</p></blockquote>",
           "chat": ""
         },
         "level": 8,
@@ -3639,7 +3639,7 @@
     },
     {
       "_id": "AKkWMezIq3daQXwy",
-      "name": "Fire Storm",
+      "name": "火焰风暴 Fire Storm",
       "type": "spell",
       "system": {
         "source": {
@@ -3651,7 +3651,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes [[/damage 7d10 type=fire]] damage on a failed save, or half as much damage on a successful one.</p><p>The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell.</p></div>",
+          "value": "<p>一片由烈焰形成的风暴扫过施法距离内一处你指定的区域。该区域由至多十个 10 尺立方区域组成。你可以自行安排各立方区域的组合方式，而每个立方区域必须至少有一面与其他立方区域相连。区域内每个生物必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}。豁免失败者将受到 [[/damage 7d10 type=fire]]{7d10} 点火焰伤害，豁免成功则伤害减半。</p><p>风暴的烈焰将对区域内的物件造成伤害，并点燃区域内所有未被着装或携带的可燃物件。你可以选择让区域内的植物生命免受该法术效应的影响。</p>",
           "chat": ""
         },
         "level": 7,
@@ -3916,7 +3916,7 @@
     },
     {
       "_id": "UfAkrkuXjytJ5ZHU",
-      "name": "Plane Shift",
+      "name": "异界传送 Plane Shift",
       "type": "spell",
       "system": {
         "source": {
@@ -3928,7 +3928,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM's discretion.</p><p>Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.</p><p>You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.</p></div>",
+          "value": "<p>你和至多八个自愿生物手拉手站成一圈，然后被传送到一个不同的存在位面中。你可以概括地指名一个目的地（比如火元素位面的黄铜城，或者九层地狱第二层迪斯帕特的宫殿），然后你将出现在目的地里或其附近。假设你想到达黄铜城，按照 DM 的判断，你可能会传送到达它的钢铁大道上，或它的灰烬之门前，又或者与城市隔着火焰之海相望之处。</p><p>另外，如果你知道某个处于另一位面的传送法阵的印记序列，则该法术可以把你带到该法阵处。如果该传送法阵太小而装不下所有你传送的生物，则他们会出现在离传送法阵最近的未占据空间里。</p><p>你可以用该法术放逐一个非自愿的生物到另一位面。指定一个你触及范围内的生物并对它进行一次近战法术攻击。命中时，此生物必须进行一次[[/save activity=dnd5eactivity100]]{魅力豁免}。豁免失败者将被传送到你指定位面的一个随机地点。被这样传送走的生物必须自行寻找回到你现在位面的路。</p>",
           "chat": ""
         },
         "level": 7,
@@ -4335,7 +4335,7 @@
     },
     {
       "_id": "kvG5wKzGu1gdplDU",
-      "name": "Greater Restoration",
+      "name": "高等复原术 Greater Restoration",
       "type": "spell",
       "system": {
         "source": {
@@ -4347,7 +4347,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's &amp;Reference[condition=exhaustion] level by one, or end one of the following effects on the target:</p><ul class=\"rd__list\"><li class=\"rd__li \">One effect that &amp;Reference[condition=charmed] or &amp;Reference[condition=petrified] the target</li><li class=\"rd__li \">One curse, including the target's attunement to a cursed magic item</li><li class=\"rd__li \">Any reduction to one of the target's ability scores</li><li class=\"rd__li \">One effect reducing the target's hit point maximum</li></ul></div>",
+          "value": "<p>你为一个触碰到的生物灌注正能量来解除一项弱化效应。你可以使目标的力竭等级降低一级，或者选择终止目标身上的下列效应之一：</p><ul><li>一项影响目标的魅惑或石化效应</li><li>一项诅咒，包括目标与一件被诅咒魔法物品的同调</li><li>对目标某项属性值的减损</li><li>一项降低目标生命值上限的效应</li></ul>",
           "chat": ""
         },
         "level": 5,
@@ -4578,7 +4578,7 @@
     },
     {
       "_id": "3ufOwPh9HmeQD9vx",
-      "name": "Pass without Trace",
+      "name": "行动无踪 Pass without Trace",
       "type": "spell",
       "system": {
         "source": {
@@ -4590,7 +4590,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (&amp;Reference[skill=Stealth]) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p></div>",
+          "value": "<p>阴影和沉默的幕障从你身上辐射而出，并隔绝任何对你和你的同伴进行的探测。持续时间内，位于你30尺内的所有你选择的生物（包括你自己）进行的[[/check ability=dex skill=ste]]{敏捷（隐匿）检定}具有+10加值，且你们的踪迹无法被追踪（魔法手段除外）。受此增益的生物在其途径之处将不会留下任何足迹或其他踪迹。</p>",
           "chat": ""
         },
         "level": 2,
@@ -4820,7 +4820,7 @@
     },
     {
       "_id": "dzXFghQsecGHFsrF",
-      "name": "Water Breathing",
+      "name": "水下呼吸 Water Breathing",
       "type": "spell",
       "system": {
         "source": {
@@ -4832,7 +4832,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.</p></div>",
+          "value": "<p>在法术终止前，该法术让施法距离内你能看见的至多十个自愿生物获得在水下呼吸的能力。此外，受术者依然保有正常的呼吸能力。</p>",
           "chat": ""
         },
         "level": 3,
@@ -5065,7 +5065,7 @@
     },
     {
       "_id": "m3DQQgxCrizFvDhg",
-      "name": "Water Walk",
+      "name": "水上行走 Water Walk",
       "type": "spell",
       "system": {
         "source": {
@@ -5077,7 +5077,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>This spell grants the ability to move across any liquid surface—such as water, acid, mud, snow, quicksand, or lava—as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.</p><p>If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round.</p></div>",
+          "value": "<p>此法术使受术者行走于任何液体表面时（例如流水、酸液、泥浆、雪地、流沙、熔岩）都如同行走在无伤害性的实体地面上。（但走在熔岩上的生物仍会因高热而受伤）。你可以将此能力赋予施法距离内你能看见的至多十个自愿生物，并使其在法术持续时间内拥有该能力。</p><p>如果你选择一个浸没在水中的生物作为该法术的目标，则受术者将会以每轮 60 尺的速度上升，直至浮上液面。</p>",
           "chat": ""
         },
         "level": 3,
@@ -5322,7 +5322,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天天生施法属性为魅力（法术豁免</span><span style=\"font-family:Calibri\">DC 23</span><span style=\"font-family:'STHeiti light'\">，法术攻击命中</span><span style=\"font-family:Calibri\">+15</span><span style=\"font-family:'STHeiti light'\">）。它天生可施展以下法术且不需要任何相应的材料成分：</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 0pt 0pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:'STHeiti light'\">随意：@UUID[Compendium.dnd5e_classpack.spell.Item.7dqplcsKNYQgRh2S]{高等复原术 Greater Restoration}<em>，@UUID[Compendium.dnd5e_classpack.spell.Item.lPGqq33qbJb90exM]{行动无踪 Pass without Trace}，@UUID[Compendium.dnd5e_classpack.spell.Item.cNIfr5CzsBZIPwHs]{水下呼吸 Water Breathing}，@UUID[Compendium.dnd5e_classpack.spell.Item.fpEiFPEnSjOGP7wy]{水上行走 Water Walk}</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:6pt 0pt 6pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:'STHeiti light'\">每项</span><span style=\"font-family:Calibri\">1/</span><span style=\"font-family:'STHeiti light'\">日：@UUID[Compendium.dnd5e_classpack.spell.Item.7tphgwQJI7dKIyfE]{通神术 Commune}<em>，@UUID[Compendium.dnd5e_classpack.spell.Item.vWPApZRxvrKSiKKS]{反制善恶 Dispel Evil and Good}，@UUID[Compendium.dnd5e_classpack.spell.Item.Yu7PAWvfqY70wBm2]{地震术 Earthquake}，@UUID[Compendium.dnd5e_classpack.spell.Item.zjYDXNUeJMtBikPd]{火焰风暴 Fire Storm}，@UUID[Compendium.dnd5e_classpack.spell.Item.VveuAHLNPiAY0yd5]{异界传送 Plane Shift}</em>（仅自身）</span></p><div data-roll-name-ancestor=\"Innate Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Innate Spellcasting.</span> The empyrean's innate spellcasting ability is Charisma (spell save DC <span class=\"rd__dc\">23</span>, [[/r 1d20+15]]{+15} to hit with spell attacks). It can innately cast the following spells, requiring no material components:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>At will: @UUID[.kvG5wKzGu1gdplDU], @UUID[.3ufOwPh9HmeQD9vx], @UUID[.dzXFghQsecGHFsrF], @UUID[.m3DQQgxCrizFvDhg]</p></li><li class=\"rd__li  rd__li-spell\"><p>1/day each: @UUID[.exlBxKwDCzb1uPk4], @UUID[.83qm1DdaSobhejaa], @UUID[.Dzi8dxBPSKe45Xql], @UUID[.AKkWMezIq3daQXwy], @UUID[.UfAkrkuXjytJ5ZHU] (self only)</p></li></ul></div></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">至高天天生施法属性为魅力（法术豁免</span><span style=\"font-family:Calibri\">DC 23</span><span style=\"font-family:'STHeiti light'\">，法术攻击命中</span><span style=\"font-family:Calibri\">+15</span><span style=\"font-family:'STHeiti light'\">）。它天生可施展以下法术且不需要任何相应的材料成分：</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 0pt 0pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:'STHeiti light'\">随意：@UUID[Compendium.dnd5e_classpack.spell.Item.7dqplcsKNYQgRh2S]{高等复原术 Greater Restoration}<em>，@UUID[Compendium.dnd5e_classpack.spell.Item.lPGqq33qbJb90exM]{行动无踪 Pass without Trace}，@UUID[Compendium.dnd5e_classpack.spell.Item.cNIfr5CzsBZIPwHs]{水下呼吸 Water Breathing}，@UUID[Compendium.dnd5e_classpack.spell.Item.fpEiFPEnSjOGP7wy]{水上行走 Water Walk}</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:6pt 0pt 6pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:'STHeiti light'\">每项</span><span style=\"font-family:Calibri\">1/</span><span style=\"font-family:'STHeiti light'\">日：@UUID[Compendium.dnd5e_classpack.spell.Item.7tphgwQJI7dKIyfE]{通神术 Commune}<em>，@UUID[Compendium.dnd5e_classpack.spell.Item.vWPApZRxvrKSiKKS]{反制善恶 Dispel Evil and Good}，@UUID[Compendium.dnd5e_classpack.spell.Item.Yu7PAWvfqY70wBm2]{地震术 Earthquake}，@UUID[Compendium.dnd5e_classpack.spell.Item.zjYDXNUeJMtBikPd]{火焰风暴 Fire Storm}，@UUID[Compendium.dnd5e_classpack.spell.Item.VveuAHLNPiAY0yd5]{异界传送 Plane Shift}</em>（仅自身）</span></p></div><p>@UUID[.3ufOwPh9HmeQD9vx]{行动无踪 Pass without Trace}、@UUID[.83qm1DdaSobhejaa]{反制善恶 Dispel Evil and Good}、@UUID[.AKkWMezIq3daQXwy]{火焰风暴 Fire Storm}、@UUID[.Dzi8dxBPSKe45Xql]{地震术 Earthquake}、@UUID[.UfAkrkuXjytJ5ZHU]{异界传送 Plane Shift}、@UUID[.dzXFghQsecGHFsrF]{水下呼吸 Water Breathing}、@UUID[.exlBxKwDCzb1uPk4]{通神术 Commune}、@UUID[.kvG5wKzGu1gdplDU]{高等复原术 Greater Restoration}、@UUID[.m3DQQgxCrizFvDhg]{水上行走 Water Walk}</p>",
           "chat": ""
         },
         "requirements": "",

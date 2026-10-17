@@ -1,5 +1,5 @@
 {
-  "name": "Vine Blight (MM'14)",
+  "name": "枯藤怪 Vine Blight (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<p>Appearing as masses of slithering creepers, vine blights hide in undergrowth and wait for prey to draw near. By animating the plants around them, vine blights entangle and hinder their foes before attacking. Vine blights are the only blights capable of speech. Through its connection to the evil spirit of the Gulthias tree it serves, a vine blight speaks in a fractured version of its dead master's voice, taunting victims or bargaining with powerful foes.</p><div data-roll-name-ancestor=\"Blights\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Blights</span></h1> <div class=\"rd__b  rd__b--1\"><p>Awakened plants gifted with the powers of intelligence and mobility, blights plague lands contaminated by darkness. Drinking that darkness from the soil, a blight carries out the will of ancient evil and attempts to spread that evil wherever it can.</p><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Roots of the Gulthias Tree\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Roots of the Gulthias Tree.</span></span> Legends tell of a vampire named Gulthias who worked terrible magic and raised up an abominable tower called Nightfang Spire. Gulthias was undone when a hero plunged a wooden stake through his heart, but as the vampire was destroyed, his blood infused the stake with a dreadful power. In time, tendrils of new growth sprouted from the wood, growing into a sapling infused with the vampire's evil essence. It is said that a mad druid discovered the sapling, transplanting it to an underground grotto where it could grow. From this Gulthias tree came the seeds from which the first blights were sown.</p></div><div data-roll-name-ancestor=\"Dark Conquest\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Dark Conquest.</span></span> Wherever a tree or plant is contaminated by a fragment of an evil mind or power, a Gulthias tree can rise to infest and corrupt the surrounding forest. Its evil spreads through root and soil to other plants, which perish or transform into blights. As those blights spread, they poison and uproot healthy plants, replacing them with brambles, toxic weeds, and others of their kind. In time, an infestation of blights can turn any land or forest into a place of corruption.</p><p>In forests infested with blights, trees and plants grow with supernatural speed. Vines and undergrowth rapidly spread through buildings and overrun trails and roads. After blights have killed or driven off their inhabitants, whole villages can disappear in the space of days.</p></div><div data-roll-name-ancestor=\"Controlled by Evil\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Controlled by Evil.</span></span> Blights are independent creatures, but most act under a Gulthias tree's control, often displaying the habits and traits of the life force or spirit that spawned them. By attacking their progenitor's old foes or seeking out treasures valuable to it, they carry on the legacy of long-lost evil.</p></div></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line \">“<i>Behold the legacy of Gulthias the vampire: plants with a taste for blood.</i>”</p></div></div></div>",
+        "value": "<h3>枯藤怪Vine Blight</h3><p>枯藤怪的外观像一群匍匐滑行之物。它们潜伏在灌木丛中等待敌人靠近，然后操控周围的植物在其发动攻击前缠绕并阻碍敌人。</p><p>枯藤怪是唯一一种能够说话的枯萎怪。与所服务的甘提亚斯树之间的连接，让枯藤怪可以用其死去主人嗓音的破碎音节发声，并以此嘲弄受害者或是与强大的敌人讨价还价。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -633,7 +633,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Vine Blight",
+    "name": "枯藤怪 Vine Blight (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -732,7 +732,7 @@
   "items": [
     {
       "_id": "qko3ZV09DfQIlBv9",
-      "name": "Constrict",
+      "name": "绞缠 Constrict",
       "type": "weapon",
       "system": {
         "source": {
@@ -744,7 +744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 10 ft., one target. <i>Hit:</i> 9 ([[/damage 2d6 + 2 type=bludgeoning]]) damage, and a Large or smaller target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">12</span>). Until this grapple ends, the target is &amp;Reference[condition=restrained], and the blight can't constrict another target.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及10尺，单一目标。命中：9（[[/damage 2d6 + 2 type=bludgeoning]]）点钝击伤害，如果目标为大型或更小体型则其受擒抱（逃脱DC 12）。直至该擒抱终止前，该目标受束缚，而该枯萎怪无法绞缠另一个目标。</p>",
           "chat": ""
         },
         "range": {
@@ -1022,7 +1022,7 @@
     },
     {
       "_id": "yeDfI0Q0HkCzUtSk",
-      "name": "Entangling Plants",
+      "name": "缠身植被 Entangling Plants",
       "type": "feat",
       "system": {
         "source": {
@@ -1034,7 +1034,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Grasping roots and vines sprout in a 15-foot radius centered on the blight, withering away after 1 minute. For the duration, that area is &amp;Reference[rule=difficultterrain]{difficult terrain} for nonplant creatures. In addition, each creature of the blight's choice in that area when the plants appear must succeed on a [[/save ability=str dc=12]] saving throw or become &amp;Reference[condition=restrained]. A creature can use its action to make a [[/save ability=str dc=12]] check, freeing itself or another entangled creature within reach on a success.</p></div>",
+          "value": "<p>以枯萎怪味中心半径15尺范围内长出擒抱根须与藤蔓，并持续存在1分钟后枯萎。在其存在期间，该区域对非植物生物视为困难地形。此外，区域内由该枯萎怪指定的每个生物在这些植物出现时，必须进行一次DC 12的力量豁免，豁免失败者将受束缚。以该方式被束缚的生物必须进行一次DC 12的力量检定以挣脱束缚，或由另一处于可触及目标的生物以同类的检定为其解脱。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1262,7 +1262,7 @@
     },
     {
       "_id": "7VYf5RYi6HkYz3Ni",
-      "name": "False Appearance",
+      "name": "拟形 False Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -1274,7 +1274,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the blight remains motionless, it is indistinguishable from a tangle of vines.</p></div>",
+          "value": "<p>该枯萎怪静止不动时与普通的纠结藤蔓一模一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1330,7 +1330,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "d1ec34aa6f6ca9ab",
   "sort": 35900000,
   "ownership": {
     "default": 0,

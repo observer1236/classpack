@@ -1,5 +1,5 @@
 {
-  "name": "Displacer Beast (MM'14)",
+  "name": "移位兽 Displacer Beast (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>This monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur.</p><p>However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A displacer beast's eyes glow with an awful malevolence that persists even in death.</p><div data-roll-name-ancestor=\"Unseelie Origins\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Unseelie Origins.</span></span> Displacer beasts roamed the twilight lands of the Feywild for ages, until they were captured and trained by the Unseelie Court. The warriors of the court selectively bred the beasts to reinforce their ferocious and predatory nature, using them to hunt unicorns, pegasi, and other wondrous prey. However, it didn't take long for the displacer beasts to use their malevolent intelligence to escape their masters.</p><p>Running and breeding freely in the Feywild, the displacer beasts soon came to the attention of the Seelie Court. With blink dog companions at their side, fey hunters drove these predators to the fringes of the Feywild, where many crossed over to the Material Plane. To this day, displacer beasts and blink dogs attack each other on sight.</p></div><div data-roll-name-ancestor=\"Love of the Kill\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Love of the Kill.</span></span> Displacer beasts kill not just for food but also for sport. They target prey even when not hungry, often toying with their victims to entertain themselves until they are ready to eat. After killing its prey using its tentacles, a displacer beast drags the corpse to a quiet place where it can feed without distraction.</p><p>Displacer beasts hunt alone or in small prides that demonstrate skill at setting ambushes. A single beast will strike and withdraw, luring prey into a densely wooded area where its pack mates wait. Packs of displacer beasts hunting near trade roads recall the frequency and schedule of regular caravans, laying down ambushes to pick off those caravans.</p></div></div></div>",
+        "value": "<h3>移位兽Displacer Beast</h3><p>这种掠食巨兽得名于其能力，即它可以通过偏移光线，使自身的影像移位到真实位置的数尺外。移位兽形似一身光亮蓝黑毛皮的大猫，然而它的六条腿以及肩膀位置伸出的两条末端扁平带刺的触须则彰显其异界起源。移位兽的眼中闪烁的可怕恶意，即使在它死后仍然存在。</p><p><strong>哀怒起源Unseelie Origins。</strong>移位兽一度野生于妖精荒野的暮光中，直至被哀怒廷Unseelie Court捕获并驯养。王廷勇士们秘密培育这种野兽，增强它们凶猛的捕猎天性，以用来狩猎独角兽unicorns、天马pegasi和其他珍禽异兽。然而，没过多久移位兽就凭着狡猾逃离了主人的控制。</p><p>移位兽在妖精荒野里自由地繁衍生息，很快便引起了喜乐廷Seelie Court的注意。妖精猎手在其闪现犬blink dog同伴的协助下将移位兽们驱赶到了妖精荒野的边境，并使很多移位兽从该出进入了物质位面中。时至今日，移位兽和闪现犬们还会见面就会互相攻击。</p><p><strong>乐于杀戮Love of the Kill。</strong>移位兽猎杀猎物通常是为了果腹，但有时也仅仅是处于消遣。即使不饿的时候，它们也会寻找猎物玩弄以自娱自乐，直到饿了再进食。猎物被其触须杀死后，尸体会被移位兽拖到僻静不受打扰的地方安心享用。</p><p>移位兽会以独行或是小集群合作的模式进行狩猎，以发挥其伏击技巧。一只移位兽会先攻击然后撤退，进而把猎物引入茂密的树林交给其中埋伏的同伴。在商道附近的移位兽群会记得商队经过的频率和日程，并据此设伏袭击这些商队。</p><p><strong>珍贵的护卫和宠物Prized Guards and Pets。</strong>邪恶的智慧生物喜欢将移位兽养作宠物，前提是其必须表明此举对移位兽有利可图。移位兽也会为某些著名人物守卫宝库，或是为其担任保镖等工作。</p>",
         "public": ""
       },
-      "alignment": "Lawful Evil",
+      "alignment": "守序邪恶 Lawful Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Displacer Beast",
+    "name": "移位兽 Displacer Beast (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -722,7 +722,7 @@
   "items": [
     {
       "_id": "PRlDT3GE4vgsRmx2",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -734,7 +734,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The displacer beast makes two attacks with its tentacles.</p></div>",
+          "value": "<p>移位兽发动两次触须攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -927,7 +927,7 @@
     },
     {
       "_id": "Asg1AfEiRZ9tRdgx",
-      "name": "Tentacle",
+      "name": "触须 Tentacle",
       "type": "weapon",
       "system": {
         "source": {
@@ -939,7 +939,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 10 ft., one target. <i>Hit:</i> 7 ([[/damage 1d6 + 4 type=bludgeoning]]) damage plus 3 ([[/damage 1d6 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及10尺，单一目标。命中：7（[[/damage 1d6 + 4 type=bludgeoning]]）点钝击伤害，外加3（[[/damage 1d6 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1233,7 +1233,7 @@
     },
     {
       "_id": "f5dsm2rzm2ebWzIG",
-      "name": "Avoidance",
+      "name": "豁免闪避 Avoidance",
       "type": "feat",
       "system": {
         "source": {
@@ -1245,7 +1245,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</p></div>",
+          "value": "<p>移位兽在成为某一范围效应影响对象时，若该效应允许它通过成功的豁免检定来使伤害减半，则它在该豁免成功时不受伤害，而豁免失败时只受一半伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1301,7 +1301,7 @@
     },
     {
       "_id": "raxL7IPUGiINebMu",
-      "name": "Displacement",
+      "name": "移位 Displacement",
       "type": "feat",
       "system": {
         "source": {
@@ -1313,7 +1313,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is &amp;Reference[condition=incapacitated] or has a speed of 0.</p></div>",
+          "value": "<p>移位兽投射出一个魔法幻象，使自己看上去位于真实位置附近的另一个位置，并使所有对自己发动的攻击检定具有劣势。移位兽被攻击命中时该特质失效，直至其下一回合结束才再次起效。此外，移位兽陷入失能或速度为0时也会导致该特质终止。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1369,7 +1369,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 9900000,
   "ownership": {
     "default": 0,

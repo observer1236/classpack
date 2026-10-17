@@ -1,5 +1,5 @@
 {
-  "name": "Giant Rat (Diseased) (MM'14)",
+  "name": "巨鼠（携带疾病） Giant Rat (Diseased) (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "",
+        "value": "<h3>蚊蝠Stirge</h3><p>这种可怕的飞行生物，就像一只大蝙蝠和大蚊子的混合物种。它长着带锋利钳子的脚和中空的针状长喙，到处寻找自己的下一顿大餐。</p><p>蚊蝠以活体生物的鲜血维生，它们会贴在目标身上慢慢的吸取血液。少量蚊蝠的危险性并不大，然而当它们聚齐一大群时依然不容小觑。数量上的优势，使得受害者就算把蚊蝠全拽下来却又会被重复贴上，因而难以避免被吸血而迅速被削弱。</p><p><strong>吸血Blood Drain。</strong>蚊蝠发动攻击时，会在目标身上寻找脆弱的空隙并迅速贴上，接着用长喙刺进皮肤，并用钳状脚抓紧目标。直到蚊蝠吸够了血，它就会迅速从目标身上脱离，然后飞去安静的地方消化吸收。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -638,7 +638,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Rat (Diseased)",
+    "name": "巨鼠（携带疾病） Giant Rat (Diseased) (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -736,7 +736,7 @@
   "items": [
     {
       "_id": "7FOFPdjDIjjJNOmN",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -748,7 +748,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 4 ([[/damage 1d4 + 2 type=piercing]]) damage. If the target is a creature, it must succeed on a [[/save ability=con dc=10]] saving throw or contract a disease. Until the disease is cured, the target can't regain hit points except by magical means, and the target's hit point maximum decreases by 3 ([[/r 1d6]]) every 24 hours. If the target's hit point maximum drops to 0 as a result of this disease, the target dies.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：4（[[/damage 1d4 + 2 type=piercing]]）点穿刺伤害。</p><p>若目标是生物，则必须成功通过一次DC 10的体质豁免，否则会染上疾病。在疾病治愈前，目标只能通过魔法恢复生命值，且每24小时其生命值上限减少3（[[/r 1d6]]）。若目标的生命值上限因这种疾病降至0，则目标死亡。</p>",
           "chat": ""
         },
         "range": {
@@ -1184,7 +1184,7 @@
     },
     {
       "_id": "GLonWdcaDXm5QBRl",
-      "name": "Keen Smell",
+      "name": "敏锐嗅觉 Keen Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1196,7 +1196,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The rat has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on smell.</p></div>",
+          "value": "<p>鼠依赖嗅觉进的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1252,7 +1252,7 @@
     },
     {
       "_id": "ISdNW6VywJYrNxDV",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1264,7 +1264,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>鼠至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1320,7 +1320,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 26400000,
   "ownership": {
     "default": 0,

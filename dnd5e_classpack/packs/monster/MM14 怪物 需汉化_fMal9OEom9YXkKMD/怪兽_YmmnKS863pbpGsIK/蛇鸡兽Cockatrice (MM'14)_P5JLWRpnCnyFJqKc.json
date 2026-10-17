@@ -1,5 +1,5 @@
 {
-  "name": "蛇鸡兽Cockatrice (MM'14)",
+  "name": "蛇鸡 Cockatrice (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,7 +546,7 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p><span style=\"font-family:宋体\">蛇鸡兽看上去像是鸟、蜥蜴、蝙蝠的丑陋混合体，并因其石化生物的能力而臭名远扬。这种杂食生物的食谱都是些可以一口吞下的东西：包括有浆果、坚果、花朵，以及各种小动物如昆虫、老鼠、青蛙等。它们不会主动危害别的生物，但却会因一点点危险迹象就激起凶猛狂暴的激烈反应。蛇鸡兽无论面对何种威胁都会疯狂拍打着翅膀直冲上前，并尖叫着伸头猛啄。它的鸟喙造成的即使最轻微的擦伤，也会为受害者敲响丧钟，使其从伤口慢慢变成石头。</span></p><p>The cockatrice looks like a hideous hybrid of lizard, bird, and bat, and it is infamous for its ability to turn flesh to stone. These omnivores have a diet that consists of berries, nuts, flowers, and small animals such as insects, mice, and frogs-things they can swallow whole. They would be no threat to anything else if not for their fierce and frenzied response to even a hint of danger. A cockatrice flies into the face of any threat, squawking and madly beating its wings as its head darts out to peck. The smallest scratch from a cockatrice's beak can spell doom as its victim slowly turns to stone from the injury.</p></div></div>",
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p><span style=\"font-family:宋体\">蛇鸡兽看上去像是鸟、蜥蜴、蝙蝠的丑陋混合体，并因其石化生物的能力而臭名远扬。这种杂食生物的食谱都是些可以一口吞下的东西：包括有浆果、坚果、花朵，以及各种小动物如昆虫、老鼠、青蛙等。它们不会主动危害别的生物，但却会因一点点危险迹象就激起凶猛狂暴的激烈反应。蛇鸡兽无论面对何种威胁都会疯狂拍打着翅膀直冲上前，并尖叫着伸头猛啄。它的鸟喙造成的即使最轻微的擦伤，也会为受害者敲响丧钟，使其从伤口慢慢变成石头。</span></p></div></div>",
         "public": ""
       },
       "alignment": "无阵营Unaligned",
@@ -630,7 +630,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Cockatrice",
+    "name": "蛇鸡 Cockatrice (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+3</span><span style=\"font-family:'STHeiti light'\">，触及</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺，单一生物。<em>命中：</em></span><span style=\"font-family:Calibri\">3</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">1d4+1</span><span style=\"font-family:'STHeiti light'\">）点穿刺伤害，目标必须进行一次</span><span style=\"font-family:Calibri\">DC 11</span><span style=\"font-family:'STHeiti light'\">的体质豁免，豁免失败则因魔法而开始变成石头，并陷入束缚状态。目标生物在其下一回合结束时必须在进行一次该豁免，豁免成功则效应终止，豁免失败则该生物陷入</span><span style=\"font-family:Calibri\">24</span><span style=\"font-family:'STHeiti light'\">小时的石化状态。</span></p><p><em>Melee Weapon Attack:</em> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one creature. <em>Hit:</em> 3 ([[/damage 1d4 + 1 type=piercing]]) damage, and the target must succeed on a [[/save ability=con dc=11]] saving throw against being magically &amp;Reference[condition=petrified]. On a failed save, the creature begins to turn to stone and is &amp;Reference[condition=restrained]. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is &amp;Reference[condition=petrified] for 24 hours.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+3</span><span style=\"font-family:'STHeiti light'\">，触及</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺，单一生物。<em>命中：</em></span><span style=\"font-family:Calibri\">3</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">[[/damage 1d4 + 1 type=piercing]]</span><span style=\"font-family:'STHeiti light'\">）点穿刺伤害，目标必须进行一次</span><span style=\"font-family:Calibri\">DC 11</span><span style=\"font-family:'STHeiti light'\">的体质豁免，豁免失败则因魔法而开始变成石头，并陷入束缚状态。目标生物在其下一回合结束时必须在进行一次该豁免，豁免成功则效应终止，豁免失败则该生物陷入</span><span style=\"font-family:Calibri\">24</span><span style=\"font-family:'STHeiti light'\">小时的石化状态。</span></p></div>",
           "chat": ""
         },
         "range": {

@@ -1,5 +1,5 @@
 {
-  "name": "Quaggoth Spore Servant (MM'14)",
+  "name": "幽邃熊怪孢子奴仆 Quaggoth Spore Servant (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A spore servant is any Large or smaller creature brought back to life by the animating spores of a myconid sovereign. A creature that was never flesh and blood to begin with (such as a construct, elemental, ooze, plant, or undead) can't be turned into a spore servant.</p><div data-roll-name-ancestor=\"Retained Characteristics\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Retained Characteristics.</span></span> The servant retains its Armor Class, hit points, Hit Dice, Strength, Dexterity, Constitution, vulnerabilities, resistances, and immunities.</p></div><div data-roll-name-ancestor=\"Lost Characteristics\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Lost Characteristics.</span></span> The servant loses its original saving throw and skill bonuses, special senses, and special traits. It loses any action that isn't Multiattack or a melee weapon attack that deals bludgeoning, piercing, or slashing damage. If it has an action or a melee weapon attack that deals some other type of damage, it loses the ability to deal damage of that type, unless the damage comes from a piece of equipment, such as a magic item.</p></div><div data-roll-name-ancestor=\"Type\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Type.</span></span> The servant's type is plant, and it loses any tags.</p></div><div data-roll-name-ancestor=\"Alignment\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Alignment.</span></span> The servant is unaligned.</p></div><div data-roll-name-ancestor=\"Speed\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Speed.</span></span> Reduce all the servant's speeds by 10 feet, to a minimum of 5 feet.</p></div><div data-roll-name-ancestor=\"Ability Scores\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Ability Scores.</span></span> The servant's ability scores change as follows: Int 2 (-4), Wis 6 (-2), Cha 1 (-5).</p></div><div data-roll-name-ancestor=\"Senses\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Senses.</span></span> The servant has &amp;Reference[rule=blindsight] with a radius of 30 feet, and it is blind beyond this radius.</p></div><div data-roll-name-ancestor=\"Condition Immunities\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"8\"> <span class=\"entry-title-inner\">Condition Immunities.</span></span> The servant can't be &amp;Reference[condition=blinded], &amp;Reference[condition=charmed], &amp;Reference[condition=frightened], or &amp;Reference[condition=paralyzed].</p></div><div data-roll-name-ancestor=\"Languages\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"9\"> <span class=\"entry-title-inner\">Languages.</span></span> The servant loses all known languages, but it responds to orders given to it by myconids using rapport spores. The servant gives highest priority to orders received from the most powerful myconid.</p></div><div data-roll-name-ancestor=\"Attacks\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"10\"> <span class=\"entry-title-inner\">Attacks.</span></span> If the servant has no other means of dealing damage, it can use its fists or limbs to make unarmed strikes. On a hit, an unarmed strike deals bludgeoning damage equal to [[/r 1d4]] + the servant's Strength modifier, or, if the servant is Large, [[/r 2d4]] + its Strength modifier.</p></div></div></div>",
+        "value": "<h3>蕈人Myconids</h3><p>蕈人是幽暗地域中拥有智能，又能够行走的真菌生物。蕈人们一生追寻生命启迪而反对暴力，它们愿意与人和平共处。只要表现友善，蕈人们会乐于让来客自由来往其菌落colony，甚至为对方提供庇护场所。</p><p><strong>结社与念合Circles and Melds。</strong>蕈人王sovereign是菌落中体型最大的个体，它主持着菌落里数量不一的社交群体，这些集群称为结社circle。菌落中，每二十多个蕈人组成一个结社，它们一起工作，生活，并且一起进行念合meld。</p><p>蕈人们通过念合来让集体的意念进行冥想交流，这种交流让它们在沉闷的地底生活中得以超脱。蕈人用通念孢子将念合参与者的思维联结在一起，然后用至幻孢子使大家感应一个共同的梦想，并从中互动娱乐。蕈人们把念合当做其生存目的，它们以此追求集体的联合，并寻求更高的觉悟与精神升华。此外，蕈人们也会用通念孢子跟其他智能生物进行交流。</p><p><strong>蕈人的繁衍Myconid Reproduction。</strong>蕈人像普通真菌一样通过孢子繁衍同族。它们会谨慎的控制生殖孢子的释放以避免人口过剩。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -637,7 +637,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Quaggoth Spore Servant",
+    "name": "幽邃熊怪孢子奴仆 Quaggoth Spore Servant (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -736,7 +736,7 @@
   "items": [
     {
       "_id": "cSLGPFhzJdJMcdM9",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -748,7 +748,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spore servant makes two claw attacks.</p></div>",
+          "value": "<p>孢子奴仆发动两次爪击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -941,7 +941,7 @@
     },
     {
       "_id": "b3BepKtbHvL2uH9o",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -953,7 +953,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近身武器攻击：命中+5，触及5尺，单一目标。命中：6（[[/damage 1d6 + 3 type=slashing]]）的挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1231,7 +1231,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "d1ec34aa6f6ca9ab",
   "sort": 8800000,
   "ownership": {
     "default": 0,

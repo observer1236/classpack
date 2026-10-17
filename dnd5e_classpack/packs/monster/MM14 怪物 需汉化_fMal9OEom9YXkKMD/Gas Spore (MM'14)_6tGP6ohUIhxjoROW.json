@@ -1,5 +1,5 @@
 {
-  "name": "Gas Spore (MM'14)",
+  "name": "气孢菌 Gas Spore (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<p>The first gas spores are thought to have been spawned from dead beholders, whose moldering corpses fed a parasitic fungus with aberrant magic. Having long since adapted into a unique plant creature, a gas spore grows quickly and purposefully out of any corpse, creating a malevolent-looking mockery of the most feared denizen of the Underdark.</p><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Eye Tyrant's Form\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Eye Tyrant's Form.</span></span> A gas spore is a spherical, balloon-like fungus that resembles a beholder from a distance, though its true nature becomes increasingly obvious as one approaches it. The monster possesses a blind central \"eye\" and rhizome growths sprouting from its upper surface, superficially resembling a beholder's eyestalks.</p></div><div data-roll-name-ancestor=\"Death Burst\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Death Burst.</span></span> A gas spore is a hollow shell filled with a lighter-than-air gas that enables it to float as a beholder does. Piercing the shell with even the weakest attack causes the creature to burst apart, releasing a cloud of deadly spores. A creature that inhales the spores becomes host to them, and is often dead within a day. Its corpse then becomes the spawning ground from which new gas spores arise.</p></div><div data-roll-name-ancestor=\"Beholder Memories\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Beholder Memories.</span></span> A gas spore that sprouts from a beholder's corpse sometimes carries within it memories of its deceased parent. When the gas spore explodes, its deadly spores cast those memories adrift. Any creature that inhales the spores and survives inherits one or more of the beholder's fragmented memories, and might gain useful information about the beholder's former lair and other nearby places and creatures of interest.</p></div></div></div><div data-roll-name-ancestor=\"Fungi\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Fungi</span></h1> <p>With its sky of jagged stone and perpetual night, the Underdark is home to all manner of fungi. Taking the place of plants in the subterranean realm, fungi are vital to the survival of many underground species, providing nourishment and shelter in the unforgiving darkness.</p><p>Fungi spawn in organic matter, then break that matter down to consume it, feeding on filth and corpses. As they mature, fungi eject spores that drift on the lightest breeze to spawn new fungi.</p><p>Not needing sunlight or warmth to grow, fungi thrive in every corner and crevice of the Underdark. Transformed by the magic that permeates that underground realm, Underdark fungi often develop potent defensive mechanisms or abilities of mimicry and attack. The largest specimens can spread to create vast subterranean forests in which countless creatures live and feed.</p></div>",
+        "value": "<h3>气孢菌Gas Spore</h3><p>最初的气孢菌被认为来自死亡的眼魔，是寄生于其腐烂尸体的真菌受魔法畸变的产物。长时间的进化演变后，它们成了一种独特的植物生物。气孢菌可以在任何尸体上迅速而稳定的成长，最后讽刺似的长成幽暗地域最可怕的生物，眼魔那样子的外表。</p><p>巨眼暴君形态Eye Tyrant&#x27;s Form。气孢菌是一种圆球状，且具有气球结构的真菌生物。其外观远看跟眼魔相仿，而似乎这正是其自然生长的本意，因此哪怕接近观察反而会发现其模仿痕迹更为明显。怪物的中央长着一只无法视物的“眼睛”，其球状外皮上还长出一条条极像眼柄的根茎。</p><p><strong>致命爆发Death Burst。</strong>气孢菌是一个充满轻气体的空壳，因此它能像眼魔一样漂浮在空中。轻微的攻击都会刺破孢子脆弱的外壳导致其彻底破裂，并释放出一片致命的孢子云。不慎吸入孢子的生物将成为其宿主，并将在一天之内死去。然后这些被寄生的尸体上就可以慢慢长出新的气孢菌，开始新的生命周期。</p><p><strong>眼魔记忆Beholder Memories。</strong>从眼魔尸体上长出的气孢菌有时候会带着其宿主的记忆。当这些气孢菌崩裂时，这些记忆随着致命孢子随处漂浮。若有生物吸入孢子并从其致命性生还下来，便会继承下这些记忆的片段。运气好的话还可以从中获得某些有用情报，比如关于眼魔生前巢穴位置，或是附近其他生物的有趣信息。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -639,7 +639,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Gas Spore",
+    "name": "气孢菌 Gas Spore (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -738,7 +738,7 @@
   "items": [
     {
       "_id": "tydAUEjbi6tgf8RM",
-      "name": "Touch",
+      "name": "触击 Touch",
       "type": "weapon",
       "system": {
         "source": {
@@ -750,7 +750,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+0]]{+0} to hit, reach 5 ft., one creature. <i>Hit:</i> 1 poison damage, and the creature must succeed on a [[/save ability=con dc=10]] saving throw or become infected with the disease described in the Death Burst trait.</p></div>",
+          "value": "<p>近战武器攻击：命中+0，触及5尺，单一生物。命中：1点毒性伤害，该生物必须进行一次DC 10的体质豁免，豁免失败则目标感染致命爆发特质中所述的疾病。</p>",
           "chat": ""
         },
         "range": {
@@ -1186,7 +1186,7 @@
     },
     {
       "_id": "sLw5cAEb45tR9Fl4",
-      "name": "Death Burst",
+      "name": "自爆 Death Burst",
       "type": "feat",
       "system": {
         "source": {
@@ -1198,7 +1198,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The gas spore explodes when it drops to 0 hit points. Each creature within 20 feet of it must succeed on a [[/save ability=con dc=15]] saving throw or take 10 ([[/damage 3d6 type=poison]]) damage and become infected with a disease on a failed save. Creatures immune to the &amp;Reference[condition=poisoned] condition are immune to this disease.</p><p>Spores invade an infected creature's system, killing the creature in a number of hours equal to [[/r 1d12]] + the creature's Constitution score, unless the disease is removed. In half that time, the creature becomes &amp;Reference[condition=poisoned] for the rest of the duration. After the creature dies, it sprouts [[/r 2d4]] Tiny gas spores that grow to full size in 7 days.</p></div>",
+          "value": "<p>气孢菌在其生命值为0时发生爆炸。其身边20尺范围内的生物都必须进行一次DC 15的体质豁免，豁免失败者将受10（[[/damage 3d6 type=poison]]）点毒素伤害，并感染疾病。对中毒状态免疫的生物免疫该疾病效应。 孢子入侵感染生物的身体，在疾病未移除的情况下，该生物将在若干小时（[[/r 1d12]]+生物体质属性值）后死亡。距离死亡时间过半后，受感染生物将陷入中毒状态。感染生物死亡之后，其身体将长出[[/r 2d4]]的微型气孢菌。这些孢子的尺寸将在7天内成长完全。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1431,7 +1431,7 @@
     },
     {
       "_id": "MS8qzO1OgI9XEGyu",
-      "name": "Eerie Resemblance",
+      "name": "怪异拟像 Eerie Resemblance",
       "type": "feat",
       "system": {
         "source": {
@@ -1443,7 +1443,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The gas spore resembles a beholder. A creature that can see the gas spore can discern its true nature with a successful [[/save ability=int dc=15]] (&amp;Reference[skill=Nature]) check.</p></div>",
+          "value": "<p>气孢菌长得与眼魔相仿。成功进行一次DC 15智力（自然）检定的角色可以揭示其真实本质。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1499,7 +1499,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "d1ec34aa6f6ca9ab",
   "sort": 5400000,
   "ownership": {
     "default": 0,

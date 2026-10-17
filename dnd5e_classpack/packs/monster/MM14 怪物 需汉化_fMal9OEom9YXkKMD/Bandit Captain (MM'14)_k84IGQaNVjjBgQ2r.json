@@ -1,5 +1,5 @@
 {
-  "name": "Bandit Captain (MM'14)",
+  "name": "匪帮队长 Bandit Captain (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The bandit captain has these qualities in spades.</p><p>In addition to managing a crew of selfish malcontents, the pirate captain is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.</p><p>More than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain's vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain's colorful reputation.</p></div></div>",
+        "value": "<h3>匪帮队长 Bandit Captain</h3><p>个性强硬刚烈，手段狡诈残忍，并且口若悬河得以凝聚一帮乌合之众。身为一名匪帮队长必须集这些品质于一身。</p><p>海盗船长pirate captain管理着一帮自私自利又满嘴牢骚的船员，因而算是一种匪帮队长的变体。船长控制着整艘船的运作与安全。为了保证船员安份工作，他必须时刻拿捏好赏罚的尺度。</p><p>跟财宝相比，匪帮队长或海盗船长们更看重其恶名。一旦被匪徒俘虏，表现得深明首领虚荣与野心时总会得到好待遇，而坦诚从未听说其精彩经历的人则免不了一顿皮肉之苦。</p>",
         "public": ""
       },
-      "alignment": "Any Non-Lawful Alignment",
+      "alignment": "任意非守序阵营 Any Non-Lawful Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -644,7 +644,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Bandit Captain",
+    "name": "匪帮队长 Bandit Captain (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -738,7 +738,7 @@
   "items": [
     {
       "_id": "nbDyX4MNAxXNSA0y",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -750,7 +750,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.</p></div>",
+          "value": "<p>首领发动三次近战攻击：两次弯刀攻击和一次匕首攻击。首领也可以选择进行两次远程匕首攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -943,7 +943,7 @@
     },
     {
       "_id": "hVTQSNOsaNUFtCBv",
-      "name": "Scimitar",
+      "name": "弯刀 Scimitar",
       "type": "weapon",
       "system": {
         "source": {
@@ -955,7 +955,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：6（[[/damage 1d6 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1225,7 +1225,7 @@
     },
     {
       "_id": "fqRsQj0e3UqbZtjI",
-      "name": "Dagger",
+      "name": "匕首 Dagger",
       "type": "weapon",
       "system": {
         "source": {
@@ -1237,7 +1237,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or Ranged Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft. or range 20/60 ft., one target. <i>Hit:</i> 5 ([[/damage 1d4 + 3 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战或远程武器攻击：命中+5，触及5尺或射程20/60尺，单一目标。命中：5（[[/damage 1d4 + 3 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1508,7 +1508,7 @@
     },
     {
       "_id": "NbYOFDWlA9jW4lLL",
-      "name": "Parry",
+      "name": "格挡 Parry",
       "type": "feat",
       "system": {
         "source": {
@@ -1520,7 +1520,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.</p></div>",
+          "value": "<p>首领在被一次近战攻击命中时，其AC加上2。此时该首领必须能看见攻击者，且有在持用一把近战武器。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1713,11 +1713,11 @@
     },
     {
       "_id": "FxDVYsviaNJE2Yh7",
-      "name": "Studded Leather Armor",
+      "name": "镶钉皮甲 Studded Leather Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p></div>",
+          "value": "<p>镶钉皮甲由坚韧而灵活的皮革制成，并以密布的铆钉或尖刺加固。</p>",
           "chat": ""
         },
         "source": {
@@ -1810,7 +1810,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 29200000,
   "ownership": {
     "default": 0,

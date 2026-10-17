@@ -1,5 +1,5 @@
 {
-  "name": "Tribal Warrior (MM'14)",
+  "name": "部族武者 Tribal Warrior (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Tribal warriors live beyond civilization, most often subsisting on fishing and hunting. Each tribe acts in accordance with the wishes of its chief, who is the greatest or oldest warrior of the tribe or a tribe member blessed by the gods.</p></div></div>",
+        "value": "<h3>部族武者 Tribal Warriors</h3><p>部族武者生活在文明之外，通常靠捕鱼和狩猎维生。在部族中，酋长的意愿便是部族履行的传统，而这些领袖通常都是部族里最优秀或最年长的武者，或是某个受众神祝福的部族成员。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -653,7 +653,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Tribal Warrior",
+    "name": "部族武者 Tribal Warrior (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -747,7 +747,7 @@
   "items": [
     {
       "_id": "EF77GV52mdA2Zev9",
-      "name": "Spear",
+      "name": "矛 Spear",
       "type": "weapon",
       "system": {
         "source": {
@@ -759,7 +759,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or Ranged Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft. or range 20/60 ft., one target. <i>Hit:</i> 4 ([[/damage 1d6 + 1 type=piercing]]) damage, or 5 ([[/damage 1d8 + 1 type=piercing]]) damage if used with two hands to make a melee attack.</p></div>",
+          "value": "<p>近战或远程武器攻击：命中+3，触及5尺或射程20/60尺，单一目标。命中：4（[[/damage 1d6 + 1 type=piercing]]）点穿刺伤害，或使用双手发动近战攻击时5（[[/damage 1d8 + 1 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1033,7 +1033,7 @@
     },
     {
       "_id": "jkRRLSmqXRbrZNex",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1045,7 +1045,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>武者至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1101,11 +1101,11 @@
     },
     {
       "_id": "gwLEsnLPkrnG9n2m",
-      "name": "Hide Armor",
+      "name": "兽皮甲 Hide Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p></div>",
+          "value": "<p>这种粗糙的护甲由厚实的毛皮和兽皮制成，常见于野蛮人部落、邪恶类人生物，以及缺乏制作更好护甲所需工具和材料的群体。</p>",
           "chat": ""
         },
         "source": {
@@ -1198,7 +1198,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 15900000,
   "ownership": {
     "default": 0,

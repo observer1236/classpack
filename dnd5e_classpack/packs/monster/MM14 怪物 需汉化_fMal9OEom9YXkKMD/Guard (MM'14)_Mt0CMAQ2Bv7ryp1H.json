@@ -1,5 +1,5 @@
 {
-  "name": "Guard (MM'14)",
+  "name": "警卫 Guard (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Guards include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles.</p></div></div>",
+        "value": "<h3>警卫 Guards</h3><p>警卫包括各种城市的守卫watch，要塞或城堡中的哨兵sentries，以及商人和贵族的保镖bodyguard。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -649,7 +649,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Guard",
+    "name": "警卫 Guard (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -743,7 +743,7 @@
   "items": [
     {
       "_id": "5NMdLBygzXv1vffl",
-      "name": "Spear",
+      "name": "矛 Spear",
       "type": "weapon",
       "system": {
         "source": {
@@ -755,7 +755,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or Ranged Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft. or range 20/60 ft., one target. <i>Hit:</i> 4 ([[/damage 1d6 + 1 type=piercing]]) damage, or 5 ([[/damage 1d8 + 1 type=piercing]]) damage if used with two hands to make a melee attack.</p></div>",
+          "value": "<p>近战或远程武器攻击：命中+3，触及5尺或射程20/60尺，单一目标。命中：4（[[/damage 1d6 + 1 type=piercing]]）点穿刺伤害，或使用双手发动近战攻击时5（[[/damage 1d8 + 1 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1029,11 +1029,11 @@
     },
     {
       "_id": "DXHNgRgQnJcGhHRq",
-      "name": "Chain Shirt",
+      "name": "链甲衫 Chain Shirt",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p></div>",
+          "value": "<p>链甲衫由相互连接的金属环制成，穿在衣服或皮革夹层之间。它为躯干提供适度的防护，外层衣物也能减轻金属环摩擦的声响。</p>",
           "chat": ""
         },
         "source": {
@@ -1126,11 +1126,11 @@
     },
     {
       "_id": "ymGrDyZHukQ9Pdgj",
-      "name": "Shield",
+      "name": "盾牌 Shield",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p></div>",
+          "value": "<p>盾牌由木材或金属制成，用一只手持用。持用盾牌使你的护甲等级提高2。你同时只能从一面盾牌获益。</p>",
           "chat": ""
         },
         "source": {
@@ -1223,7 +1223,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 15400000,
   "ownership": {
     "default": 0,

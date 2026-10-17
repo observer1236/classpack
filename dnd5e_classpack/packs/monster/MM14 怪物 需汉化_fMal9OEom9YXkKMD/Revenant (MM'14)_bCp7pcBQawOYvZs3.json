@@ -1,5 +1,5 @@
 {
-  "name": "Revenant (MM'14)",
+  "name": "还魂鬼 Revenant (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A revenant forms from the soul of a mortal who met a cruel and undeserving fate. It claws its way back into the world to seek revenge against the one who wronged it. The revenant reclaims its mortal body and superficially resembles a zombie. However, instead of lifeless eyes, a revenant's eyes burn with resolve and flare in the presence of its adversary. If the revenant's original body was destroyed or is otherwise unavailable, the spirit of the revenant enters another humanoid corpse. Regardless of the body the revenant uses as a vessel, its adversary always recognizes the revenant for what it truly is.</p><div data-roll-name-ancestor=\"Hunger for Revenge\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Hunger for Revenge.</span></span> A revenant has only one year to exact revenge. When its adversary dies, or if the revenant fails to kill its adversary before its time runs out, it crumbles to dust and its soul fades into the afterlife. If its foe is too powerful for the revenant to destroy on its own, it seeks worthy allies to help it fulfill its quest.</p></div><div data-roll-name-ancestor=\"Divine Justice\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Divine Justice.</span></span> No magic can hide a creature pursued by a revenant, which always knows the direction and distance between it and the target of its vengeance. In cases where the revenant seeks revenge against more than one adversary, it pursues them one at a time, starting with the creature that dealt it the killing blow. If the revenant's body is destroyed, its soul flies forth to seek out a new corpse in which to resume its hunt.</p></div><div data-roll-name-ancestor=\"Undead Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Undead Nature.</span></span> A revenant doesn't require air, food, drink, or sleep.</p></div></div></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Revenants with Spells and Weapons\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Variant: Revenants with Spells and Weapons</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h4> <p>Revenants that were spellcasters before they died might retain some or all of their spellcasting capabilities. Similarly, revenants that wore armor and wielded weapons in life might continue to do so.</p></div>",
+        "value": "<h3>还魂鬼Revenant</h3><p>还魂鬼由遭受残酷和不公命运的凡人灵魂形成。这些魂魄挣扎着回到世上，向制造这场厄运的人寻求复仇。还魂鬼以此返回其凡人躯壳，并使之变得如同丧尸一般。然而其眼睛并非了无生气，而是燃着复仇的决心并在其敌人出现时更加闪耀。如果还魂鬼自己的身体被毁坏，或由于其他原因而无法行动，那还魂鬼的灵魂就会附身到其他类人生物的尸体上。而无论还魂鬼选择怎样的尸体作为容器，其敌人也会立即认出它的真实身份。</p><p><strong>复仇饥渴Hunger for Revenge。</strong>一只还魂鬼只有一年的时间来让其策划复仇，当仇敌死亡或是在还魂鬼复仇失败时间耗尽时，其躯体也将化为尘土，而灵魂则淡入轮回之中。如果还魂鬼的仇敌过于强大，以至于其自己难以摧毁对方，则它们还可以前去寻求有价值的盟友来帮助自己完成使命。</p><p><strong>神圣裁决Divine Justice。</strong>魔法手段也无法隐藏还魂鬼所追踪的生物，它总能准确的找出方位并掌握自己与仇敌之间的距离。如果仇敌人数众多，一名还魂鬼还会寻求另一名还魂鬼结盟，再团结一致共同对敌。如果还魂鬼身体被毁坏，则它的灵魂会寻找其他类人生物的尸体附在其上，继续复仇。</p><p><strong>亡灵本质Undead Nature。</strong>还魂鬼不需要空气、饮食，以及睡眠。</p>",
         "public": ""
       },
-      "alignment": "Neutral",
+      "alignment": "绝对中立 Neutral",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -656,7 +656,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Revenant",
+    "name": "还魂鬼 Revenant (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -750,7 +750,7 @@
   "items": [
     {
       "_id": "3xXO87Cvh97sRick",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -762,7 +762,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The revenant makes two fist attacks.</p></div>",
+          "value": "<p>还魂鬼发动两次拳击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -955,7 +955,7 @@
     },
     {
       "_id": "yPGnKVHfVF3FY2yl",
-      "name": "Fist",
+      "name": "拳击 Fist",
       "type": "weapon",
       "system": {
         "source": {
@@ -967,7 +967,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 5 ft., one target. <i>Hit:</i> 11 ([[/damage 2d6 + 4 type=bludgeoning]]) damage. If the target is a creature against which the revenant has sworn vengeance, the target takes an extra 14 ([[/damage 4d6 type=bludgeoning]]) damage. Instead of dealing damage, the revenant can grapple the target (escape DC <span class=\"rd__dc\">14</span>) provided the target is Large or smaller.</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及5尺，单一生物。命中：11（[[/damage 2d6 + 4 type=bludgeoning]]）点钝击伤害。如果该目标生物是还魂鬼的誓仇对象，则目标额外受14（[[/damage 4d6 type=bludgeoning]]）点钝击伤害。还魂鬼也可以选择不造成伤害，而是擒抱该生物（逃脱DC 14），前提是该目标体型必须为大型或更小体型。</p>",
           "chat": ""
         },
         "range": {
@@ -991,7 +991,7 @@
           "QMcXRNplV1mRrP8N": {
             "_id": "QMcXRNplV1mRrP8N",
             "type": "attack",
-            "name": "Attack: 2d6 Bludgeoning Damage",
+            "name": "攻击: 2d6 钝击 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1163,7 +1163,7 @@
           "xSIigZSyHk5RI1jO": {
             "_id": "xSIigZSyHk5RI1jO",
             "type": "damage",
-            "name": "Damage: 4d6 Bludgeoning Damage",
+            "name": "伤害: 4d6 钝击 伤害",
             "target": {
               "prompt": true,
               "template": {
@@ -1400,7 +1400,7 @@
     },
     {
       "_id": "YyB9GXyVZEAy5M1m",
-      "name": "Vengeful Glare",
+      "name": "复仇怒视 Vengeful Glare",
       "type": "feat",
       "system": {
         "source": {
@@ -1412,7 +1412,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a [[/save ability=wis dc=15]] saving throw. On a failure, the target is &amp;Reference[condition=paralyzed] until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is &amp;Reference[condition=frightened] of the revenant for 1 minute. The &amp;Reference[condition=frightened] target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the &amp;Reference[condition=frightened] condition on itself on a success.</p></div>",
+          "value": "<p>还魂鬼指定其周边30尺内一个它能看见的生物，或指定其誓仇对象。该目标必须进行一次DC 15的感知豁免。豁免失败则目标陷入麻痹直至还魂鬼对其造成伤害，或持续至还魂鬼的下一回合结束。麻痹状态终止时，该目标被该还魂鬼恐慌1分钟。该被恐慌目标可以在自己的每个回合结束时再次进行该豁免，如果此时它能看到该还魂鬼则豁免具有劣势。豁免成功则终止其自己身上的恐慌状态。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1627,7 +1627,7 @@
     },
     {
       "_id": "Ds0Yoj3gObx9DYpR",
-      "name": "Regeneration",
+      "name": "再生 Regeneration",
       "type": "feat",
       "system": {
         "source": {
@@ -1639,7 +1639,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The revenant regains 10 hit points at the start of its turn. If the revenant takes fire or radiant damage, this trait doesn't function at the start of the revenant's next turn. The revenant's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate.</p></div>",
+          "value": "<p>还魂鬼在其自己的回合开始时恢复10点生命值。如果其受到火焰或光耀伤害，则该还魂鬼的该特质在其下一回合开始时无法生效。还魂鬼的躯体只有在其以0生命值开始其自己回合，且无法使用再生特质时才会被摧毁。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1843,7 +1843,7 @@
     },
     {
       "_id": "RJ8R5XXhdAFkeFld",
-      "name": "Rejuvenation",
+      "name": "复生 Rejuvenation",
       "type": "feat",
       "system": {
         "source": {
@@ -1855,7 +1855,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>When the revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a @spell[wish] spell can be used to force the soul to go to the afterlife and not return.</p></div>",
+          "value": "<p>还魂鬼的躯体被摧毁时灵魂仍逗留在原处。在经过24小时后，其灵魂就会在同一位面中找到另一具类人尸体进行寄生，同时恢复其所有生命值。当其灵魂处于游离状态时，法术祈愿术wish可以用来迫使该灵魂往生不再复返。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1911,7 +1911,7 @@
     },
     {
       "_id": "ctdWuTcWMTR8oCbh",
-      "name": "Turn Immunity",
+      "name": "驱散免疫 Turn Immunity",
       "type": "feat",
       "system": {
         "source": {
@@ -1923,7 +1923,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The revenant is immune to effects that turn undead.</p></div>",
+          "value": "<p>还魂鬼免疫驱散亡灵的效应。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1979,7 +1979,7 @@
     },
     {
       "_id": "JFIJ8BHTWsALx3AW",
-      "name": "Vengeful Tracker",
+      "name": "复仇追踪者 Vengeful Tracker",
       "type": "feat",
       "system": {
         "source": {
@@ -1991,7 +1991,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The revenant knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the revenant are on different planes of existence. If the creature being tracked by the revenant dies, the revenant knows.</p></div>",
+          "value": "<p>还魂鬼知晓阻碍其寻得复仇之人所在的方位和距离，哪怕这些生物和其复仇对象在另一存在位面也无法幸免。如果还魂鬼所追踪的生物死亡，则还魂鬼也能立即知晓。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2047,11 +2047,11 @@
     },
     {
       "_id": "nriMnxT56lhoxuJg",
-      "name": "Leather Armor",
+      "name": "皮甲 Leather Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p></div>",
+          "value": "<p>这套护甲的胸甲和护肩由经过油煮硬化的皮革制成，其余部分使用更柔软、更灵活的材料。</p>",
           "chat": ""
         },
         "source": {
@@ -2144,7 +2144,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "f12a539bc3086eec",
   "sort": 23200000,
   "ownership": {
     "default": 0,

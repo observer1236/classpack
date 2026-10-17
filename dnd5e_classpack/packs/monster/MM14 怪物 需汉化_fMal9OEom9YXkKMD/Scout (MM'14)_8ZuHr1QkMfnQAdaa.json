@@ -1,5 +1,5 @@
 {
-  "name": "Scout (MM'14)",
+  "name": "斥候 Scout (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Scouts are skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance.</p></div></div>",
+        "value": "<h3>斥候 Scouts</h3><p>斥候是老练的猎人和追踪者，而他们也会有偿的提供这些服务。他们大多在野外过着狩猎生活，但也有一部分会成为赏金猎人、向导或是军队侦察兵。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -655,7 +655,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Scout",
+    "name": "斥候 Scout (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -749,7 +749,7 @@
   "items": [
     {
       "_id": "taEZQUKPcBB3KfEd",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -761,7 +761,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The scout makes two melee attacks or two ranged attacks.</p></div>",
+          "value": "<p>斥候发动两次近战攻击，或两次远程攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -954,7 +954,7 @@
     },
     {
       "_id": "xyaTg3dJBoCiMWTP",
-      "name": "Shortsword",
+      "name": "短剑 Shortsword",
       "type": "weapon",
       "system": {
         "source": {
@@ -966,7 +966,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1236,7 +1236,7 @@
     },
     {
       "_id": "i2R1EEYadyVJonVk",
-      "name": "Longbow",
+      "name": "长弓 Longbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1248,7 +1248,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, ranged 150/600 ft., one target. <i>Hit:</i> 6 ([[/damage 1d8 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+4，射程150/600尺，单一目标。命中：6（[[/damage 1d8 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1519,7 +1519,7 @@
     },
     {
       "_id": "xfS2kif1uCFAJj3o",
-      "name": "Keen Hearing and Sight",
+      "name": "敏锐视听觉 Keen Hearing and Sight",
       "type": "feat",
       "system": {
         "source": {
@@ -1531,7 +1531,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The scout has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing or sight.</p></div>",
+          "value": "<p>斥候依赖听觉或视觉所作的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1587,11 +1587,11 @@
     },
     {
       "_id": "HwJXnDYl22taHumm",
-      "name": "Leather Armor",
+      "name": "皮甲 Leather Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p></div>",
+          "value": "<p>这套护甲的胸甲和护肩由经过油煮硬化的皮革制成，其余部分使用更柔软、更灵活的材料。</p>",
           "chat": ""
         },
         "source": {
@@ -1684,7 +1684,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 6500000,
   "ownership": {
     "default": 0,

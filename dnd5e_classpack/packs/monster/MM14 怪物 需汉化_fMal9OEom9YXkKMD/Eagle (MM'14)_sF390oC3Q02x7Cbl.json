@@ -1,5 +1,5 @@
 {
-  "name": "Eagle (MM'14)",
+  "name": "雕 Eagle (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -639,7 +639,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Eagle",
+    "name": "雕 Eagle (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -737,7 +737,7 @@
   "items": [
     {
       "_id": "mfVqQOYN9k4XcB8y",
-      "name": "Talons",
+      "name": "禽爪 Talons",
       "type": "weapon",
       "system": {
         "source": {
@@ -749,7 +749,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 4 ([[/damage 1d4 + 2 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：4（[[/damage 1d4 + 2 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1027,7 +1027,7 @@
     },
     {
       "_id": "bhZGTh7q1fJ2CKBo",
-      "name": "Keen Sight",
+      "name": "敏锐视觉 Keen Sight",
       "type": "feat",
       "system": {
         "source": {
@@ -1039,7 +1039,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The eagle has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div>",
+          "value": "<p>鹰依赖视觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1095,7 +1095,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 33400000,
   "ownership": {
     "default": 0,

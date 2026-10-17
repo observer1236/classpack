@@ -1,5 +1,5 @@
 {
-  "name": "Tyrannosaurus Rex (MM'14)",
+  "name": "霸王龙 Tyrannosaurus Rex (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>This enormous predator terrorizes all other creatures in its territory. Despite its size and weight, a tyrannosaurus is a swift runner. It chases anything it thinks it can eat, and there are few creatures it won't try to devour whole. While prowling for substantial prey, a tyrannosaurus subsists on carrion, and on any smaller creatures that try to dart in to steal its meal.</p><div data-roll-name-ancestor=\"Dinosaurs\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dinosaurs.</span></span> Dinosaurs, or behemoths, are among the oldest reptiles in the world. Predatory dinosaurs are savage, territorial hunters. Herbivorous dinosaurs are less aggressive, but they might attack to defend their young, or if startled or harassed.</p><p>Dinosaurs come in many sizes and shapes. Larger varieties often have drab coloration, while smaller dinosaurs have colorful markings akin to birds. Dinosaurs roam rugged and isolated areas that humanoids seldom visit, including remote mountain valleys, inaccessible plateaus, tropical islands, and deep fens.</p></div></div></div>",
+        "value": "<p>霸王龙Tyrannosaurus Rex（雷克斯暴龙）</p><p>这种凶暴的掠食者令所有在其领地里的生物感到恐惧。尽管暴龙体型巨大而且偏胖，但是它依然非常键跑。暴龙会追逐任何它觉得可以吃掉的生物。于此同时，只有极少数生物不在暴龙的菜单上。当没有足够食物的时候，暴龙以腐肉和任何接近腐肉的小型动物维生。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Tyrannosaurus Rex",
+    "name": "霸王龙 Tyrannosaurus Rex (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -722,7 +722,7 @@
   "items": [
     {
       "_id": "atUNyDg1c6kqE3Kd",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -734,7 +734,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The tyrannosaurus makes two attacks: one with its bite and one with its tail. It can't make both attacks against the same target.</p></div>",
+          "value": "<p>暴龙发动两次攻击：一次啃咬，一次尾击。两次攻击必须制定不同目标。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -927,7 +927,7 @@
     },
     {
       "_id": "Y7HDL97fel6pSCmK",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -939,7 +939,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+10]]{+10} to hit, reach 10 ft., one target. <i>Hit:</i> 33 ([[/damage 4d12 + 7 type=piercing]]) damage. If the target is a Medium or smaller creature, it is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">17</span>). Until this grapple ends, the target is &amp;Reference[condition=restrained], and the tyrannosaurus can't bite another target.</p></div>",
+          "value": "<p>近战武器攻击：命中+10，触及10尺，单一目标。命中：33（[[/damage 4d12 + 7 type=piercing]]）点穿刺伤害。如果目标为一个中型或更小体型的生物，则目标被擒抱（逃脱DC 17）。被擒抱期间该目标陷入束缚状态，且暴龙不能啃咬其他目标。</p>",
           "chat": ""
         },
         "range": {
@@ -1217,7 +1217,7 @@
     },
     {
       "_id": "fDbRUrW6hgSajhDB",
-      "name": "Tail",
+      "name": "尾击 Tail",
       "type": "weapon",
       "system": {
         "source": {
@@ -1229,7 +1229,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+10]]{+10} to hit, reach 10 ft., one target. <i>Hit:</i> 20 ([[/damage 3d8 + 7 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+10，触及10尺，单一目标。命中：20（[[/damage 3d8 + 7 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1507,7 +1507,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 27500000,
   "ownership": {
     "default": 0,

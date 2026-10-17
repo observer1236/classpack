@@ -1,5 +1,5 @@
 {
-  "name": "Giant Eagle (MM'14)",
+  "name": "巨鹰 Giant Eagle (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A giant eagle is a noble creature that speaks its own language and understands speech in the Common tongue. A mated pair of giant eagles typically has up to four eggs or young in their nest (treat the young as normal eagles).</p></div></div>",
+        "value": "<p>巨鹰是一种高贵的生物，能够说自己的语言，并理解通用语。一对巨鹰的巢穴中通常有至多四枚蛋或幼鸟，幼鸟使用普通鹰的资料。</p>",
         "public": ""
       },
-      "alignment": "Neutral Good",
+      "alignment": "中立善良 Neutral Good",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -642,7 +642,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Eagle",
+    "name": "巨鹰 Giant Eagle (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -736,7 +736,7 @@
   "items": [
     {
       "_id": "IepX5UGxTdHaoeQu",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -748,7 +748,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The eagle makes two attacks: one with its beak and one with its talons.</p></div>",
+          "value": "<p>鹰发动两次攻击，一次是喙啄，一次是爪击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -941,7 +941,7 @@
     },
     {
       "_id": "0F91xSB8UxjFmt9b",
-      "name": "Beak",
+      "name": "喙啄 Beak",
       "type": "weapon",
       "system": {
         "source": {
@@ -953,7 +953,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：6（[[/damage 1d6 + 3 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1231,7 +1231,7 @@
     },
     {
       "_id": "Q8mX5WY54SlWaWuX",
-      "name": "Talons",
+      "name": "禽爪 Talons",
       "type": "weapon",
       "system": {
         "source": {
@@ -1243,7 +1243,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/damage 2d6 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：10（[[/damage 2d6 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1521,7 +1521,7 @@
     },
     {
       "_id": "icwr8eZxlwBMxgqO",
-      "name": "Keen Sight",
+      "name": "敏锐视觉 Keen Sight",
       "type": "feat",
       "system": {
         "source": {
@@ -1533,7 +1533,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The eagle has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div>",
+          "value": "<p>鹰依赖视觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1589,7 +1589,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 30500000,
   "ownership": {
     "default": 0,

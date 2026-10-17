@@ -1,5 +1,5 @@
 {
-  "name": "Banshee (MM'14)",
+  "name": "报丧女妖 Banshee (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>When night falls, unlucky travelers hear the faint cries of the forlorn dead. This woeful spirit is a banshee, a spiteful creature formed from the spirit of a female elf. Banshees appear as luminous, wispy forms that vaguely recall their mortal features. A banshee's face is wreathed in a wild tangle of hair, its body clad in wispy rags that flutter and stream around it.</p><div data-roll-name-ancestor=\"Divine Wrath\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Divine Wrath.</span></span> Banshees are the undead remnants of elves who, blessed with great beauty, failed to use their gift to bring joy to the world. Instead, they used their beauty to corrupt and control others. Elves afflicted by the banshee's curse experience no gladness, feeling only distress in the presence of the living. As the curse takes its toll, their minds and bodies decay, until death completes their transformation into undead monsters.</p></div><div data-roll-name-ancestor=\"Sorrow Bound\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Sorrow Bound.</span></span> A banshee becomes forever bound to the place of its demise, unable to venture more than five miles from there. It is forced to relive every moment of its life with perfect recall, yet always refuses to accept responsibility for its doom.</p></div><div data-roll-name-ancestor=\"Beauty Hoarders\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Beauty Hoarders.</span></span> The vanity that inspired the banshee's cursed creation persists in undeath. These creatures covet beautiful objects: fine jewelery, paintings, statues, and other objects of art. At the same time, a banshee abhors any mirrored surface, for it can't bear to see the horror of its own existence. A single glimpse of itself is enough to send a banshee into a rage.</p></div><div data-roll-name-ancestor=\"Undead Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Undead Nature.</span></span> A banshee doesn't require air, food, drink, or sleep.</p></div></div></div>",
+        "value": "<h3>报丧女妖Banshee</h3><p>夜幕降临时，不幸的旅者听到了绝望死者的微弱哭声。这个悲伤的灵魂是一只报丧女妖，一种由女性精灵的灵魂形成的恶意生物。</p><p>报丧女妖以朦胧发光的形态出现，依稀反映出她们在世时的特征。它们脸萦绕着蓬乱的头发，身上则环绕着飘动的纤细碎布。</p><p><strong>神之愤怒Divine Wrath。</strong>报丧女妖是精灵的亡灵残余。她们曾蒙恩获得了动人的美貌，却未能以此天赋为世界带来欢乐，而是利用美貌腐化操控他人。这些精灵遭受报丧女妖化的诅咒后就再无法感受到快乐，只剩下生命的苦难。诅咒逐渐对其造成伤害，使她们的精神与肉体衰败，直至死亡时被转化为不死的怪物。</p><p><strong>悲伤束缚Sorrow Bound。</strong>报丧女妖被永远束缚在她毙命之地，无法离开该地超过五里远。并被迫准确无误的重温她生命中每一刻的回忆，却始终拒绝接受其灭亡的责任。</p><p><strong>囤积美丽Beauty Hoarders。</strong>促使报丧女妖受诅咒的虚荣心在其成为亡灵后依然影响着她。这些生物贪图美丽的物体如：高级珠宝、画作、雕塑以及其他艺术品。此外，报丧女妖还憎恨任何能映照其自身的镜面，厌恶看见其自身现今恐怖的样貌。而只要稍瞥到自己，就足以激起报丧女妖的狂怒。</p><p><strong>亡灵本质Undead Nature。</strong>报丧女妖不需要空气、饮食和睡眠。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -660,7 +660,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Banshee",
+    "name": "报丧女妖 Banshee (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -754,7 +754,7 @@
   "items": [
     {
       "_id": "fBhFBqv2vCCfCCfe",
-      "name": "Corrupting Touch",
+      "name": "腐化触击 Corrupting Touch",
       "type": "weapon",
       "system": {
         "source": {
@@ -766,7 +766,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Spell Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 12 ([[/damage 3d6 + 2 type=necrotic]]) damage.</p></div>",
+          "value": "<p>近战法术攻击：命中+4，触及5尺，单一目标。命中：12（[[/damage 3d6 + 2 type=necrotic]]）点暗蚀伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1044,7 +1044,7 @@
     },
     {
       "_id": "xVog3t0Y5xrqv1ZK",
-      "name": "Horrifying Visage",
+      "name": "恐惧面容 Horrifying Visage",
       "type": "feat",
       "system": {
         "source": {
@@ -1056,7 +1056,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Each non-undead creature within 60 feet of the banshee that can see her must succeed on a [[/save ability=wis dc=13]] saving throw or be &amp;Reference[condition=frightened] for 1 minute. A &amp;Reference[condition=frightened] target can repeat the saving throw at the end of each of its turns, with disadvantage if the banshee is within line of sight, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the banshee's Horrifying Visage for the next 24 hours.</p></div>",
+          "value": "<p>报丧女妖周边60内能看见她的所有非亡灵必须进行一次DC 13的感知豁免，豁免失败则陷入1分钟的恐慌状态。该受恐慌目标可以在每个其自己回合结束时再次进行该豁免以结束该效应，此时如果报丧女妖在其视线范围内则其进行该豁免时具有劣势。如果目标豁免成功或效应结束，则其在24小时内免疫该报丧女妖的恐惧面容。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1271,7 +1271,7 @@
     },
     {
       "_id": "BeSsRmX8AYDfbDW6",
-      "name": "Wail",
+      "name": "哀嚎 Wail",
       "type": "feat",
       "system": {
         "source": {
@@ -1283,7 +1283,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The banshee releases a mournful wail, provided that she isn't in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 feet of her that can hear her must make a [[/save ability=con dc=13]] saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 ([[/damage 3d6 type=psychic]]) damage.</p></div>",
+          "value": "<p>不在阳光下的报丧女妖可以发出一阵悲恸的哀嚎。哀嚎对构装和亡灵生物无效。报丧女妖周边30尺内能听见其声音的其他生物必须进行一次DC 13的体质豁免。豁免失败者其生命值将降为0，豁免成功则受到10（[[/damage 3d6 type=psychic]]）点心灵伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1672,7 +1672,7 @@
     },
     {
       "_id": "YYqt3Tp4phohQmFP",
-      "name": "Detect Life",
+      "name": "侦测生命 Detect Life",
       "type": "feat",
       "system": {
         "source": {
@@ -1684,7 +1684,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The banshee can magically sense the presence of living creatures up to 5 miles away that aren't undead or constructs. She knows the general direction they're in but not their exact locations.</p></div>",
+          "value": "<p>报丧女妖能以魔法感测到5里内除亡灵和构装生物以外的生物存在，它知道对方的大概方向但无法掌握确切的位置。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1740,7 +1740,7 @@
     },
     {
       "_id": "SQ7JwzWhS8Qeedtc",
-      "name": "Incorporeal Movement",
+      "name": "虚体移动 Incorporeal Movement",
       "type": "feat",
       "system": {
         "source": {
@@ -1752,7 +1752,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The banshee can move through other creatures and objects as if they were &amp;Reference[rule=difficultterrain]{difficult terrain}. She takes 5 ([[/damage 1d10 type=force]]) damage if she ends her turn inside an object.</p></div>",
+          "value": "<p>报丧女妖能像穿过困难地形那样穿过其他生物或物件。它在回合结束时若处于物件内则受到5（[[/damage 1d10 type=force]]）点力场伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1964,7 +1964,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "f12a539bc3086eec",
   "sort": 36100000,
   "ownership": {
     "default": 0,

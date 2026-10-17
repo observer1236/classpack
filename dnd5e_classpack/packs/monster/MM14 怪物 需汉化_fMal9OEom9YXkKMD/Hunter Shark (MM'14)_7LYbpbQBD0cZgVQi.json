@@ -1,5 +1,5 @@
 {
-  "name": "Hunter Shark (MM'14)",
+  "name": "寻猎鲨 Hunter Shark (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Smaller than a giant shark but larger and fiercer than a reef shark, a hunter shark haunts deep waters. It usually hunts alone, but multiple hunter sharks might feed in the same area. A fully grown hunter shark is 15 to 20 feet long.</p></div></div>",
+        "value": "<p>寻猎鲨比巨鲨小，但比礁鲨更大、更凶猛，出没于深水区域。它通常独自狩猎，不过多只寻猎鲨也可能在同一区域觅食。成年寻猎鲨长约15至20尺。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Hunter Shark",
+    "name": "寻猎鲨 Hunter Shark (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -727,7 +727,7 @@
   "items": [
     {
       "_id": "WN99gjxNx0MRq5q1",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 13 ([[/damage 2d8 + 4 type=piercing]]) damage.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><i>近战武器攻击：</i> [[/r 1d20+6]]{+6} 命中, 触及 5 尺, 单一目标. <i>命中：</i> 13 ([[/damage 2d8 + 4 type=piercing]]) 伤害.</p></div>",
           "chat": ""
         },
         "range": {
@@ -1017,7 +1017,7 @@
     },
     {
       "_id": "qhLXdmz2orGsoVkQ",
-      "name": "Blood Frenzy",
+      "name": "嗜血狂怒 Blood Frenzy",
       "type": "feat",
       "system": {
         "source": {
@@ -1029,7 +1029,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.</p></div>",
+          "value": "<p>鲨鱼对生命值没有全满的生物发动近战攻击时，其攻击检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1085,7 +1085,7 @@
     },
     {
       "_id": "reESRN9wxaZ1YAr6",
-      "name": "Water Breathing",
+      "name": "水下呼吸 Water Breathing",
       "type": "feat",
       "system": {
         "source": {
@@ -1097,7 +1097,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The shark can breathe only underwater.</p></div>",
+          "value": "<p>鲨鱼只能在水下呼吸。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1153,7 +1153,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 5600000,
   "ownership": {
     "default": 0,

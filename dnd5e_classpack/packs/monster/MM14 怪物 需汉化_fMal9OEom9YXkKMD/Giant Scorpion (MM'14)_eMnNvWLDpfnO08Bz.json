@@ -1,5 +1,5 @@
 {
-  "name": "Giant Scorpion (MM'14)",
+  "name": "巨蝎 Giant Scorpion (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -547,7 +547,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -628,7 +628,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Scorpion",
+    "name": "巨蝎 Giant Scorpion (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -727,7 +727,7 @@
   "items": [
     {
       "_id": "AEMpn5L8cQR76cmv",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -739,7 +739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The scorpion makes three attacks: two with its claws and one with its sting.</p></div>",
+          "value": "<p>蝎子发动三次攻击：两次爪击和一次钉刺。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -932,7 +932,7 @@
     },
     {
       "_id": "Y6oKZBRFCGcMimTD",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -944,7 +944,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 1d8 + 2 type=bludgeoning]]) damage, and the target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">12</span>). The scorpion has two claws, each of which can grapple only one target.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：6（[[/damage 1d8 + 2 type=bludgeoning]]）点钝击伤害，且目标被擒抱（逃脱DC12）。蝎子有两只钳爪，其每只爪子只能擒抱一个目标。</p>",
           "chat": ""
         },
         "range": {
@@ -1222,7 +1222,7 @@
     },
     {
       "_id": "M6arVniyifgn28gH",
-      "name": "Sting",
+      "name": "钉刺 Sting",
       "type": "weapon",
       "system": {
         "source": {
@@ -1234,7 +1234,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 7 ([[/damage 1d10 + 2 type=piercing]]) damage, and the target must make a [[/save ability=con dc=12]] saving throw, taking 22 ([[/damage 4d10 type=poison]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物。命中：7（[[/damage 1d10 + 2 type=piercing]]）点穿刺伤害，且目标必须成功通过一次DC 12的体质豁免，否则将受到22（[[/damage 4d10 type=poison]]）点毒素伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "range": {
@@ -1258,7 +1258,7 @@
           "ZipjqecejD1GwLcW": {
             "_id": "ZipjqecejD1GwLcW",
             "type": "attack",
-            "name": "Attack: 1d10 Piercing Damage",
+            "name": "攻击: 1d10 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1430,7 +1430,7 @@
           "Afw6DkTDZpV9KsKM": {
             "_id": "Afw6DkTDZpV9KsKM",
             "type": "save",
-            "name": "Save: 4d10 Poison Damage",
+            "name": "豁免: 4d10 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1688,7 +1688,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 24900000,
   "ownership": {
     "default": 0,

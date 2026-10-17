@@ -1,5 +1,5 @@
 {
-  "name": "Saber-Toothed Tiger (MM'14)",
+  "name": "剑齿虎 Saber-Toothed Tiger (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -548,7 +548,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Saber-Toothed Tiger",
+    "name": "剑齿虎 Saber-Toothed Tiger (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -726,7 +726,7 @@
   "items": [
     {
       "_id": "lu3tPBJ3L6iTGxeU",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -738,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/damage 1d10 + 5 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：10（[[/damage 1d10 + 5 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1016,7 +1016,7 @@
     },
     {
       "_id": "VPqvMZzKcoSMwIDK",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -1028,7 +1028,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 12 ([[/damage 2d6 + 5 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：12（[[/damage 2d6 + 5 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1306,7 +1306,7 @@
     },
     {
       "_id": "pUXPX27sfddjM3Kz",
-      "name": "Keen Smell",
+      "name": "敏锐嗅觉 Keen Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1318,7 +1318,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The tiger has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on smell.</p></div>",
+          "value": "<p>老虎依赖嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1374,7 +1374,7 @@
     },
     {
       "_id": "EtJ9LxQaqACnaIzq",
-      "name": "Pounce",
+      "name": "猛扑 Pounce",
       "type": "feat",
       "system": {
         "source": {
@@ -1386,7 +1386,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a [[/save ability=str dc=14]] saving throw or be knocked &amp;Reference[condition=prone]. If the target is &amp;Reference[condition=prone], the tiger can make one bite attack against it as a bonus action.</p></div>",
+          "value": "<p>若老虎向目标直线移动至少20尺，然后在同一回合对其发动爪击攻击且命中该目标，则目标必须进行一次DC 14的力量豁免，豁免失败者将应击倒地。如果目标陷入倒地，则该老虎可以用一个附赠动作对目标发动一次啃咬攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1601,7 +1601,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 16300000,
   "ownership": {
     "default": 0,

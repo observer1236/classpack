@@ -1,5 +1,5 @@
 {
-  "name": "Warhorse (Leather Barding) (MM'14)",
+  "name": "战马（皮甲马铠） Warhorse (Leather Barding) (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -548,7 +548,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Warhorse (Leather Barding)",
+    "name": "战马（皮甲马铠） Warhorse (Leather Barding) (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "DOyz0AbwLfPMB55l",
-      "name": "Hooves",
+      "name": "蹄击 Hooves",
       "type": "weapon",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 11 ([[/damage 2d6 + 4 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：11（[[/damage 2d6 + 4 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1013,7 +1013,7 @@
     },
     {
       "_id": "3GZGTZfodZc4dZfv",
-      "name": "Trampling Charge",
+      "name": "践踏冲锋 Trampling Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1025,7 +1025,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a [[/save ability=str dc=14]] saving throw or be knocked &amp;Reference[condition=prone]. If the target is &amp;Reference[condition=prone], the horse can make another attack with its hooves against it as a bonus action.</p></div>",
+          "value": "<p>如果马向某一生物直线移动至少20尺，且在同一回合里以蹄击命中该生物，则该目标必须成功通过一次DC 14的力量豁免，否则应击倒地。如果目标倒地，则马可以用一个附赠动作对其发动一次蹄击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1240,7 +1240,7 @@
     },
     {
       "_id": "TDRSZ22N6pLVSZF6",
-      "name": "Leather Barding",
+      "name": "皮甲马铠 Leather Barding",
       "type": "equipment",
       "system": {
         "source": {
@@ -1252,7 +1252,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.</p><p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p></div>",
+          "value": "<p>马铠是为保护坐骑的头、颈、胸和身体而设计的护甲。所有类型的护甲均可制成马铠，其价格是同类类人护甲的四倍，重量为两倍。这套护甲的胸甲和护肩由经过油煮硬化的皮革制成，其余部分使用更柔软、更灵活的材料。</p>",
           "chat": ""
         },
         "proficient": 1,
@@ -1326,7 +1326,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 28800000,
   "ownership": {
     "default": 0,

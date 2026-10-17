@@ -1,5 +1,5 @@
 {
-  "name": "Shadow (MM'14)",
+  "name": "幽影 Shadow (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Shadows are undead that resemble dark exaggerations of humanoid shadows.</p><div data-roll-name-ancestor=\"Dark Disposition\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dark Disposition.</span></span> From the darkness, the shadow reaches out to feed on living creatures' vitality. They can consume any living creature, but they are especially drawn to creatures untainted by evil. A creature that lives a life of goodness and piety consigns its basest impulses and strongest temptations to the darkness where the shadows hunger. As a shadow drains its victim's strength and physical form, the victim's shadow darkens and begins to move of its own volition. In death, the creature's shadow breaks free, becoming a new undead shadow hungry for more life to consume.</p><p>If a creature from which a shadow has been created somehow returns to life, its undead shadow senses the return. The shadow might seek its \"parent\" to vex or slay. Whether the shadow pursues its living counterpart, the creature that birthed the shadow no longer casts one until the monster is destroyed.</p></div><div data-roll-name-ancestor=\"Undead Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Undead Nature.</span></span> A shadow doesn't require air, food, drink, or sleep</p></div></div></div>",
+        "value": "<h3>幽影Shadow</h3><p>幽影是有如类人生物夸张化影子一样的亡灵。</p><p><strong>暗影习性Dark Disposition。</strong>来自黑暗的幽影会掠食活体生物的精力。它们可以摄食任何活物，却尤其偏爱尚未被邪恶污染的个体。生活在善良与虔诚中的生物会将自己所有的卑鄙念头和最大的欲求舍弃到黑暗之中，而幽影们也在这片黑暗中饥饿难耐。幽影慢慢吸干受害者的力量和物理形体后，受害者的影子也随之逐渐加深，并开始按照其自己的意志行动。直至该生物死亡，其影子将获得自由，成为一只新的不死幽影继续掠食其他生命。</p><p>如果一个曾经产生幽影的生物以某种方式死而复生，则其不死幽影会感应到他的回归。这个幽影会前去纠缠或杀死其本体。而除非该幽影愿意追随其对应的活体生物，否则该生物将不再投射出影子，直到其幽影被摧毁才能恢复原状。</p><p><strong>亡灵本质Undead Nature。</strong>幽影不需要空气，饮食和睡眠。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -657,7 +657,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Shadow",
+    "name": "幽影 Shadow (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -751,7 +751,7 @@
   "items": [
     {
       "_id": "g3oQ6ZkjhdOXbkMG",
-      "name": "Strength Drain",
+      "name": "吸取力量 Strength Drain",
       "type": "weapon",
       "system": {
         "source": {
@@ -763,7 +763,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 9 ([[/damage 2d6 + 2 type=necrotic]]) damage, and the target's Strength score is reduced by [[/r 1d4]]. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.</p><p>If a non-evil humanoid dies from this attack, a new shadow rises from the corpse [[/r 1d4]] hours later.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物。命中：9（[[/damage 2d6 + 2 type=necrotic]]）点暗蚀伤害，且目标力量值降低[[/r 1d4]]。如果目标的力量因此降至0，则目标死亡。否则，其力量的减损效应会持续到该目标完成一次短休或长休为止。 如果一个非邪恶类人生物死于该攻击，则一个新的幽影会在[[/r 1d4]]小时后从其尸体上唤起。</p>",
           "chat": ""
         },
         "range": {
@@ -1041,7 +1041,7 @@
     },
     {
       "_id": "kG7MS1ozDsLCO7Zu",
-      "name": "Amorphous",
+      "name": "无定形 Amorphous",
       "type": "feat",
       "system": {
         "source": {
@@ -1053,7 +1053,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The shadow can move through a space as narrow as 1 inch wide without squeezing.</p></div>",
+          "value": "<p>幽影能够轻松穿过最窄1寸宽的狭窄空间而不用挤进去。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1109,7 +1109,7 @@
     },
     {
       "_id": "hqzWFlaLtAzMuMYC",
-      "name": "Shadow Stealth",
+      "name": "幽影隐匿 Shadow Stealth",
       "type": "feat",
       "system": {
         "source": {
@@ -1121,7 +1121,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in dim light or darkness, the shadow can take the Hide action as a bonus action. Its stealth bonus is also improved to +6.</p></div>",
+          "value": "<p>在微光光照或黑暗环境下，幽影能够以附赠动作来执行躲藏Hide动作。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1314,7 +1314,7 @@
     },
     {
       "_id": "HDgv9XDYHucsCZI8",
-      "name": "Sunlight Weakness",
+      "name": "日照弱点 Sunlight Weakness",
       "type": "feat",
       "system": {
         "source": {
@@ -1326,7 +1326,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.</p></div>",
+          "value": "<p>处于阳光下时，幽影所进行的攻击检定、属性检定和豁免检定均具有劣势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1382,7 +1382,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "f12a539bc3086eec",
   "sort": 10000000,
   "ownership": {
     "default": 0,

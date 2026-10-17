@@ -1,5 +1,5 @@
 {
-  "name": "Bugbear (MM'14)",
+  "name": "熊地精 Bugbear (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Bugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure are assured.</p><div data-roll-name-ancestor=\"Goblinoids\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Goblinoids.</span></span> Bugbears are often found in the company of their cousins, hobgoblins and goblins. Bugbears usually enslave goblins they encounter, and they bully hobgoblins into giving them gold and food in return for serving as scouts and shock troops. Even when paid, bugbears are at best unreliable allies, yet goblins and hobgoblins understand that no matter how much bugbears might drain a tribe of resources, these creatures are a potent force.</p></div><div data-roll-name-ancestor=\"Followers of Hruggek\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Followers of Hruggek.</span></span> Bugbears worship Hruggek, a lesser god who dwells on the plane of Acheron. In the absence of their goblinoid kin, bugbears form loose war bands, each one led by its fiercest member. Bugbears believe that when they die, their spirits have a chance to fight at Hruggek's side. They try to prove themselves worthy by defeating as many foes as possible.</p></div><div data-roll-name-ancestor=\"Venal Ambushers\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Venal Ambushers.</span></span> Despite their intimidating builds, bugbears move with surprising stealth. They are fond of setting ambushes and flee when outmatched. They are dependable mercenaries as long as they are supplied food, drink, and treasure, but a bugbear forgets any bond when its life is on the line. A wounded member of a bugbear band might be left behind to help the rest of the band escape. Afterward, that bugbear might help pursuers track down its former companions if doing so saves its life.</p></div></div></div>",
+        "value": "<h3>熊地精Bugbears</h3><p>熊地精们为战斗与暴乱而生。以掠夺和狩猎营生的它们四处欺凌弱小却不屑受人指使。不过，为了享受血战与财宝的乐趣，它们还是可以为那些强大的主人担任一些打手的工作。</p><p><strong>类地精Goblinoids。</strong>熊地精经常混迹于其表亲种族群体里，亦即大地精hobgoblins和地精goblins的群落中。它们常常奴役所遇到的地精，还会敲诈大地精的金子与食物作为它们担当斥候与突击部队的报酬。然而即使是雇佣关系的熊地精，也是极不可靠的盟友。不过地精与大地精们为了得到这些生物的强大支援，还是会愿意为其耗费大量的部族资源。</p><p><strong>赫鲁格克的追随者Followers of Hruggek。</strong>熊地精崇拜一位居于修罗场Acheron位面的弱等神，其名为赫鲁格克Hruggek。不与其类地精表亲一起时，它们会以最凶悍的个体带头组成若干松散的战团。熊地精们坚信自己死后，有机会化作灵魂与赫鲁格克并肩作战。为了赢取这份殊荣，它们时刻都会拼尽全力杀敌以证明自己的价值。</p><p><strong>可收买的伏击者Venal Ambushers。</strong>熊地精尽管体格吓人，却意外的善长隐匿行动。它们热衷于伏击敌人，却又常常在身处劣势时仓皇逃窜。只要有足够的饮食补给和财宝，熊地精还算是比较有实力的佣兵，只不过它们还会在命悬一线时摒弃约定。熊地精战团的伤员会成为弃卒以让其他成员得以逃脱。然后这些被遗弃的熊地精又会为了活命转而为敌人带路，帮其追捕自己的前队友们。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -638,7 +638,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Bugbear",
+    "name": "熊地精 Bugbear (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -732,7 +732,7 @@
   "items": [
     {
       "_id": "nFqffVPbACpo0vWv",
-      "name": "Morningstar",
+      "name": "钉头锤 Morningstar",
       "type": "weapon",
       "system": {
         "source": {
@@ -744,7 +744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 11 ([[/damage 2d8 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：11（[[/damage 2d8 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1011,7 +1011,7 @@
     },
     {
       "_id": "aC10AlWDAzwFNTbw",
-      "name": "Javelin",
+      "name": "标枪 Javelin",
       "type": "weapon",
       "system": {
         "source": {
@@ -1023,7 +1023,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or Ranged Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft. or range 30/120 ft., one target. <i>Hit:</i> 9 ([[/damage 2d6 + 2 type=piercing]]) damage in melee or 5 ([[/damage 1d6 + 2 type=piercing]]) damage at range.</p></div>",
+          "value": "<p>近战或远程武器攻击：命中+4，触及5尺或射程30/120尺，单一目标。命中：近战时9（[[/damage 2d6 + 2 type=piercing]]）点穿刺伤害，或远程时5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1049,7 +1049,7 @@
           "WPhn8DUg6tE1rXda": {
             "_id": "WPhn8DUg6tE1rXda",
             "type": "attack",
-            "name": "Attack: 2d6 Piercing Damage",
+            "name": "攻击: 2d6 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1221,7 +1221,7 @@
           "ZjmXSgWlvVU6Cbjk": {
             "_id": "ZjmXSgWlvVU6Cbjk",
             "type": "attack",
-            "name": "Attack: 1d6 Piercing Damage",
+            "name": "攻击: 1d6 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1478,7 +1478,7 @@
     },
     {
       "_id": "aSmQ5gpraBnzhWKN",
-      "name": "Brute",
+      "name": "残暴 Brute",
       "type": "feat",
       "system": {
         "source": {
@@ -1490,7 +1490,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack).</p></div>",
+          "value": "<p>熊地精用近战武器命中敌人时，其伤害掷骰额外增加一粒该武器的伤害骰（已包含在攻击项中）。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1546,7 +1546,7 @@
     },
     {
       "_id": "ud5de1dw2z3J7K7T",
-      "name": "Surprise Attack",
+      "name": "突袭打击 Surprise Attack",
       "type": "feat",
       "system": {
         "source": {
@@ -1558,7 +1558,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 ([[/damage 2d6]]) damage from the attack.</p></div>",
+          "value": "<p>熊地精成功突袭一个生物，并在战斗开始后第一轮中发动攻击命中该生物时，该目标将在该次攻击中额外受到7（[[/damage 2d6]]）点同类型伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1768,11 +1768,11 @@
     },
     {
       "_id": "y8pkPhMqGxwhCyGC",
-      "name": "Hide Armor",
+      "name": "兽皮甲 Hide Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p></div>",
+          "value": "<p>这种粗糙的护甲由厚实的毛皮和兽皮制成，常见于野蛮人部落、邪恶类人生物，以及缺乏制作更好护甲所需工具和材料的群体。</p>",
           "chat": ""
         },
         "source": {
@@ -1865,11 +1865,11 @@
     },
     {
       "_id": "FWVOt2ffS0szhdgK",
-      "name": "Shield",
+      "name": "盾牌 Shield",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p></div>",
+          "value": "<p>盾牌由木材或金属制成，用一只手持用。持用盾牌使你的护甲等级提高2。你同时只能从一面盾牌获益。</p>",
           "chat": ""
         },
         "source": {
@@ -1962,7 +1962,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "CsCYJKoYroMI4p63",
   "sort": 800000,
   "ownership": {
     "default": 0,

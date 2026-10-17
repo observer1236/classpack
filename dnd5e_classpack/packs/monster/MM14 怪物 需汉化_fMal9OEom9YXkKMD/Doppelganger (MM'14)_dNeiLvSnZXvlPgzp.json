@@ -1,5 +1,5 @@
 {
-  "name": "Doppelganger (MM'14)",
+  "name": "变形怪 Doppelganger (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Doppelgangers are devious shapeshifters that take on the appearance of other humanoids, throwing off pursuit or luring victims to their doom with misdirection and disguise. Few creatures spread fear, suspicion, and deceit better than doppelgangers. Found in every land and culture, they can take on the guise of any individual of any race.</p><div data-roll-name-ancestor=\"Stealing Secrets\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Stealing Secrets.</span></span> A doppelganger's adopted form allows it to blend into almost any group or community, but its transformation doesn't impart languages, mannerisms, memory, or personality. Doppelgangers often follow or capture creatures they intend to impersonate, studying them and probing their minds for secrets. A doppelganger can read a creature's surface thoughts, allowing it to glean that creature's name, desires, and fears, along with a few scattered memories. A doppelganger impersonating a specific creature as part of a long-term plot might keep its double alive and close at hand for weeks, probing the victim's mind daily to learn how to behave and speak authentically.</p></div><div data-roll-name-ancestor=\"Hedonistic Swindlers\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Hedonistic Swindlers.</span></span> Doppelgangers work alone or in small groups, with group roles shifting from con to con. While one doppelganger takes the place of a murdered merchant or noble, the others take on a number of identities as circumstances warrant, playing the parts of family or servants while they live off the victim's riches.</p></div><div data-roll-name-ancestor=\"Changelings\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Changelings.</span></span> Doppelgangers are too lazy or self-interested to raise their young. They assume attractive male forms and seduce women, leaving them to raise their progeny. A doppelganger child appears to be a normal member of its mother's species until it reaches adolescence, at which point it discovers its true nature and is driven to seek out its kind to join them.</p></div></div></div>",
+        "value": "<h3>变形怪Doppelganger</h3><p>变形怪是阴险狡诈的变形生物，它们可以变成其他类人生物的外貌，并以误导和伪装等手段来摆脱追踪或置人死地。变形怪十分擅长散播恐惧、怀疑和谎言。由于它们可以伪装成任意种族的任意个体，因而在任何地方和文化中都能发现变形怪的踪迹。</p><p><strong>盗取秘密Stealing Secrets。</strong>变形怪的模仿形态让其可以混入几乎所有团体或组织中，但这无法让变形怪学会别人的语言、习惯、记忆和个性。因此变形怪经常跟踪或绑架想要假冒的对象以研究其行为，窥探其思想，挖掘其秘密。变形怪可以通过读取生物的表层思想来获知其名字、欲望、恐惧，以及一些零碎的记忆。当变形怪需要在一个长期阴谋中假冒一个特定对象时，它可能会潜伏在对象身边好几星期，以读取对方思想来学习如何逼真地模仿对象的举止和言谈。</p><p><strong>享乐之徒Hedonistic Swindlers。</strong>变形怪在下手时会通常是单独行动或是以小集群行动。以集群行动时，群体中的各个个体会变形为互相关联的各个不同角色。一个变形怪取代一个被谋杀的商人或贵族时，其他变形怪会根据情况伪装成不同身份，如家庭成员或仆人。然后再一同靠受害者的财富生活。</p><p><strong>调包婴儿Changelings。</strong>出于懒惰或自私，变形怪们并不会亲自养育后代。它们变作英俊的男性去引诱女性，再让她们独自为其生儿育女。变形怪的小孩看起来与母族的正常孩子无异，而它们直到青春期到来才会发现自己的本质，并因此驱使它寻找并加入其同类。</p>",
         "public": ""
       },
-      "alignment": "Neutral",
+      "alignment": "绝对中立 Neutral",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -636,7 +636,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Doppelganger",
+    "name": "变形怪 Doppelganger (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -730,7 +730,7 @@
   "items": [
     {
       "_id": "gWruYEBe1f7UGE1c",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -742,7 +742,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The doppelganger makes two melee attacks.</p></div>",
+          "value": "<p>变形怪发动两次近战攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -935,7 +935,7 @@
     },
     {
       "_id": "fEssyssbg2pXBbrT",
-      "name": "Slam",
+      "name": "猛击 Slam",
       "type": "weapon",
       "system": {
         "source": {
@@ -947,7 +947,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 7 ([[/damage 1d6 + 4 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：7（[[/damage 1d6 + 4 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1225,7 +1225,7 @@
     },
     {
       "_id": "zLkZgXPW0MrLzJ0u",
-      "name": "Read Thoughts",
+      "name": "读心 Read Thoughts",
       "type": "feat",
       "system": {
         "source": {
@@ -1237,7 +1237,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's @status[concentration] isn't broken (as if @status[concentration||concentrating] on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (&amp;Reference[skill=Insight]) and Charisma (&amp;Reference[skill=Deception], &amp;Reference[skill=Intimidation], and &amp;Reference[skill=Persuasion]) checks against the target.</p></div>",
+          "value": "<p>变形怪用魔法读取其60尺内一个生物的表层思想。该效应可穿透一些障碍物，但无法穿透3尺厚的木质或土质，2尺厚的石质，2寸厚的金属质或一薄层的铅板。目标身处该距离内时，变形怪只要保持专注就可以持续阅读思想（如同专注一个法术）。读取目标的思想时，变形怪对该目标进行的感知（洞悉）和魅力（欺骗，威吓，游说）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1432,7 +1432,7 @@
     },
     {
       "_id": "l5uW3nKTIJt9ka6V",
-      "name": "Shapechanger",
+      "name": "变形生物 Shapechanger",
       "type": "feat",
       "system": {
         "source": {
@@ -1444,7 +1444,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</p></div>",
+          "value": "<p>变形怪用它的动作变形为一个它曾见过的小型或中型体型的类人生物，或是用该动作恢复其真实形态。除体型外，它的所有数据在每个形态时均相同，其着装和携带的装备也不会随变形发生变化。变形怪死亡时将恢复其真实形态。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1500,7 +1500,7 @@
     },
     {
       "_id": "MQZ3BNjZRaMmCqjY",
-      "name": "Ambusher",
+      "name": "伏击 Ambusher",
       "type": "feat",
       "system": {
         "source": {
@@ -1512,7 +1512,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>In the first round of a combat, the doppelganger has advantage on attack rolls against any creature it @status[surprised].</p></div>",
+          "value": "<p>战斗开始的第一轮里，变形怪对任何成功受其突袭的生物所发动的攻击检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1568,7 +1568,7 @@
     },
     {
       "_id": "XfXoKvof5eBXIXaF",
-      "name": "Surprise Attack",
+      "name": "突袭打击 Surprise Attack",
       "type": "feat",
       "system": {
         "source": {
@@ -1580,7 +1580,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 ([[/damage 3d6]]) damage from the attack.</p></div>",
+          "value": "<p>变形怪成功突袭一个生物，并在战斗开始后第一轮中发动攻击命中该生物时，该目标将在该次攻击中额外受到10（[[/damage 3d6]]）点同类型伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1790,7 +1790,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 24100000,
   "ownership": {
     "default": 0,

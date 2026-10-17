@@ -1,5 +1,5 @@
 {
-  "name": "Purple Worm (MM'14)",
+  "name": "紫虫 Purple Worm (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>The massive burrowing monster known as the purple worm terrorizes the creatures of the Underdark as it chews through solid rock in pursuit of prey. A dimwitted, ravenous force of nature, this creature regards anything it encounters as food.</p><div data-roll-name-ancestor=\"Ravenous Hunters\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Ravenous Hunters.</span></span> Loud noise attracts purple worms, which have been known to interrupt underground battles and tear through subterranean cities seeking prey. The underground civilizations of the drow, the duergar, and the mind flayers maintain special wards around their settlements to deter these monsters.</p><p>Though most common in the Underdark, purple worms are frequently seen on the surface world in rocky and mountainous lands. The maw of a purple worm is large enough to swallow a horse whole, and no creature is safe from its hunger. It lunges forward by rhythmically compressing and expanding its body, catching other Underdark dwellers by surprise with the speed of its advance.</p></div><div data-roll-name-ancestor=\"Boons of the Worm\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Boons of the Worm.</span></span> When a purple worm burrows through the ground, it consumes earth and rock, which it breaks down and constantly excretes. Precious metals and gems can thus be found within the bodies of purple worms, which are targeted by particularly brave and foolhardy treasure hunters.</p><p>A burrowing purple worm constantly creates new tunnels throughout the Underdark, which are quickly made use of by other creatures as corridors and highways. Because a purple worm rarely returns to its own tunnels, such passageways are a good place to avoid these monsters. Areas rich in prey quickly become interlaced with complex tunnel systems resulting from several worms hunting together.</p></div></div></div>",
+        "value": "<h3>紫虫Purple Worm</h3><p>被称为紫虫的巨大掘穴生物在坚硬岩石里穿梭，捕猎啃嚼所有幽暗地域中的生物。它们是一种单纯不停嗜食的自然力量，会将其遇到的任何事物当成自己的食品。</p><p><strong>嗜食猎手Ravenous Hunters。</strong>巨大的噪音会引来紫虫，它们在地下城市间寻找猎物，而人们也对其时常打断地下战争的形象习以为常。地下文明如卓尔、灰矮人和夺心魔在各自的聚居地周围都有特殊的保护措施来阻止这些怪物。</p><p>虽然紫虫最常见于幽暗地域，在岩石和山地里也会经常看到这种紫色的大蠕虫。紫虫大到足以一口吞下整匹马，而在其饥饿面前没有生物能够得以幸免。它有节奏的压缩扩张身体来向前推进，而其前进的速度却能让其他栖息于幽暗地域的生物惊叹不已。</p><p><strong>蠕虫恩泽Boons of the Worm。</strong>紫虫在地下掘穴的同时也在吞食泥土和岩石，再不断的分解排泄。因此，紫虫体内时常能找到贵重金属和宝石，它们也会被特别勇敢或鲁莽的寻宝者盯上。</p><p>掘穴的紫虫在幽暗地域里不断制造出新的地道，这些隧道很快就会被其他生物用作廊道和通路。由于紫虫很少返回自己挖掘的地道，而这样的通道也正好是避开这些怪物的好地点。一些猎物丰富的区域会忽然出现一片复杂交错的地道系统，其原因多是几只紫虫一起活动导致。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Purple Worm",
+    "name": "紫虫 Purple Worm (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -735,7 +735,7 @@
   "items": [
     {
       "_id": "WdUSDhyrJ34V4iwS",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -747,7 +747,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The worm makes two attacks: one with its bite and one with its stinger.</p></div>",
+          "value": "<p>紫虫发动两次攻击：一次啃咬和一次尾刺攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -940,7 +940,7 @@
     },
     {
       "_id": "2FQGgrlgcmB4f2kw",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -952,7 +952,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+14]]{+14} to hit, reach 10 ft., one target. <i>Hit:</i> 22 ([[/damage 3d8 + 9 type=piercing]]) damage. If the target is a Large or smaller creature, it must succeed on a [[/save ability=dex dc=19]] saving throw or be swallowed by the worm. A swallowed creature is &amp;Reference[condition=blinded] and &amp;Reference[condition=restrained], it has &amp;Reference[rule=totalcover]{total cover} against attacks and other effects outside the worm, and it takes 21 ([[/damage 6d6 type=acid]]) damage at the start of each of the worm's turns.</p><p>If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a [[/save ability=con dc=21]] saving throw at the end of that turn or regurgitate all swallowed creatures, which fall &amp;Reference[condition=prone] in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer &amp;Reference[condition=restrained] by it and can escape from the corpse by using 20 feet of movement, exiting &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>近战武器攻击：命中+14，触及10尺，单一目标。命中：22（[[/damage 3d8 + 9 type=piercing]]）点穿刺伤害。如果目标是一大型或更小体型生物。则目标必须成功通过一次DC 19的敏捷豁免否则被紫虫吞下。被吞下的目标陷入目盲且被束缚，其对于紫虫身体外的攻击或效应视为处于全身掩护，并在每次该紫虫的回合开始时受21（[[/damage 6d6 type=acid]]）点强酸伤害。 如果紫虫在同一回合累计受到30点来自其体内的伤害，则该紫虫在该回合结束时必须成功通过一次DC 21的体质豁免否则将吐出所有被其吞咽的生物，并使其摔下倒地于紫虫周边10尺范围内。如果该紫虫死亡，则被吞下的生物将不再受束缚，且可以消耗20尺移动力逃出，然后在尸体旁现身并陷入倒地状态。</p>",
           "chat": ""
         },
         "range": {
@@ -976,7 +976,7 @@
           "xJz0utBZqj6HeoSl": {
             "_id": "xJz0utBZqj6HeoSl",
             "type": "attack",
-            "name": "Attack: 3d8 Piercing Damage",
+            "name": "攻击: 3d8 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1148,7 +1148,7 @@
           "3rocPGyxnXuOldQO": {
             "_id": "3rocPGyxnXuOldQO",
             "type": "save",
-            "name": "Save: 6d6 Acid Damage",
+            "name": "豁免: 6d6 强酸 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1406,7 +1406,7 @@
     },
     {
       "_id": "tw80G35h343OsQ20",
-      "name": "Tail Stinger",
+      "name": "尾刺 Tail Stinger",
       "type": "weapon",
       "system": {
         "source": {
@@ -1418,7 +1418,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+14]]{+14} to hit, reach 10 ft., one creature. <i>Hit:</i> 19 ([[/damage 3d6 + 9 type=piercing]]) damage, and the target must make a [[/save ability=con dc=19]] saving throw, taking 42 ([[/damage 12d6 type=poison]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>近战武器攻击：命中+14，触及10尺，单一生物。命中：19（[[/damage 3d6 + 9 type=piercing]]）点穿刺伤害。且目标必须进行一次DC 19的体质豁免，豁免失败则受42（[[/damage 12d6 type=poison]]）点毒素伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "range": {
@@ -1442,7 +1442,7 @@
           "725c8ILIpFutMDc1": {
             "_id": "725c8ILIpFutMDc1",
             "type": "attack",
-            "name": "Attack: 3d6 Piercing Damage",
+            "name": "攻击: 3d6 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1614,7 +1614,7 @@
           "5GsEJhTQxoawuOQB": {
             "_id": "5GsEJhTQxoawuOQB",
             "type": "save",
-            "name": "Save: 12d6 Poison Damage",
+            "name": "豁免: 12d6 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1872,7 +1872,7 @@
     },
     {
       "_id": "FX6X9rGzdHbnPspO",
-      "name": "Tunneler",
+      "name": "掘道者 Tunneler",
       "type": "feat",
       "system": {
         "source": {
@@ -1884,7 +1884,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.</p></div>",
+          "value": "<p>紫虫能够以其一半的掘穴速度通过坚硬的岩层，并在其身后留下直径10尺的地道。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1940,7 +1940,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 13900000,
   "ownership": {
     "default": 0,

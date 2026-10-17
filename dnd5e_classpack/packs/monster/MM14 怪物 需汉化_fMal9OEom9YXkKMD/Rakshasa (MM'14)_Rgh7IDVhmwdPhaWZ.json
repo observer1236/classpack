@@ -1,5 +1,5 @@
 {
-  "name": "Rakshasa (MM'14)",
+  "name": "罗刹 Rakshasa (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>The rakshasa employs delicacy and misdirection in its pursuit of dominion over others. Few creatures ever see the fiend in its true form, for it can take on any guise it wants, although it prefers to masquerade as someone powerful or influential: a noble, cardinal, or rich merchant, for example. A rakshasa's true form combines the features of a human and a tiger, with one noteworthy deformity: its palms are where the backs of the hands would be on a human.</p><div data-roll-name-ancestor=\"Evil Spirits in Mortal Flesh\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Evil Spirits in Mortal Flesh.</span></span> Rakshasas originated long ago in the Nine Hells, when powerful devils created a dark ritual to free their essence from their fiendish bodies in order to escape the Lower Planes. A rakshasa enters the Material Plane to feed its appetite for humanoid flesh and evil schemes. It selects its prey with care, taking pains to keep its presence in the world a secret.</p></div><div data-roll-name-ancestor=\"Evil Reborn\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Evil Reborn.</span></span> For a rakshasa, death on the Material Plane means an agonizing and torturous return to the Nine Hells, where its essence remains trapped until its body reforms-a process that can take months or years.</p><p>When the rakshasa is reborn, it has all the memories and knowledge of its former life, and it seeks retribution against the one who slew it. If the target has somehow slipped through its grasp, the rakshasa might punish its killer's family, friends, or descendants.</p><p>Like devils, rakshasas killed in the Nine Hells are forever destroyed.</p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line \">“<i>Slay me once, shame on you.</i></p><p class=\"rd__quote-line rd__quote-line--last\"><i>Slay me twice, shame on me.</i>”</p><p><span class=\"rd__quote-by\">— Rakshasa maxim</span></p></div></div></div>",
+        "value": "<h3>罗刹Rakshasa</h3><p>“中你一刀，耻之于你。中你两刀，耻之于我。”prefix = &quot;o&quot; ns =</p><p>&quot;urn:schemas-microsoft-com:office:office&quot; /</p><p>——罗刹格言</p><p>罗刹追求用精心策划与错误引导的方式统治他人。由于可以伪装成任何想要的样子，所以很少有生物能看到罗刹真实的形态，它们也更偏爱伪装成一些强大或有影响力的人物：一名贵族、红衣主教或富有的商人。罗刹的真实形态糅合了人类与老虎的特征，还有一个值得注意的畸变：手的掌背与人类的位置相反。</p><p><strong>邪恶精魄困于凡间肉体Evil Spirits in Mortal Flesh。</strong>罗刹很久以前起源于九层地狱，当时强大的魔鬼们创造出一种黑暗仪式，以将它们的精华从其邪魔身体中释放以脱离下层位面的束缚。然后一只罗刹便以此进入物质位面并寻求满足自己对人形生物血肉和邪恶阴谋的渴望。它小心地选择猎物，还要煞费苦心地保守自己在世界上存在的秘密。</p><p><strong>邪恶重生Evil Reborn。</strong>在罗刹看来，死于物质位面意味着受尽痛苦折磨的回到九层地狱之中，而其精华也将持续囚禁于该处直至其身体重塑——而该过程可能需要数月甚至数年的时间。罗刹重生时还保有前生所有的记忆和知识，并以此寻找曾杀死自己的人施以惩戒。如果目标以某种方式脱离自己的掌握，罗刹便会转而惩罚该凶手的家人、朋友或后代。</p><p>罗刹跟魔鬼一样，当在九层地狱中被杀死后便会被彻底毁灭。</p>",
         "public": ""
       },
-      "alignment": "Lawful Evil",
+      "alignment": "守序邪恶 Lawful Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -637,7 +637,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Rakshasa",
+    "name": "罗刹 Rakshasa (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -731,7 +731,7 @@
   "items": [
     {
       "_id": "9Q2m6ZInjOzxSl5o",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -743,7 +743,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The rakshasa makes two claw attacks.</p></div>",
+          "value": "<p>罗刹发动两次爪击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -936,7 +936,7 @@
     },
     {
       "_id": "B1ROoz1FiBGLKjPh",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -948,7 +948,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 5 ft., one target. <i>Hit:</i> 9 ([[/damage 2d6 + 2 type=slashing]]) damage, and the target is cursed if it is a creature. The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a @spell[remove curse] spell or similar magic.</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及5尺，单一目标。命中：9（[[/damage 2d6 + 2 type=slashing]]）点挥砍伤害，如果目标是生物则目标生物被诅咒。该魔法诅咒在目标随后进行的一次短休或长休时生效，此时目标的思绪中将充满恐怖的影像及梦境。被诅咒的目标无法从完成的短休或长休中获益。该诅咒持续至被法术移除诅咒remove curse或其他相似法术移除。</p>",
           "chat": ""
         },
         "range": {
@@ -1226,7 +1226,7 @@
     },
     {
       "_id": "7qSEbykBoN1BType",
-      "name": "Limited Magic Immunity",
+      "name": "有限魔免 Limited Magic Immunity",
       "type": "feat",
       "system": {
         "source": {
@@ -1238,7 +1238,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The rakshasa can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects.</p></div>",
+          "value": "<p>罗刹可以随自己意愿的免受6环或更低环阶法术的效应影响或侦测。它在对抗其他法术和魔法效应时所作的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1294,7 +1294,7 @@
     },
     {
       "_id": "9xXrYp2HhtV4xnKM",
-      "name": "Dominate Person",
+      "name": "支配人类 Dominate Person",
       "type": "spell",
       "system": {
         "source": {
@@ -1306,7 +1306,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be &amp;Reference[condition=charmed] by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.</p><p>While the target is &amp;Reference[condition=charmed], you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.</p><p>You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.</p><p>Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a 6th-level spell slot, the duration is @status[concentration], up to 10 minutes. When you use a 7th-level spell slot, the duration is @status[concentration], up to 1 hour. When you use a spell slot of 8th level or higher, the duration is @status[concentration], up to 8 hours.</p></div></div>",
+          "value": "<p>你试图安抚一个施法距离内你能看见的类人生物，目标生物必须必须成功通过一次[[/save activity=dnd5eactivity000]]{感知豁免}，否则将在法术持续时间内被你魅惑。若它正与你或你的友方生物战斗，则其进行该豁免时具有优势。</p><p>目标被魅惑时，只要你与其处于同一位面就可以与之保持心灵感应。你在有意识时，可以通过心灵感应命令该生物（不需要作动作），而它则会尽量服从。你可以描述一个简单具体的行为指令，比如“攻击那个生物”“跑到那个位置”或是“去拿那个物品”。生物完成一项指令却未收到你的进一步指示时，将会使用其本身的能力尽可能的保护自己。</p><p>你可以使用动作以彻底而精确的控制目标。直至下个你的回合结束为止，该生物只能执行由你选择的一个或数个动作之一，且不能进行任何未经你许可的行动。在此期间，你还可以用自己的反应去要求该生物执行一项反应。</p><p>每次目标受到伤害时，都可以尝试进行一次感知豁免，豁免成功则法术终止。</p><p><strong>升环施法效应。</strong>使用六环法术位施展该法术时，持续时间变为：专注，至多 10 分钟。使用七环法术位施展该法术时，持续时间变为：专注，至多 1 小时。使用八环或更高法术位施展该法术时，持续时间变为：专注，至多 8 小时。</p>",
           "chat": ""
         },
         "level": 5,
@@ -1544,7 +1544,7 @@
       },
       "effects": [
         {
-          "name": "Dominate Person",
+          "name": "支配人类 Dominate Person",
           "origin": null,
           "duration": {
             "value": null,
@@ -1617,7 +1617,7 @@
     },
     {
       "_id": "gRX2KGKe3NQxFx4a",
-      "name": "Fly",
+      "name": "飞行术 Fly",
       "type": "spell",
       "system": {
         "source": {
@@ -1629,7 +1629,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p></div></div>",
+          "value": "<p>你触碰一个自愿生物，并使该目标在法术持续时间内获得 60 尺的飞行速度。法术终止时，如果目标仍在空中则随即坠落。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，就可以额外再指定一个生物作为法术目标。</p>",
           "chat": ""
         },
         "level": 3,
@@ -1866,7 +1866,7 @@
     },
     {
       "_id": "PEwgUkQG5CzioIm1",
-      "name": "Plane Shift",
+      "name": "异界传送 Plane Shift",
       "type": "spell",
       "system": {
         "source": {
@@ -1878,7 +1878,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM's discretion.</p><p>Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.</p><p>You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.</p></div>",
+          "value": "<p>你和至多八个自愿生物手拉手站成一圈，然后被传送到一个不同的存在位面中。你可以概括地指名一个目的地（比如火元素位面的黄铜城，或者九层地狱第二层迪斯帕特的宫殿），然后你将出现在目的地里或其附近。假设你想到达黄铜城，按照 DM 的判断，你可能会传送到达它的钢铁大道上，或它的灰烬之门前，又或者与城市隔着火焰之海相望之处。</p><p>另外，如果你知道某个处于另一位面的传送法阵的印记序列，则该法术可以把你带到该法阵处。如果该传送法阵太小而装不下所有你传送的生物，则他们会出现在离传送法阵最近的未占据空间里。</p><p>你可以用该法术放逐一个非自愿的生物到另一位面。指定一个你触及范围内的生物并对它进行一次近战法术攻击。命中时，此生物必须进行一次[[/save activity=dnd5eactivity100]]{魅力豁免}。豁免失败者将被传送到你指定位面的一个随机地点。被这样传送走的生物必须自行寻找回到你现在位面的路。</p>",
           "chat": ""
         },
         "level": 7,
@@ -2285,7 +2285,7 @@
     },
     {
       "_id": "P2PQ3t1kJcHf0rhG",
-      "name": "True Seeing",
+      "name": "真知术 True Seeing",
       "type": "spell",
       "system": {
         "source": {
@@ -2297,7 +2297,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has &amp;Reference[rule=truesight], notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.</p></div>",
+          "value": "<p>你触碰一个自愿的生物，让该法术赋予其看到事物真实面目的能力。受术者在法术持续时间内拥有 120 尺的真实视觉，其能发现被魔法隐藏的暗门，也能看到以太位面。</p>",
           "chat": ""
         },
         "level": 6,
@@ -2534,7 +2534,7 @@
     },
     {
       "_id": "Khzposl2q9jp7PBf",
-      "name": "Charm Person",
+      "name": "魅惑人类 Charm Person",
       "type": "spell",
       "system": {
         "source": {
@@ -2546,7 +2546,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is &amp;Reference[condition=charmed] by you until the spell ends or until you or your companions do anything harmful to it. The &amp;Reference[condition=charmed] creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was &amp;Reference[condition=charmed] by you.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p></div></div>",
+          "value": "<p>你尝试魅惑施法距离内的某个你能看见的类人生物。该生物必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}。如果你或你的同伴正在和该生物战斗，则该生物进行该豁免时具有优势。如果豁免失败，则该生物被你魅惑至法术终止，或者直到你或你的同伴对他做出伤害行为为止。此间，被魅惑的生物将视你为友方且熟悉的人。法术终止后，该生物将会发觉曾被你魅惑过。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，法术就能多影响一个目标。而各目标之间距离不能超过 30 尺。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2785,7 +2785,7 @@
       },
       "effects": [
         {
-          "name": "Charm Person",
+          "name": "魅惑人类 Charm Person",
           "origin": null,
           "duration": {
             "value": 3600,
@@ -2858,7 +2858,7 @@
     },
     {
       "_id": "DN4lQE6O8qePz8NA",
-      "name": "Detect Magic",
+      "name": "侦测魔法 Detect Magic",
       "type": "spell",
       "system": {
         "source": {
@@ -2870,7 +2870,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its <span class=\"bold\">school of magic</span>, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p></div>",
+          "value": "<p>你在法术持续时间内能感测到30尺内存在的魔法。感测到魔法的存在后，你可以使用动作，来看到任何你能看见的具有魔法的生物或物件周围环绕着微弱的灵光，并分辨出其所属的魔法学派（若有）。该法术可以穿透大部分障碍，但仍会被1尺厚石质，或1寸厚金属质，或一层薄铅质，或3尺厚木质或泥质材料阻隔。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3111,7 +3111,7 @@
     },
     {
       "_id": "mV4eNMgP5BTFQBb4",
-      "name": "Invisibility",
+      "name": "隐形术 Invisibility",
       "type": "spell",
       "system": {
         "source": {
@@ -3123,7 +3123,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A creature you touch becomes &amp;Reference[condition=invisible] until the spell ends. Anything the target is wearing or carrying is &amp;Reference[condition=invisible] as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p></div></div>",
+          "value": "<p>你触碰的一个生物变为隐形并维持至法术终止。目标的穿着物和携带物只要保持在其身上也随之保持隐形状态。如果目标发动攻击或施展法术，则该法术终止。</p><p><strong>升环施法效应。</strong>使用三环或更高的法术位施展该法术时，你使用的法术位每比二环高一环就可以额外指定一个目标。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3353,7 +3353,7 @@
       },
       "effects": [
         {
-          "name": "Invisibility",
+          "name": "隐形 Invisibility",
           "origin": null,
           "duration": {
             "value": 3600,
@@ -3426,7 +3426,7 @@
     },
     {
       "_id": "9rcn28jiOM1NbdHK",
-      "name": "Major Image",
+      "name": "高等幻影 Major Image",
       "type": "spell",
       "system": {
         "source": {
@@ -3438,7 +3438,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can't create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a @creature[troglodyte||troglodyte's] stench).</p><p>As long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example.</p><p>Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (&amp;Reference[skill=Investigation]) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your @status[concentration].</p></div></div>",
+          "value": "<p>你创造一个影像，其形象来自一个大小不超过边长 20 尺立方体的物件，生物或其他的可视现象。影像出现在施法距离内你能看见的一处位置并在法术持续时间内维持存在。它看起来完全是真实的，并且还具有相应的声音、气味和温度。你不能创造出足以造成伤害的酷热或严寒，也不能创造出音量大到足以造成雷鸣伤害或者震聋生物的声响，同样不能创造出会使生物恶心的气味（近似穴蜥人的恶臭那种）。</p><p>在该幻象施法距离内时，你可以用你的动作将影像移动到施法距离内的另一个位置。影像改变位置时，你可以改变影像的外表来使它移动得更自然。例如，如果你创造了一个生物的影像并移动它，则你可以改变影像，使它看起来就像是在走路。或者你也可以让影像在不同的时间发出不同的声音，甚至可以让它参与一场对话。</p><p>由于影像无法被碰到，任何与该影像进行的物理互动都会暴露其幻象的本质。一个生物用其动作调查影像时，它可以进行一次对抗你的法术豁免 DC 的[[/check ability=int skill=inv]]{智力（调查）检定}，以判定是否看穿幻象。辨出幻象的生物可以看破该影像，而影像的其他感官效应在该生物看来会变得微弱而模糊。</p><p><strong>升环施法效应。</strong>使用六环或更高法术位施展该法术时，法术会持续至解除且不需要你保持专注。</p>",
           "chat": ""
         },
         "level": 3,
@@ -3675,7 +3675,7 @@
     },
     {
       "_id": "QqtnOFJt7C5vwPXE",
-      "name": "Suggestion",
+      "name": "暗示术 Suggestion",
       "type": "spell",
       "system": {
         "source": {
@@ -3687,7 +3687,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be &amp;Reference[condition=charmed] are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.</p><p>The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.</p><p>You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.</p><p>If you or any of your companions damage the target, the spell ends.</p></div>",
+          "value": "<p>你以魔法影响施法距离内一个你能看见的生物，并对其施以某种行动暗示（至多以一两句话的形式）。由你指定的受术目标必须能听到并理解你的话语。而不能被魅惑的生物也将免疫此效应。你的暗示言辞必须能让其行为听起来合乎情理。要求生物刺伤它自己，自己撞向矛尖上，让它自我牺牲，或是让它做任何明显有害的行为都会直接取消该法术所产生的效应。</p><p>该目标必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}，豁免失败者将尽其所能地从事你所描述的行为。你所暗示的行为可能会在法术持续时间内始终一直进行。而如果你所暗示的活动可以用更短的时间完成，则此法术会在目标完成了你的要求后随即终止。</p><p>你也可以描述一种在持续时间内发生的特定状况，作为触发特殊行为的条件。例如，你可以暗示一名骑士将她所有的钱交给她遇到的第一名乞丐。如果在法术终止前条件始终没有满足，则指定的行为不会被执行。</p><p>若你或你同伴中任何人伤害了受术者，则该法术随即终止。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3935,7 +3935,7 @@
     },
     {
       "_id": "Zq22ZjHuRS9o6COu",
-      "name": "Detect Thoughts",
+      "name": "侦测思想 Detect Thoughts",
       "type": "spell",
       "system": {
         "source": {
@@ -3947,7 +3947,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.</p><p>You initially learn the surface thoughts of the creature—what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.</p><p>Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.</p><p>You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.</p><p>Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.</p></div>",
+          "value": "<p>你在法术持续时间内能读取特定生物的思想。你可以在施展法术时，或者在法术持续时间内以一个动作实现该效应。此时，受术生物必须身处你 30 尺内并且能被你看见，而你必须对其集中注意力。如果该生物智力为 3 或更低，或者不懂任何语言，则该生物不受影响。</p><p>你最初了解的是该生物的表面想法，一般就是其此刻正想着的东西。你可以使用动作继续深入一个生物的思想，也可以用动作转移读心的目标。如果你继续深入，则目标必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}。豁免失败时，你了解到他的逻辑推理（如果有的话）、情绪状态以及他头脑中的一些大事（比如忧虑、挚爱和仇恨的事物）。豁免成功时，本法术终止。无论哪种情况，目标都会知道你正在窥探他的思想。除非你转移注意力到其他生物，否则他可以在其回合内使用动作进行一次智力检定，并与你的智力检定作对抗；生物胜出对抗时，法术终止。</p><p>向目标提问可以引导目标的思想历程，因此此法术在审讯中特别有效。</p><p>你还能用此法术侦测看不见的有思维生物。你可以在施展法术时，或者在法术持续时间内以一个动作实现该效应。此时，你可以搜寻 30 尺内的思想。该法术可以穿透大部分障碍，但仍会被 2 尺厚的石质，或 2 寸厚的金属质，或一层薄铅质材料所阻隔。你无法侦测到智力为 3 或更低的生物，也无法侦测不懂任何语言的生物。</p><p>以该方式侦测到一个生物后，你可以在法术持续时间内如上文所述的读取其思想。你甚至不需要看见该生物，但其必须在其 30 尺内。</p>",
           "chat": ""
         },
         "level": 2,
@@ -4190,7 +4190,7 @@
     },
     {
       "_id": "fV1xkqzKPLXxIxMU",
-      "name": "Disguise Self",
+      "name": "易容术 Disguise Self",
       "type": "spell",
       "system": {
         "source": {
@@ -4202,7 +4202,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.</p><p>The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.</p><p>To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (&amp;Reference[skill=Investigation]) check against your spell save DC.</p></div>",
+          "value": "<p>你改变自身以及随身的衣物、护甲、武器等所有物。该效应在法术终止或你使用动作主动解除时结束。肉眼看来你的身高可以有 1 尺的增减，体态可胖可瘦可匀称。但是你不能改变身体的形状，所以你变形的样子必须有四肢或类似的生理结构。此外，幻术的影响范围由你决定。</p><p>此法术产生的变化无法应对物理检查。比如，你用此法术添了一顶帽子，那么现实物件会从帽子穿过去，且任何触碰帽子的人将摸不到任何东西或者摸到的是你的头和头发。如果你用该法术让自己变得消瘦，而某个人用手摸到你时，他的手看起来就像摸着空气。</p><p>如果一个生物想要分辨你是否易容，则必须使用一个动作揭露你的伪装，并进行一次[[/check ability=int skill=inv]]{智力（调查）检定}以对抗你的法术豁免 DC。</p>",
           "chat": ""
         },
         "level": 1,
@@ -4431,7 +4431,7 @@
     },
     {
       "_id": "bF19V8j7jksdPFku",
-      "name": "Mage Hand",
+      "name": "法师之手 Mage Hand",
       "type": "spell",
       "system": {
         "source": {
@@ -4443,7 +4443,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p></div>",
+          "value": "<p>一只漂浮的幽灵手出现在施法距离内你指定的一点。幽灵手持续存在至法术终止，或直至你以一个动作解散该法术。如果幽灵手距你的距离超过 30 尺，或者当你再次施展了该法术时，则现存的幽灵手消失不见。</p><p>你可以用动作控制幽灵手，并通过幽灵手实现一个行为：你可以操控一个物件，或者打开一扇未上锁的门或容器，或者将一件物品放入容器或从容器中取出，或者将小瓶中的内容物倾倒出来。你每次你使用幽灵手时可以令其移动至多 30 尺。</p><p>该幽灵手不能攻击，也不能激活魔法物品或承载超过 10 磅重的物质。</p>",
           "chat": ""
         },
         "level": 0,
@@ -4699,7 +4699,7 @@
     },
     {
       "_id": "XTEPohWjR904g9Sf",
-      "name": "Minor Illusion",
+      "name": "次级幻影 Minor Illusion",
       "type": "spell",
       "system": {
         "source": {
@@ -4711,7 +4711,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p><p>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p><p>If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p><p>If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (&amp;Reference[skill=Investigation]) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p></div>",
+          "value": "<p>你在施法距离内创造一段声响或一个物件的影像，并使之维持至法术持续时间结束。你也可以用一个动作解除幻象，或者再次施展该法术来终止幻象。</p><p>如果你创造一段声响，其音量可以是低声耳语也可以是高声尖叫。它可以是你或其他任何人的嗓音，或者是一头狮子的咆哮、一段鼓声以及任何你指定的其他声响。声响在持续时间内不会减弱，或者你也可以于法术终止前在不同的时间段创造几段分散的声响。</p><p>如果你创造一个物件的影像（比如一把椅子、泥泞的脚印、一个小箱子等），则该物件大小不得大于一个边长 5 尺的立方体。该影像不具有声音、光亮、味道或任何其他的感官效应。由于影像可以被任何物件所穿透，因此与之进行物理互动时都会揭露其幻象的本质。</p><p>生物用其动作调查该声响或影像时，必须进行一次对抗该法术豁免 DC 的[[/check ability=int skill=inv]]{智力（调查）检定}，检定成功则判断出眼前即是幻象。幻象在看穿它的生物面前会显得模糊不清。</p>",
           "chat": ""
         },
         "level": 0,
@@ -4941,7 +4941,7 @@
     },
     {
       "_id": "vkJBycyIac8JZ91y",
-      "name": "Innate Spellcasting",
+      "name": "天生施法 Innate Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -4953,7 +4953,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Innate Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Innate Spellcasting.</span></span> The rakshasa's innate spellcasting ability is Charisma (spell save DC <span class=\"rd__dc\">18</span>, [[/r 1d20+10]]{+10} to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no material components:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>At will: @UUID[.Zq22ZjHuRS9o6COu], @UUID[.fV1xkqzKPLXxIxMU], @UUID[.bF19V8j7jksdPFku], @UUID[.XTEPohWjR904g9Sf]</p></li><li class=\"rd__li  rd__li-spell\"><p>3/day each: @UUID[.Khzposl2q9jp7PBf], @UUID[.DN4lQE6O8qePz8NA], @UUID[.mV4eNMgP5BTFQBb4], @UUID[.9rcn28jiOM1NbdHK], @UUID[.QqtnOFJt7C5vwPXE]</p></li><li class=\"rd__li  rd__li-spell\"><p>1/day each: @UUID[.9xXrYp2HhtV4xnKM], @UUID[.gRX2KGKe3NQxFx4a], @UUID[.PEwgUkQG5CzioIm1], @UUID[.P2PQ3t1kJcHf0rhG]</p></li></ul></div></div>",
+          "value": "<p>罗刹天生施法属性为魅力（法术豁免DC 18，法术攻击命中+10）。罗刹天生可以施展以下法术且不需任何相应的材料成分： 随意：侦测思想detect thoughts，易容术disguise self，法师之手mage hand，次级幻象minor illusion 每项3/日：魅惑类人charm person，侦测魔法detect magic，隐形术invisibility，高级幻影major image，暗示术suggestion 每项1/日：支配类人dominate person，飞行术fly，位面转移plane shift，真知术true seeing</p><p>@UUID[.Zq22ZjHuRS9o6COu]{侦测思想 Detect Thoughts}、@UUID[.fV1xkqzKPLXxIxMU]{易容术 Disguise Self}、@UUID[.bF19V8j7jksdPFku]{法师之手 Mage Hand}、@UUID[.XTEPohWjR904g9Sf]{次级幻影 Minor Illusion}、@UUID[.Khzposl2q9jp7PBf]{魅惑人类 Charm Person}、@UUID[.DN4lQE6O8qePz8NA]{侦测魔法 Detect Magic}、@UUID[.mV4eNMgP5BTFQBb4]{隐形术 Invisibility}、@UUID[.9rcn28jiOM1NbdHK]{高等幻影 Major Image}、@UUID[.QqtnOFJt7C5vwPXE]{暗示术 Suggestion}、@UUID[.9xXrYp2HhtV4xnKM]{支配人类 Dominate Person}、@UUID[.gRX2KGKe3NQxFx4a]{飞行术 Fly}、@UUID[.PEwgUkQG5CzioIm1]{异界传送 Plane Shift}、@UUID[.P2PQ3t1kJcHf0rhG]{真知术 True Seeing}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -5009,7 +5009,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "1e91fdd3b049cd82",
   "sort": 18700000,
   "ownership": {
     "default": 0,

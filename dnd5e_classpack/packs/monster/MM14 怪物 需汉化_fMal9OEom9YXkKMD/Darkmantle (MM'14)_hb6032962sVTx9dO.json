@@ -1,5 +1,5 @@
 {
-  "name": "Darkmantle (MM'14)",
+  "name": "暗幕魔兽 Darkmantle (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A darkmantle clings to cavern ceilings, remaining perfectly still as it waits for creatures to pass beneath it. From a distance, it can pass itself off as a stalactite or a lump of stone. Then it drops from the ceiling and unfurls, surrounding itself with magical darkness as it engulfs and crushes its prey.</p><p>Darkmantles are found throughout the Underdark, but they are equally common on the Shadowfell. Thriving in that dark realm, they fill an ecological niche similar to bats on the Material Plane. Intelligent creatures of the Shadowfell sometimes train darkmantles as guardians or companions.</p></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>Remind me again why we're on this quest?</i>”</p><p><span class=\"rd__quote-by\">— Ethelrede the fighter, after his first darkmantle encounter</span></p></div></div></div>",
+        "value": "<h3>暗幕魔兽Darkmantle</h3><p>“话说，我们到底为啥要接这任务？”</p><p>战士埃塞雷德Ethelrede，在其第一次与暗幕魔兽遭遇战后如是说</p><p>当等待猎物从身下经过的时候，暗幕魔兽附着在洞窟的天花板上保持完全静止。以这种方式，一只暗幕魔兽能让自己从远处看起来就像一根石钟乳或者一块石头。紧接着它从天花板上落下，展开自己的身子并将自己包裹在魔法黑暗中，进而吞没并压碎猎物。</p><p>暗幕魔兽出没于幽暗地域的各个角落，且十分常见于堕影冥界中。在黑暗领域中兴旺发展的它们与主物质位面的蝙蝠拥有相似的生态地位。而堕影冥界的一些智慧生物还会将暗幕魔兽训练成护卫或伙伴。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -630,7 +630,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Darkmantle",
+    "name": "暗幕魔兽 Darkmantle (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -733,7 +733,7 @@
   "items": [
     {
       "_id": "9CIXNyHa6hxMxmO2",
-      "name": "Crush",
+      "name": "碾压 Crush",
       "type": "weapon",
       "system": {
         "source": {
@@ -745,7 +745,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one creature. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=bludgeoning]]) damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches by engulfing the target's head, and the target is also &amp;Reference[condition=blinded] and unable to breathe while the darkmantle is attached in this way.</p><p>While attached to the target, the darkmantle can attack no other creature except the target but has advantage on its attack rolls. The darkmantle's speed also becomes 0, it can't benefit from any bonus to its speed, and it moves with the target.</p><p>A creature can detach the darkmantle by making a successful [[/save ability=str dc=13]] check as an action. On its turn, the darkmantle can detach itself from the target by using 5 feet of movement.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一生物。命中：6（[[/damage 1d6 + 3 type=bludgeoning]]）点钝击伤害，且暗幕魔兽附着于目标身上。若目标为大型或更小体型且暗幕魔兽的攻击具有优势，则其附着于目标头部，并导致目标目盲且被附着期间无法呼吸。 附着时，暗幕魔兽只能攻击被附着的目标，且其攻击检定具有优势。此时该暗幕魔兽速度为0，且无法受益于任何增加其速度的增益。同时该目标移动时暗幕魔兽也随之移动。 一个生物可以用动作进行一次DC 13的力量检定以尝试脱离附着。暗幕魔兽也可以在其自己回合内花费5尺移动力自行脱离附着。</p>",
           "chat": ""
         },
         "range": {
@@ -1023,7 +1023,7 @@
     },
     {
       "_id": "JMTyb7UusxEiaf6X",
-      "name": "Darkness Aura",
+      "name": "黑暗灵光 Darkness Aura",
       "type": "feat",
       "system": {
         "source": {
@@ -1035,7 +1035,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains @status[concentration], up to 10 minutes (as if @status[concentration||concentrating] on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.</p></div>",
+          "value": "<p>一片半径15尺的魔法黑暗以暗幕魔兽为中心展开。黑暗随其一同移动且覆盖区域内所有的角落。只要暗幕魔兽保持专注（如同专注一个法术），则该黑暗将持续至多10分钟。黑暗视觉无法看透这片黑暗，自然光源也无法照亮它。如果该黑暗的任一部分与2环或更低环阶法术所制造的光亮范围重合，则制造光亮的法术将被解除。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1242,7 +1242,7 @@
     },
     {
       "_id": "LPkAvJdGpkHirke4",
-      "name": "Echolocation",
+      "name": "回声定位 Echolocation",
       "type": "feat",
       "system": {
         "source": {
@@ -1254,7 +1254,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The darkmantle can't use its blindsight while &amp;Reference[condition=deafened].</p></div>",
+          "value": "<p>暗幕魔兽陷入耳聋时，无法使用其盲视感官。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1310,7 +1310,7 @@
     },
     {
       "_id": "zE7ACRKPivpHZ2HQ",
-      "name": "False Appearance",
+      "name": "拟形 False Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -1322,7 +1322,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the darkmantle remains motionless, it is indistinguishable from a cave formation such as a stalactite or stalagmite.</p></div>",
+          "value": "<p>静止的暗幕魔兽与普通的洞穴构造物（如石钟乳或石笋）一模一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1378,7 +1378,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 26500000,
   "ownership": {
     "default": 0,

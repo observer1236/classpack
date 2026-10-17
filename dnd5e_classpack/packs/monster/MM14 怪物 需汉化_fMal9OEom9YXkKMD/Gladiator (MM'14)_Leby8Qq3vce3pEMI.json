@@ -1,5 +1,5 @@
 {
-  "name": "Gladiator (MM'14)",
+  "name": "角斗士 Gladiator (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Gladiators battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death.</p></div></div>",
+        "value": "<h3>角斗士 Gladiators</h3><p>角斗是一种聚众的娱乐节目。某些角斗士会将每场角斗都视为生死之搏，而另一些则懂得精明的避开致命决斗继而赢取大量的奖金。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -631,7 +631,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Gladiator",
+    "name": "角斗士 Gladiator (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -725,7 +725,7 @@
   "items": [
     {
       "_id": "UgOGobCOwbAj1WEB",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -737,7 +737,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The gladiator makes three melee attacks or two ranged attacks.</p></div>",
+          "value": "<p>角斗士发动三次近战攻击，或两次远程攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -930,7 +930,7 @@
     },
     {
       "_id": "MXTkEpiyHJUvCJi1",
-      "name": "Spear",
+      "name": "矛 Spear",
       "type": "weapon",
       "system": {
         "source": {
@@ -942,7 +942,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or Ranged Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 5 ft. and range 20/60 ft., one target. <i>Hit:</i> 11 ([[/damage 2d6 + 4 type=piercing]]) damage, or 13 ([[/damage 2d8 + 4 type=piercing]]) damage if used with two hands to make a melee attack.</p></div>",
+          "value": "<p>近战或远程武器攻击：命中+7，触及5尺或射程20/60尺，单一目标。命中：11（[[/damage 2d6 + 4 type=piercing]]）点穿刺伤害，或使用双手发动近战攻击时13（[[/damage 2d8 + 4 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1216,7 +1216,7 @@
     },
     {
       "_id": "oCN4ng1Uy7fi7OyL",
-      "name": "Shield Bash",
+      "name": "盾击 Shield Bash",
       "type": "weapon",
       "system": {
         "source": {
@@ -1228,7 +1228,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 5 ft., one creature. <i>Hit:</i> 9 ([[/damage 2d4 + 4 type=bludgeoning]]) damage. If the target is a Medium or smaller creature, it must succeed on a [[/save ability=str dc=15]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及5尺，单一生物。命中：9（[[/damage 2d4 + 4 type=bludgeoning]]）点钝击伤害。如果目标是一个中型或更小体型生物，则目标生物必须成功通过一次DC 15的力量豁免否则将应击倒地。</p>",
           "chat": ""
         },
         "range": {
@@ -1664,7 +1664,7 @@
     },
     {
       "_id": "PeMlKOq0DE4GiO3j",
-      "name": "Brave",
+      "name": "勇气 Brave",
       "type": "feat",
       "system": {
         "source": {
@@ -1676,7 +1676,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The gladiator has advantage on saving throws against being &amp;Reference[condition=frightened].</p></div>",
+          "value": "<p>角斗士为抵抗恐慌而作的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1732,7 +1732,7 @@
     },
     {
       "_id": "dghsI2mO3H1d0AIT",
-      "name": "Brute",
+      "name": "残暴 Brute",
       "type": "feat",
       "system": {
         "source": {
@@ -1744,7 +1744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A melee weapon deals one extra die of its damage when the gladiator hits with it (included in the attack).</p></div>",
+          "value": "<p>角斗士的近战武器攻击命中目标时，其伤害加上额外一粒伤害骰（已包含在攻击条目中）。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1800,7 +1800,7 @@
     },
     {
       "_id": "Qz5KH7AwdK7zGibG",
-      "name": "Parry",
+      "name": "格挡 Parry",
       "type": "feat",
       "system": {
         "source": {
@@ -1812,7 +1812,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.</p></div>",
+          "value": "<p>角斗士在被一次近战攻击命中时，其AC加上3。此时该角斗士必须能看见攻击者，且有在持用一把近战武器。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2005,11 +2005,11 @@
     },
     {
       "_id": "JQrFwB8VaGM4YNvi",
-      "name": "Studded Leather Armor",
+      "name": "镶钉皮甲 Studded Leather Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p></div>",
+          "value": "<p>镶钉皮甲由坚韧而灵活的皮革制成，并以密布的铆钉或尖刺加固。</p>",
           "chat": ""
         },
         "source": {
@@ -2102,11 +2102,11 @@
     },
     {
       "_id": "JVbEI8KmK7dwkfZg",
-      "name": "Shield",
+      "name": "盾牌 Shield",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p></div>",
+          "value": "<p>盾牌由木材或金属制成，用一只手持用。持用盾牌使你的护甲等级提高2。你同时只能从一面盾牌获益。</p>",
           "chat": ""
         },
         "source": {
@@ -2199,7 +2199,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 14100000,
   "ownership": {
     "default": 0,

@@ -1,5 +1,5 @@
 {
-  "name": "Young Remorhaz (MM'14)",
+  "name": "青年百足魔兽 Young Remorhaz (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>From beneath the snow and ice bursts a remorhaz in a cloud of steam, its body pulsing with internal fire. Wing like fins flare from the back of the creature's head, and its wide mouth brims with jagged teeth.</p><div data-roll-name-ancestor=\"Arctic Predators\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Arctic Predators.</span></span> Remorhazes live in arctic climes, preying on elk, polar bears, and other creatures sharing their territory. They can't tolerate warm weather, having adapted to the cold by generating a furnace-like heat within their bodies. When hunting, a remorhaz burrows deep below the snow and ice and lies in wait for the faint vibrations created by a creature moving above it. While hidden under the ice and snow, it can lower its body temperature so that it doesn't melt its cover.</p></div><div data-roll-name-ancestor=\"Young Ones\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Young Ones.</span></span> Frost giant hunters scour the icy wastes for remorhaz nests and eggs. The giants prize young remorhazes, which can be trained from hatching to obey commands and guard the giants' icy citadels. Unlike fully grown specimens, young remorhazes gnaw on their victims instead of swallowing them whole.</p></div></div></div>",
+        "value": "<h3>百足魔兽Remorhazes</h3><p>百足魔兽在一片蒸汽云雾中从冰雪之下冲出，其体内却涌动着炼狱之火。翼状鳍在其头部向后张开，它的巨嘴边缘则布满锯齿状的尖牙。</p><p><strong>极地狩猎者Arctic Predators。</strong>百足魔兽生活在严寒的气候中。它们捕食赤鹿、白熊和一切生活在该领地的其他生物。它们体内长着像火炉一样生热的器官来抵御寒冷，这反而让它们无法忍受温暖的天气。百足魔兽单独狩猎时，会在冰雪深处掘洞埋伏，等待生物从其上方经过时传来的微小震动。隐藏冰雪之下时，百足魔兽会主动降低体温，以免自己将冰面融化。</p><p><strong>幼兽Young Ones。</strong>霜巨人猎手会在冰冷的荒地中搜寻百足魔兽的巢和卵，这些巨人们将百足魔兽的幼虫视若珍宝，从幼虫孵化起就训练它们服从命令，用其守卫霜巨人冰冷的城堡。与成虫不同，百足魔兽幼虫会啃咬受害者，而不是将其整个吞下。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Young Remorhaz",
+    "name": "青年百足魔兽 Young Remorhaz (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -731,7 +731,7 @@
   "items": [
     {
       "_id": "N11eT4GhwYPdabDG",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -743,7 +743,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 20 ([[/damage 3d10 + 4 type=piercing]]) damage plus 7 ([[/damage 2d6 type=fire]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：20（[[/damage 3d10 + 4 type=piercing]]）点穿刺伤害，外加7（[[/damage 2d6 type=fire]]）点火焰伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1037,7 +1037,7 @@
     },
     {
       "_id": "C13iWinx3QKnVKIA",
-      "name": "Heated Body",
+      "name": "灼热之躯 Heated Body",
       "type": "feat",
       "system": {
         "source": {
@@ -1049,7 +1049,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A creature that touches the remorhaz or hits it with a melee attack while within 5 feet of it takes 7 ([[/damage 2d6 type=fire]]) damage.</p></div>",
+          "value": "<p>在百足魔兽周边5尺范围内触碰或对其发动近战攻击命中时，该攻击生物将受7（[[/damage 2d6 type=fire]]）点火焰伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1261,7 +1261,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 21400000,
   "ownership": {
     "default": 0,

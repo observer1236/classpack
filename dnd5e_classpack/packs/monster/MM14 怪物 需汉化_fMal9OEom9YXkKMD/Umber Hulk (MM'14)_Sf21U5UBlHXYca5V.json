@@ -1,5 +1,5 @@
 {
-  "name": "Umber Hulk (MM'14)",
+  "name": "掘土巨怪 Umber Hulk (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>An abominable horror from deep beneath the earth, an umber hulk burrows into cave complexes, dungeons, or Underdark settlements in search of food. Those lucky enough to survive an umber hulk attack often remember precious little of the incident, thanks to the umber hulk's mind-scrambling gaze.</p><div data-roll-name-ancestor=\"Devious Delvers\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Devious Delvers.</span></span> Umber hulks can burrow through solid rock, forming new tunnels in their wake. The steel-hard chitin of its body can withstand the cave-ins, tunnel collapses, and rock falls that commonly follow it.</p><p>Burrowing into the wall of a cavern or passageway, an umber hulk lies in wait for creatures to pass by on the other side, its hair-like feelers sensing any movement around it. When it explodes out in a shower of earth and rock, its unsuspecting quarry turns to face the oncoming threat-and is entranced by the umber hulk's bewildering eyes, forced to stand helpless as its mandibles snap shut.</p></div><div data-roll-name-ancestor=\"Mind Scrambler\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Mind Scrambler.</span></span> Many survivors of an umber hulk encounter recollect little about the attack, because the monster's confusing gaze scrambles their memory of the event. Those who have fought and killed umber hulks recognize the signs. For other denizens of the Underdark, grisly tales of vanished explorers and wanton destruction speak of an unknown foe. Umber hulks take on supernatural status in these harrowing stories, many of which convey the same warning: once an umber hulk has been spotted, it is already too late to escape it.</p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>The wall caved in. That's the last thing I remember.</i>”</p><p><span class=\"rd__quote-by\">— A survivor's account of an umber hulk attack</span></p></div></div></div>",
+        "value": "<h3>掘土巨怪Umber Hulk</h3><p>“墙塌了。我最后就只记得这个。”</p><p>某次掘土巨怪袭击其中一位生还者如是说</p><p>作为地下深处令人憎恶的恐怖存在的掘土巨怪，徘徊于洞穴群、地下城和幽暗地域各聚居地里觅食。那些有幸在掘土巨怪袭击事件中幸存下来的人，大多会受掘土巨怪扰乱意志的凝视所影响，而失去事件当时的记忆。</p><p><strong>迂回挖掘者Devious Delvers。</strong>掘土巨怪可以在坚硬的岩石中掘穴，并在身后留下新的地道。其坚硬的几丁质甲壳可以承受住在地下洞穴和隧道的崩塌，以及通常会随之而来的岩石流。</p><p>掘土巨怪在洞窟或过道的墙壁里掘穴然后在其内埋伏，其毛发状的触角能够感应到周围任何的动静。当它在泥土与岩石的崩落中现身时，毫无防备的猎物们就要直面它带来的威胁。而掘土巨怪扰乱心神的凝视，还会迫使敌人无助的呆站着，任由它的颚齿无情蹂躏。</p><p><strong>心智干扰者Mind Scrambler。</strong>许多与掘土巨怪遭遇的幸存总是无法回忆起被袭击时的情况，正是由于这种怪物其困惑凝视干扰了他们关于这次事件的记忆。那些曾经在战斗中杀死掘土巨怪的人，也会出现这种迹象。而其他幽暗地域的市民则以此流传着关于消失的探险者和肆意破坏的未知敌人的可怕故事。掘土巨怪在这些悲惨故事中扮演着超自然的角色，其中很多都传达了同样的警告：发现掘土巨怪时已经来不及逃跑了。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Umber Hulk",
+    "name": "掘土巨怪 Umber Hulk (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -728,7 +728,7 @@
   "items": [
     {
       "_id": "37m2UorsMliiQPUs",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -740,7 +740,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The umber hulk makes three attacks: two with its claws and one with its mandibles.</p></div>",
+          "value": "<p>掘土巨怪发动三次攻击：两次爪击和一次颚齿攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -933,7 +933,7 @@
     },
     {
       "_id": "UzRPV1uhhEVjhKDD",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -945,7 +945,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 5 ft., one target. <i>Hit:</i> 9 ([[/damage 1d8 + 5 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及5尺，单一目标。命中：9（[[/damage 1d8 + 5 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1223,7 +1223,7 @@
     },
     {
       "_id": "SFecAZprMKvxjPVf",
-      "name": "Mandibles",
+      "name": "颚齿 Mandibles",
       "type": "weapon",
       "system": {
         "source": {
@@ -1235,7 +1235,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 5 ft., one target. <i>Hit:</i> 14 ([[/damage 2d8 + 5 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及5尺，单一目标。命中：14（[[/damage 2d8 + 5 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1513,7 +1513,7 @@
     },
     {
       "_id": "nBvhkGLPPMKGTKdz",
-      "name": "Confusing Gaze",
+      "name": "困惑凝视 Confusing Gaze",
       "type": "feat",
       "system": {
         "source": {
@@ -1525,7 +1525,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>When a creature starts its turn within 30 feet of the umber hulk and is able to see the umber hulk's eyes, the umber hulk can magically force it to make a [[/save ability=cha dc=15]] saving throw, unless the umber hulk is &amp;Reference[condition=incapacitated].</p><p>On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a [[/r d8]] to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.</p><p>Unless @status[surprised], a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save.</p></div>",
+          "value": "<p>生物在掘土巨怪周边30尺范围内且可以看见掘土巨怪眼睛的情况下开始其自己回合时，如果掘土巨怪未处于失能状态，则该掘土巨怪可以用魔法迫使该生物进行一次DC 15的魅力豁免。 若豁免失败，则该生物直至其自己下一回合开始前无法执行反应，并骰一次d8以判断其本回合的行动。骰值为1~4时，该生物不做任何事。骰值为5或6时，该生物不执行动并且用其全部移动力向一个随机方向直线移动。骰值为7或8时，该生物随机对一个生物发动一次近战攻击，若没有目标则不做任何事。 除非被突袭，否则生物可以选择避开掘土巨怪的眼神而不必进行该豁免。此后，直至该生物自己的下一回合开始，它重新选择是否避开掘土巨怪眼神前，该生物视为无法看见该掘土巨怪。此期间，该生物一旦看向掘土巨怪则其必须立即进行该豁免。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1740,7 +1740,7 @@
     },
     {
       "_id": "DtqC5q5JtlQyCxfP",
-      "name": "Tunneler",
+      "name": "掘道者 Tunneler",
       "type": "feat",
       "system": {
         "source": {
@@ -1752,7 +1752,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The umber hulk can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake.</p></div>",
+          "value": "<p>掘土巨怪能够以其一半的掘穴速度通过坚硬的岩层，并在其身后留下宽5尺，高8尺的地道。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1808,7 +1808,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 19100000,
   "ownership": {
     "default": 0,

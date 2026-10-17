@@ -1,5 +1,5 @@
 {
-  "name": "Giant Owl (MM'14)",
+  "name": "巨猫头鹰 Giant Owl (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Giant owls often befriend fey and other sylvan creatures and are guardians of their woodland realms.</p></div></div>",
+        "value": "<p>巨猫头鹰giant owls通常会是妖精和其他木族生物的朋友，而且还会充当其林地领域的警卫。</p>",
         "public": ""
       },
-      "alignment": "Neutral",
+      "alignment": "绝对中立 Neutral",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -640,7 +640,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Owl",
+    "name": "巨猫头鹰 Giant Owl (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -734,7 +734,7 @@
   "items": [
     {
       "_id": "wqOpUfJ2PAMzkaqd",
-      "name": "Talons",
+      "name": "禽爪 Talons",
       "type": "weapon",
       "system": {
         "source": {
@@ -746,7 +746,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one target. <i>Hit:</i> 8 ([[/damage 2d6 + 1 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一目标。命中：8（[[/damage 2d6 + 1 type=slashing]]）点挥砍伤害。 </p>",
           "chat": ""
         },
         "range": {
@@ -1024,7 +1024,7 @@
     },
     {
       "_id": "LfR7NEijgWUwMtlk",
-      "name": "Flyby",
+      "name": "飞掠 Flyby",
       "type": "feat",
       "system": {
         "source": {
@@ -1036,7 +1036,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach.</p></div>",
+          "value": "<p>猫头鹰飞出敌人的触及范围时不会引起借机攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1092,7 +1092,7 @@
     },
     {
       "_id": "i32oY6EuuUC9pckD",
-      "name": "Keen Hearing and Sight",
+      "name": "敏锐视听觉 Keen Hearing and Sight",
       "type": "feat",
       "system": {
         "source": {
@@ -1104,7 +1104,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The owl has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing or sight.</p></div>",
+          "value": "<p>猫头鹰依赖视觉和听觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1160,7 +1160,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 600000,
   "ownership": {
     "default": 0,

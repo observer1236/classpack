@@ -1,5 +1,5 @@
 {
-  "name": "Roper (MM'14)",
+  "name": "石绳怪 Roper (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Living in caves and caverns throughout the Underdark, voracious ropers feast on whatever they can catch and seize. A roper eats any creature, from Underdark beasts to adventurers and their gear.</p><p>A roper has the appearance of a stalagmite or stalactite, which often allows it to attack with surprise. The creature can move slowly using thousands of sticky cilia beneath its base. It creeps up cave walls and along stone ceilings, finding the best position from which to attack.</p><div data-roll-name-ancestor=\"Underdark Hunters\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Underdark Hunters.</span></span> The roper is an evolved, mature form of piercer, with which it shares its rock-like appearance and hunting tactics. A roper can hold still for long hours, shutting its single eye to look like nothing more than a mundane formation of rock. Creatures that come too close are surprised when that eye snaps open and sticky tendrils shoot out to seize them. The roper then makes horrible guttural sounds as it reels in its struggling victims, drawing them close for the fatal bite of its stony teeth.</p><p>A roper can digest anything it eats with the exception of platinum, gemstones, and magic items, which can sometimes be retrieved from the creature's gizzard after death. A roper's digestive juices are also valuable, fetching a high price from alchemists who use them as a solvent.</p></div><div data-roll-name-ancestor=\"Weakening Tendrils\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Weakening Tendrils.</span></span> A roper has six nubs set along its body, through which it extrudes sticky tendrils that bond to whatever they touch. Each tendril sends out hair-like growths that penetrate a creature's flesh and sap its strength, so the victim can struggle only weakly as the roper reels it in. If a tendril is cut through or broken, the roper produces a new one to replace it.</p></div></div></div>",
+        "value": "<h3>石绳怪Roper</h3><p>贪食的石绳怪生活在遍布幽暗地域的洞穴和岩窟中，以他们能够抓到的所有东西为食。从幽暗地域的野兽到冒险者和他们的装备，石绳怪们对于食物毫不挑剔。</p><p>石绳怪的外表近似于石钟乳或石笋，而这也让其发动袭击时更有优势。这种生物能够依靠底座下的数千根纤毛缓缓的移动，慢慢的爬上洞穴的墙壁并沿着石质天花板移动，寻找最适合攻击的位置。</p><p><strong>幽暗猎手Underdark Hunters。</strong>石绳怪是一种高度进化的成熟捕猎者，他们拥有石头一样的外表和以此为基础的捕猎技巧。一只石绳怪可以长时间保持静止，再闭上它唯一的眼睛从而让自己看起来和一块平凡的石头一模一样。靠太近的生物常常惊讶于它突然睁开的眼睛和飞射而出的卷须。伴随着可怖的喉音，石绳怪会卷起挣扎的猎物并将其拖向自己，打算用自己石牙发动致命咬击。</p><p>除铂金、宝石和魔法物品外，石绳怪可以消化它吞下的任何东西。而那些无法消化之物则可以在石绳怪死后在其砂囊中找到。石绳怪的消化液也十分珍贵，一些用它做溶剂的炼金术师往往会愿意以不菲的价钱收购这种物品。</p><p><strong>致弱卷须Weakening Tendrils。</strong>一只石绳怪全身有6处瘤包，从里面伸出的黏糊卷须会黏上任何接触到的物体。每根卷须长着毛发一样的凸起，可以穿透生物的血肉汲取其力气。正因如此，被卷起的猎物挣扎时总会逐渐变得无力。如果一根卷须被切断或被破坏，石绳怪也会迅速长出新的卷须作替代。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -629,7 +629,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Roper",
+    "name": "石绳怪 Roper (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -723,7 +723,7 @@
   "items": [
     {
       "_id": "8P8TH6CCVTna7TeA",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -735,7 +735,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The roper makes four attacks with its tendrils, uses Reel, and makes one attack with its bite.</p></div>",
+          "value": "<p>石绳怪发动四次卷须攻击，使用拖拽，并发动一次啃咬攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -928,7 +928,7 @@
     },
     {
       "_id": "gWrD4wwJhWrMpMAB",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -940,7 +940,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 5 ft., one target. <i>Hit:</i> 22 ([[/damage 4d8 + 4 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及5尺，单一目标。命中：22（[[/damage 4d8 + 4 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1218,7 +1218,7 @@
     },
     {
       "_id": "SnjpTgaZRG129kBv",
-      "name": "Tendril",
+      "name": "卷须 Tendril",
       "type": "weapon",
       "system": {
         "source": {
@@ -1230,7 +1230,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+7]]{+7} to hit, reach 50 ft., one creature. <i>Hit:</i> The target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">15</span>). Until the grapple ends, the target is &amp;Reference[condition=restrained] and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target.</p></div>",
+          "value": "<p>近战武器攻击：命中+7，触及50尺，单一生物。命中：目标被擒抱（逃脱DC 15）。直至擒抱终止前，目标被束缚并且进行力量检定和力量豁免时具有劣势，且石绳怪不能对其他目标使用同一条卷须。</p>",
           "chat": ""
         },
         "range": {
@@ -1490,7 +1490,7 @@
     },
     {
       "_id": "Ph3t0Z22QzcDE6fW",
-      "name": "Reel",
+      "name": "拖拽 Reel",
       "type": "feat",
       "system": {
         "source": {
@@ -1502,7 +1502,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The roper pulls each creature &amp;Reference[condition=grappled] by it up to 25 feet straight toward it.</p></div>",
+          "value": "<p>石绳怪将每个被自己擒抱的生物向自己直线拖动25尺。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1695,7 +1695,7 @@
     },
     {
       "_id": "xG3hPYvq0vOx0GXO",
-      "name": "False Appearance",
+      "name": "拟形 False Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -1707,7 +1707,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the roper remains motionless, it is indistinguishable from a normal cave formation, such as a stalagmite.</p></div>",
+          "value": "<p>石绳怪保持静止时与普通的洞窟结构物（比如一根石钟乳）几乎一模一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1763,7 +1763,7 @@
     },
     {
       "_id": "1tGmk7N1LIwRXjzC",
-      "name": "Grasping Tendrils",
+      "name": "擒抱卷须 Grasping Tendrils",
       "type": "feat",
       "system": {
         "source": {
@@ -1775,7 +1775,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The roper can have up to six tendrils at a time. Each tendril can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the roper, which can extrude a replacement tendril on its next turn. A tendril can also be broken if a creature takes an action and succeeds on a [[/save ability=str dc=15]] check against it.</p></div>",
+          "value": "<p>石绳怪一次至多同时拥有六根卷须。每根卷须都能被攻击（AC 20，生命值10，免疫毒素和心灵伤害）。摧毁一根卷须不会对石绳怪造成伤害，而石绳怪可以在它自己的下一回合重新长出一根替代品。卷须还可以由任一生物用一个动作通过一次DC 15的力量检定扯断。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1831,7 +1831,7 @@
     },
     {
       "_id": "oI9uO9KLR2064iQN",
-      "name": "Spider Climb",
+      "name": "蛛行 Spider Climb",
       "type": "feat",
       "system": {
         "source": {
@@ -1843,7 +1843,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The roper can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p></div>",
+          "value": "<p>石绳怪无需进行属性检定就能攀爬于困难表面，包括倒挂在天花板上。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1899,7 +1899,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 36800000,
   "ownership": {
     "default": 0,

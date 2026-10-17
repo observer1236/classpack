@@ -1,5 +1,5 @@
 {
-  "name": "Spider (MM'14)",
+  "name": "蜘蛛 Spider (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -626,7 +626,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Spider",
+    "name": "蜘蛛 Spider (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -720,7 +720,7 @@
   "items": [
     {
       "_id": "eR7Z2tEvEADLnAQX",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -732,7 +732,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 1 piercing damage, and the target must succeed on a [[/save ability=con dc=9]] saving throw or take 2 ([[/damage 1d4 type=poison]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物。命中：1点穿刺伤害，目标必须进行一次DC 9的体质豁免，豁免失败则受到2（[[/damage 1d4 type=poison]]）点毒素伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -756,7 +756,7 @@
           "mUqbvwNmWLUJvNIW": {
             "_id": "mUqbvwNmWLUJvNIW",
             "type": "attack",
-            "name": "Attack: Piercing Damage",
+            "name": "攻击: 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -928,7 +928,7 @@
           "Wy7pZTVMMwH6p6mV": {
             "_id": "Wy7pZTVMMwH6p6mV",
             "type": "save",
-            "name": "Save: 1d4 Poison Damage",
+            "name": "豁免: 1d4 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1186,7 +1186,7 @@
     },
     {
       "_id": "f64kOjA2GyYjsQxR",
-      "name": "Spider Climb",
+      "name": "蛛行 Spider Climb",
       "type": "feat",
       "system": {
         "source": {
@@ -1198,7 +1198,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p></div>",
+          "value": "<p>蜘蛛可以攀爬在难以攀爬的表面上，包括倒吊在天花板上，且不需要进行属性检定。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1254,7 +1254,7 @@
     },
     {
       "_id": "wNODOWBXy9SX4Kvw",
-      "name": "Web Sense",
+      "name": "蛛网感知 Web Sense",
       "type": "feat",
       "system": {
         "source": {
@@ -1266,7 +1266,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.</p></div>",
+          "value": "<p>与蛛网接触时，蜘蛛可以知晓其他与该蛛网接触生物的准确位置。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1322,7 +1322,7 @@
     },
     {
       "_id": "k8cDdbDGMoMOCXR2",
-      "name": "Web Walker",
+      "name": "蛛网行者 Web Walker",
       "type": "feat",
       "system": {
         "source": {
@@ -1334,7 +1334,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The spider ignores movement restrictions caused by webbing.</p></div>",
+          "value": "<p>蜘蛛在蛛网上移动时无视蛛网造成的移动限制。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1390,7 +1390,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 3100000,
   "ownership": {
     "default": 0,

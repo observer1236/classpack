@@ -1,5 +1,5 @@
 {
-  "name": "四元冢（游荡者）Quadrone (Rogue) (MM'14)",
+  "name": "四元冢（游荡者） Quadrone (Rogue) (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<p>Astute combatants, quadrones serve as artillery and field officers in the regiments of modron armies.</p><div data-roll-name-ancestor=\"Modrons\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Modrons</span></h1> <p>Modrons are beings of absolute law that adhere to a hive-like hierarchy. They inhabit the plane of Mechanus and tend its eternally revolving gears, their existence a clockwork routine of perfect order.</p><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Absolute Law and Order\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Absolute Law and Order.</span></span> Under the direction of their leader, Primus, modrons increase order in the multiverse in accordance with laws beyond the comprehension of mortal minds. Their own minds are networked in a hierarchal pyramid, in which each modron receives commands from superiors and delegates orders to underlings. A modron carries out commands with total obedience, utmost efficiency, and an absence of morality or ego. Modrons have no sense of self beyond what is necessary to fulfill their duties. They exist as a unified collective, divided by ranks, yet they always refer to themselves collectively. To a modron, there is no \"I,\" but only \"we\" or \"us.\"</p><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Variant: Rogue Modrons\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Variant: Rogue Modrons</span><span class=\"ve-flex-vh-center\"></span></h4> <p>A modron unit sometimes becomes defective, either through natural decay or exposure to chaotic forces. Rogue modrons don't act in accordance with Primus's wishes and directives, breaking laws, disobeying orders, and even engaging in violence. Other modrons hunt down such rogues.</p><p>A rogue modron loses the Axiomatic Mind trait and can have any alignment other than lawful neutral. Otherwise, it has the same statistics as a regular modron of its rank.</p></div></div><div data-roll-name-ancestor=\"Absolute Hierarchy\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Absolute Hierarchy.</span></span> Modrons communicate only with their own rank and the ranks immediately above and below them. Modrons more than one rank away are either too advanced or too simple to understand.</p></div><div data-roll-name-ancestor=\"Cogs of the Great Machine\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Cogs of the Great Machine.</span></span> If a modron is destroyed, its remains disintegrate. A replacement from the next lowest rank then transforms in a flash of light, gaining the physical form of its new rank. The promoted modron is replaced by one of its underlings in the same manner, all the way to the lowest levels of the hierarchy. There, a new modron is created by Primus, with a steady stream of monodrones leaving the Great Modron Cathedral on Mechanus as a result.</p></div><div data-roll-name-ancestor=\"The Great Modron March\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">The Great Modron March.</span></span> When the gears of Mechanus complete seventeen cycles once every 289 years, Primus sends a vast army of modrons across the Outer Planes, ostensibly on a reconnaissance mission. The march is long and dangerous, and only a small number of modrons returns to Mechanus.</p></div></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>Every 289 years, the entire multiverse goes mad. Like clockwork.</i>”</p><p><span class=\"rd__quote-by\">— Kwint Stormbellow, rock gnome adventurer</span></p></div></div></div>",
+        "value": "<h3>四元冢Quadrone</h3><p>四元冢作为精明的战士，担任军队的炮兵和战地长官。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -625,7 +625,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Quadrone (Rogue)",
+    "name": "四元冢（游荡者） Quadrone (Rogue) (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -724,7 +724,7 @@
   "items": [
     {
       "_id": "leY8D69VfDCPjAtX",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -736,7 +736,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The quadrone makes two fist attacks or four shortbow attacks.</p></div>",
+          "value": "<p>四元冢发两次拳击攻击或四次短弓攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -929,7 +929,7 @@
     },
     {
       "_id": "BO5HrPAFMvTljLyn",
-      "name": "Fist",
+      "name": "拳击 Fist",
       "type": "weapon",
       "system": {
         "source": {
@@ -941,7 +941,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one target. <i>Hit:</i> 3 ([[/damage 1d4 + 1 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+3，触及5尺，单一目标。命中：3（[[/damage 1d4 + 1 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1219,7 +1219,7 @@
     },
     {
       "_id": "1QrAKDVtqjLi12SG",
-      "name": "Shortbow",
+      "name": "短弓 Shortbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1231,7 +1231,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, range 80/320 ft., one target. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+4，射程80/320尺，单一目标。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1501,7 +1501,7 @@
     },
     {
       "_id": "H7TLtc3MXOvGUNx1",
-      "name": "Disintegration",
+      "name": "解体 Disintegration",
       "type": "feat",
       "system": {
         "source": {
@@ -1513,7 +1513,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the quadrone dies, its body disintegrates into dust, leaving behind its weapons and anything else it was carrying.</p></div>",
+          "value": "<p>四元冢死亡时，它的身体会瓦解为尘埃，留下它的武器和其他携带的东西。</p>",
           "chat": ""
         },
         "requirements": "",

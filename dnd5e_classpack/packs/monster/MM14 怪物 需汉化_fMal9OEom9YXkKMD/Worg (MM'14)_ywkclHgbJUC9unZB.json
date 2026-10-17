@@ -1,5 +1,5 @@
 {
-  "name": "Worg (MM'14)",
+  "name": "座狼 Worg (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A worg is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by goblins and hobgoblins. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.</p></div></div>",
+        "value": "<h3>座狼Worg</h3><p>座狼是一种喜欢捕猎和噬食比自己弱小生物的邪恶捕食者。狡猾而恶毒的座狼游荡在偏远的野外，或由地精和大地精驯养。这些生物会这些生物会将座狼用作坐骑，只是座狼稍感被亏待或是需要营养补给时，便会转而对付其骑乘者。座狼会说自族的语言和地精语，其中某些甚至还会说通用语。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -636,7 +636,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Worg",
+    "name": "座狼 Worg (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -730,7 +730,7 @@
   "items": [
     {
       "_id": "oU3JcuYoq8LOqTtG",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -742,7 +742,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/damage 2d6 + 3 type=piercing]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=13]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：10（[[/damage 2d6 + 3 type=piercing]]）点穿刺伤害。如果目标是生物，则目标必须进行一次DC 13的力量豁免，豁免失败则应击倒地。</p>",
           "chat": ""
         },
         "range": {
@@ -1178,7 +1178,7 @@
     },
     {
       "_id": "JFNdh24iPgP1tMPJ",
-      "name": "Keen Hearing and Smell",
+      "name": "敏锐嗅听觉 Keen Hearing and Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1190,7 +1190,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The worg has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing or smell.</p></div>",
+          "value": "<p>座狼依赖听觉或嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1246,7 +1246,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 37300000,
   "ownership": {
     "default": 0,

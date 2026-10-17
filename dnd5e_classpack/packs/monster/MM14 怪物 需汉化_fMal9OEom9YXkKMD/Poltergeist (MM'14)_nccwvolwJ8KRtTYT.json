@@ -1,5 +1,5 @@
 {
-  "name": "Poltergeist (MM'14)",
+  "name": "骚灵 Poltergeist (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -546,10 +546,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A poltergeist is the confused, invisible spirit of an individual with no sense of how he or she died. A poltergeist expresses its rage by hurling creatures and objects using the power of its shattered psyche.</p></div></div>",
+        "value": "<h3>恶灵Specter</h3><p>恶灵是类人生物愤怒而不受约束的精魄，受到阻碍而无法往生的产物。恶灵与其原本存在不具有任何联系，并且注定要在世界上永远存在。有些恶灵是用黑暗魔法或邪灵的触碰从生者的躯体直接剥离灵魂的产物。</p><p><strong>无可救赎Beyond Redemption。</strong>幽魂在其未竟遗愿完成时便可回归安息。而恶灵并没有这样安息或救赎的机会。它们必须停留于物质位面，其唯一的结局就是其灵魂被毁灭然后最终被遗忘。在此之前，它只能在荒凉之地孤独地存在，任世界老去而自身却被逐渐遗忘。</p><p><strong>永恒仇恨Undying Hatred。</strong>活体生物让恶灵想起其无法企及的生命。只要看到活物恶灵便会生起悲伤与愤怒，然后必须摧毁生命才能舒缓这些苦痛。恶灵会迅速无情地施行杀戮，而只有剥夺他人的生命，才能让它获得轻微的满足感。只是，不管它消灭多少生命，恶灵最终总会重新被仇恨与悲伤的情绪所支配。</p><p><strong>黑暗住民Dwellers in Darkness。</strong>日光是生命之源，是恶灵无望获得并会让其痛苦之物。直至夜幕降临，它们才离开自己最后的安息之所。由于普通武器都无法对其造成伤害，所以它们会毫无顾忌的寻找活体生物来施行杀戮。直至黎明的第一缕曙光出现，它们又再退回到黑暗中，一直等待夜晚的再次降临。</p><p><strong>亡灵本质Undead Nature。</strong>恶灵不需要空气、饮食和睡眠。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -657,7 +657,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Poltergeist",
+    "name": "骚灵 Poltergeist (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -751,7 +751,7 @@
   "items": [
     {
       "_id": "trAXzu7QhDCMldUC",
-      "name": "Forceful Slam",
+      "name": "斥力猛击 Forceful Slam",
       "type": "weapon",
       "system": {
         "source": {
@@ -763,7 +763,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 10 ([[/damage 3d6 type=force]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物。命中：10（[[/damage 3d6 type=force]]）点力场伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1041,7 +1041,7 @@
     },
     {
       "_id": "3Vc3soAR3JC8oNdM",
-      "name": "Telekinetic Thrust",
+      "name": "念力推掷 Telekinetic Thrust",
       "type": "feat",
       "system": {
         "source": {
@@ -1053,7 +1053,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The poltergeist targets a creature or unattended object within 30 feet of it. A creature must be Medium or smaller to be affected by this magic, and an object can weigh up to 150 pounds.</p><p>If the target is a creature, the poltergeist makes a Charisma check contested by the target's Strength check. If the poltergeist wins the contest, the poltergeist hurls the target up to 30 feet in any direction, including upward. If the target then comes into contact with a hard surface or heavy object, the target takes [[/damage 1d6]] damage per 10 feet moved.</p><p>If the target is an object that isn't being worn or carried, the poltergeist hurls it up to 30 feet in any direction. The poltergeist can use the object as a ranged weapon, attacking one creature along the object's path ([[/r 1d20+4]]{+4} to hit) and dealing 5 ([[/damage 2d4 type=bludgeoning]]) damage on a hit.</p></div>",
+          "value": "<p>骚灵指定其30尺内一个生物或无人着装、携带的物件。受影响的生物必须为中型或更小，物件不能重于150磅。</p><p>若目标是生物，骚灵以魅力检定对抗目标的力量检定。骚灵获胜则可将目标向任意方向抛出至多30尺，包括向上。若目标随后撞上坚硬表面或重物，则每移动或坠落10尺受到[[/damage 1d6]]点伤害。</p><p>若目标是物件，骚灵可将它向任意方向抛出至多30尺，并以它为远程武器攻击路径上的一个生物：命中+4，命中造成5（[[/damage 2d4 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1072,7 +1072,7 @@
           "IuZPADOgID7n9YH0": {
             "_id": "IuZPADOgID7n9YH0",
             "type": "damage",
-            "name": "Damage",
+            "name": "伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1225,7 +1225,7 @@
           "2xneTXtOjt4AM0LH": {
             "_id": "2xneTXtOjt4AM0LH",
             "type": "damage",
-            "name": "Damage: 2d4 Bludgeoning Damage",
+            "name": "伤害: 2d4 钝击 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1418,7 +1418,7 @@
     },
     {
       "_id": "Sgj2GNDDvm3qSa74",
-      "name": "Incorporeal Movement",
+      "name": "虚体移动 Incorporeal Movement",
       "type": "feat",
       "system": {
         "source": {
@@ -1430,7 +1430,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The poltergeist can move through other creatures and objects as if they were &amp;Reference[rule=difficultterrain]{difficult terrain}. It takes 5 ([[/damage 1d10 type=force]]) damage if it ends its turn inside an object.</p></div>",
+          "value": "<p>恶灵可以如同穿过困难地形一样穿过其他生物和物件。如果它在自己的回合结束时仍处在物件内部则受到5（[[/damage 1d10 type=force]]）点力场伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1642,7 +1642,7 @@
     },
     {
       "_id": "aESYXKlupKvDP8Dz",
-      "name": "Sunlight Sensitivity",
+      "name": "日照敏感 Sunlight Sensitivity",
       "type": "feat",
       "system": {
         "source": {
@@ -1654,7 +1654,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in sunlight, the poltergeist has disadvantage on attack rolls, as well as on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div>",
+          "value": "<p>处于阳光下的恶灵在进行攻击检定，以及进行依赖视觉的感知（察觉）检定时具有劣势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1710,7 +1710,7 @@
     },
     {
       "_id": "6hRNM7yYMdY3VJ4u",
-      "name": "Invisibility",
+      "name": "隐形 Invisibility",
       "type": "feat",
       "system": {
         "source": {
@@ -1722,7 +1722,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The poltergeist is &amp;Reference[condition=invisible].</p></div>",
+          "value": "<p>骚灵处于隐形状态。 骚灵获得以下动作项代替恶灵的吸取生命：</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1778,7 +1778,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "f12a539bc3086eec",
   "sort": 31200000,
   "ownership": {
     "default": 0,

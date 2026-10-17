@@ -1,5 +1,5 @@
 {
-  "name": "Giant Boar (MM'14)",
+  "name": "巨野猪 Giant Boar (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -547,7 +547,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -634,7 +634,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Boar",
+    "name": "巨野猪 Giant Boar (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -728,7 +728,7 @@
   "items": [
     {
       "_id": "NCxVe9MqhjjgGrVU",
-      "name": "Tusk",
+      "name": "牙撕 Tusk",
       "type": "weapon",
       "system": {
         "source": {
@@ -740,7 +740,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/damage 2d6 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：10（[[/damage 2d6 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1018,7 +1018,7 @@
     },
     {
       "_id": "wxR5wvfj6UIZWha5",
-      "name": "Charge",
+      "name": "冲锋 Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1030,7 +1030,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 ([[/damage 2d6 type=slashing]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=13]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>若野猪向其目标直线移动至少20尺，且在同一回合里以牙撕攻击命中该目标，则该目标受额外7（[[/damage 2d6 type=slashing]]）点挥砍伤害。如果目标是生物，则该生物必须成功通过一次DC 13的力量豁免，否则应击倒地。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1400,7 +1400,7 @@
     },
     {
       "_id": "uCTcRNn9laTvJPbR",
-      "name": "Relentless",
+      "name": "坚韧 Relentless",
       "type": "feat",
       "system": {
         "source": {
@@ -1412,7 +1412,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.</p></div>",
+          "value": "<p>野猪受到10点或更低的伤害而使其生命值降至0时，改为其生命值降至1。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1634,7 +1634,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 4300000,
   "ownership": {
     "default": 0,

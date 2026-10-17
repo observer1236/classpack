@@ -1,5 +1,5 @@
 {
-  "name": "Jackal (MM'14)",
+  "name": "豺狗 Jackal (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -548,7 +548,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Jackal",
+    "name": "豺狗 Jackal (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -730,7 +730,7 @@
   "items": [
     {
       "_id": "eRtj2JR6jJQNtJUe",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -742,7 +742,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+1]]{+1} to hit, reach 5 ft., one target. <i>Hit:</i> 1 ([[/damage 1d4 - 1 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+1，触及5尺，单一目标。命中：1（[[/damage 1d4 - 1 type=piercing]]）点穿刺伤害，</p>",
           "chat": ""
         },
         "range": {
@@ -1020,7 +1020,7 @@
     },
     {
       "_id": "0YDLSOZ9SylejrFg",
-      "name": "Keen Hearing and Smell",
+      "name": "敏锐嗅听觉 Keen Hearing and Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1032,7 +1032,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The jackal has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing or smell.</p></div>",
+          "value": "<p>豺狗依赖听觉或嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1088,7 +1088,7 @@
     },
     {
       "_id": "rH7ymlrkplxyGSRY",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1100,7 +1100,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The jackal has advantage on an attack roll against a creature if at least one of the jackal's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>豺狗至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1156,7 +1156,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 14500000,
   "ownership": {
     "default": 0,

@@ -1,5 +1,5 @@
 {
-  "name": "石魔像Stone Golem (MM'14)",
+  "name": "石魔像 Stone Golem (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<p>Stone golems display great variety in shape and form, cut and chiseled from stone to appear as tall, impressive statues. Though most bear humanoid features, stone golems can be carved in any form the sculptor can imagine. Ancient stone golems found in sealed tombs or flanking the gates of lost cities sometimes take the forms of giant beasts.</p><p>Like other golems, stone golems are nearly impervious to spells and ordinary weapons. Creatures that fight a stone golem can feel the ebb and flow of time slow down around them, almost as though they were made of stone themselves.</p><div data-roll-name-ancestor=\"Golems\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Golems</span></h1> <p>Golems are made from humble materials-clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.</p><p>To create a golem, one requires a @item[manual of golems]. The comprehensive illustrations and instructions in a manual detail the process for creating a golem of a particular type.</p><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Elemental Spirit in Material Form\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Elemental Spirit in Material Form.</span></span> The construction of a golem begins with the building of its body, requiring great command of the craft of sculpting, stonecutting, ironworking, or surgery. Sometimes a golem's creator is the master of the art, but often the individual who desires a golem must enlist master artisans to do the work.</p><p>After constructing the body from clay, flesh, iron, or stone, the golem's creator infuses it with a spirit from the Elemental Plane of Earth. This tiny spark of life has no memory, personality, or history. It is simply the impetus to move and obey. This process binds the spirit to the artificial body and subjects it to the will of the golem's creator.</p><p>A golem can be created with a special amulet or other item that allows the possessor of the item to control the golem. Golems whose creators are long dead can thus be harnessed to serve a new master.</p><p>A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words.</p></div><div data-roll-name-ancestor=\"Ageless Guardians\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Ageless Guardians.</span></span> Golems can guard sacred sites, tombs, and treasure vaults long after the deaths of their creators, carrying out their appointed tasks for all eternity while brushing off physical damage and ignoring all but the most potent spells.</p></div><div data-roll-name-ancestor=\"Blind Obedience\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Blind Obedience.</span></span> When its creator or possessor is on hand to command it, a golem performs flawlessly. If the golem is left without instructions or is &amp;Reference[condition=incapacitated], it continues to follow its last orders to the best of its ability. When it can't fulfill its orders, a golem might react violently-or stand and do nothing. A golem that has been given conflicting orders sometimes alternates between them.</p></div><div data-roll-name-ancestor=\"Constructed Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Constructed Nature.</span></span> A golem doesn't require air, food, drink, or sleep.</p></div></div></div></div>",
+        "value": "<h3>石魔像Stone Golem</h3><p>石魔像们形象与形态各不相同，且都是由石头切割凿刻而成的精致塑像。尽管其中大多数都有着类人生物的形象特性，但雕刻家们确实还可以想象出更多的石魔像形态。在一些封闭的陵墓或失落城市的大门上发现的远古石魔像，有时就会以巨兽的形式出现。</p><p>与其他魔像一样，石魔像几乎不受法术和普通武器的影响。打到石魔像的生物会感觉到它们周围时间变缓的起伏波动，好像这些生物自身才是由石头制成。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -640,7 +640,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Stone Golem",
+    "name": "石魔像 Stone Golem (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -734,7 +734,7 @@
   "items": [
     {
       "_id": "jUlSxCZSh2hJK02x",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -746,7 +746,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The golem makes two slam attacks.</p></div>",
+          "value": "<p>魔像发动两次猛击攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -939,7 +939,7 @@
     },
     {
       "_id": "GN8sS0P9DNaCoM1X",
-      "name": "Slam",
+      "name": "猛击 Slam",
       "type": "weapon",
       "system": {
         "source": {
@@ -951,7 +951,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+10]]{+10} to hit, reach 5 ft., one target. <i>Hit:</i> 19 ([[/damage 3d8 + 6 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+10，触及5尺，单一目标。伤害19（[[/damage 3d8 + 6 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1231,7 +1231,7 @@
     },
     {
       "_id": "23T0soBudlpJVtcD",
-      "name": "Slow",
+      "name": "减速 Slow",
       "type": "feat",
       "system": {
         "source": {
@@ -1243,7 +1243,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The golem targets one or more creatures it can see within 10 feet of it. Each target must make a [[/save ability=wis dc=17]] saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p></div>",
+          "value": "<p>魔像指定其身边10尺范围内一个或更多它能看见的生物。这些目标都必须进行一次DC 17的感知豁免以抵抗该魔法。豁免失败的目标将无法使用反应，其速度减半，且无法在其自己回合中发动多于一次的攻击。此外，该目标在其自己回合中只能执行一个动作或执行一个附赠动作，但不能两者都执行。该效应持续1分钟。目标可以在每个自己的回合结束时再进行一次该豁免，豁免成功则终止自己身上的该效应。EndFragment</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1471,7 +1471,7 @@
     },
     {
       "_id": "1y9iGo3K1XnYsY9b",
-      "name": "Immutable Form",
+      "name": "不变形态 Immutable Form",
       "type": "feat",
       "system": {
         "source": {
@@ -1483,7 +1483,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The golem is immune to any spell or effect that would alter its form.</p></div>",
+          "value": "<p>魔像免疫任何可以改变其形态的法术或效应。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1539,7 +1539,7 @@
     },
     {
       "_id": "WlV0djoIHsaNtNMQ",
-      "name": "Magic Resistance",
+      "name": "魔法抗性 Magic Resistance",
       "type": "feat",
       "system": {
         "source": {
@@ -1551,7 +1551,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The golem has advantage on saving throws against spells and other magical effects.</p></div>",
+          "value": "<p>魔像抵抗法术和其他魔法效应时进行的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1607,7 +1607,7 @@
     },
     {
       "_id": "ViFrhMCzIjwUkTdN",
-      "name": "Magic Weapons",
+      "name": "魔法武器 Magic Weapons",
       "type": "feat",
       "system": {
         "source": {
@@ -1619,7 +1619,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The golem's weapon attacks are magical.</p></div>",
+          "value": "<p>魔像的武器攻击视为魔法攻击。</p>",
           "chat": ""
         },
         "requirements": "",

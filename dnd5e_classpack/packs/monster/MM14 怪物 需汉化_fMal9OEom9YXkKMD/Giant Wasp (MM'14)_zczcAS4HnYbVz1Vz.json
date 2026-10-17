@@ -1,5 +1,5 @@
 {
-  "name": "Giant Wasp (MM'14)",
+  "name": "巨黄蜂 Giant Wasp (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -636,7 +636,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Wasp",
+    "name": "巨黄蜂 Giant Wasp (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -730,7 +730,7 @@
   "items": [
     {
       "_id": "Dsom3nYWr2kRzDuk",
-      "name": "Sting",
+      "name": "钉刺 Sting",
       "type": "weapon",
       "system": {
         "source": {
@@ -742,7 +742,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage, and the target must make a [[/save ability=con dc=11]] saving throw, taking 10 ([[/damage 3d6 type=poison]]) damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but &amp;Reference[condition=poisoned] for 1 hour, even after regaining hit points, and is &amp;Reference[condition=paralyzed] while &amp;Reference[condition=poisoned] in this way.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害，且目标必须成功通过一次DC 11的体质豁免，否则将受到10（[[/damage 3d6 type=poison]]）点毒素伤害，豁免成功则伤害减半。如果该毒素伤害将目标生命值降至0，则目标伤势稳定但中毒1小时。恢复生命值无法让目标摆脱该中毒效应，且其在以该方式中毒期间同时陷入麻痹。</p>",
           "chat": ""
         },
         "range": {
@@ -766,7 +766,7 @@
           "6RMxS0cBjEgb4MsW": {
             "_id": "6RMxS0cBjEgb4MsW",
             "type": "attack",
-            "name": "Attack: 1d6 Piercing Damage",
+            "name": "攻击: 1d6 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -938,7 +938,7 @@
           "jhmR53w3yDIMioqQ": {
             "_id": "jhmR53w3yDIMioqQ",
             "type": "save",
-            "name": "Save: 3d6 Poison Damage",
+            "name": "豁免: 3d6 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1196,7 +1196,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 38000000,
   "ownership": {
     "default": 0,

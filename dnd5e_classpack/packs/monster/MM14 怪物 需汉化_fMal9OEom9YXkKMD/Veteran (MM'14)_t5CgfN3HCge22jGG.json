@@ -1,5 +1,5 @@
 {
-  "name": "Veteran (MM'14)",
+  "name": "老兵 Veteran (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Veterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves.</p></div></div>",
+        "value": "<h3>老兵 Veterans</h3><p>老兵是专业的战士，他们重新拿起武器只是为了捍卫自己的某种信念与价值，或是单纯为了一份相称的报酬。这些人包括从长期兵役中退下的士兵，以及那些只为自己卖命的武者。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -652,7 +652,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Veteran",
+    "name": "老兵 Veteran (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -746,7 +746,7 @@
   "items": [
     {
       "_id": "Y6lYehhaUni1JTRo",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -758,7 +758,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.</p></div>",
+          "value": "<p>老兵发动两次长剑攻击。如果其短剑已出鞘，则可再发动一次短剑攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -951,7 +951,7 @@
     },
     {
       "_id": "4n8fMZC79Faa2R5D",
-      "name": "Longsword",
+      "name": "长剑 Longsword",
       "type": "weapon",
       "system": {
         "source": {
@@ -963,7 +963,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 7 ([[/damage 1d8 + 3 type=slashing]]) damage, or 8 ([[/damage 1d10 + 3 type=slashing]]) damage if used with two hands.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺单一目标。命中：7（[[/damage 1d8 + 3 type=slashing]]）点挥砍伤害，或使用双手攻击时8（[[/damage 1d10 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1236,7 +1236,7 @@
     },
     {
       "_id": "maBJxRQo5N14vjwD",
-      "name": "Shortsword",
+      "name": "短剑 Shortsword",
       "type": "weapon",
       "system": {
         "source": {
@@ -1248,7 +1248,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：6（[[/damage 1d6 + 3 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1518,7 +1518,7 @@
     },
     {
       "_id": "NwaBG7VY04bnSFU3",
-      "name": "Heavy Crossbow",
+      "name": "重弩 Heavy Crossbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1530,7 +1530,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+3]]{+3} to hit, range 100/400 ft., one target. <i>Hit:</i> 6 ([[/damage 1d10 + 1 type=piercing]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+3，射程100/400尺，单一目标，命中：6（[[/damage 1d10 + 1 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1802,11 +1802,11 @@
     },
     {
       "_id": "jyYlwq124rwQpSdl",
-      "name": "Splint Armor",
+      "name": "板条甲 Splint Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.</p></div>",
+          "value": "<p>板条甲由铆在皮革衬底上的狭长竖直金属条组成，穿在填充衣物之外。活动的链甲保护各处关节。</p>",
           "chat": ""
         },
         "source": {
@@ -1901,7 +1901,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 33700000,
   "ownership": {
     "default": 0,

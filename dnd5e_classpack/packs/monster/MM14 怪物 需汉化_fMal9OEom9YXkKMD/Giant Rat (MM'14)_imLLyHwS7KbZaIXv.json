@@ -1,5 +1,5 @@
 {
-  "name": "Giant Rat (MM'14)",
+  "name": "巨鼠 Giant Rat (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Diseased Giant Rats\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Variant: Diseased Giant Rats</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h4> <p>Some giant rats carry vile diseases that they spread with their bites.</p><div data-roll-name-ancestor=\"Bite\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Bite.</span></span> <i>Melee Weapon Attack:</i> <span class=\"roller render-roller\" title=\"Click to roll. SHIFT to roll with advantage, CTRL to roll with disadvantage.\" data-packed-dice=\"{&quot;type&quot;:&quot;dice&quot;,&quot;rollable&quot;:true,&quot;displayText&quot;:&quot;+4&quot;,&quot;toRoll&quot;:&quot;1d20+4&quot;,&quot;subType&quot;:&quot;d20&quot;,&quot;d20mod&quot;:&quot;+4&quot;,&quot;context&quot;:{&quot;type&quot;:&quot;hit&quot;}}\">+4</span> to hit, reach 5 ft., one target. <i>Hit:</i> 4 (<span class=\"roller render-roller\" title=\"Click to roll. SHIFT to roll a critical hit, CTRL to half damage (rounding down).\" data-packed-dice=\"{&quot;type&quot;:&quot;dice&quot;,&quot;rollable&quot;:true,&quot;toRoll&quot;:&quot;1d4 + 2&quot;,&quot;displayText&quot;:&quot;1d4 + 2&quot;,&quot;subType&quot;:&quot;damage&quot;}\">1d4 + 2</span>) piercing damage. If the target is a creature, it must succeed on a DC <span class=\"rd__dc\">10</span> Constitution saving throw or contract a disease. Until the disease is cured, the target can't regain hit points except by magical means, and the target's hit point maximum decreases by 3 (<span class=\"roller render-roller\" title=\"Click to roll. SHIFT/CTRL to roll twice.\" data-packed-dice=\"{&quot;type&quot;:&quot;dice&quot;,&quot;rollable&quot;:true,&quot;toRoll&quot;:&quot;1d6&quot;,&quot;displayText&quot;:&quot;1d6&quot;}\">1d6</span>) every 24 hours. If the target's hit point maximum drops to 0 as a result of this disease, the target dies.</p></div></div>",
+        "value": "<h3>蚊蝠Stirge</h3><p>这种可怕的飞行生物，就像一只大蝙蝠和大蚊子的混合物种。它长着带锋利钳子的脚和中空的针状长喙，到处寻找自己的下一顿大餐。</p><p>蚊蝠以活体生物的鲜血维生，它们会贴在目标身上慢慢的吸取血液。少量蚊蝠的危险性并不大，然而当它们聚齐一大群时依然不容小觑。数量上的优势，使得受害者就算把蚊蝠全拽下来却又会被重复贴上，因而难以避免被吸血而迅速被削弱。</p><p><strong>吸血Blood Drain。</strong>蚊蝠发动攻击时，会在目标身上寻找脆弱的空隙并迅速贴上，接着用长喙刺进皮肤，并用钳状脚抓紧目标。直到蚊蝠吸够了血，它就会迅速从目标身上脱离，然后飞去安静的地方消化吸收。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -638,7 +638,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Rat",
+    "name": "巨鼠 Giant Rat (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -736,7 +736,7 @@
   "items": [
     {
       "_id": "3JO1EEpIGowgs6ER",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -748,7 +748,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 4 ([[/damage 1d4 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：4（[[/damage 1d4 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1026,7 +1026,7 @@
     },
     {
       "_id": "zHzj8F37ZgTsJvKz",
-      "name": "Keen Smell",
+      "name": "敏锐嗅觉 Keen Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1038,7 +1038,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The rat has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on smell.</p></div>",
+          "value": "<p>鼠依赖嗅觉进的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1094,7 +1094,7 @@
     },
     {
       "_id": "WxwRlN12egJcBk6P",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1106,7 +1106,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>鼠至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1162,7 +1162,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 28000000,
   "ownership": {
     "default": 0,

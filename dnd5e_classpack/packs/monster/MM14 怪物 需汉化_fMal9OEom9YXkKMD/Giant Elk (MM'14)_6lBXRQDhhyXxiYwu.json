@@ -1,5 +1,5 @@
 {
-  "name": "Giant Elk (MM'14)",
+  "name": "巨赤鹿 Giant Elk (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>The majestic giant elk is rare to the point that its appearance is often taken as a foreshadowing of an important event, such as the birth of a king. Legends tell of gods that take the form of giant elk when visiting the Material Plane. Many cultures therefore believe that to hunt these creatures is to invite divine wrath.</p></div></div>",
+        "value": "<p>威严的巨赤鹿giant elk非常罕见，而每当它的出现时，通常都被认为是重要事件的预兆，比如预示着某个国王即将诞生。传说众神到访物质位面时，以巨赤鹿的形式显现。因此，许多文化都认为狩猎这种生物可能会招致神的愤怒。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -641,7 +641,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Giant Elk",
+    "name": "巨赤鹿 Giant Elk (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -735,7 +735,7 @@
   "items": [
     {
       "_id": "LPDuFm2UKYnbot9h",
-      "name": "Ram",
+      "name": "冲撞 Ram",
       "type": "weapon",
       "system": {
         "source": {
@@ -747,7 +747,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 10 ft., one target. <i>Hit:</i> 11 ([[/damage 2d6 + 4 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及10尺，单一目标。命中：11（[[/damage 2d6 + 4 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1025,7 +1025,7 @@
     },
     {
       "_id": "zeiO8c9jaTaUeC7H",
-      "name": "Hooves",
+      "name": "蹄击 Hooves",
       "type": "weapon",
       "system": {
         "source": {
@@ -1037,7 +1037,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one &amp;Reference[condition=prone] creature. <i>Hit:</i> 22 ([[/damage 4d8 + 4 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一倒地目标。命中：22（[[/damage 4d8 + 4 type=bludgeoning]]）点钝击伤害。 </p>",
           "chat": ""
         },
         "range": {
@@ -1315,7 +1315,7 @@
     },
     {
       "_id": "g418s1dqLOi9Lux6",
-      "name": "Charge",
+      "name": "冲锋 Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1327,7 +1327,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ([[/damage 2d6]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=14]] saving throw or be knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>若赤鹿向其目标直线移动至少20尺，且在同一回合里以冲撞攻击命中该目标，则该目标受额外7（[[/damage 2d6]]）点伤害。如果目标是生物，则该生物必须成功通过一次DC 14的力量豁免，否则应击倒地。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1695,7 +1695,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 5200000,
   "ownership": {
     "default": 0,

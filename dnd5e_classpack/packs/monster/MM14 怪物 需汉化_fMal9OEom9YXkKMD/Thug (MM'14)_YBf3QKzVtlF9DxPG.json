@@ -1,5 +1,5 @@
 {
-  "name": "Thug (MM'14)",
+  "name": "暴徒 Thug (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Thugs are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.</p></div></div>",
+        "value": "<h3>暴徒 Thugs</h3><p>暴徒擅长恐吓与暴力，并且总是无情的强迫别人屈服。他们拿钱干活，而且毫无顾忌。</p>",
         "public": ""
       },
-      "alignment": "Any Non-Good Alignment",
+      "alignment": "任意非善良阵营 Any Non-Good Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -631,7 +631,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Thug",
+    "name": "暴徒 Thug (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -725,7 +725,7 @@
   "items": [
     {
       "_id": "qEaZQuFW84QyXNXj",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -737,7 +737,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The thug makes two melee attacks.</p></div>",
+          "value": "<p>暴徒发动两次近战攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -930,7 +930,7 @@
     },
     {
       "_id": "KEu33ZgGjxWYPOxP",
-      "name": "Mace",
+      "name": "硬头锤 Mace",
       "type": "weapon",
       "system": {
         "source": {
@@ -942,7 +942,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一生物目标。命中：5（[[/damage 1d6 + 2 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1209,7 +1209,7 @@
     },
     {
       "_id": "vuEehqONM75XGROM",
-      "name": "Heavy Crossbow",
+      "name": "重弩 Heavy Crossbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1221,7 +1221,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+2]]{+2} to hit, range 100/400 ft., one target. <i>Hit:</i> 5 ([[/damage 1d10 type=piercing]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+2，射程100/400尺，单一目标。命中：5（[[/damage 1d10 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1493,7 +1493,7 @@
     },
     {
       "_id": "bCTer7EgSQddOTWU",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1505,7 +1505,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>暴徒至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1561,11 +1561,11 @@
     },
     {
       "_id": "CaIqa15M4hYZOFri",
-      "name": "Leather Armor",
+      "name": "皮甲 Leather Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p></div>",
+          "value": "<p>这套护甲的胸甲和护肩由经过油煮硬化的皮革制成，其余部分使用更柔软、更灵活的材料。</p>",
           "chat": ""
         },
         "source": {
@@ -1658,7 +1658,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 21300000,
   "ownership": {
     "default": 0,

@@ -1,5 +1,5 @@
 {
-  "name": "Vulture (MM'14)",
+  "name": "秃鹫 Vulture (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -549,7 +549,7 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -636,7 +636,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Vulture",
+    "name": "秃鹫 Vulture (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -730,7 +730,7 @@
   "items": [
     {
       "_id": "0c7oiXnQH5oyTJmr",
-      "name": "Beak",
+      "name": "喙啄 Beak",
       "type": "weapon",
       "system": {
         "source": {
@@ -742,7 +742,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+2]]{+2} to hit, reach 5 ft., one target. <i>Hit:</i> 2 ([[/damage 1d4 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+2，触及5尺，单一目标。命中：2（[[/damage 1d4 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1020,7 +1020,7 @@
     },
     {
       "_id": "4rHtRRj1JlH17it5",
-      "name": "Keen Sight and Smell",
+      "name": "敏锐视嗅觉 Keen Sight and Smell",
       "type": "feat",
       "system": {
         "source": {
@@ -1032,7 +1032,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The vulture has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight or smell.</p></div>",
+          "value": "<p>秃鹫依赖视觉或嗅觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1088,7 +1088,7 @@
     },
     {
       "_id": "lRhsd5y62HqMqprf",
-      "name": "Pack Tactics",
+      "name": "集群战术 Pack Tactics",
       "type": "feat",
       "system": {
         "source": {
@@ -1100,7 +1100,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't &amp;Reference[condition=incapacitated].</p></div>",
+          "value": "<p>秃鹫至少有一个未处于失能的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1156,7 +1156,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "62e26cb758cd157d",
   "sort": 22300000,
   "ownership": {
     "default": 0,

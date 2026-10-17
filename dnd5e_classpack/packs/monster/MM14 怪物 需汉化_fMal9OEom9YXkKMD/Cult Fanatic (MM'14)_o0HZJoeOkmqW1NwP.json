@@ -1,5 +1,5 @@
 {
-  "name": "Cult Fanatic (MM'14)",
+  "name": "邪教狂信者 Cult Fanatic (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else</p></div></div>",
+        "value": "<h3>邪教狂信者 Cult Fanatics</h3><p>狂信者通常任职邪教团的小分部首领，他们用自己的魅力和教条散布教义，引诱那些意志薄弱的人入教。而大多数邪教狂信者们都崇尚个人力量高于一切。</p>",
         "public": ""
       },
-      "alignment": "Any Non-Good Alignment",
+      "alignment": "任意非善良阵营 Any Non-Good Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -631,7 +631,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Cult Fanatic",
+    "name": "邪教狂信者 Cult Fanatic (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -725,7 +725,7 @@
   "items": [
     {
       "_id": "0aJVZCBw6Wa11tOy",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -737,7 +737,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The fanatic makes two melee attacks.</p></div>",
+          "value": "<p>狂信者发动两次近战攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -930,7 +930,7 @@
     },
     {
       "_id": "0hv5NUuUblSE6jsC",
-      "name": "Dagger",
+      "name": "匕首 Dagger",
       "type": "weapon",
       "system": {
         "source": {
@@ -942,7 +942,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or Ranged Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft. or range 20/60 ft., one creature. <i>Hit:</i> 4 ([[/damage 1d4 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战或远程武器攻击：命中+4，触及5尺或射程20/60尺，单一生物。命中：4（[[/damage 1d4 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1213,7 +1213,7 @@
     },
     {
       "_id": "wTXs9Oiht4DV5iRW",
-      "name": "Dark Devotion",
+      "name": "黑暗忠诚 Dark Devotion",
       "type": "feat",
       "system": {
         "source": {
@@ -1225,7 +1225,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The fanatic has advantage on saving throws against being &amp;Reference[condition=charmed] or &amp;Reference[condition=frightened].</p></div>",
+          "value": "<p>狂信者为抵抗魅惑和恐慌而作的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1281,11 +1281,11 @@
     },
     {
       "_id": "W8uiDI3Ajiu4vaQi",
-      "name": "Leather Armor",
+      "name": "皮甲 Leather Armor",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p></div>",
+          "value": "<p>这套护甲的胸甲和护肩由经过油煮硬化的皮革制成，其余部分使用更柔软、更灵活的材料。</p>",
           "chat": ""
         },
         "source": {
@@ -1378,7 +1378,7 @@
     },
     {
       "_id": "bnNm4GUGC9LcHuHo",
-      "name": "Light",
+      "name": "光亮术 Light",
       "type": "spell",
       "system": {
         "source": {
@@ -1390,7 +1390,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.</p><p>If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.</p></div>",
+          "value": "<p>你触碰一个尺寸在任意方向上都不超过 10 尺的物件。在法术终止前，物件将在其 20 尺半径范围内发出明亮光照，并在其外 20 尺范围发出微光光照。光的颜色由你决定，该物件被不透明的东西完全遮盖时，其光照被遮挡。如果你再次施展该法术，或者使用一个动作解散该法术，则该法术终止。</p><p>如果你指定敌对生物所持握或着装的一个物件作为目标，则该生物必须进行一次敏捷豁免以尝试摆脱该法术的效应。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1633,7 +1633,7 @@
     },
     {
       "_id": "Qr1cKqqzsy7MXBfl",
-      "name": "Sacred Flame",
+      "name": "圣火术 Sacred Flame",
       "type": "spell",
       "system": {
         "source": {
@@ -1645,7 +1645,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take [[/damage 1d8 type=radiant]] damage. The target gains no benefit from cover for this saving throw.</p><p>The spell's damage increases by [[/damage 1d8]] when you reach 5th level ([[/damage 2d8]]), 11th level ([[/damage 3d8]]), and 17th level ([[/damage 4d8]]).</p></div>",
+          "value": "<p>如同火焰般的辉光向施法距离内你能看见的一个生物倾泻而下。目标必须要进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}，豁免失败则受到 [[/damage 1d8 type=radiant]]{1d8} 点光耀伤害。目标在这次豁免检定中无法获得掩护的增益。</p><p>你到达 5 级时，该法术的伤害增加 1d8（变为 2d8）。11 级时再加 1d8（变为 3d8），17 级时再加 1d8（变为 4d8）。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1903,7 +1903,7 @@
     },
     {
       "_id": "bWfEzbRQkkpJCrza",
-      "name": "Thaumaturgy",
+      "name": "奇术 Thaumaturgy",
       "type": "spell",
       "system": {
         "source": {
@@ -1915,7 +1915,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:</p><ul class=\"rd__list\"><li class=\"rd__li \">Your voice booms up to three times as loud as normal for 1 minute.</li><li class=\"rd__li \">You cause flames to flicker, brighten, dim, or change color for 1 minute.</li><li class=\"rd__li \">You cause harmless tremors in the ground for 1 minute.</li><li class=\"rd__li \">You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li><li class=\"rd__li \">You instantaneously cause an unlocked door or window to fly open or slam shut.</li><li class=\"rd__li \">You alter the appearance of your eyes for 1 minute.</li></ul><p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p></div>",
+          "value": "<p>你在施法距离内展示出一个低级奇观，以表现你的超自然力。你在施法距离内创造出下列魔法效应之一：</p><ul><li>你的声音在 1 分钟内变得比常人响两倍。</li><li>你在 1 分钟内使一团火焰闪烁，变亮，变暗或变色。</li><li>你使地面震动 1 分钟（完全无害）。</li><li>你使某种声音自施法距离内一点瞬间发出，例如雷鸣声，鸦叫声或不祥的低语声。</li><li>你使一扇没有锁上的门或窗瞬间打开或关上。</li><li>你在 1 分钟内改变自己眼睛的颜色。</li></ul><p>多次施展该法术时，你可以同时维持最多三个持续 1 分钟的效应。你也可以用一个动作驱散其中一种效应。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2139,7 +2139,7 @@
     },
     {
       "_id": "W3kRnDki3dlb51Nx",
-      "name": "Command",
+      "name": "命令术 Command",
       "type": "spell",
       "system": {
         "source": {
@@ -2151,7 +2151,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><div data-roll-name-ancestor=\"Approach\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Approach.</span></span> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p></div><div data-roll-name-ancestor=\"Drop\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Drop.</span></span> The target drops whatever it is holding and then ends its turn.</p></div><div data-roll-name-ancestor=\"Flee\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Flee.</span></span> The target spends its turn moving away from you by the fastest available means.</p></div><div data-roll-name-ancestor=\"Grovel\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Grovel.</span></span> The target falls &amp;Reference[condition=prone] and then ends its turn.</p></div><div data-roll-name-ancestor=\"Halt\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Halt.</span></span> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p></div></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p></div></div>",
+          "value": "<p>你对施法距离内一个你能看见的生物说出一个单词的命令。目标生物必须成功通过一次[[/save activity=dnd5eactivity000]]{感知豁免}，否则必须在其自己的下一回合服从该命令行事。如果目标为亡灵或目标无法听懂你的语言，又或者你的命令对其直接构成损害，则该法术无效。</p><p>以下列出一些通常可用的命令单词及其效果。你也可以说出此处没有列明的单词命令，并由DM决定目标将如何行动。如果目标无法完成你的命令，则法术终止。</p><ul><li><strong>过来Approach。</strong>目标以最短最直接的路线向你移动，并在到达距你5尺时结束其回合。</li><li><strong>放下Drop。</strong>目标放下手中持握物并结束其回合。</li><li><strong>走开Flee。</strong>目标在其回合内以最快最有效的方式远离你。</li><li><strong>趴下Grovel。</strong>目标趴下倒地并结束其回合。</li><li><strong>立定Halt。</strong>目标不移动且不作任何动作。飞行生物在原地悬浮（如果它可以这么做）。如果它必须移动才能保持在空中，则其移动最小的距离以保持飞行。</li></ul><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，法术就能多影响一个目标。而各目标之间距离不能超过 30 尺。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2390,7 +2390,7 @@
     },
     {
       "_id": "n8jcRDB8XDZueitM",
-      "name": "Inflict Wounds",
+      "name": "致伤术 Inflict Wounds",
       "type": "spell",
       "system": {
         "source": {
@@ -2402,7 +2402,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Make a melee spell attack against a creature you can reach. On a hit, the target takes [[/damage 3d10 type=necrotic]] damage.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by [[/damage 1d10]] for each slot level above 1st.</p></div></div>",
+          "value": "<p>你对触及范围内一个生物发动一次近战法术攻击。命中时，目标受到 [[/damage 3d10 type=necrotic]]{3d10} 点暗蚀伤害。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，伤害就增加 1d10。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2666,7 +2666,7 @@
     },
     {
       "_id": "01F1oXn31gRAdOod",
-      "name": "Shield of Faith",
+      "name": "虔诚护盾 Shield of Faith",
       "type": "spell",
       "system": {
         "source": {
@@ -2678,7 +2678,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</p></div>",
+          "value": "<p>围绕着施法距离内你指定的一个生物出现一片闪着微光的魔法力场。使目标在法术持续时间内 AC 获得+2 加值。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2898,7 +2898,7 @@
       },
       "effects": [
         {
-          "name": "Shield of Faith",
+          "name": "虔诚护盾 Shield of Faith",
           "origin": null,
           "duration": {
             "value": 600,
@@ -2980,7 +2980,7 @@
     },
     {
       "_id": "FLlJtVt4ODZvtSxd",
-      "name": "Hold Person",
+      "name": "人类定身术 Hold Person",
       "type": "spell",
       "system": {
         "source": {
@@ -2992,7 +2992,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be &amp;Reference[condition=paralyzed] for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p></div></div>",
+          "value": "<p>指定施法距离内一个你能看见的类人生物。该目标必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}，豁免失败则其在法术持续时间内陷入&amp;Reference[condition=paralyzed apply=false]{麻痹}。目标在其每回合结束时可以再进行一次感知豁免，豁免成功则终止其身上该法术的效应。</p><p><strong>升环施法效应。</strong>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，你就可以额外指定一个类人生物。指定目标时，每个目标生物必须身处其他目标 30 尺范围内。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3229,7 +3229,7 @@
       },
       "effects": [
         {
-          "name": "Hold Person",
+          "name": "人类定身术 Hold Person",
           "origin": null,
           "duration": {
             "value": 60,
@@ -3303,7 +3303,7 @@
     },
     {
       "_id": "ZHbRqhaXA9Ju5lat",
-      "name": "Spiritual Weapon",
+      "name": "灵体武器 Spiritual Weapon",
       "type": "spell",
       "system": {
         "source": {
@@ -3315,7 +3315,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to [[/damage 1d8]] + your spellcasting ability modifier.</p><p>As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.</p><p>The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell's effect resemble that weapon.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by [[/damage 1d8]] for every two slot levels above 2nd.</p></div></div>",
+          "value": "<p>你在施法距离内的一点创造出一把浮空的虚幻武器，并使其持续到法术持续时间结束或你再次施展该法术为止。施展该法术时，你可以对该武器周围 5 尺内的一个生物发动一次近战法术攻击。若命中，则目标受到 1d8+你的施法属性调整值的力场伤害。</p><p>你可以在自己回合内以一个附赠动作让该武器移动至多 20 尺，并再对它周围 5 尺内的一个生物发动一次同样的攻击。</p><p>该武器的外形由你决定。而如果施法的牧师侍奉的是一位和特定武器有关的神（例如圣库斯伯特St.Cuthbert的钉头锤、托尔Thor的锤子），则该法术创造出武器的外形与该武器类似。</p><p><strong>升环施法效应。</strong>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高两环，法术的伤害就增加 1d8。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3555,7 +3555,7 @@
     },
     {
       "_id": "HwQ0OxARl5sLL4QJ",
-      "name": "Spellcasting",
+      "name": "施法 Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -3567,7 +3567,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC <span class=\"rd__dc\">11</span>, [[/r 1d20+3]]{+3} to hit with spell attacks). The fanatic has the following cleric spells prepared:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>Cantrips (at will): @UUID[.bnNm4GUGC9LcHuHo], @UUID[.Qr1cKqqzsy7MXBfl], @UUID[.bWfEzbRQkkpJCrza]</p></li><li class=\"rd__li  rd__li-spell\"><p>1st level (4 slots): @UUID[.W3kRnDki3dlb51Nx], @UUID[.n8jcRDB8XDZueitM], @UUID[.01F1oXn31gRAdOod]</p></li><li class=\"rd__li  rd__li-spell\"><p>2nd level (3 slots): @UUID[.FLlJtVt4ODZvtSxd], @UUID[.ZHbRqhaXA9Ju5lat]</p></li></ul></div></div>",
+          "value": "<p>狂信者作为4级施法者，其施法属性为感知（法术豁免DC 11，法术攻击命中+3）。狂信者准备了以下牧师法术： 戏法（随意）：光亮术light，圣火术sacred flame，奇术thaumaturgy 1环（4法术位）：命令术command，致伤术inflict wounds，虔诚护盾shield of faith 2环（3法术位）：定身类人hold person，灵体武器spiritual weapon</p><p>@UUID[.bnNm4GUGC9LcHuHo]{光亮术 Light}、@UUID[.Qr1cKqqzsy7MXBfl]{圣火术 Sacred Flame}、@UUID[.bWfEzbRQkkpJCrza]{奇术 Thaumaturgy}、@UUID[.W3kRnDki3dlb51Nx]{命令术 Command}、@UUID[.n8jcRDB8XDZueitM]{致伤术 Inflict Wounds}、@UUID[.01F1oXn31gRAdOod]{虔诚护盾 Shield of Faith}、@UUID[.FLlJtVt4ODZvtSxd]{人类定身术 Hold Person}、@UUID[.ZHbRqhaXA9Ju5lat]{灵体武器 Spiritual Weapon}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3623,7 +3623,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "2d0c0009668df768",
   "sort": 31500000,
   "ownership": {
     "default": 0,

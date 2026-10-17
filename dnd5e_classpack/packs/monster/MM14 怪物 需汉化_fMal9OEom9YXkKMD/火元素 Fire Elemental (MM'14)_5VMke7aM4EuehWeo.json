@@ -545,7 +545,7 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A faint humanoid shape threads through the core of this wild, moving flame. A fire elemental is a force of capricious devastation. Wherever it moves, it sets its surroundings ablaze, turning the world to ash, smoke, and cinders. Water can halt its destructive progress, causing the fire elemental to shrink back, hissing and smoking in pain and rage.</p></div></div><div data-roll-name-ancestor=\"Elementals\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Elementals</span></h1> <p>Elementals are incarnations of the elements that make up the universe: air, earth, fire, and water. Though little more than animated energy on their own planes of existence, they can be called on by spellcasters and powerful beings to take shape and perform tasks.</p><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Living Elements\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Living Elements.</span></span> On its home plane, an elemental is a bodiless life force. Its dim consciousness manifests as a physical shape only when focused by the power of magic. A wild spirit of elemental force has no desire except to course through the element of its native plane. Like beasts of the Material Plane, these elemental spirits have no society or culture, and little sense of being.</p></div><div data-roll-name-ancestor=\"Conjured by Magic\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Conjured by Magic.</span></span> Certain spells and magic items can conjure an elemental, summoning it from the Inner Planes to the Material Plane. Elementals instinctively resent being pulled from their native planes and bound into service. A creature that summons an elemental must assert force of will to control it.</p></div><div data-roll-name-ancestor=\"Bound and Shaped\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Bound and Shaped.</span></span> Powerful magic can bind an elemental spirit into a material template that defines a specific use and function. Invisible stalkers are air elementals bound to a specific form, in the same way that water elementals can be shaped into water weirds.</p></div><div data-roll-name-ancestor=\"Elemental Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Elemental Nature.</span></span> An elemental doesn't require air, food, drink, or sleep.</p></div></div></div></div>",
+        "value": "<h3>火元素Fire Elemental</h3><p>火元素是一团以模糊人形狂野舞动穿行的火焰，是一股不定形的破坏能量。它会引燃从身边经过的所有东西，不断使世界变成灰烬、烟尘和残渣。水可以阻止火元素的破坏进程，并使它只能在愤怒与痛苦中哀嚎着退却。</p>",
         "public": ""
       },
       "alignment": "绝对中立Neutral",
@@ -649,7 +649,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Fire Elemental",
+    "name": "火元素 Fire Elemental (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -755,7 +755,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>火元素发动两次触击攻击。</p><p>The elemental makes two touch attacks.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>火元素发动两次触击攻击。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -977,7 +977,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中+6，触及5尺，单一目标。<em style=\"mso-bidi-font-style:normal\">伤害：</em>10（2d6+3）点火焰伤害。如果目标是一个生物或可燃物，则目标被点燃。此后直至某个生物以一个动作扑灭火焰前，该生物在每一个其自身回合开始时受到5（1d10）点火焰伤害。</p><p><em>Melee Weapon Attack:</em> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <em>Hit:</em> 10 ([[/damage 2d6 + 3 type=fire]]) damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 ([[/damage 1d10 type=fire]]) damage at the start of each of its turns.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中+6，触及5尺，单一目标。<em style=\"mso-bidi-font-style:normal\">伤害：</em>10（[[/damage 2d6 + 3 type=fire]]）点火焰伤害。如果目标是一个生物或可燃物，则目标被点燃。此后直至某个生物以一个动作扑灭火焰前，该生物在每一个其自身回合开始时受到5（[[/damage 1d10 type=fire]]）点火焰伤害。</p></div>",
           "chat": ""
         },
         "range": {
@@ -1001,7 +1001,7 @@
           "fkIdreclZzsdrkIC": {
             "_id": "fkIdreclZzsdrkIC",
             "type": "attack",
-            "name": "Attack: 2d6 Fire Damage",
+            "name": "攻击: 2d6 火焰 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1173,7 +1173,7 @@
           "UUdR8vc5UQ8RzPLq": {
             "_id": "UUdR8vc5UQ8RzPLq",
             "type": "attack",
-            "name": "Attack: 1d10 Fire Damage",
+            "name": "攻击: 1d10 火焰 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1459,7 +1459,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>火元素可以通过只有1寸宽的狭缝而无需跻身。生物触及火元素，或在其5尺范围内对其发动近战攻击时将受到5（1d10）点火焰伤害。此外，火元素可以进入并停留在敌对生物所在的位置。当火元素在一回合内第一次进入目标生物位置时，该生物将受到5（1d10）点火焰伤害并着火。此后直至有人以一个动作为其扑灭火焰前，该生物在每一个其自身回合开始时受到5（1d10）点火焰伤害。</p><p>The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 ([[/damage 1d10 type=fire]]) damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 ([[/damage 1d10 type=fire]]) damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 ([[/damage 1d10 type=fire]]) damage at the start of each of its turns.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>火元素可以通过只有1寸宽的狭缝而无需跻身。生物触及火元素，或在其5尺范围内对其发动近战攻击时将受到5（[[/damage 1d10 type=fire]]）点火焰伤害。此外，火元素可以进入并停留在敌对生物所在的位置。当火元素在一回合内第一次进入目标生物位置时，该生物将受到5（[[/damage 1d10 type=fire]]）点火焰伤害并着火。此后直至有人以一个动作为其扑灭火焰前，该生物在每一个其自身回合开始时受到5（[[/damage 1d10 type=fire]]）点火焰伤害。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1478,7 +1478,7 @@
           "4O5dg4pUt6e0C1cA": {
             "_id": "4O5dg4pUt6e0C1cA",
             "type": "damage",
-            "name": "Damage: 1d10 Fire Damage",
+            "name": "伤害: 1d10 火焰 伤害",
             "activation": {
               "type": "",
               "value": null,
@@ -1633,7 +1633,7 @@
           "KUwCZ3WInGvP7whu": {
             "_id": "KUwCZ3WInGvP7whu",
             "type": "damage",
-            "name": "Damage: 1d10 Fire Damage",
+            "name": "伤害: 1d10 火焰 伤害",
             "activation": {
               "type": "",
               "value": null,
@@ -1788,7 +1788,7 @@
           "U9KSmj5RNRP5zrko": {
             "_id": "U9KSmj5RNRP5zrko",
             "type": "damage",
-            "name": "Damage: 1d10 Fire Damage",
+            "name": "伤害: 1d10 火焰 伤害",
             "activation": {
               "type": "",
               "value": null,
@@ -2010,7 +2010,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>火元素散发出30尺半径的明亮光照，外加30尺的微光光照。</p><p>The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>火元素散发出30尺半径的明亮光照，外加30尺的微光光照。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -2095,7 +2095,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>每在水中移动5尺，或者每被泼一加仑水，火元素就受到1点冷冻伤害。</p><p>For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>每在水中移动5尺，或者每被泼一加仑水，火元素就受到1点冷冻伤害。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -2324,7 +2324,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "mmygK5C0NoS6VuBS",
   "sort": 4200000,
   "ownership": {
     "default": 0,

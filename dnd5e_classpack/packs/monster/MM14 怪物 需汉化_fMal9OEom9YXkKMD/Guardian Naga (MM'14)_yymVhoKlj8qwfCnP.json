@@ -1,5 +1,5 @@
 {
-  "name": "Guardian Naga (MM'14)",
+  "name": "守秘纳迦 Guardian Naga (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -544,10 +544,10 @@
     },
     "details": {
       "biography": {
-        "value": "<p>Wise and good, the beautiful guardian nagas protect sacred places and items of magical power from falling into evil hands. In their hidden redoubts, they research spells and hatch convoluted plots to thwart the evil designs of their enemies.</p><p>A guardian naga doesn't seek out violence, warning off intruders rather than attacking. Only if its foes persist does the naga attack, accosting enemies with its spells and poisonous spittle.</p><div data-roll-name-ancestor=\"Nagas\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Nagas</span></h1> <p>Nagas are intelligent serpents that inhabit the ruins of the past, amassing arcane treasures and knowledge.</p><p>The first nagas were created as immortal guardians by a humanoid race long lost to history. When this race died out, the nagas deemed themselves the rightful inheritors of their masters' treasures and magical lore. Industrious and driven, nagas occasionally venture out from their lairs to track down magic items or rare spellbooks.</p><p>Nagas never feel the ravages of time or succumb to sickness. Even if it is struck down, a naga's immortal spirit reforms in a new body in a matter of days, ready to continue its eternal work.</p><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Benevolent Dictators and Brutal Tyrants\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Benevolent Dictators and Brutal Tyrants.</span></span> A naga rules its domain with absolute authority. Whether it rules with compassion or by terrorizing its subjects, the naga believes itself the master of all other creatures that inhabit its domain.</p></div><div data-roll-name-ancestor=\"Rivalry\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Rivalry.</span></span> Nagas have a long-standing enmity with the yuan-ti, with each race seeing itself as the epitome of serpentine evolution. Though cooperation between them is rare, nagas and yuan-ti sometimes set aside their differences to work toward common objectives. However, yuan-ti always chafe under a naga's authority.</p></div><div data-roll-name-ancestor=\"Immortal Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Immortal Nature.</span></span> A naga doesn't require air, food, drink, or sleep.</p></div></div></div></div>",
+        "value": "<h3>守秘纳迦Guardian Naga</h3><p>守秘纳迦作为睿智善良的美丽守护者保护着带有魔法力量的圣地与物品，以免落入邪恶之手。它们在其隐秘的棱堡中研究法术，并策划出复杂的计谋来挫败敌人的邪恶盘算。</p><p>守秘纳迦不寻求暴力，更倾向于警告入侵者而非发动攻击。它们只在敌人顽固不化时动手，并以自己的法术和毒性唾沫来发动攻击。</p>",
         "public": ""
       },
-      "alignment": "Lawful Good",
+      "alignment": "守序善良 Lawful Good",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -639,7 +639,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Guardian Naga",
+    "name": "守秘纳迦 Guardian Naga (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -733,7 +733,7 @@
   "items": [
     {
       "_id": "2QzXyyqDYDA8UuI3",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -745,7 +745,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, reach 10 ft., one creature. <i>Hit:</i> 8 ([[/damage 1d8 + 4 type=piercing]]) damage, and the target must make a [[/save ability=con dc=15]] saving throw, taking 45 ([[/damage 10d8 type=poison]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>近战武器攻击：命中+8，触及10尺，单一生物。命中：8（[[/damage 1d8 + 4 type=piercing]]）点穿刺伤害，且目标必须进行一次DC 15的体质豁免，豁免失败则受45（[[/damage 10d8 type=poison]]）点毒素伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "range": {
@@ -769,7 +769,7 @@
           "sXrzbP3trtCqGGXj": {
             "_id": "sXrzbP3trtCqGGXj",
             "type": "attack",
-            "name": "Attack: 1d8 Piercing Damage",
+            "name": "攻击: 1d8 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -941,7 +941,7 @@
           "7FbRHAKUiMkaTcxz": {
             "_id": "7FbRHAKUiMkaTcxz",
             "type": "save",
-            "name": "Save: 10d8 Poison Damage",
+            "name": "豁免: 10d8 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1199,7 +1199,7 @@
     },
     {
       "_id": "sENEOwpQFHjKj3sz",
-      "name": "Spit Poison",
+      "name": "喷毒 Spit Poison",
       "type": "weapon",
       "system": {
         "source": {
@@ -1211,7 +1211,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+8]]{+8} to hit, range 15/30 ft., one creature. <i>Hit:</i> The target must make a [[/save ability=con dc=15]] saving throw, taking 45 ([[/damage 10d8 type=poison]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>远程武器攻击：命中+8，射程15/30尺，单一生物。命中：该目标必须进行一次DC 15的体质豁免，豁免失败则受45（[[/damage 10d8 type=poison]]）点毒素伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "range": {
@@ -1647,7 +1647,7 @@
     },
     {
       "_id": "d5wRzw928GztHYTu",
-      "name": "Rejuvenation",
+      "name": "复生 Rejuvenation",
       "type": "feat",
       "system": {
         "source": {
@@ -1659,7 +1659,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If it dies, the naga returns to life in [[/r 1d6]] days and regains all its hit points. Only a @spell[wish] spell can prevent this trait from functioning.</p></div>",
+          "value": "<p>死亡时，纳迦可以在[[/r 1d6]]日内恢复其所有的生命值。只有法术祈愿术wish才能阻止该特质运作。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1715,7 +1715,7 @@
     },
     {
       "_id": "o1GnsS96FpwQP9Dh",
-      "name": "Mending",
+      "name": "修复术 Mending",
       "type": "spell",
       "system": {
         "source": {
@@ -1727,7 +1727,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.</p><p>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.</p></div>",
+          "value": "<p>该法术修复你所触碰一个物件上的一处破损或裂缝，例如修复一条断裂的链条，或者一把碎成两半的钥匙、一件撕裂的斗篷、一个漏了的酒袋等。只要破损或断裂处在任意方向上都不超过 1 尺，你就可以不留痕迹地修复它。</p><p>该法术可以从物理上修复一件魔法物品或一个构装生物，但不会恢复这类物件上的魔法。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1960,7 +1960,7 @@
     },
     {
       "_id": "hsQlgamdWvanIs7l",
-      "name": "Sacred Flame",
+      "name": "圣火术 Sacred Flame",
       "type": "spell",
       "system": {
         "source": {
@@ -1972,7 +1972,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take [[/damage 1d8 type=radiant]] damage. The target gains no benefit from cover for this saving throw.</p><p>The spell's damage increases by [[/damage 1d8]] when you reach 5th level ([[/damage 2d8]]), 11th level ([[/damage 3d8]]), and 17th level ([[/damage 4d8]]).</p></div>",
+          "value": "<p>如同火焰般的辉光向施法距离内你能看见的一个生物倾泻而下。目标必须要进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}，豁免失败则受到 [[/damage 1d8 type=radiant]]{1d8} 点光耀伤害。目标在这次豁免检定中无法获得掩护的增益。</p><p>你到达 5 级时，该法术的伤害增加 1d8（变为 2d8）。11 级时再加 1d8（变为 3d8），17 级时再加 1d8（变为 4d8）。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2230,7 +2230,7 @@
     },
     {
       "_id": "7oM0VOzeiP1jU2Cj",
-      "name": "Thaumaturgy",
+      "name": "奇术 Thaumaturgy",
       "type": "spell",
       "system": {
         "source": {
@@ -2242,7 +2242,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:</p><ul class=\"rd__list\"><li class=\"rd__li \">Your voice booms up to three times as loud as normal for 1 minute.</li><li class=\"rd__li \">You cause flames to flicker, brighten, dim, or change color for 1 minute.</li><li class=\"rd__li \">You cause harmless tremors in the ground for 1 minute.</li><li class=\"rd__li \">You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li><li class=\"rd__li \">You instantaneously cause an unlocked door or window to fly open or slam shut.</li><li class=\"rd__li \">You alter the appearance of your eyes for 1 minute.</li></ul><p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p></div>",
+          "value": "<p>你在施法距离内展示出一个低级奇观，以表现你的超自然力。你在施法距离内创造出下列魔法效应之一：</p><ul><li>你的声音在 1 分钟内变得比常人响两倍。</li><li>你在 1 分钟内使一团火焰闪烁，变亮，变暗或变色。</li><li>你使地面震动 1 分钟（完全无害）。</li><li>你使某种声音自施法距离内一点瞬间发出，例如雷鸣声，鸦叫声或不祥的低语声。</li><li>你使一扇没有锁上的门或窗瞬间打开或关上。</li><li>你在 1 分钟内改变自己眼睛的颜色。</li></ul><p>多次施展该法术时，你可以同时维持最多三个持续 1 分钟的效应。你也可以用一个动作驱散其中一种效应。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2466,7 +2466,7 @@
     },
     {
       "_id": "wteD9ysahHDiTJMO",
-      "name": "Command",
+      "name": "命令术 Command",
       "type": "spell",
       "system": {
         "source": {
@@ -2478,7 +2478,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><div data-roll-name-ancestor=\"Approach\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Approach.</span></span> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p></div><div data-roll-name-ancestor=\"Drop\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Drop.</span></span> The target drops whatever it is holding and then ends its turn.</p></div><div data-roll-name-ancestor=\"Flee\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Flee.</span></span> The target spends its turn moving away from you by the fastest available means.</p></div><div data-roll-name-ancestor=\"Grovel\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Grovel.</span></span> The target falls &amp;Reference[condition=prone] and then ends its turn.</p></div><div data-roll-name-ancestor=\"Halt\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Halt.</span></span> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p></div></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p></div></div>",
+          "value": "<p>你对施法距离内一个你能看见的生物说出一个单词的命令。目标生物必须成功通过一次[[/save activity=dnd5eactivity000]]{感知豁免}，否则必须在其自己的下一回合服从该命令行事。如果目标为亡灵或目标无法听懂你的语言，又或者你的命令对其直接构成损害，则该法术无效。</p><p>以下列出一些通常可用的命令单词及其效果。你也可以说出此处没有列明的单词命令，并由DM决定目标将如何行动。如果目标无法完成你的命令，则法术终止。</p><ul><li><strong>过来Approach。</strong>目标以最短最直接的路线向你移动，并在到达距你5尺时结束其回合。</li><li><strong>放下Drop。</strong>目标放下手中持握物并结束其回合。</li><li><strong>走开Flee。</strong>目标在其回合内以最快最有效的方式远离你。</li><li><strong>趴下Grovel。</strong>目标趴下倒地并结束其回合。</li><li><strong>立定Halt。</strong>目标不移动且不作任何动作。飞行生物在原地悬浮（如果它可以这么做）。如果它必须移动才能保持在空中，则其移动最小的距离以保持飞行。</li></ul><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，法术就能多影响一个目标。而各目标之间距离不能超过 30 尺。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2717,7 +2717,7 @@
     },
     {
       "_id": "M7sCImRB63Wq5hjZ",
-      "name": "Cure Wounds",
+      "name": "疗伤术 Cure Wounds",
       "type": "spell",
       "system": {
         "source": {
@@ -2729,7 +2729,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A creature you touch regains a number of hit points equal to [[/r 1d8]] + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by [[/r 1d8]] for each slot level above 1st.</p></div></div>",
+          "value": "<p>一个你触碰的生物恢复特定数值的生命值，其恢复量等于 1d8+你的施法属性调整值。该法术对亡灵和构装生物无效。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，恢复量就增加 1d8。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2972,7 +2972,7 @@
     },
     {
       "_id": "9UfAyjApX5QzxfqZ",
-      "name": "Shield of Faith",
+      "name": "虔诚护盾 Shield of Faith",
       "type": "spell",
       "system": {
         "source": {
@@ -2984,7 +2984,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</p></div>",
+          "value": "<p>围绕着施法距离内你指定的一个生物出现一片闪着微光的魔法力场。使目标在法术持续时间内 AC 获得+2 加值。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3204,7 +3204,7 @@
       },
       "effects": [
         {
-          "name": "Shield of Faith",
+          "name": "虔诚护盾 Shield of Faith",
           "origin": null,
           "duration": {
             "value": 600,
@@ -3286,7 +3286,7 @@
     },
     {
       "_id": "4954gGhr6mscIOPc",
-      "name": "Calm Emotions",
+      "name": "安定心神 Calm Emotions",
       "type": "spell",
       "system": {
         "source": {
@@ -3298,7 +3298,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects.</p><p>You can suppress any effect causing a target to be &amp;Reference[condition=charmed] or &amp;Reference[condition=frightened]. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.</p><p>Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the DM rules otherwise.</p></div>",
+          "value": "<p>你试图抑制一群人的强烈情感。指定施法距离内一点，并迫使该点周边半径20尺球状区域内的每个类人生物进行一次[[/save activity=dnd5eactivity000]]{魅力豁免}。受术生物可以自愿放弃豁免。豁免失败者将由你选择以下两项效应之一对其生效。</p><p>你可以选择压制任何使目标受魅惑或恐慌的效应。法术终止时，若被压制效应持续时间仍未完结，则该效应继续生效。</p><p>或者，你也可以选择使目标改变对某个你所指定生物的态度，由敌对变为冷漠。如果目标被攻击，或者被有害法术影响，又或者发现其盟友受到损害，则此效应终止。法术终止时，除非 DM 另行裁决，否则目标的态度恢复敌对。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3539,7 +3539,7 @@
     },
     {
       "_id": "6uSLvD2g0cn8KmhV",
-      "name": "Hold Person",
+      "name": "人类定身术 Hold Person",
       "type": "spell",
       "system": {
         "source": {
@@ -3551,7 +3551,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be &amp;Reference[condition=paralyzed] for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p></div></div>",
+          "value": "<p>指定施法距离内一个你能看见的类人生物。该目标必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}，豁免失败则其在法术持续时间内陷入&amp;Reference[condition=paralyzed apply=false]{麻痹}。目标在其每回合结束时可以再进行一次感知豁免，豁免成功则终止其身上该法术的效应。</p><p><strong>升环施法效应。</strong>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，你就可以额外指定一个类人生物。指定目标时，每个目标生物必须身处其他目标 30 尺范围内。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3788,7 +3788,7 @@
       },
       "effects": [
         {
-          "name": "Hold Person",
+          "name": "人类定身术 Hold Person",
           "origin": null,
           "duration": {
             "value": 60,
@@ -3862,7 +3862,7 @@
     },
     {
       "_id": "Aj3NWWJKQlB2bhes",
-      "name": "Bestow Curse",
+      "name": "降咒 Bestow Curse",
       "type": "spell",
       "system": {
         "source": {
@@ -3874,7 +3874,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:</p><ul class=\"rd__list\"><li class=\"rd__li \">Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.</li><li class=\"rd__li \">While cursed, the target has disadvantage on attack rolls against you.</li><li class=\"rd__li \">While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.</li><li class=\"rd__li \">While the target is cursed, your attacks and spells deal an extra [[/damage 1d8 type=necrotic]] damage to the target.</li></ul><p>A @spell[remove curse] spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> If you cast this spell using a spell slot of 4th level or higher, the duration is @status[concentration], up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require @status[concentration].</p></div></div>",
+          "value": "<p>你触碰一名生物。该生物必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}并成功通过，否则将在法术持续时间内被诅咒。施展法术时，你从以下诅咒选项选择其一：</p><ul><li>选择一个属性值。受诅咒影响时，目标进行该属性的豁免检定和属性检定时具有劣势。</li><li>受诅咒影响时，目标对你进行的攻击检定具有劣势。</li><li>受诅咒影响时，目标必须在其每回合开始时进行一次感知豁免，豁免失败则浪费掉该回合的动作。</li><li>受诅咒影响时，你的攻击和法术对目标额外造成 [[/damage 1d8 type=necrotic]]{1d8} 的暗蚀伤害。</li></ul><p>法术移除诅咒可终止此法术的效应。DM 也可以让你选择其他诅咒，但它们不该比上表更强大。诅咒效应最终由 DM 裁定。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，法术的持续时间变为：专注，至多 10 分钟。使用五环或更高法术位时，变为 8 小时。使用七环或更高法术位时，变为 24 小时。使用九环法术位时，法术将持续到被解除。使用五环或更高法术位施展此法术时无需在其持续时间内维持专注。</p>",
           "chat": ""
         },
         "level": 3,
@@ -4116,7 +4116,7 @@
     },
     {
       "_id": "EG3MuvxmssKaUwYD",
-      "name": "Clairvoyance",
+      "name": "鹰眼术 Clairvoyance",
       "type": "spell",
       "system": {
         "source": {
@@ -4128,7 +4128,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with.</p><p>When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.</p><p>A creature that can see the sensor (such as a creature benefiting from @spell[see invisibility] or &amp;Reference[rule=truesight]) sees a luminous, intangible orb about the size of your fist.</p></div>",
+          "value": "<p>你在施法距离内某处创造一个隐形的传感器，该处可以是你熟悉的地点（你曾到访过或看见过的地方），也可以是你不熟悉的显眼处（比如一扇门后，拐角位置或树林里）。该传感器在法术持续时间内停留在该地且无法被攻击或与之互动。</p><p>施展该法术时，你可以选择进行观察或是聆听。你可以通过传感器以所选的感官方式感测目标空间。你也可以用一个动作在观察和聆听之间切换。</p><p>可以看见传感器的生物（比如生物具有增益如识破隐形 see invisibility或真实视觉时）会看到检测点是一个拳头大小发着微光的半透球体。</p>",
           "chat": ""
         },
         "level": 3,
@@ -4359,7 +4359,7 @@
     },
     {
       "_id": "TE19Q7DVWzugDnrC",
-      "name": "Banishment",
+      "name": "放逐术 Banishment",
       "type": "spell",
       "system": {
         "source": {
@@ -4371,7 +4371,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.</p><p>If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is &amp;Reference[condition=incapacitated]. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p><p>If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</p></div></div>",
+          "value": "<p>你试图将一名你能看见的生物送往另一位面。目标必须进行一次[[/save activity=dnd5eactivity000]]{魅力豁免}并成功通过，否则将被放逐。</p><p>如果目标是你所处位面的原住民，则他被放逐到一个无害的半位面。在半位面期间该生物处于&amp;Reference[condition=incapacitated apply=false]{失能}状态。法术终止时，目标重新出现在被放逐前的空间。如果该空间被占据，则它将出现在最近的未占据空间。</p><p>如果目标不是你所处位面的原住民，则他会伴随着轻微的“啪”一声被放逐回其家园位面。如果法术在 1 分钟过去之前终止，则目标将在他被放逐前的空间重新出现。如果该空间被占据，则他在最近的未占据空间出现。如果法术在持续 1 分钟后终止，则目标不会回到原地。</p><p><strong>升环施法效应。</strong>使用五环或更高法术位施展该法术时，你使用的法术位每比四环高一环，就能多指定一个目标。</p>",
           "chat": ""
         },
         "level": 4,
@@ -4607,7 +4607,7 @@
       },
       "effects": [
         {
-          "name": "Banishment",
+          "name": "放逐术 Banishment",
           "origin": null,
           "duration": {
             "value": 60,
@@ -4680,7 +4680,7 @@
     },
     {
       "_id": "p0ECRVAjyygLX9Ef",
-      "name": "Freedom of Movement",
+      "name": "行动自如 Freedom of Movement",
       "type": "spell",
       "system": {
         "source": {
@@ -4692,7 +4692,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a willing creature. For the duration, the target's movement is unaffected by &amp;Reference[rule=difficultterrain]{difficult terrain}, and spells and other magical effects can neither reduce the target's speed nor cause the target to be &amp;Reference[condition=paralyzed] or &amp;Reference[condition=restrained].</p><p>The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it &amp;Reference[condition=grappled]. Finally, being underwater imposes no penalties on the target's movement or attacks.</p></div>",
+          "value": "<p>你触碰一个自愿生物，并使目标在法术持续时间内移动时不受困难地形限制，并使任何降低目标速度，或者使目标陷入&amp;Reference[condition=paralyzed apply=false]{麻痹}或束缚的法术或魔法效应对其无法生效。</p><p>该目标还可以花费 5 尺移动力直接从非魔法的束缚中挣脱（诸如镣铐或生物的擒抱等）。此外，目标在水下进行移动和攻击时不再受减益规则的限制。</p>",
           "chat": ""
         },
         "level": 4,
@@ -4914,7 +4914,7 @@
       },
       "effects": [
         {
-          "name": "Freedom of Movement",
+          "name": "行动自如 Freedom of Movement",
           "origin": null,
           "duration": {
             "value": null,
@@ -5006,7 +5006,7 @@
     },
     {
       "_id": "siufZqx9BhcAkkMS",
-      "name": "Flame Strike",
+      "name": "焰击术 Flame Strike",
       "type": "spell",
       "system": {
         "source": {
@@ -5018,7 +5018,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes [[/damage 4d6 type=fire]] damage and [[/damage 4d6 type=radiant]] damage on a failed save, or half as much damage on a successful one.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by [[/damage 1d6]] for each slot level above 5th.</p></div></div>",
+          "value": "<p>一支圣火立柱从天堂带着呼啸降落在你指定的一处地点。圣火以施法距离内指定点为源点形成一处半径 10 尺、高 40 尺柱状区域，其内的每个生物必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}。豁免失败者将受到 [[/damage 4d6 type=fire]]{4d6} 点火焰伤害和 [[/damage 4d6 type=radiant]]{4d6} 点光耀伤害，豁免成功则伤害减半。</p><p><strong>升环施法效应。</strong>使用六环或更高法术位施展该法术时，你使用的法术位每比五环高一环，其火焰伤害或光耀伤害（自选其一）就增加 1d6。</p>",
           "chat": ""
         },
         "level": 5,
@@ -5295,7 +5295,7 @@
     },
     {
       "_id": "9kg3afi7BsO5P5MD",
-      "name": "Geas",
+      "name": "指使术 Geas",
       "type": "spell",
       "system": {
         "source": {
@@ -5307,7 +5307,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become &amp;Reference[condition=charmed] by you for the duration. While the creature is &amp;Reference[condition=charmed] by you, it takes [[/damage 5d10 type=psychic]] damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.</p><p>You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.</p><p>You can end the spell early by using an action to dismiss it. A @spell[remove curse], @spell[greater restoration], or @spell[wish] spell also ends it.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.</p></div></div>",
+          "value": "<p>你对施法距离内你能看见的一个生物置入一条魔法命令，并强迫其执行相应的某种服务或克制某种行为，甚至遵照你的要求行动。如果该生物可以理解你的意思，则它必须成功通过一次[[/save activity=dnd5eactivity000]]{感知豁免}，否则将在法术持续时间内被你魅惑。被魅惑生物每次作出与你的命令相悖的行为时，即受到 [[/damage 5d10 type=psychic]]{5d10} 点心灵伤害。该伤害一日至多生效一次。且不能理解你意思的生物不受该法术影响。</p><p>除了涉及导致必死结果的行为外，你向目标下达的任何命令都会生效。如果你发布自杀指令则法术即时终止。</p><p>你可以用一个动作解除命令并终止法术。法术如<em>移除诅咒 remove curse</em>，<em>高等复原术 greater restoration</em>或<em>祈愿术 wish</em>同样可以终止该法术。</p><p><strong>升环施法效应。</strong>使用七环或八环法术位施展该法术时，持续时间变为 1 年。使用九环法术位施展该法术时，法术将一直持续至被上文提及的法术所终止。</p>",
           "chat": ""
         },
         "level": 5,
@@ -5559,7 +5559,7 @@
       },
       "effects": [
         {
-          "name": "Geas",
+          "name": "指使术 Geas",
           "origin": null,
           "duration": {
             "value": null,
@@ -5632,7 +5632,7 @@
     },
     {
       "_id": "pJZMAcq9UQST86vL",
-      "name": "True Seeing",
+      "name": "真知术 True Seeing",
       "type": "spell",
       "system": {
         "source": {
@@ -5644,7 +5644,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has &amp;Reference[rule=truesight], notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.</p></div>",
+          "value": "<p>你触碰一个自愿的生物，让该法术赋予其看到事物真实面目的能力。受术者在法术持续时间内拥有 120 尺的真实视觉，其能发现被魔法隐藏的暗门，也能看到以太位面。</p>",
           "chat": ""
         },
         "level": 6,
@@ -5876,7 +5876,7 @@
     },
     {
       "_id": "MYw2EttEOR0qGa7N",
-      "name": "Spellcasting",
+      "name": "施法 Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -5888,7 +5888,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC <span class=\"rd__dc\">16</span>, [[/r 1d20+8]]{+8} to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>Cantrips (at will): @UUID[.o1GnsS96FpwQP9Dh], @UUID[.hsQlgamdWvanIs7l], @UUID[.7oM0VOzeiP1jU2Cj]</p></li><li class=\"rd__li  rd__li-spell\"><p>1st level (4 slots): @UUID[.wteD9ysahHDiTJMO], @UUID[.M7sCImRB63Wq5hjZ], @UUID[.9UfAyjApX5QzxfqZ]</p></li><li class=\"rd__li  rd__li-spell\"><p>2nd level (3 slots): @UUID[.4954gGhr6mscIOPc], @UUID[.6uSLvD2g0cn8KmhV]</p></li><li class=\"rd__li  rd__li-spell\"><p>3rd level (3 slots): @UUID[.Aj3NWWJKQlB2bhes], @UUID[.EG3MuvxmssKaUwYD]</p></li><li class=\"rd__li  rd__li-spell\"><p>4th level (3 slots): @UUID[.TE19Q7DVWzugDnrC], @UUID[.p0ECRVAjyygLX9Ef]</p></li><li class=\"rd__li  rd__li-spell\"><p>5th level (2 slots): @UUID[.siufZqx9BhcAkkMS], @UUID[.9kg3afi7BsO5P5MD]</p></li><li class=\"rd__li  rd__li-spell\"><p>6th level (1 slot): @UUID[.pJZMAcq9UQST86vL]</p></li></ul></div></div>",
+          "value": "<p>纳迦作为一名11级施法者，其施法属性为感知（法术豁免DC 16，法术攻击命中+8）。它施法时只需相应的言语成分。该纳迦准备了以下的牧师法术： 戏法（随意）：修复术mending，圣火术sacred flame，奇术thaumaturgy 1环（4法术位）：命令术command，疗伤术cure wounds，虔诚护盾shield of faith 2环（3法术位）：安定心神calm emotions，定身类人hold person 3环（3法术位）：降咒bestow curse，鹰眼术clairvoyance 4环（3法术位）：放逐术banishment，行动自如freedom of movement 5环（2法术位）：焰击术flame strike，指使术geas 6环（1法术位）：真知术true seeing</p><p>@UUID[.o1GnsS96FpwQP9Dh]{修复术 Mending}、@UUID[.hsQlgamdWvanIs7l]{圣火术 Sacred Flame}、@UUID[.7oM0VOzeiP1jU2Cj]{奇术 Thaumaturgy}、@UUID[.wteD9ysahHDiTJMO]{命令术 Command}、@UUID[.M7sCImRB63Wq5hjZ]{疗伤术 Cure Wounds}、@UUID[.9UfAyjApX5QzxfqZ]{虔诚护盾 Shield of Faith}、@UUID[.4954gGhr6mscIOPc]{安定心神 Calm Emotions}、@UUID[.6uSLvD2g0cn8KmhV]{人类定身术 Hold Person}、@UUID[.Aj3NWWJKQlB2bhes]{降咒 Bestow Curse}、@UUID[.EG3MuvxmssKaUwYD]{鹰眼术 Clairvoyance}、@UUID[.TE19Q7DVWzugDnrC]{放逐术 Banishment}、@UUID[.p0ECRVAjyygLX9Ef]{行动自如 Freedom of Movement}、@UUID[.siufZqx9BhcAkkMS]{焰击术 Flame Strike}、@UUID[.9kg3afi7BsO5P5MD]{指使术 Geas}、@UUID[.pJZMAcq9UQST86vL]{真知术 True Seeing}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -5944,7 +5944,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 37400000,
   "ownership": {
     "default": 0,

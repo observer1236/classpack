@@ -1,5 +1,5 @@
 {
-  "name": "Drider Spellcaster (MM'14)",
+  "name": "蛛化卓尔（施法者） Drider Spellcaster (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>When a drow shows great promise, Lolth summons it to the Demonweb Pits for a test of faith and strength. Those that pass the test rise higher in the Spider Queen's favor. Those that fail are transformed into driders-a horrid hybrid of a drow and a giant spider that serves as a living reminder of Lolth's power. Only drow can be turned into driders, and the power to create these creatures resides with Lolth alone.</p><div data-roll-name-ancestor=\"Scarred for Life\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Scarred for Life.</span></span> Drow transformed into driders return to the Material Plane as twisted and debased creatures. Driven by madness, they disappear into the Underdark to become hermits and hunters, either wandering alone or leading packs of giant spiders.</p><p>On rare occasion, a drider returns to the fringes of drow society despite its curse, most often to fulfill some longstanding vow or vendetta from its former life. Drow fear and shun the driders, holding them in lower esteem than slaves. However, they tolerate the presence of these creatures as living representatives of Lolth's will, and a reminder of the fate that awaits all who fail the Spider Queen.</p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>I failed the Spider Queen once. Never again.</i>”</p><p><span class=\"rd__quote-by\">— Pellanistra the drider</span></p></div></div></div>",
+        "value": "<h3>蛛化卓尔Drider</h3><p>“我让蛛后失望过一次。不会再有第二次。”</p><p>——蛛化卓尔普勒丝塔Pellanistra</p><p>罗丝会将展现出巨大潜力的卓尔精灵召唤到魔网深狱Demonweb Pits以测试其忠诚与力量。通过测试者会得到蛛后的宠信，而失败者将会被转化成蛛化卓尔——卓尔与巨蜘蛛的可怕混合体，作为罗丝神力活生生的象征。只有卓尔能被转化为蛛化卓尔，也只有罗丝拥有这种能力。</p><p><strong>活者之痕Scarred for Life。</strong>变成蛛化卓尔的卓尔作为扭曲、低贱的生物回到主物质位面。它们受疯狂所驱使而消失在幽暗地域深处成为隐士和猎人，独自游荡或带领一群巨型蜘蛛一同活动。</p><p>蛛化卓尔偶尔也会不顾自身的诅咒而回到卓尔社会的边境，多数是为了履行转化前的誓言或了结宿怨。卓尔们害怕并且刻意回避蛛化卓尔，且视其为比奴隶更低贱的生物。卓尔们能够容忍蛛化卓尔存在身边，只是因为这种生物代表着罗丝的意志，提醒卓尔们如果辜负了蛛后将会是什么下场。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -632,7 +632,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Drider Spellcaster",
+    "name": "蛛化卓尔（施法者） Drider Spellcaster (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -726,7 +726,7 @@
   "items": [
     {
       "_id": "oINS6Kj6nQIvdRdj",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -738,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.</p></div>",
+          "value": "<p>蛛化卓尔发动三次攻击，它可以在其长剑和长弓攻击中选择一种，此外它还可以用啃咬取代其中的一次攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -931,7 +931,7 @@
     },
     {
       "_id": "tfZTucvxMZWjvvlq",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -943,7 +943,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one creature. <i>Hit:</i> 2 ([[/damage 1d4 type=piercing]]) damage plus 9 ([[/damage 2d8 type=poison]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一生物。命中：2（[[/damage 1d4 type=piercing]]）点穿刺伤害，外加9（[[/damage 2d8 type=poison]]）点毒素伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1237,7 +1237,7 @@
     },
     {
       "_id": "aPqQWpuE1Oyjst2I",
-      "name": "Longsword",
+      "name": "长剑 Longsword",
       "type": "weapon",
       "system": {
         "source": {
@@ -1249,7 +1249,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 7 ([[/damage 1d8 + 3 type=slashing]]) damage, or 8 ([[/damage 1d10 + 3 type=slashing]]) damage if used with two hands.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：7（[[/damage 1d8 + 3 type=slashing]]）点挥砍伤害，双手持时8（[[/damage 1d10 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1522,7 +1522,7 @@
     },
     {
       "_id": "txmEjkUT4YwueVvP",
-      "name": "Longbow",
+      "name": "长弓 Longbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -1534,7 +1534,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, range 150/600 ft., one target. <i>Hit:</i> 7 ([[/damage 1d8 + 3 type=piercing]]) damage plus 4 ([[/damage 1d8 type=poison]]) damage.</p></div>",
+          "value": "<p>远程武器攻击：命中+6，射程150/600尺，单一目标。命中：7（[[/damage 1d8 + 3 type=piercing]]）点穿刺伤害，外加4（[[/damage 1d8 type=poison]]）毒素伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1835,7 +1835,7 @@
     },
     {
       "_id": "ZEABugo8jhlw1ooY",
-      "name": "Fey Ancestry",
+      "name": "妖精血统 Fey Ancestry",
       "type": "feat",
       "system": {
         "source": {
@@ -1847,7 +1847,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The drider has advantage on saving throws against being &amp;Reference[condition=charmed], and magic can't put the drider to sleep.</p></div>",
+          "value": "<p>蛛化卓尔抵抗魅惑时进行的豁免检定具有优势，并且不会因魔法效应而陷入睡眠。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1903,7 +1903,7 @@
     },
     {
       "_id": "TJPVXuCsNVDsWQJu",
-      "name": "Spider Climb",
+      "name": "蛛行 Spider Climb",
       "type": "feat",
       "system": {
         "source": {
@@ -1915,7 +1915,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p></div>",
+          "value": "<p>蛛化卓尔可以攀爬在难以攀爬的表面上，包括倒吊在天花板上，且不需要进行属性检定。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1971,7 +1971,7 @@
     },
     {
       "_id": "gSwyrTyew5sy5xXe",
-      "name": "Sunlight Sensitivity",
+      "name": "日照敏感 Sunlight Sensitivity",
       "type": "feat",
       "system": {
         "source": {
@@ -1983,7 +1983,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div>",
+          "value": "<p>在阳光照射下，蛛化卓尔进行的攻击检定具有劣势，此时其依赖视觉进行的感知（察觉）检定也具有劣势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2039,7 +2039,7 @@
     },
     {
       "_id": "NQ0C24ryZgza4KaX",
-      "name": "Web Walker",
+      "name": "蛛网行者 Web Walker",
       "type": "feat",
       "system": {
         "source": {
@@ -2051,7 +2051,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The drider ignores movement restrictions caused by webbing.</p></div>",
+          "value": "<p>蛛化卓尔在蛛网上移动时无视蛛网的移动限制。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2107,7 +2107,7 @@
     },
     {
       "_id": "fLNrLI6z6tizTByi",
-      "name": "Poison Spray",
+      "name": "毒气喷溅 Poison Spray",
       "type": "spell",
       "system": {
         "source": {
@@ -2119,7 +2119,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take [[/damage 1d12 type=poison]] damage.</p><p>This spell's damage increases by [[/damage 1d12]] when you reach 5th level ([[/damage 2d12]]), 11th level ([[/damage 3d12]]), and 17th level ([[/damage 4d12]]).</p></div>",
+          "value": "<p>你伸手向施法距离内一个你能看见的生物喷出一阵毒气。目标必须进行一次[[/save activity=dnd5eactivity000]]{体质豁免}，豁免失败则受 [[/damage 1d12 type=poison]]{1d12} 毒素伤害。</p><p>你到达 5 级时，该法术的伤害增加 1d12（变为 2d12）。11 级时再加 1d12（变为 3d12），17 级时再加 1d12（变为 4d12）。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2381,7 +2381,7 @@
     },
     {
       "_id": "IXw8JmSUvBTVHF7m",
-      "name": "Thaumaturgy",
+      "name": "奇术 Thaumaturgy",
       "type": "spell",
       "system": {
         "source": {
@@ -2393,7 +2393,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:</p><ul class=\"rd__list\"><li class=\"rd__li \">Your voice booms up to three times as loud as normal for 1 minute.</li><li class=\"rd__li \">You cause flames to flicker, brighten, dim, or change color for 1 minute.</li><li class=\"rd__li \">You cause harmless tremors in the ground for 1 minute.</li><li class=\"rd__li \">You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li><li class=\"rd__li \">You instantaneously cause an unlocked door or window to fly open or slam shut.</li><li class=\"rd__li \">You alter the appearance of your eyes for 1 minute.</li></ul><p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p></div>",
+          "value": "<p>你在施法距离内展示出一个低级奇观，以表现你的超自然力。你在施法距离内创造出下列魔法效应之一：</p><ul><li>你的声音在 1 分钟内变得比常人响两倍。</li><li>你在 1 分钟内使一团火焰闪烁，变亮，变暗或变色。</li><li>你使地面震动 1 分钟（完全无害）。</li><li>你使某种声音自施法距离内一点瞬间发出，例如雷鸣声，鸦叫声或不祥的低语声。</li><li>你使一扇没有锁上的门或窗瞬间打开或关上。</li><li>你在 1 分钟内改变自己眼睛的颜色。</li></ul><p>多次施展该法术时，你可以同时维持最多三个持续 1 分钟的效应。你也可以用一个动作驱散其中一种效应。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2617,7 +2617,7 @@
     },
     {
       "_id": "hnC8cF12A7CvBWc5",
-      "name": "Bane",
+      "name": "灾祸术 Bane",
       "type": "spell",
       "system": {
         "source": {
@@ -2629,7 +2629,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a [[/r d4]] and subtract the number rolled from the attack roll or saving throw.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p></div></div>",
+          "value": "<p>指定施法距离内至多三个你能看见的生物，并迫使其进行一次[[/save activity=dnd5eactivity000]]{魅力豁免}。豁免失败者直至法术终止前，在每当进行攻击检定或豁免检定时，必须从投骰结果中减去一个 d4。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，就能多指定一个目标。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2878,7 +2878,7 @@
           "origin": null,
           "tint": "#ffffff",
           "transfer": false,
-          "name": "Bane",
+          "name": "灾祸术 Bane",
           "description": "<p>Whenever the target makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>",
           "statuses": [],
           "_stats": {
@@ -2984,7 +2984,7 @@
     },
     {
       "_id": "v77E0z80DievWlEG",
-      "name": "Detect Magic",
+      "name": "侦测魔法 Detect Magic",
       "type": "spell",
       "system": {
         "source": {
@@ -2996,7 +2996,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its <span class=\"bold\">school of magic</span>, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p></div>",
+          "value": "<p>你在法术持续时间内能感测到30尺内存在的魔法。感测到魔法的存在后，你可以使用动作，来看到任何你能看见的具有魔法的生物或物件周围环绕着微弱的灵光，并分辨出其所属的魔法学派（若有）。该法术可以穿透大部分障碍，但仍会被1尺厚石质，或1寸厚金属质，或一层薄铅质，或3尺厚木质或泥质材料阻隔。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3232,7 +3232,7 @@
     },
     {
       "_id": "DrEfjTNiFm5WN9dY",
-      "name": "Sanctuary",
+      "name": "庇护术 Sanctuary",
       "type": "spell",
       "system": {
         "source": {
@@ -3244,7 +3244,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a @spell[fireball].</p><p>If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.</p></div>",
+          "value": "<p>你的法术保护一个施法距离内的生物不受攻击。在法术终止前，任何试图对受保护者进行攻击或对受保护者施放伤害性法术的生物都必须进行一次感知豁免。豁免失败则该生物必须选定一个新目标，否则将失去本次的攻击或法术。该法术不能保护受术者免受范围效应（如爆炸或火球）的影响。</p><p>若受保护生物发动一次攻击，施展一道影响敌人的法术，或是对任何其他生物造成伤害，则该法术随之终止。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3485,7 +3485,7 @@
     },
     {
       "_id": "ILDYUYIWvVwnoDUB",
-      "name": "Hold Person",
+      "name": "人类定身术 Hold Person",
       "type": "spell",
       "system": {
         "source": {
@@ -3497,7 +3497,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be &amp;Reference[condition=paralyzed] for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p></div></div>",
+          "value": "<p>指定施法距离内一个你能看见的类人生物。该目标必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}，豁免失败则其在法术持续时间内陷入&amp;Reference[condition=paralyzed apply=false]{麻痹}。目标在其每回合结束时可以再进行一次感知豁免，豁免成功则终止其身上该法术的效应。</p><p><strong>升环施法效应。</strong>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，你就可以额外指定一个类人生物。指定目标时，每个目标生物必须身处其他目标 30 尺范围内。</p>",
           "chat": ""
         },
         "level": 2,
@@ -3734,7 +3734,7 @@
       },
       "effects": [
         {
-          "name": "Hold Person",
+          "name": "人类定身术 Hold Person",
           "origin": null,
           "duration": {
             "value": 60,
@@ -3808,7 +3808,7 @@
     },
     {
       "_id": "BWdbDUiFQWDeRvVC",
-      "name": "Silence",
+      "name": "沉默术 Silence",
       "type": "spell",
       "system": {
         "source": {
@@ -3820,7 +3820,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are &amp;Reference[condition=deafened] while entirely inside it. Casting a spell that includes a verbal component is impossible there.</p></div>",
+          "value": "<p>你指定施法距离内一点，以该点为中心半径 20 尺的球状区域在法术持续时间内将无法产生任何声音，且外界的声音也无法进入该区域内。任何完全位于该区域内的生物和物件都将免疫雷鸣伤害，而任何生物在完全位于该区域内时都将陷入&amp;Reference[condition=deafened apply=false]{耳聋}。此外，该区域内无法施展包含言语成分的法术。</p>",
           "chat": ""
         },
         "level": 2,
@@ -4051,7 +4051,7 @@
     },
     {
       "_id": "dPRVIE9zpRoFLWAz",
-      "name": "Clairvoyance",
+      "name": "鹰眼术 Clairvoyance",
       "type": "spell",
       "system": {
         "source": {
@@ -4063,7 +4063,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with.</p><p>When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.</p><p>A creature that can see the sensor (such as a creature benefiting from @spell[see invisibility] or &amp;Reference[rule=truesight]) sees a luminous, intangible orb about the size of your fist.</p></div>",
+          "value": "<p>你在施法距离内某处创造一个隐形的传感器，该处可以是你熟悉的地点（你曾到访过或看见过的地方），也可以是你不熟悉的显眼处（比如一扇门后，拐角位置或树林里）。该传感器在法术持续时间内停留在该地且无法被攻击或与之互动。</p><p>施展该法术时，你可以选择进行观察或是聆听。你可以通过传感器以所选的感官方式感测目标空间。你也可以用一个动作在观察和聆听之间切换。</p><p>可以看见传感器的生物（比如生物具有增益如识破隐形 see invisibility或真实视觉时）会看到检测点是一个拳头大小发着微光的半透球体。</p>",
           "chat": ""
         },
         "level": 3,
@@ -4294,7 +4294,7 @@
     },
     {
       "_id": "XUC6Zbukug5g8fZ5",
-      "name": "Dispel Magic",
+      "name": "解除魔法 Dispel Magic",
       "type": "spell",
       "system": {
         "source": {
@@ -4306,7 +4306,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.</p></div></div>",
+          "value": "<p>在施法距离内指定一个生物、一个物件或一处魔法效应，并终止所有影响该目标的三环或更低环阶法术。每个影响目标的四环或更高环阶法术都需要以你的施法属性进行一次属性检定，其 DC 等于 10+目标法术的环阶，检定成功时目标法术终止。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，你直接终止目标身上小于等于该施法环阶的法术效应。</p>",
           "chat": ""
         },
         "level": 3,
@@ -4540,7 +4540,7 @@
     },
     {
       "_id": "O2BiRttclwdf22zg",
-      "name": "Divination",
+      "name": "预言术 Divination",
       "type": "spell",
       "system": {
         "source": {
@@ -4552,7 +4552,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Your magic and an offering put you in contact with a god or a god's servants. You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The DM offers a truthful reply. The reply might be a short phrase, a cryptic rhyme, or an omen.</p><p>The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.</p><p>If you cast the spell two or more times before finishing your next long rest, there is a cumulative [[/r 1d100]]{25 percent} chance for each casting after the first that you get a random reading. The DM makes this roll in secret.</p></div>",
+          "value": "<p>你的魔法和贡品让你得以与一名神或神仆取得联络。你可以就某个特定的目标、事件或活动提问一个与其未来 7 日内状况相关的问题。 DM 将给予你真实的答复，这个答复可能是一段短语、一节神秘的短诗或是一个预兆。</p><p>此法术的回答并不会顾及所有可能影响结果的情况。比如其他法术的影响，或者同伴的加入和离开等状况。</p><p>若你在两次长休之间两次或更多次的施展该法术，则法术有概率会给出随机的结果。此概率从第二次施展起每次累计 25％。其具体结果由 DM 暗骰决定。</p>",
           "chat": ""
         },
         "level": 4,
@@ -4780,7 +4780,7 @@
     },
     {
       "_id": "iJLjocOg2er1bavR",
-      "name": "Freedom of Movement",
+      "name": "行动自如 Freedom of Movement",
       "type": "spell",
       "system": {
         "source": {
@@ -4792,7 +4792,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a willing creature. For the duration, the target's movement is unaffected by &amp;Reference[rule=difficultterrain]{difficult terrain}, and spells and other magical effects can neither reduce the target's speed nor cause the target to be &amp;Reference[condition=paralyzed] or &amp;Reference[condition=restrained].</p><p>The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it &amp;Reference[condition=grappled]. Finally, being underwater imposes no penalties on the target's movement or attacks.</p></div>",
+          "value": "<p>你触碰一个自愿生物，并使目标在法术持续时间内移动时不受困难地形限制，并使任何降低目标速度，或者使目标陷入&amp;Reference[condition=paralyzed apply=false]{麻痹}或束缚的法术或魔法效应对其无法生效。</p><p>该目标还可以花费 5 尺移动力直接从非魔法的束缚中挣脱（诸如镣铐或生物的擒抱等）。此外，目标在水下进行移动和攻击时不再受减益规则的限制。</p>",
           "chat": ""
         },
         "level": 4,
@@ -5014,7 +5014,7 @@
       },
       "effects": [
         {
-          "name": "Freedom of Movement",
+          "name": "行动自如 Freedom of Movement",
           "origin": null,
           "duration": {
             "value": null,
@@ -5106,7 +5106,7 @@
     },
     {
       "_id": "HESa1zL1cH7CvJsv",
-      "name": "Spellcasting",
+      "name": "施法 Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -5118,7 +5118,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> The drider is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC <span class=\"rd__dc\">14</span>, [[/r 1d20+6]]{+6} to hit with spell attacks). The drider has the following spells prepared from the cleric spell list:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>Cantrips (at will): @UUID[.fLNrLI6z6tizTByi], @UUID[.IXw8JmSUvBTVHF7m]</p></li><li class=\"rd__li  rd__li-spell\"><p>1st level (4 slots): @UUID[.hnC8cF12A7CvBWc5], @UUID[.v77E0z80DievWlEG], @UUID[.DrEfjTNiFm5WN9dY]</p></li><li class=\"rd__li  rd__li-spell\"><p>2nd level (3 slots): @UUID[.ILDYUYIWvVwnoDUB], @UUID[.BWdbDUiFQWDeRvVC]</p></li><li class=\"rd__li  rd__li-spell\"><p>3rd level (3 slots): @UUID[.dPRVIE9zpRoFLWAz], @UUID[.XUC6Zbukug5g8fZ5]</p></li><li class=\"rd__li  rd__li-spell\"><p>4th level (2 slots): @UUID[.O2BiRttclwdf22zg], @UUID[.iJLjocOg2er1bavR]</p></li></ul></div></div>",
+          "value": "<p>蛛化卓尔作为7级施法者，其施法属性为感知（法术豁免DC 14，法术攻击命中+6），它准备了如下的牧师法术： 戏法（随意）：毒气喷涌poison spray，奇术thaumaturgy 1环（4法术位）：灾祸术bane，侦测魔法detect magic， 庇护术sanctuary 2环（3法术位）：定身类人hold person，沉默术silence 3环（3法术位）：鹰眼术clairvoyance，解除魔法dispel magic 4环（2法术位）：预言术divination，行动自如freedom of movement</p><p>@UUID[.fLNrLI6z6tizTByi]{毒气喷溅 Poison Spray}、@UUID[.IXw8JmSUvBTVHF7m]{奇术 Thaumaturgy}、@UUID[.hnC8cF12A7CvBWc5]{灾祸术 Bane}、@UUID[.v77E0z80DievWlEG]{侦测魔法 Detect Magic}、@UUID[.DrEfjTNiFm5WN9dY]{庇护术 Sanctuary}、@UUID[.ILDYUYIWvVwnoDUB]{人类定身术 Hold Person}、@UUID[.BWdbDUiFQWDeRvVC]{沉默术 Silence}、@UUID[.dPRVIE9zpRoFLWAz]{鹰眼术 Clairvoyance}、@UUID[.XUC6Zbukug5g8fZ5]{解除魔法 Dispel Magic}、@UUID[.O2BiRttclwdf22zg]{预言术 Divination}、@UUID[.iJLjocOg2er1bavR]{行动自如 Freedom of Movement}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -5174,7 +5174,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 11300000,
   "ownership": {
     "default": 0,

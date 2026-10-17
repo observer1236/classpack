@@ -1,5 +1,5 @@
 {
-  "name": "Roc (MM'14)",
+  "name": "鹏鸟 Roc (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -545,10 +545,10 @@
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>At first sight, a roc's silhouette looks much like any other bird of prey. As it descends, however, its unearthly size becomes terrifyingly clear. In flight, a roc's wingspan spreads two hundred feet or more. At rest, perched upon the mountain peaks that are its home, this monstrous bird rivals the oldest dragons in size.</p><div data-roll-name-ancestor=\"Sky Titans\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Sky Titans.</span></span> In the ancient days when giants battled dragons for control of the world, Annam, the father of the giant gods, created the rocs so that his worshipers might challenge the dragons' dominance of the air.</p><p>When the war ended, the rocs were freed from giant domination and spread throughout the world.</p><p>Though cloud giants and storm giants sometimes tame these great birds, rocs treat even giants as potential prey. They fly great distances in search of food, soaring high above the clouds to reach their favored hunting grounds. A roc seldom hunts swift or small creatures, and it ignores towns and forests where prey can easily take cover. When it locates a large and slow-moving target such as a giant, a whale, or an elephant, a roc dives down to snatch its prey in its massive talons.</p></div><div data-roll-name-ancestor=\"Remote and Alone\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Remote and Alone.</span></span> Rocs are solitary creatures that can live for centuries. They lair in nests made from trees, tents, broken ships, and the remains of caravans they carry off, placing these massive tangles in mountain clefts out of the reach of lesser creatures.</p><p>Sometimes a roc's nest contains treasures from the caravans or ships they raid, but these creatures are heedless of such baubles. More rarely, a nest holds eggs that are taller than a human, produced by the rocs' infrequent mating.</p></div></div></div>",
+        "value": "<h3>鹏鸟Roc</h3><p>乍看之下，鹏鸟的身影与其他的猛禽很相似。然而，随着它降落，其惊异骇人的体型便表露无遗。鹏鸟在飞行时翼展200多尺。这种与古龙比肩的巨鸟歇息时，必定栖息在其山峰顶端的巢穴中。</p><p><strong>空中泰坦Sky Titans。</strong>早在巨人与龙族争夺世界霸权的远古时代，巨人父神安南Annam创作了鹏鸟，以便其崇拜者可以挑战龙族在空中的统治地位。战争结束后，鹏鸟便从巨人的控制中解脱，并开始在世界各地繁衍生息。</p><p>虽然云巨人和风暴巨人有时会驯服这些大鸟，但鹏鸟们也会巨人视为猎物。它们会飞到很远的地方觅食，云层之上便是它们最爱的狩猎场。鹏鸟很少捕猎敏捷或小型的生物，也不会选择猎物容易藏身的城镇和森林。而当它锁定一个巨大、缓慢移动的目标时（比如巨人、鲸鱼或大象），鹏鸟便会俯冲下来，用去巨大的爪子抓住猎物。</p><p><strong>偏远和孤独Remote and Alone。</strong>鹏鸟是一种寿命长达几个世纪的独居动物。它们四处带来树木、帐篷、破船和商队残骸互相纠结成巨大鸟巢，并设置在山崖上低等生物难以触及的裂缝之中。</p><p>有时候，鹏鸟的巢穴中会保存着其遭其洗劫商队或船只的珍宝，而这些生物并不在意这些小玩意。鸟巢中还会有比人类还高的鸟蛋，只是鹏鸟甚少交配产卵因此这种情况更为罕见。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -641,7 +641,7 @@
     "rolls": {}
   },
   "prototypeToken": {
-    "name": "Roc",
+    "name": "鹏鸟 Roc (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -735,7 +735,7 @@
   "items": [
     {
       "_id": "yUe8CnCNCU1r2Z5y",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -747,7 +747,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The roc makes two attacks: one with its beak and one with its talons.</p></div>",
+          "value": "<p>鹏鸟发动两次攻击：一次喙啄和一次禽爪攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -940,7 +940,7 @@
     },
     {
       "_id": "AbzAvfHB6dlZ5k1m",
-      "name": "Beak",
+      "name": "喙啄 Beak",
       "type": "weapon",
       "system": {
         "source": {
@@ -952,7 +952,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+13]]{+13} to hit, reach 10 ft., one target. <i>Hit:</i> 27 ([[/damage 4d8 + 9 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+13，触及10尺，单一目标。命中：27（[[/damage 4d8 + 9 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1230,7 +1230,7 @@
     },
     {
       "_id": "RtrbAbLLnEnRiTBX",
-      "name": "Talons",
+      "name": "禽爪 Talons",
       "type": "weapon",
       "system": {
         "source": {
@@ -1242,7 +1242,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+13]]{+13} to hit, reach 5 ft., one target. <i>Hit:</i> 23 ([[/damage 4d6 + 9 type=slashing]]) damage, and the target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">19</span>). Until this grapple ends, the target is &amp;Reference[condition=restrained], and the roc can't use its talons on another target.</p></div>",
+          "value": "<p>近战武器攻击：命中+13，触及5尺，单一目标。命中：23（[[/damage 4d6 + 9 type=slashing]]）点挥砍伤害，目标被擒抱（逃脱DC 19）。直至擒抱终止前，该目标被束缚，且该鹏鸟无法用其禽爪攻击另一个目标。</p>",
           "chat": ""
         },
         "range": {
@@ -1520,7 +1520,7 @@
     },
     {
       "_id": "hIsfAGv3TGrbah4A",
-      "name": "Keen Sight",
+      "name": "敏锐视觉 Keen Sight",
       "type": "feat",
       "system": {
         "source": {
@@ -1532,7 +1532,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The roc has advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div>",
+          "value": "<p>鹏鸟依赖视觉进行的感知（察觉）检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1588,7 +1588,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 33800000,
   "ownership": {
     "default": 0,
