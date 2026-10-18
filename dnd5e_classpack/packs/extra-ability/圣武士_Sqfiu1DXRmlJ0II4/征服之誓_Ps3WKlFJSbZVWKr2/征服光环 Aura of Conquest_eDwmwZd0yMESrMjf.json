@@ -5,7 +5,7 @@
   "img": "icons/magic/control/debuff-energy-hold-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>         从7级起，只要你并未失能，你便弥漫出一阵威吓的灵光。光环包括你的格子，从你向各个方向延伸10尺，它会被全掩蔽所阻挡。</p>\n<p>         若一个生物恐慌于你，当其处于此光环内，其速度降为0，若其在光环内开始其回合，则受到等于你圣武士等级一半的心灵伤害。</p>\n<p>         从18级，此光环的距离增加到30尺。</p>",
+      "value": "<p>从7级起，只要你未处于 &Reference[condition=incapacitated apply=false]{失能Incapacitated} ，你会弥漫出一阵浩荡的灵光。灵光以你为中心的向周围扩散10尺，但无法穿透全身掩护。</p>\n<p>若一个生物 &Reference[condition=frightened apply=false]{恐慌Frightened} 于你，且其处于此灵光内时，其速度降为0。若它在灵光内开始其回合，它还将受到等同于你圣武士等级一半的心灵伤害。</p>\n<p>自18级起，此灵光的范围增加至30尺。</p>",
       "chat": ""
     },
     "source": {

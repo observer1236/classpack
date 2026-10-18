@@ -1,11 +1,11 @@
 {
   "_id": "urASqqnLB2uWHEyI",
-  "name": "魔能祈唤:魔能斩击 Eldritch Invocations: Eldritch Smite",
+  "name": "魔能祈唤：魔能斩 Eldritch Invocations: Eldritch Smite",
   "type": "feat",
   "img": "icons/weapons/swords/sword-runed-glowing.webp",
   "system": {
     "description": {
-      "value": "<p>    每回合一次，当你以契约武器命中一个生物，你可以消耗一个邪术士法术位，对目标造成额外[[/r 1d8]]+每法术位等级[[/damage 1d8 type=force]]{1d8}的力场伤害，如果目标体型是巨型或更小，你可以将它击倒。</p>",
+      "value": "<p>每回合一次，当你用契约武器命中一个生物时，你可以消耗一个魔契师法术位，以此对目标造成额外 [[/r 1d8]]{1d8}+每法术位等级[[/damage 1d8 type=force]]{1d8} 点的力场伤害，如果目标的体型在巨型或以下，则你还可以将他击入 &Reference[condition=prone apply=false]{倒地Prone}。</p>",
       "chat": ""
     },
     "source": {
