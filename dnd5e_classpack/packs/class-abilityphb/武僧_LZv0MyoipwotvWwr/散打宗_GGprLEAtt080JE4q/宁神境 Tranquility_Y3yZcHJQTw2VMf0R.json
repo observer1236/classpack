@@ -48,9 +48,10 @@
         "_id": "QugFnX29M31CPqAf",
         "sort": 0,
         "activation": {
-          "type": "action",
+          "type": "longRest",
           "value": null,
-          "override": false
+          "override": true,
+          "condition": ""
         },
         "consumption": {
           "scaling": {
@@ -61,6 +62,7 @@
             {
               "type": "itemUses",
               "value": "1",
+              "target": "",
               "scaling": {}
             }
           ]
@@ -70,10 +72,11 @@
           "value": ""
         },
         "duration": {
-          "units": "inst",
+          "units": "day",
           "concentration": false,
-          "override": false,
-          "expiry": null
+          "override": true,
+          "expiry": "longRest",
+          "value": "1"
         },
         "range": {
           "units": "self",
@@ -153,12 +156,16 @@
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": true
+          "requireMagic": true,
+          "identifier": ""
         },
-        "otherActivityId": null,
+        "otherActivityId": "",
         "regionBehavior": {
           "enabled": false,
           "dispositionFilter": -1,

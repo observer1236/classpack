@@ -107,7 +107,6 @@
       "start": null,
       "showIcon": 1,
       "folder": null,
-      "_key": "!items.effects!G8l86fHFRdjOXoXM.FrUmVQPlLk3jCK6d",
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
@@ -118,7 +117,8 @@
         "modifiedTime": 1757268205094,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
-      }
+      },
+      "_key": "!items.effects!G8l86fHFRdjOXoXM.FrUmVQPlLk3jCK6d"
     }
   ],
   "folder": "69kHgFUkU3qQZigm",
@@ -160,7 +160,7 @@
       "macro": {
         "name": "引导神力：毁灭狂怒 Channel Divinity: Destructive Wrath",
         "type": "script",
-        "command": "if (args[0]?.macroPass !== \"postDamageRoll\" || workflow.aborted) return;\nif (workflow.actor?.uuid !== macroItem.actor?.uuid) return;\nif (workflow._classpackDestructiveWrathChecked) return;\n\nconst api = globalThis.dnd5eClasspack;\nif (!api?.resources || !api.dialogUtils) return;\nconst actor = workflow.actor;\nconst resource = actor.items.find(item =>\n  item._stats?.compendiumSource?.endsWith(\".WPevnsjK8Cjd9Fcl\")\n) ?? actor.items.find(item => [\n  \"引导神力(牧师) Channel Divinity\",\n  \"引导神力（牧师） Channel Divinity\",\n  \"引导神力 Channel Divinity\", \"Channel Divinity\"\n].includes(item.name));\nif (!resource || api.resources.remaining(resource) < 1) return;\n\nfunction refresh(roll) {\n  for (const term of roll.terms) {\n    if (term.roll) refresh(term.roll);\n    for (const inner of term.rolls ?? []) refresh(inner);\n    if (term.rolls && Array.isArray(term.results)) {\n      term.results.forEach((result, i) => {\n        if (term.rolls[i]) result.result = term.rolls[i].total;\n      });\n    }\n  }\n  roll._total = roll._evaluateTotal();\n  return roll;\n}\n\nfunction maximize(original) {\n  const revised = original.constructor.fromData(\n    foundry.utils.deepClone(original.toJSON())\n  );\n  const defaults = original.options.type\n    ? [original.options.type] : Array.from(original.options.types ?? []);\n  let changed = false;\n  for (const die of revised.dice) {\n    const explicit = String(die.options.flavor ?? \"\").toLowerCase()\n      .split(/[^a-z]+/).filter(type => Object.hasOwn(CONFIG.DND5E.damageTypes, type));\n    const types = explicit.length ? explicit : defaults.length === 1 ? defaults : [];\n    if (!types.some(type => [\"lightning\", \"thunder\"].includes(type))) continue;\n    for (const result of die.results) {\n      if (result.active === false || result.discarded) continue;\n      if (result.result === die.faces && result.count === undefined) continue;\n      result.result = die.faces;\n      delete result.count;\n      changed = true;\n    }\n  }\n  return { roll: changed ? refresh(revised) : original, changed };\n}\n\nconst groups = [\n  [\"damageRolls\", \"setDamageRolls\"],\n  [\"bonusDamageRolls\", \"setBonusDamageRolls\"],\n  [\"otherDamageRolls\", \"setOtherDamageRolls\"]\n].map(([key, setter]) => {\n  const before = [...(workflow[key] ?? [])];\n  const results = before.map(maximize);\n  return { before, setter, after: results.map(r => r.roll),\n    changed: results.some(r => r.changed) };\n}).filter(group => group.changed);\nif (!groups.length) return;\n\nworkflow._classpackDestructiveWrathChecked = true;\nconst confirmed = await api.dialogUtils.confirm(\n  macroItem.name,\n  \"是否消耗 1 次引导神力，将本次伤害中的闪电和雷鸣伤害骰取最大值？\",\n  { userId: api.firstOwner(actor, true) }\n);\nif (!confirmed) return;\n\nlet receipt;\ntry {\n  receipt = await api.resources.consume([{ itemUuid: resource.uuid, amount: 1 }], {\n    id: `${workflow.uuid ?? workflow.id ?? foundry.utils.randomID()}:${macroItem.uuid}:destructive-wrath`\n  });\n  for (const group of groups) await workflow[group.setter](group.after);\n} catch (error) {\n  // 结算失败时恢复本次原伤害，再退回仍可确认属于本次的资源扣除。\n  for (const group of groups) {\n    try { await workflow[group.setter](group.before); }\n    catch (restoreError) { console.error(\"毁灭狂怒：恢复伤害失败\", restoreError); }\n  }\n  for (const entry of [...(receipt?.entries ?? [])].reverse()) {\n    const item = await fromUuid(entry.itemUuid);\n    if (Number(item?.system.uses.spent) === entry.after) {\n      await item.update({ \"system.uses.spent\": entry.before });\n    }\n  }\n  console.error(\"毁灭狂怒\", error);\n  ui.notifications.error(\"毁灭狂怒未能完成，请检查控制台、伤害结果和引导神力剩余次数。\");\n}",
+        "command": "if (args[0]?.macroPass !== \"postDamageRoll\" || workflow.aborted) return;\nif (workflow.actor?.uuid !== macroItem.actor?.uuid) return;\nif (workflow._classpackDestructiveWrathChecked) return;\n\nconst api = globalThis.dnd5eClasspack;\nif (!api?.resources || !api.dialogUtils) return;\nconst actor = workflow.actor;\nconst resource = actor.items.find(item => item.system.identifier === \"channel-divinity\");\nif (!resource || api.resources.remaining(resource) < 1) return;\n\nfunction refresh(roll) {\n  for (const term of roll.terms) {\n    if (term.roll) refresh(term.roll);\n    for (const inner of term.rolls ?? []) refresh(inner);\n    if (term.rolls && Array.isArray(term.results)) {\n      term.results.forEach((result, i) => {\n        if (term.rolls[i]) result.result = term.rolls[i].total;\n      });\n    }\n  }\n  roll._total = roll._evaluateTotal();\n  return roll;\n}\n\nfunction maximize(original) {\n  const revised = original.constructor.fromData(\n    foundry.utils.deepClone(original.toJSON())\n  );\n  const defaults = original.options.type\n    ? [original.options.type] : Array.from(original.options.types ?? []);\n  let changed = false;\n  for (const die of revised.dice) {\n    const explicit = String(die.options.flavor ?? \"\").toLowerCase()\n      .split(/[^a-z]+/).filter(type => Object.hasOwn(CONFIG.DND5E.damageTypes, type));\n    const types = explicit.length ? explicit : defaults.length === 1 ? defaults : [];\n    if (!types.some(type => [\"lightning\", \"thunder\"].includes(type))) continue;\n    for (const result of die.results) {\n      if (result.active === false || result.discarded) continue;\n      if (result.result === die.faces && result.count === undefined) continue;\n      result.result = die.faces;\n      delete result.count;\n      changed = true;\n    }\n  }\n  return { roll: changed ? refresh(revised) : original, changed };\n}\n\nconst groups = [\n  [\"damageRolls\", \"setDamageRolls\"],\n  [\"bonusDamageRolls\", \"setBonusDamageRolls\"],\n  [\"otherDamageRolls\", \"setOtherDamageRolls\"]\n].map(([key, setter]) => {\n  const before = [...(workflow[key] ?? [])];\n  const results = before.map(maximize);\n  return { before, setter, after: results.map(r => r.roll),\n    changed: results.some(r => r.changed) };\n}).filter(group => group.changed);\nif (!groups.length) return;\n\nworkflow._classpackDestructiveWrathChecked = true;\nconst confirmed = await api.dialogUtils.confirm(\n  macroItem.name,\n  \"是否消耗 1 次引导神力，将本次伤害中的闪电和雷鸣伤害骰取最大值？\",\n  { userId: api.firstOwner(actor, true) }\n);\nif (!confirmed) return;\n\nlet receipt;\ntry {\n  receipt = await api.resources.consume([{ itemUuid: resource.uuid, amount: 1 }], {\n    id: `${workflow.uuid ?? workflow.id ?? foundry.utils.randomID()}:${macroItem.uuid}:destructive-wrath`\n  });\n  for (const group of groups) await workflow[group.setter](group.after);\n} catch (error) {\n  // 结算失败时恢复本次原伤害，再退回仍可确认属于本次的资源扣除。\n  for (const group of groups) {\n    try { await workflow[group.setter](group.before); }\n    catch (restoreError) { console.error(\"毁灭狂怒：恢复伤害失败\", restoreError); }\n  }\n  for (const entry of [...(receipt?.entries ?? [])].reverse()) {\n    const item = await fromUuid(entry.itemUuid);\n    if (Number(item?.system.uses.spent) === entry.after) {\n      await item.update({ \"system.uses.spent\": entry.before });\n    }\n  }\n  console.error(\"毁灭狂怒\", error);\n  ui.notifications.error(\"毁灭狂怒未能完成，请检查控制台、伤害结果和引导神力剩余次数。\");\n}",
         "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
         "scope": "global",
         "author": "dvg25zW2MvzsvMOU",
@@ -170,14 +170,24 @@
         "_id": null,
         "folder": null,
         "sort": 0,
-        "flags": {}
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
       }
     }
   },
   "ownership": {
     "default": 0
   },
-  "_key": "!items!G8l86fHFRdjOXoXM",
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
@@ -188,5 +198,6 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
-  }
+  },
+  "_key": "!items!G8l86fHFRdjOXoXM"
 }
