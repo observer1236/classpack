@@ -28,7 +28,7 @@
     "target": {
       "affects": {
         "choice": false,
-        "type": ""
+        "type": "creature"
       },
       "template": {
         "units": "ft",
@@ -59,8 +59,7 @@
     "properties": [
       "vocal",
       "somatic",
-      "material",
-      "mgc"
+      "material"
     ],
     "activities": {
       "dnd5eactivity000": {
@@ -142,8 +141,8 @@
           "autoTargetType": "any",
           "autoTargetAction": "default",
           "automationOnly": false,
-          "otherActivityCompatible": true,
-          "identifier": "",
+          "otherActivityCompatible": false,
+          "identifier": "jim-cast",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
@@ -171,11 +170,14 @@
           "rollAs": "target"
         },
         "otherActivityId": "none",
-        "img": null,
+        "img": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
           "requireMagic": false
@@ -202,7 +204,366 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
-        "otherActivityAsParentType": true
+        "otherActivityAsParentType": true,
+        "name": ""
+      },
+      "djTuvgYIgPuyC1HJ": {
+        "type": "attack",
+        "name": "",
+        "_id": "djTuvgYIgPuyC1HJ",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "",
+          "override": true,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {
+          "dnd5e_classpack": {
+            "hidden": true
+          }
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": "1d4"
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 4,
+              "bonus": "",
+              "modifiers": [],
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "jim-dart",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "attackMode": "",
+        "ammunition": "",
+        "otherActivityUuid": "",
+        "attackRollPerTarget": "default",
+        "fumbleThreshold": 1
+      },
+      "GmBwXlA151OHGsn0": {
+        "type": "damage",
+        "name": "",
+        "_id": "GmBwXlA151OHGsn0",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "",
+          "override": true,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {
+          "dnd5e_classpack": {
+            "hidden": true
+          }
+        },
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "1",
+              "modifiers": [],
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "otherActivityAsParentType": true,
+          "identifier": "jim-backfire",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
     "identifier": "jims-magic-missile",
@@ -218,7 +579,8 @@
       "itemCondition": "",
       "otherCondition": "",
       "effectCondition": "",
-      "reactionCondition": ""
+      "reactionCondition": "",
+      "onUseMacroName": "[preValidateRoll]ItemMacro,[postAttackRoll]ItemMacro,[preCompleted]ItemMacro,[postActiveEffects]ItemMacro"
     },
     "midiProperties": {
       "confirmTargets": "always",
@@ -233,7 +595,35 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {}
+    "dnd5e": {},
+    "dae": {
+      "macro": {
+        "name": "吉姆的魔法飞弹 Jim's  Magic Missile",
+        "img": "icons/magic/light/projectiles-pink-purple.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const pass = args[0].macroPass;\nconst request = workflow.workflowOptions.jimDart;\n\nif (request) {\n  const batch = MidiQOL.Workflow.getWorkflow(request.parent)?.jimDarts;\n  const dart = batch?.entries[request.index];\n  if (!dart) return;\n\n  if (pass === \"postAttackRoll\") {\n    dart.workflow = workflow;\n    workflow.keepActivityCard = true;\n    await MidiQOL.Workflow.removeItemCardButtons(workflow.itemCardUuid, {\n      removeAttackButtons: true, removeDamageButtons: true\n    });\n    dart.attack.resolve(workflow);\n    // 保留本枚飞弹的原工作流，所有攻击完成前不进入伤害阶段。\n    await dart.gate.promise;\n    if (batch.fumble || batch.cancelled || workflow.aborted) {\n      workflow.aborted = true;\n      return;\n    }\n    workflow.workflowOptions.autoRollDamage = \"onHit\";\n  }\n\n  if (pass === \"preCompleted\") {\n    dart.finished = true;\n    dart.attack.resolve(null);\n    dart.gate.resolve();\n    dart.finish.resolve();\n  }\n  return;\n}\n\nif (workflow.activity.identifier !== \"jim-cast\") return;\n\nif (pass === \"preValidateRoll\") {\n  const count = workflow.spellLevel + 2;\n  const targets = workflow.targets.size ? [...workflow.targets] : MidiQOL.findNearby(null, workflow.token, 120, {\n    includeToken: true, includeIncapacitated: true\n  }).filter(t => [\"character\", \"npc\"].includes(t.actor.type)\n    && MidiQOL.canSee(workflow.token, t));\n\n  if (!targets.length) {\n    ui.notifications.warn(\"吉姆的魔法飞弹：120 尺内没有可见的生物。\");\n    await workflow.refundConsumption();\n    workflow.aborted = true;\n    return;\n  }\n\n  let assigned;\n  if (targets.length === 1) {\n    assigned = Array(count).fill(targets[0].document.uuid);\n  } else {\n    do {\n      const [allocation] = await dnd5eClasspack.dialogUtils.selectTargetDialog(\n        \"吉姆的魔法飞弹\", `<p>分配 ${count} 枚飞弹。</p>`, targets,\n        { type: \"selectAmount\", maxAmount: count, skipDeadAndUnconscious: false }\n      );\n      if (!allocation) {\n        await workflow.refundConsumption();\n        workflow.aborted = true;\n        return;\n      }\n      assigned = allocation.flatMap(({ document: target, value }) =>\n        Array(Number(value)).fill(target.document.uuid)\n      );\n      if (assigned.length !== count) ui.notifications.warn(`请分配全部 ${count} 枚飞弹。`);\n    } while (assigned.length !== count);\n  }\n  workflow.jimDarts = {\n    count, assigned, entries: [], cancelled: false, fumble: false,\n    targetIds: [...game.user.targets].map(t => t.id)\n  };\n  workflow.targets = new Set(assigned.map(uuid => fromUuidSync(uuid).object));\n  return;\n}\n\nif (pass !== \"postActiveEffects\" || !workflow.jimDarts || workflow.jimDarts.started) return;\nconst batch = workflow.jimDarts;\nbatch.started = true;\n\nconst spell = await fromUuid(macroItem.uuid);\nconst dartActivity = spell.system.activities.find(a => a.identifier === \"jim-dart\");\nconst backfire = spell.system.activities.find(a => a.identifier === \"jim-backfire\");\nconst scaling = Math.max(0, workflow.spellLevel - spell.system.level);\n\nfunction deferred() {\n  let resolve;\n  const promise = new Promise(r => { resolve = r; });\n  return { promise, resolve };\n}\n\nfunction copyActivity(activity) {\n  const path = `system.activities.${activity.id}`;\n  return spell.clone({\n    [`${path}.flags.dnd5e_classpack.hidden`]: false,\n    [`${path}.midiProperties.forceConsumeDialog`]: \"never\",\n    [`${path}.midiProperties.forceRollDialog`]: \"never\",\n    [`${path}.midiProperties.forceDamageDialog`]: \"never\",\n    ...(activity.attack ? { [`${path}.attackRollPerTarget`]: \"never\" } : {})\n  }, { keepId: true }).system.activities.get(activity.id);\n}\n\ntry {\n  // 若施法反应已取消法术对某个目标的效应，不再向该目标发射。\n  const assigned = batch.assigned.filter(uuid =>\n    workflow.targets.has(fromUuidSync(uuid).object)\n  );\n  for (const [index, uuid] of assigned.entries()) {\n    const dart = {\n      attack: deferred(), gate: deferred(), finish: deferred(),\n      workflow: null, finished: false\n    };\n    batch.entries.push(dart);\n    const used = await copyActivity(dartActivity).use({\n      scaling, consume: false,\n      concentration: { begin: false },\n      midiOptions: {\n        targetUuids: [uuid],\n        targetsToUse: new Set([fromUuidSync(uuid).object]),\n        workflowOptions: {\n          autoRollAttack: true, autoRollDamage: \"none\",\n          fastForwardAttack: true, fastForwardDamage: true,\n          targetConfirmation: \"never\",\n          forceCompletion: true,\n          jimDart: { parent: workflow.id, index }\n        }\n      }\n    }, { configure: false }, { create: true });\n\n    if (!used) {\n      dart.finished = true;\n      dart.finish.resolve();\n      batch.cancelled = true;\n      break;\n    }\n    const attack = await dart.attack.promise;\n    if (!attack || attack.aborted) {\n      batch.cancelled = true;\n      break;\n    }\n    if (attack.d20AttackRoll === 1) {\n      batch.fumble = true;\n      break;\n    }\n  }\n\n  for (const dart of batch.entries) {\n    dart.gate.resolve();\n    await dart.finish.promise;\n  }\n\n  if (batch.fumble && !batch.cancelled) {\n    const damage = copyActivity(backfire);\n    damage.updateSource({\n      \"damage.parts\": [{\n        types: [\"force\"],\n        custom: { enabled: true, formula: String(batch.count) }\n      }]\n    });\n    await MidiQOL.completeActivityUse(damage, {\n      scaling, consume: false,\n      concentration: { begin: false },\n      midiOptions: {\n        targetUuids: [workflow.token.document.uuid], ignoreUserTargets: true,\n        workflowOptions: { autoRollDamage: \"always\", fastForwardDamage: true }\n      }\n    }, { configure: false }, { create: true });\n  }\n} finally {\n  // 中途取消或报错时，也放行等待中的飞弹并阻止其造成伤害。\n  batch.cancelled = true;\n  for (const dart of batch.entries) {\n    if (!dart.workflow) dart.finish.resolve();\n    dart.gate.resolve();\n  }\n  await Promise.all(batch.entries.map(dart => dart.finish.promise));\n  await dnd5eClasspack.updateTargets(batch.targetIds);\n  delete workflow.jimDarts;\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
+    }
   },
   "_id": "tEy4rtxkojrzSLm7",
   "folder": "iqabSKPToeKB7VcK",
