@@ -24,8 +24,81 @@
     },
     "requirements": "游侠等级 1",
     "activities": {},
-    "identifier": "",
-    "advancement": {},
+    "identifier": "natural-explorer",
+    "advancement": {
+      "8cd689a4f4adb049": {
+        "_id": "8cd689a4f4adb049",
+        "type": "ItemChoice",
+        "name": "偏好地形",
+        "img": "icons/magic/nature/tree-roots-glow-yellow.webp",
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": false
+            },
+            "6": {
+              "count": 1,
+              "replacement": false
+            },
+            "10": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.8a3e06a61346566f",
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.409ffe507e52c143",
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.1563b73280355281",
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.0c8da885575bff64",
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.e5dc464658f3df42",
+              "sort": 4
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.11ac8491baf3c5bd",
+              "sort": 5
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.8e16d36d46f5d866",
+              "sort": 6
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.da32697683f0d866",
+              "sort": 7
+            }
+          ],
+          "spell": null,
+          "restriction": {
+            "type": "class",
+            "subtype": "",
+            "list": [],
+            "school": []
+          },
+          "sorting": "m"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {},
+        "hint": ""
+      }
+    },
     "cover": null,
     "crewed": false,
     "enchant": {},
