@@ -39,6 +39,7 @@ import { createRollInterventionApi } from "./api/roll-interventions.mjs";
 import { registerLucky2014 } from "./api/lucky2014.mjs";
 import { installSpellAdvancementRules } from "./advancement-spells.mjs";
 import { registerCantripFormulas } from "./cantrip-formulas.mjs";
+import { registerChannelDivinity } from "./channel-divinity.mjs";
 
 const api = {
   createActorItems,
@@ -224,6 +225,7 @@ Hooks.once("ready", () => {
   api.rollDisplay.install();
   installSpellAdvancementRules();
   registerCantripFormulas();
+  registerChannelDivinity();
   try {
     if (game.modules.get("midi-qol")?.active && api.socket && globalThis.libWrapper) {
       api.lucky2014.prepareLegacyBridge();
