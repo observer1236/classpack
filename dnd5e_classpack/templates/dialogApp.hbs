@@ -44,7 +44,7 @@
         {{else if (eq kind "amounts")}}
             <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
                 {{#each slots}}
-                    <div class="cp-dialog-slot">
+                    <div class="cp-dialog-slot cp-dialog-slot--amount">
                         <select id="cp-amount-{{@../index}}-{{@index}}" class="cp-dialog-select" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}">
                             {{#each choices}}
                                 <option value="{{this}}" {{#if (gt this ../ceiling)}}disabled{{/if}} {{#if (eq this ../value)}}selected{{/if}}>{{this}}</option>

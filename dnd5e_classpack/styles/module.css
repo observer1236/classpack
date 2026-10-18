@@ -103,6 +103,21 @@
     min-width: 0;
 }
 
+.cp-dialog-slot--amount > .cp-dialog-select {
+    flex: 0 0 5rem;
+    width: 5rem;
+}
+
+.cp-dialog-slot--amount > .cp-dialog-caption {
+    flex: 1 1 0;
+}
+
+.cp-dialog-slot--amount .cp-dialog-text {
+    min-width: 0;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
 .cp-dialog-multi {
     display: flex;
     align-items: flex-end;
