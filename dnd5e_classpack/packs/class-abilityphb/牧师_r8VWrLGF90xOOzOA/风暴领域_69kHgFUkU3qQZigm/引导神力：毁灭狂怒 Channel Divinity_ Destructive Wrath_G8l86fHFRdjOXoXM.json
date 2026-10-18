@@ -44,50 +44,20 @@
     {
       "name": "引导神力-毁灭狂怒",
       "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
-      "origin": null,
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.G8l86fHFRdjOXoXM",
       "_id": "FrUmVQPlLk3jCK6d",
       "type": "base",
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.activation",
-            "value": "['lightning', 'thunder'].some(type=>damageTypes[type])",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "n7o0jRd7gdn81H1o",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.damage.all",
-            "value": "ItemMacro",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "ni8KxazdQNmLI3LI",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.count",
-            "value": "ItemUses.引导神力 Channel Divinity",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "QUPJOJc6cgGhLyDa",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
             "key": "flags.midi-qol.onUseMacroName",
-            "value": "ItemMacro,postDamageRoll",
             "type": "custom",
-            "priority": 20,
+            "value": "ItemMacro,postDamageRoll",
             "phase": "initial",
-            "replacement": "",
+            "_id": "9hllSfdvkV6HKzZN",
             "conditions": "{}",
-            "_id": "2c90b121980beaac"
+            "replacement": "",
+            "priority": null
           }
         ],
         "rider": {
@@ -124,7 +94,8 @@
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [],
-          "applicationMode": "dnd5e"
+          "applicationMode": "dnd5e",
+          "expiryMode": "default"
         },
         "dnd5e": {
           "riders": {}
@@ -133,6 +104,10 @@
           "overlay": false
         }
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!G8l86fHFRdjOXoXM.FrUmVQPlLk3jCK6d",
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
@@ -143,11 +118,7 @@
         "modifiedTime": 1757268205094,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
-      },
-      "start": null,
-      "showIcon": 1,
-      "folder": null,
-      "_key": "!items.effects!G8l86fHFRdjOXoXM.FrUmVQPlLk3jCK6d"
+      }
     }
   ],
   "folder": "69kHgFUkU3qQZigm",
@@ -189,13 +160,24 @@
       "macro": {
         "name": "引导神力：毁灭狂怒 Channel Divinity: Destructive Wrath",
         "type": "script",
-        "command": "function copyRoll(roll) {\n  return roll.constructor.fromData(foundry.utils.deepClone(roll.toJSON()));\n}\nfunction refreshRoll(roll) {\n  for (const term of roll.terms) {\n    if (term.roll) refreshRoll(term.roll);\n    for (const inner of term.rolls ?? []) refreshRoll(inner);\n    for (const inner of term.terms ?? []) if (inner?.terms) refreshRoll(inner);\n  }\n  roll._total = roll._evaluateTotal();\n  return roll;\n}\nfunction weaponDice(roll, workflow) {\n  if (workflow.item?.type !== \"weapon\" || !workflow.activity?.damage?.includeBase) return [];\n  const part = workflow.activity.damage.parts[0];\n  if (!part) return [];\n  const formula = part.formula ?? part.custom?.formula;\n  if (!formula) return [];\n  const base = foundry.dice.Roll.create(formula, workflow.activity.getRollData());\n  return roll.dice.slice(0, base.dice.length);\n}\nasync function rerollLowWeaponDice(roll, workflow) {\n  const properties = workflow.item?.system?.properties;\n  if (workflow.activity?.actionType !== \"mwak\" || workflow.attackMode !== \"twoHanded\"\n    || ![\"two\", \"ver\"].some(key => properties?.has(key))) return false;\n  let changed = false;\n  for (const die of weaponDice(roll, workflow)) {\n    if (die.options.dnd5e_classpackGreatWeaponFighting) continue;\n    die.options.dnd5e_classpackGreatWeaponFighting = true;\n    changed = true;\n    for (const result of [...die.results]) {\n      if (!result.active || result.result > 2) continue;\n      const replacement = new die.constructor({ number: 1, faces: die.faces });\n      await replacement.evaluate();\n      result.active = false;\n      result.rerolled = true;\n      die.results.push(...replacement.results);\n    }\n  }\n  if (changed) refreshRoll(roll);\n  return changed;\n}\n\nfunction maximizeElement(original) {\n  const revised = copyRoll(original);\n  const defaults = original.options.types ?? [original.options.type].filter(Boolean);\n  for (const die of revised.dice) {\n    const explicit = String(die.options.flavor ?? \"\").toLowerCase().split(/[^a-z]+/)\n      .filter(type => Object.hasOwn(CONFIG.DND5E.damageTypes, type));\n    const types = explicit.length ? explicit : defaults.length === 1 ? defaults : [];\n    if (!types.some(type => [\"lightning\", \"thunder\"].includes(type))) continue;\n    for (const result of die.results.filter(result => result.active)) {\n      result.result = die.faces;\n      delete result.count;\n    }\n  }\n  return refreshRoll(revised);\n}\nif (args[0]?.tag === \"optional\" && args[0].roll) {\n  workflow._classpackDestructiveWrath = true;\n  return maximizeElement(args[0].roll);\n}\nif (args[0]?.macroPass === \"postDamageRoll\" && workflow._classpackDestructiveWrath) {\n  delete workflow._classpackDestructiveWrath;\n  await workflow.setDamageRolls(workflow.damageRolls.map(maximizeElement));\n}\n"
+        "command": "if (args[0]?.macroPass !== \"postDamageRoll\" || workflow.aborted) return;\nif (workflow.actor?.uuid !== macroItem.actor?.uuid) return;\nif (workflow._classpackDestructiveWrathChecked) return;\n\nconst api = globalThis.dnd5eClasspack;\nif (!api?.resources || !api.dialogUtils) return;\nconst actor = workflow.actor;\nconst resource = actor.items.find(item =>\n  item._stats?.compendiumSource?.endsWith(\".WPevnsjK8Cjd9Fcl\")\n) ?? actor.items.find(item => [\n  \"引导神力(牧师) Channel Divinity\",\n  \"引导神力（牧师） Channel Divinity\",\n  \"引导神力 Channel Divinity\", \"Channel Divinity\"\n].includes(item.name));\nif (!resource || api.resources.remaining(resource) < 1) return;\n\nfunction refresh(roll) {\n  for (const term of roll.terms) {\n    if (term.roll) refresh(term.roll);\n    for (const inner of term.rolls ?? []) refresh(inner);\n    if (term.rolls && Array.isArray(term.results)) {\n      term.results.forEach((result, i) => {\n        if (term.rolls[i]) result.result = term.rolls[i].total;\n      });\n    }\n  }\n  roll._total = roll._evaluateTotal();\n  return roll;\n}\n\nfunction maximize(original) {\n  const revised = original.constructor.fromData(\n    foundry.utils.deepClone(original.toJSON())\n  );\n  const defaults = original.options.type\n    ? [original.options.type] : Array.from(original.options.types ?? []);\n  let changed = false;\n  for (const die of revised.dice) {\n    const explicit = String(die.options.flavor ?? \"\").toLowerCase()\n      .split(/[^a-z]+/).filter(type => Object.hasOwn(CONFIG.DND5E.damageTypes, type));\n    const types = explicit.length ? explicit : defaults.length === 1 ? defaults : [];\n    if (!types.some(type => [\"lightning\", \"thunder\"].includes(type))) continue;\n    for (const result of die.results) {\n      if (result.active === false || result.discarded) continue;\n      if (result.result === die.faces && result.count === undefined) continue;\n      result.result = die.faces;\n      delete result.count;\n      changed = true;\n    }\n  }\n  return { roll: changed ? refresh(revised) : original, changed };\n}\n\nconst groups = [\n  [\"damageRolls\", \"setDamageRolls\"],\n  [\"bonusDamageRolls\", \"setBonusDamageRolls\"],\n  [\"otherDamageRolls\", \"setOtherDamageRolls\"]\n].map(([key, setter]) => {\n  const before = [...(workflow[key] ?? [])];\n  const results = before.map(maximize);\n  return { before, setter, after: results.map(r => r.roll),\n    changed: results.some(r => r.changed) };\n}).filter(group => group.changed);\nif (!groups.length) return;\n\nworkflow._classpackDestructiveWrathChecked = true;\nconst confirmed = await api.dialogUtils.confirm(\n  macroItem.name,\n  \"是否消耗 1 次引导神力，将本次伤害中的闪电和雷鸣伤害骰取最大值？\",\n  { userId: api.firstOwner(actor, true) }\n);\nif (!confirmed) return;\n\nlet receipt;\ntry {\n  receipt = await api.resources.consume([{ itemUuid: resource.uuid, amount: 1 }], {\n    id: `${workflow.uuid ?? workflow.id ?? foundry.utils.randomID()}:${macroItem.uuid}:destructive-wrath`\n  });\n  for (const group of groups) await workflow[group.setter](group.after);\n} catch (error) {\n  // 结算失败时恢复本次原伤害，再退回仍可确认属于本次的资源扣除。\n  for (const group of groups) {\n    try { await workflow[group.setter](group.before); }\n    catch (restoreError) { console.error(\"毁灭狂怒：恢复伤害失败\", restoreError); }\n  }\n  for (const entry of [...(receipt?.entries ?? [])].reverse()) {\n    const item = await fromUuid(entry.itemUuid);\n    if (Number(item?.system.uses.spent) === entry.after) {\n      await item.update({ \"system.uses.spent\": entry.before });\n    }\n  }\n  console.error(\"毁灭狂怒\", error);\n  ui.notifications.error(\"毁灭狂怒未能完成，请检查控制台、伤害结果和引导神力剩余次数。\");\n}",
+        "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
+        "scope": "global",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {}
       }
     }
   },
   "ownership": {
     "default": 0
   },
+  "_key": "!items!G8l86fHFRdjOXoXM",
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
@@ -206,6 +188,5 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
-  },
-  "_key": "!items!G8l86fHFRdjOXoXM"
+  }
 }

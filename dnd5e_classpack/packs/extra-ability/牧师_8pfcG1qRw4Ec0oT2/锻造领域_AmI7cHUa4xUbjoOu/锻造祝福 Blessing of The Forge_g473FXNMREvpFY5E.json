@@ -29,95 +29,100 @@
     },
     "requirements": "锻造领域等级 1",
     "activities": {
-      "dnd5eactivity000": {
-        "_id": "dnd5eactivity000",
-        "type": "utility",
+      "Z3rEbndJhil1W85O": {
+        "type": "enchant",
+        "name": "",
+        "_id": "Z3rEbndJhil1W85O",
+        "img": "",
+        "sort": 0,
         "activation": {
-          "type": "special",
-          "value": null,
-          "condition": "",
-          "override": false
+          "type": "action",
+          "override": false,
+          "condition": ""
         },
+        "behaviors": [],
         "consumption": {
-          "targets": [
-            {
-              "type": "itemUses",
-              "target": "",
-              "value": "1",
-              "scaling": {
-                "mode": "",
-                "formula": ""
-              }
-            }
-          ],
           "scaling": {
-            "allowed": false,
-            "max": ""
+            "allowed": false
           },
-          "spellSlot": true
+          "spellSlot": true,
+          "targets": []
         },
         "description": {
-          "chatFlavor": "",
-          "value": ""
+          "value": "",
+          "chatFlavor": ""
         },
         "duration": {
-          "concentration": false,
           "units": "inst",
-          "special": "",
-          "override": false,
-          "expiry": null
+          "expiry": null,
+          "concentration": false,
+          "override": false
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "vEsfbrSubFQsEqSD",
+            "uuid": null,
+            "level": {},
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "flags": {},
         "range": {
           "units": "self",
-          "special": "",
-          "override": false
+          "override": false,
+          "special": ""
         },
         "target": {
           "template": {
-            "count": "",
             "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
+            "stationary": false,
             "units": "ft",
-            "stationary": false
+            "type": ""
           },
           "affects": {
-            "count": "",
-            "type": "",
             "choice": false,
-            "special": ""
+            "type": ""
           },
-          "prompt": true,
-          "override": false
+          "override": false,
+          "prompt": true
         },
         "uses": {
           "spent": 0,
-          "max": "",
-          "recovery": []
+          "recovery": [],
+          "max": ""
         },
-        "roll": {
-          "formula": "",
-          "name": "",
-          "prompt": false,
-          "visible": false
-        },
-        "sort": 0,
-        "img": null,
-        "behaviors": [],
-        "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": false
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "enchant": {
+          "self": false
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "categories": [
+            "simpleM",
+            "simpleR",
+            "martialM",
+            "martialR"
+          ],
+          "properties": [],
+          "type": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
-        "otherActivityId": null,
+        "otherActivityId": "none",
         "macroData": {
           "name": "",
           "command": ""
@@ -188,8 +193,7 @@
           "animationType": "",
           "animationSpeed": 5,
           "animationIntensity": 5
-        },
-        "otherActivityAsParentType": true
+        }
       }
     },
     "identifier": "-blessing-of-the-forge",
@@ -204,7 +208,78 @@
     },
     "properties": []
   },
-  "effects": [],
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "锻造祝福 Blessing of The Forge",
+      "img": "icons/skills/trades/construction-carpentry-hammer.webp",
+      "disabled": true,
+      "transfer": false,
+      "_id": "vEsfbrSubFQsEqSD",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "type": "add",
+            "value": "mgc",
+            "phase": "initial",
+            "_id": "FZSPVIBvIrV71695",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          },
+          {
+            "key": "system.magicalBonus",
+            "type": "add",
+            "value": "+1",
+            "phase": "initial",
+            "_id": "K2yCNo5XlzfYkvC2",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "applicationMode": "default",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_key": "!items.effects!g473FXNMREvpFY5E.vEsfbrSubFQsEqSD"
+    }
+  ],
   "folder": "AmI7cHUa4xUbjoOu",
   "sort": 36000000,
   "flags": {
@@ -238,6 +313,10 @@
       }
     }
   },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!g473FXNMREvpFY5E",
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
@@ -248,9 +327,5 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
-  },
-  "ownership": {
-    "default": 0
-  },
-  "_key": "!items!g473FXNMREvpFY5E"
+  }
 }
