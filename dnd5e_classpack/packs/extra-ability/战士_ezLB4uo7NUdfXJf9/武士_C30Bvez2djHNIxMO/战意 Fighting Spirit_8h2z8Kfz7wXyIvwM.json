@@ -235,8 +235,8 @@
       "name": "战意 Fighting Spirit",
       "origin": null,
       "duration": {
-        "value": null,
-        "units": "seconds",
+        "value": 1,
+        "units": "turns",
         "expiry": "turnEnd",
         "expired": false
       },
@@ -250,7 +250,13 @@
           "showIcon": false,
           "durationExpression": "",
           "specialDuration": [],
-          "applicationMode": "dnd5e"
+          "applicationMode": "dnd5e",
+          "enableCondition": "",
+          "expiryMode": "default",
+          "macroRepeat": "none",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
         },
         "core": {
           "overlay": false
@@ -262,12 +268,12 @@
       "statuses": [],
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "14.368",
+        "coreVersion": "14.369",
         "systemId": "dnd5e",
         "systemVersion": "6.0.5",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
+        "createdTime": 1792329732359,
+        "modifiedTime": 1792329736573,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
