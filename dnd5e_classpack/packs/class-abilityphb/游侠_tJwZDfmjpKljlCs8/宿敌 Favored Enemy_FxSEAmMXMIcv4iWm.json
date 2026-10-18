@@ -24,8 +24,105 @@
     },
     "requirements": "游侠等级 1",
     "activities": {},
-    "identifier": "",
-    "advancement": {},
+    "identifier": "favored-enemy",
+    "advancement": {
+      "2c04f6bd1f783b78": {
+        "_id": "2c04f6bd1f783b78",
+        "type": "ItemChoice",
+        "name": "宿敌类型",
+        "img": "icons/creatures/abilities/dragon-breath-purple.webp",
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": false
+            },
+            "6": {
+              "count": 1,
+              "replacement": false
+            },
+            "14": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.85dfab2ff125c836",
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.75eea149fa7bfed7",
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.8454bb780e18a71c",
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.a567125d66deafec",
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.6db4e141ae40e54f",
+              "sort": 4
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.d68d86e6ab9893c7",
+              "sort": 5
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.c6cd1e9e41515245",
+              "sort": 6
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.e166b48dbd899dd5",
+              "sort": 7
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.f257cd2b9bd4cd54",
+              "sort": 8
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.2f65b7a408735726",
+              "sort": 9
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.cf017bbb41023304",
+              "sort": 10
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.0d8c9fdc40f33098",
+              "sort": 11
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.8d276e0e9db5ac9f",
+              "sort": 12
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.e086723dfc2f3cff",
+              "sort": 13
+            }
+          ],
+          "spell": null,
+          "restriction": {
+            "type": "class",
+            "subtype": "",
+            "list": [],
+            "school": []
+          },
+          "sorting": "m"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {},
+        "hint": ""
+      }
+    },
     "cover": null,
     "crewed": false,
     "enchant": {},

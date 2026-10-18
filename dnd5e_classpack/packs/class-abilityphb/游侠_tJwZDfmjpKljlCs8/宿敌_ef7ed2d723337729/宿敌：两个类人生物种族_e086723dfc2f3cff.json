@@ -1,0 +1,198 @@
+{
+  "_id": "e086723dfc2f3cff",
+  "name": "宿敌：两个类人生物种族",
+  "type": "feat",
+  "img": "icons/environment/people/group.webp",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>你选择两个类人生物种族作为宿敌。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 91",
+      "book": "PHB",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "游侠等级 1",
+    "activities": {},
+    "identifier": "favored-enemy-humanoids",
+    "advancement": {
+      "62606b4f6ed151d4": {
+        "_id": "62606b4f6ed151d4",
+        "type": "ItemChoice",
+        "name": "宿敌：两个类人生物种族",
+        "img": "icons/creatures/abilities/dragon-breath-purple.webp",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.22a335e19e7790e4",
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.e181961a250c2ebe",
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.97bcbb67afbafa94",
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.85c664bd9ddb00a3",
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.68893c0640980ffd",
+              "sort": 4
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.a414a34af1652b7b",
+              "sort": 5
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.da899dd95dd45838",
+              "sort": 6
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.d282b4781c17bbda",
+              "sort": 7
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.bd844cf3a0c5765f",
+              "sort": 8
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.2ccc0a511f090426",
+              "sort": 9
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.f579717ea4226dad",
+              "sort": 10
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.7af5800e30b71eb9",
+              "sort": 11
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.281b783f7f31212f",
+              "sort": 12
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.bc47eeb3d9a88127",
+              "sort": 13
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.2cb716c66bed11f2",
+              "sort": 14
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.70800fa2f011dcd3",
+              "sort": 15
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.0754b4d0fa432a3f",
+              "sort": 16
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.be71008eb9b7b62a",
+              "sort": 17
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.aa2394b1b6ad6dbc",
+              "sort": 18
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.d094f549b9ff50f3",
+              "sort": 19
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.8ad3be746198476d",
+              "sort": 20
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.52d3d4fe89a0a3ff",
+              "sort": 21
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.720ab4a96e3ad0a8",
+              "sort": 22
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.b44db3234ad2d62f",
+              "sort": 23
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.5edeea4d71534cd9",
+              "sort": 24
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.e40f8cff6eba7e59",
+              "sort": 25
+            }
+          ],
+          "spell": null,
+          "restriction": {
+            "type": "class",
+            "subtype": "",
+            "list": [],
+            "school": []
+          },
+          "sorting": "m"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "flags": {},
+        "hint": "选择两个类人生物种族，例如鬣狗人与兽人。"
+      }
+    },
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": 1,
+      "repeatable": true,
+      "items": [
+        "feat:favored-enemy"
+      ]
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "ef7ed2d723337729",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.5",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!e086723dfc2f3cff"
+}
