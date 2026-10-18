@@ -38,20 +38,20 @@
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.fail.ability.save.dex",
-            "value": "+1",
+            "key": "system.abilities.dex.save.roll.fail",
+            "value": "true",
             "priority": 20,
-            "type": "add",
+            "type": "override",
             "phase": "initial",
             "_id": "jKGgtO5F6llAxaeb",
             "conditions": "{}",
             "replacement": ""
           },
           {
-            "key": "flags.midi-qol.fail.ability.save.str",
-            "value": "+1",
+            "key": "system.abilities.str.save.roll.fail",
+            "value": "true",
             "priority": 20,
-            "type": "add",
+            "type": "override",
             "phase": "initial",
             "_id": "u5c9Dx3gX1qr1hat",
             "conditions": "{}",

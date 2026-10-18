@@ -92,20 +92,20 @@
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.fail.ability.save.dex",
-            "value": 1,
+            "key": "system.abilities.dex.save.roll.fail",
+            "value": "true",
             "priority": 0,
-            "type": "custom",
+            "type": "override",
             "phase": "initial",
             "_id": "nctX6xphwtRE9ORy",
             "conditions": "{}",
             "replacement": ""
           },
           {
-            "key": "flags.midi-qol.fail.ability.save.str",
-            "value": 1,
+            "key": "system.abilities.str.save.roll.fail",
+            "value": "true",
             "priority": 0,
-            "type": "custom",
+            "type": "override",
             "phase": "initial",
             "_id": "1t0S5657KmEjb43g",
             "conditions": "{}",

@@ -17,11 +17,11 @@ export function inspectCompatibility() {
   const modules = {};
   const coreVersion = game.version ?? game.release?.version;
   if (!isCompatibleVersion(coreVersion, manifest.compatibility, { core: true })) {
-    issues.push({ severity: "ERROR", id: "foundry", message: `需要 Foundry 14.368+（V14），当前为 ${coreVersion ?? "未知"}。` });
+    issues.push({ severity: "ERROR", id: "foundry", message: `需要 Foundry ${manifest.compatibility.minimum}+（V14），当前为 ${coreVersion ?? "未知"}。` });
   }
   const system = Array.from(manifest.relationships.systems).find(entry => entry.id === "dnd5e");
   if (game.system.id !== "dnd5e" || !isCompatibleVersion(game.system.version, system?.compatibility)) {
-    issues.push({ severity: "ERROR", id: "dnd5e", message: `需要 dnd5e 6.0.x，当前为 ${game.system.id} ${game.system.version}。` });
+    issues.push({ severity: "ERROR", id: "dnd5e", message: `需要 dnd5e ${system?.compatibility?.minimum ?? "6.0.6"}+（6.0.x），当前为 ${game.system.id} ${game.system.version}。` });
   }
   for (const relation of ["requires", "recommends"]) {
     for (const requirement of manifest.relationships[relation] ?? []) {

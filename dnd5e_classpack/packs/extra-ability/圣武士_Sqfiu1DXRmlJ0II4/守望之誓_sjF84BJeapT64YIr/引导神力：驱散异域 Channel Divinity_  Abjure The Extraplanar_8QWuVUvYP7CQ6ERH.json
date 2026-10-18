@@ -26,12 +26,12 @@
     "requirements": "守望之誓等级 3",
     "activities": {
       "h3z8dyTJHvxKDshk": {
-        "type": "utility",
+        "type": "save",
         "_id": "h3z8dyTJHvxKDshk",
         "sort": 0,
         "activation": {
           "type": "action",
-          "value": null,
+          "value": 1,
           "override": false,
           "condition": ""
         },
@@ -39,8 +39,15 @@
           "scaling": {
             "allowed": false
           },
-          "spellSlot": true,
-          "targets": []
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.v8z4Z2NuBAbYnjxk",
+              "value": "1",
+              "scaling": {}
+            }
+          ]
         },
         "description": {
           "chatFlavor": "",
@@ -52,11 +59,22 @@
           "override": false,
           "expiry": null
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "EPqFMKsaUi3siqzA",
+            "onSave": false,
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
         "range": {
           "override": false,
-          "units": "self",
-          "special": ""
+          "units": "ft",
+          "special": "",
+          "value": "30"
         },
         "target": {
           "template": {
@@ -67,21 +85,15 @@
           },
           "affects": {
             "choice": false,
-            "type": ""
+            "type": "creature"
           },
           "override": false,
-          "prompt": true
+          "prompt": false
         },
         "uses": {
           "spent": 0,
           "recovery": [],
           "max": ""
-        },
-        "roll": {
-          "prompt": false,
-          "visible": false,
-          "name": "",
-          "formula": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
@@ -103,7 +115,7 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "confirmTargets": "default",
+          "confirmTargets": "never",
           "autoTargetType": "any",
           "autoTargetAction": "default",
           "automationOnly": false,
@@ -122,7 +134,7 @@
           "forceDamageDialog": "default",
           "otherActivityAsParentType": true,
           "removeChatButtons": "default",
-          "magicEffect": false,
+          "magicEffect": true,
           "magicDamage": false,
           "noConcentrationCheck": false,
           "skipConcentrationCheck": false,
@@ -168,7 +180,24 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
-        "otherActivityAsParentType": true
+        "otherActivityAsParentType": true,
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [],
+          "critical": {
+            "allow": false
+          }
+        }
       }
     },
     "identifier": "-channel-divinity-abjure-the-extraplanar",
@@ -283,7 +312,7 @@
         "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
         "type": "script",
         "scope": "global",
-        "command": "// Abjure the Extraplanar – Channel Divinity macro\n// Foundry v12.331 + dnd5e v4.3.9\n// Requires: Midi-QOL, DAE\n\nif (!token) return ui.notifications.warn(\"Select your token.\");\n\nconst caster = token.actor;\nconst saveDC = caster.system.attributes.spelldc;\nconst DIST = 30;\nconst VALID = [\"aberration\", \"celestial\", \"elemental\", \"fey\", \"fiend\"];\n\n// 1️⃣ Find your Channel Divinity item on the caster\nconst cdItem = caster.items.find(i => i.name === \"引导神力：驱散异域 Channel Divinity: Abjure The Extraplanar.\");\nif (!cdItem) return ui.notifications.error(\"No 'Channel Divinity' item found.\");\n\n// 2️⃣ Pick the correct embedded effect on that item\n//    (for example: the third effect—adjust index as needed)\nconst itemEffectData = cdItem.effects.contents[0]; \nif (!itemEffectData) return ui.notifications.error(\"The item has no effects to apply.\");\n\n// 3️⃣ Prepare the effect data to apply later\nconst baseEffectData = itemEffectData.toObject();\ndelete baseEffectData._id;\n\n// 4️⃣ Locate targets within range\nconst targets = canvas.tokens.placeables.filter(t => {\n  if (!t.actor || t === token) return false;\n  if (t.actor.system.attributes.hp.value <= 0) return false;\n  if (!VALID.includes(t.actor.system.details.type.value)) return false;\n  return canvas.grid.measureDistance(token, t) <= DIST;\n});\n\nif (!targets.length) {\n  return ChatMessage.create({ content: \"No valid extraplanar creatures within 30 ft.\" });\n}\n\nlet chatHtml = `<h2>${caster.name} uses Abjure the Extraplanar</h2><ul>`;\n\nfor (let tgt of targets) {\n  // Skip actors who already have the effect\n  const existing = tgt.actor.effects.find(e => e.origin === cdItem.uuid && e.label === baseEffectData.label);\n  if (existing) {\n    chatHtml += `<li>${tgt.name}: ❌ Already has ${baseEffectData.label}</li>`;\n    continue;\n  }\n\n  const roll = await tgt.actor.rollAbilitySave(\"wis\", { chatMessage: false, fastForward: true });\n  const failed = roll.total < saveDC;\n  chatHtml += `<li>${tgt.name}: ${failed ? \"❌ Failed\" : \"✅ Success\"} (rolled ${roll.total} vs DC ${saveDC})</li>`;\n\n  if (failed) {\n    // Clone effect, set new origin, and apply\n    const eff = duplicate(baseEffectData);\n    eff.origin = cdItem.uuid;\n    await tgt.actor.createEmbeddedDocuments(\"ActiveEffect\", [eff]);\n  }\n}\n\nchatHtml += \"</ul>\";\nChatMessage.create({ content: chatHtml });",
+        "command": "if (args[0]?.macroPass !== \"preItemRoll\") return;\nconst source = workflow.token?.object ?? workflow.token;\nif (!source?.actor) return false;\nconst valid = new Set([\"aberration\", \"celestial\", \"elemental\", \"fey\", \"fiend\"]);\nconst distance = dnd5e.utils.convertLength(30, \"ft\", canvas.scene.grid.units, { strict: false });\nconst deafened = CONFIG.specialStatusEffects?.DEAF ?? \"deafened\";\nconst targets = MidiQOL.findNearby(null, source, distance, {\n  includeToken: false, includeIncapacitated: true, canSee: false, isSeen: false\n}).filter(target => target.id !== source.id && target.actor\n  && valid.has(target.actor.system.details.type?.value)\n  && !target.actor.statuses.has(deafened));\nawait dnd5eClasspack.updateTargets(targets);\nworkflow.setTargets(new Set(targets));\nconst usage = args[0].options?.usage;\nif (usage) {\n  usage.midiOptions ??= {};\n  usage.midiOptions.targetsToUse = new Set(targets);\n  usage.midiOptions.ignoreUserTargets = true;\n}\nif (!targets.length) {\n  ui.notifications.warn(\"驱散异域：30 尺内没有符合类型且能够听见祷言的目标。\");\n  return false;\n}\n",
         "author": "WqWGW8MuBm7BNHxt",
         "ownership": {
           "default": 3
