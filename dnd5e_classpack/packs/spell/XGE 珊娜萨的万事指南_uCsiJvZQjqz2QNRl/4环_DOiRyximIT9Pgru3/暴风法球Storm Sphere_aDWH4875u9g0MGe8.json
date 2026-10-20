@@ -830,8 +830,8 @@
         "img": "icons/commodities/gems/pearl-storm.webp",
         "type": "script",
         "scope": "global",
-        "command": "if (args[0].macroPass === \"preActiveEffects\" || args[0].tag === \"OnUse\") {\n  return await game.modules.get(\"ActiveAuras\").api.AAHelpers.applyTemplate(args);\n}",
-        "author": "WqWGW8MuBm7BNHxt",
+        "command": "",
+        "author": "dvg25zW2MvzsvMOU",
         "ownership": {
           "default": 3
         },
@@ -852,90 +852,7 @@
       }
     }
   },
-  "effects": [
-    {
-      "name": "暴风法球Storm Sphere",
-      "img": "icons/commodities/gems/pearl-storm.webp",
-      "origin": null,
-      "transfer": false,
-      "_id": "TRSU07bjIlEvXdDn",
-      "type": "base",
-      "system": {
-        "changes": [
-          {
-            "key": "flags.midi-qol.OverTime",
-            "value": "turn=end, label=暴风法球Storm Sphere, saveAbility=str, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=(2 + @scaling.increase)d6, damageType=bludgeoning, saveDamage=halfdamage, allowIncapacitated=true, saveCount=0",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "cZN56jWl7HjGVzKJ",
-            "conditions": "{}",
-            "replacement": "origin"
-          }
-        ],
-        "rider": {
-          "statuses": []
-        },
-        "origin": {
-          "actor": null,
-          "behavior": null,
-          "effect": null,
-          "item": "Compendium.dnd5e_classpack.spell.Item.aDWH4875u9g0MGe8",
-          "message": null
-        },
-        "conditions": "{}",
-        "magical": true
-      },
-      "disabled": false,
-      "duration": {
-        "value": 1,
-        "units": "minutes",
-        "expiry": null,
-        "expired": false
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": [],
-          "macroRepeat": "none",
-          "applicationMode": "dnd5e"
-        },
-        "dnd5e": {
-          "riders": {}
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "14.368",
-        "systemId": "dnd5e",
-        "systemVersion": "6.0.5",
-        "createdTime": 1756492710156,
-        "modifiedTime": 1786655531642,
-        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
-        "exportSource": null
-      },
-      "start": null,
-      "showIcon": 1,
-      "folder": null,
-      "_key": "!items.effects!aDWH4875u9g0MGe8.TRSU07bjIlEvXdDn"
-    }
-  ],
+  "effects": [],
   "img": "icons/commodities/gems/pearl-storm.webp",
   "_stats": {
     "systemId": "dnd5e",

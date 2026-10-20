@@ -9,7 +9,8 @@
       "itemCondition": "",
       "reactionCondition": "",
       "otherCondition": "",
-      "effectCondition": ""
+      "effectCondition": "",
+      "onUseMacroName": "[templatePlaced]ActivityMacro-6nQ1wTZTNO8OJEkD"
     },
     "midiProperties": {
       "autoFailFriendly": false,
@@ -26,8 +27,8 @@
         "img": "icons/creatures/mammals/ox-bull-horned-glowing-orange.webp",
         "type": "script",
         "scope": "global",
-        "command": "(async () => {\n  // 确认宏触发时 args[0] 存在“on”或“off”\n  const hook = args[0];\n  const tokenD = canvas.tokens.get(args[1]?.tokenId);\n  if (!tokenD) return;\n\n  if (hook === \"on\") {\n    // 效果创建时：立即造成 1d10火焰 伤害\n    const roll = await new Roll(\"1d10[fire]\").roll({async: true});\n    await new MidiQOL.DamageOnlyWorkflow(\n      actor,\n      token,\n      roll.total,\n      'fire',\n      tokenD ? [tokenD] : [],\n      roll,\n      { flavor: \"DAE Effect: Force Damage on creation\" }\n    );\n  }\n  // hook === \"off\" 时，无操作\n})();",
-        "author": "WqWGW8MuBm7BNHxt",
+        "command": "",
+        "author": "dvg25zW2MvzsvMOU",
         "ownership": {
           "default": 3
         },
@@ -53,212 +54,98 @@
   "_id": "asHIoOLQjV5WDpXb",
   "effects": [
     {
-      "name": "炽焰赋权（增益）Investiture of Flame",
+      "name": "炽焰赋权Investiture of Flame",
       "img": "icons/creatures/mammals/ox-bull-horned-glowing-orange.webp",
-      "origin": null,
-      "transfer": false,
-      "_id": "xcVtRMcrz0ITJVVc",
-      "type": "base",
       "system": {
+        "origin": {
+          "item": "Compendium.dnd5e_classpack.spell.Item.asHIoOLQjV5WDpXb",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
         "changes": [
           {
             "key": "system.traits.di.value",
-            "value": "fire",
-            "priority": 20,
             "type": "add",
+            "value": "fire",
             "phase": "initial",
-            "_id": "y4xVGKDmG3ksuW47",
+            "_id": "4SuOW9nFfZXPGKJ8",
             "conditions": "{}",
-            "replacement": ""
+            "replacement": "",
+            "priority": null
           },
           {
             "key": "system.traits.dr.value",
+            "type": "add",
             "value": "cold",
-            "priority": 20,
-            "type": "add",
             "phase": "initial",
-            "_id": "MRVQI0BG0592feyj",
+            "_id": "XDLD0hKk3gXLKVsK",
             "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "token.light.bright",
-            "value": 30,
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "IBUnaQz533kPEOTT",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "token.light.dim",
-            "value": 60,
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "zxwmuzLPYKSrgGhw",
-            "conditions": "{}",
-            "replacement": ""
+            "replacement": "",
+            "priority": null
           }
         ],
+        "conditions": "{}",
+        "magical": false,
         "rider": {
           "statuses": []
-        },
-        "origin": {
-          "actor": null,
-          "behavior": null,
-          "effect": null,
-          "item": "Compendium.dnd5e_classpack.spell.Item.asHIoOLQjV5WDpXb",
-          "message": null
-        },
-        "conditions": "{}",
-        "magical": true
-      },
-      "disabled": false,
-      "duration": {
-        "value": 600,
-        "units": "seconds",
-        "expiry": "turnStart",
-        "expired": false
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": [],
-          "macroRepeat": "none"
-        },
-        "dnd5e": {
-          "riders": {}
-        },
-        "core": {
-          "overlay": false
         }
       },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "14.368",
-        "systemId": "dnd5e",
-        "systemVersion": "6.0.5",
-        "createdTime": 1755175274567,
-        "modifiedTime": 1756837991976,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "exportSource": null
-      },
-      "start": null,
-      "showIcon": 1,
-      "folder": null,
-      "_key": "!items.effects!asHIoOLQjV5WDpXb.xcVtRMcrz0ITJVVc"
-    },
-    {
-      "name": "炽焰赋权光环Investiture of Flame",
-      "img": "icons/creatures/mammals/ox-bull-horned-glowing-orange.webp",
-      "origin": null,
       "transfer": false,
-      "_id": "ICpBGICDvGcK3xtb",
+      "_id": "9pkYNdrS4yWnB7C2",
       "type": "base",
-      "system": {
-        "changes": [
-          {
-            "key": "flags.midi-qol.OverTime",
-            "value": "turn=end, label=炽焰赋权光环Investiture of Flame, rollType=damage, saveMagic=true, damageRoll=1d10, damageType=fire, rollMode=publicroll, allowIncapacitated=true",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "8UE0GPTaYDUnwNtF",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "macro.itemMacro",
-            "value": "",
-            "priority": 20,
-            "type": "custom",
-            "phase": "initial",
-            "_id": "up7dc4KsPlV9GWiL",
-            "conditions": "{}",
-            "replacement": ""
-          }
-        ],
-        "rider": {
-          "statuses": []
-        },
-        "origin": {
-          "actor": null,
-          "behavior": null,
-          "effect": null,
-          "item": "Compendium.dnd5e_classpack.spell.Item.asHIoOLQjV5WDpXb",
-          "message": null
-        },
-        "conditions": "{}",
-        "magical": true
-      },
       "disabled": false,
+      "start": null,
       "duration": {
-        "value": 600,
-        "units": "seconds",
-        "expiry": "turnStart",
+        "value": 10,
+        "units": "minutes",
+        "expiry": null,
         "expired": false
       },
       "description": "",
+      "origin": null,
       "tint": "#ffffff",
       "statuses": [],
+      "showIcon": 1,
+      "folder": null,
       "sort": 0,
       "flags": {
         "dae": {
           "enableCondition": "",
           "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
           "stackable": "noneName",
-          "showIcon": false,
+          "applicationMode": "default",
+          "expiryMode": "default",
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": [],
-          "applicationMode": "dnd5e"
-        },
-        "dnd5e": {
-          "riders": {}
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": true,
+          "dontApply": false,
+          "specialDuration": []
         },
         "core": {
           "overlay": false
         }
       },
       "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1792511354298,
+        "modifiedTime": 1792511745805,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "14.368",
-        "systemId": "dnd5e",
-        "systemVersion": "6.0.5",
-        "createdTime": 1756837673748,
-        "modifiedTime": 1786655573545,
-        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
-      "start": null,
-      "showIcon": 1,
-      "folder": null,
-      "_key": "!items.effects!asHIoOLQjV5WDpXb.ICpBGICDvGcK3xtb"
+      "_key": "!items.effects!asHIoOLQjV5WDpXb.9pkYNdrS4yWnB7C2"
     }
   ],
   "system": {
     "description": {
-      "value": "<p>火焰环绕着你的身体，照亮周围 30 尺半径的区域，并在外围 30 尺范围内产生微弱的亮光。这些火焰不会伤害到你。直到此法术终结，你得到如下的好处：</p><ul><li>你免疫于火焰伤害并对寒冷伤害具有抗性。</li><li>任何在回合中第一次进入你周围 5 尺范围之内，或是在你周围 5 尺范围之内结束回合的生物受到 [[/damage 1d10 type=fire]]{1d10} 火焰伤害。</li><li>你可以使用你的动作以创造出一条以你为起始点，向由你选择的方向延伸的 15 尺长、5 尺宽的火线。在线中的每个生物都必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免检定}。豁免失败的生物受到 [[/damage 4d8 type=fire]]{4d8} 火焰伤害，豁免成功者受到上述伤害的一半。</li></ul>",
+      "value": "<p>火焰环绕着你的身体，照亮周围 30 尺半径的区域，并在外围 30 尺范围内产生微弱的亮光。这些火焰不会伤害到你。直到此法术终结，你得到如下的好处：</p><ul><li><p>你免疫于火焰伤害并对寒冷伤害具有抗性。</p></li><li><p>任何在回合中第一次进入你周围 5 尺范围之内，或是在你周围 5 尺范围之内结束回合的生物受到 [[/damage 1d10 type=fire]]{1d10} 火焰伤害。</p></li><li><p>你可以使用你的动作以创造出一条以你为起始点，向由你选择的方向延伸的 15 尺长、5 尺宽的火线。在线中的每个生物都必须进行一次[[/save activity=TRPBslxqNh3deeyi]]{敏捷豁免检定}。豁免失败的生物受到 [[/damage 4d8 type=fire]]{4d8} 火焰伤害，豁免成功者受到上述伤害的一半。</p></li></ul>",
       "chat": ""
     },
     "source": {
@@ -284,7 +171,7 @@
       },
       "template": {
         "units": "ft",
-        "type": "line",
+        "type": "",
         "size": "15",
         "contiguous": false,
         "width": "",
@@ -316,62 +203,247 @@
       "concentration"
     ],
     "activities": {
-      "dnd5eactivity000": {
-        "_id": "dnd5eactivity000",
-        "type": "save",
+      "6nQ1wTZTNO8OJEkD": {
+        "type": "utility",
+        "name": "",
+        "_id": "6nQ1wTZTNO8OJEkD",
+        "img": "",
+        "sort": 0,
         "activation": {
           "type": "action",
-          "value": null,
           "override": false
         },
+        "behaviors": [],
         "consumption": {
-          "targets": [],
           "scaling": {
-            "allowed": false,
-            "max": ""
+            "allowed": false
           },
-          "spellSlot": false
+          "spellSlot": true,
+          "targets": []
         },
         "description": {
-          "chatFlavor": "",
-          "value": ""
+          "value": "",
+          "chatFlavor": ""
         },
         "duration": {
           "units": "inst",
+          "expiry": null,
           "concentration": false,
-          "override": true,
-          "expiry": null
+          "override": false
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "9pkYNdrS4yWnB7C2",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
         "range": {
-          "override": false,
           "units": "self",
-          "special": ""
+          "override": false
         },
         "target": {
-          "prompt": true,
           "template": {
             "contiguous": false,
+            "stationary": false,
             "units": "ft",
-            "type": "line",
-            "size": "15",
-            "width": "5",
-            "count": "",
-            "stationary": false
+            "type": "radius",
+            "size": "5",
+            "count": ""
           },
           "affects": {
             "choice": false,
-            "type": "creature"
+            "type": "creature",
+            "count": "",
+            "special": ""
           },
-          "override": true
+          "override": true,
+          "prompt": true
         },
         "uses": {
           "spent": 0,
-          "max": "",
-          "recovery": []
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
+          "name": "炽焰赋权：放置后补 Entry",
+          "command": "if (args[0]?.macroPass === \"templatePlaced\") {\n  for (const uuid of workflow.templateUuids ?? []) {\n    const region = await fromUuid(uuid);\n    if (region?.documentName !== \"Region\") continue;\n    const behavior = region.behaviors.find(b => b.type === \"midi-qol.regionActivity\" &&\n      b.system.sourceItemUuid === workflow.item.uuid && !b.flags?.dnd5e_classpack?.regionPassive);\n    if (!behavior) continue;\n    const rules = foundry.utils.deepClone(behavior.system.rules);\n    const repeat = rules.find(r => [\"turnStart\", \"turnEnd\"].includes(r.trigger) && r.action === \"useActivity\");\n    if (!repeat?.targetUuid) continue;\n    if (!rules.some(r => r.trigger === \"entry\" && r.action === \"useActivity\" && r.targetUuid === repeat.targetUuid)) {\n      rules.push({ trigger: \"entry\", action: \"useActivity\", targetUuid: repeat.targetUuid });\n    }\n    const behaviors = [];\n    await MidiQOL.socket().executeAsGM(\"setupRegion\", { regionUuid: region.uuid,\n      update: { behaviors: [{ _id: behavior.id, system: { rules } }] }, behaviors });\n  }\n}\n"
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "flame-cast",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": true,
+          "dispositionFilter": 0,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "caster",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": [
+            {
+              "trigger": "turnEnd",
+              "action": "useActivity",
+              "targetId": "flame-repeat"
+            }
+          ]
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
+      },
+      "TRPBslxqNh3deeyi": {
+        "type": "save",
+        "name": "火线",
+        "_id": "TRPBslxqNh3deeyi",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": true,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": "line",
+            "size": "15",
+            "count": "",
+            "width": "5"
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
         },
         "damage": {
           "onSave": "half",
+          "critical": {
+            "allow": false
+          },
           "parts": [
             {
               "custom": {
@@ -381,19 +453,16 @@
               "number": 4,
               "denomination": 8,
               "bonus": "",
+              "modifiers": [],
               "types": [
                 "fire"
               ],
               "scaling": {
                 "mode": "",
                 "number": 1
-              },
-              "modifiers": []
+              }
             }
-          ],
-          "critical": {
-            "allow": false
-          }
+          ]
         },
         "save": {
           "ability": [
@@ -403,12 +472,13 @@
             "calculation": "spellcasting",
             "formula": ""
           },
-          "visible": true
+          "visible": true,
+          "bonus": ""
         },
-        "sort": 0,
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
+        "otherActivityId": "none",
         "macroData": {
           "name": "",
           "command": ""
@@ -426,24 +496,24 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "confirmTargets": "default",
-          "autoTargetType": "any",
-          "autoTargetAction": "default",
-          "automationOnly": false,
-          "otherActivityCompatible": true,
-          "identifier": "",
-          "displayActivityName": false,
-          "rollMode": "default",
-          "chooseEffects": false,
-          "toggleEffect": false,
-          "ignoreFullCover": false,
           "triggeredActivityConsume": true,
           "triggeredActivityConfigure": true,
           "autoConsume": false,
           "forceConsumeDialog": "default",
           "forceRollDialog": "default",
           "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
           "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
           "removeChatButtons": "default",
           "magicEffect": false,
           "magicDamage": false,
@@ -454,20 +524,9 @@
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
+          "rollAs": "target",
           "preRemoveConditionText": "",
-          "postRemoveConditionText": "",
-          "rollAs": "target"
-        },
-        "otherActivityId": "",
-        "name": "火线",
-        "img": "",
-        "behaviors": [],
-        "flags": {},
-        "visibility": {
-          "level": {},
-          "requireAttunement": false,
-          "requireIdentification": false,
-          "requireMagic": false
+          "postRemoveConditionText": ""
         },
         "regionBehavior": {
           "enabled": false,
@@ -477,6 +536,9 @@
           "wallRestriction": "none",
           "regionVisibility": 2,
           "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
           "templateOrigin": "default",
           "rules": []
         },
@@ -494,102 +556,99 @@
         "otherActivityAsParentType": true,
         "friendlySave": "default"
       },
-      "qehJUZaLxSQ2xW69": {
+      "Ri6tSRaDdj0scX2t": {
         "type": "damage",
-        "_id": "qehJUZaLxSQ2xW69",
-        "sort": 0,
+        "name": "近身火焰伤害",
+        "_id": "Ri6tSRaDdj0scX2t",
+        "img": "",
+        "sort": 200000,
         "activation": {
-          "type": "action",
-          "value": null,
-          "override": false
+          "type": "",
+          "override": true,
+          "condition": ""
         },
+        "behaviors": [],
         "consumption": {
           "scaling": {
             "allowed": false
           },
-          "spellSlot": true,
+          "spellSlot": false,
           "targets": []
         },
         "description": {
-          "chatFlavor": "",
-          "value": ""
+          "value": "",
+          "chatFlavor": ""
         },
         "duration": {
           "units": "inst",
+          "expiry": null,
           "concentration": false,
-          "override": false,
-          "expiry": null
+          "override": true
         },
-        "effects": [
-          {
-            "_id": "xcVtRMcrz0ITJVVc",
-            "uuid": null,
-            "level": {},
-            "_stats": {
-              "compendiumSource": null,
-              "duplicateSource": null,
-              "coreVersion": "14.368",
-              "systemId": "dnd5e",
-              "systemVersion": "6.0.5",
-              "createdTime": 1755175274567,
-              "modifiedTime": 1756837991976,
-              "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-              "exportSource": null
-            }
-          },
-          {
-            "_id": "ICpBGICDvGcK3xtb",
-            "uuid": null,
-            "level": {},
-            "_stats": {
-              "compendiumSource": null,
-              "duplicateSource": null,
-              "coreVersion": "14.368",
-              "systemId": "dnd5e",
-              "systemVersion": "6.0.5",
-              "createdTime": 1756837673748,
-              "modifiedTime": 1786655573545,
-              "lastModifiedBy": "TEhQZHmGMOcY5c4a",
-              "exportSource": null
-            }
-          }
-        ],
+        "effects": [],
+        "flags": {},
         "range": {
-          "override": true,
           "units": "self",
+          "override": true,
           "special": ""
         },
         "target": {
           "template": {
             "contiguous": false,
+            "stationary": false,
             "units": "ft",
-            "type": "sphere",
-            "size": "5",
-            "count": "",
-            "stationary": false
+            "type": ""
           },
           "affects": {
-            "choice": false,
-            "type": "self",
-            "special": ""
+            "type": "creature",
+            "count": "1",
+            "choice": false
           },
           "override": true,
-          "prompt": true
+          "prompt": false
         },
         "uses": {
           "spent": 0,
           "recovery": [],
           "max": ""
         },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
         "damage": {
           "critical": {
             "allow": false
           },
-          "parts": []
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 10,
+              "bonus": "",
+              "modifiers": [],
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ]
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
+        "otherActivityId": "none",
         "macroData": {
           "name": "",
           "command": ""
@@ -607,24 +666,24 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "confirmTargets": "default",
-          "autoTargetType": "any",
-          "autoTargetAction": "default",
-          "automationOnly": false,
-          "otherActivityCompatible": true,
-          "identifier": "",
-          "displayActivityName": false,
-          "rollMode": "default",
-          "chooseEffects": false,
-          "toggleEffect": false,
-          "ignoreFullCover": false,
           "triggeredActivityConsume": true,
           "triggeredActivityConfigure": true,
           "autoConsume": false,
           "forceConsumeDialog": "default",
           "forceRollDialog": "default",
           "forceDamageDialog": "default",
+          "confirmTargets": "never",
+          "autoTargetType": "any",
+          "autoTargetAction": "none",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
           "otherActivityAsParentType": true,
+          "identifier": "flame-repeat",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
           "removeChatButtons": "default",
           "magicEffect": false,
           "magicDamage": false,
@@ -635,21 +694,10 @@
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
+          "rollAs": "target",
           "preRemoveConditionText": "",
-          "postRemoveConditionText": "",
-          "rollAs": "target"
+          "postRemoveConditionText": ""
         },
-        "name": "施放法术",
-        "img": "",
-        "behaviors": [],
-        "flags": {},
-        "visibility": {
-          "level": {},
-          "requireAttunement": false,
-          "requireIdentification": false,
-          "requireMagic": false
-        },
-        "otherActivityId": null,
         "regionBehavior": {
           "enabled": false,
           "dispositionFilter": -1,
@@ -658,6 +706,9 @@
           "wallRestriction": "none",
           "regionVisibility": 2,
           "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
           "templateOrigin": "default",
           "rules": []
         },

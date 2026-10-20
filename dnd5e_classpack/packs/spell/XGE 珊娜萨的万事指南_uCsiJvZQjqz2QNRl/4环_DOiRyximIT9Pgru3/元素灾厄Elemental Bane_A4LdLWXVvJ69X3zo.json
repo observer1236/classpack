@@ -22,43 +22,51 @@
       "otherCondition": "",
       "effectCondition": "",
       "removeAttackDamageButtons": "default",
-      "reactionCondition": ""
+      "reactionCondition": "",
+      "onUseMacroName": "[prePreambleComplete]ItemMacro,[preActiveEffects]ItemMacro"
     },
-    "dnd5e": {}
+    "dnd5e": {},
+    "dae": {
+      "macro": {
+        "name": "元素灾厄Elemental Bane",
+        "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const mode = args[0];\n\nif (mode === \"trigger\") {\n  const data = args[args.length - 1];\n  const effect = await fromUuid(data.effectUuid);\n  if (!effect || effect.disabled) return;\n  const state = effect.getFlag(\"world\", \"elementalBane\");\n  const key = `${effect.uuid}:${data.turn}`;\n  const pending = globalThis.elementalBanePending ??= new Set();\n  if (state.turn === data.turn || pending.has(key)) return;\n  pending.add(key);\n  await effect.setFlag(\"world\", \"elementalBane\", {\n    ...state, turn: data.turn\n  }).finally(() => pending.delete(key));\n\n  const actor = effect.parent;\n  const roll = await new CONFIG.Dice.DamageRoll(\"2d6\", {}, {\n    type: state.damageType, properties: [\"mgc\", \"spell\"], isCritical: false\n  }).evaluate();\n  // 额外伤害不沿用触发伤害的豁免倍数，不再重复扣除一次固定减伤。\n  const calculated = actor.calculateDamage([{\n    type: state.damageType, value: roll.total, properties: new Set([\"mgc\", \"spell\"])\n  }], { ignore: { resistance: true, modification: true } });\n  await roll.toMessage({\n    speaker: foundry.documents.ChatMessage.getSpeaker({ actor }),\n    flavor: \"元素灾厄：额外伤害\",\n    whisper: data.whisper, blind: data.blind\n  });\n  return { value: calculated.amount, total: roll.total };\n}\n\nconst pass = mode.macroPass;\n\nif (pass === \"prePreambleComplete\") {\n  workflow.elementalBaneType = await dnd5eClasspack.dialogUtils.selectDamageType(\n    [\"acid\", \"cold\", \"fire\", \"lightning\", \"thunder\"], macroItem.name, \"\"\n  );\n  if (!workflow.elementalBaneType) {\n    await workflow.refundConsumption();\n    workflow.aborted = true;\n    return;\n  }\n}\n\nif (pass === \"preActiveEffects\") {\n  const damageType = workflow.elementalBaneType;\n  for (const { _id } of workflow.activity.effects) {\n    const effect = workflow.item.effects.get(_id);\n    const changes = effect.toObject().system.changes;\n    changes.push({\n      key: \"system.traits.dr.value\", value: `-${damageType}`,\n      type: \"custom\", phase: \"final\", priority: 100\n    }, {\n      key: \"flags.midi-qol.onUseMacroName\",\n      value: `ItemMacro.${workflow.item.uuid},isDamaged`,\n      type: \"custom\", phase: \"initial\", priority: 20\n    });\n    effect.updateSource({\n      \"system.changes\": changes,\n      \"flags.world.elementalBane\": { damageType, itemUuid: workflow.item.uuid }\n    });\n  }\n}\n\nif (pass !== \"isDamaged\") return;\nconst { actor, token } = mode.options;\nconst damage = workflow.damageItem?.targetUuid === token.document.uuid\n  ? workflow.damageItem\n  : workflow.damageList.find(d => d.targetUuid === token.document.uuid);\nif (!damage) return;\n\nconst combat = game.combat;\nconst turn = combat?.started ? `${combat.id}:${combat.round}:${combat.turn}`\n  : (workflow.elementalBaneTurn ??= foundry.utils.randomID());\n\nfor (const effect of actor.effects) {\n  const state = effect.getFlag(\"world\", \"elementalBane\");\n  if (!state || effect.disabled || state.turn === turn) continue;\n  if (!damage.damageDetail.some(d => d.type === state.damageType && d.value > 0)) continue;\n\n  const result = await socketlib.modules.get(\"dae\").executeAsGM(\"executeMacro\", {\n    action: \"trigger\",\n    lastArg: {\n      effectUuid: effect.uuid, turn,\n      whisper: workflow.chatCard?.whisper ?? [], blind: workflow.chatCard?.blind ?? false\n    },\n    macroData: { change: { key: \"macro.itemMacro\" }, name: state.itemUuid }\n  });\n  if (!result) continue;\n  MidiQOL.modifyDamageBy({\n    damageItem: damage, value: result.value, type: state.damageType,\n    reason: `${macroItem.name}：2d6 = ${result.total}`\n  });\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
+    }
   },
   "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
   "_id": "A4LdLWXVvJ69X3zo",
   "effects": [
     {
-      "name": "元素灾厄：强酸",
+      "name": "元素灾厄",
       "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
       "origin": null,
       "transfer": false,
       "_id": "xCOwDBL0ULgXDQHM",
       "type": "base",
       "system": {
-        "changes": [
-          {
-            "key": "system.traits.dr.value",
-            "value": "-acid",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "PD4IocwhG3F2CnAj",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "system.traits.dm.amount.acid",
-            "value": "+2d6",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "4JPsxLG40h2BJUkq",
-            "conditions": "{}",
-            "replacement": ""
-          }
-        ],
+        "changes": [],
         "rider": {
           "statuses": []
         },
@@ -121,378 +129,6 @@
       "showIcon": 1,
       "folder": null,
       "_key": "!items.effects!A4LdLWXVvJ69X3zo.xCOwDBL0ULgXDQHM"
-    },
-    {
-      "name": "元素灾厄：寒冷",
-      "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
-      "origin": null,
-      "transfer": false,
-      "type": "base",
-      "system": {
-        "changes": [
-          {
-            "key": "system.traits.dr.value",
-            "value": "-cold",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "Xabd6eQXPyINrK7p",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "system.traits.dm.amount.cold",
-            "value": "+2d6",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "Jt0Z6rXk1zL4D6d7",
-            "conditions": "{}",
-            "replacement": ""
-          }
-        ],
-        "rider": {
-          "statuses": []
-        },
-        "origin": {
-          "actor": null,
-          "behavior": null,
-          "effect": null,
-          "item": "Compendium.dnd5e_classpack.spell.Item.A4LdLWXVvJ69X3zo",
-          "message": null
-        },
-        "conditions": "{}",
-        "magical": true
-      },
-      "disabled": false,
-      "duration": {
-        "value": 60,
-        "units": "seconds",
-        "expiry": null,
-        "expired": false
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "macroRepeat": "none",
-          "specialDuration": [],
-          "applicationMode": "default",
-          "expiryMode": "default"
-        },
-        "dnd5e": {
-          "riders": {}
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "14.368",
-        "systemId": "dnd5e",
-        "systemVersion": "6.0.5",
-        "createdTime": 1756998549917,
-        "modifiedTime": 1756998573106,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "exportSource": null
-      },
-      "_id": "kv8MJFhjSkek0SdW",
-      "start": null,
-      "showIcon": 1,
-      "folder": null,
-      "_key": "!items.effects!A4LdLWXVvJ69X3zo.kv8MJFhjSkek0SdW"
-    },
-    {
-      "name": "元素灾厄：火焰",
-      "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
-      "origin": null,
-      "transfer": false,
-      "type": "base",
-      "system": {
-        "changes": [
-          {
-            "key": "system.traits.dr.value",
-            "value": "-fire",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "bLXlkoQvSfWtPC4l",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "system.traits.dm.amount.fire",
-            "value": "+2d6",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "ZnmW69vF9mNKdx0e",
-            "conditions": "{}",
-            "replacement": ""
-          }
-        ],
-        "rider": {
-          "statuses": []
-        },
-        "origin": {
-          "actor": null,
-          "behavior": null,
-          "effect": null,
-          "item": "Compendium.dnd5e_classpack.spell.Item.A4LdLWXVvJ69X3zo",
-          "message": null
-        },
-        "conditions": "{}",
-        "magical": true
-      },
-      "disabled": false,
-      "duration": {
-        "value": 60,
-        "units": "seconds",
-        "expiry": null,
-        "expired": false
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "macroRepeat": "none",
-          "specialDuration": [],
-          "applicationMode": "default",
-          "expiryMode": "default"
-        },
-        "dnd5e": {
-          "riders": {}
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "14.368",
-        "systemId": "dnd5e",
-        "systemVersion": "6.0.5",
-        "createdTime": 1756998551027,
-        "modifiedTime": 1756998594954,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "exportSource": null
-      },
-      "_id": "oJolgzI1Kr7Rv7t2",
-      "start": null,
-      "showIcon": 1,
-      "folder": null,
-      "_key": "!items.effects!A4LdLWXVvJ69X3zo.oJolgzI1Kr7Rv7t2"
-    },
-    {
-      "name": "元素灾厄：闪电",
-      "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
-      "origin": null,
-      "transfer": false,
-      "type": "base",
-      "system": {
-        "changes": [
-          {
-            "key": "system.traits.dr.value",
-            "value": "-lightning",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "wLafj8mBvv0zHri9",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "system.traits.dm.amount.lightning",
-            "value": "+2d6",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "FrofgxpD6paxgWDA",
-            "conditions": "{}",
-            "replacement": ""
-          }
-        ],
-        "rider": {
-          "statuses": []
-        },
-        "origin": {
-          "actor": null,
-          "behavior": null,
-          "effect": null,
-          "item": "Compendium.dnd5e_classpack.spell.Item.A4LdLWXVvJ69X3zo",
-          "message": null
-        },
-        "conditions": "{}",
-        "magical": true
-      },
-      "disabled": false,
-      "duration": {
-        "value": 60,
-        "units": "seconds",
-        "expiry": null,
-        "expired": false
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "macroRepeat": "none",
-          "specialDuration": [],
-          "applicationMode": "default",
-          "expiryMode": "default"
-        },
-        "dnd5e": {
-          "riders": {}
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "14.368",
-        "systemId": "dnd5e",
-        "systemVersion": "6.0.5",
-        "createdTime": 1756998553103,
-        "modifiedTime": 1756998617109,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "exportSource": null
-      },
-      "_id": "t95gblStUaq8AG0Z",
-      "start": null,
-      "showIcon": 1,
-      "folder": null,
-      "_key": "!items.effects!A4LdLWXVvJ69X3zo.t95gblStUaq8AG0Z"
-    },
-    {
-      "name": "元素灾厄：雷鸣",
-      "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
-      "origin": null,
-      "transfer": false,
-      "type": "base",
-      "system": {
-        "changes": [
-          {
-            "key": "system.traits.dr.value",
-            "value": "-thunder",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "g1d7oRoPXtB56ZPf",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "system.traits.dm.amount.thunder",
-            "value": "+2d6",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "a4pQgv4m08nWr8nn",
-            "conditions": "{}",
-            "replacement": ""
-          }
-        ],
-        "rider": {
-          "statuses": []
-        },
-        "origin": {
-          "actor": null,
-          "behavior": null,
-          "effect": null,
-          "item": "Compendium.dnd5e_classpack.spell.Item.A4LdLWXVvJ69X3zo",
-          "message": null
-        },
-        "conditions": "{}",
-        "magical": true
-      },
-      "disabled": false,
-      "duration": {
-        "value": 60,
-        "units": "seconds",
-        "expiry": null,
-        "expired": false
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "macroRepeat": "none",
-          "specialDuration": [],
-          "applicationMode": "default",
-          "expiryMode": "default"
-        },
-        "dnd5e": {
-          "riders": {}
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "14.368",
-        "systemId": "dnd5e",
-        "systemVersion": "6.0.5",
-        "createdTime": 1756998625357,
-        "modifiedTime": 1756998641088,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "exportSource": null
-      },
-      "_id": "tSMtjC3Er4zbGmAi",
-      "start": null,
-      "showIcon": 1,
-      "folder": null,
-      "_key": "!items.effects!A4LdLWXVvJ69X3zo.tSMtjC3Er4zbGmAi"
     }
   ],
   "system": {
@@ -519,7 +155,7 @@
     "target": {
       "affects": {
         "type": "creature",
-        "count": "@item.level-4",
+        "count": "@item.level - 4",
         "choice": false,
         "special": ""
       },
@@ -552,8 +188,7 @@
     "properties": [
       "vocal",
       "somatic",
-      "concentration",
-      "mgc"
+      "concentration"
     ],
     "activities": {
       "dnd5eactivity000": {
