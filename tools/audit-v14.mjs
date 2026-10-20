@@ -310,7 +310,10 @@ export async function auditRepository(root) {
         const pointer = atPointer("", index), key = `${entry.collection}.${entry.id}`;
         const prefix = `${manifest.id}.`, pack = typeof entry.collection === "string" && entry.collection.startsWith(prefix) ? packs.get(entry.collection.slice(prefix.length)) : null;
         const target = pack?.documents.get(entry.id)?.parsed.data;
-        if (!target || target.flags?.["chris-premades"]?.info?.identifier !== entry.identifier || mapped.has(key))
+        if (!target || target.system?.identifier !== entry.identifier || target.type !== entry.type
+          || target.system?.source?.rules !== entry.rules
+          || (entry.sourceType && target.flags?.cat?.automation?.sourceType !== entry.sourceType)
+          || mapped.has(key))
           add("cpr-mapping-ref", mapping, pointer, `Missing, mismatched or duplicate CPR mapping: ${key}`, { documentId: entry.id });
         mapped.add(key);
       }
