@@ -25,7 +25,8 @@
       "itemCondition": "",
       "otherCondition": "",
       "effectCondition": "",
-      "reactionCondition": ""
+      "reactionCondition": "",
+      "onUseMacroName": "[preDamageRoll]ItemMacro"
     },
     "dnd5e": {},
     "chris-premades": {
@@ -33,6 +34,34 @@
         "identifier": "tollTheDead",
         "source": "chris-premades",
         "version": "0.0.0"
+      }
+    },
+    "dae": {
+      "macro": {
+        "name": "亡者丧钟Toll the Dead",
+        "img": "icons/magic/death/skull-energy-light-purple.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "if (args[0].macroPass !== \"preDamageRoll\") return;\n\nconst target = workflow.targets.first();\nif (!target) return;\n\nconst hp = target.actor.system.attributes.hp;\nworkflow.activity.damage.parts[0].denomination =\n  hp.value < hp.max ? 12 : 8;",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
       }
     }
   },
