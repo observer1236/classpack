@@ -2,10 +2,12 @@ import { resolveOriginPoint } from "./utils.mjs";
 import { aimCrosshair } from "./crosshairs.mjs";
 import { occupied, pointDistance, positionAtCenter, tokenCenter, tokenDocument } from "./geometry.mjs";
 import { moveTokens } from "./movement.mjs";
+import { TeleportPreview } from "./teleport-preview.mjs";
 
 const DEFAULTS = { animation: "none", isSynchronous: true, crosshairsConfig: {}, callbacks: {},
   range: 100, updates: {}, minimizeSheet: true, centerpoint: null, isGroup: false,
-  validityFunctions: [], preserveOffsets: true, avoidOccupied: false, animate: false };
+  validityFunctions: [], preserveOffsets: true, avoidOccupied: false, animate: false,
+  previewTokens: true, previewAlpha: 0.5 };
 
 class ClasspackTeleport {
   constructor(tokens, reference, options = {}) {
@@ -53,6 +55,7 @@ class ClasspackTeleport {
   async go() {
     const sheet = this.reference.actor?.sheet ?? tokenDocument(this.reference).actor?.sheet;
     const restore = !!sheet?.rendered && this.options.minimizeSheet;
+    const preview = this.options.previewTokens ? new TeleportPreview(this.tokens, { alpha: this.options.previewAlpha }) : null;
     try {
       if (restore) await sheet.minimize();
       const origin = this.options.centerpoint ? await resolveOriginPoint(this.options.centerpoint) : tokenCenter(this.reference);
@@ -61,10 +64,18 @@ class ClasspackTeleport {
         direction: reference._source.rotation ?? reference.rotation ?? 0,
         elevation: tokenCenter(this.reference).elevation,
         timeout: this.options.timeout, signal: this.options.signal, ...this.options.crosshairsConfig };
+      const callbacks = { ...this.options.callbacks };
+      if (preview) for (const name of ["show", "move", "rotate"]) callbacks[name] = crosshair => {
+        const drawing = preview.update(this.positions(crosshair), crosshair.valid);
+        const result = this.options.callbacks?.[name]?.(crosshair);
+        if (drawing?.then || result?.then) return Promise.all([drawing, result]);
+        return result;
+      };
       this.result = await aimCrosshair({ token: this.reference, maxRange: this.options.range,
-        centerpoint: origin, crosshairsConfig: config, customCallbacks: this.options.callbacks,
+        centerpoint: origin, crosshairsConfig: config, customCallbacks: callbacks,
         checkCollision: this.options.checkCollision === true,
         validityFunctions: [point => this.validPositions(point, origin), ...(this.options.validityFunctions ?? [])] });
+      await preview?.destroy();
       if (this.result.cancelled || !this.result.valid) return this.result;
       if (!this.validPositions(this.result, origin)) return { ...this.result, valid: false, cancelled: true };
       const updates = this.positions(this.result);
@@ -79,7 +90,8 @@ class ClasspackTeleport {
         ? this.animate("post", token, updates[i]) : undefined));
       return { ...this.result, movement };
     } finally {
-      if (restore) await sheet.maximize();
+      try { await preview?.destroy(); }
+      finally { if (restore) await sheet.maximize(); }
     }
   }
   async animate(phase, token, spot) {

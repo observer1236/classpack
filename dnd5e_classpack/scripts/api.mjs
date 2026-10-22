@@ -118,6 +118,9 @@ const api = {
    *   moved token in point mode).
    * - `userId` / `user`: run the teleport (including its crosshair UI) on that
    *   user's client via socketlib.
+   * - `previewTokens` (default true): show native, translucent copies of the
+   *   moved tokens at their actual snapped destinations, including group offsets.
+   * - `previewAlpha` (default 0.5): opacity multiplier for these local previews.
    * - If no user is specified and the local user lacks update permission for
    *   the moved tokens, the crosshair UI still runs on the
    *   local client, and only the final token position updates are sent to a GM

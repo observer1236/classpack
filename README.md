@@ -12,5 +12,7 @@
 发布记录：
 https://github.com/observer1236/classpack/releases
 
+传送选择落点时，默认显示被传送 Token 的半透明预览；群体传送会按实际落点显示所有目标，保留各自的尺寸与相对位置。无效落点的预览变红，确认、取消或切换场景后清除。调用 `dnd5eClasspack.teleport` 时可用 `previewTokens: false` 关闭，或用 `previewAlpha` 调整透明度（默认 `0.5`）。
+
 如需为本项目贡献，请参阅：
 https://github.com/observer1236/classpack/blob/master/CONTRIBUTING.md
