@@ -20,12 +20,15 @@ export class TeleportPreview {
 
   async draw() {
     const TokenClass = CONFIG.Token.objectClass;
-    if (!TokenClass || !globalThis.PIXI?.Container) return;
+    if (!TokenClass || !globalThis.PIXI?.Container || !canvas.interface?.addChild) return;
     this.container = new PIXI.Container();
     this.container.eventMode = "none";
     this.container.interactiveChildren = false;
     this.container.alpha = this.alpha;
-    canvas.stage.addChild(this.container);
+    // Token.voidMesh uses ERASE blending. It must stay inside the interface
+    // group's VoidFilter, or it erases the primary Token image and map as well.
+    this.container.zIndex = canvas.tokens.zIndex;
+    canvas.interface.addChild(this.container);
     const results = await Promise.allSettled(this.tokens.map(async (token, index) => {
       const source = tokenDocument(token);
       if (this.closed || canvas.scene !== this.scene || typeof source.clone !== "function") return;
