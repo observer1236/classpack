@@ -1,5 +1,5 @@
 {
-  "name": "兽之形-鹿 Aspect of the Beast: Elk",
+  "name": "兽之形：鹿 Aspect of the Beast: Elk",
   "type": "feat",
   "img": "icons/creatures/mammals/deer-antlers-glowing-blue.webp",
   "system": {
@@ -8,7 +8,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<ul><li><strong>鹿 Elk</strong>。无论是骑乘或徒步，你的旅行步调将变为二倍。只要你未处于无力状态，则最多十个距离你60尺内的同伴的旅行步调也将变为二倍。鹿之精魂将帮助你行得更快更远。</li></ul>",
+      "value": "<ul><li><p>无论你是骑乘还是徒步，你的旅行速度变为双倍。只要你未失能，在你周围60尺内的最多十个同伴也能得到这个好处（参考《玩家手册》第八章得到更多有关旅行速度的信息）。鹿的精魂祝福你行得更远更快。</p></li></ul>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     "cover": null,
     "crewed": false,
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": []
     },
-    "properties": [],
+    "properties": [
+      "mgc"
+    ],
     "activities": {},
-    "identifier": "-",
-    "advancement": [],
+    "identifier": "aspect-of-the-beast-elk",
+    "advancement": {},
     "enchant": {}
   },
   "effects": [],
@@ -62,17 +65,12 @@
       "otherCondition": ""
     },
     "core": {},
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1724855782145,
     "modifiedTime": 1757160879963,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -1,5 +1,5 @@
 {
-  "name": "Drow (MM'14)",
+  "name": "卓尔 Drow (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180787977,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "f7IanVhyZMYIlkKI",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Drow.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Drow.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 14,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 11,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 11,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,28 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": null,
-        "walk": 30,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "30"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 120,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 120,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "cha",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +533,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--0\"><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Tens of thousands of years ago, the elves were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves-the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.</p><div class=\"rd__b  rd__b--3\"><p></p><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Children of Lolth\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Children of Lolth.</span></span> The drow worship Lolth, a deity who resides in the Abyss. Known as the Spider Queen or the Demon Queen of Spiders, she is the figure around which the dark elves have built their subterranean civilization. Whatever she demands, the drow do. The wickedest of elves, drow are seldom seen by the surface world. Though they plot to destroy the elves that banished them, they no longer see themselves as exiles. They are the destined rulers of the darkness, and when Lolth commands them to rise up and destroy their surface-dwelling kin, they will.</p></div><div data-roll-name-ancestor=\"Creatures of Darkness\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Creatures of Darkness.</span></span> The drow have lived underground for so long that they have evolved to their surroundings and can see in the dark. However, they can no longer stand sunlight. When slaves are in short supply in the Underdark, the drow send raiding parties to the surface to capture humanoids under cover of darkness, bringing them back to their cities to be tortured into submission. Beyond those occasional excursions, the drow are content to remain in their subterranean realm, where they feel secure and in control.</p></div><div data-roll-name-ancestor=\"Underdark Cities\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Underdark Cities.</span></span> The dark elves build fantastic cities in enormous caverns where food and water are abundant. Their ability to sculpt stone rivals that of the greatest dwarf artisans, yet their structures retain a decidedly elven aesthetic. Though appearing delicate, drow settlements are structurally sound and remarkably resilient. The drow like to hollow out enormous stalagmites and stalactites, creating populated spires that rise from the floors and ceilings. A drow city is a sprawling metropolis enclosed by high walls. Non-drow visitors must conduct their business outside the walls under watchful eyes. The drow raise and keep giant spiders to help protect their cities against intruders, even as they drape those cities in beautiful webbing, creating a gossamer snare to catch flying enemies that would otherwise soar over the walls.</p></div><div data-roll-name-ancestor=\"Drow Magic\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Drow Magic.</span></span> Just as the drow have adapted to underground life, so too has their magic. In addition to using that magic to carve their cities from stone, they empower their weapons, create dangerous new magic items, and summon demons from the Abyss. Drow spellcasters are supremely arrogant and never hesitate to use their magic in the most abhorrent ways.</p></div><div data-roll-name-ancestor=\"Arms and Armor\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Arms and Armor.</span></span> Drow craft weapons made of adamantine, a dark and supernaturally hard metal. Drow artisans adorn their weapons and armor with web-like filigree and spider motifs, and mages sometimes imbue items with magic to enhance their effectiveness. However, such magic fades when exposed to sunlight, so that magical drow weapons and armor rarely retain their enhancement bonuses and magical properties when brought to the surface.</p></div><div data-roll-name-ancestor=\"Cutthroat Politics\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Cutthroat Politics.</span></span> Drow politics are cutthroat and rife with intrigue. When drow work together, it is typically to destroy a common foe and ensure their own survival, and such alliances are short lived and fraught with peril.</p><p>Drow society is divided into noble houses, each ruled by a matron who seeks to raise the prestige and power of her house above all others. Other high-ranking members of the house are blood relatives, while the middling ranks are flush with drow from weaker families that have sworn fealty to the greater house. Clinging precariously to the bottom rung of a house's social ladder are the house slaves, made up of drow of low birth and the occasional non-drow captive.</p></div><div data-roll-name-ancestor=\"Matriarchal Rule\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Matriarchal Rule.</span></span> Lolth, through her faithful priestesses, dictates the rules of drow society, ensuring that her orders and plots are carried out. Since Lolth is prone to manifesting on the Material Plane and directly punishing those that disobey her, the drow have learned to heed what she says and do as her priestesses command.</p><p>In drow society, males are subservient to females. A male drow might lead an Underdark patrol or a raiding party to the surface, but he reports to a female drow-either the matron of his house or one of her hand-picked female subordinates. Although male drow can fill almost any function in drow society, they can't be priests, nor can they rule a house.</p></div><div data-roll-name-ancestor=\"Poison Predilection\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"8\"> <span class=\"entry-title-inner\">Poison Predilection.</span></span> Distilled from spider venom and the flora of the Underdark, poison can be found in abundance among the drow, and it plays an important part in their culture and politics. Drow mages concoct a viscid toxin that leaves enemies &amp;Reference[condition=unconscious]. Drow warriors coat their blades and crossbow bolts with this venom, looking forward to the interrogation and torture that follows combat.</p></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Variant: Drow Magic Armor and Weapons\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"9\"> <span class=\"entry-title-inner\">Variant: Drow Magic Armor and Weapons</span><span class=\"ve-flex-vh-center\"></span></h4> <p>Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.</p><ul class=\"rd__list\"><li class=\"rd__li \">A drow wearing a +1 chain shirt and carrying a +1 shortsword has AC 16 and a +1 bonus on attack and damage rolls with shortsword attacks.</li><li class=\"rd__li \">A drow elite warrior wearing +2 studded leather and carrying a +2 shortsword has AC 20 and a +2 bonus on attack and damage rolls with shortsword attacks.</li><li class=\"rd__li \">A drow priestess of Lolth wearing +3 scale mail has AC 19.</li></ul></div></div><p></p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>Such depravity. Such terrifying cruelty. They are the vile poison that plagues all elvenkind.</i>”</p><p><span class=\"rd__quote-by\">— Nelar Autumnwell, elf cleric of Corellon Larethian</span></p></div></div></div></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Drow Magic Armor and Weapons\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Variant: Drow Magic Armor and Weapons</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h4> <div class=\"rd__b  rd__b--3\"><p>Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.</p><p>A <span class=\"bold\" data-vet-page=\"bestiary.html\" data-vet-source=\"MM\" data-vet-hash=\"drow_mm\" data-vet-is-allow-redirect=\"true\">drow</span> wearing a <span class=\"bold\" data-vet-page=\"items.html\" data-vet-source=\"DMG\" data-vet-hash=\"%2b1%20chain%20shirt_dmg\" data-vet-is-allow-redirect=\"true\">+1 chain shirt</span> and carrying a <span class=\"bold\" data-vet-page=\"items.html\" data-vet-source=\"DMG\" data-vet-hash=\"%2b1%20shortsword_dmg\" data-vet-is-allow-redirect=\"true\">+1 shortsword</span> has AC 16 and a +1 bonus on attack and damage rolls with shortsword attacks.</p></div></div>",
+        "value": "<p>精灵：卓尔Elves:Drow</p><p>“如此堕落。如此可怕而残忍。他们是困扰着所有精灵族裔的邪恶毒药。”</p><p>尼尔勒秋井Nelar Autumnwell，精灵主神科瑞隆拉瑞斯安Corellon Larethian的精灵牧师</p><p>数万年前，精灵族里出现了分裂，仁慈沉静的一支与自私残忍的另一支相互争斗不休。精灵战争的最后，善良精灵把它们的邪恶同族驱赶到地底深处。然而被驱逐的黑暗精灵卓尔却在这些黑暗的洞窟和无尽扭曲的地道中找到了自己的庇护所。它们还找到了唯一没有抛弃其族人的精灵神，并在她的指引下建起了黑暗精灵的地下王国。</p><p><strong>罗丝之子Children of Lolth。</strong>罗丝女神被称为蛛后Spider Queen，或蜘蛛魔后Demon Queen of Spider，她作为从深渊获得提升的神受所有卓尔的崇拜。而黑暗精灵的地下文明也正是围绕她建其。她的所要求，卓尔们都将义无反顾的去实现。</p><p>身为最恶毒的精灵，卓尔却鲜有与地表世界的接触。尽管它们一直想要毁灭那些曾经驱逐自己的精灵，却并不自认为流亡者。它们坚信自己命中注定是黑暗世界的统治者，并随时等待罗丝女神下令前往摧毁那些地表的近亲。</p><p><strong>黑暗中的生物Creatures of Darkness。</strong>卓尔在长时间的地底生活中针对环境进化了自身，并掌握了在黑暗中视物的能力。这种进化也使它们从此难以忍受在阳光下的活动。不过，一旦幽暗地域中的奴隶供应不足时，卓尔还是会在夜幕掩护下带领掠夺队前往地表，并俘虏所及的类人生物带回卓尔城市中施行折磨，使其屈服。卓尔并不会因其他原因轻易前往地表，相对而言，它们更愿意待在让它们更有把握，更具安全感的地下王国中。</p><p><strong>幽暗地域的城市Underdark Cities。</strong>黑暗精灵们在巨大的洞窟中，那些水与食物资源丰富之地建起了梦幻般的城市。它们凿刻石头的技术能媲美最好的矮人工匠，而且其建筑甚至仍保留着精灵的独特审美。其城市不仅精美绝伦，而且结构合理，更懂得因地制宜。卓尔们擅长镂空巨大的钟乳石和石笋，以此在这些生长在地面和洞顶的尖塔中建立其起居室。</p><p>卓尔城市无序的向外蔓延并被高墙团团围住。所有非卓尔访客都被拒于城外，并处在高墙的监视下。卓尔们驯养巨型蜘蛛作为城防守卫对抗入侵者。这些蜘蛛让城市布满蛛网，不仅装点了城市的美丽，还能抓捕任何试图翻越城墙的敌人。</p><p><strong>卓尔魔法Drow Magic。</strong>卓尔们在适应地底生活的同时，所使用的魔法也针对环境进行了调整。它们用魔法从石头中雕刻出整座城市，强化战斗武器的效果，甚至创造出危险的全新魔法装备，甚至还能用魔法从深渊中召唤恶魔为己所用。卓尔施法者们极度傲慢，且在使用魔法实行其险恶目标时从不犹豫。</p><p><strong>武器与护甲Arms and Armor。</strong>卓尔的武器使用一种称为精金adamantine的超自然黑硬金属制作。工匠们会用银丝工艺在武器和护甲上制作网纹以及蜘蛛饰样，有时还会由魔法师对物品灌注魔法以增强其效力。然而这些魔法暴露到阳光中后都会迅速消退，因此很少有人在地表见到卓尔的魔法武器和护甲发挥其附加能力和魔法特性。</p><p><strong>政治恶斗Cutthroat Politics。</strong>卓尔的政治活动常伴着激烈的争斗，并充斥各种阴谋。卓尔间的合作通常只是为了摧毁共同的敌人以确保自身的存活，而这种联盟都极为短暂且充满变数。</p><p>卓尔的社会由各个独立的贵族家族组成，每个家族由一名主母领导，家族成员在主母的指引下与其他家族竞争，力求提升自己家族的势力和声望。家族里的高阶成员是族中血亲，而中阶成员则是一些宣誓效忠大家族的弱势家庭。在家族中地位最低的是家族所属的奴隶，它们是出身低微的卓尔或是一些抓来的非卓尔俘虏。</p><p><strong>母系统治Matriarchal Rule。</strong>罗丝忠实的女祭司作为女神的代行者管理卓尔社会的一切，她们定制好卓尔社会的律法，并确保一切秩序与规划都遵循女神的懿旨。对于那些违背自己的意志，罗丝女神偏爱亲自现身主物质位面施予惩罚。因而卓尔们都时刻留意女神的心意，并随时服从其女祭司的命令。</p><p>在卓尔社会里，男性永远从属于女性。男性卓尔可以领导一支幽暗地域的巡逻队，或是前往地表的掠夺团，但必须向其卓尔女长官进行汇报，其长官可能是家族的主母或是其任命的下级卓尔女性。男性卓尔允许担任所有社会中的职位，但它们不能成为祭司，也不能出任家族领导者。</p><p><strong>用毒偏好Poison Predilection。</strong>卓尔使用蜘蛛毒液和天然植物进行蒸馏，提炼成各种毒药。而幽暗地域孕育着的丰富资源，正好给卓尔们提供了大量的炼制原料。这些特产不仅通途广泛，还在卓尔社会的政治文化中扮演者重要的角色。卓尔巫师们会配制一种使敌人瞬间昏迷的半流体的毒素，卓尔战士们则把这种毒素涂抹在起刀刃和弩箭上，以期在随后的战斗中享受用毒素进行的审讯和酷刑。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -584,12 +572,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -639,10 +627,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Drow",
+    "name": "卓尔 Drow (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -653,12 +643,9 @@
       "src": "systems/dnd5e/tokens/humanoid/Drow.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -709,7 +696,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -733,12 +720,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
       "_id": "0vVC2AQ3zwLvwe13",
-      "name": "Shortsword",
+      "name": "短剑 Shortsword",
       "type": "weapon",
       "system": {
         "source": {
@@ -750,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one target. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+4，触及5尺，单一目标。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -787,7 +775,8 @@
             },
             "custom": {
               "enabled": false
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -798,7 +787,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
         "activities": {
@@ -814,7 +804,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -841,15 +832,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -871,7 +866,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -879,7 +875,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -890,21 +885,68 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
-        "rarity": "",
         "identified": true,
         "equipped": true,
         "attunement": "",
@@ -931,8 +973,10 @@
         "container": null,
         "attuned": false,
         "cover": null,
-        "crewed": false,
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -950,9 +994,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -964,7 +1008,7 @@
     },
     {
       "_id": "T1PUPVf3XcGKZw70",
-      "name": "Hand Crossbow",
+      "name": "手弩 Hand Crossbow",
       "type": "weapon",
       "system": {
         "source": {
@@ -976,7 +1020,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+4]]{+4} to hit, range 30/120 ft., one target. <i>Hit:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) damage, and the target must succeed on a [[/save ability=con dc=13]] saving throw or be &amp;Reference[condition=poisoned] for 1 hour. If the saving throw fails by 5 or more, the target is also &amp;Reference[condition=unconscious] while &amp;Reference[condition=poisoned] in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.</p></div>",
+          "value": "<p>远程武器攻击：命中+4，射程30/120尺，单一目标。命中：5（[[/damage 1d6 + 2 type=piercing]]）点穿刺伤害，目标必须进行一次DC 13的体质豁免，豁免失败者将持续中毒1小时。如果豁免结果低至5或更低，则目标中毒的同时陷入昏迷。昏迷目标在受到伤害或在其他生物用一个动作摇醒它时恢复知觉。</p>",
           "chat": ""
         },
         "range": {
@@ -1014,7 +1058,8 @@
             },
             "custom": {
               "enabled": false
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1025,7 +1070,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
         "activities": {
@@ -1041,7 +1087,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1068,15 +1115,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1098,7 +1149,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1106,7 +1158,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1117,18 +1168,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           },
           "qp1bznnWRICvPgQA": {
             "_id": "qp1bznnWRICvPgQA",
@@ -1146,7 +1245,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1164,7 +1264,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "13"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1181,15 +1282,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1206,7 +1311,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1214,7 +1320,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1225,18 +1330,64 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "rarity": "",
         "identified": true,
         "equipped": true,
         "attunement": "",
@@ -1263,8 +1414,10 @@
         "container": null,
         "attuned": false,
         "cover": null,
-        "crewed": false,
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1282,9 +1435,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1296,7 +1449,7 @@
     },
     {
       "_id": "3vNC9n3hJcLO1CHg",
-      "name": "Fey Ancestry",
+      "name": "妖精血统 Fey Ancestry",
       "type": "feat",
       "system": {
         "source": {
@@ -1308,7 +1461,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The drow has advantage on saving throws against being &amp;Reference[condition=charmed], and magic can't put the drow to sleep.</p></div>",
+          "value": "<p>卓尔进行对抗魅惑的豁免检定时具有优势，且魔法效应无法使卓尔陷入睡眠。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1322,7 +1475,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "fey-ancestry",
         "cover": null,
@@ -1330,7 +1483,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1349,9 +1503,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1363,7 +1517,7 @@
     },
     {
       "_id": "raE2hCk3wCWFalqY",
-      "name": "Sunlight Sensitivity",
+      "name": "日照敏感 Sunlight Sensitivity",
       "type": "feat",
       "system": {
         "source": {
@@ -1375,7 +1529,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div>",
+          "value": "<p>在日光照射下，卓尔的攻击检定具有劣势，其依赖视觉的感知（察觉）检定也具有劣势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1389,7 +1543,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "sunlight-sensitivity",
         "cover": null,
@@ -1397,7 +1551,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1416,9 +1571,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1430,11 +1585,11 @@
     },
     {
       "_id": "jteeFL1ioYaBDOIs",
-      "name": "Chain Shirt",
+      "name": "链甲衫 Chain Shirt",
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p></div>",
+          "value": "<p>链甲衫由相互连接的金属环制成，穿在衣服或皮革夹层之间。它为躯干提供适度的防护，外层衣物也能减轻金属环摩擦的声响。</p>",
           "chat": ""
         },
         "source": {
@@ -1456,10 +1611,8 @@
         },
         "attunement": "",
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "cover": null,
-        "crewed": false,
         "uses": {
           "max": "",
           "spent": 0,
@@ -1467,8 +1620,7 @@
         },
         "armor": {
           "value": 13,
-          "dex": 2,
-          "magicalBonus": null
+          "dex": 2
         },
         "hp": {
           "value": 0,
@@ -1478,7 +1630,8 @@
         },
         "speed": {
           "value": null,
-          "conditions": ""
+          "conditions": "",
+          "units": "ft"
         },
         "strength": null,
         "proficient": 1,
@@ -1493,7 +1646,11 @@
         "properties": [],
         "activities": {},
         "attuned": false,
-        "identifier": "chain-shirt"
+        "identifier": "chain-shirt",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "img": "icons/equipment/chest/breastplate-scale-grey.webp",
       "ownership": {
@@ -1511,9 +1668,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1525,7 +1682,7 @@
     },
     {
       "_id": "PT4girBnGEwBgoUs",
-      "name": "Darkness",
+      "name": "黑暗术 Darkness",
       "type": "spell",
       "system": {
         "source": {
@@ -1537,7 +1694,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with &amp;Reference[rule=darkvision] can't see through this darkness, and nonmagical light can't illuminate it.</p><p>If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.</p><p>If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</p></div>",
+          "value": "<p>你在施法距离内指定一点，并在法术持续时间内使魔法的黑暗充斥该点半径 15 尺的球状区域。该黑暗会绕过拐角扩散，连拥有黑暗视觉的生物也无法看穿这种黑暗，而非魔法的光照也无法在区域内提供照明。</p><p>如果你将法术目标设置于你正持握或未被穿着携带的物件，则黑暗将从物件周围漫出并跟随物件移动。将该物件完全掩盖时（比如用碗或头盔盖住），也会将其漫出的黑暗隔绝。</p><p>如果法术区域与任何2环或更低环阶法术创造的光亮区域重叠，则这些造光的法术将被解除。</p>",
           "chat": ""
         },
         "level": 2,
@@ -1560,7 +1717,8 @@
             "contiguous": false,
             "type": "sphere",
             "size": "15",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -1579,7 +1737,8 @@
         },
         "duration": {
           "value": "10",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "1",
@@ -1590,10 +1749,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1613,22 +1768,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1657,7 +1816,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1665,7 +1825,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1676,18 +1835,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "darkness"
+        "identifier": "darkness",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -1711,9 +1918,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1725,7 +1932,7 @@
     },
     {
       "_id": "8jylOjw50xvCYk7s",
-      "name": "Faerie Fire",
+      "name": "妖火 Faerie Fire",
       "type": "spell",
       "system": {
         "source": {
@@ -1737,7 +1944,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.</p><p>Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being &amp;Reference[condition=invisible].</p></div>",
+          "value": "<p>指定施法距离内一处 20 尺立方区域，其内每个物件都将被蓝色、绿色、或紫色的光所包围（颜色由你指定）。区域内的生物则必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}，豁免失败时也会被光线勾勒出轮廓。受术物件和生物在法术持续时间内发出 10 尺半径的微光。</p><p>受术生物或物件无法受益于隐形，且任何能看见他们的攻击者对其发动的攻击检定具有优势。</p>",
           "chat": ""
         },
         "level": 1,
@@ -1758,7 +1965,8 @@
             "contiguous": false,
             "type": "cube",
             "size": "20",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -1775,7 +1983,8 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "1",
@@ -1786,10 +1995,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1809,22 +2014,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1845,7 +2054,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -1863,7 +2073,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1871,7 +2082,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1882,18 +2092,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "faerie-fire"
+        "identifier": "faerie-fire",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -1917,9 +2176,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1931,7 +2190,7 @@
     },
     {
       "_id": "as6m2VrjNzoatcD0",
-      "name": "Dancing Lights",
+      "name": "舞光术 Dancing Lights",
       "type": "spell",
       "system": {
         "source": {
@@ -1943,7 +2202,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p><p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.</p></div>",
+          "value": "<p>你在施法距离内创造四个火把大小的光源。法术持续时间内，光源能够以火把，灯笼或光球的形态显现并在空中悬浮。你也可以将四个光源合为一个中型类人的模糊光影。无论选择哪种方式，每处光源都可以发出半径 10 尺的微光光照。</p><p>你在自己回合可以用一个附赠动作令这些光源在施法距离内移动至多 60 尺。每个光源必需在另一个光源周边 20 尺内，而离开施法距离的光源会随即熄灭。</p>",
           "chat": ""
         },
         "level": 0,
@@ -1964,7 +2223,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": "any"
+            "units": "any",
+            "stationary": false
           },
           "affects": {
             "type": "space",
@@ -1982,16 +2242,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "always",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2011,21 +2268,25 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2045,7 +2306,8 @@
             "match": {
               "attacks": false,
               "proficiency": false,
-              "saves": false
+              "saves": false,
+              "disposition": false
             },
             "profiles": [
               {
@@ -2072,7 +2334,6 @@
               }
             ],
             "summon": {
-              "identifier": "",
               "mode": "",
               "prompt": true
             },
@@ -2093,7 +2354,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2101,7 +2363,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2112,17 +2373,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
-            }
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "friendlySummon": false
           }
         },
-        "identifier": "dancing-lights"
+        "identifier": "dancing-lights",
+        "method": "spell",
+        "prepared": 2
       },
       "ownership": {
         "default": 0,
@@ -2147,9 +2457,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2161,7 +2471,7 @@
     },
     {
       "_id": "JMhD2ORWUZHG24JR",
-      "name": "Innate Spellcasting",
+      "name": "天生施法 Innate Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -2173,7 +2483,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Innate Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Innate Spellcasting.</span></span> The drow's spellcasting ability is Charisma (spell save DC <span class=\"rd__dc\">11</span>). It can innately cast the following spells, requiring no material components:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>At will: @UUID[.as6m2VrjNzoatcD0]</p></li><li class=\"rd__li  rd__li-spell\"><p>1/day each: @UUID[.PT4girBnGEwBgoUs], @UUID[.8jylOjw50xvCYk7s]</p></li></ul></div></div>",
+          "value": "<p>卓尔天生施法属性为魅力（法术豁免DC 11）。它天生可施展以下法术且不需要任何相应的材料成分： 随意：舞光术dancing lights 每项1/日：黑暗术darkness，妖火faerie fire</p><p>@UUID[.as6m2VrjNzoatcD0]{舞光术 Dancing Lights}、@UUID[.PT4girBnGEwBgoUs]{黑暗术 Darkness}、@UUID[.8jylOjw50xvCYk7s]{妖火 Faerie Fire}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2187,7 +2497,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "innate-spellcasting",
         "cover": null,
@@ -2195,7 +2505,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2214,9 +2525,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2228,7 +2539,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "CsCYJKoYroMI4p63",
   "sort": 25600000,
   "ownership": {
     "default": 0,

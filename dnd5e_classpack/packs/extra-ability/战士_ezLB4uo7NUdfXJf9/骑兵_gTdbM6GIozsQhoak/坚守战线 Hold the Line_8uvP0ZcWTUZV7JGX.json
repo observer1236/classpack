@@ -2,14 +2,14 @@
   "_id": "8uvP0ZcWTUZV7JGX",
   "name": "坚守战线 Hold the Line",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Parry.png",
+  "img": "icons/skills/melee/sword-shield-stylized-white.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         你成为了封锁你敌人行动的专家。处于你触及范围内的生物将在移动5尺或以上距离时引发来自你的借机攻击，且若你以一次借机攻击命中一个生物，目标的移动速度将被归零直到该回合结束。</p>",
+      "value": "<p>10级起，你成为了阻击敌人的大师。当有生物在你触及范围内移动了5尺或更多的距离，那个生物将会引发你的借机攻击。且，当你以借机攻击击中了一个生物时，那个生物的速度将被降低为0，持续直至本回合结束。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "骑兵等级 10",
     "activities": {},
     "identifier": "-hold-the-line",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 10,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -63,17 +64,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

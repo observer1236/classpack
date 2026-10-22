@@ -1,5 +1,5 @@
 {
-  "name": "Shrieker (MM'14)",
+  "name": "尖叫菌 Shrieker (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180787977,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "eBQhfKGeU0upX6Xm",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Shrieker.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Shrieker.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 1,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 1,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 1,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 3,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 1,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,28 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": null,
-        "walk": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "0"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 0,
-        "blindsight": 30,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 0,
+          "blindsight": 30,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +533,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<p>A shrieker is a human-sized mushroom that emits a piercing screech to drive off creatures that disturb it. Other creatures use the fungi as an alarm to signal the approach of prey, and various intelligent races of the Underdark cultivate shriekers on the outskirts of their communities to discourage trespassers.</p><div data-roll-name-ancestor=\"Fungi\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Fungi</span></h1> <p>With its sky of jagged stone and perpetual night, the Underdark is home to all manner of fungi. Taking the place of plants in the subterranean realm, fungi are vital to the survival of many underground species, providing nourishment and shelter in the unforgiving darkness.</p><p>Fungi spawn in organic matter, then break that matter down to consume it, feeding on filth and corpses. As they mature, fungi eject spores that drift on the lightest breeze to spawn new fungi.</p><p>Not needing sunlight or warmth to grow, fungi thrive in every corner and crevice of the Underdark. Transformed by the magic that permeates that underground realm, Underdark fungi often develop potent defensive mechanisms or abilities of mimicry and attack. The largest specimens can spread to create vast subterranean forests in which countless creatures live and feed.</p></div>",
+        "value": "<h3>尖叫菌Shrieker</h3><p>尖叫菌是像人一样大的蘑菇，会在被打扰时发出刺耳的尖叫。有些生物会利用这种真菌发出入侵的预警信号，而很多幽暗地域的智慧种族会在城市的郊区成片种植尖叫菌，用以把不速之客拒之城外。</p>",
         "public": ""
       },
-      "alignment": "Unaligned",
+      "alignment": "无阵营 Unaligned",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -584,12 +572,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -640,10 +628,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Shrieker",
+    "name": "尖叫菌 Shrieker (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -654,12 +644,9 @@
       "src": "systems/dnd5e/tokens/plant/Shrieker.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 0.8,
       "scaleY": 0.8,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -710,13 +697,12 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [
-      {
-        "id": "blindsight",
+    "detectionModes": {
+      "blindsight": {
         "range": 30,
         "enabled": true
       }
-    ],
+    },
     "occludable": {
       "radius": 0
     },
@@ -740,12 +726,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
       "_id": "L9H1xSgvi1C49eGa",
-      "name": "False Appearance",
+      "name": "拟形 False Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -757,7 +744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While the shrieker remains motionless, it is indistinguishable from an ordinary fungus.</p></div>",
+          "value": "<p>静止不动的尖叫菌与普通的真菌一模一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -771,7 +758,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "false-appearance",
         "cover": null,
@@ -779,7 +766,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -798,9 +786,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -812,7 +800,7 @@
     },
     {
       "_id": "aAXTLV4fzUc9FjJ8",
-      "name": "Shriek",
+      "name": "尖叫 Shriek",
       "type": "feat",
       "system": {
         "source": {
@@ -824,7 +812,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for [[/r 1d4]] of the shrieker's turns afterward.</p></div>",
+          "value": "<p>尖叫菌在其身边30尺内出现生物或光亮时发出尖叫，其周围300尺范围内都能听到声音，尖叫声持续到干扰离开警戒范围，或是持续到尖叫菌发声[[/r 1d4]]回合。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -838,7 +826,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "FT6fOgIWbsILCHrk": {
             "_id": "FT6fOgIWbsILCHrk",
@@ -855,20 +843,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -896,7 +889,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -904,7 +898,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -915,15 +908,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "shriek",
@@ -932,7 +971,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -951,9 +991,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -965,7 +1005,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "d1ec34aa6f6ca9ab",
   "sort": 24700000,
   "ownership": {
     "default": 0,

@@ -1,15 +1,15 @@
 {
   "_id": "NBKmI7pjkbpW90nT",
-  "name": "防守战术",
+  "name": "防守战术 Defensive Tactics",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_GlaiveToss.png",
+  "img": "icons/skills/melee/sword-shield-stylized-white.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第7级时，你选择获得以下特性之一：</p>\n<ul>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.r8uKpHYKpQY0fMdQ]{防守战术：冲出重围}</li>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.oCr3QxfslqtWWVzL]{防守战术：多重防御}</li>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.oW9TdsaCSUH7Btn4]{防守战术：钢铁意志}</li>\n</ul>",
+      "value": "<p> 第7级时，你选择获得以下特性之一。</p>\n<ul>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.r8uKpHYKpQY0fMdQ]{防守战术：冲出重围}</li>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.oCr3QxfslqtWWVzL]{防守战术：多重防御}</li>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.oW9TdsaCSUH7Btn4]{防守战术：钢铁意志}</li>\n</ul>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,15 @@
     },
     "requirements": "猎人等级 7",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "defensive-tactics",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 7,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "CZlNTgVXzHGO0sCA",
   "sort": 18100000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +60,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757093023582,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -2,7 +2,7 @@
   "name": "摧枯拉朽 Demolishing Might",
   "type": "feat",
   "_id": "H71jDR9VzqPUYgi7",
-  "img": "modules/dnd5e_classpack/Nicons/images/skill_icon_31.png",
+  "img": "icons/skills/melee/strike-hammer-destructive-orange.webp",
   "system": {
     "activities": {},
     "uses": {
@@ -14,23 +14,24 @@
       "value": "<p>自6级起，你的近战武器攻击对构装生物额外造成[[/r 1d8]]伤害，对物件和建筑物造成双倍伤害。</p>",
       "chat": ""
     },
-    "identifier": "-",
+    "identifier": "demolishing-might",
     "source": {
       "revision": 1,
       "rules": "2024"
     },
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "requirements": "巨像道途等级 6",
     "type": {
-      "value": "",
+      "value": "class",
       "subtype": ""
     }
   },
@@ -59,18 +60,14 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "riders": {
-        "activity": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1756617066498,
     "modifiedTime": 1756617115732,
     "lastModifiedBy": "vFLRCDyc5l72uRlV",

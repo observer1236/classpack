@@ -1,5 +1,5 @@
 {
-  "name": "图腾精魂-雕 Totem Spirit: Eagle",
+  "name": "图腾精魂：雕 Totem Spirit: Eagle",
   "type": "feat",
   "img": "icons/creatures/birds/raptor-hawk-flying.webp",
   "system": {
@@ -8,7 +8,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<ul><li><strong>雕Eagle</strong>。狂暴时，如果你未着装重甲，则其他生物在对你进行借机攻击时进行的攻击检定具有劣势。另外，你在自己回合内可以用附赠动作执行疾行动作。雕之精魄让你成为在战场中自由穿梭的猎杀者。</li></ul>",
+      "value": "<ul><li><p>狂暴期间，如果你未着装重甲，则其他生物在对你进行借机攻击时进行的攻击检定具有劣势。另外，你在自己回合内可以用附赠动作执行疾走动作。雕之精魄让你成为在战场中自由穿梭的猎杀者。</p></li></ul>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "cover": null,
     "crewed": false,
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "activities": {},
-    "identifier": "-",
-    "advancement": [],
+    "identifier": "totem-spirit-eagle",
+    "advancement": {},
     "enchant": {}
   },
   "effects": [],
@@ -62,17 +63,12 @@
       "otherCondition": ""
     },
     "core": {},
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1724854634027,
     "modifiedTime": 1757174342151,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

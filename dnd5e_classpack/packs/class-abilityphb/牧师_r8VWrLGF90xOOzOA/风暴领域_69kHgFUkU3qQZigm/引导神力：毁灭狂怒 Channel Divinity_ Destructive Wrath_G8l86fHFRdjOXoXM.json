@@ -2,7 +2,7 @@
   "_id": "G8l86fHFRdjOXoXM",
   "name": "引导神力：毁灭狂怒 Channel Divinity: Destructive Wrath",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Warlock_SiphonLife.png",
+  "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
   "system": {
     "description": {
       "value": "<p>        第2级起，你可以用@UUID[Compendium.dnd5e_classpack.class-abilityphb.WPevnsjK8Cjd9Fcl]{引导神力}特性为自己装备无拘束的凶猛风暴之力。</p>\n<p>        当你造成闪电或雷鸣伤害时，可以使用引导神力使该伤害的伤害掷骰直接取最高值而无需掷骰。</p>",
@@ -25,13 +25,16 @@
     },
     "requirements": "风暴领域等级 2",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "channel-divinity-destructive-wrath",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 2,
+      "repeatable": false,
+      "items": [
+        "subclass:tempest-domain"
+      ]
     },
     "properties": [
       "mgc"
@@ -40,40 +43,42 @@
   "effects": [
     {
       "name": "引导神力-毁灭狂怒",
-      "img": "modules/dnd5e_classpack/Nicons/Warlock_SiphonLife.png",
+      "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
       "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.G8l86fHFRdjOXoXM",
       "_id": "FrUmVQPlLk3jCK6d",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.activation",
-          "mode": 2,
-          "value": "['lightning', 'thunder'].some(type=>damageTypes[type])",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "type": "custom",
+            "value": "ItemMacro,postDamageRoll",
+            "phase": "initial",
+            "_id": "9hllSfdvkV6HKzZN",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.damage.all",
-          "mode": 2,
-          "value": "reroll-max",
-          "priority": 20
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.G8l86fHFRdjOXoXM",
+          "message": null
         },
-        {
-          "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.count",
-          "mode": 2,
-          "value": "ItemUses.引导神力 Channel Divinity",
-          "priority": 20
-        }
-      ],
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -88,23 +93,26 @@
           "showIcon": false,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "applicationMode": "dnd5e",
+          "expiryMode": "default"
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
         }
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757268059747,
         "modifiedTime": 1757268205094,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -140,19 +148,34 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "destructiveWrath",
-        "source": "chris-premades",
-        "version": "0.0.0"
+    "dnd5e": {},
+    "chris-premades": {},
+    "dae": {
+      "macro": {
+        "name": "引导神力：毁灭狂怒 Channel Divinity: Destructive Wrath",
+        "type": "script",
+        "command": "if (args[0]?.macroPass !== \"postDamageRoll\" || workflow.aborted) return;\nif (workflow.actor?.uuid !== macroItem.actor?.uuid) return;\nif (workflow._classpackDestructiveWrathChecked) return;\n\nconst api = globalThis.dnd5eClasspack;\nif (!api?.resources || !api.dialogUtils) return;\nconst actor = workflow.actor;\nconst resource = actor.items.find(item => item.system.identifier === \"channel-divinity\");\nif (!resource || api.resources.remaining(resource) < 1) return;\n\nfunction refresh(roll) {\n  for (const term of roll.terms) {\n    if (term.roll) refresh(term.roll);\n    for (const inner of term.rolls ?? []) refresh(inner);\n    if (term.rolls && Array.isArray(term.results)) {\n      term.results.forEach((result, i) => {\n        if (term.rolls[i]) result.result = term.rolls[i].total;\n      });\n    }\n  }\n  roll._total = roll._evaluateTotal();\n  return roll;\n}\n\nfunction maximize(original) {\n  const revised = original.constructor.fromData(\n    foundry.utils.deepClone(original.toJSON())\n  );\n  const defaults = original.options.type\n    ? [original.options.type] : Array.from(original.options.types ?? []);\n  let changed = false;\n  for (const die of revised.dice) {\n    const explicit = String(die.options.flavor ?? \"\").toLowerCase()\n      .split(/[^a-z]+/).filter(type => Object.hasOwn(CONFIG.DND5E.damageTypes, type));\n    const types = explicit.length ? explicit : defaults.length === 1 ? defaults : [];\n    if (!types.some(type => [\"lightning\", \"thunder\"].includes(type))) continue;\n    for (const result of die.results) {\n      if (result.active === false || result.discarded) continue;\n      if (result.result === die.faces && result.count === undefined) continue;\n      result.result = die.faces;\n      delete result.count;\n      changed = true;\n    }\n  }\n  return { roll: changed ? refresh(revised) : original, changed };\n}\n\nconst groups = [\n  [\"damageRolls\", \"setDamageRolls\"],\n  [\"bonusDamageRolls\", \"setBonusDamageRolls\"],\n  [\"otherDamageRolls\", \"setOtherDamageRolls\"]\n].map(([key, setter]) => {\n  const before = [...(workflow[key] ?? [])];\n  const results = before.map(maximize);\n  return { before, setter, after: results.map(r => r.roll),\n    changed: results.some(r => r.changed) };\n}).filter(group => group.changed);\nif (!groups.length) return;\n\nworkflow._classpackDestructiveWrathChecked = true;\nconst confirmed = await api.dialogUtils.confirm(\n  macroItem.name,\n  \"是否消耗 1 次引导神力，将本次伤害中的闪电和雷鸣伤害骰取最大值？\",\n  { userId: api.firstOwner(actor, true) }\n);\nif (!confirmed) return;\n\nlet receipt;\ntry {\n  receipt = await api.resources.consume([{ itemUuid: resource.uuid, amount: 1 }], {\n    id: `${workflow.uuid ?? workflow.id ?? foundry.utils.randomID()}:${macroItem.uuid}:destructive-wrath`\n  });\n  for (const group of groups) await workflow[group.setter](group.after);\n} catch (error) {\n  // 结算失败时恢复本次原伤害，再退回仍可确认属于本次的资源扣除。\n  for (const group of groups) {\n    try { await workflow[group.setter](group.before); }\n    catch (restoreError) { console.error(\"毁灭狂怒：恢复伤害失败\", restoreError); }\n  }\n  for (const entry of [...(receipt?.entries ?? [])].reverse()) {\n    const item = await fromUuid(entry.itemUuid);\n    if (Number(item?.system.uses.spent) === entry.after) {\n      await item.update({ \"system.uses.spent\": entry.before });\n    }\n  }\n  console.error(\"毁灭狂怒\", error);\n  ui.notifications.error(\"毁灭狂怒未能完成，请检查控制台、伤害结果和引导神力剩余次数。\");\n}",
+        "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
+        "scope": "global",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
       }
     }
   },
@@ -160,9 +183,9 @@
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757268306673,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

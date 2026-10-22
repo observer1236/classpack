@@ -1,5 +1,5 @@
 {
-  "name": "Ghost (MM'14)",
+  "name": "幽魂 Ghost (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180775294,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "rhlKje5HNoNWiw0K",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Ghost.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Ghost.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 7,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 13,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 17,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,29 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": 40,
-        "swim": null,
-        "walk": 0,
         "units": "ft",
-        "hover": true
+        "hover": true,
+        "speeds": {
+          "walk": "0",
+          "fly": "40"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 60,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +511,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +534,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A ghost is the soul of a once-living creature, bound to haunt a specific location, creature, or object that held significance to it in its life.</p><div data-roll-name-ancestor=\"Unfinished Business\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Unfinished Business.</span></span> A ghost yearns to complete some unresolved task from its life. It might seek to avenge its own death, fulfill an oath, or relay a message to a loved one. A ghost might not realize that it has died and continue the everyday routine of its life. Others are driven by wickedness or spite, as with a ghost that refuses to rest until every member of a certain family or organization is dead.</p><p>The surest way to rid an area of a ghost is to resolve its unfinished business. A ghost can be destroyed more easily by invoking a weakness tied to its former life. The ghost of a person tortured to death might be killed again by the implements of that torture. The ghost of a gardener might become more vulnerable when exposed to a potent floral fragrance.</p></div><div data-roll-name-ancestor=\"Ghostly Manifestations\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Ghostly Manifestations.</span></span> Sensations of profound sadness, loneliness, and unfulfilled yearning emanate from places where ghostly hauntings occur. Strange sounds or unnatural silences create an unsettling atmosphere. Cold spots settle in rooms that have roaring fires. A choking stench might seep into the area, inanimate objects might move of their own accord, and corpses might rise from the grave. The ghost has no control over these manifestations; they simply occur.</p></div><div data-roll-name-ancestor=\"Undead Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Undead Nature.</span></span> A ghost doesn't require air, food, drink, or sleep.</p></div></div></div>",
+        "value": "<h3>幽魂Ghost</h3><p>幽魂是活体生物死去后的灵魂，它们被束缚在某个对其生命有着重大意义的特定地点、生物或物件周围。</p><p><strong>未竟之业Unfinished Business。</strong>幽魂渴望完成某个生前未完成的任务，可能是寻求为自己的死亡而复仇，履行誓言，或是向自己所爱之人发出讯息。幽魂可能没有意识到自己已经死去而继续日常生活。也有一些幽魂被邪恶或仇恨驱使而拒绝安息，直至确认某个家庭或组织里的所有人都已死去。</p><p>摆脱幽魂最可靠的方法是完成它未竟的事业。或是可以利用幽魂生前的弱点更轻易的将其消灭。受折磨至死者的幽魂或许可以被酷刑工具再次杀死，园丁的幽魂也可能会在浓烈花香中变得更加脆弱。</p><p><strong>灵异现象Ghostly Manifestations。</strong>幽魂徘徊的地方会产生深沉哀伤，孤独，并散发着对未经之事渴望的哀嚎。奇怪的声响或不自然的沉默营造出令人不安的气氛。寒冷渗入薪火正旺的房间。令人窒息的恶臭可能渗入该区域，无生命的物件可能会自己移动，尸体可能会从坟墓中爬出。幽魂本身无法控制这些表现，而只是单纯将其引发。</p><p><strong>亡灵本质Undead Nature。</strong>幽魂不需要呼吸、饮食和睡眠。</p>",
         "public": ""
       },
-      "alignment": "Any Alignment",
+      "alignment": "任意阵营 Any Alignment",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -587,12 +576,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -663,10 +652,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Ghost",
+    "name": "幽魂 Ghost (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -677,12 +668,9 @@
       "src": "systems/dnd5e/tokens/undead/Ghost.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -733,7 +721,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -757,12 +745,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
       "_id": "e6zGyElgKbRIv9LT",
-      "name": "Withering Touch",
+      "name": "枯萎触击 Withering Touch",
       "type": "weapon",
       "system": {
         "source": {
@@ -774,7 +763,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 17 ([[/damage 4d6 + 3 type=necrotic]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：17（[[/damage 4d6 + 3 type=necrotic]]）点暗蚀伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -808,7 +797,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -842,7 +832,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -856,15 +847,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -881,7 +876,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -889,7 +885,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -900,18 +895,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "withering-touch",
@@ -929,12 +972,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -949,7 +990,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -960,10 +1002,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -981,9 +1027,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -995,7 +1041,7 @@
     },
     {
       "_id": "lAVITNLgxqPCUJCe",
-      "name": "Etherealness",
+      "name": "以太化 Etherealness",
       "type": "feat",
       "system": {
         "source": {
@@ -1007,7 +1053,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.</p></div>",
+          "value": "<p>幽魂可以在物质位面和以太位面之间转换。身处以太边境时，物质位面中也可以看到它，反之亦然。幽魂身处其中某一位面时，无法影响另一位面之物或被另一位面之物影响。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1021,7 +1067,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "63PpkXrTEfvi5URl": {
             "_id": "63PpkXrTEfvi5URl",
@@ -1038,20 +1084,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1079,7 +1130,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1087,7 +1139,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1098,15 +1149,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "etherealness",
@@ -1115,7 +1212,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1134,9 +1232,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1148,7 +1246,7 @@
     },
     {
       "_id": "2sJ5Twf8WHpiDQQ4",
-      "name": "Horrifying Visage",
+      "name": "恐惧面容 Horrifying Visage",
       "type": "feat",
       "system": {
         "source": {
@@ -1160,7 +1258,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Each non-undead creature within 60 feet of the ghost that can see it must succeed on a [[/save ability=wis dc=13]] saving throw or be &amp;Reference[condition=frightened] for 1 minute. If the save fails by 5 or more, the target also ages [[/r 1d4 * 10]]{1d4 × 10} years. A &amp;Reference[condition=frightened] target can repeat the saving throw at the end of each of its turns, ending the &amp;Reference[condition=frightened] condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a  @spell[greater restoration] spell, but only within 24 hours of it occurring.</p></div>",
+          "value": "<p>幽魂周边60尺内能看见它的非亡灵必须分别进行一次DC 13的感知豁免，豁免失败者将陷入1分钟的恐慌状态。若豁免失败且差值为5或更低，则目标还将衰老[[/r 1d4 * 10]]{1d4 × 10}×10年。该受恐慌目标可以在每个其自身回合结束时重复进行一次该豁免，豁免成功则终止自身的恐慌状态，而该目标也将在未来24小时内免疫该幽魂的恐惧面容。该衰老效应产生后的24小时内，可用高等复原术greater restoration抵消。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1174,7 +1272,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "qqM88kgDGQDFBGJB": {
             "_id": "qqM88kgDGQDFBGJB",
@@ -1191,15 +1289,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1209,7 +1311,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1231,7 +1334,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "13"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1252,7 +1356,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1260,7 +1365,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1271,15 +1375,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "horrifying-visage",
@@ -1288,7 +1439,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1307,9 +1459,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1321,7 +1473,7 @@
     },
     {
       "_id": "EO1OTSjaWwmBAKPR",
-      "name": "Possession",
+      "name": "附身 Possession",
       "type": "feat",
       "system": {
         "source": {
@@ -1333,7 +1485,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>One humanoid that the ghost can see within 5 feet of it must succeed on a [[/save ability=cha dc=13]] saving throw or be possessed by the ghost; the ghost then disappears, and the target is &amp;Reference[condition=incapacitated] and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being &amp;Reference[condition=charmed] and &amp;Reference[condition=frightened]. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.</p><p>The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the @spell[dispel evil and good] spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.</p></div>",
+          "value": "<p>幽魂身边5尺内它可以看见的一名类人生物必须进行一次DC 13的魅力豁免，豁免失败则被幽魂附身。附身完成后幽魂消失，目标陷入失能且身体失去控制。该幽魂接管目标身体的控制权，但不剥夺目标的意识。该幽魂此时只能被驱散亡灵类效应指定为目标，其他任何攻击、法术或别的效应都无法将其指定为目标。此时的幽魂保留自己的阵营以及智力、感知、魅力属性，并且免疫魅惑和恐慌，其他资料则与被附身生物相同，但不能获得该目标的知识、职业特性和熟练项。 该身体的生命值降至0时，幽魂受驱散或被如驱逐善恶dispel evil and good的法术效应迫出来时，附身终止。幽魂自身也可以主动以一个附赠动作终止附身。附身终止时，幽魂重新出现在该身体周边5尺内一处未占据空间位置。目标在豁免成功或附身终止后的24小时里对该幽魂的附身免疫。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1353,7 +1505,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "y3YWtopbesMxQdKW": {
             "_id": "y3YWtopbesMxQdKW",
@@ -1377,15 +1529,19 @@
                 }
               ]
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1395,7 +1551,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1417,7 +1574,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "13"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1438,7 +1596,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1446,7 +1605,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1457,15 +1615,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "possession",
@@ -1474,7 +1679,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1493,9 +1699,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1507,7 +1713,7 @@
     },
     {
       "_id": "Ag5CzXExSA2f5lv3",
-      "name": "Ethereal Sight",
+      "name": "以太视界 Ethereal Sight",
       "type": "feat",
       "system": {
         "source": {
@@ -1519,7 +1725,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.</p></div>",
+          "value": "<p>幽魂在物质位面时可以看见身边60尺以太位面的景色，在以太位面时可以看见身边60尺内物质位面的景色。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1533,7 +1739,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "ethereal-sight",
         "cover": null,
@@ -1541,7 +1747,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1560,9 +1767,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1574,7 +1781,7 @@
     },
     {
       "_id": "JdDUIrz67yE88euH",
-      "name": "Incorporeal Movement",
+      "name": "虚体移动 Incorporeal Movement",
       "type": "feat",
       "system": {
         "source": {
@@ -1586,7 +1793,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The ghost can move through other creatures and objects as if they were &amp;Reference[rule=difficultterrain]{difficult terrain}. It takes 5 ([[/damage 1d10 type=force]]) damage if it ends its turn inside an object.</p></div>",
+          "value": "<p>幽魂可以如同穿过困难地形一样穿过其他生物和物件。如果它在自己的回合结束时仍处在物件内部则受到5（[[/damage 1d10 type=force]]）点力场伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1600,7 +1807,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "FhGUNYY4dIRIfG3F": {
             "_id": "FhGUNYY4dIRIfG3F",
@@ -1618,20 +1825,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1661,7 +1873,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ]
             },
@@ -1677,7 +1890,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1685,7 +1899,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1696,13 +1909,59 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
@@ -1712,7 +1971,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1731,9 +1991,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1745,7 +2005,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "f12a539bc3086eec",
   "sort": 33200000,
   "ownership": {
     "default": 0,

@@ -2,14 +2,14 @@
   "_id": "w6bZZy3zdggmKRlX",
   "name": "大地行者 (游侠) Land's Stride",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ABILITY_HUNTER_POSTHASTE.png",
+  "img": "icons/magic/nature/root-vine-entangle-foot-green.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第8级起，你穿过非魔法的困难地形时不会消耗额外移动力。你穿过非魔法的植物时不会消耗额外移动力，且这类植物的荆棘、毛刺或类似的危害物也无法对你造成伤害。</p>\n<p>另外，在抵抗魔法制造或控制的植物造成的移动障碍效应时（@UUID[Compendium.dnd5e_classpack.spell.NZ4JOGBMJzeCKT5O]{纠缠术 Entangle}），你的豁免检定具有优势。</p>",
+      "value": "<p> 第8级起，你穿过非魔法的困难地形时不会消耗额外移动力。你穿过非魔法的植物时不会消耗额外移动力，且这类植物的荆棘、毛刺或类似的危害物也无法对你造成伤害。</p>\n<p> 另外，在抵抗魔法制造或控制的植物造成的移动障碍效应时（例如<em>@UUID[Compendium.dnd5e_classpack.spell.Item.NZ4JOGBMJzeCKT5O]{纠缠术}</em><em>entangle</em>），你的豁免检定具有优势。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "游侠等级 8",
     "activities": {},
-    "identifier": "-",
-    "advancement": [],
+    "identifier": "lands-stride",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 8,
+      "repeatable": false,
+      "items": [
+        "class:ranger"
+      ]
     },
     "properties": []
   },
@@ -43,12 +46,7 @@
     "entityorder": {
       "order": 155
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -68,9 +66,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757099615950,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

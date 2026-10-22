@@ -2,14 +2,14 @@
   "_id": "ddR4tv41KTeUD0Gg",
   "name": "锻造之魂 Soul of the Forge",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_PowerWordShield.png",
+  "img": "icons/tools/smithing/furnace-fire-metal-orange.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>从6级开始，你对锻造的掌控给你带来额外的好处。</p>\n<ul>\n<li>你对火焰伤害有抗性。</li>\n<li>当你穿着重甲，你的AC获得+1加值。</li>\n</ul>",
+      "value": "<p>从6级开始，你对锻造的精通为你带来特殊的能力：</p>\n<ul><li>你获得火焰伤害的抗性。</li> <li>穿着重甲期间，你的ac获得+1加值。</li></ul>",
       "chat": ""
     },
     "source": {
@@ -25,129 +25,111 @@
     "requirements": "锻造领域等级 6",
     "activities": {},
     "identifier": "-soul-of-the-forge",
-    "advancement": [],
+    "advancement": {
+      "8047bo7l76a1ji2m": {
+        "name": "火焰抗性",
+        "type": "Trait",
+        "_id": "8047bo7l76a1ji2m",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "dr:fire"
+          ],
+          "mode": "default"
+        },
+        "flags": {},
+        "level": 0,
+        "hint": ""
+      }
+    },
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": [
+        "subclass:forge-domain"
+      ]
     },
     "properties": []
   },
   "effects": [
     {
       "_id": "YeZo6c1WrzR4BDpc",
-      "changes": [
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "fire",
-          "priority": 20
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "origin": "Compendium.dnd5e_classpack.extra-ability.Item.ddR4tv41KTeUD0Gg",
       "transfer": true,
       "flags": {
         "dae": {
-          "disableCondition": "",
+          "disableCondition": "!fromUuidSync(actorUuid)?.items.some(i =>\n  i.type === \"equipment\"\n  && i.system.equipped\n  && i.system.type.value === \"heavy\"\n)",
           "disableIncapacitated": false,
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "expiryMode": "default",
+          "macroRepeat": "none"
         },
         "core": {
           "overlay": false
         }
       },
       "tint": "#ffffff",
-      "name": "获得火焰抗性",
+      "name": "锻造之魂",
       "description": "",
       "statuses": [],
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_PowerWordShield.png",
+      "img": "icons/tools/smithing/furnace-fire-metal-orange.webp",
       "type": "base",
-      "system": {},
-      "sort": 0,
-      "_key": "!items.effects!ddR4tv41KTeUD0Gg.YeZo6c1WrzR4BDpc"
-    },
-    {
-      "name": "穿着重甲时AC+1",
-      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.ddR4tv41KTeUD0Gg",
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "disabled": false,
-      "flags": {
-        "dnd5e": {},
-        "dae": {
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": []
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "type": "add",
+            "value": "+1",
+            "phase": "initial",
+            "_id": "W82cxsg64Fw2QLMx",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.ddR4tv41KTeUD0Gg",
+          "message": null
         },
-        "core": {
-          "overlay": false
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
         }
       },
-      "_id": "MekxwufBBOianOrH",
-      "changes": [
-        {
-          "key": "system.attributes.ac.bonus",
-          "mode": 2,
-          "value": "+ 1",
-          "priority": 20
-        }
-      ],
-      "description": "",
-      "transfer": true,
-      "statuses": [],
-      "tint": "#ffffff",
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!ddR4tv41KTeUD0Gg.YeZo6c1WrzR4BDpc",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
-      },
-      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_PowerWordShield.png",
-      "type": "base",
-      "system": {},
-      "sort": 0,
-      "_key": "!items.effects!ddR4tv41KTeUD0Gg.MekxwufBBOianOrH"
+      }
     }
   ],
   "folder": "AmI7cHUa4xUbjoOu",
@@ -177,26 +159,21 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ddR4tv41KTeUD0Gg",
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1725558291505,
     "modifiedTime": 1757414260234,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
-  },
-  "ownership": {
-    "default": 0
-  },
-  "_key": "!items!ddR4tv41KTeUD0Gg"
+  }
 }

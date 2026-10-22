@@ -2,14 +2,14 @@
   "_id": "iWd81TlNiudP2qNo",
   "name": "守护战技 Warding Maneuver",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Mount_Charger.png",
+  "img": "icons/skills/melee/swords-parry-block-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         7级起，你学会如何抵御对你、你的坐骑和你附近角色的直接攻击。如果你或者在你5尺之内对你可视的一名角色被一次攻击击中，且你手持一把近战武器或者一面盾牌，你能以一个反应投一个[[/r 1d8]]，将骰值加入被攻击角色的AC中。如果这次攻击仍然击中，则被攻击目标对这次攻击伤害有抗性。</p>\n<p>         你能够使用该特性的次数等同于你的体质调整值（至少为1），而且你在长休后重新获得所有被消耗的使用次数。</p>",
+      "value": "<p>7级起，你学会如何抵御向你、你的坐骑、或你周围生物袭来的攻击。只要你持用着一把近战武器或一面盾牌，当你或你周围5尺范围内你可见的生物被一次攻击命中时，你能以一个反应，投掷[[/r 1d8]]{1d8}并将骰值加入被攻击生物的AC中，如果这次攻击仍然命中了，则被攻击目标将具有本次攻击伤害的抗性。</p>\n<p>你能够使用该特性的次数等同于你的体质调整值次（至少1次），当你完成一次长休时，你重获全部已被消耗的次数。</p>",
       "chat": ""
     },
     "source": {
@@ -38,7 +38,8 @@
             {
               "type": "itemUses",
               "value": "1",
-              "target": ""
+              "target": "",
+              "scaling": {}
             }
           ],
           "scaling": {
@@ -48,13 +49,15 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -70,7 +73,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -95,17 +99,101 @@
         "sort": 0,
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-warding-maneuver",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 7,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -137,19 +225,12 @@
       "effectCondition": "",
       "removeAttackDamageButtons": "default"
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

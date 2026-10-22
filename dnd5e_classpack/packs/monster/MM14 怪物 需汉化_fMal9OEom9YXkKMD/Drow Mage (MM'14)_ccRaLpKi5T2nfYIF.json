@@ -1,5 +1,5 @@
 {
-  "name": "Drow Mage (MM'14)",
+  "name": "卓尔魔法师 Drow Mage (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180787977,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "ccRaLpKi5T2nfYIF",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Drow Mage.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Drow%20Mage.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 9,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 14,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 17,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 13,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,28 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": null,
-        "walk": 30,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "30"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 120,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 120,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "int",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +533,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 10
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--0\"><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Tens of thousands of years ago, the elves were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves-the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.</p><div class=\"rd__b  rd__b--3\"><p></p><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Children of Lolth\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Children of Lolth.</span></span> The drow worship Lolth, a deity who resides in the Abyss. Known as the Spider Queen or the Demon Queen of Spiders, she is the figure around which the dark elves have built their subterranean civilization. Whatever she demands, the drow do. The wickedest of elves, drow are seldom seen by the surface world. Though they plot to destroy the elves that banished them, they no longer see themselves as exiles. They are the destined rulers of the darkness, and when Lolth commands them to rise up and destroy their surface-dwelling kin, they will.</p></div><div data-roll-name-ancestor=\"Creatures of Darkness\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Creatures of Darkness.</span></span> The drow have lived underground for so long that they have evolved to their surroundings and can see in the dark. However, they can no longer stand sunlight. When slaves are in short supply in the Underdark, the drow send raiding parties to the surface to capture humanoids under cover of darkness, bringing them back to their cities to be tortured into submission. Beyond those occasional excursions, the drow are content to remain in their subterranean realm, where they feel secure and in control.</p></div><div data-roll-name-ancestor=\"Underdark Cities\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Underdark Cities.</span></span> The dark elves build fantastic cities in enormous caverns where food and water are abundant. Their ability to sculpt stone rivals that of the greatest dwarf artisans, yet their structures retain a decidedly elven aesthetic. Though appearing delicate, drow settlements are structurally sound and remarkably resilient. The drow like to hollow out enormous stalagmites and stalactites, creating populated spires that rise from the floors and ceilings. A drow city is a sprawling metropolis enclosed by high walls. Non-drow visitors must conduct their business outside the walls under watchful eyes. The drow raise and keep giant spiders to help protect their cities against intruders, even as they drape those cities in beautiful webbing, creating a gossamer snare to catch flying enemies that would otherwise soar over the walls.</p></div><div data-roll-name-ancestor=\"Drow Magic\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Drow Magic.</span></span> Just as the drow have adapted to underground life, so too has their magic. In addition to using that magic to carve their cities from stone, they empower their weapons, create dangerous new magic items, and summon demons from the Abyss. Drow spellcasters are supremely arrogant and never hesitate to use their magic in the most abhorrent ways.</p></div><div data-roll-name-ancestor=\"Arms and Armor\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Arms and Armor.</span></span> Drow craft weapons made of adamantine, a dark and supernaturally hard metal. Drow artisans adorn their weapons and armor with web-like filigree and spider motifs, and mages sometimes imbue items with magic to enhance their effectiveness. However, such magic fades when exposed to sunlight, so that magical drow weapons and armor rarely retain their enhancement bonuses and magical properties when brought to the surface.</p></div><div data-roll-name-ancestor=\"Cutthroat Politics\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Cutthroat Politics.</span></span> Drow politics are cutthroat and rife with intrigue. When drow work together, it is typically to destroy a common foe and ensure their own survival, and such alliances are short lived and fraught with peril.</p><p>Drow society is divided into noble houses, each ruled by a matron who seeks to raise the prestige and power of her house above all others. Other high-ranking members of the house are blood relatives, while the middling ranks are flush with drow from weaker families that have sworn fealty to the greater house. Clinging precariously to the bottom rung of a house's social ladder are the house slaves, made up of drow of low birth and the occasional non-drow captive.</p></div><div data-roll-name-ancestor=\"Matriarchal Rule\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Matriarchal Rule.</span></span> Lolth, through her faithful priestesses, dictates the rules of drow society, ensuring that her orders and plots are carried out. Since Lolth is prone to manifesting on the Material Plane and directly punishing those that disobey her, the drow have learned to heed what she says and do as her priestesses command.</p><p>In drow society, males are subservient to females. A male drow might lead an Underdark patrol or a raiding party to the surface, but he reports to a female drow-either the matron of his house or one of her hand-picked female subordinates. Although male drow can fill almost any function in drow society, they can't be priests, nor can they rule a house.</p></div><div data-roll-name-ancestor=\"Poison Predilection\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"8\"> <span class=\"entry-title-inner\">Poison Predilection.</span></span> Distilled from spider venom and the flora of the Underdark, poison can be found in abundance among the drow, and it plays an important part in their culture and politics. Drow mages concoct a viscid toxin that leaves enemies &amp;Reference[condition=unconscious]. Drow warriors coat their blades and crossbow bolts with this venom, looking forward to the interrogation and torture that follows combat.</p></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Variant: Drow Magic Armor and Weapons\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"9\"> <span class=\"entry-title-inner\">Variant: Drow Magic Armor and Weapons</span><span class=\"ve-flex-vh-center\"></span></h4> <p>Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.</p><ul class=\"rd__list\"><li class=\"rd__li \">A drow wearing a +1 chain shirt and carrying a +1 shortsword has AC 16 and a +1 bonus on attack and damage rolls with shortsword attacks.</li><li class=\"rd__li \">A drow elite warrior wearing +2 studded leather and carrying a +2 shortsword has AC 20 and a +2 bonus on attack and damage rolls with shortsword attacks.</li><li class=\"rd__li \">A drow priestess of Lolth wearing +3 scale mail has AC 19.</li></ul></div></div><p></p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>Such depravity. Such terrifying cruelty. They are the vile poison that plagues all elvenkind.</i>”</p><p><span class=\"rd__quote-by\">— Nelar Autumnwell, elf cleric of Corellon Larethian</span></p></div></div></div></div>",
+        "value": "<h3>卓尔魔法师Drow Mage</h3><p>在卓尔的特权阶级中，某些男性并不擅长学习力量以及战斗方面的战士技能，然而为了体现自己的存在价值，它们最终都会走向魔法研习的道路。在其自身看来这并不是一种选择，而是生活所迫。有些拥有奥术天分的女性卓尔也会成为卓尔魔法师，只是这种情况比较罕见。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -584,12 +572,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -639,10 +627,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Drow Mage",
+    "name": "卓尔魔法师 Drow Mage (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -650,15 +640,12 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/dnd5e_classpack/Nicons/img/bestiary/tokens/MM/Drow Mage.webp",
+      "src": "https://5e.kiwee.top/img/bestiary/tokens/MM/Drow%20Mage.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -709,7 +696,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -733,12 +720,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
       "_id": "i6qBaHOLHyczazPP",
-      "name": "Staff",
+      "name": "法杖 Staff",
       "type": "weapon",
       "system": {
         "source": {
@@ -750,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+2]]{+2} to hit, reach 5 ft., one target. <i>Hit:</i> 2 ([[/damage 1d6 - 1 type=bludgeoning]]) damage, or 3 ([[/damage 1d8 - 1 type=bludgeoning]]) damage if used with two hands, plus 3 ([[/damage 1d6 type=poison]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+2，触及5尺，单一目标。命中：2（[[/damage 1d6 - 1 type=bludgeoning]]）点钝击伤害，或使用双手攻击时3（[[/damage 1d8 - 1 type=bludgeoning]]）点钝击伤害，外加3（[[/damage 1d6 type=poison]]）点毒素伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -774,7 +762,7 @@
           "lDlDYx2zm7d731L3": {
             "_id": "lDlDYx2zm7d731L3",
             "type": "attack",
-            "name": "Attack: 1d6 Bludgeoning Damage ...",
+            "name": "攻击: 1d6 钝击 伤害 ...",
             "activation": {
               "type": "action",
               "value": 1,
@@ -784,7 +772,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -818,7 +807,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 },
                 {
                   "types": [
@@ -833,7 +823,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -847,15 +838,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -872,7 +867,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -880,7 +876,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -891,23 +886,71 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           },
           "Y48R4Czf571z6YV9": {
             "_id": "Y48R4Czf571z6YV9",
             "type": "attack",
-            "name": "Attack: 1d8 Bludgeoning Damage ...",
+            "name": "攻击: 1d8 钝击 伤害 ...",
             "activation": {
               "type": "action",
               "value": 1,
@@ -917,7 +960,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -951,7 +995,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 },
                 {
                   "types": [
@@ -966,7 +1011,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -980,15 +1026,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1005,7 +1055,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1013,7 +1064,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1024,18 +1074,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "staff",
@@ -1053,12 +1151,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1073,7 +1169,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1084,10 +1181,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1105,9 +1206,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1119,7 +1220,7 @@
     },
     {
       "_id": "eYVGU797yc2f8Dyq",
-      "name": "Summon Demon",
+      "name": "召唤恶魔 Summon Demon",
       "type": "feat",
       "system": {
         "source": {
@@ -1131,7 +1232,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The drow magically summons a @creature[quasit], or attempts to summon a @creature[shadow demon] with a [[/r 1d100]]{50 percent} chance of success. The summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.</p></div>",
+          "value": "<p>卓尔使用魔法召唤一只小恶魔quasit，或者以50%成功率召唤一只幽影恶魔shadow demon。所召唤的恶魔出现在召唤者身边60尺范围内一处未被占据的位置，并作为召唤者的盟友行动。该恶魔不能召唤其他恶魔并持续存在10分钟，或者直至召唤者或其本身死亡。召唤者可以用一个动作解除恶魔的召唤。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1150,7 +1251,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "8PFZUHdUrTIkLYKn": {
             "_id": "8PFZUHdUrTIkLYKn",
@@ -1174,20 +1275,25 @@
                 }
               ]
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1215,7 +1321,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1223,7 +1330,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1234,15 +1340,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "summon-demon",
@@ -1251,7 +1403,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1270,9 +1423,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1284,7 +1437,7 @@
     },
     {
       "_id": "A4DbhsUengqAVQcq",
-      "name": "Fey Ancestry",
+      "name": "妖精血统 Fey Ancestry",
       "type": "feat",
       "system": {
         "source": {
@@ -1296,7 +1449,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The drow has advantage on saving throws against being &amp;Reference[condition=charmed], and magic can't put the drow to sleep.</p></div>",
+          "value": "<p>卓尔进行对抗魅惑的豁免检定时具有优势，且魔法效应无法使卓尔陷入睡眠。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1310,7 +1463,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "fey-ancestry",
         "cover": null,
@@ -1318,7 +1471,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1337,9 +1491,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1351,7 +1505,7 @@
     },
     {
       "_id": "dG9K2PMLWBTh5H0Y",
-      "name": "Sunlight Sensitivity",
+      "name": "日照敏感 Sunlight Sensitivity",
       "type": "feat",
       "system": {
         "source": {
@@ -1363,7 +1517,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div>",
+          "value": "<p>在日光照射下，卓尔的攻击检定具有劣势，同时依赖视觉的感知（察觉）检定也具有劣势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1377,7 +1531,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "sunlight-sensitivity",
         "cover": null,
@@ -1385,7 +1539,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1404,9 +1559,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1418,7 +1573,7 @@
     },
     {
       "_id": "87xZBEO8yKo2TBHz",
-      "name": "Darkness",
+      "name": "黑暗术 Darkness",
       "type": "spell",
       "system": {
         "source": {
@@ -1430,7 +1585,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with &amp;Reference[rule=darkvision] can't see through this darkness, and nonmagical light can't illuminate it.</p><p>If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.</p><p>If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</p></div>",
+          "value": "<p>你在施法距离内指定一点，并在法术持续时间内使魔法的黑暗充斥该点半径 15 尺的球状区域。该黑暗会绕过拐角扩散，连拥有黑暗视觉的生物也无法看穿这种黑暗，而非魔法的光照也无法在区域内提供照明。</p><p>如果你将法术目标设置于你正持握或未被穿着携带的物件，则黑暗将从物件周围漫出并跟随物件移动。将该物件完全掩盖时（比如用碗或头盔盖住），也会将其漫出的黑暗隔绝。</p><p>如果法术区域与任何2环或更低环阶法术创造的光亮区域重叠，则这些造光的法术将被解除。</p>",
           "chat": ""
         },
         "level": 2,
@@ -1453,7 +1608,8 @@
             "contiguous": false,
             "type": "sphere",
             "size": "15",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -1472,7 +1628,8 @@
         },
         "duration": {
           "value": "10",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "1",
@@ -1483,10 +1640,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1506,22 +1659,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1550,7 +1707,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1558,7 +1716,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1569,18 +1726,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "darkness"
+        "identifier": "darkness",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -1604,9 +1809,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1618,7 +1823,7 @@
     },
     {
       "_id": "oHd1BGTxlmGOKTAR",
-      "name": "Faerie Fire",
+      "name": "妖火 Faerie Fire",
       "type": "spell",
       "system": {
         "source": {
@@ -1630,7 +1835,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.</p><p>Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being &amp;Reference[condition=invisible].</p></div>",
+          "value": "<p>指定施法距离内一处 20 尺立方区域，其内每个物件都将被蓝色、绿色、或紫色的光所包围（颜色由你指定）。区域内的生物则必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}，豁免失败时也会被光线勾勒出轮廓。受术物件和生物在法术持续时间内发出 10 尺半径的微光。</p><p>受术生物或物件无法受益于隐形，且任何能看见他们的攻击者对其发动的攻击检定具有优势。</p>",
           "chat": ""
         },
         "level": 1,
@@ -1651,7 +1856,8 @@
             "contiguous": false,
             "type": "cube",
             "size": "20",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -1668,7 +1874,8 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "1",
@@ -1679,10 +1886,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1702,22 +1905,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1738,7 +1945,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -1756,7 +1964,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1764,7 +1973,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1775,18 +1983,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "faerie-fire"
+        "identifier": "faerie-fire",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -1810,9 +2067,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1824,7 +2081,7 @@
     },
     {
       "_id": "aVqXX3PF1P1Ush9Z",
-      "name": "Levitate",
+      "name": "浮空术 Levitate",
       "type": "spell",
       "system": {
         "source": {
@@ -1836,7 +2093,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>One creature or loose object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.</p><p>The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell's range.</p><p>When the spell ends, the target floats gently to the ground if it is still aloft.</p></div>",
+          "value": "<p>指定施法距离内你能看见的一个生物或松散放置的物件，使其垂直上升至多 20 尺，并在该处维持悬浮直至持续时间结束。该法术可悬浮一个重量至多 500 磅的目标。一个非自愿的生物可以对法术进行一次体质豁免以避免受其影响。</p><p>目标只能通过推或拉一个固定的物件或平面（例如一面墙或者天花板）来进行移动，这种移动方式视为等同于攀爬。你可以在自己回合里将目标的悬浮高度向上或向下改变至多 20 尺：如果你自身就是该法术的目标，则你可以进行上升和下降并将其作为你移动的一部分；如果你不是该法术的目标，则你可以使用动作来移动目标，但目标必须始终处于你的施法距离内。</p><p>法术终止时，仍处于空中的目标会缓缓飘落到地面。</p>",
           "chat": ""
         },
         "level": 2,
@@ -1857,7 +2114,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -1876,7 +2134,8 @@
         },
         "duration": {
           "value": "10",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "1",
@@ -1887,10 +2146,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1910,22 +2165,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1946,7 +2205,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -1964,7 +2224,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1972,7 +2233,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1983,18 +2243,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "levitate"
+        "identifier": "levitate",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -2018,9 +2327,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2032,7 +2341,7 @@
     },
     {
       "_id": "SrJULPhHdgGhUgZ3",
-      "name": "Dancing Lights",
+      "name": "舞光术 Dancing Lights",
       "type": "spell",
       "system": {
         "source": {
@@ -2044,7 +2353,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p><p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.</p></div>",
+          "value": "<p>你在施法距离内创造四个火把大小的光源。法术持续时间内，光源能够以火把，灯笼或光球的形态显现并在空中悬浮。你也可以将四个光源合为一个中型类人的模糊光影。无论选择哪种方式，每处光源都可以发出半径 10 尺的微光光照。</p><p>你在自己回合可以用一个附赠动作令这些光源在施法距离内移动至多 60 尺。每个光源必需在另一个光源周边 20 尺内，而离开施法距离的光源会随即熄灭。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2065,7 +2374,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": "any"
+            "units": "any",
+            "stationary": false
           },
           "affects": {
             "type": "space",
@@ -2083,16 +2393,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "always",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2112,21 +2419,25 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2146,7 +2457,8 @@
             "match": {
               "attacks": false,
               "proficiency": false,
-              "saves": false
+              "saves": false,
+              "disposition": false
             },
             "profiles": [
               {
@@ -2173,7 +2485,6 @@
               }
             ],
             "summon": {
-              "identifier": "",
               "mode": "",
               "prompt": true
             },
@@ -2194,7 +2505,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2202,7 +2514,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2213,17 +2524,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
-            }
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "friendlySummon": false
           }
         },
-        "identifier": "dancing-lights"
+        "identifier": "dancing-lights",
+        "method": "spell",
+        "prepared": 2
       },
       "ownership": {
         "default": 0,
@@ -2248,9 +2608,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2262,7 +2622,7 @@
     },
     {
       "_id": "V93N51C6pTgGUCcp",
-      "name": "Mage Hand",
+      "name": "法师之手 Mage Hand",
       "type": "spell",
       "system": {
         "source": {
@@ -2274,7 +2634,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p></div>",
+          "value": "<p>一只漂浮的幽灵手出现在施法距离内你指定的一点。幽灵手持续存在至法术终止，或直至你以一个动作解散该法术。如果幽灵手距你的距离超过 30 尺，或者当你再次施展了该法术时，则现存的幽灵手消失不见。</p><p>你可以用动作控制幽灵手，并通过幽灵手实现一个行为：你可以操控一个物件，或者打开一扇未上锁的门或容器，或者将一件物品放入容器或从容器中取出，或者将小瓶中的内容物倾倒出来。你每次你使用幽灵手时可以令其移动至多 30 尺。</p><p>该幽灵手不能攻击，也不能激活魔法物品或承载超过 10 磅重的物质。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2293,7 +2653,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -2312,16 +2673,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "always",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2341,21 +2699,25 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2374,7 +2736,8 @@
             "match": {
               "attacks": false,
               "proficiency": false,
-              "saves": false
+              "saves": false,
+              "disposition": false
             },
             "profiles": [
               {
@@ -2389,7 +2752,6 @@
               }
             ],
             "summon": {
-              "identifier": "",
               "mode": "",
               "prompt": true
             },
@@ -2410,7 +2772,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2418,7 +2781,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2429,17 +2791,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
-            }
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "friendlySummon": false
           }
         },
-        "identifier": "mage-hand"
+        "identifier": "mage-hand",
+        "method": "spell",
+        "prepared": 2
       },
       "ownership": {
         "default": 0,
@@ -2465,9 +2876,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2479,7 +2890,7 @@
     },
     {
       "_id": "h77gaAeQf3M7tjXd",
-      "name": "Minor Illusion",
+      "name": "次级幻影 Minor Illusion",
       "type": "spell",
       "system": {
         "source": {
@@ -2491,7 +2902,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p><p>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p><p>If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p><p>If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (&amp;Reference[skill=Investigation]) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p></div>",
+          "value": "<p>你在施法距离内创造一段声响或一个物件的影像，并使之维持至法术持续时间结束。你也可以用一个动作解除幻象，或者再次施展该法术来终止幻象。</p><p>如果你创造一段声响，其音量可以是低声耳语也可以是高声尖叫。它可以是你或其他任何人的嗓音，或者是一头狮子的咆哮、一段鼓声以及任何你指定的其他声响。声响在持续时间内不会减弱，或者你也可以于法术终止前在不同的时间段创造几段分散的声响。</p><p>如果你创造一个物件的影像（比如一把椅子、泥泞的脚印、一个小箱子等），则该物件大小不得大于一个边长 5 尺的立方体。该影像不具有声音、光亮、味道或任何其他的感官效应。由于影像可以被任何物件所穿透，因此与之进行物理互动时都会揭露其幻象的本质。</p><p>生物用其动作调查该声响或影像时，必须进行一次对抗该法术豁免 DC 的[[/check ability=int skill=inv]]{智力（调查）检定}，检定成功则判断出眼前即是幻象。幻象在看穿它的生物面前会显得模糊不清。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2512,7 +2923,8 @@
             "contiguous": false,
             "type": "cube",
             "size": "5",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -2529,16 +2941,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "always",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2558,22 +2967,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2602,7 +3015,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2610,7 +3024,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2621,18 +3034,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "minor-illusion"
+        "identifier": "minor-illusion",
+        "method": "spell",
+        "prepared": 2
       },
       "ownership": {
         "default": 0,
@@ -2657,9 +3118,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2671,7 +3132,7 @@
     },
     {
       "_id": "DIso4WrZpyxj9rId",
-      "name": "Poison Spray",
+      "name": "毒气喷溅 Poison Spray",
       "type": "spell",
       "system": {
         "source": {
@@ -2683,7 +3144,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take [[/damage 1d12 type=poison]] damage.</p><p>This spell's damage increases by [[/damage 1d12]] when you reach 5th level ([[/damage 2d12]]), 11th level ([[/damage 3d12]]), and 17th level ([[/damage 4d12]]).</p></div>",
+          "value": "<p>你伸手向施法距离内一个你能看见的生物喷出一阵毒气。目标必须进行一次[[/save activity=dnd5eactivity000]]{体质豁免}，豁免失败则受 [[/damage 1d12 type=poison]]{1d12} 毒素伤害。</p><p>你到达 5 级时，该法术的伤害增加 1d12（变为 2d12）。11 级时再加 1d12（变为 3d12），17 级时再加 1d12（变为 4d12）。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2702,7 +3163,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -2721,16 +3183,13 @@
         },
         "duration": {
           "value": "0",
-          "units": "inst"
+          "units": "inst",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "always",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2750,22 +3209,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2790,7 +3253,8 @@
                     "mode": "whole",
                     "number": 1,
                     "formula": ""
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -2804,7 +3268,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -2822,7 +3287,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2830,7 +3296,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2841,18 +3306,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "poison-spray"
+        "identifier": "poison-spray",
+        "method": "spell",
+        "prepared": 2
       },
       "ownership": {
         "default": 0,
@@ -2878,9 +3392,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2892,7 +3406,7 @@
     },
     {
       "_id": "s1emPKEg97TWqmiT",
-      "name": "Ray of Frost",
+      "name": "冷冻射线 Ray of Frost",
       "type": "spell",
       "system": {
         "source": {
@@ -2904,7 +3418,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes [[/damage 1d8 type=cold]] damage, and its speed is reduced by 10 feet until the start of your next turn.</p><p>The spell's damage increases by [[/damage 1d8]] when you reach 5th level ([[/damage 2d8]]), 11th level ([[/damage 3d8]]), and 17th level ([[/damage 4d8]]).</p></div>",
+          "value": "<p>一道冰冷的蓝白色光线朝施法距离内的一个生物射去。你对目标进行一次远程法术攻击。若命中，则目标受到 [[/damage 1d8 type=cold]]{1d8} 点寒冷伤害，并且在你的下一回合开始前速度减少 10 尺。</p><p>你到达 5 级时，该法术的伤害增加 1d8（变为 2d8）。11 级时再加 1d8（变为 3d8），17 级时再加 1d8（变为 4d8）。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2923,7 +3437,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -2942,16 +3457,13 @@
         },
         "duration": {
           "value": "0",
-          "units": "inst"
+          "units": "inst",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "always",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2971,22 +3483,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3026,7 +3542,8 @@
                     "mode": "whole",
                     "number": 1,
                     "formula": ""
-                  }
+                  },
+                  "modifiers": []
                 }
               ]
             },
@@ -3046,7 +3563,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3054,7 +3572,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3065,21 +3582,71 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
-        "identifier": "ray-of-frost"
+        "identifier": "ray-of-frost",
+        "method": "spell",
+        "prepared": 2
       },
       "ownership": {
         "default": 0,
@@ -3103,9 +3670,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3117,7 +3684,7 @@
     },
     {
       "_id": "C3k94I5058Vf8xbg",
-      "name": "Mage Armor",
+      "name": "法师护甲 Mage Armor",
       "type": "spell",
       "system": {
         "source": {
@@ -3129,7 +3696,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.</p></div>",
+          "value": "<p>你触碰一个未着装护甲的自愿生物，使其受一个保护性魔法力场环绕直至法术终止。目标的基础 AC 变为 13+它的敏捷调整值。目标着装护甲或你以一个动作解散该法术后法术随之终止。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3149,7 +3716,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -3168,16 +3736,13 @@
         },
         "duration": {
           "value": "8",
-          "units": "hour"
+          "units": "hour",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -3197,26 +3762,32 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [
               {
-                "_id": "cfwMU7LuOJ619Lny"
+                "_id": "cfwMU7LuOJ619Lny",
+                "uuid": null,
+                "level": {}
               }
             ],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3245,7 +3816,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3253,7 +3825,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3264,18 +3835,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "mage-armor"
+        "identifier": "mage-armor",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -3297,23 +3916,12 @@
       "effects": [
         {
           "_id": "cfwMU7LuOJ619Lny",
-          "changes": [
-            {
-              "key": "system.attributes.ac.calc",
-              "mode": 5,
-              "value": "mage",
-              "priority": null
-            }
-          ],
           "disabled": false,
           "duration": {
-            "startTime": null,
-            "seconds": 28800,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
+            "value": 28800,
+            "units": "seconds",
+            "expiry": "turnStart",
+            "expired": false
           },
           "origin": "Compendium.dnd5e.spells.CKZTpZlxj7hjjo2H",
           "transfer": false,
@@ -3323,15 +3931,15 @@
             }
           },
           "tint": "#ffffff",
-          "name": "Mage Armor",
+          "name": "法师护甲 Mage Armor",
           "description": "<p>The target's base AC becomes 13 + its Dexterity modifier.</p>",
           "statuses": [],
           "_stats": {
             "compendiumSource": null,
             "duplicateSource": null,
-            "coreVersion": "13.351",
+            "coreVersion": "14.368",
             "systemId": "dnd5e",
-            "systemVersion": "4.3.9",
+            "systemVersion": "6.0.5",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
@@ -3339,17 +3947,45 @@
           },
           "img": "icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp",
           "type": "base",
-          "system": {},
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.ac.calc",
+                "value": "mage",
+                "priority": null,
+                "type": "override",
+                "phase": "initial",
+                "_id": "ooBmzHZD36KC7YY6",
+                "conditions": "{}",
+                "replacement": ""
+              }
+            ],
+            "origin": {
+              "actor": null,
+              "behavior": null,
+              "effect": null,
+              "item": null,
+              "message": null
+            },
+            "conditions": "{}",
+            "magical": true,
+            "rider": {
+              "statuses": []
+            }
+          },
           "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
           "_key": "!actors.items.effects!ccRaLpKi5T2nfYIF.C3k94I5058Vf8xbg.cfwMU7LuOJ619Lny"
         }
       ],
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3361,7 +3997,7 @@
     },
     {
       "_id": "VVv9xVKKqeYcpl4S",
-      "name": "Magic Missile",
+      "name": "魔法飞弹 Magic Missile",
       "type": "spell",
       "system": {
         "source": {
@@ -3373,7 +4009,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals [[/damage 1d4 + 1 type=force]] damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p></div></div>",
+          "value": "<p>你创造三枚由魔法力场形成的闪光飞镖，并让每发飞镖命中施法距离内你能看见的指定生物。每发飞镖对目标造成 [[/damage 1d4+1 type=force]]{1d4+1} 的力场伤害。所有飞镖将同时命中目标，而你还可以指定它们击中同一个目标或是分别击中几个目标。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，该法术就会多制造出一支飞镖。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3392,7 +4028,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -3411,16 +4048,13 @@
         },
         "duration": {
           "value": "0",
-          "units": "inst"
+          "units": "inst",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -3439,7 +4073,8 @@
                   "denomination": null,
                   "scaling": {
                     "number": 1
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -3451,7 +4086,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3471,15 +4107,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -3496,7 +4136,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3504,7 +4145,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3515,17 +4155,65 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
-        "identifier": "magic-missile"
+        "identifier": "magic-missile",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -3548,9 +4236,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3562,7 +4250,7 @@
     },
     {
       "_id": "iKX0eD8FFMpDmGXm",
-      "name": "Shield",
+      "name": "护盾术 Shield",
       "type": "spell",
       "system": {
         "source": {
@@ -3574,7 +4262,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from @spell[magic missile].</p></div>",
+          "value": "<p>一道看不见的力场制护盾浮现在你身旁，保护着你。在你的下一回合开始前，你的 AC 具有+5 加值（在触发该法术的攻击之前生效），并且不会受到魔法飞弹的伤害。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3593,7 +4281,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "type": "self",
@@ -3611,16 +4300,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "round"
+          "units": "round",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -3640,26 +4326,32 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [
               {
-                "_id": "6pbotGIvqQkraPva"
+                "_id": "6pbotGIvqQkraPva",
+                "uuid": null,
+                "level": {}
               }
             ],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3688,7 +4380,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3696,7 +4389,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3707,18 +4399,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "shield"
+        "identifier": "shield",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -3745,36 +4485,25 @@
               "dedupeId": "shield"
             }
           },
-          "changes": [
-            {
-              "key": "system.attributes.ac.bonus",
-              "mode": 2,
-              "value": "5",
-              "priority": null
-            }
-          ],
           "disabled": false,
           "duration": {
-            "startTime": null,
-            "rounds": 1,
-            "seconds": null,
-            "combat": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
+            "value": 1,
+            "units": "rounds",
+            "expiry": "turnStart",
+            "expired": false
           },
-          "origin": "Item.FlLKKv7bQBlIAs11",
+          "origin": null,
           "tint": "#ffffff",
           "transfer": false,
-          "name": "Shield",
+          "name": "盾牌 Shield",
           "description": "<p>Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>",
           "statuses": [],
           "_stats": {
             "compendiumSource": null,
             "duplicateSource": null,
-            "coreVersion": "13.351",
+            "coreVersion": "14.368",
             "systemId": "dnd5e",
-            "systemVersion": "4.3.9",
+            "systemVersion": "6.0.5",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
@@ -3782,17 +4511,45 @@
           },
           "img": "icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp",
           "type": "base",
-          "system": {},
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.ac.bonus",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial",
+                "_id": "rICZs2oxuszM46YY",
+                "conditions": "{}",
+                "replacement": ""
+              }
+            ],
+            "origin": {
+              "actor": null,
+              "behavior": null,
+              "effect": null,
+              "item": "Item.FlLKKv7bQBlIAs11",
+              "message": null
+            },
+            "conditions": "{}",
+            "magical": true,
+            "rider": {
+              "statuses": []
+            }
+          },
           "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
           "_key": "!actors.items.effects!ccRaLpKi5T2nfYIF.iKX0eD8FFMpDmGXm.6pbotGIvqQkraPva"
         }
       ],
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3804,7 +4561,7 @@
     },
     {
       "_id": "6yTze2oSZLmqu5VY",
-      "name": "Witch Bolt",
+      "name": "巫术箭 Witch Bolt",
       "type": "spell",
       "system": {
         "source": {
@@ -3816,7 +4573,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes [[/damage 1d12 type=lightning]] damage, and on each of your turns for the duration, you can use your action to deal [[/damage 1d12 type=lightning]] damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell's range or if it has &amp;Reference[rule=totalcover]{total cover} from you.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by [[/damage 1d12]] for each slot level above 1st.</p></div></div>",
+          "value": "<p>一支缠绕着碎裂魔力的蓝色能量长矛射向施法距离内的一个生物，并在你与目标之间生成一道持久的闪电弧。对目标生物进行一次远程法术攻击。若命中，则目标受到 [[/damage 1d12 type=lightning]]{1d12} 点闪电伤害。在法术持续时间内，你在每个自己的回合中可以用一个动作直接对目标造成 1d12 点闪电伤害。如果你执行动作做其他任何事情，法术将随即终止。此外，如果目标离开法术的施法距离或相对你处于全身掩护状态，法术也将随即终止。</p><p><strong>升环施法效应。</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，法术的初始伤害就增加 1d12。</p>",
           "chat": ""
         },
         "level": 1,
@@ -3842,7 +4599,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -3862,16 +4620,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -3890,7 +4645,8 @@
                   "denomination": null,
                   "scaling": {
                     "number": 1
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -3902,7 +4658,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3922,15 +4679,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -3947,7 +4708,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3955,7 +4717,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3966,17 +4727,65 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
-        "identifier": "witch-bolt"
+        "identifier": "witch-bolt",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -4000,9 +4809,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -4014,7 +4823,7 @@
     },
     {
       "_id": "6IS6EHCW0OXJTpS5",
-      "name": "Alter Self",
+      "name": "变身术 Alter Self",
       "type": "spell",
       "system": {
         "source": {
@@ -4026,7 +4835,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.</p><div data-roll-name-ancestor=\"Aquatic Adaptation\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Aquatic Adaptation.</span></span> You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.</p></div><div data-roll-name-ancestor=\"Change Appearance\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Change Appearance.</span></span> You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.</p></div><div data-roll-name-ancestor=\"Natural Weapons\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Natural Weapons.</span></span> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal [[/damage 1d6]] bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.</p></div></div>",
+          "value": "<p>你变换了自身形态。施法时，从以下选项中选择其一生效，并维持至其持续时间结束。你还可以在持续时间内以一个动作在选项间切换。</p><p><strong>水生适应Aquaatic Adaptation。</strong>你长出鳃和蹼以适应水中行动。你可以在水下呼吸，并且获得等同于步行速度的游泳速度。</p><p><strong>改变外貌Change Appearance。</strong>你改变了自己的外貌。你可以自行设定自己的外观：包括身高、体重、面部细节、声线、头发长短、肤色以及（可能具有的）独特外貌特征。你可以让自己看起来像是其他种族，但你的角色数值不会改变。你无法改变体型或是基础身体轮廓。例如，如果你两足行动，就不能变为四足生物。你可以在持续时间内以一个动作改变这些外貌细节。</p><p><strong>天生武器Natural Weapons。</strong>你长出尖牙锐爪、棘刺长角，或是其他类型的一种自选的天生武器。所选的天生武器可以使你的徒手打击造成 1d6 的钝击、挥砍或穿刺伤害，且你视为具有徒手打击的熟练项。另外，该天生武器视为魔法武器，且你在使用它进行的攻击检定和伤害掷骰均具有+1 加值。</p>",
           "chat": ""
         },
         "level": 2,
@@ -4046,7 +4855,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "type": "self",
@@ -4064,16 +4874,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "hour"
+          "units": "hour",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -4093,22 +4900,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -4137,7 +4948,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -4145,7 +4957,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -4156,18 +4967,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "alter-self"
+        "identifier": "alter-self",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -4191,9 +5050,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -4205,7 +5064,7 @@
     },
     {
       "_id": "Z5I26DRO5k2jEHJK",
-      "name": "Misty Step",
+      "name": "迷踪步 Misty Step",
       "type": "spell",
       "system": {
         "source": {
@@ -4217,7 +5076,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p></div>",
+          "value": "<p>你短暂地被银白的雾气所笼罩，传送到至多 30 尺内一个你能看见且未被占据的位置。</p>",
           "chat": ""
         },
         "level": 2,
@@ -4235,7 +5094,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "30",
@@ -4254,16 +5114,13 @@
         },
         "duration": {
           "value": "0",
-          "units": "inst"
+          "units": "inst",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -4283,22 +5140,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -4327,7 +5188,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -4335,7 +5197,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -4346,18 +5207,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "misty-step"
+        "identifier": "misty-step",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -4381,9 +5290,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -4395,7 +5304,7 @@
     },
     {
       "_id": "m2CbGaN70d1nij8l",
-      "name": "Web",
+      "name": "蛛网术 Web",
       "type": "spell",
       "system": {
         "source": {
@@ -4407,7 +5316,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are &amp;Reference[rule=difficultterrain]{difficult terrain} and lightly obscure their area.</p><p>If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.</p><p>Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is &amp;Reference[condition=restrained] as long as it remains in the webs or until it breaks free.</p><p>A creature &amp;Reference[condition=restrained] by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer &amp;Reference[condition=restrained].</p><p>The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing [[/damage 2d4 type=fire]] damage to any creature that starts its turn in the fire.</p></div>",
+          "value": "<p>你在施法距离内指定一点，并召唤出一大片粘厚的网状物。蛛网覆盖以该点为源点的 20 尺立方区域，并在法术持续时间内维持存在。蛛网使该区成为困难地形并造成轻度遮蔽。</p><p>如果蛛网没有被固定在两个固体中间（例如墙和树）或跨在一片地板、墙壁、天花板中间，则你召唤出的蛛网会自动坍塌，而导致法术在你的下一回合开始时终止。摊在平面上的蛛网深度为 5 尺。</p><p>任何在蛛网中开始其回合或在其回合中进入蛛网的生物必须进行一次[[/save activity=DtCEDZgW0YxntcRt]]{敏捷豁免}。豁免失败者将被束缚在网中，直至其离开蛛网或挣脱束缚。</p><p>被蛛网束缚的生物可以用一个动作尝试挣脱。该生物必须进行一次对抗法术豁免 DC 的力量检定，检定成功则不再被束缚。</p><p>这些蛛网都是可燃物。每 5 尺立方的蛛网触及明火时将在 1 轮内被烧尽。而任何在燃烧区域内开始其回合的生物将因此受 [[/damage 2d4 type=fire]]{2d4} 点火焰伤害。</p>",
           "chat": ""
         },
         "level": 2,
@@ -4430,7 +5339,8 @@
             "contiguous": false,
             "type": "cube",
             "size": "20",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -4447,16 +5357,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "hour"
+          "units": "hour",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -4476,22 +5383,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -4512,7 +5423,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -4530,7 +5442,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -4538,7 +5451,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -4549,15 +5461,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           },
           "dnd5eactivity300": {
             "_id": "dnd5eactivity300",
@@ -4576,22 +5535,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -4620,7 +5583,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -4628,7 +5592,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -4639,18 +5602,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "web"
+        "identifier": "web",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -4674,9 +5685,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -4688,7 +5699,7 @@
     },
     {
       "_id": "WatspS4XdQSLwhbp",
-      "name": "Fly",
+      "name": "飞行术 Fly",
       "type": "spell",
       "system": {
         "source": {
@@ -4700,7 +5711,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p></div></div>",
+          "value": "<p>你触碰一个自愿生物，并使该目标在法术持续时间内获得 60 尺的飞行速度。法术终止时，如果目标仍在空中则随即坠落。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，就可以额外再指定一个生物作为法术目标。</p>",
           "chat": ""
         },
         "level": 3,
@@ -4721,7 +5732,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -4740,16 +5752,13 @@
         },
         "duration": {
           "value": "10",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -4769,22 +5778,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -4813,7 +5826,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -4821,7 +5835,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -4832,18 +5845,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "fly"
+        "identifier": "fly",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -4868,9 +5929,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -4882,7 +5943,7 @@
     },
     {
       "_id": "aE2Nv2tepLHldcOj",
-      "name": "Lightning Bolt",
+      "name": "闪电束 Lightning Bolt",
       "type": "spell",
       "system": {
         "source": {
@@ -4894,7 +5955,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes [[/damage 8d6 type=lightning]] damage on a failed save, or half as much damage on a successful one.</p><p>The lightning ignites flammable objects in the area that aren't being worn or carried.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 4th level or higher, the damage increases by [[/damage 1d6]] for each slot level above 3rd.</p></div></div>",
+          "value": "<p>一束 100 尺长，5 尺宽的线状闪电从你的位置向你指定的任意方向爆发迸出。在线状区域内的每个生物必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}，豁免失败者将受到 [[/damage 8d6 type=lightning]]{8d6} 的闪电伤害，豁免成功则伤害减半。</p><p>闪电会将区域内未被着装或携带的可燃物件点燃。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，伤害就增加 1d6。</p>",
           "chat": ""
         },
         "level": 3,
@@ -4916,7 +5977,8 @@
             "contiguous": false,
             "type": "line",
             "size": "100",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -4924,7 +5986,7 @@
         },
         "range": {
           "value": "0",
-          "units": ""
+          "units": "self"
         },
         "activation": {
           "type": "action",
@@ -4933,16 +5995,13 @@
         },
         "duration": {
           "value": "0",
-          "units": "inst"
+          "units": "inst",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -4962,22 +6021,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -5002,7 +6065,8 @@
                     "mode": "whole",
                     "number": 1,
                     "formula": ""
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -5016,7 +6080,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -5034,7 +6099,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -5042,7 +6108,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -5053,18 +6118,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "lightning-bolt"
+        "identifier": "lightning-bolt",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -5087,9 +6201,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -5101,7 +6215,7 @@
     },
     {
       "_id": "JAdcjvruX87iUvbF",
-      "name": "Evard's Black Tentacles",
+      "name": "艾伐黑触手 Black Tentacles",
       "type": "spell",
       "system": {
         "source": {
@@ -5113,7 +6227,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into &amp;Reference[rule=difficultterrain]{difficult terrain}.</p><p>When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take [[/damage 3d6 type=bludgeoning]] damage and be &amp;Reference[condition=restrained] by the tentacles until the spell ends. A creature that starts its turn in the area and is already &amp;Reference[condition=restrained] by the tentacles takes [[/damage 3d6 type=bludgeoning]] damage.</p><p>A creature &amp;Reference[condition=restrained] by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.</p></div>",
+          "value": "<p>你指定一处施法距离内你能看见的 20 尺方形区域，使其内布满蠕动的乌黑触须，进而使该区域成为困难地形。</p><p>任何生物在一个回合内第一次进入该区域，或者在区域内开始其回合时，必须进行一次敏捷豁免。豁免失败者将受到 3d6 点钝击伤害，并且被触须束缚直至法术终止。生物在区域内开始其回合时，如果已受触须束缚则受到 3d6 点钝击伤害。</p><p>受触须束缚的生物可以使用动作进行一次对抗法术豁免 DC 的力量检定或敏捷检定（自选其一），检定成功则挣脱束缚。</p>",
           "chat": ""
         },
         "level": 4,
@@ -5136,7 +6250,8 @@
             "contiguous": false,
             "type": "square",
             "size": "20",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -5153,16 +6268,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -5182,27 +6294,33 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [
               {
                 "_id": "WTgRpzj4EQGJokA6",
-                "onSave": false
+                "onSave": false,
+                "uuid": null,
+                "level": {}
               }
             ],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -5227,7 +6345,8 @@
                     "mode": "",
                     "number": null,
                     "formula": ""
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -5241,7 +6360,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -5259,7 +6379,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -5267,7 +6388,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -5278,18 +6398,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "evards-black-tentacles"
+        "identifier": "evards-black-tentacles",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -5309,20 +6478,16 @@
       },
       "effects": [
         {
-          "name": "Black Tentacles",
-          "origin": "Compendium.dnd5e.spells.Item.DGONTFbk5eORs5qv",
+          "name": "艾伐黑触手 Black Tentacles",
+          "origin": null,
           "duration": {
-            "startTime": null,
-            "seconds": 60,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
+            "value": 60,
+            "units": "seconds",
+            "expiry": "turnStart",
+            "expired": false
           },
           "disabled": false,
           "_id": "WTgRpzj4EQGJokA6",
-          "changes": [],
           "description": "<p>The creature is Restrained by the tentacles until the spell ends or it uses its action to make a Strength or Dexterity check (its choice) to escape.</p>",
           "transfer": false,
           "statuses": [
@@ -5337,9 +6502,9 @@
           "_stats": {
             "compendiumSource": null,
             "duplicateSource": null,
-            "coreVersion": "13.351",
+            "coreVersion": "14.368",
             "systemId": "dnd5e",
-            "systemVersion": "4.3.9",
+            "systemVersion": "6.0.5",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
@@ -5347,17 +6512,34 @@
           },
           "img": "icons/magic/nature/vines-thorned-curled-glow-teal-purple.webp",
           "type": "base",
-          "system": {},
+          "system": {
+            "changes": [],
+            "origin": {
+              "actor": null,
+              "behavior": null,
+              "effect": null,
+              "item": "Compendium.dnd5e.spells.Item.DGONTFbk5eORs5qv",
+              "message": null
+            },
+            "conditions": "{}",
+            "magical": true,
+            "rider": {
+              "statuses": []
+            }
+          },
           "sort": 0,
+          "showIcon": 2,
+          "start": null,
+          "folder": null,
           "_key": "!actors.items.effects!ccRaLpKi5T2nfYIF.JAdcjvruX87iUvbF.WTgRpzj4EQGJokA6"
         }
       ],
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -5369,7 +6551,7 @@
     },
     {
       "_id": "tT9WG0Ij4CxEZinW",
-      "name": "Greater Invisibility",
+      "name": "高等隐形术 Greater Invisibility",
       "type": "spell",
       "system": {
         "source": {
@@ -5381,7 +6563,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You or a creature you touch becomes &amp;Reference[condition=invisible] until the spell ends. Anything the target is wearing or carrying is &amp;Reference[condition=invisible] as long as it is on the target's person.</p></div>",
+          "value": "<p>你或一个你触碰的生物变为隐形，直至法术终止。任何保持在目标身上的着装物和携带物也可以维持隐形状态。</p>",
           "chat": ""
         },
         "level": 4,
@@ -5401,7 +6583,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -5420,16 +6603,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -5449,26 +6629,32 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [
               {
-                "_id": "lhYVl4DD9jyS5gcn"
+                "_id": "lhYVl4DD9jyS5gcn",
+                "uuid": null,
+                "level": {}
               }
             ],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -5497,7 +6683,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -5505,7 +6692,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -5516,18 +6702,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "greater-invisibility"
+        "identifier": "greater-invisibility",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -5549,20 +6783,16 @@
       },
       "effects": [
         {
-          "name": "Greater Invisibility",
-          "origin": "Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ",
+          "name": "高等隐形术 Greater Invisibility",
+          "origin": null,
           "duration": {
-            "startTime": null,
-            "seconds": 60,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
+            "value": 60,
+            "units": "seconds",
+            "expiry": "turnStart",
+            "expired": false
           },
           "disabled": false,
           "_id": "lhYVl4DD9jyS5gcn",
-          "changes": [],
           "description": "<p>The target becomes Invisible until the spell ends. Anything the target is wearing or carrying is Invisible as long as it is on the target's person.</p>",
           "transfer": false,
           "statuses": [
@@ -5577,9 +6807,9 @@
           "_stats": {
             "compendiumSource": null,
             "duplicateSource": null,
-            "coreVersion": "13.351",
+            "coreVersion": "14.368",
             "systemId": "dnd5e",
-            "systemVersion": "4.3.9",
+            "systemVersion": "6.0.5",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
@@ -5587,17 +6817,34 @@
           },
           "img": "icons/magic/air/fog-gas-smoke-swirling-gray.webp",
           "type": "base",
-          "system": {},
+          "system": {
+            "changes": [],
+            "origin": {
+              "actor": null,
+              "behavior": null,
+              "effect": null,
+              "item": "Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ",
+              "message": null
+            },
+            "conditions": "{}",
+            "magical": true,
+            "rider": {
+              "statuses": []
+            }
+          },
           "sort": 0,
+          "showIcon": 2,
+          "start": null,
+          "folder": null,
           "_key": "!actors.items.effects!ccRaLpKi5T2nfYIF.tT9WG0Ij4CxEZinW.lhYVl4DD9jyS5gcn"
         }
       ],
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -5609,7 +6856,7 @@
     },
     {
       "_id": "1fZQl9lEwU51YX2D",
-      "name": "Cloudkill",
+      "name": "死云术 Cloudkill",
       "type": "spell",
       "system": {
         "source": {
@@ -5621,7 +6868,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is &amp;Reference[rule=heavilyobscured]{heavily obscured}.</p><p>When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes [[/damage 5d8 type=poison]] damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe.</p><p>The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 6th level or higher, the damage increases by [[/damage 1d8]] for each slot level above 5th.</p></div></div>",
+          "value": "<p>你在施法距离内指定一点，并以该点为中心创造一片 20 尺半径的球状黄绿色剧毒浓雾，且该浓雾会围绕拐角扩散。雾气在法术持续时间内维持存在，但仍会被强风吹散。而其存在区域则视为重度遮蔽。</p><p>任何生物在一个回合内第一次进入法术区域，或者在区域内开始其回合时，必须进行一次体质豁免。豁免失败者将受到 [[/damage 5d8 type=poison]]{5d8} 点毒素伤害，豁免成功则伤害减半。该生物就算屏住呼吸或者不需要呼吸也会受到浓雾效应的影响。</p><p>浓雾在你每回合开始时沿着地面向远离你的方向移动 10 尺。雾气比空气重，因此会沉落低洼地面甚至渗进地隙中。</p><p><strong>升环施法效应。</strong>使用六环或更高法术位施展该法术时，你使用的法术位每比五环高一环，法术的伤害就增加 1d8。</p>",
           "chat": ""
         },
         "level": 5,
@@ -5643,7 +6890,8 @@
             "contiguous": false,
             "type": "sphere",
             "size": "20",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -5660,16 +6908,13 @@
         },
         "duration": {
           "value": "10",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -5689,22 +6934,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -5729,7 +6978,8 @@
                     "mode": "whole",
                     "number": 1,
                     "formula": ""
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -5743,7 +6993,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -5761,7 +7012,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -5769,7 +7021,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -5780,18 +7031,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "cloudkill"
+        "identifier": "cloudkill",
+        "method": "spell",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -5814,9 +7114,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -5828,7 +7128,7 @@
     },
     {
       "_id": "GdJ3FcxREehenyXF",
-      "name": "Innate Spellcasting",
+      "name": "天生施法 Innate Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -5840,7 +7140,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Innate Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Innate Spellcasting.</span></span> The drow's spellcasting ability is Charisma (spell save DC <span class=\"rd__dc\">12</span>). It can innately cast the following spells, requiring no material components:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>At will: @UUID[.SrJULPhHdgGhUgZ3]</p></li><li class=\"rd__li  rd__li-spell\"><p>1/day each: @UUID[.87xZBEO8yKo2TBHz], @UUID[.oHd1BGTxlmGOKTAR], @UUID[.aVqXX3PF1P1Ush9Z] (self only)</p></li></ul></div></div>",
+          "value": "<p>卓尔天生施法属性为魅力（法术豁免DC 12）。它天生可施展以下法术且不需要任何相应的材料成分： 随意：舞光术dancing lights 每项1/日：黑暗术darkness，妖火faerie fire，浮空术levitate（仅自身）</p><p>@UUID[.SrJULPhHdgGhUgZ3]{舞光术 Dancing Lights}、@UUID[.87xZBEO8yKo2TBHz]{黑暗术 Darkness}、@UUID[.oHd1BGTxlmGOKTAR]{妖火 Faerie Fire}、@UUID[.aVqXX3PF1P1Ush9Z]{浮空术 Levitate}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -5854,7 +7154,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "innate-spellcasting",
         "cover": null,
@@ -5862,7 +7162,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -5881,9 +7182,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -5895,7 +7196,7 @@
     },
     {
       "_id": "hPw8o0bcl5s64slH",
-      "name": "Spellcasting",
+      "name": "施法 Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -5907,7 +7208,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> The drow is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC <span class=\"rd__dc\">14</span>, [[/r 1d20+6]]{+6} to hit with spell attacks). The drow has the following wizard spells prepared:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>Cantrips (at will): @UUID[.V93N51C6pTgGUCcp], @UUID[.h77gaAeQf3M7tjXd], @UUID[.DIso4WrZpyxj9rId], @UUID[.s1emPKEg97TWqmiT]</p></li><li class=\"rd__li  rd__li-spell\"><p>1st level (4 slots): @UUID[.C3k94I5058Vf8xbg], @UUID[.VVv9xVKKqeYcpl4S], @UUID[.iKX0eD8FFMpDmGXm], @UUID[.6yTze2oSZLmqu5VY]</p></li><li class=\"rd__li  rd__li-spell\"><p>2nd level (3 slots): @UUID[.6IS6EHCW0OXJTpS5], @UUID[.Z5I26DRO5k2jEHJK], @UUID[.m2CbGaN70d1nij8l]</p></li><li class=\"rd__li  rd__li-spell\"><p>3rd level (3 slots): @UUID[.WatspS4XdQSLwhbp], @UUID[.aE2Nv2tepLHldcOj]</p></li><li class=\"rd__li  rd__li-spell\"><p>4th level (3 slots): @UUID[.JAdcjvruX87iUvbF], @UUID[.tT9WG0Ij4CxEZinW]</p></li><li class=\"rd__li  rd__li-spell\"><p>5th level (2 slots): @UUID[.1fZQl9lEwU51YX2D]</p></li></ul></div></div>",
+          "value": "<p>卓尔作为10级施法者。其施法关键属性为智力（法术豁免DC 14，法术攻击命中+6）。该卓尔学习了以下法师法术： 戏法（随意）：法师之手mage hand，次级幻象minor illusion，毒液飞溅poison splash，冷冻射线ray of frost 1环（4法术位）：法师护甲mage armor，魔法飞弹magic missile，护盾术shield，巫术箭witch bolt 2环（3法术位）：变身术alter self，迷踪步misty step，蛛网术web 3环（3法术位）：飞行术fly，闪电束lightning bolt 4环（3法术位）：艾伐黑触手Evard&#x27;s black tentacles，高等隐形术greater invisibility 5环（2法术位）：死云术cloudkill</p><p>@UUID[.V93N51C6pTgGUCcp]{法师之手 Mage Hand}、@UUID[.h77gaAeQf3M7tjXd]{次级幻影 Minor Illusion}、@UUID[.DIso4WrZpyxj9rId]{毒气喷溅 Poison Spray}、@UUID[.s1emPKEg97TWqmiT]{冷冻射线 Ray of Frost}、@UUID[.C3k94I5058Vf8xbg]{法师护甲 Mage Armor}、@UUID[.VVv9xVKKqeYcpl4S]{魔法飞弹 Magic Missile}、@UUID[.iKX0eD8FFMpDmGXm]{护盾术 Shield}、@UUID[.6yTze2oSZLmqu5VY]{巫术箭 Witch Bolt}、@UUID[.6IS6EHCW0OXJTpS5]{变身术 Alter Self}、@UUID[.Z5I26DRO5k2jEHJK]{迷踪步 Misty Step}、@UUID[.m2CbGaN70d1nij8l]{蛛网术 Web}、@UUID[.WatspS4XdQSLwhbp]{飞行术 Fly}、@UUID[.aE2Nv2tepLHldcOj]{闪电束 Lightning Bolt}、@UUID[.JAdcjvruX87iUvbF]{艾伐黑触手 Black Tentacles}、@UUID[.tT9WG0Ij4CxEZinW]{高等隐形术 Greater Invisibility}、@UUID[.1fZQl9lEwU51YX2D]{死云术 Cloudkill}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -5921,7 +7222,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "spellcasting",
         "cover": null,
@@ -5929,7 +7230,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -5948,9 +7250,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -5962,7 +7264,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "CsCYJKoYroMI4p63",
   "sort": 23700000,
   "ownership": {
     "default": 0,

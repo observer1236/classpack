@@ -1,5 +1,5 @@
 {
-  "name": "Minotaur (MM'14)",
+  "name": "牛头人 Minotaur (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180787977,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "4PEp9M6Ax0uz1jOR",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Minotaur.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Minotaur.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 18,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 11,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 6,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 9,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 2,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,12 @@
     },
     "attributes": {
       "ac": {
-        "calc": "natural",
-        "flat": 14
+        "flat": 14,
+        "calcs": [
+          "natural"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +478,28 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": null,
-        "walk": 40,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "40"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 60,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +509,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +532,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>A minotaur's roar is a savage battle cry that most civilized creatures fear. Born into the mortal realm by demonic rites, minotaurs are savage conquerors and carnivores that live for the hunt. Their brown or black fur is stained with the blood of fallen foes, and they carry the stench of death.</p><div data-roll-name-ancestor=\"The Beast Within\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">The Beast Within.</span></span> Most minotaurs are solitary carnivores that roam labyrinthine dungeons, twisting caves, primeval woods, and the maze-like streets and passages of desolate ruins. A minotaur can visualize every route it might take to close the distance to its prey.</p><p>The scent of blood, the tearing of flesh, and the cracking of bones spur a minotaur's lust for carnage, overwhelming all thought and reason. In a blood rage, a minotaur charges anything it sees, butting and goring like a battering ram, then chopping the fallen in twain.</p><p>Apart from ambushing creatures that wander into its labyrinth, a minotaur cares little for strategy or tactics. Minotaurs seldom organize, they don't respect authority or hierarchy, and they are notoriously difficult to enslave, let alone control.</p></div><div data-roll-name-ancestor=\"Cults of the Horned King\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Cults of the Horned King.</span></span> Minotaurs are the dark descendants of humanoids transformed by the rituals of cults that reject the oppression of authority by returning to nature. Inductees often mistake these cults for druidic circles or totemic religions whose ceremonies involve entering a labyrinth while wearing a ceremonial animal mask.</p><p>Within these bounded environments, cultists hunt, kill, and eat wild beasts, indulging their basest primal urges. In the end, however, sacrificial animals are exchanged for humanoid sacrifice-sometimes an inductee that tried to escape the cult after learning its secrets. These labyrinths become blood-soaked halls of slaughter, echoing to the cultists' savagery.</p><p>Unknown to all but their highest-ranking leaders, these mystery cults are creations of the demon lord Baphomet, the Horned King, whose layer of the Abyss is a gigantic labyrinth. Some of his followers are fervent supplicants that plead for strength and power. Others come to the cult seeking a life free from authority's chains-and are liberated of their humanity instead as Baphomet transforms them into the minotaurs that echo his own savage form.</p><p>Although they begin as creations of the Horned King, minotaurs can breed true with one another, giving rise to an independent race of Baphomet's savage children in the world.</p></div></div></div>",
+        "value": "<h3>牛头人Minotaur</h3><p>牛头人的咆哮是让大多数文明生物胆战心惊的蛮荒战吼。牛头人诞生自凡人国度的恶魔仪式，是野蛮的征服者和行猎的食肉兽。它们通常长着棕色或黑色的皮毛，沾染着敌人的鲜血，散发出死亡的恶臭。</p><p><strong>狂野兽心The Beast Within。</strong>大多数牛头人是孤独的食肉生物，它们徘徊在深邃的地下城，扭曲的洞窟，远古丛林，以及荒凉废墟里那些犹如迷宫般的街巷之中。而牛头人总能找到靠近猎物的办法。</p><p>鲜血的气味，断裂的骨肉，都可能激起牛头人的屠戮冲动，压过其一切理性和思绪。它们在热血狂怒中冲杀一切阻碍，像攻城槌一样横冲直撞，不死不休。</p><p>牛头人在迷宫里伏击过路者，此外都很少在意战略战术。它们总是独来独往，不在意阶级权贵，且众所周知的野性难驯，更别提说要让其受控制。</p><p><strong>冠角之王邪教Cults of Horned King。</strong>牛头人是抗拒传统、回归原始的类人生物经过邪教仪式转化后的黑暗后裔。转化仪式包括“头戴动物象征的面具步入迷宫”，而这经常被旁观者误以为是某种德鲁伊或图腾教派的祭典仪式。</p><p>邪教徒们在迷宫里狩猎，杀戮，并生食野兽，解放自己最原始的欲望冲动。不过，牺牲的对象最终会从野兽转为类人生物——有时会是某个偷取秘密后试图脱教的教徒。迷宫将成为血腥的屠宰场，呼应着教徒们的狂野凶蛮。</p><p>除其最高领袖为巴弗灭Baphomet外，人们对此神秘邪教所知极少。而这位被称为角魔之王的恶魔领主所在深渊层级也是一所巨大的迷宫。其追随者们有些是力量和权力的狂热追寻者，另一些则力求打破权威枷锁，解放生命自由——乃至于像巴弗灭一样解除人性，回应自己的野性，将身心转化成牛头人。</p><p>尽管牛头人最初是由角魔之王创造，但它们通过彼此繁衍，已经将自己从巴弗灭的野蛮子裔提升为世上一支独立的种族。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -584,12 +571,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -638,10 +625,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Minotaur",
+    "name": "牛头人 Minotaur (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -652,12 +641,9 @@
       "src": "systems/dnd5e/tokens/monstrosity/Minotaur.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -708,7 +694,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -732,12 +718,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 2
   },
   "items": [
     {
       "_id": "N6WHWd50W5JN2u20",
-      "name": "Greataxe",
+      "name": "巨斧 Greataxe",
       "type": "weapon",
       "system": {
         "source": {
@@ -749,7 +736,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 17 ([[/damage 2d12 + 4 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：17（[[/damage 2d12 + 4 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -786,7 +773,8 @@
             },
             "custom": {
               "enabled": false
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -797,7 +785,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
         "activities": {
@@ -813,7 +802,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -840,15 +830,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -870,7 +864,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -878,7 +873,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -889,21 +883,68 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
-        "rarity": "",
         "identified": true,
         "equipped": true,
         "attunement": "",
@@ -930,8 +971,10 @@
         "container": null,
         "attuned": false,
         "cover": null,
-        "crewed": false,
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -949,9 +992,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -963,7 +1006,7 @@
     },
     {
       "_id": "aF6LPkJLehe0AUyT",
-      "name": "Gore",
+      "name": "顶撞 Gore",
       "type": "weapon",
       "system": {
         "source": {
@@ -975,7 +1018,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 13 ([[/damage 2d8 + 4 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一目标。命中：13（[[/damage 2d8 + 4 type=piercing]]）点穿刺伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1009,7 +1052,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1043,7 +1087,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1057,15 +1102,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1082,7 +1131,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1090,7 +1140,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1101,18 +1150,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "gore",
@@ -1130,12 +1227,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1150,7 +1245,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1161,10 +1257,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1182,9 +1282,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1196,7 +1296,7 @@
     },
     {
       "_id": "vJ1MBIc7nNGI3osu",
-      "name": "Charge",
+      "name": "冲锋 Charge",
       "type": "feat",
       "system": {
         "source": {
@@ -1208,7 +1308,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the minotaur moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ([[/damage 2d8 type=piercing]]) damage. If the target is a creature, it must succeed on a [[/save ability=str dc=14]] saving throw or be pushed up to 10 feet away and knocked &amp;Reference[condition=prone].</p></div>",
+          "value": "<p>若牛头人向其目标直线移动至少10尺，且在同一回合里以顶撞攻击命中该目标，则该目标受额外9（[[/damage 2d8 type=piercing]]）点穿刺伤害。如果目标是生物，则该生物必须成功通过一次DC 14的力量豁免，否则被推后至多10尺并应击倒地。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1222,7 +1322,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "qrJnzHsmU1wobwZM": {
             "_id": "qrJnzHsmU1wobwZM",
@@ -1239,15 +1339,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1257,7 +1361,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1279,7 +1384,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "14"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1300,7 +1406,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1308,7 +1415,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1319,15 +1425,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           },
           "Zt3WJ8Ktkwc7BrFq": {
             "_id": "Zt3WJ8Ktkwc7BrFq",
@@ -1345,20 +1498,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1388,7 +1546,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ]
             },
@@ -1404,7 +1563,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1412,7 +1572,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1423,13 +1582,59 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
@@ -1439,7 +1644,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1458,9 +1664,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1472,7 +1678,7 @@
     },
     {
       "_id": "uz3PuW4ig4BeLoqw",
-      "name": "Labyrinthine Recall",
+      "name": "迷宫记忆 Labyrinthine Recall",
       "type": "feat",
       "system": {
         "source": {
@@ -1484,7 +1690,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The minotaur can perfectly recall any path it has traveled.</p></div>",
+          "value": "<p>牛头人可以完美地回忆起它曾经走过的任何道路。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1498,7 +1704,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "labyrinthine-recall",
         "cover": null,
@@ -1506,7 +1712,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1525,9 +1732,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1539,7 +1746,7 @@
     },
     {
       "_id": "MWR84TZatcFdd2t9",
-      "name": "Reckless",
+      "name": "鲁莽 Reckless",
       "type": "feat",
       "system": {
         "source": {
@@ -1551,7 +1758,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.</p></div>",
+          "value": "<p>牛头人从其自己回合开始起，直到它的下一回合开始前，其所有近战武器攻击的攻击检定均具有优势，所有对其发动的攻击其攻击检定也同样具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1565,7 +1772,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "reckless",
         "cover": null,
@@ -1573,7 +1780,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1592,9 +1800,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1606,7 +1814,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "YmmnKS863pbpGsIK",
   "sort": 3500000,
   "ownership": {
     "default": 0,

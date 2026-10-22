@@ -1,5 +1,5 @@
 {
-  "name": "Vampire Spawn (MM'14)",
+  "name": "初生吸血鬼 Vampire Spawn (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180787977,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "6rhM84kXfJp2oIjo",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Vampire Spawn.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Vampire%20Spawn.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 16,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 11,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 10,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,12 @@
     },
     "attributes": {
       "ac": {
-        "calc": "natural",
-        "flat": 15
+        "flat": 15,
+        "calcs": [
+          "natural"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +478,28 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": null,
-        "walk": 30,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "30"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 60,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +509,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +532,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.</p><div data-roll-name-ancestor=\"Dark Desires\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dark Desires.</span></span> Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed.</p></div><div data-roll-name-ancestor=\"Born from Death\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Born from Death.</span></span> Most of a vampire's victims become vampire spawn-ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a spawn to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. Vampire spawn become free-willed when their creator dies.</p></div><div data-roll-name-ancestor=\"Chained to the Grave\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Chained to the Grave.</span></span> Every vampire remains bound to its coffin, crypt, or grave site, where it must rest by day. If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. A vampire can move its place of burial by transporting its coffin or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way.</p></div><div data-roll-name-ancestor=\"Undead Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Undead Nature.</span></span> Neither a vampire nor a vampire spawn requires air.</p></div><div data-roll-name-ancestor=\"A Vampire's Lair\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">A Vampire's Lair.</span></span> A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night.</p></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Player Characters as Vampires\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Player Characters as Vampires</span><span class=\"ve-flex-vh-center\"></span></h4> <p>The game statistics of a player character transformed into a vampire spawn and then a vampire don't change, except that the character's Strength, Dexterity, and Constitution scores become 18 if they aren't higher. In addition, the character gains the vampire's damage resistances, &amp;Reference[rule=darkvision], traits, and actions. Attack and damage rolls for the vampire's attacks are based on Strength.</p><p>The save DC for Charm is 8 + the vampire's proficiency bonus + the vampire's Charisma modifier. The character's alignment becomes lawful evil, and the DM might take control of the character until the vampirism is reversed with a @spell[wish] spell or the character is killed and brought back to life.</p></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Strahd von Zarovich\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Strahd von Zarovich</span><span class=\"ve-flex-vh-center\"></span></h4> <p>A brilliant thinker and capable warrior in life, Strahd von Zarovich fought in countless battles for his people. When war and killing finally stripped him of his youth and strength, he settled in the remote valley of Barovia and built a castle on a towering pinnacle, from which he could survey his lands. His brother Sergei came to live with him in Castle Ravenloft, becoming Strahd's adviser and constant companion.</p><p>In his brother, Strahd saw everything he had lost. Sergei was handsome and young, while Strahd had become old and scarred. Resentment colored their relationship, eventually turning into hatred. Strahd's beloved, Tatyana, spurned him for Sergei, whom she pledged to marry.</p><p>In a desperate attempt to win Tatyana's heart, Strahd forged a pact with dark powers that made him immortal. At the wedding of Sergei and Tatyana, he confronted his brother and killed him. Tatyana fled and flung herself from Ravenloft's walls. Strahd's guards, seeing him for a monster, shot him with arrows. But he did not die. He became a vampire-the first vampire, according to many sages.</p><p>In the centuries since his transformation, Strahd's lust for life and youth have only grown. He broods in his dark castle, cursing the living for stealing away what he lost, and never admitting his hand in the tragedy he created.</p></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>I am The Ancient, I am The Land. My beginnings are lost in the darkness of the past. I was the warrior, I was good and just. I thundered across the land like the wrath of a just god, but the war years and the killing years wore down my soul as the wind wears down stone into sand.</i>”</p><p><span class=\"rd__quote-by\">— Count Strahd von Zarovich</span></p></div></div></div></div>",
+        "value": "<h3>吸血鬼Vampires</h3><p>“我来自远古，我即是这大地。我的起源早已失落在黑暗的过去。我曾是个武者，是个纯粹的好人。我曾如同神怒一般席卷大地。但战争和杀戮的岁月就像狂风，而我的灵魂也有如那石头被其磨蚀成细沙。”</p><h3>施特拉德冯扎洛维奇伯爵 Connt Strahd von Zarovich</h3><p>从无尽暗夜中觉醒的吸血鬼渴求着自己失去的生命，并以生者的鲜血填补其饥渴。吸血鬼对阳光深恶痛绝，仅接触阳光便足以使其燃烧。吸血鬼们不会留下影子或倒影，因此它们会尽量在生者间保持低调，停留在远离光洁表面的阴暗处。</p><p><strong>黑暗渴求Dark Desires。</strong>无论吸血鬼是否保留着生前记忆，它们曾经的真情实感也早已因不死而枯萎扭曲。爱情转为渴欲，友情化作妒恨。吸血鬼们在曾经的情感所在处追寻着自己渴求的物质象征，因而渴望爱情的吸血鬼或许会将目光投射在年轻美貌的少女身上。孩童或许也会因其引人注目的青春活力与潜能而成为吸血鬼的目标。其他可能吸引吸血鬼的事物包括艺术、书籍或一些邪恶的不义之物，比如吸血鬼从受害者手中掳掠的战利品等。</p><p><strong>生于死亡Born from Death。</strong>大多数吸血鬼攻击的受害者会成为初生吸血鬼一种充斥着吸血鬼的鲜血渴求的贪婪造物，同时又被其吸血鬼创造者所控制。如果吸血鬼允许其衍体啜饮自己的血液，则初生吸血鬼将从衍体成为真正的吸血鬼，不再受创造者掌控，当然只有极少数吸血鬼会这样做。通常只有创造者死亡时，吸血衍体才能重获自由。</p><p><strong>困于墓土Chained to the Grave。</strong>每个吸血鬼都被它的棺材、地穴或墓地所约束，必须在白日休眠于其中。假如吸血鬼生前并未通过葬礼进行正规埋葬，则它必须躺在转换自己的地点土地下一尺内。吸血鬼可以通过移动棺材或大量墓土来更换自己的驻留地。一些吸血鬼还通过这种方式设立了多个休眠地。</p><p><strong>亡灵本质Undead Nature。</strong>吸血鬼与初生吸血鬼都不需要呼吸空气。</p><h3>玩家角色成为吸血鬼Player Characters as Vampires</h3><p>玩家角色转化为初生吸血鬼或再进一步转变为吸血鬼时，其力量、敏捷和体质值变为18（若其原属性未高于该值），其他游戏资料不变。此外，角色将获得吸血鬼的伤害抗性，黑暗视觉，以及相关的特质和动作。吸血鬼攻击时其攻击检定和伤害掷骰基于力量。其魅力豁免为8＋吸血鬼的熟练加值＋吸血鬼的魅力调整值。角色的阵营将变为守序邪恶，而DM可能会从此接管该角色直至其吸血鬼化被法术祈愿术wish修正，或该角色被杀死后重新复活。</p><h3>施特拉德冯扎洛维奇Strahd von Zarovich</h3><p>作为睿智的思想家与杰出的勇士，施特拉德冯泽尔维奇在生前曾为他的人民赢得无数的战争。当战争与杀戮使他不复昔日的青春力量后，他转而定居于巴洛维亚Barovia的偏远山谷，并于此建造了一座尖顶高耸的城堡，让自己可以在此俯瞰自己的领地。他的兄弟谢尔盖Sergei前来与他同住于鸦阁堡Castle Ravenloft，成为了他的顾问与忠实伙伴。</p><p>施特拉德透过他的兄弟看到了自己曾经拥有却已然失去的一切。谢尔盖年轻而英俊，但施特拉德却衰老而满是伤痕。不满使两兄弟间的关系逐渐变质，并最终转为憎恨。施特拉德的挚爱塔吉亚娜Tatyana拒绝了他的追求，而是投向了自己的婚约者谢尔盖。</p><p>在无法赢得塔吉亚娜真心的绝望中，施特拉德与黑暗力量定下契约以求不朽。在谢尔盖与塔吉亚娜的婚礼上，施特拉德与他的兄弟对峙并将其杀害。塔吉亚娜逃离现场，并直接从鸦阁堡的城墙跃下。这时，施特拉德的卫兵把主人视为怪物，于是用箭将其射杀。然而施特拉德并没有死在许多传说中，他由此成为了第一个吸血鬼。</p><p>在他化为吸血鬼的数世纪间，施特拉德对生命与青春的贪欲愈发高涨。他幽居于自己的黑暗城堡中，诅咒着生者窃取了他所失去的一切，却从不承认是自己亲手铸成了悲剧。</p><p>变体：吸血鬼武者和施法者Variant:</p><p>Vampire Warrior and Spellcasters</p><p>一些吸血鬼曾接受武术训练并拥有战地经验。一名着装板甲（AC</p><p>18）持用巨剑的吸血鬼武者warrior vampire，其挑战等级提升至15（13,000</p><p>XP），并附加以下动作项：</p><p><strong>多重攻击Multiattack。</strong>吸血鬼发动两次巨剑攻击。</p><p><strong>巨剑Greatsword。</strong>近战武器攻击：命中+9，触及5尺，单一生物。命中：11（2d6+4）点挥砍伤害。</p><p>还有一些吸血鬼曾经是奥术秘技的追随者。吸血鬼施法者spellcaster vampire的挑战等级提升至15（13,000</p><p>XP），并附加以下特质：</p><p><strong>施法Spellcasting。</strong>吸血鬼作为一名9级施法者，其关键属性为智力（法术豁免DC16，法术攻击命中+8）。吸血鬼准备了以下法师法术：</p><p>戏法（随意）：法师之手mage hand，魔法伎俩prestidigitation，冷冻射线ray of frost</p><p>1环（4法术位）：通晓语言comprehend languages，云雾术fog cloud，睡眠术sleep</p><p>2环（3法术位）：侦测思想detect thoughts，造风术gust of wind，镜影术mirror image</p><p>3环（3法术位）：活化死尸animate dead，降咒bestow curse，回避侦测nondetection</p><p>4环（3法术位）：枯萎术blight，高等隐形术greater invisibility</p><p>5环（1法术位）：支配类人dominate person</p><h3>吸血鬼的巢穴A Vampire&#x27;s Lair</h3><p>吸血鬼会选择宽广而坚实的地点作为巢穴，例如城堡，加筑过防御工事的庄园，以及围墙耸立的修道院等。它的棺材隐藏于墓穴或地下室中，被初生吸血鬼或其他忠实的夜行生物守卫着。</p><h3>区域效应Regional Effects</h3><p>吸血鬼巢穴的周边区域被其不自然的存在所扭曲，产生了以下效应：</p><p>区域内蝙蝠、老鼠与狼的数量明显增多。</p><p>巢穴周边500尺内的植物尽皆枯萎，其枝干扭曲且长满棘刺。</p><p>巢穴周边500尺范围内，事物的投影显得异常而憔悴，有时会如同被活化一般蠢动。</p><p>巢穴周边500尺范围内的地面上匍匐着浓雾。雾气偶尔也会呈现出令人毛骨悚然的形态，如在空中屈伸抓握的指爪或盘蜷扭动的蛇。</p><p>如果吸血鬼被摧毁，则这些效应将在2d6日后终止。</p>",
         "public": ""
       },
-      "alignment": "Neutral Evil",
+      "alignment": "中立邪恶 Neutral Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -587,12 +574,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -646,10 +633,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Vampire Spawn",
+    "name": "初生吸血鬼 Vampire Spawn (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -660,12 +649,9 @@
       "src": "systems/dnd5e/tokens/undead/VampireSpawn.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -716,7 +702,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -740,12 +726,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
       "_id": "L9a5YQ4FCqLK37vK",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -757,7 +744,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The vampire makes two attacks, only one of which can be a bite attack.</p></div>",
+          "value": "<p>吸血鬼发动两次攻击，其中只能有一次啃咬攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -771,7 +758,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "BShRxQyRbs6PEiWA": {
             "_id": "BShRxQyRbs6PEiWA",
@@ -788,20 +775,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -829,7 +821,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -837,7 +830,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -848,15 +840,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "multiattack",
@@ -865,7 +903,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -884,9 +923,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -898,7 +937,7 @@
     },
     {
       "_id": "WtWLXcHMoSOistFC",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -910,7 +949,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one willing creature, or a creature that is &amp;Reference[condition=grappled] by the vampire, &amp;Reference[condition=incapacitated], or &amp;Reference[condition=restrained]. <i>Hit:</i> 6 ([[/damage 1d6 + 3 type=piercing]]) damage plus 7 ([[/damage 2d6 type=necrotic]]) damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺。单一自愿生物，或单一被吸血鬼擒抱生物，以及失能生物、被束缚生物。命中：6（[[/damage 1d6 + 3 type=piercing]]）点穿刺伤害，外加7（[[/damage 2d6 type=necrotic]]）点暗蚀伤害。目标的生命值上限承受等同该暗蚀伤害数值的减损，吸血鬼则回复等量的生命值。减损效应持续至目标完成一次长休。如果该攻击将目标的生命值上限降至0，则目标死亡。</p>",
           "chat": ""
         },
         "range": {
@@ -944,7 +983,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -978,7 +1018,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 },
                 {
                   "types": [
@@ -993,7 +1034,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1007,15 +1049,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1032,7 +1078,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1040,7 +1087,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1051,18 +1097,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "bite",
@@ -1080,12 +1174,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1100,7 +1192,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1111,10 +1204,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1132,9 +1229,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1146,7 +1243,7 @@
     },
     {
       "_id": "31Cl7OCa5iGSEjWp",
-      "name": "Claws",
+      "name": "爪击 Claws",
       "type": "weapon",
       "system": {
         "source": {
@@ -1158,7 +1255,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one creature. <i>Hit:</i> 8 ([[/damage 2d4 + 3 type=slashing]]) damage. Instead of dealing damage, the vampire can grapple the target (escape DC <span class=\"rd__dc\">13</span>).</p></div>",
+          "value": "<p>近战武器攻击：命中+6，触及5尺，单一生物。命中：8（[[/damage 2d4 + 3 type=slashing]]）点挥砍伤害。或者选择不造成伤害，而让吸血鬼以此擒抱目标（逃脱DC 13）。</p>",
           "chat": ""
         },
         "range": {
@@ -1192,7 +1289,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1226,7 +1324,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1240,15 +1339,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1265,7 +1368,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1273,7 +1377,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1284,18 +1387,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "claws",
@@ -1313,12 +1464,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1333,7 +1482,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1344,10 +1494,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1365,9 +1519,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1379,7 +1533,7 @@
     },
     {
       "_id": "4XJGMBJUggEoyOOm",
-      "name": "Regeneration",
+      "name": "再生 Regeneration",
       "type": "feat",
       "system": {
         "source": {
@@ -1391,7 +1545,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.</p></div>",
+          "value": "<p>吸血鬼在其自己的回合开始时恢复10点生命值，前提是它至少有1点生命值且并未处于日光中或流水里。如果其受到光耀伤害或受圣水的伤害，则该吸血鬼的该特质在其下一回合开始时无法生效。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1405,7 +1559,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "370h7BlI6g9uI0Kd": {
             "_id": "370h7BlI6g9uI0Kd",
@@ -1423,20 +1577,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1460,7 +1619,8 @@
               "denomination": null,
               "scaling": {
                 "number": 1
-              }
+              },
+              "modifiers": []
             },
             "sort": 0,
             "useConditionText": "",
@@ -1474,7 +1634,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1482,7 +1643,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1493,13 +1653,59 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
@@ -1509,7 +1715,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1528,9 +1735,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1542,7 +1749,7 @@
     },
     {
       "_id": "1LnKcusLjOYwqswu",
-      "name": "Spider Climb",
+      "name": "蛛行 Spider Climb",
       "type": "feat",
       "system": {
         "source": {
@@ -1554,7 +1761,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p></div>",
+          "value": "<p>吸血鬼无需进行属性检定就能攀爬于困难表面，包括倒挂在天花板上。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1568,7 +1775,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "spider-climb",
         "cover": null,
@@ -1576,7 +1783,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1595,9 +1803,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1609,7 +1817,7 @@
     },
     {
       "_id": "G0I3AZcR8D38q0hE",
-      "name": "Vampire Weaknesses",
+      "name": "吸血鬼弱点 Vampire Weaknesses",
       "type": "feat",
       "system": {
         "source": {
@@ -1621,7 +1829,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The vampire has the following flaws:</p><p><i>Forbiddance.</i> The vampire can't enter a residence without an invitation from one of the occupants.</p><p><i>Harmed by Running Water.</i> The vampire takes 20 acid damage when it ends its turn in running water.</p><p><i>Stake to the Heart.</i> The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is &amp;Reference[condition=incapacitated] in its resting place.</p><p><i>Sunlight Hypersensitivity.</i> The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.</p></div>",
+          "value": "<p>吸血鬼拥有以下弱点： 禁入Forbiddance。吸血鬼得不到一位居住者的邀请时无法进入相应的民宅。 流水之伤Harmed by Running Water。吸血鬼在自己的回合结束时，如果身处流水中则将受20点强酸伤害。 木桩穿心Stake to the Heart。吸血鬼在其休眠地处于失能状态时，如果以木质穿刺伤害武器刺穿其心脏，则该吸血鬼将陷入麻痹，效应直至穿刺物被移除为止。 日照超敏Sunlight Hypersensitivity。吸血鬼在其自己的回合开始时若处于阳光直射下，则受20点光耀伤害。此外，他的攻击检定与属性检定也具有劣势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1635,12 +1843,12 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "gvqFWcW7JU5OASPb": {
             "_id": "gvqFWcW7JU5OASPb",
             "type": "damage",
-            "name": "Damage: Acid Damage",
+            "name": "伤害: 强酸 伤害",
             "activation": {
               "type": "",
               "value": null,
@@ -1653,20 +1861,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1696,7 +1909,8 @@
                     "number": 1
                   },
                   "number": null,
-                  "denomination": null
+                  "denomination": null,
+                  "modifiers": []
                 }
               ]
             },
@@ -1712,7 +1926,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1720,7 +1935,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1731,19 +1945,65 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           },
           "UHAR8cJ7ZSNrKSZb": {
             "_id": "UHAR8cJ7ZSNrKSZb",
             "type": "damage",
-            "name": "Damage: Radiant Damage",
+            "name": "伤害: 光耀 伤害",
             "activation": {
               "type": "",
               "value": null,
@@ -1756,20 +2016,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1799,7 +2064,8 @@
                     "number": 1
                   },
                   "number": null,
-                  "denomination": null
+                  "denomination": null,
+                  "modifiers": []
                 }
               ]
             },
@@ -1815,7 +2081,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1823,7 +2090,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1834,13 +2100,59 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
@@ -1850,7 +2162,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1869,9 +2182,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1883,7 +2196,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "f12a539bc3086eec",
   "sort": 5300000,
   "ownership": {
     "default": 0,

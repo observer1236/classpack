@@ -1,8 +1,8 @@
 {
   "_id": "g6IKMfusqMziEY7k",
-  "name": "现世感知 Temporal Awarness",
+  "name": "时序感知 Temporal Awareness",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_SpiritualGuidence.png",
+  "img": "icons/magic/time/clock-stopwatch-white-blue.webp",
   "system": {
     "type": {
       "value": "class",
@@ -25,26 +25,97 @@
     "requirements": "时间魔法等级 2",
     "activities": {},
     "identifier": "-temporal-awarness",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 2,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
-  "effects": [],
+  "effects": [
+    {
+      "name": "时序感知 Temporal Awareness",
+      "img": "icons/magic/time/clock-stopwatch-white-blue.webp",
+      "system": {
+        "magical": false,
+        "origin": {
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.g6IKMfusqMziEY7k",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "changes": [
+          {
+            "key": "system.attributes.init.roll.bonus",
+            "type": "add",
+            "value": "@abilities.int.mod",
+            "phase": "initial",
+            "_id": "tOJJkLucHrkwHja1",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "conditions": "{}",
+        "rider": {
+          "statuses": []
+        }
+      },
+      "type": "base",
+      "_id": "RSebDFxW84DvyqiB",
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.g6IKMfusqMziEY7k",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1792077852583,
+        "modifiedTime": 1792077879697,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!g6IKMfusqMziEY7k.RSebDFxW84DvyqiB"
+    }
+  ],
   "folder": "T0gnMMSqXV4ZDkxT",
   "sort": 36100000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +135,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757414437818,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

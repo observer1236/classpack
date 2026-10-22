@@ -9,7 +9,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<p>你获得洞察、表演、游说三者之一的熟练项（由你选择）。</p>",
+      "value": "<p>你获得洞悉、表演、或游说技能的熟练项（由你选择）。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     "requirements": "和平领域等级 1",
     "activities": {},
     "identifier": "-implement-of-peace",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": [
+        "subclass:peace-domain"
+      ]
     },
     "properties": []
   },
@@ -60,17 +63,12 @@
       "itemCondition": "",
       "effectCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

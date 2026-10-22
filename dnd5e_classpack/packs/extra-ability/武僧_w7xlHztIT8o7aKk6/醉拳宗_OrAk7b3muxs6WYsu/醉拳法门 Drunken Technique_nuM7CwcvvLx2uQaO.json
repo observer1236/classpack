@@ -1,15 +1,15 @@
 {
   "_id": "nuM7CwcvvLx2uQaO",
-  "name": "醉拳法门 Drunken Technique",
+  "name": "醉拳技巧 Drunken Technique",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Nature_Invisibilty.png",
+  "img": "icons/skills/movement/feet-spurred-boots-brown.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>当你3级时，选择了这个范型的武僧使得你学会了如何在疾风连打中快速的扭转与行动躯体。每当你使用@UUID[Compendium.dnd5e_classpack.class-abilityphb.vLuoFN1x3tRWTPdm]{疾风连击}时，你将获得撤离动作的好处，而你的步行速度增加 10 尺直到当前回合结束。</p>",
+      "value": "<p>当你3级时，选择了这个范型的武僧使得你学会了如何在 @UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.vLuoFN1x3tRWTPdm]{疾风连击}Flurry of Blows 中快速的扭转与行动躯体。每当你使用 疾风连击Flurry of Blows 时，你都将获得执行了 撤离Disengage 动作的好处，且你的步行速度增加10尺，持续直至当前回合结束。</p>",
       "chat": ""
     },
     "source": {
@@ -25,36 +25,28 @@
     "requirements": "醉拳宗等级 3",
     "activities": {},
     "identifier": "-drunken-technique",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": [
+        "subclass:way-of-the-drunken-master"
+      ]
     },
     "properties": []
   },
   "effects": [
     {
       "_id": "CSt6BEGVerNp2sIr",
-      "changes": [
-        {
-          "key": "system.attributes.movement.walk",
-          "mode": 2,
-          "value": "10",
-          "priority": 20
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "turns": 1,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
       },
       "origin": "Compendium.dnd5e_classpack.extra-ability.nuM7CwcvvLx2uQaO",
       "transfer": false,
@@ -80,9 +72,9 @@
       "description": "",
       "statuses": [],
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -92,8 +84,36 @@
       },
       "img": null,
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.walk",
+            "value": 10,
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "5ZZ4lujyd1iqSHAj",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!nuM7CwcvvLx2uQaO.CSt6BEGVerNp2sIr"
     }
   ],
@@ -124,17 +144,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1725890365109,
     "modifiedTime": 1757416535521,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

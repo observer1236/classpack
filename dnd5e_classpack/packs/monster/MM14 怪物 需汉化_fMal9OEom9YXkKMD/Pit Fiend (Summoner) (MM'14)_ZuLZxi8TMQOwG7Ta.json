@@ -1,5 +1,5 @@
 {
-  "name": "Pit Fiend (Summoner) (MM'14)",
+  "name": "深狱炼魔（召唤者） Pit Fiend (Summoner) (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180787977,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "ZuLZxi8TMQOwG7Ta",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Pit Fiend.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Pit%20Fiend.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 26,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 14,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 24,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 22,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 18,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 24,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,12 @@
     },
     "attributes": {
       "ac": {
-        "calc": "natural",
-        "flat": 19
+        "flat": 19,
+        "calcs": [
+          "natural"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +478,29 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": 60,
-        "swim": null,
-        "walk": 30,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "30",
+          "fly": "60"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 0,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 120,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 0,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 120
+        }
       },
       "spellcasting": "cha",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +533,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>The undisputed lords of most other devils, pit fiends attend the archdukes and archduchesses of the Nine Hells and carry out their wishes. These mighty devils are the generals of the Nine Hells, leading its infernal legions into battle.</p><p>With an inflated sense of superiority and entitlement, pit fiends form a grotesque aristocracy in the infernal realm. These domineering and manipulative tyrants conspire to eliminate anything that stands between them and their desires, even as they negotiate the convoluted and dangerous politics of the Nine Hells.</p><p>A pit fiend is a hulking monster with a whip-like tail and enormous wings that it wraps around itself like a cloak. Armored scales cover its body, and its fanged maw drips a venom that can lay the mightiest mortal creatures low. Fearless in battle, a pit fiend takes on the most powerful foes in single combat, demonstrating its supremacy and an arrogance that prevents it from acknowledging any chance of defeat.</p></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>Your war-torn kingdom is rife with corruption, its people dying from starvation and strife. They cry out for new leadership—someone with the charisma and the courage to put an end to the turmoil and suffering. You could be that someone!</i>”</p><p><span class=\"rd__quote-by\">— Herobaal, the Pit Fiend</span></p></div></div></div><div data-roll-name-ancestor=\"Devils\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Devils</span></h1> <p>Devils personify tyranny, with a totalitarian society dedicated to the domination of mortal life. The shadow of the Nine Hells of Baator extends far across the multiverse, and Asmodeus, the dark lord of Nessus, strives to subjugate the cosmos to satisfy his thirst for power. To do so, he must continually expand his infernal armies, sending his servants to the mortal realm to corrupt the souls from which new devils are spawned.</p><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Lords of Tyranny\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Lords of Tyranny.</span></span> Devils live to conquer, enslave, and oppress. They take perverse delight in exercising authority over the weak, and any creature that defies the authority of a devil faces swift and cruel punishment. Every interaction is an opportunity for a devil to display its power, and all devils have a keen understanding of how to use and abuse their power.</p><p>Devils understand the failings that plague intelligent mortals, and they use that knowledge to lead mortals into temptation and darkness, turning creatures into slaves to their own corruption. Devils on the Material Plane use their influence to manipulate humanoid rulers, whispering evil thoughts, fomenting paranoia, and eventually driving them to tyrannical actions.</p></div><div data-roll-name-ancestor=\"Obedience and Ambition\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Obedience and Ambition.</span></span> In accordance with their lawful alignment, devils obey even when they envy or dislike their superiors, knowing that their obedience will be rewarded. The hierarchy of the Nine Hells depends on this unswerving loyalty, without which that fiendish plane would become as anarchic as the Abyss.</p><p>At the same time, it is in the nature of devils to scheme, creating in some a desire to rule that eclipses their contentment to be ruled. This singular ambition is strongest among the archdevils whom Asmodeus appoints to rule the nine layers of the Nine Hells. These high-ranking fiends are the only devils to ever sample true power, which they crave like the sweetest ambrosia.</p></div><div data-roll-name-ancestor=\"Dark Dealers and Soul Mongers\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Dark Dealers and Soul Mongers.</span></span> Devils are confined to the Lower Planes, but they can travel beyond those planes by way of portals or powerful summoning magic. They love to strike bargains with mortals seeking to gain some benefit or prize, but a mortal making such a bargain must be wary. Devils are crafty negotiators and positively ruthless at enforcing the terms of an agreement. Moreover, a contract with even the lowliest devil is enforced by Asmodeus's will. Any mortal creature that breaks such a contract instantly forfeits its soul, which is spirited away to the Nine Hells.</p><p>To own a creature's soul is to have absolute control over that creature, and most devils accept no other currency in exchange for the fiendish power and boons they can provide. A soul is usually forfeited when a mortal dies naturally, for devils are immortal and can wait years for a contract to play out. If a contract allows a devil to claim a mortal's soul before death, it can instantly return to the Nine Hells with the soul in its possession. Only divine intervention can release a soul after a devil has claimed it.</p></div></div></div><div data-roll-name-ancestor=\"The Infernal Hierarchy\" class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"5\"> <span class=\"entry-title-inner\">The Infernal Hierarchy</span></h2> <div class=\"rd__b  rd__b--2\"><p>The Nine Hells has a rigid hierarchy that defines every aspect of its society. Asmodeus is the supreme ruler of all devils, and the only creature in the Nine Hells with the powers of a lesser god. Worshiped as such in the Material Plane, Asmodeus inspires the evil humanoid cults that take his name. In the Nine Hells, he commands scores of pit fiend generals, which in turn command legions of subordinates.</p><p>A supreme tyrant, a brilliant deceiver, and a master of subtlety, Asmodeus protects his throne by keeping his friends close and his enemies closer. He delegates most matters of rulership to the pit fiends and lesser archdevils that make up the infernal bureaucracy of the Nine Hells, even as he knows that those powerful devils conspire to usurp the Throne of Baator from which he rules. Asmodeus appoints archdevils, and he can strip any member of the infernal hierarchy of rank and status as he likes.</p><p>If it dies outside the Nine Hells, a devil disappears in a cloud of sulfurous smoke or dissolves into a pool of ichor, instantly returning to its home layer, where it reforms at full strength. Devils that die in the Nine Hells are destroyed forever-a fate that even Asmodeus fears.</p><div data-roll-name-ancestor=\"Archdevils\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Archdevils.</span></span> The archdevils include all the current and deposed rulers of the Nine Hells (see the Layers and Lords of the Nine Hells table), as well as the dukes and duchesses that make up their courts, attend them as advisers, and hope to supplant them. Every archdevil is a unique being with an appearance that reflects its particular evil nature.</p></div><div data-roll-name-ancestor=\"Greater Devils\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Greater Devils.</span></span> The greater devils include the pit fiends, erinyes, horned devils, and ice devils that command lesser devils and attend the archdevils.</p></div><div data-roll-name-ancestor=\"Lesser Devils\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"8\"> <span class=\"entry-title-inner\">Lesser Devils.</span></span> The lesser devils include numerous strains of fiends, including imps, chain devils, spined devils, bearded devils, barbed devils, and bone devils.</p></div><div data-roll-name-ancestor=\"Lemures\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"9\"> <span class=\"entry-title-inner\">Lemures.</span></span> The lowest form of devil, lemures are the twisted and tormented souls of evil and corrupted mortals. A lemure killed in the Nine Hells is only permanently destroyed if it is killed with a blessed weapon or if its shapeless corpse is splashed with holy water before it can return to life.</p></div><div data-roll-name-ancestor=\"Promotion and Demotion\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"10\"> <span class=\"entry-title-inner\">Promotion and Demotion.</span></span> When the soul of an evil mortal sinks into the Nine Hells, it takes on the physical form of a wretched lemure. Archdevils and greater devils have the power to promote lemures to lesser devils. Archdevils can promote lesser devils to greater devils, and Asmodeus alone can promote a greater devil to archdevil status. This diabolic promotion invokes a brief, painful transformation, with the devil's memories passing intact from one form to the next.</p><p>Low-level promotions are typically based on need, such as when a pit fiend transforms lemures into imps to gain invisible spies under its command. High-level promotions are almost always based on merit, such as when a bone devil that distinguishes itself in battle is transformed into a horned devil by the archdevil it serves. A devil is seldom promoted more than one step at a time in the hierarchy of infernal forms.</p><p>Demotion is the customary punishment for failure or disobedience among the devils. Archdevils or greater devils can demote a lesser devil to a lemure, which loses all memory of its prior existence. An archdevil can demote a greater devil to lesser devil status, but the demoted devil retains its memories-and might seek vengeance if the severity of the demotion is excessive.</p><p>No devil can promote or demote another devil that has not sworn fealty to it, preventing rival archdevils from demoting each other's most powerful servants. Since all devils swear fealty to Asmodeus, he can freely demote any other devil, transforming it into whatever infernal form he desires.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Infernal Hierarchy\"><caption>Infernal Hierarchy</caption><thead><tr><th class=\"rd__th ve-col-4 \" data-rd-isroller=\"false\">Rank</th><th class=\"rd__th ve-col-8 \" data-rd-isroller=\"false\">Devil(s)</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-4 \">1.</td><td class=\"rd__th ve-col-8 \">lemure</td></tr><tr><td class=\"rd__th ve-col-4 \">2. (Lesser devils)</td><td class=\"rd__th ve-col-8 \">imp</td></tr><tr><td class=\"rd__th ve-col-4 \">3.</td><td class=\"rd__th ve-col-8 \">spined devil</td></tr><tr><td class=\"rd__th ve-col-4 \">4.</td><td class=\"rd__th ve-col-8 \">bearded devil</td></tr><tr><td class=\"rd__th ve-col-4 \">5.</td><td class=\"rd__th ve-col-8 \">barbed devil</td></tr><tr><td class=\"rd__th ve-col-4 \">6.</td><td class=\"rd__th ve-col-8 \">chain devil</td></tr><tr><td class=\"rd__th ve-col-4 \">7.</td><td class=\"rd__th ve-col-8 \">bone devil</td></tr><tr><td class=\"rd__th ve-col-4 \">8. (Greater devils)</td><td class=\"rd__th ve-col-8 \">horned devil</td></tr><tr><td class=\"rd__th ve-col-4 \">9.</td><td class=\"rd__th ve-col-8 \">erinyes</td></tr><tr><td class=\"rd__th ve-col-4 \">10.</td><td class=\"rd__th ve-col-8 \">ice devil</td></tr><tr><td class=\"rd__th ve-col-4 \">11.</td><td class=\"rd__th ve-col-8 \">pit fiend</td></tr><tr><td class=\"rd__th ve-col-4 \">12. (Archdevils)</td><td class=\"rd__th ve-col-8 \">duke or duchess</td></tr><tr><td class=\"rd__th ve-col-4 \">13.</td><td class=\"rd__th ve-col-8 \">archduke or archduchess</td></tr></tbody></table></div></div><div data-roll-name-ancestor=\"The Nine Hells\" class=\"rd__b  rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"11\"> <span class=\"entry-title-inner\">The Nine Hells</span></h3> <p>The Nine Hells are a single plane comprising nine separate layers (see the Layers and Lords of the Nine Hells table). The first eight layers are each ruled by archdevils that answer to the greatest archdevil of all: Asmodeus, the Archduke of Nessus, the ninth layer. To reach the deepest layer of the Nine Hells, one must descend through all eight of the layers above it, in order. The most expeditious means of doing so is the River Styx, which plunges ever deeper as it flows from one layer to the next. Only the most courageous adventurers can withstand the torment and horror of that journey.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Layers and Lords of the Nine Hells Layer\"><caption>Layers and Lords of the Nine Hells Layer</caption><thead><tr><th class=\"rd__th ve-col-1 \" data-rd-isroller=\"false\">Layer</th><th class=\"rd__th ve-col-2 \" data-rd-isroller=\"false\">Layer Name</th><th class=\"rd__th ve-col-3 \" data-rd-isroller=\"false\">Archduke or Archduchess</th><th class=\"rd__th ve-col-3 \" data-rd-isroller=\"false\">Previous Rulers</th><th class=\"rd__th ve-col-3 \" data-rd-isroller=\"false\">Primary Inhabitants</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-1 \">1</td><td class=\"rd__th ve-col-2 \">Avernus</td><td class=\"rd__th ve-col-3 \">Zariel</td><td class=\"rd__th ve-col-3 \">Bel, Tiamat</td><td class=\"rd__th ve-col-3 \">Erinyes, imps, spined devils</td></tr><tr><td class=\"rd__th ve-col-1 \">2</td><td class=\"rd__th ve-col-2 \">Dis</td><td class=\"rd__th ve-col-3 \">Dispater</td><td class=\"rd__th ve-col-3 \">—</td><td class=\"rd__th ve-col-3 \">Bearded devils, erinyes, imps, spined devils</td></tr><tr><td class=\"rd__th ve-col-1 \">3</td><td class=\"rd__th ve-col-2 \">Minauros</td><td class=\"rd__th ve-col-3 \">Mammon</td><td class=\"rd__th ve-col-3 \">—</td><td class=\"rd__th ve-col-3 \">Bearded devils, chain devils, imps, spined devils</td></tr><tr><td class=\"rd__th ve-col-1 \">4</td><td class=\"rd__th ve-col-2 \">Phlegethos</td><td class=\"rd__th ve-col-3 \">Belial and Fierna</td><td class=\"rd__th ve-col-3 \">—</td><td class=\"rd__th ve-col-3 \">Barbed devils, bone devils, imps, spined devils</td></tr><tr><td class=\"rd__th ve-col-1 \">5</td><td class=\"rd__th ve-col-2 \">Stygia</td><td class=\"rd__th ve-col-3 \">Levistus</td><td class=\"rd__th ve-col-3 \">Geryon</td><td class=\"rd__th ve-col-3 \">Bone devils, erinyes, ice devils, imps</td></tr><tr><td class=\"rd__th ve-col-1 \">6</td><td class=\"rd__th ve-col-2 \">Malbolge</td><td class=\"rd__th ve-col-3 \">Glasya</td><td class=\"rd__th ve-col-3 \">Malagard, Moloch</td><td class=\"rd__th ve-col-3 \">Barbed devils, bone devils, horned devils, imps</td></tr><tr><td class=\"rd__th ve-col-1 \">7</td><td class=\"rd__th ve-col-2 \">Maladomini</td><td class=\"rd__th ve-col-3 \">Baalzebul</td><td class=\"rd__th ve-col-3 \">—</td><td class=\"rd__th ve-col-3 \">Barbed devils, bone devils, horned devils, imps</td></tr><tr><td class=\"rd__th ve-col-1 \">8</td><td class=\"rd__th ve-col-2 \">Cania</td><td class=\"rd__th ve-col-3 \">Mephistopheles</td><td class=\"rd__th ve-col-3 \">—</td><td class=\"rd__th ve-col-3 \">Horned devils, ice devils, imps, pit fiends</td></tr><tr><td class=\"rd__th ve-col-1 \">9</td><td class=\"rd__th ve-col-2 \">Nessus</td><td class=\"rd__th ve-col-3 \">Asmodeus</td><td class=\"rd__th ve-col-3 \">—</td><td class=\"rd__th ve-col-3 \">All devils</td></tr></tbody></table></div></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Devil True Names and Talismans\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"12\"> <span class=\"entry-title-inner\">Devil True Names and Talismans</span><span class=\"ve-flex-vh-center\"></span></h4> <p>Though devils all have common names, every devil above a lemure in station also has a true name that it keeps secret. A devil can be forced to disclose its true name if &amp;Reference[condition=charmed], and ancient scrolls and tomes are said to exist that list the true names of certain devils.</p><p>A mortal who learns a devil's true name can use powerful summoning magic to call the devil from the Nine Hells and bind it into service. Binding can also be accomplished with the help of a devil talisman. Each of these ancient relics is inscribed with the true name of a devil it controls, and was bathed in the blood of a worthy sacrifice-typically someone the creator loved-when crafted.</p><p>However it is summoned, a devil brought to the Material Plane typically resents being pressed into service. However, the devil seizes every opportunity to corrupt its summoner so that the summoner's soul ends up in the Nine Hells. Only imps are truly content to be summoned, and they easily commit to serving a summoner as a familiar, but they still do their utmost to corrupt those who summon them.</p></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Variant: Devil Summoning\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"13\"> <span class=\"entry-title-inner\">Variant: Devil Summoning</span><span class=\"ve-flex-vh-center\"></span></h4> <p>Some devils can have an action option that allows them to summon other devils.</p><div data-roll-name-ancestor=\"Summon Devil (1/Day)\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"14\"> <span class=\"entry-title-inner\">Summon Devil (1/Day).</span></span> The devil chooses what to summon and attempts a magical summoning.</p></div><ul class=\"rd__list\"><li class=\"rd__li \">A barbed devil has a [[/r 1d100]]{30 percent} chance of summoning one barbed devil.</li><li class=\"rd__li \">A bearded devil has a [[/r 1d100]]{30 percent} chance of summoning one bearded devil.</li><li class=\"rd__li \">A bone devil has a [[/r 1d100]]{40 percent} chance of summoning [[/r 2d6]] spined devils or one bone devil.</li><li class=\"rd__li \">An erinyes has a [[/r 1d100]]{50 percent} chance of summoning [[/r 3d6]] spined devils, [[/r 1d6]] bearded devils, or one erinyes.</li><li class=\"rd__li \">A horned devil has a [[/r 1d100]]{30 percent} chance of summoning one horned devil.</li><li class=\"rd__li \">An ice devil has a [[/r 1d100]]{60 percent} chance of summoning one ice devil.</li><li class=\"rd__li \">A pit fiend summons [[/r 2d4]] bearded devils, [[/r 1d4]] barbed devils, or one erinyes with no chance of failure.</li></ul><p>A summoned devil appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other devils. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</p></div></div>",
+        "value": "<h3>深狱炼魔Pit Fiend</h3><p>身为大多数魔鬼中毋庸置疑的霸主，深狱炼魔跟随在大公与女大公们鞍前马后为其效力。这些强大的魔鬼是九狱中的将军，带领着地狱军团投身战场。</p><p>由于优越性与权力的膨胀，深狱炼魔们成为了地狱国度中风格怪异的一群上层阶级。这些专横跋扈又控制欲强的暴君时刻谋划着如何铲除那些妨碍其满足欲望的事物，并以同样方式经营着九狱中错综复杂的危险政治。</p><p>深狱炼魔是长着鞭状尾巴与披身巨翼的庞然怪物。其身上长满装甲般的鳞片，血盆大口的利齿上滴落的毒液甚至可以放倒最强大的凡间生物。深狱炼魔在战场上无所畏惧，它们挑选最强大的敌人与其单独对战以彰显其霸道，其傲慢也使其绝不接受任何失败的可能。</p><p>“你那受战乱蹂躏的王国充满了堕落，其内的人民因饥饿与纷争相继死去。他们渴望一个新的领袖——某个带着领导力与勇气前来结束这场骚乱与痛楚的人。你，可以成为这个人！”</p><p>——深狱炼魔，西罗巴尔Herobaal</p>",
         "public": ""
       },
-      "alignment": "Lawful Evil",
+      "alignment": "守序邪恶 Lawful Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -580,12 +568,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -652,10 +640,12 @@
         }
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Pit Fiend (Summoner)",
+    "name": "深狱炼魔（召唤者） Pit Fiend (Summoner) (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -663,15 +653,12 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "modules/dnd5e_classpack/Nicons/img/bestiary/tokens/MM/Pit Fiend.webp",
+      "src": "https://5e.kiwee.top/img/bestiary/tokens/MM/Pit%20Fiend.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -722,13 +709,12 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [
-      {
-        "id": "seeAll",
+    "detectionModes": {
+      "seeAll": {
         "range": 120,
         "enabled": true
       }
-    ],
+    },
     "occludable": {
       "radius": 0
     },
@@ -752,12 +738,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 2
   },
   "items": [
     {
       "_id": "ibfZdg5pVgmxKFjS",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -769,7 +756,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The pit fiend makes four attacks: one with its bite, one with its claw, one with its mace, and one with its tail.</p></div>",
+          "value": "<p>深狱炼魔发动4次攻击：一次啃咬，一次爪击，一次用硬头锤，一次用尾击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -783,7 +770,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "Yx2KtUiQwyso2XSG": {
             "_id": "Yx2KtUiQwyso2XSG",
@@ -800,20 +787,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -841,7 +833,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -849,7 +842,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -860,15 +852,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "multiattack",
@@ -877,7 +915,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -896,9 +935,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -910,7 +949,7 @@
     },
     {
       "_id": "ehjhu1fGZY0KlUXQ",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -922,7 +961,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+14]]{+14} to hit, reach 5 ft., one target. <i>Hit:</i> 22 ([[/damage 4d6 + 8 type=piercing]]) damage. The target must succeed on a [[/save ability=con dc=21]] saving throw or become &amp;Reference[condition=poisoned]. While &amp;Reference[condition=poisoned] in this way, the target can't regain hit points, and it takes 21 ([[/damage 6d6 type=poison]]) damage at the start of each of its turns. The &amp;Reference[condition=poisoned] target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p></div>",
+          "value": "<p>近战武器攻击：命中+14，触及5尺，单一目标。命中：22（[[/damage 4d6 + 8 type=piercing]]）点穿刺伤害。目标必须进行一次DC 21的体质豁免，豁免失败则陷入中毒。以该方式中毒的目标不能恢复生命值，且在每个其自己回合开始时受到21（[[/damage 6d6 type=poison]]）点毒素伤害。该中毒目标可以在每个其自己回合结束时在进行一次该豁免，豁免成功则终止其中毒效应。</p>",
           "chat": ""
         },
         "range": {
@@ -948,7 +987,7 @@
           "SuYNz8LyzCtN73K6": {
             "_id": "SuYNz8LyzCtN73K6",
             "type": "attack",
-            "name": "Attack: 4d6 Piercing Damage",
+            "name": "攻击: 4d6 穿刺 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -958,7 +997,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -992,7 +1032,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1006,15 +1047,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1031,7 +1076,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1039,7 +1085,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1050,23 +1095,71 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           },
           "KXbRD6dZ1KstX2xa": {
             "_id": "KXbRD6dZ1KstX2xa",
             "type": "save",
-            "name": "Save: 6d6 Poison Damage",
+            "name": "豁免: 6d6 毒素 伤害",
             "activation": {
               "type": "action",
               "value": 1,
@@ -1080,7 +1173,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1098,7 +1192,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "21"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "full",
@@ -1116,7 +1211,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -1131,15 +1227,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1156,7 +1256,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1164,7 +1265,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1175,15 +1275,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "bite",
@@ -1201,12 +1348,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1221,7 +1366,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1232,10 +1378,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1253,9 +1403,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1267,7 +1417,7 @@
     },
     {
       "_id": "okyA4YTo2cuP53Ht",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -1279,7 +1429,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+14]]{+14} to hit, reach 10 ft., one target. <i>Hit:</i> 17 ([[/damage 2d8 + 8 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+14，触及10尺，单一目标。命中：17（[[/damage 2d8 + 8 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1315,7 +1465,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1349,7 +1500,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1363,15 +1515,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1388,7 +1544,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1396,7 +1553,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1407,18 +1563,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "claw",
@@ -1436,12 +1640,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1456,7 +1658,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1467,10 +1670,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1488,9 +1695,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1502,7 +1709,7 @@
     },
     {
       "_id": "Oo1p2n1zRHkqNLTR",
-      "name": "Mace",
+      "name": "硬头锤 Mace",
       "type": "weapon",
       "system": {
         "source": {
@@ -1514,7 +1721,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+14]]{+14} to hit, reach 10 ft., one target. <i>Hit:</i> 15 ([[/damage 2d6 + 8 type=bludgeoning]]) damage plus 21 ([[/damage 6d6 type=fire]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+14，触及10尺，单一目标。命中：15（[[/damage 2d6 + 8 type=bludgeoning]]）点钝击伤害，外加21（[[/damage 6d6 type=fire]]）点火焰伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1550,7 +1757,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1584,7 +1792,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 },
                 {
                   "types": [
@@ -1599,7 +1808,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1613,15 +1823,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1638,7 +1852,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1646,7 +1861,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1657,21 +1871,68 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
-        "rarity": "",
         "identified": true,
         "equipped": true,
         "attunement": "",
@@ -1698,7 +1959,6 @@
         "container": null,
         "attuned": false,
         "cover": null,
-        "crewed": false,
         "damage": {
           "base": {
             "number": null,
@@ -1709,7 +1969,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1720,10 +1981,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1741,9 +2006,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1755,7 +2020,7 @@
     },
     {
       "_id": "PMlag3xNwd4glDCZ",
-      "name": "Tail",
+      "name": "尾击 Tail",
       "type": "weapon",
       "system": {
         "source": {
@@ -1767,7 +2032,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+14]]{+14} to hit, reach 10 ft., one target. <i>Hit:</i> 24 ([[/damage 3d10 + 8 type=bludgeoning]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+14，触及10尺，单一目标。命中：24（[[/damage 3d10 + 8 type=bludgeoning]]）点钝击伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1803,7 +2068,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1837,7 +2103,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1851,15 +2118,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1876,7 +2147,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1884,7 +2156,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1895,18 +2166,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "tail",
@@ -1924,12 +2243,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1944,7 +2261,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1955,10 +2273,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1976,9 +2298,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1990,7 +2312,7 @@
     },
     {
       "_id": "mHJToTlLeTzq0mE0",
-      "name": "Summon Devil",
+      "name": "召唤魔鬼 Summon Devil",
       "type": "feat",
       "system": {
         "source": {
@@ -2002,7 +2324,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The devil chooses what to summon and attempts a magical summoning.</p><p>A pit fiend summons [[/r 2d4]] @creature[bearded devil||bearded devils], [[/r 1d4]] @creature[barbed devil||barbed devils], or one @creature[erinyes] with no chance of failure.</p><p>A summoned devil appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other devils. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</p></div>",
+          "value": "<p>该魔鬼选择召唤对象并尝试进行魔法召唤，有100%的几率召来以下一种：[[/r 2d4]] 须魔、 [[/r 1d4]] 猬魔、 或 1只 罪魔。</p><p>被召唤的魔鬼出现在召唤者60尺内一处未占据空间，作为召唤者的盟友行动，并且不能召唤其他魔鬼。它持续存在1分钟，或至它自身或召唤者死亡，或召唤者用一个动作将其遣散。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2021,7 +2343,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "vamxwWsziZufYc5X": {
             "_id": "vamxwWsziZufYc5X",
@@ -2045,20 +2367,25 @@
                 }
               ]
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2086,7 +2413,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2094,7 +2422,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2105,15 +2432,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "summon-devil",
@@ -2122,7 +2495,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2141,9 +2515,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2155,7 +2529,7 @@
     },
     {
       "_id": "wcYQUXdTJP5vAsic",
-      "name": "Fear Aura",
+      "name": "恐惧灵光 Fear Aura",
       "type": "feat",
       "system": {
         "source": {
@@ -2167,7 +2541,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Any creature hostile to the pit fiend that starts its turn within 20 feet of the pit fiend must make a [[/save ability=wis dc=21]] saving throw, unless the pit fiend is &amp;Reference[condition=incapacitated]. On a failed save, the creature is &amp;Reference[condition=frightened] until the start of its next turn. If a creature's saving throw is successful, the creature is immune to the pit fiend's Fear Aura for the next 24 hours.</p></div>",
+          "value": "<p>除非深狱炼魔失能，否则任何在深狱炼魔周边20尺内开始其回合的敌对生物必须进行一次DC 21的感知豁免。豁免失败者将陷入恐慌直至该目标下一回合开始。豁免成功则该生物在随后24小时时间里免疫该深狱炼魔的恐惧灵光。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2181,7 +2555,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "minhcf3ZSBXRzwRs": {
             "_id": "minhcf3ZSBXRzwRs",
@@ -2198,15 +2572,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -2216,7 +2594,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -2238,7 +2617,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "21"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -2259,7 +2639,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2267,7 +2648,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2278,15 +2658,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "fear-aura",
@@ -2295,7 +2722,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2314,9 +2742,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2328,7 +2756,7 @@
     },
     {
       "_id": "IMLS4LuxmyZWpmks",
-      "name": "Magic Resistance",
+      "name": "魔法抗性 Magic Resistance",
       "type": "feat",
       "system": {
         "source": {
@@ -2340,7 +2768,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The pit fiend has advantage on saving throws against spells and other magical effects.</p></div>",
+          "value": "<p>该魔鬼为抵抗法术和其他魔法效应而作的豁免检定具有优势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2354,7 +2782,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "magic-resistance",
         "cover": null,
@@ -2362,7 +2790,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2381,9 +2810,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2395,7 +2824,7 @@
     },
     {
       "_id": "2d2LXyP2jazKsGF5",
-      "name": "Magic Weapons",
+      "name": "魔法武器 Magic Weapons",
       "type": "feat",
       "system": {
         "source": {
@@ -2407,7 +2836,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The pit fiend's weapon attacks are magical.</p></div>",
+          "value": "<p>深狱炼魔的武器攻击为魔法攻击。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2421,7 +2850,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "magic-weapons",
         "cover": null,
@@ -2429,7 +2858,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2448,9 +2878,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2462,7 +2892,7 @@
     },
     {
       "_id": "eFBU7z8tpHbnKYkD",
-      "name": "Hold Monster",
+      "name": "怪物定身术 Hold Monster",
       "type": "spell",
       "system": {
         "source": {
@@ -2474,7 +2904,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be &amp;Reference[condition=paralyzed] for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.</p></div></div>",
+          "value": "<p>指定施法距离内一个你能看见的生物。该目标必须进行一次[[/save activity=dnd5eactivity000]]{感知豁免}，豁免失败则其在法术持续时间内陷入&amp;Reference[condition=paralyzed apply=false]{麻痹}。该效应对亡灵无效。目标在其每回合结束时可以再进行一次感知豁免，豁免成功则终止其身上该法术的效应。</p><p><strong>升环施法效应。</strong>使用六环或更高法术位施展该法术时，你使用的法术位每比五环高一环，你就可以额外指定一个生物。指定目标时，每个目标生物必须身处其他目标 30 尺范围内。</p>",
           "chat": ""
         },
         "level": 5,
@@ -2495,7 +2925,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -2514,7 +2945,8 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "3",
@@ -2525,10 +2957,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2548,27 +2976,33 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [
               {
                 "_id": "1nGyCW9SEQ2TusXw",
-                "onSave": false
+                "onSave": false,
+                "uuid": null,
+                "level": {}
               }
             ],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2589,7 +3023,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -2607,7 +3042,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2615,7 +3051,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2626,18 +3061,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "hold-monster"
+        "identifier": "hold-monster",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -2660,20 +3144,16 @@
       },
       "effects": [
         {
-          "name": "Hold Monster",
-          "origin": "Compendium.dnd5e.spells.Item.l9Ju5KE7bbn3WpTm",
+          "name": "怪物定身术 Hold Monster",
+          "origin": null,
           "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
           },
           "disabled": false,
           "_id": "1nGyCW9SEQ2TusXw",
-          "changes": [],
           "description": "<p>The target is Paralyzed for the Duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p>",
           "transfer": false,
           "statuses": [
@@ -2689,9 +3169,9 @@
           "_stats": {
             "compendiumSource": null,
             "duplicateSource": null,
-            "coreVersion": "13.351",
+            "coreVersion": "14.368",
             "systemId": "dnd5e",
-            "systemVersion": "4.3.9",
+            "systemVersion": "6.0.5",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
@@ -2699,17 +3179,34 @@
           },
           "img": "icons/magic/control/debuff-chains-ropes-red.webp",
           "type": "base",
-          "system": {},
+          "system": {
+            "changes": [],
+            "origin": {
+              "actor": null,
+              "behavior": null,
+              "effect": null,
+              "item": "Compendium.dnd5e.spells.Item.l9Ju5KE7bbn3WpTm",
+              "message": null
+            },
+            "conditions": "{}",
+            "magical": true,
+            "rider": {
+              "statuses": []
+            }
+          },
           "sort": 0,
+          "showIcon": 2,
+          "start": null,
+          "folder": null,
           "_key": "!actors.items.effects!ZuLZxi8TMQOwG7Ta.eFBU7z8tpHbnKYkD.1nGyCW9SEQ2TusXw"
         }
       ],
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2721,7 +3218,7 @@
     },
     {
       "_id": "quE36mfIzBIsVr7D",
-      "name": "Wall of Fire",
+      "name": "火墙术 Wall of Fire",
       "type": "spell",
       "system": {
         "source": {
@@ -2733,7 +3230,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.</p><p>When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes [[/damage 5d8 type=fire]] damage, or half as much damage on a successful save.</p><p>One side of the wall, selected by you when you cast this spell, deals [[/damage 5d8 type=fire]] damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 5th level or higher, the damage increases by [[/damage 1d8]] for each slot level above 4th.</p></div></div>",
+          "value": "<p>你在施法距离内一块实体地面上创造出一面火墙。你可以选择创造长不过 60 尺、高不过 20 尺、厚不过 1 尺的直线型火墙；或是直径不过 20 尺、高不过 20 尺、厚不过 1 尺的环形火墙。火墙不透明，且将持续存在至法术终止。</p><p>火墙出现时，所有位于火墙区域内的生物必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}。豁免失败者将受到 [[/damage 5d8 type=fire]]{5d8} 点火焰伤害。豁免成功则伤害减半。</p><p>施展该法术时，你要必须选择火墙的哪一侧会造成伤害。生物在火墙伤害侧 10 尺内或在火墙区域内结束其回合时，将受到 5d8 点火焰伤害。生物在一个回合内第一次进入火墙或在火墙内结束其回合时也会受到同样的伤害。火墙的另一侧则不造成任何伤害。</p><p><strong>升环施法效应。</strong>使用五环或更高法术位施展该法术时，你使用的法术位每比四环高一环，法术的伤害就增加 1d8。</p>",
           "chat": ""
         },
         "level": 4,
@@ -2756,7 +3253,8 @@
             "contiguous": false,
             "type": "wall",
             "size": "60",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -2773,7 +3271,8 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "3",
@@ -2784,10 +3283,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2807,22 +3302,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2847,7 +3346,8 @@
                     "mode": "whole",
                     "number": 1,
                     "formula": ""
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -2861,7 +3361,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -2879,7 +3380,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2887,7 +3389,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2898,18 +3399,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "wall-of-fire"
+        "identifier": "wall-of-fire",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -2933,9 +3483,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2947,7 +3497,7 @@
     },
     {
       "_id": "mffxzuzBuMZqo5SN",
-      "name": "Detect Magic",
+      "name": "侦测魔法 Detect Magic",
       "type": "spell",
       "system": {
         "source": {
@@ -2959,7 +3509,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its <span class=\"bold\">school of magic</span>, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p></div>",
+          "value": "<p>你在法术持续时间内能感测到30尺内存在的魔法。感测到魔法的存在后，你可以使用动作，来看到任何你能看见的具有魔法的生物或物件周围环绕着微弱的灵光，并分辨出其所属的魔法学派（若有）。该法术可以穿透大部分障碍，但仍会被1尺厚石质，或1寸厚金属质，或一层薄铅质，或3尺厚木质或泥质材料阻隔。</p>",
           "chat": ""
         },
         "level": 1,
@@ -2982,7 +3532,8 @@
             "contiguous": false,
             "type": "radius",
             "size": "30",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -2999,16 +3550,13 @@
         },
         "duration": {
           "value": "10",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -3028,22 +3576,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3072,7 +3624,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3080,7 +3633,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3091,18 +3643,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "detect-magic"
+        "identifier": "detect-magic",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -3131,9 +3731,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3145,7 +3745,7 @@
     },
     {
       "_id": "ztscHjEKLHRWd3yr",
-      "name": "Fireball",
+      "name": "火球术 Fireball",
       "type": "spell",
       "system": {
         "source": {
@@ -3157,7 +3757,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes [[/damage 8d6 type=fire]] damage on a failed save, or half as much damage on a successful one.</p><p>The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 4th level or higher, the damage increases by [[/damage 1d6]] for each slot level above 3rd.</p></div></div>",
+          "value": "<p>明亮的闪光从你的指间飞驰向施法距离内你指定的一点，并随着一声低吼迸成一片烈焰。目标点周围半径 20 尺球状区域内的每个生物必须进行一次[[/save activity=dnd5eactivity000]]{敏捷豁免}。豁免失败者将受到 [[/damage 8d6 type=fire]]{8d6} 点火焰伤害，豁免成功则伤害减半。</p><p>迸发的火焰将绕过拐角扩散。并点燃区域内所有未被着装或携带的可燃物件。</p><p><strong>升环施法效应。</strong>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，其伤害就增加 1d6。</p>",
           "chat": ""
         },
         "level": 3,
@@ -3179,7 +3779,8 @@
             "contiguous": false,
             "type": "sphere",
             "size": "20",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -3196,16 +3797,13 @@
         },
         "duration": {
           "value": "0",
-          "units": "inst"
+          "units": "inst",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -3225,22 +3823,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3265,7 +3867,8 @@
                     "mode": "whole",
                     "number": 1,
                     "formula": ""
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -3279,7 +3882,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -3297,7 +3901,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3305,7 +3910,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3316,18 +3920,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "fireball"
+        "identifier": "fireball",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -3350,9 +4003,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3364,7 +4017,7 @@
     },
     {
       "_id": "9pIULesvaAKCDLH5",
-      "name": "Innate Spellcasting",
+      "name": "天生施法 Innate Spellcasting",
       "type": "feat",
       "system": {
         "source": {
@@ -3376,7 +4029,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Innate Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Innate Spellcasting.</span></span> The pit fiend's spellcasting ability is Charisma (spell save DC <span class=\"rd__dc\">21</span>). The pit fiend can innately cast the following spells, requiring no material components:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>At will: @UUID[.mffxzuzBuMZqo5SN], @UUID[.ztscHjEKLHRWd3yr]</p></li><li class=\"rd__li  rd__li-spell\"><p>3/day each: @UUID[.eFBU7z8tpHbnKYkD], @UUID[.quE36mfIzBIsVr7D]</p></li></ul></div></div>",
+          "value": "<p>深狱炼魔天生施法属性为魅力（豁免DC 21）。它天生可施展以下法术而不需要任何相应的材料成分： 随意：侦测魔法Detect Magic，火球术Fireball 每项3/日：定身怪物hold monster，火墙术wall of fire</p><p>@UUID[.mffxzuzBuMZqo5SN]{侦测魔法 Detect Magic}、@UUID[.ztscHjEKLHRWd3yr]{火球术 Fireball}、@UUID[.eFBU7z8tpHbnKYkD]{怪物定身术 Hold Monster}、@UUID[.quE36mfIzBIsVr7D]{火墙术 Wall of Fire}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3390,7 +4043,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "innate-spellcasting",
         "cover": null,
@@ -3398,7 +4051,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -3417,9 +4071,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3431,7 +4085,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "059cb7e05bb2d574",
   "sort": 22000000,
   "ownership": {
     "default": 0,

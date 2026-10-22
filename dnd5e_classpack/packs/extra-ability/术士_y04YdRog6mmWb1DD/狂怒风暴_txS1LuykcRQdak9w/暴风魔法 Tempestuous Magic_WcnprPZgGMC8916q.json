@@ -2,14 +2,14 @@
   "_id": "WcnprPZgGMC8916q",
   "name": "暴风魔法 Tempestuous Magic",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Nature_StormReach.png",
+  "img": "icons/magic/air/weather-wind-gust.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         从1级起，你与风元素魔法紧密联系起来。每当你在你自己的行动轮内施展一个并非戏法的法术时，你可以用附赠动作导致旋转的风元素飙风围绕着你。此时你可以飞行10尺，而不引起借机攻击。</p>",
+      "value": "<p>自1级起，当你在你的回合中施展了1环或更高环阶的法术后，你可以立刻用附赠动作引导气元素的旋风涡流环绕着你。此时，你可以飞行至多10尺，此次移动不会引发借机攻击。</p>",
       "chat": ""
     },
     "source": {
@@ -42,17 +42,19 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "units": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -64,7 +66,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -86,17 +89,103 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-tempestuous-magic",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -104,14 +193,7 @@
   "folder": "txS1LuykcRQdak9w",
   "sort": 28400000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -131,9 +213,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757420910468,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

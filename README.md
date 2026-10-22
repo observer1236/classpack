@@ -1,17 +1,18 @@
 # DND5e classpack for fvtt
 
-整合了大部分种族，职业，物品，法术， 
+整合了大部分种族，职业，物品，法术，
 交流与制作群：942329050（新） 1083272094（旧，不再活跃）
 
-使用方法：  
-打开安装MOD界面，复制以下路径
+`6.0.0-beta.8` 发布后，在“安装模组”的 Manifest URL 中填入：
 
-    https://github.com/HJSmile/classpack/releases/latest/download/module.json
+    https://github.com/observer1236/classpack/releases/download/v6.0.0-beta.8/module.json
 
-粘贴至以下位置后，点击安装
+后续测试版使用对应版本的安装链接。也可以将发布的 ZIP 解压到 Foundry 数据目录的 `Data/modules/` 中。
 
-更新日志见
-https://github.com/HJSmile/classpack/releases
+发布记录：
+https://github.com/observer1236/classpack/releases
+
+传送选择落点时，默认显示被传送 Token 的半透明预览；群体传送会按实际落点显示所有目标，保留各自的尺寸与相对位置。无效落点的预览变红，确认、取消或切换场景后清除。调用 `dnd5eClasspack.teleport` 时可用 `previewTokens: false` 关闭，或用 `previewAlpha` 调整透明度（默认 `0.5`）。
 
 如需为本项目贡献，请参阅：
 https://github.com/observer1236/classpack/blob/master/CONTRIBUTING.md

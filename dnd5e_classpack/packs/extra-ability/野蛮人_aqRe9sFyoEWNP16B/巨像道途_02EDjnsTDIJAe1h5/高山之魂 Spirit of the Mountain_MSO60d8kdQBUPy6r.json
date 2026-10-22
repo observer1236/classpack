@@ -2,7 +2,7 @@
   "name": "高山之魂 Spirit of the Mountain",
   "type": "feat",
   "_id": "MSO60d8kdQBUPy6r",
-  "img": "modules/dnd5e_classpack/Nicons/images/skill_icon_452.png",
+  "img": "icons/magic/nature/tree-spirit-black.webp",
   "system": {
     "activities": {},
     "uses": {
@@ -14,23 +14,24 @@
       "value": "<p>3级起，你利用你的愤怒来将脚牢牢锚定在大地上，化作一堵力量之墙。狂暴期间，只要你站在地面上，你就无法被非自愿的击入 <strong>倒地Prone</strong> ，也无法被非自愿的强迫移动。</p>",
       "chat": ""
     },
-    "identifier": "-",
+    "identifier": "spirit-of-the-mountain",
     "source": {
       "revision": 1,
       "rules": "2024"
     },
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "requirements": "巨像道途等级 3",
     "type": {
-      "value": "",
+      "value": "class",
       "subtype": ""
     }
   },
@@ -59,18 +60,14 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "riders": {
-        "activity": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1756616949393,
     "modifiedTime": 1756617038095,
     "lastModifiedBy": "vFLRCDyc5l72uRlV",

@@ -1,5 +1,5 @@
 {
-  "name": "甲伏怪Chuul (MM'14)",
+  "name": "甲伏怪 Chuul (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757246028281,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "Ye4h9auuwd7BUjxR",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Chuul.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Chuul.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 19,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 5,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 11,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 5,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 2,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,12 @@
     },
     "attributes": {
       "ac": {
-        "calc": "natural",
-        "flat": 16
+        "flat": 16,
+        "calcs": [
+          "natural"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +478,29 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": 30,
-        "walk": 30,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "30",
+          "swim": "30"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 60,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,18 +533,19 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--1\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    甲伏怪是由底 栖魔鱼改造后赋予智能的甲壳生物，也是底栖魔鱼远古帝国的残存者。其脑中仍根深蒂固的保留着创造者的指令，而它们从古至今都严格遵循这些指令行事。</p></div><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>太古遗存者</strong></em><strong> </strong><em style=\"mso-bidi-font-style:normal\"><strong>Primeval Relics。</strong></em>太古时期的底栖魔鱼曾统治着横跨数个大洋的庞大帝国，并用其强大的魔法扭曲凡间新生生物的心智。然而，底栖魔鱼的水生习性使其必须依靠仆从，才能将其意志施加到水面之外。正是因此它们才创造了甲伏怪。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    完美服从的甲伏怪遵照底 栖魔鱼的命令四处搜集智慧生物与魔法。随着世代的更迭，被设计有超强适应力的甲伏怪们变得越来越强大。而底 栖魔鱼帝国随着众神崛起而分崩离析后，甲伏怪们也四散飘零。但它们仍然继续做着曾经为底栖魔鱼所做的事务，仍在悠然的采集类人生物，积攒财宝，搜集魔法，增强力量。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>不倦的守卫Tirelsee</strong></em><strong> </strong><em style=\"mso-bidi-font-style:normal\"><strong>Guardians。</strong></em>甲伏怪仍守卫着底 栖魔鱼帝国的遗迹，沉默地遵从无数世代前的命令。有时，寻宝者们会根据流言和古代地图找到这些遗迹的位置，但胆大与无畏也只能为其带来死亡作为奖赏。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    寻宝者死后，它们随身的财物也将 归入甲伏怪守护的宝藏中。甲伏怪可以在远距离探知魔法。这种知觉与它们的本能会驱使其杀死探险者，并取走装备财物，再埋在底栖魔鱼指示的秘密地点。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">     <em style=\"mso-bidi-font-style:normal\"><strong>静候的仆从Waiting Servant。</strong></em>虽然底栖魔鱼的古代帝国已经陨落多时，但它们 与甲伏怪的心灵联结依然完好无损。接触到底栖魔鱼的甲伏怪会立刻恢复其旧时的角色，重拾为底栖魔鱼邪恶意图服务的强烈冲动。</p></div></div><p>Survivors of the ancient aboleth empire, chuuls are crustaceans the aboleths modified and endowed with sentience. They follow the ingrained directives of their creators, as they have done since the dawn of time.</p><div data-roll-name-ancestor=\"Primeval Relics\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Primeval Relics.</span> In the primeval ages, aboleths ruled a vast empire that spanned the oceans of the world. In those days, the aboleths used mighty magic and bent the minds of the nascent creatures of the mortal realm. However, they were bound to the water and could not enforce their will beyond it without servants. Therefore, they created chuuls.</p><p>Perfectly obedient, the chuuls collected sentient creatures and magic at the aboleths' command. Chuuls were designed to endure the ages of the world, growing in size and strength as the eons passed. When the aboleths' empire crumbled with the rise of the gods, the chuuls were cast adrift. However, these creatures continue to do what they did for the aboleths, slowly collecting humanoids, gathering treasure, amassing magic, and consolidating power.</p></div><div data-roll-name-ancestor=\"Tireless Guardians\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Tireless Guardians.</span> Chuul still guard the ruins of the ancient aboleth empire. They linger in silent observance of eons-old commands. Rumors and ancient maps sometimes lure treasure seekers to these ruins, but the reward for their boldness is death.</p><p>Whatever riches that the explorers bring with them adds to the hoard guarded by the chuuls. Chuuls can sense magic at a distance. This sense couples with an innate drive that leads them to slay explorers, take their gear, and bury it in secret locales aboleths dictated eons ago.</p></div><div data-roll-name-ancestor=\"Waiting Servants\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Waiting Servants.</span> Although the aboleths' ancient empire fell long ago, the psychic bonds between them and their created servants remain intact. Chuuls that come into contact with aboleths immediately assume their old roles. Such chuuls redirect their compulsions to the service of the aboleths' sinister purposes.</p></div></div></div>",
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--1\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    甲伏怪是由底 栖魔鱼改造后赋予智能的甲壳生物，也是底栖魔鱼远古帝国的残存者。其脑中仍根深蒂固的保留着创造者的指令，而它们从古至今都严格遵循这些指令行事。</p></div><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>太古遗存者</strong></em><strong> </strong><em style=\"mso-bidi-font-style:normal\"><strong>Primeval Relics。</strong></em>太古时期的底栖魔鱼曾统治着横跨数个大洋的庞大帝国，并用其强大的魔法扭曲凡间新生生物的心智。然而，底栖魔鱼的水生习性使其必须依靠仆从，才能将其意志施加到水面之外。正是因此它们才创造了甲伏怪。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    完美服从的甲伏怪遵照底 栖魔鱼的命令四处搜集智慧生物与魔法。随着世代的更迭，被设计有超强适应力的甲伏怪们变得越来越强大。而底 栖魔鱼帝国随着众神崛起而分崩离析后，甲伏怪们也四散飘零。但它们仍然继续做着曾经为底栖魔鱼所做的事务，仍在悠然的采集类人生物，积攒财宝，搜集魔法，增强力量。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>不倦的守卫Tirelsee</strong></em><strong> </strong><em style=\"mso-bidi-font-style:normal\"><strong>Guardians。</strong></em>甲伏怪仍守卫着底 栖魔鱼帝国的遗迹，沉默地遵从无数世代前的命令。有时，寻宝者们会根据流言和古代地图找到这些遗迹的位置，但胆大与无畏也只能为其带来死亡作为奖赏。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    寻宝者死后，它们随身的财物也将 归入甲伏怪守护的宝藏中。甲伏怪可以在远距离探知魔法。这种知觉与它们的本能会驱使其杀死探险者，并取走装备财物，再埋在底栖魔鱼指示的秘密地点。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">     <em style=\"mso-bidi-font-style:normal\"><strong>静候的仆从Waiting Servant。</strong></em>虽然底栖魔鱼的古代帝国已经陨落多时，但它们 与甲伏怪的心灵联结依然完好无损。接触到底栖魔鱼的甲伏怪会立刻恢复其旧时的角色，重拾为底栖魔鱼邪恶意图服务的强烈冲动。</p></div></div></div></div>",
         "public": ""
       },
       "alignment": "混乱邪恶Chaotic Evil",
@@ -584,12 +572,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -647,10 +635,12 @@
         }
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Chuul",
+    "name": "甲伏怪 Chuul (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -661,12 +651,9 @@
       "src": "systems/dnd5e/tokens/aberration/Chuul.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 2,
       "scaleY": 2,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -717,7 +704,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -741,7 +728,8 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 2
   },
   "items": [
     {
@@ -758,7 +746,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>甲伏怪发动两次钳击攻击。如果它正擒抱生物，则还可以使用一次触须攻击。</p><p>The chuul makes two pincer attacks. If the chuul is grappling a creature, the chuul can also use its tentacles once.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>甲伏怪发动两次钳击攻击。如果它正擒抱生物，则还可以使用一次触须攻击。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -772,7 +760,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "lmcI04KDiF9Sk0MG": {
             "_id": "lmcI04KDiF9Sk0MG",
@@ -789,20 +777,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -830,7 +823,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -838,7 +832,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -849,15 +842,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "multiattack",
@@ -866,7 +905,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -902,9 +942,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757174189019,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -928,7 +968,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中[[/r 1d20+6]]{+6}，触及10尺，单一目标。 <em style=\"mso-bidi-font-style:normal\">命中：</em>11（[[/damage 2d6 + 4 type=bludgeoning]]）点伤害。如果目标是大型或更小体型的生物则被&amp;Reference[condition=grappled]{擒抱}（逃脱DC 14），甲伏怪无法同时&amp;Reference[condition=grappled]{擒抱}两个以上的生物。</p><p><em>Melee Weapon Attack:</em> [[/r 1d20+6]]{+6} to hit, reach 10 ft., one target. <em>Hit:</em> 11 ([[/damage 2d6 + 4 type=bludgeoning]]) damage. The target is &amp;Reference[condition=grappled] (escape DC <span class=\"rd__dc\">14</span>) if it is a Large or smaller creature and the chuul doesn't have two other creatures &amp;Reference[condition=grappled].</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中[[/r 1d20+6]]{+6}，触及10尺，单一目标。 <em style=\"mso-bidi-font-style:normal\">命中：</em>11（[[/damage 2d6 + 4 type=bludgeoning]]）点伤害。如果目标是大型或更小体型的生物则被&amp;Reference[condition=grappled]{擒抱}（逃脱DC 14），甲伏怪无法同时&amp;Reference[condition=grappled]{擒抱}两个以上的生物。</p></div>",
           "chat": ""
         },
         "range": {
@@ -962,7 +1002,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -996,7 +1037,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1010,15 +1052,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1035,7 +1081,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1043,7 +1090,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1054,18 +1100,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "pincer",
@@ -1083,12 +1177,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1104,7 +1196,8 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1115,11 +1208,15 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null,
-        "mastery": ""
+        "mastery": "",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1155,9 +1252,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757174139439,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1181,7 +1278,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>被甲伏怪&amp;Reference[condition=grappled]{擒抱}的生物必须进行一次[[/save ability=con dc=13]]的豁免，豁免失败则&amp;Reference[condition=poisoned]{中毒}1分钟。该中毒期间目标生物陷入&amp;Reference[condition=paralyzed]{麻痹}。该目标可以在每个其自己回合结束时再进一次该豁免，豁免成功则终止该效应。</p><p>One creature &amp;Reference[condition=grappled] by the chuul must succeed on a [[/save ability=con dc=13]] saving throw or be &amp;Reference[condition=poisoned] for 1 minute. Until this poison ends, the target is &amp;Reference[condition=paralyzed]. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>被甲伏怪&amp;Reference[condition=grappled]{擒抱}的生物必须进行一次[[/save ability=con dc=13]]的豁免，豁免失败则&amp;Reference[condition=poisoned]{中毒}1分钟。该中毒期间目标生物陷入&amp;Reference[condition=paralyzed]{麻痹}。该目标可以在每个其自己回合结束时再进一次该豁免，豁免成功则终止该效应。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1195,7 +1292,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "S2yT89DcyU9Rn9qf": {
             "_id": "S2yT89DcyU9Rn9qf",
@@ -1212,15 +1309,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1230,7 +1331,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1252,7 +1354,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "13"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1273,7 +1376,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1281,7 +1385,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1292,15 +1395,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "tentacles",
@@ -1309,7 +1459,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1345,9 +1496,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757174301771,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1371,7 +1522,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>甲伏怪可以在空气和水中呼吸。</p><p>The chuul can breathe air and water.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>甲伏怪可以在空气和水中呼吸。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1385,7 +1536,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "amphibious",
         "cover": null,
@@ -1393,7 +1544,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1429,9 +1581,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757173474287,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1455,7 +1607,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>甲伏怪可以随意探知120尺内的魔法。此特质如同法术@spell[detect magic]{侦测魔法}，但本身不是魔法。</p><p>The chuul senses magic within 120 feet of it at will. This trait otherwise works like the @spell[detect magic] spell but isn't itself magical.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>甲伏怪可以随意探知120尺内的魔法。此特质如同法术@spell[detect magic]{侦测魔法}，但本身不是魔法。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1469,7 +1621,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "sense-magic",
         "cover": null,
@@ -1477,7 +1629,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1513,9 +1666,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757173961819,
         "lastModifiedBy": "LRML3lp2BSfvniU2",

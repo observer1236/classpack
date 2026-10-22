@@ -2,14 +2,14 @@
   "_id": "2fQm2YYF6F0Z11Ci",
   "name": "暗杀 Assassinate",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Rogue_Eviscerate.png",
+  "img": "icons/skills/melee/strike-dagger-skull-white.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第3级起，你一旦获得先机就会变得更加致命。你对战斗开始后还没开始过自己回合的生物发动攻击时，所进行的攻击检定具有优势。此外，你攻击命中被突袭的生物时，必定则造成重击。</p>",
+      "value": "<p> 第3级起，你一旦获得先机就会变得更加致命。你对战斗开始后还没开始过自己回合的生物发动攻击时，所进行的攻击检定具有优势。此外，当你攻击命中被突袭的生物时，你本次攻击视为掷出了重击。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "刺客等级 3",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "assassinate",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": [
+        "subclass:assassin"
+      ]
     },
     "properties": []
   },
@@ -39,12 +42,7 @@
   "folder": "BrlQsXq8AoXAq2PI",
   "sort": 6300000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +62,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757060864523,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

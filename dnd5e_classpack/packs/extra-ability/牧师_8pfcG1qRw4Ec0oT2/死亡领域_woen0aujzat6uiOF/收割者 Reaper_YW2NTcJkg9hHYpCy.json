@@ -2,14 +2,14 @@
   "_id": "YW2NTcJkg9hHYpCy",
   "name": "收割者 Reaper",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ability_revendreth_rogue.jpg",
+  "img": "icons/magic/death/skull-humanoid-white-red.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         第1级时，该牧师可以从任意法术列表中选择学习一个死灵戏法。该牧师施展一个通常指定一个生物为目标的死灵戏法时，则该法术现在可以指定施法距离内两个相互之间距离不超过5尺的生物。</p>",
+      "value": "<p>第1级时，该牧师可以从任意法术列表中选择学习一个死灵系戏法。该牧师施展一个通常指定一个生物为目标的死灵系戏法时，则该法术现在可以指定施法距离内两个相互之间距离不超过5尺的生物。 </p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "死亡领域等级 1",
     "activities": {},
     "identifier": "-reaper",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -63,24 +64,13 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "reaper",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757413675552,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

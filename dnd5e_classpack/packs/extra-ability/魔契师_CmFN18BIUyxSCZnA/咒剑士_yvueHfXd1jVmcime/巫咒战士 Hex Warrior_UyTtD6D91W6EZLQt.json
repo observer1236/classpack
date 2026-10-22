@@ -2,14 +2,14 @@
   "_id": "UyTtD6D91W6EZLQt",
   "name": "巫咒战士 Hex Warrior",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_ShadowyApparition.png",
+  "img": "icons/skills/melee/sword-engraved-glow-purple.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<h4>在1级时，你获得了有效的战斗训练。你得到对于中甲，盾牌，和军用武器的熟练。此外，你宗主的影响也让你得以通过一把特殊武器来魔法的引导你的意志。当你结束一次长休，你都能够触摸一把你已经熟练的、非双手武器，你可以在攻击和伤害检定中，使用你的魅力调整值，以代替力量或敏捷。这个好处保留到你再次完成长休。如果你在后续获得@UUID[Compendium.dnd5e_classpack.class-abilityphb.MtURbXBBvh9LdJxf]{刃之魔契}，此好处将扩展到你用这个魔契召唤的每一把契约武器上，没有武器类型的限制。</h4>",
+      "value": "<p>在1级时，你进行了有效的战斗训练让自己获得了新装备的熟练。你获得中甲、盾牌、与军用武器的熟练项。</p>\n<p>此外，你宗主的影响也让你得以通过一把特定武器来魔法的引导你的意志。每当你完成长休时，你都可以够触碰一把你已经熟练的、不具有双手属性的武器，接下来你用这把武器发动攻击检定与其伤害掷骰时，可以使用你的魅力调整值，以代替力量或敏捷。这一增益将一直持续到你完成下一次长休为止。如果你在后续选择了@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.MtURbXBBvh9LdJxf]{刃之魔契}特性，你用那个魔契召唤的任何一把契约武器都可以享受到这一增益，且不限武器类型。</p>",
       "chat": ""
     },
     "source": {
@@ -24,58 +24,36 @@
     },
     "requirements": "咒剑士等级 1",
     "activities": {},
-    "identifier": "-hex-warrior",
-    "advancement": [],
+    "identifier": "hex-warrior",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
   "effects": [
     {
       "_id": "zucCzkJArfZFbnhb",
-      "changes": [
-        {
-          "key": "system.traits.armorProf.value",
-          "mode": 2,
-          "value": "med",
-          "priority": null
-        },
-        {
-          "key": "system.traits.armorProf.value",
-          "mode": 2,
-          "value": "shl",
-          "priority": null
-        },
-        {
-          "key": "system.traits.weaponProf.value",
-          "mode": 2,
-          "value": "mar",
-          "priority": null
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "origin": "Compendium.dnd5e_classpack.extra-ability.UyTtD6D91W6EZLQt",
       "transfer": true,
       "flags": {},
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -84,24 +62,67 @@
         "exportSource": null
       },
       "name": "获得中甲、盾牌、军用武器熟练",
-      "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_ShadowyApparition.png",
+      "img": "icons/skills/melee/sword-engraved-glow-purple.webp",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.armorProf.value",
+            "value": "med",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "kbJzRl9c0FiEvVkB",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.armorProf.value",
+            "value": "shl",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "jNOQ8dll0l8P9HSm",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.weaponProf.value",
+            "value": "mar",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "2tv1C8MOOPxhusBy",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "description": "",
       "statuses": [],
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!UyTtD6D91W6EZLQt.zucCzkJArfZFbnhb"
     }
   ],
   "folder": "yvueHfXd1jVmcime",
   "sort": 26900000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -119,18 +140,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "hexWarrior",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757410303793,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

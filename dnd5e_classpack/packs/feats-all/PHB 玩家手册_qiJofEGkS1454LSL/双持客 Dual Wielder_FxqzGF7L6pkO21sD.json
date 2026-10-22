@@ -7,12 +7,7 @@
   "folder": "qiJofEGkS1454LSL",
   "sort": 2700000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -30,13 +25,7 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "dualWielder",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "system": {
     "description": {
@@ -51,23 +40,24 @@
     },
     "cover": null,
     "uses": {
-      "max": "0",
+      "max": "",
       "spent": 0,
       "recovery": []
     },
     "type": {
       "value": "feat",
-      "subtype": ""
+      "subtype": "general"
     },
     "requirements": "",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "dual-wielder",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -75,9 +65,9 @@
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757864761908,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

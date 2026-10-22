@@ -1,81 +1,42 @@
-/**
- * Push / pull movement helpers.
- *
- * A push moves a token away from a reference point along the ray that connects
- * them; a negative distance pulls it toward the point instead. Movement is
- * collision aware and always lands on the grid.
- */
+import { occupied, positionAtCenter, tokenCenter, tokenDocument, tokenPosition } from "./geometry.mjs";
 
-const MAX_ATTEMPTS = 100;
-const BACK_OFF_SQUARES = 5;
-/** Foundry's snapping mode for the top-left corner of a token footprint. */
-const CORNER_SNAP_MODE = 0xFF0;
-
-/**
- * Build the ray a token travels along: it starts at the token centre and keeps
- * the heading from `origin` to the token.
- */
-function travelRay(target, origin) {
-  const heading = new foundry.canvas.geometry.Ray(origin, target.center);
-  return foundry.canvas.geometry.Ray.fromAngle(
-    target.center.x,
-    target.center.y,
-    heading.angle,
-    heading.distance
-  );
-}
-
-function blocked(target, point, ray, checkCollision) {
-  if (!checkCollision) return false;
-  return target.checkCollision(point, { origin: ray.A, type: "move", mode: "any" });
-}
-
-/**
- * Calculate the token update for a single push / pull.
- *
- * @param {Token} target        Token placeable to move.
- * @param {{x:number,y:number}} originPoint  Reference point in canvas pixels.
- * @param {number} distance     Grid squares to move; negative pulls inward.
- * @param {{checkCollision?: boolean}} [options]
- * @returns {{_id: string, x: number, y: number}|undefined}
- */
-export function calculatePushUpdate(target, originPoint, distance, { checkCollision = true } = {}) {
-  if (!target?.center || !originPoint || !distance) return undefined;
-
-  const ray = travelRay(target, originPoint);
-  if (!ray.distance) return undefined;
-
-  let travel = distance;
-
-  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
-    const squares = travel / canvas.dimensions.distance;
-    const landing = ray.project((canvas.dimensions.size * squares) / ray.distance);
-
-    if (!blocked(target, landing, ray, checkCollision)) {
-      const corner = canvas.grid.getSnappedPoint(
-        { x: landing.x - target.w / 2, y: landing.y - target.h / 2 },
-        { mode: CORNER_SNAP_MODE }
-      );
-      return { _id: target.id, x: corner.x, y: corner.y };
-    }
-
-    const previous = travel;
-    travel += travel > 0 ? -BACK_OFF_SQUARES : BACK_OFF_SQUARES;
-    if (travel === 0 || Math.sign(previous) !== Math.sign(travel)) return undefined;
+/** Signed distance in scene units. Back off after snapping and never pull past the origin. */
+export function calculatePushUpdate(target, originPoint, distance,
+  { checkCollision = true, avoidOccupied = false, reservations = [] } = {}) {
+  const doc = tokenDocument(target), scene = doc?.parent;
+  if (!scene || !originPoint || !Number.isFinite(distance) || !distance) return;
+  const source = tokenPosition(target), center = tokenCenter(target, source);
+  const dx = center.x - originPoint.x, dy = center.y - originPoint.y, length = Math.hypot(dx, dy);
+  if (!length) return;
+  const pixelsPerUnit = scene.grid.size / scene.grid.distance;
+  let travel = Math.abs(distance) * pixelsPerUnit;
+  if (distance < 0) travel = Math.min(travel, Math.max(0, length - scene.grid.size * 0.01));
+  const sign = Math.sign(distance), step = scene.grid.size;
+  const seen = new Set();
+  for (; travel > 1e-6; travel = Math.max(0, travel - step)) {
+    const raw = { x: center.x + dx / length * sign * travel,
+      y: center.y + dy / length * sign * travel, elevation: source.elevation };
+    const landing = positionAtCenter(target, raw);
+    const key = `${landing.x},${landing.y}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const snapped = tokenCenter(target, landing);
+    const along = ((snapped.x - center.x) * dx + (snapped.y - center.y) * dy) / length;
+    if (sign * along <= 1e-6 || (distance < 0 && -along >= length - 1e-6)) continue;
+    // Snapping may round forward. Do not exceed the requested displacement.
+    if (Math.hypot(snapped.x - center.x, snapped.y - center.y) > Math.abs(distance) * pixelsPerUnit + 1e-6) continue;
+    const object = doc.object ?? target;
+    if (checkCollision && object.checkCollision?.(snapped, { origin: center, type: "move", mode: "any" })) continue;
+    if (avoidOccupied && occupied(target, landing, new Set([doc.id]), reservations)) continue;
+    return { _id: doc.id, ...landing };
   }
-
-  return undefined;
 }
 
-/**
- * Calculate token updates for several targets. Tokens that cannot be moved are
- * left out of the result.
- */
 export function calculatePushUpdates(targets, originPoint, distance, options = {}) {
-  const updates = [];
+  const updates = [], reservations = [];
   for (const target of targets) {
-    const update = calculatePushUpdate(target, originPoint, distance, options);
-    if (update) updates.push(update);
+    const update = calculatePushUpdate(target, originPoint, distance, { ...options, reservations });
+    if (update) { updates.push(update); reservations.push({ token: target, position: update }); }
   }
   return updates;
 }

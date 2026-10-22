@@ -1,5 +1,5 @@
 {
-  "name": "Young Red Shadow Dragon (MM'14)",
+  "name": "青年幽影红龙 Young Red Shadow Dragon (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180775294,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "lL0vULDQqhYNiijK",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Shadow Dragon.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Shadow%20Dragon.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 23,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 10,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 21,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 14,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 11,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 19,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 2,
         "bonuses": {
-          "check": "",
           "passive": "-2"
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 2,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,12 @@
     },
     "attributes": {
       "ac": {
-        "calc": "natural",
-        "flat": 18
+        "flat": 18,
+        "calcs": [
+          "natural"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +478,30 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": 40,
-        "fly": 80,
-        "swim": null,
-        "walk": 40,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "40",
+          "climb": "40",
+          "fly": "80"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 120,
-        "blindsight": 30,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 120,
+          "blindsight": 30,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +511,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +534,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Shadow dragons are true dragons that were either born in the Shadowfell or transformed by years spent within its dismal confines. Some shadow dragons embrace the Shadowfell for its bleak landscapes and desolation. Others seek to return to the Material Plane, hungry to spread the darkness and evil of the Plane of Shadow.</p><div data-roll-name-ancestor=\"Dark Portals\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dark Portals.</span></span> Portals to the Shadowfell manifest in forlorn places and the deep gloom of subterranean caverns. The dragons that lair in such places often discover these portals and find themselves transported to a new realm. Ancient dragons that sleep in their lairs for months or years at a time might find themselves spirited away, never knowing that a portal has formed without their knowledge as they dream.</p></div><div data-roll-name-ancestor=\"Recast in Shadow\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Recast in Shadow.</span></span> The transformation to a shadow dragon happens over a period of years, during which time a dragon's scales lose their luster and fade to a charcoal hue. Its leathery wings become translucent, its eyes paling to pools of opalescent gray. Shadow dragons find sunlight abhorrent, and they are weaker in bright light than they are in darkness. Darkness makes the dragon fade to a spectral shadow of its former self. The magical nature of dragons holds an attraction for the Shadowfell, which seems somehow to crave the might and majesty of these great reptiles. The Shadowfell also has a dispiriting effect on its denizens, such that the longer a creature remains on the plane, the more it accepts the plane's malaise. As months and years pass for a dragon on the Shadowfell, it becomes aware of the transformation being wrought upon it, and yet can do nothing to prevent it.</p></div><div data-roll-name-ancestor=\"Back in the World\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Back in the World.</span></span> A shadow dragon is so suffused with the power of the Shadowfell that even a return to the Material Plane can't undo its transformation. Some shadow dragons attempt to lure other creatures from the mortal realm back to the Shadowfell to keep them company, at least until they tire of their guests and devour them. Others are happy to leave the Shadowfell behind forever, understanding that treasure and power are easier to come by in the Material Plane.</p></div></div></div><div data-roll-name-ancestor=\"Shadow Dragon Template\" class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Shadow Dragon Template</span></h2> <p>Only a true dragon can transform into a shadow dragon, and only if it is born in the Shadowfell or remains there for several years. A dracolich can't be turned into a shadow dragon, since it loses its draconic nature when it becomes undead.</p><p>When a dragon becomes a shadow dragon, it retains its statistics except as described below. The shadow dragon might retain or lose any or all of its lair actions or inherit new ones, as the DM sees fit.</p><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Damage Resistances\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Damage Resistances.</span></span> The dragon has resistance to necrotic damage.</p></div><div data-roll-name-ancestor=\"Skill Proficiency: Stealth\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Skill Proficiency: Stealth.</span></span> The dragon's proficiency bonus is doubled for its Dexterity (&amp;Reference[skill=Stealth]) checks.</p></div><div data-roll-name-ancestor=\"Living Shadow\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Living Shadow.</span></span> While in dim light or darkness, the dragon has resistance to damage that isn't force, psychic, or radiant.</p></div><div data-roll-name-ancestor=\"Shadow Stealth\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"8\"> <span class=\"entry-title-inner\">Shadow Stealth.</span></span> While in dim light or darkness, the dragon can take the @action[Hide] action as a bonus action.</p></div><div data-roll-name-ancestor=\"Sunlight Sensitivity\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"9\"> <span class=\"entry-title-inner\">Sunlight Sensitivity.</span></span> While in sunlight, the dragon has disadvantage on attack rolls, as well as on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div><div data-roll-name-ancestor=\"New Action: Bite\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"10\"> <span class=\"entry-title-inner\">New Action: Bite.</span></span> If the dragon deals acid, cold, fire, lightning, or poison damage with its bite, change that damage type to necrotic.</p></div><div data-roll-name-ancestor=\"New Action: Shadow Breath\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"11\"> <span class=\"entry-title-inner\">New Action: Shadow Breath.</span></span> Any damage-dealing breath weapon possessed by the dragon deals necrotic damage instead of its original damage type. A humanoid reduced to 0 hit points by this damage dies, and an undead shadow rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control.</p></div></div></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Customizing Dragons\" data-source=\"FTD\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Customizing Dragons</span><span class=\"ve-flex-vh-center\"> <span class=\"rd__title-link rd__title-link--inset\"><span class=\"help-subtle\" title=\"Fizban’s Treasury of Dragons\">FTD</span> <span title=\"Page 33\">p33</span></span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h4> <p>You can customize any dragon's stat block to reflect the dragon's unique character. Minor changes such as those below are easy to make and have no impact on a dragon's challenge rating.</p><div data-roll-name-ancestor=\"Languages\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Languages.</span></span> Most dragons prefer to speak Draconic but learn Common for dealing with allies and minions. But given their high Intelligence and long life span, dragons can easily learn additional languages. You can add languages to a dragon's stat block.</p></div><div data-roll-name-ancestor=\"Skills\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Skills.</span></span> Most dragons are proficient in the <span class=\"bold\" data-vet-page=\"skill\" data-vet-source=\"PHB\" data-vet-hash=\"perception_phb\" data-vet-is-faux-page=\"true\" data-vet-is-allow-redirect=\"true\">Perception</span> and <span class=\"bold\" data-vet-page=\"skill\" data-vet-source=\"PHB\" data-vet-hash=\"stealth_phb\" data-vet-is-faux-page=\"true\" data-vet-is-allow-redirect=\"true\">Stealth</span> skills, and many dragons have additional skill proficiencies. As with languages, you can customize a dragon's skill list (even doubling their proficiency bonus with certain skills) to reflect particular interests and activities. You can also give a dragon tool proficiencies, particularly if the dragon spends time in Humanoid form.</p></div><div data-roll-name-ancestor=\"Spells\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Spells.</span></span> <i class=\"ve-muted\">See the \"Variant: Dragons as Innate Spellcasters\" inset(s), below.</i></p></div><div data-roll-name-ancestor=\"Other Traits and Actions\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Other Traits and Actions.</span></span> You can borrow traits and actions from other monsters to add unique flavor to a dragon. Consider these examples:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Damage Absorption\"><span class=\"bold rd__list-item-name\">Damage Absorption.</span> You might decide that this dragon is not only unharmed by fire damage, but actually healed by it.<span class=\"rd__p-cont-indent\">Whenever the dragon is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Flyby\"><span class=\"bold rd__list-item-name\">Flyby.</span> The dragon is an agile flier, quick to fly out of enemies' reach.<span class=\"rd__p-cont-indent\">The dragon doesn't provoke an opportunity attack when it flies out of an enemy's reach.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Mimicry\"><span class=\"bold rd__list-item-name\">Mimicry.</span> Impersonating characters or their allies could be a fun trick for a crafty dragon.<span class=\"rd__p-cont-indent\">The dragon can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC <span class=\"rd__dc\">12</span> Wisdom (<span class=\"bold\" data-vet-page=\"skill\" data-vet-source=\"PHB\" data-vet-hash=\"insight_phb\" data-vet-is-faux-page=\"true\" data-vet-is-allow-redirect=\"true\">Insight</span>) check.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Rejuvenation\"><span class=\"bold rd__list-item-name\">Rejuvenation.</span> You might decide that dragons in your campaign, being an essential part of the Material Plane, are nearly impossible to destroy. A dragon's life essence might be preserved in the egg from which it first emerged, in its hoard, or in a cavernous hall at the center of the world, just as a lich's essence is hidden in a phylactery.<span class=\"rd__p-cont-indent\">If it has an essence-preserving object, a destroyed dragon gains a new body in <span class=\"roller render-roller\" title=\"Click to roll. SHIFT/CTRL to roll twice.\" data-packed-dice=\"{&quot;type&quot;:&quot;dice&quot;,&quot;rollable&quot;:true,&quot;toRoll&quot;:&quot;1d10&quot;,&quot;displayText&quot;:&quot;1d10&quot;}\">1d10</span> days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the object.</span></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Special Senses\"><span class=\"bold rd__list-item-name\">Special Senses.</span> Most dragons have <span class=\"bold\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"blindsight_phb\" data-vet-is-faux-page=\"true\" data-vet-is-allow-redirect=\"true\">blindsight</span> and <span class=\"bold\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"darkvision_phb\" data-vet-is-faux-page=\"true\" data-vet-is-allow-redirect=\"true\">darkvision</span>. You might upgrade <span class=\"bold\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"blindsight_phb\" data-vet-is-faux-page=\"true\" data-vet-is-allow-redirect=\"true\">blindsight</span> to <span class=\"bold\" data-vet-page=\"sense\" data-vet-source=\"PHB\" data-vet-hash=\"truesight_phb\" data-vet-is-faux-page=\"true\" data-vet-is-allow-redirect=\"true\">truesight</span>, or you could give a dragon with a burrowing speed <span class=\"bold\" data-vet-page=\"sense\" data-vet-source=\"MM\" data-vet-hash=\"tremorsense_mm\" data-vet-is-faux-page=\"true\">tremorsense</span>.</p></li></ul></div></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Dragons as Innate Spellcasters\" data-source=\"FTD\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"1\"> <span class=\"entry-title-inner help-subtle\" title=\"Source: Fizban’s Treasury of Dragons\">Variant: Dragons as Innate Spellcasters</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h4> <p>This dragon can innately cast four spells, once per day each, requiring no material components. Each spell's level can be no higher than 4th. The dragon's spell save DC is DC <span class=\"rd__dc\">17</span>, and it has <span class=\"roller render-roller\" title=\"Click to roll. SHIFT to roll with advantage, CTRL to roll with disadvantage.\" data-packed-dice=\"{&quot;type&quot;:&quot;dice&quot;,&quot;rollable&quot;:true,&quot;displayText&quot;:&quot;+9&quot;,&quot;toRoll&quot;:&quot;1d20+9&quot;,&quot;subType&quot;:&quot;d20&quot;,&quot;d20mod&quot;:&quot;+9&quot;,&quot;context&quot;:{&quot;type&quot;:&quot;hit&quot;}}\">+9</span> to hit with spell attacks.</p><p>A suggested spell list is shown below, but you can also choose spells to reflect the dragon's character. A dragon who innately casts <span class=\"bold\">druid</span> spells feels different from one who casts <span class=\"bold\">warlock</span> spells. You can also give a dragon spells of a higher level than this rule allows, but such a tweak might increase the dragon's challenge rating—especially if those spells deal damage or impose conditions on targets.</p><ul class=\"rd__list\"><li class=\"rd__li \"><span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"bane_phb\" data-vet-is-allow-redirect=\"true\">bane</span></li><li class=\"rd__li \"><span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"heat%20metal_phb\" data-vet-is-allow-redirect=\"true\">heat metal</span></li><li class=\"rd__li \"><span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"hypnotic%20pattern_phb\" data-vet-is-allow-redirect=\"true\">hypnotic pattern</span></li><li class=\"rd__li \"><span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"suggestion_phb\" data-vet-is-allow-redirect=\"true\">suggestion</span></li></ul><b>Source:</b> <i title=\"Fizban’s Treasury of Dragons\">FTD</i></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Dragons as Innate Spellcasters\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Variant: Dragons as Innate Spellcasters</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h4> <p>Dragons are innately magical creatures that can master a few spells as they age, using this variant.</p><p>A young or older dragon can innately cast a number of spells equal to its Charisma modifier. Each spell can be cast once per day, requiring no material components, and the spell's level can be no higher than one-third the dragon's challenge rating (rounded down). The dragon's bonus to hit with spell attacks is equal to its proficiency bonus + its Charisma bonus. The dragon's spell save DC equals 8 + its proficiency bonus + its Charisma modifier.</p><p><i class=\"ve-muted\">This dragon can innately cast four spells, once per day each, requiring no material components. Each spell's level can be no higher than 4th. The dragon's spell save DC is DC <span class=\"rd__dc\">17</span>, and it has <span class=\"roller render-roller\" title=\"Click to roll. SHIFT to roll with advantage, CTRL to roll with disadvantage.\" data-packed-dice=\"{&quot;type&quot;:&quot;dice&quot;,&quot;rollable&quot;:true,&quot;displayText&quot;:&quot;+9&quot;,&quot;toRoll&quot;:&quot;1d20+9&quot;,&quot;subType&quot;:&quot;d20&quot;,&quot;d20mod&quot;:&quot;+9&quot;,&quot;context&quot;:{&quot;type&quot;:&quot;hit&quot;}}\">+9</span> to hit with spell attacks. See the <span class=\"bold\">spell page</span> for a list of spells the dragon is capable of casting. A selection of examples are shown below:</i></p><ul class=\"rd__list rd__list-italic\"><li class=\"rd__li \"><span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"fireball_phb\" data-vet-is-allow-redirect=\"true\">fireball</span></li><li class=\"rd__li \"><span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"scorching%20ray_phb\" data-vet-is-allow-redirect=\"true\">scorching ray</span></li><li class=\"rd__li \"><span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"haste_phb\" data-vet-is-allow-redirect=\"true\">haste</span></li><li class=\"rd__li \"><span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"XGE\" data-vet-hash=\"erupting%20earth_xge\">erupting earth</span></li><li class=\"rd__li \"><span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"XGE\" data-vet-hash=\"aganazzar's%20scorcher_xge\">Aganazzar's scorcher</span></li></ul></div>",
+        "value": "<p>幽影龙Dragon, Shadow</p><p>幽影龙是在堕影冥界出生或是在其阴暗边境栖息数年的真龙。某些幽影龙接受了堕影冥界的萧瑟与荒凉，另一些则时刻寻找着返回物质位面的方法，并渴望着将幽影位面的邪恶与黑暗向外散播。</p><p><strong>黑暗门扉Dark Portals。</strong>连接堕影冥界的传送门常常会出现在一些荒芜的地点或是深邃幽暗的地下洞窟里。在这些地点筑巢的龙有时会发现这些传送门，或是直接发现自己已经被传送到了另一个新地点。一些在巢穴里沉睡了几个月或是几年的远古龙在醒来时会猛然发现自己似乎被无声息的转移至别处，浑然不知自己在睡梦时身边自然形成传送门的存在。</p><p><strong>影中重塑Recast in Shadow。</strong>转变为幽影龙的过程要经历数年时间，在此过程中这条龙的鳞片逐渐失去光泽直至最后成为黑碳色调。它的翅膀也变成透明质，眼睛则变成黯淡的一滩灰白色。幽影龙发现自己开始厌恶阳光，并且自己在亮光下要比在黑暗中弱。其身处黑暗时将淡化为自己从前身形幽灵般的幽影形式。</p><p>龙类的魔法本质吸引着堕影冥界，仿佛是堕影冥界本身渴求着这种巨型爬行动物的力量与威严。堕影冥界还会使其内的住民变得沮丧，因而在该位面长时间停留的生物也会与其不适的氛围同化。一条龙在堕影冥界中度过数月或数年后，也会意识到发生在自己身上的转变，却又无法阻止这种变化。</p><p><strong>回归世界Back in the World。</strong>幽影龙充盈着堕影冥界的能量，乃至其返回物质位面后也无法消除这种转化。一些幽影龙会去引诱其他凡界的生物随它一起返回堕影冥界，只是这些追随者最后都会被厌倦的幽影龙吞噬殆尽。另一些幽影龙则非常乐于离开堕影冥界，因为它们清楚明白在物质位面可以更快捷的获取财富与力量。</p><h3>幽影龙模板Shadow Dragon Template</h3><p>只有真龙才能转变为幽影龙，并且只有它们出生在堕影冥界或者在其内停留若干年才能实现转化。龙巫妖由于已经失去其龙的本质，因而无法转变为幽影龙。</p><p>成为幽影龙时，原来的个体会保留下述描述之外的资料数据。只要DM认为合适，幽影龙可以保留或者失去其某些或所有的巢穴动作，也可以获取新的巢穴动作。</p><p><strong>伤害抗性Damage Resistances。</strong>幽影龙获得暗蚀伤害抗性。</p><p>技能熟练项：隐匿Stealth。幽影龙进行敏捷（隐匿）检定时使用双倍的熟练加值。</p><p><strong>活体幽影Living Shadow。</strong>在微光光照或黑暗环境中，幽影龙对力场、心灵、光耀伤害之外的伤害类型具有抗性。</p><p><strong>幽影隐匿Shadow Stealth。</strong>幽影龙在微光光照或黑暗环境中，可以用一个附赠动作来执行躲藏动作。</p><p><strong>日照敏感Sunlight Sensitivity。</strong>身处阳光下时，幽影龙的攻击检定，以及依赖视觉进行的感知（察觉）检定具有劣势。</p><p>新动作：啃咬Bite。如果原本的龙其啃咬造成强 酸、寒冷、火焰、闪电或毒素伤害，则这些伤害改为暗蚀伤害。</p><p>新动作：幽影吐息Shadow Breath。该龙任何造成伤害的吐息武器以暗蚀伤害替代其他伤害类型。一个被该伤害降至0生命值的类人生物会死亡，其尸体上将唤起一个不死幽影，并在先攻列表中该龙的回合结束后立即行动。该幽影受该龙控制。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -584,12 +573,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -643,10 +632,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Young Red Shadow Dragon",
+    "name": "青年幽影红龙 Young Red Shadow Dragon (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -654,15 +645,12 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "modules/dnd5e_classpack/Nicons/img/bestiary/tokens/MM/Young Red Shadow Dragon.webp",
+      "src": "https://5e.kiwee.top/img/bestiary/tokens/MM/Young%20Red%20Shadow%20Dragon.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -713,13 +701,12 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [
-      {
-        "id": "blindsight",
+    "detectionModes": {
+      "blindsight": {
         "range": 30,
         "enabled": true
       }
-    ],
+    },
     "occludable": {
       "radius": 0
     },
@@ -743,12 +730,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 2
   },
   "items": [
     {
       "_id": "P0U33ol1d4QD2SYD",
-      "name": "Multiattack",
+      "name": "多重攻击 Multiattack",
       "type": "feat",
       "system": {
         "source": {
@@ -760,7 +748,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The dragon makes three attacks: one with its bite and two with its claws.</p></div>",
+          "value": "<p>幽影龙发动三次攻击，一次啃咬和两次爪击</p>",
           "chat": ""
         },
         "requirements": "",
@@ -774,7 +762,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "WEeRV1kJ19KmCEss": {
             "_id": "WEeRV1kJ19KmCEss",
@@ -791,20 +779,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -832,7 +825,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -840,7 +834,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -851,15 +844,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "multiattack",
@@ -868,7 +907,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -887,9 +927,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -901,7 +941,7 @@
     },
     {
       "_id": "2oHDUleje7nQ00SZ",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -913,7 +953,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+11]]{+11} to hit, reach 10 ft., one target. <i>Hit:</i> 17 ([[/damage 2d10 + 6 type=piercing]]) damage plus 3 ([[/damage 1d6 type=necrotic]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+11，触及10尺，单一目标。命中：17（[[/damage 2d10 + 6 type=piercing]]）点穿刺伤害，外加3（[[/damage 1d6 type=necrotic]]）点暗蚀伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -947,7 +987,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -981,7 +1022,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 },
                 {
                   "types": [
@@ -996,7 +1038,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1010,15 +1053,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1035,7 +1082,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1043,7 +1091,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1054,18 +1101,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "bite",
@@ -1083,12 +1178,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1103,7 +1196,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1114,10 +1208,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1135,9 +1233,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1149,7 +1247,7 @@
     },
     {
       "_id": "9JJ6QiTPUnJ00qkk",
-      "name": "Claw",
+      "name": "爪击 Claw",
       "type": "weapon",
       "system": {
         "source": {
@@ -1161,7 +1259,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+11]]{+11} to hit, reach 5 ft., one target. <i>Hit:</i> 13 ([[/damage 2d6 + 6 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+11，触及5尺，单一目标。命中：13（[[/damage 2d6 + 6 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -1195,7 +1293,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1229,7 +1328,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1243,15 +1343,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1268,7 +1372,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1276,7 +1381,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1287,18 +1391,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "claw",
@@ -1316,12 +1468,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1336,7 +1486,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1347,10 +1498,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1368,9 +1523,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1382,7 +1537,7 @@
     },
     {
       "_id": "SmPraYa7seQ6O3Fg",
-      "name": "Shadow Breath",
+      "name": "幽影吐息 Shadow Breath",
       "type": "feat",
       "system": {
         "source": {
@@ -1394,7 +1549,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The dragon exhales shadowy fire in a 30-foot cone. Each creature in that area must make a [[/save ability=dex dc=18]] saving throw, taking 56 ([[/damage 16d6 type=necrotic]]) damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead @creature[shadow] rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control.</p></div>",
+          "value": "<p>幽影龙喷出幽影火焰覆盖30尺的锥状区域。区域内的每个生物必须进行一次DC 18的敏捷豁免，豁免失败者将受到56（[[/damage 16d6 type=necrotic]]）点暗蚀伤害，豁免成功则伤害减半。一个被该伤害降至0生命值的类人生物会死亡，其尸体上将唤起一个不死幽影，并在先攻列表中该龙的回合结束后立即行动。该幽影受该龙控制。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1414,7 +1569,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "s3l1lC83D6BPM1Hg": {
             "_id": "s3l1lC83D6BPM1Hg",
@@ -1439,15 +1594,19 @@
                 }
               ]
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1457,7 +1616,8 @@
                 "size": "30",
                 "width": "",
                 "height": "",
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1479,7 +1639,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "18"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "half",
@@ -1497,7 +1658,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -1516,7 +1678,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1524,7 +1687,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1535,15 +1697,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "shadow-breath",
@@ -1552,7 +1761,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1571,9 +1781,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1585,7 +1795,7 @@
     },
     {
       "_id": "6xIglih75jTQfQIS",
-      "name": "Living Shadow",
+      "name": "活体幽影 Living Shadow",
       "type": "feat",
       "system": {
         "source": {
@@ -1597,7 +1807,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in dim light or darkness, the dragon has resistance to damage that isn't force, psychic, or radiant.</p></div>",
+          "value": "<p>在微光光照或黑暗环境中，幽影龙对力场、心灵、光耀伤害之外的伤害类型具有抗性。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1611,7 +1821,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "living-shadow",
         "cover": null,
@@ -1619,7 +1829,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1638,9 +1849,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1652,7 +1863,7 @@
     },
     {
       "_id": "lJOTX2QjMMM6yan6",
-      "name": "Shadow Stealth",
+      "name": "幽影隐匿 Shadow Stealth",
       "type": "feat",
       "system": {
         "source": {
@@ -1664,7 +1875,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in dim light or darkness, the dragon can take the Hide action as a bonus action.</p></div>",
+          "value": "<p>幽影龙在微光光照或黑暗环境中，可以用一个附赠动作来执行躲藏Hide动作。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1678,7 +1889,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "HeO7tI7XOIHM7Y61": {
             "_id": "HeO7tI7XOIHM7Y61",
@@ -1695,20 +1906,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1736,7 +1952,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1744,7 +1961,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1755,15 +1971,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "shadow-stealth",
@@ -1772,7 +2034,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1791,9 +2054,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1805,7 +2068,7 @@
     },
     {
       "_id": "yMGmvxBVt5k3WXNx",
-      "name": "Sunlight Sensitivity",
+      "name": "日照敏感 Sunlight Sensitivity",
       "type": "feat",
       "system": {
         "source": {
@@ -1817,7 +2080,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>While in sunlight, the dragon has disadvantage on attack rolls, as well as on Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div>",
+          "value": "<p>身处阳光下时，幽影龙进行的攻击检定，以及依赖视觉进行的感知（察觉）检定具有劣势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1831,7 +2094,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "sunlight-sensitivity",
         "cover": null,
@@ -1839,7 +2102,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1858,9 +2122,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1872,7 +2136,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "g5KGF3y3xFYuej4W",
   "sort": 30100000,
   "ownership": {
     "default": 0,

@@ -24,12 +24,14 @@
           "targets": []
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -41,7 +43,8 @@
           "template": {
             "contiguous": false,
             "units": "ft",
-            "type": ""
+            "type": "",
+            "stationary": false
           },
           "affects": {
             "choice": false,
@@ -72,7 +75,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -80,7 +84,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -91,18 +94,62 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "otherActivityId": "none",
         "name": "忽视下一个法术的材料成分",
         "img": "",
-        "appliedEffects": []
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "uses": {
@@ -119,7 +166,7 @@
       "value": "<p>奇物，传说（需要施法者同调）</p><p>当你持握这块宝石时，你可以用它作为你施法的法器。 </p><p>这块宝石有 3发充能并且在每天黎明时恢复所有已消耗的充能。当你在持握这块宝石施法时，你可以消耗至多3发充能来忽视标注有价格法术材料成分，每发充能至多500gp。</p><p>当你完成一次长休之后，从任何职业的法术列表中选择一个法术。这个法术必须是你当前能够施展的法术环阶。你将这个法术视为已知并且可以用你的适合环阶的法术位来施展这个法术，直到你下次长休为止</p>",
       "chat": ""
     },
-    "identifier": "-",
+    "identifier": "ruby-weave-gem",
     "source": {
       "revision": 1,
       "rules": "2024",
@@ -139,15 +186,12 @@
       "value": 0,
       "denomination": "gp"
     },
-    "rarity": "legendary",
     "attunement": "required",
     "attuned": false,
     "equipped": false,
     "cover": null,
-    "crewed": false,
     "armor": {
       "value": null,
-      "magicalBonus": null,
       "dex": null
     },
     "proficient": null,
@@ -158,6 +202,12 @@
     "type": {
       "value": "wondrous",
       "baseItem": ""
+    },
+    "rarities": [
+      "legendary"
+    ],
+    "crew": {
+      "value": []
     }
   },
   "effects": [],
@@ -184,19 +234,14 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1756728515053,
     "modifiedTime": 1757350424661,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

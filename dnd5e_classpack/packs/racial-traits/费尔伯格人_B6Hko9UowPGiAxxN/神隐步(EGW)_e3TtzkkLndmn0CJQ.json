@@ -23,23 +23,24 @@
       "value": "<p>以一个附赠动作，你能如魔法般变为隐形，直到你的下一回合开始，或者直到你攻击，进行一次伤害掷骰，或者强迫某人进行一次豁免检定。一旦你使用这个特质，直到你完成一次短休或长休之前你不能再次使用。</p>",
       "chat": ""
     },
-    "identifier": "-",
+    "identifier": "hidden-step",
     "source": {
       "revision": 1,
       "rules": "2024"
     },
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "requirements": "",
     "type": {
-      "value": "",
+      "value": "race",
       "subtype": ""
     }
   },
@@ -68,19 +69,14 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1750032799678,
     "modifiedTime": 1756544420586,
     "lastModifiedBy": "sPF2dtZDreDpJaW6",

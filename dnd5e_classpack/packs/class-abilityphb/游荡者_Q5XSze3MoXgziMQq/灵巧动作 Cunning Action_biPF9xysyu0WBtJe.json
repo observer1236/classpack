@@ -2,14 +2,14 @@
   "_id": "biPF9xysyu0WBtJe",
   "name": "灵巧动作 Cunning Action",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Rogue_FleetFooted.png",
+  "img": "icons/magic/control/hypnosis-mesmerism-watch.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第2级起，你精妙的反应与身手使你的行动无比迅速。</p><p>你每回合有一次机会使用一个特殊的附赠动作，该附赠动作可用以执行撤离Disengage、疾走Dash或躲藏Hide三个动作其中之一。</p>",
+      "value": "<p> 第2级起，你精妙的反应与身手使你的行动无比迅速。你在战斗中每回合可执行一次附赠动作，该附赠动作可用以执行撤离Disengage、疾走Dash或躲藏Hide三种动作项其中之一。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "游荡者等级 2",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "cunning-action",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 2,
+      "repeatable": false,
+      "items": [
+        "class:rogue"
+      ]
     },
     "properties": []
   },
@@ -43,14 +46,7 @@
     "entityorder": {
       "order": 149
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -70,9 +66,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757409827119,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

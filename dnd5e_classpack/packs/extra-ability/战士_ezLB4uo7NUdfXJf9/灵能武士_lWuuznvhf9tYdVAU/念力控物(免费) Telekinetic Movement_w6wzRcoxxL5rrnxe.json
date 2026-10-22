@@ -9,7 +9,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<p>你可以用意念移动一个物体或生物。你可以使用一个动作选中一个最多大型的物体或一个除你以外的自愿生物。如果目标在对你30尺内且可视，你可以将其移动至多30尺至一个对你可见的空地。另外，如果目标是一个小物件，你可以从你的手中给出或收回。无论采取哪种方式，你都可以或水平、或垂直、或两者都使用地移动它。</p>\n<p>当你使用该异能时，你无法再使用该能力直到你完成一次短休或长休，除非你消耗一个灵能骰来再次使用该异能。</p>",
+      "value": "<p>你可以用意念移动一个物体或生物。你可以使用一个动作选中一个最多大型的物体或一个除你以外的自愿生物。如果你可以看见目标且目标在你30尺范围内，你就可以将其移动至多30尺至另一个对你可见的未占据空间内。另外，如果目标是一个微型物件，你可以从你的手中给出或收回。无论采取哪种方式，你都可以或水平、或垂直、或任意方向地移动它。</p>\n<p>当你使用该异能后，直到你完成一次短休或长休为止你都不能再次使用它。你也可以消耗一枚灵能骰来再次使用该异能。</p>",
       "chat": ""
     },
     "source": {
@@ -43,7 +43,8 @@
             {
               "type": "itemUses",
               "value": "1",
-              "target": ""
+              "target": "",
+              "scaling": {}
             }
           ],
           "scaling": {
@@ -53,13 +54,15 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -76,7 +79,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -101,17 +105,103 @@
         "sort": 0,
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-telekinetic-movement",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": [
+        "subclass:psi-warrior"
+      ]
     },
     "properties": []
   },
@@ -143,19 +233,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

@@ -2,14 +2,14 @@
   "_id": "eZMKbK1TDBqqB70K",
   "name": "海渊传送 Fathomless plunge",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ability_monk_chiexplosion1.jpg",
+  "img": "icons/magic/water/vortex-water-whirlpool-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>你可以魔法性地打开一个前往水域目的地的临时通道。你可以使用一个标准动作传送自己和最多五个自愿、且在30尺可视范围内的生物。在一团触须的漩涡中，你们全部消失，然后在至多1里以内的你曾见过的水域（至少为池塘大小）或者它的30尺范围内。你们当中的每一个人都出现在距离其他人30尺以内的一个空的空间内。</p>\n<p>一旦你使用了这一特性，你不能再次使用它直到你完成一次短休或长休。</p>",
+      "value": "<p>你可以魔法性地打开一个前往水域目的地的临时通道。以一个动作，你可以传送自己和最多五个30尺范围内的可见自愿生物。在一团触须的漩涡中，你们全部消失，然后在至多1英里以内的你曾见过的水域（至少要有池塘的大小）或者那片水域周围的30尺范围内。你们当中的每一个人都出现在距离其他人30尺以内的一个未占据空间内。</p>\n<p>一旦你使用了这一特性，直到你完成一次短休或长休为止你都不能再次使用它。</p>",
       "chat": ""
     },
     "source": {
@@ -57,13 +57,15 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -80,7 +82,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "5",
@@ -102,37 +105,120 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": true
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-fathomless-plunge",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 14,
+      "repeatable": false,
+      "items": [
+        "subclass:the-fathomless"
+      ]
     },
-    "properties": []
+    "properties": [
+      "mgc"
+    ]
   },
   "effects": [],
   "folder": "rNdbJGCqcDEDs7J7",
   "sort": 35000000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

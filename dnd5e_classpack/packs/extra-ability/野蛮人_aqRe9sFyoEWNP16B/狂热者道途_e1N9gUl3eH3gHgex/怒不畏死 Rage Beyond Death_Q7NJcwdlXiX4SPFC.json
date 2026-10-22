@@ -2,14 +2,14 @@
   "_id": "Q7NJcwdlXiX4SPFC",
   "name": "怒不畏死 Rage Beyond Death",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_IntensifyRage.png",
+  "img": "icons/magic/life/heart-shadow-red.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>从14级开始，驱使你狂暴的神力允许你忽视致命的打击。</p>\n<p>当处于狂暴时，具有0点生命值不会让你昏迷。你仍然必须进行死亡豁免检定，而你在0生命值下受到伤害时承受正常的效果。然而，若你因为未通过死亡豁免检定而即将死去，你拒绝死亡直到你的狂暴结束，如果你那时仍保持0生命值则死亡。</p>",
+      "value": "<p>从14级开始，驱使你狂暴的神力允许你忽视致命的打击。</p>\n<p>狂暴期间，具有0点生命值并不会使你陷入 &Reference[condition=unconscious apply=false]{昏迷Unconscious} 。不过你仍然需要进行死亡豁免，你在0生命值下受到伤害时依旧计算豁免失败次数。然而，若你因为未通过死亡豁免检定而即将死去时，只要你仍处于狂暴状态，你将拒绝死亡。而如果你的狂暴结束后你仍保持0点生命值，那么你将死亡。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "狂热者等级 14",
     "activities": {},
     "identifier": "-rage-beyond-death",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 14,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -63,17 +64,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757409361938,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

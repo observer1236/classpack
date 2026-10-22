@@ -2,14 +2,14 @@
   "_id": "rmKcEP7VcSnuiE1I",
   "name": "魔法物品熟稔 Magic Item Adept",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_HealingAura.png",
+  "img": "icons/magic/symbols/cog-glowing-green.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         当你达到10级时，你对如何使用和制作魔法物品有了深刻的理解：</p>\n<ul>\n<li>你一次最多可以同调四个魔法物品。</li>\n<li>如果你制作一件稀有度为普通或非普通的魔法物品，时间花费只需通常的四分之一，而且金钱花费只有通常的一半。</li>\n</ul>",
+      "value": "<p> 你对如何使用和制作魔法物品有了深刻的理解：</p>\n<ul><li>你最多可以同时同调于四个魔法物品。</li> <li>你制作一件稀有度为普通或非普通的魔法物品时，所需的时间为通常的四分之一，而且所耗的金钱花费只有通常的一半。</li></ul>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "奇械师等级 10",
     "activities": {},
     "identifier": "-magic-item-adept",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 10,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "rVoqmwb7mLMxqe4c",
   "sort": 45800000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +60,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757416701372,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

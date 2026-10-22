@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<blockquote><p><em>物品：一把具有弹药特性的简单或军用武器（需调谐）</em></p></blockquote><p>此魔法武器在远程攻击的攻击和伤害检定上获得+1加值，并且无视它的<strong>装填Loading</strong>特性（如果有的话）。</p><p>此武器不需要弹药；除非你手动为它装填弹药，否则每次你以它远程攻击时，它会魔法地创造一根子弹。此武器创造的弹药在击中或失误之后立即消失。</p>",
+      "value": "<blockquote><p><em>物品：一把具有弹药特性的简易武器或军用武器（需同调）</em></p>\n</blockquote>\n<p>在用此魔法武器发动的远程攻击检定和其伤害掷骰上获得+1加值，并且无视其装填特性（若有）。</p>\n<p>如果此武器缺乏弹药，则在你持用它发起远程攻击时，它会自动创造一枚独属于它的魔法弹药。此武器创造的弹药在击中目标或失手后都会立即消失。</p>",
       "chat": ""
     },
     "source": {
@@ -22,27 +22,27 @@
       "value": "class",
       "subtype": "artificerInfusion"
     },
-    "requirements": "奇械师等级 2",
+    "requirements": "",
     "activities": {},
     "identifier": "-infuse-repeating-shot",
-    "advancement": [],
+    "advancement": {},
     "enchant": {
       "max": "",
       "period": ""
     },
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": [
+        "class:artificer"
+      ]
     },
-    "properties": []
+    "properties": [
+      "mgc"
+    ]
   },
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -61,7 +61,7 @@
       "ignoreTotalCover": false
     }
   },
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_RunningShot.png",
+  "img": "icons/skills/ranged/arrows-flying-salvo-blue.webp",
   "_id": "FiRczet0VH4xz5FV",
   "ownership": {
     "default": 0
@@ -71,8 +71,8 @@
   "sort": 800000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757408433662,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

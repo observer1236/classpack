@@ -2,14 +2,14 @@
   "_id": "OrjrCoFkRfkWUOmM",
   "name": "强韧召唤 Durable Summons",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Nature_Reincarnation.png",
+  "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>        第14级起，你用咒法系法术所召唤或创造的生物获得30点临时生命值。</p>",
+      "value": "<p> 第14级起，被你用咒法系法术召唤出来或创造出来的生物都将具有30点临时生命值。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "咒法学派等级 14",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "durable-summons",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 14,
+      "repeatable": false,
+      "items": [
+        "subclass:school-of-conjuration"
+      ]
     },
     "properties": [
       "trait"
@@ -50,12 +53,7 @@
       "alwaysActive": false,
       "effects": []
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -75,9 +73,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757144900074,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

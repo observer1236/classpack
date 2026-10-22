@@ -4,7 +4,7 @@
   "img": "modules/dnd5e_classpack/Nicons/ability_evoker_blessingofthebronze.png",
   "system": {
     "description": {
-      "value": "<p>你的龙之魂巅峰造极。你获得以下好处：</p><ul><li><strong>强化吐息。</strong>当你使用你的龙之息时，你可以消耗1点气对其塑形并增强其威力。你呼出的龙类能量增长至60尺锥状或90尺长5尺宽线状（由你选择），且范围内的每个生物豁免失败时会受到等同四个你武艺骰的对应类型的伤害，豁免成功则伤害减半。 </li><li><strong>盲视。</strong>你获得10尺盲视。在盲视范围内，即使你目盲或处于黑暗中，你仍可以清晰地看到任何不处于全身掩护的事物。而且，你可以在盲视范围内看到隐形生物，除非此生物对你躲藏成功。</li><li><strong>怒气爆发。</strong>当你使用古龙之姿时，龙族之怒从你体内爆发。选择你灵光内可见的任意数量的生物，每个生物必须通过一次对抗你的气豁免DC的敏捷豁免，豁免失败者受到3d10强酸，冷冻，火焰，闪电或毒素伤害（由你选择）。 </li></ul>",
+      "value": "<p>你的龙之魂巅峰造极。你获得以下好处：</p>\n<ul><li><p><strong>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.yAdB802jzGraQppV]{强化吐息}Augment Breath。</strong>当你使用你的龙之息时，你可以消耗1点气对其塑形并增强其威力。你呼出的龙类能量增长至60尺锥状或90尺长5尺宽线状（由你选择），且范围内的每个生物豁免失败时会受到等同四个你武艺骰的对应类型的伤害，豁免成功则伤害减半。</p>\n</li><li><p><strong>盲视Blindsight。</strong>你获得10尺盲视。在盲视范围内，即使你目盲或处于黑暗中，你仍可以清晰地看到任何不处于全身掩护的事物。而且，你可以在盲视范围内看到隐形生物，除非此生物对你躲藏成功。</p>\n</li><li><p><strong>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.L7RwOX6OBnhpMxit]{怒气爆发}Explosive Fury。</strong>当你使用古龙之姿时，龙族之怒从你体内爆发。选择你灵光内可见的任意数量的生物，每个生物必须通过一次对抗你的气豁免DC的敏捷豁免，豁免失败者受到3d10强酸，寒冷，火焰，闪电或毒素伤害（由你选择）。</p></li></ul>",
       "chat": ""
     },
     "source": {
@@ -26,26 +26,24 @@
     "requirements": "神龙宗等级 17",
     "activities": {},
     "identifier": "-ascendant-aspect",
-    "advancement": [],
+    "advancement": {},
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
   "effects": [
     {
       "name": "神龙身 Ascendant Aspect",
-      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.m1GcOY8rRoGMDE0e",
+      "origin": null,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "disabled": false,
       "flags": {
@@ -63,22 +61,14 @@
         }
       },
       "_id": "g3AojXqAzxqXy7mD",
-      "changes": [
-        {
-          "key": "system.attributes.senses.blindsight",
-          "mode": 4,
-          "value": "10",
-          "priority": 20
-        }
-      ],
       "description": "",
       "transfer": true,
       "statuses": [],
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -88,8 +78,36 @@
       },
       "img": "modules/dnd5e_classpack/Nicons/ability_evoker_blessingofthebronze.png",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.blindsight",
+            "value": 10,
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "sbrD6PPqrCXSnzhi",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.m1GcOY8rRoGMDE0e",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!m1GcOY8rRoGMDE0e.g3AojXqAzxqXy7mD"
     }
   ],
@@ -120,17 +138,12 @@
       "itemCondition": "",
       "effectCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1725895558966,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

@@ -1,15 +1,15 @@
 {
   "_id": "G2j6gL7q6TmZHs2B",
-  "name": "巨灵器皿:瓶中小憩  Genie's Vessel:Bottled Respit",
+  "name": "巨灵器皿:瓶中小憩  Genie's Vessel:Bottled Respite",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ability_monk_fortifyingelixir.png",
+  "img": "icons/containers/kitchenware/vase-clay-painted-blue-gold.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>以一个动作，你可以用魔法消失并进到你的器皿内，器皿将留在你所在的原地。器皿内是与其本身相似的20尺半径，20尺高的圆柱形超维度空间。器皿内部温度适宜，并安放有舒适的垫子和茶几。在器皿之中时，你可以如同身在器皿所在之处一般听到外界的声音。你在器皿内可停留的时间等同于你熟练加值双倍数目的小时。如果你死亡，或是器皿被摧毁，抑或是使用一个附赠动作离开，你将提前从器皿中出来。当你离开器皿时，你出现在距离它最近的不被占据的空间中。在器皿内的一切物件将被留在其中直到被取出，而倘若器皿被摧毁，其中的物品则会完好无损地出现在距离它最近的不被占据的空间中。一旦你进入器皿，直到你完成一次长休后你不能再度进入。</p>",
+      "value": "<p>以一个动作，你可以用魔法消失并进到你的器皿内，器皿将留在你所在的原地。器皿内是与其本身相似的20尺半径，20尺高的圆柱形异次元空间。器皿内部温度适宜，并安放有舒适的垫子和茶几。在器皿之中时，你可以如同身在器皿所在之处一般听到外界的声音。你在器皿内可停留的时间等同于你熟练加值双倍数目的小时。如果你死亡，或是器皿被摧毁，抑或是使用一个附赠动作离开，你将提前从器皿中出来。当你离开器皿时，你出现在一处距离它最近的未占据空间中。在器皿内的一切物件将被留在其中直到被取出，而倘若器皿被摧毁，其中的物品则会完好无损地出现在距离它最近的不被占据的空间中。一旦你进入了器皿，直到你完成一次长休前你都不能再度进入它。</p>",
       "chat": ""
     },
     "source": {
@@ -57,17 +57,19 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "units": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -79,7 +81,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -101,17 +104,103 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-genies-vesselbottled-respit",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -119,19 +208,12 @@
   "folder": "F8vOrKy8c7vmsQAB",
   "sort": 16900000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

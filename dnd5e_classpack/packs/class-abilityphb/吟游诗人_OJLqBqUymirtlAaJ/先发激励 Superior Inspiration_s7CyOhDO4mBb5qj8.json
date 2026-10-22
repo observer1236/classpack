@@ -2,14 +2,14 @@
   "_id": "s7CyOhDO4mBb5qj8",
   "name": "先发激励 Superior Inspiration",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ability_rogue_sturdyrecuperate.png",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第20级起，你掷先攻骰时如果没有可用的@UUID[Compendium.dnd5e_classpack.class-abilityphb.FSr7TfaoWRPpUtkD]{诗人激励}次数，则可以额外获得一次。</p>",
+      "value": "<p> 第20级起，你骰先攻时若没有可用的@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.FSr7TfaoWRPpUtkD]{诗人激励}次数，则你获得一次使用次数。</p>",
       "chat": ""
     },
     "source": {
@@ -43,17 +43,20 @@
             {
               "type": "itemUses",
               "value": "-1",
-              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.FSr7TfaoWRPpUtkD"
+              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.FSr7TfaoWRPpUtkD",
+              "scaling": {}
             }
           ]
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "flags": {},
@@ -152,17 +155,43 @@
         },
         "otherActivityId": "none",
         "otherActivityAsParentType": true,
-        "name": ""
+        "name": "",
+        "behaviors": [],
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
-    "identifier": "",
-    "advancement": [],
+    "identifier": "superior-inspiration",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 20,
+      "repeatable": false,
+      "items": [
+        "class:bard"
+      ]
     },
     "properties": []
   },
@@ -197,9 +226,9 @@
     "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757175533576,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -2,14 +2,14 @@
   "_id": "f8UFvQ4UEQH5959m",
   "name": "巫咒大师 Master of Hexes",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_DeathKnight_AoeDeathGrip.png",
+  "img": "icons/magic/control/control-influence-puppet.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>从14级起，你可以转移你的@UUID[Compendium.dnd5e_classpack.extra-ability.JRyFQmsWflAFkBgN]{咒剑诅咒}，从一个被杀的生物转移到另一个生物。当被你的咒剑诅咒所指定的生物死亡时，假如你并未失能，你可以将诅咒转移到一个距离你30尺内你能看到的其他生物身上。当你以此法转移诅咒，你不再从先前目标的死亡中获得生命值回复。</p>",
+      "value": "<p>从14级起，你可以将从一个被杀的生物身上的@UUID[Compendium.dnd5e_classpack.extra-ability.Item.JRyFQmsWflAFkBgN]{咒剑诅咒}，转移到另一个生物身上。当被你咒剑诅咒的生物死亡时，如果此时你未处于 &Reference[condition=incapacitated apply=false]{失能Incapacitated} 状态，你就可以将那诅咒转移到距离你30尺内的另一个你可见的生物身上。当你以此法转移诅咒时，你无法从先前受咒目标的死亡中获得生命值回复。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,15 @@
     },
     "requirements": "咒剑士等级 14",
     "activities": {},
-    "identifier": "-master-of-hexes",
-    "advancement": [],
+    "identifier": "master-of-hexes",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 14,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "yvueHfXd1jVmcime",
   "sort": 35600000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -62,18 +58,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "masterOfHexes",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757414384584,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

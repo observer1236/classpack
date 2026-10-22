@@ -1,3 +1,4 @@
+import { tokenCenter, tokenDocument } from "./geometry.mjs";
 /**
  * ClassPack API helpers.
  */
@@ -41,17 +42,17 @@ export function registerHandlebarsHelpers() {
 }
 
 /**
- * Resolve a token-like value to a Token placeable. Accepts TokenDocuments,
+ * Resolve a token-like value to a Token placeable or its document. Accepts TokenDocuments,
  * Token placeables, canvas token ids, or UUID strings.
  */
 export async function resolveToken(tokenish) {
   // Token placeable.
   if (tokenish?.document?.documentName === "Token") return tokenish;
 
-  // TokenDocument: prefer its rendered placeable, but fall back to a canvas
-  // token with the same id when the document has not been rendered yet.
+  // Unrendered documents retain their own scene; do not match a different
+  // scene's canvas token by a coincidentally identical embedded id.
   if (tokenish?.documentName === "Token") {
-    return tokenish.object ?? canvas.tokens?.get(tokenish.id) ?? undefined;
+    return tokenish.object ?? tokenish;
   }
 
   if (typeof tokenish === "string") {
@@ -60,7 +61,7 @@ export async function resolveToken(tokenish) {
 
     const doc = await fromUuid(tokenish);
     if (doc?.documentName === "Token") {
-      return doc.object ?? canvas.tokens?.get(doc.id) ?? undefined;
+      return doc.object ?? doc;
     }
     return doc?.object ?? undefined;
   }
@@ -89,12 +90,8 @@ export function canUpdateToken(tokenish) {
   if (game.user?.isGM) return true;
 
   try {
-    if (typeof doc.testUserPermission === "function") {
-      return doc.testUserPermission(game.user, "update");
-    }
-    if (typeof doc.canUserModify === "function") {
-      return doc.canUserModify(game.user, "update");
-    }
+    if (typeof doc.canUserModify === "function") return doc.canUserModify(game.user, "update");
+    if (typeof doc.testUserPermission === "function") return doc.testUserPermission(game.user, "OWNER");
   } catch (err) {
     log("warn", "Could not determine token update permission:", err);
   }
@@ -118,37 +115,23 @@ export function toSocketSafeOptions(options = {}, targetUserId) {
   return copy;
 }
 
-/**
- * Resolve a reference point from a Token, MeasuredTemplate, UUID string, or a
- * plain `{x, y}` object. Tokens resolve to their centre; measured templates
- * resolve to their source point.
- */
+/** Resolve a committed Token center, a single Region shape origin, UUID or point. */
 export async function resolveOriginPoint(origin) {
-  if (origin?.document?.documentName === "MeasuredTemplate") origin = origin.document;
-  if (origin?.documentName === "MeasuredTemplate") return { x: origin.x, y: origin.y };
-
-  if (origin?.center) return origin.center;
-
-  if (origin?.documentName === "Token") {
-    const token = origin.object ?? canvas.tokens?.get(origin.id);
-    return token?.center ?? { x: origin.x, y: origin.y };
-  }
-
-  if (origin?.document?.documentName === "Token") return origin.center;
-
-  if (typeof origin === "string") {
-    const doc = await fromUuid(origin);
-    if (doc?.documentName === "MeasuredTemplate") return { x: doc.x, y: doc.y };
-    if (doc?.documentName === "Token") {
-      const token = doc.object ?? canvas.tokens?.get(doc.id);
-      return token?.center ?? { x: doc.x, y: doc.y };
+  if (typeof origin === "string") origin = await fromUuid(origin);
+  const doc = tokenDocument(origin);
+  if (doc?.documentName === "Token") return tokenCenter(doc);
+  if (doc?.documentName === "Region") {
+    const shapes = doc._source?.shapes ?? doc.shapes;
+    if (shapes?.length === 1 && Number.isFinite(shapes[0].x) && Number.isFinite(shapes[0].y)) {
+      return { x: shapes[0].x, y: shapes[0].y };
     }
+    log("warn", "Multi-shape Regions need an explicit reference point.");
+    return undefined;
   }
-
-  if (typeof origin?.x === "number" && typeof origin?.y === "number") return { x: origin.x, y: origin.y };
-
-  log("warn", "resolveOriginPoint: could not resolve the reference origin to a point.");
-  return undefined;
+  if (Number.isFinite(origin?.x) && Number.isFinite(origin?.y)) {
+    return { x: origin.x, y: origin.y, ...(Number.isFinite(origin.elevation) ? { elevation: origin.elevation } : {}) };
+  }
+  log("warn", "resolveOriginPoint: could not resolve the reference origin.");
 }
 
 /**

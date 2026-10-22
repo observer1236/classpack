@@ -2,14 +2,14 @@
   "_id": "PqJo80b2AFVhBFfU",
   "name": "神圣打击（战争）Divine Strike",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_Incite.png",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         第8级起，你可以使你的武器充满神圣能量。你在每个自己回合里有一次机会,可以在用武器攻击命中某生物时使该攻击额外造成[[/r 1d8]]点与该武器伤害类型相同的伤害。14 级时，该伤害提升到[[/r 2d8]]。</p>",
+      "value": "<p> 第8级起，你可以使你的武器充满神圣能量。你在每个自己回合里有一次，可以在用武器攻击命中某生物时，使该攻击额外造成[[/r 1d8]]{1d8}点与该武器伤害类型相同的伤害。14级时，该伤害提升到[[/r 2d8]]{2d8}。 </p>",
       "chat": ""
     },
     "source": {
@@ -29,14 +29,17 @@
     },
     "requirements": "战争领域等级 8",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "divine-strike",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 8,
+      "repeatable": false,
+      "items": [
+        "subclass:war-domain"
+      ]
     },
     "properties": [
       "mgc"
@@ -45,46 +48,72 @@
   "effects": [
     {
       "name": "神圣打击（战争）",
-      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_CrusaderStrike.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.PqJo80b2AFVhBFfU",
+      "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+      "origin": null,
       "_id": "fm2eXYSIM5cMYK92",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.optional.神圣打击（战争）.damage.mwak",
-          "mode": 2,
-          "value": "+1@scale.cleric.divine-strike",
-          "priority": 20
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.神圣打击（战争）.damage.mwak",
+            "value": "+@scale.cleric.divine-strike",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GeQpUdy0twVeSGW9",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.神圣打击（战争）.damage.rwak",
+            "value": "+@scale.cleric.divine-strike",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "DbGKaahO1xmWIjYb",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.神圣打击（战争）.count",
+            "value": "ItemUses.神圣打击（战争）Divine Strike",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "j2MJuIj6K77Fodh5",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.神圣打击（战争）.criticalDamage",
+            "value": true,
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GQepMPKWCBZpqnWW",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
         },
-        {
-          "key": "flags.midi-qol.optional.神圣打击（战争）.damage.rwak",
-          "mode": 2,
-          "value": "+1@scale.cleric.divine-strike",
-          "priority": 20
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.PqJo80b2AFVhBFfU",
+          "message": null
         },
-        {
-          "key": "flags.midi-qol.optional.神圣打击（战争）.count",
-          "mode": 2,
-          "value": "ItemUses.神圣打击（战争）Divine Strike",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.神圣打击（战争）.criticalDamage",
-          "mode": 2,
-          "value": "true",
-          "priority": 20
-        }
-      ],
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -99,12 +128,11 @@
           "showIcon": false,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "applicationMode": "dnd5e"
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -113,14 +141,17 @@
       "_stats": {
         "compendiumSource": "Compendium.dnd5e_classpack.class-abilityphb.Item.twDzAZCJeSqZnLTW.ActiveEffect.DQnaCQ8dcfCWxKRr",
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1757146464133,
         "modifiedTime": 1757147527647,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!PqJo80b2AFVhBFfU.fm2eXYSIM5cMYK92"
     }
   ],
@@ -151,25 +182,13 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "divineStrike",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757146437825,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

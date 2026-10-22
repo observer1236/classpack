@@ -1,16 +1,16 @@
 {
   "_id": "dP3iX2uL3SU5Mq05",
-  "name": "怪物杀手 Monster Slayer（XGE）",
+  "name": "怪物杀手 Monster Slayer(XGE)",
   "type": "subclass",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Druid_Mangle.png",
+  "img": "icons/creatures/claws/claw-bear-paw-swipe-brown.webp",
   "effects": [],
   "folder": "TutF2vL1tIQZgRSh",
   "sort": 95118,
   "flags": {},
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -23,7 +23,7 @@
   },
   "system": {
     "description": {
-      "value": "<p>         你专注于猎杀那些黑夜中的怪物和邪恶魔法的使用者。怪物杀手会找出吸血鬼，龙，邪恶精灵，魔裔以及其他魔法威胁。为了训练出高超技巧来击败这些怪物，怪物杀手精通于找出并击败那些强大且神秘的敌人。</p>\n<h3><strong>怪物杀手魔法</strong></h3>\n<p>         3级起，当你到达指定游侠等级时你学会一个额外法术，如怪物杀手法术列表所示。这些法术对你视为游侠法术，它不计入你的已知法术总数中。</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<th>职业等级</th>\n<th>法术</th>\n</tr>\n<tr>\n<td>3级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.IuzXxwP3EhWGhtXC]{防护善恶}</td>\n</tr>\n<tr>\n<td>5级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.T4zFq0zTHnzZeO9t]{诚实之域}</td>\n</tr>\n<tr>\n<td>9级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.Vrzu8xpLMvOvOnx6]{防护法阵}</td>\n</tr>\n<tr>\n<td>13级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.lopw7wVkPoE7gbNu]{放逐术}</td>\n</tr>\n<tr>\n<td>17级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.abm5MgV3kejSatZt]{怪物定身术}</td>\n</tr>\n</tbody>\n</table>",
+      "value": "<p>怪物杀手们专注于猎杀那些黑夜中的怪物与邪恶魔法的使用者。他们四处搜寻着吸血鬼、龙、邪恶妖精、邪魔、以及其他的魔法威胁。他们为了击败这些怪物而训练超自然的技巧。怪物杀手精通于找出并击败这些强大且神秘的敌人。</p><p><strong>怪物杀手特性</strong> </p><table> <thead><tr> <th> <strong>游侠等级</strong></th> <th><strong> 特性</strong></th></tr> </thead><tbody><tr> <td> 3rd</td> <td>怪物杀手魔法，猎手感知，狩猎开始</td></tr> <tr> <td> 7th</td> <td>卓越防守</td></tr> <tr> <td> 11th</td> <td>魔法使的克星</td></tr> <tr> <td> 15th</td> <td>杀手反制</td></tr></tbody></table><h3>怪物杀手魔法 Monster Slayer Magic</h3><p> 3级起，每当你在此职业达到特定等级时你都能学会一个额外的游侠法术，如怪物杀手法术表所示的那样。这些法术对你视为游侠法术，且它们不计入你的游侠已知法术总数中。</p><h4>怪物杀手法术</h4><table> <thead><tr> <th> <strong>游侠等级</strong></th> <th><strong> 法术</strong> </th></tr> </thead><tbody><tr> <td> 3rd</td> <td><em>@UUID[Compendium.dnd5e_classpack.spell.IuzXxwP3EhWGhtXC]{防护善恶}protection from evil and good </em></td></tr> <tr> <td> 5th</td> <td>@UUID[Compendium.dnd5e_classpack.spell.Item.T4zFq0zTHnzZeO9t]{诚实之域}zone of truth</td></tr> <tr> <td> 9th</td> <td>@UUID[Compendium.dnd5e_classpack.spell.Item.Vrzu8xpLMvOvOnx6]{防护法阵}magic circle</td></tr> <tr> <td> 13th</td> <td>@UUID[Compendium.dnd5e_classpack.spell.Item.lopw7wVkPoE7gbNu]{放逐术}banishment</td></tr> <tr> <td> 17th</td> <td><em>定身怪物 hold monster</em></td></tr></tbody></table><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.kIUKnDJ9qdscR3zt]{猎手感知 Hunter's Sense}</h3><p> 自3级起，你获得了观察生物并魔法性地分析出最佳狩猎方式的能力。以一个动作，选择周围60尺范围内的一个你可见的生物。你立刻知晓该生物拥有的伤害免疫、抗性、与易伤。如果该角色被预言系魔法所隐瞒，你只会感知到它没有任何伤害免疫，抗性、易伤。<br>你能使用该特性的次数等同于你的感知调整值次（至少1次），当你完成一次长休后你重获全部已被消耗的使用次数。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.zJRRsdKNnidyjqQD]{狩猎开始 Slayer's Prey}</h3><p> 自3级起，你能将你的怒火集中于单一敌人，增幅你对其造成的损伤。以一个附赠动作，你指定周围60尺范围内的一个你可见的生物作为本特性的目标。接下来，每个回合中你首次以武器攻击命中该目标时，它额外受到1d6点伤害，额外伤害类型与武器相同。<br>此增益将一直持续到你完成短休或长休为止。如果你用其指定了另外一个生物，前一次的增益也将提前结束。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.YMVLurWdUfCApbPa]{卓越防守 Supernatural Defense}</h3><p> 7级时，你对那些尝试攻破你心灵与肉体的敌人拥有着额外的抵抗力。当你的 狩猎开始 Slayer's Prey 特性目标迫使你进行一次豁免检定时，或你为逃脱那个目标的擒抱时你进行一次技能检定时。你可以投掷1d6，并将骰值加入到你的那次检定上。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.6tL2DF7EFrYNcZki]{魔法使的克星 Magic-user's Nemesis}</h3><p> 11级时，你获得干扰其他人的魔法的能力。当你看见你周围60尺范围内，有生物施展法术或者传送时，你可以用你的反应，尝试以魔法性阻止它。那个生物必须通过一次DC等同于你的法术豁免DC的感知豁免，否则它的法术或传送将失败并浪费。<br>一旦你使用了此特性，直到你完成一次短休或长休前你都不能再次使用它。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.FghPh1QoXjq2lH5W]{杀手反制 Slayer's Counter}</h3><p> 15级时，你得到了在你的猎物企图干扰你时进行回击的能力。当你的 狩猎开始 Slayer's Prey 特性目标迫使你进行一次豁免检定时，你在进行豁免检定前，立刻用你的反应来对其进行一次武器攻击。一旦你的攻击命中，除了攻击的正常效果外，你本次豁免将自动成功。</p>",
       "chat": ""
     },
     "source": {
@@ -34,165 +34,257 @@
     },
     "identifier": "monster-slayer",
     "classIdentifier": "ranger",
-    "advancement": [
-      {
+    "advancement": {
+      "3eev3140f4m4ifwe": {
         "_id": "3eev3140f4m4ifwe",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.kIUKnDJ9qdscR3zt",
-              "optional": false
+              "optional": false,
+              "sort": 0
             },
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.zJRRsdKNnidyjqQD",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "8rgvc1g4t4jtszwl": {
         "_id": "8rgvc1g4t4jtszwl",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.YMVLurWdUfCApbPa",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 7,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "glxpcb9suuqvu19u": {
         "_id": "glxpcb9suuqvu19u",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.6tL2DF7EFrYNcZki",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 11,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "fzcpl7zzfmqyjd3i": {
         "_id": "fzcpl7zzfmqyjd3i",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.FghPh1QoXjq2lH5W",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 15,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "ui39menm7nr33dr0": {
         "_id": "ui39menm7nr33dr0",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.IuzXxwP3EhWGhtXC",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
-          "optional": true,
-          "spell": null
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 1,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "获得法术"
+        "name": "获得法术",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "dpu4sj98g9ldy0u5": {
         "_id": "dpu4sj98g9ldy0u5",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.T4zFq0zTHnzZeO9t",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
-          "optional": true,
-          "spell": null
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 1,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 5,
-        "title": "获得法术"
+        "name": "获得法术",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "p18yfua0a0qf33jp": {
         "_id": "p18yfua0a0qf33jp",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.Vrzu8xpLMvOvOnx6",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
-          "optional": true,
-          "spell": null
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 1,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 9,
-        "title": "获得法术"
+        "name": "获得法术",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "td62atlcl6fm8llu": {
         "_id": "td62atlcl6fm8llu",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.lopw7wVkPoE7gbNu",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
-          "optional": true,
-          "spell": null
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 1,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 13,
-        "title": "获得法术"
+        "name": "获得法术",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "me1o1oa38pp6buix": {
         "_id": "me1o1oa38pp6buix",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.spell.abm5MgV3kejSatZt",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
-          "optional": true,
-          "spell": null
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 1,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "sorting": "m"
         },
         "value": {},
         "level": 17,
-        "title": "获得法术"
+        "name": "获得法术",
+        "flags": {},
+        "hint": ""
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",

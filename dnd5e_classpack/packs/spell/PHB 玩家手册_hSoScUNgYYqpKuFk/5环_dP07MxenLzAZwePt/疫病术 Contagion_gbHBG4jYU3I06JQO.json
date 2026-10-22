@@ -10,7 +10,8 @@
       "itemCondition": "",
       "effectCondition": "",
       "reactionCondition": "",
-      "otherCondition": ""
+      "otherCondition": "",
+      "onUseMacroName": ""
     },
     "midiProperties": {
       "confirmTargets": "always",
@@ -25,23 +26,14 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "疫病术 Contagion",
-        "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+        "img": "icons/skills/wounds/blood-cells-disease-green.webp",
         "type": "script",
         "scope": "global",
-        "command": "",
+        "command": "const pass = args[0]?.macroPass;\nconst cast = typeof workflow === \"undefined\" ? null : workflow;\nconst api = globalThis.dnd5eClasspack;\nconst DISEASES = [\n  {\n    \"key\": \"blinding-sickness\",\n    \"name\": \"失明症 Blinding Sickness\",\n    \"img\": \"icons/skills/wounds/blood-cells-disease-green.webp\",\n    \"statuses\": [\n      \"blinded\",\n      \"diseased\"\n    ],\n    \"changes\": [\n      [\n        \"system.abilities.wis.check.roll.mode\",\n        -1\n      ],\n      [\n        \"system.abilities.wis.save.roll.mode\",\n        -1\n      ]\n    ]\n  },\n  {\n    \"key\": \"filth-fever\",\n    \"name\": \"腐热症 Filth Fever\",\n    \"img\": \"icons/skills/wounds/blood-cells-disease-green.webp\",\n    \"statuses\": [\n      \"diseased\"\n    ],\n    \"changes\": [\n      [\n        \"system.abilities.str.check.roll.mode\",\n        -1\n      ],\n      [\n        \"system.abilities.str.save.roll.mode\",\n        -1\n      ],\n      [\n        \"system.abilities.str.attack.roll.mode\",\n        -1\n      ]\n    ]\n  },\n  {\n    \"key\": \"flesh-rot\",\n    \"name\": \"烂肉症 Flesh Rot\",\n    \"img\": \"icons/skills/wounds/blood-cells-disease-green.webp\",\n    \"statuses\": [\n      \"diseased\"\n    ],\n    \"changes\": [\n      [\n        \"system.abilities.cha.check.roll.mode\",\n        -1\n      ],\n      [\n        \"system.traits.dv.value\",\n        \"ALL\"\n      ]\n    ]\n  },\n  {\n    \"key\": \"mindfire\",\n    \"name\": \"脑热症 Mindfire\",\n    \"img\": \"icons/skills/wounds/blood-cells-disease-green.webp\",\n    \"statuses\": [\n      \"diseased\"\n    ],\n    \"changes\": [\n      [\n        \"system.abilities.int.check.roll.mode\",\n        -1\n      ],\n      [\n        \"system.abilities.int.save.roll.mode\",\n        -1\n      ]\n    ]\n  },\n  {\n    \"key\": \"seizure\",\n    \"name\": \"癫痫症 Seizure\",\n    \"img\": \"icons/skills/wounds/blood-cells-disease-green.webp\",\n    \"statuses\": [\n      \"diseased\"\n    ],\n    \"changes\": [\n      [\n        \"system.abilities.dex.save.roll.mode\",\n        -1\n      ],\n      [\n        \"system.abilities.dex.check.roll.mode\",\n        -1\n      ],\n      [\n        \"system.abilities.dex.attack.roll.mode\",\n        -1\n      ]\n    ]\n  },\n  {\n    \"key\": \"slimy-doom\",\n    \"name\": \"恶心症 Slimy Doom\",\n    \"img\": \"icons/skills/wounds/blood-cells-disease-green.webp\",\n    \"statuses\": [\n      \"diseased\"\n    ],\n    \"changes\": [\n      [\n        \"system.abilities.con.check.roll.mode\",\n        -1\n      ],\n      [\n        \"system.abilities.con.save.roll.mode\",\n        -1\n      ]\n    ]\n  }\n];\nconst stateOf = effect => effect.flags?.dnd5e_classpack?.contagion;\nconst live = effect => effect && effect.active !== false && !effect.disabled && !effect.isSuppressed;\nconst change = (key, value, type = \"custom\") => ({ key, value, type, phase: \"initial\", priority: 20,\n  replacement: \"\", conditions: \"{}\" });\nasync function updateEffect(effect, updates) {\n  if (effect.isOwner || game.user.isGM) return effect.update(updates);\n  const result = await MidiQOL.socket().executeAsGM(\"updateEffects\", {\n    actorUuid: effect.parent.uuid, updates: [{ _id: effect.id, ...updates }]\n  });\n  if (result === false || result === \"gmBlocked\") throw new Error(\"无法更新疫病术效应\");\n}\nasync function selectDisease(effect) {\n  if (!live(effect) || stateOf(effect)?.stage === \"disease\") return;\n  const state = stateOf(effect) ?? {};\n  const source = DAE.getEffectSource(effect);\n  // 三次失败已使中毒结束。窗口关闭时仍保留待选择的疾病，不恢复豁免或删除效应。\n  await updateEffect(effect, {\n    name: \"疫病术：待选择疾病\", statuses: [\"diseased\"], \"system.changes\": [],\n    \"flags.dnd5e_classpack.contagion\": { ...state, stage: \"pending\" },\n    \"flags.midi-qol.overtime.permanent\": true\n  });\n  const templates = DISEASES;\n  const caster = source.actorUuid ? await fromUuid(source.actorUuid) : null;\n  const selected = await api.dialogUtils.selectDialog(\"疫病术\", \"\", {\n    label: \"疾病\", name: \"disease\", options: { options: templates.map(e => ({ value: e.key, label: e.name })) }\n  }, { userId: caster ? api.firstOwner(caster, true) : game.user.id });\n  const template = templates.find(e => e.key === selected);\n  if (!template) return;\n  const current = await fromUuid(effect.uuid);\n  if (!live(current) || stateOf(current)?.stage !== \"pending\") return;\n  const changes = template.changes.map(([key, value]) => change(key, value, \"add\"));\n  if (selected === \"slimy-doom\") changes.push(change(\"flags.midi-qol.onUseMacroName\", `ItemMacro.${source.itemUuid},isDamaged`));\n  if (selected === \"mindfire\") {\n    changes.push(change(\"flags.midi-qol.actions.reactionsMax\", \"0\", \"override\"));\n    changes.push(change(\"flags.midi-qol.OverTime\", `turn=start, label=脑热症, macro=[postActiveEffects]ItemMacro.${source.itemUuid}, allowIncapacitated=true`));\n  }\n  await updateEffect(current, {\n    name: template.name, img: template.img,\n    statuses: [...new Set([...(template.statuses ?? []), \"diseased\"])],\n    \"system.magical\": false,\n    \"system.changes\": changes,\n    \"flags.dnd5e_classpack.contagion\": { ...state, stage: \"disease\", diseaseId: selected }\n    // 不修改 start 与 duration：疾病仍在原本七天期限结束时结束。\n  });\n}\n\nif (args[0]?.reason === \"replacementEffect\") {\n  const effect = args[0].effect;\n  if (effect && (!stateOf(effect) || stateOf(effect).stage === \"incubating\")) await selectDisease(effect);\n  return;\n}\nif (!cast || cast.aborted) return;\n\nif (pass === \"isDamaged\") {\n  const victim = args[0].actor;\n  if (!victim) return;\n  const diseases = Array.from(victim.appliedEffects ?? victim.effects).filter(e => live(e)\n    && stateOf(e)?.stage === \"disease\" && stateOf(e).diseaseId === \"slimy-doom\");\n  for (const disease of diseases) {\n    const same = victim.effects.find(e => e.flags?.dnd5e_classpack?.contagionStun === disease.uuid);\n    const ownTurn = game.combat?.started && game.combat.combatant?.actor?.uuid === victim.uuid;\n    const duration = game.combat?.started\n      ? { expiry: \"targetEnd\", value: ownTurn ? 1 : null, units: \"rounds\" }\n      : { value: 12, units: \"seconds\", expiry: null };\n    const data = {\n      name: \"恶心症：震慑\", img: disease.img, type: \"base\", transfer: false, statuses: [\"stunned\"], duration,\n      system: { magical: false, changes: [], origin: { ...disease.system.origin, effect: disease.uuid } },\n      flags: { dnd5e: { dependentOn: disease.uuid }, dae: { expiryMode: \"delete\" },\n        dnd5e_classpack: { contagionStun: disease.uuid } }\n    };\n    if (same) {\n      await MidiQOL.socket().executeAsGM(\"removeEffects\", { actorUuid: victim.uuid, effects: [same.id] });\n    }\n    await MidiQOL.socket().executeAsGM(\"createEffects\", { actorUuid: victim.uuid, effects: [data] });\n  }\n  return;\n}\nif (pass !== \"postActiveEffects\") return;\nconst overtimeUuid = cast.workflowOptions?.overTimeEffectUuid;\nif (overtimeUuid) {\n  const effect = await fromUuid(overtimeUuid);\n  if (!live(effect) || stateOf(effect)?.diseaseId !== \"mindfire\") return;\n  if (cast._classpackMindfireDone) return;\n  cast._classpackMindfireDone = true;\n  const roll = await new Roll(\"1d10\").evaluate();\n  const action = roll.total === 1 ? \"沿随机方向用尽移动力，本回合不执行动作。\"\n    : roll.total <= 6 ? \"本回合不移动，也不执行动作。\"\n    : roll.total <= 8 ? \"攻击触及内随机生物一次；没有可攻击生物则不执行动作。\"\n    : \"本回合可以正常行动。\";\n  await roll.toMessage({ speaker: ChatMessage.getSpeaker({ actor: effect.parent }),\n    flavor: `脑热症：困惑术表。${action}` });\n  return;\n}\n",
         "author": "WqWGW8MuBm7BNHxt",
         "ownership": {
           "default": 3
@@ -63,33 +55,47 @@
       }
     }
   },
-  "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+  "img": "icons/skills/wounds/blood-cells-disease-green.webp",
   "effects": [
     {
       "name": "疫病术 Contagion",
-      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gbHBG4jYU3I06JQO",
+      "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+      "origin": null,
       "transfer": false,
       "_id": "mkQJc9HxQciTvVLM",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "macro.execute",
-          "mode": 0,
-          "value": "疫病术",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "_id": "c49f816f27768c21",
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end, label=疫病术, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=3-, failCount=3+ItemMacro, allowIncapacitated=true",
+            "type": "custom",
+            "phase": "initial",
+            "priority": 20,
+            "replacement": "origin",
+            "conditions": "{}"
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.gbHBG4jYU3I06JQO",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 7,
+        "units": "days",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -108,12 +114,12 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "applicationMode": "dnd5e",
+          "expiryMode": "delete"
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -122,468 +128,23 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": 1753606078604,
         "modifiedTime": 1756371549773,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!gbHBG4jYU3I06JQO.mkQJc9HxQciTvVLM"
-    },
-    {
-      "name": "失明症 Blinding Sickness",
-      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gbHBG4jYU3I06JQO",
-      "transfer": false,
-      "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.disadvantage.check.wis",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.disadvantage.save.wis",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        }
-      ],
-      "disabled": false,
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [
-        "blinded"
-      ],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": []
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
-        "createdTime": 1755344103478,
-        "modifiedTime": 1786693328546,
-        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
-        "exportSource": null
-      },
-      "_id": "iqaYmvimtZ7n6tKf",
-      "_key": "!items.effects!gbHBG4jYU3I06JQO.iqaYmvimtZ7n6tKf"
-    },
-    {
-      "name": "腐热症 Filth Fever",
-      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gbHBG4jYU3I06JQO",
-      "transfer": false,
-      "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.disadvantage.check.str",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.disadvantage.save.str",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.disadvantage.attack.mwak",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        }
-      ],
-      "disabled": false,
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": []
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
-        "createdTime": 1755344104518,
-        "modifiedTime": 1786693328557,
-        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
-        "exportSource": null
-      },
-      "_id": "u5Xuyc0YUnOJTtEB",
-      "_key": "!items.effects!gbHBG4jYU3I06JQO.u5Xuyc0YUnOJTtEB"
-    },
-    {
-      "name": "烂肉症 Flesh Rot",
-      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gbHBG4jYU3I06JQO",
-      "transfer": false,
-      "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.disadvantage.check.cha",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.disadvantage.save.cha",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        },
-        {
-          "key": "system.traits.dv.all",
-          "value": "+1",
-          "mode": 0,
-          "priority": 20
-        }
-      ],
-      "disabled": false,
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": []
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
-        "createdTime": 1755344105799,
-        "modifiedTime": 1786693328570,
-        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
-        "exportSource": null
-      },
-      "_id": "bi206BnER9Dy68EV",
-      "_key": "!items.effects!gbHBG4jYU3I06JQO.bi206BnER9Dy68EV"
-    },
-    {
-      "name": "脑热症 Mindfire",
-      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gbHBG4jYU3I06JQO",
-      "transfer": false,
-      "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.disadvantage.check.int",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.disadvantage.save.int",
-          "value": "",
-          "mode": 2,
-          "priority": 20
-        }
-      ],
-      "disabled": false,
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [
-        "diseased"
-      ],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": []
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
-        "createdTime": 1755344106944,
-        "modifiedTime": 1786693328584,
-        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
-        "exportSource": null
-      },
-      "_id": "xkpLAUMNrTAktlCW",
-      "_key": "!items.effects!gbHBG4jYU3I06JQO.xkpLAUMNrTAktlCW"
-    },
-    {
-      "name": "癫痫症 Seizure",
-      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gbHBG4jYU3I06JQO",
-      "transfer": false,
-      "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.disadvantage.save.dex",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.disadvantage.check.dex",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.advantage.attack.dex",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        }
-      ],
-      "disabled": false,
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": []
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
-        "createdTime": 1755344108056,
-        "modifiedTime": 1786693328601,
-        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
-        "exportSource": null
-      },
-      "_id": "tDfQRjrexgYpTWWw",
-      "_key": "!items.effects!gbHBG4jYU3I06JQO.tDfQRjrexgYpTWWw"
-    },
-    {
-      "name": "恶心症 Slimy Doom",
-      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.gbHBG4jYU3I06JQO",
-      "transfer": false,
-      "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.disadvantage.check.con",
-          "value": "+1",
-          "mode": 2,
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.disadvantage.save.con",
-          "value": "",
-          "mode": 2,
-          "priority": 20
-        }
-      ],
-      "disabled": false,
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": []
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
-        "createdTime": 1755344118638,
-        "modifiedTime": 1786693328611,
-        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
-        "exportSource": null
-      },
-      "_id": "9zIE4Xf0rIDHjWKS",
-      "_key": "!items.effects!gbHBG4jYU3I06JQO.9zIE4Xf0rIDHjWKS"
     }
   ],
   "system": {
     "description": {
-      "value": "<div class=\"description \"> 你的触碰带着疾病。你对触及范围内一个生物发动一次近战法术攻击。命中时，你选择使该生物承受以下描述的疾病之一。\n<br />被触碰生物在每回合结束时必须进行一次体质豁免。在累计三次豁免失败后，该疾病效应将维持至法术持续时间结束，且该生物不再进行相应的体质豁免。在累计三次豁免成功后，该生物从疾病中恢复，并终止法术的效应。\n<br />由于法术对目标引发的是自然疾病，因此任何移除疾病或改善疾病状况的效应都可以对受术生物产生影响。\n<br /><strong>失明症Blinding Sickness。</strong>痛苦缠绕着患病者的意志，并使其眼睛变成奶白色。患病生物进行感知检定和感知豁免时具有劣势，并且承受目盲状态。\n<br /><strong>腐热症Filth Fever。</strong>患者身体发起严重的高烧。患病生物进行力量检定和力量豁免时，以及发动基于力量的攻击检定时具有劣势。\n<br /><strong>烂肉症Flesh Rot。</strong>患者的肌肤逐渐腐朽。患病生物进行魅力检定时具有劣势，并且具有所有伤害类型的伤害易受。\n<br /><strong>脑热症Mindfire。</strong>患者头脑发热。患病生物进行智力检定和智力豁免时具有劣势，并且其在战斗中视为受到困惑术confusion效应影响。\n<br /><strong>癫痫症Seizure。</strong>患者全身颤抖不止。患病生物进行敏捷检定和敏捷豁免时，以及发动基于敏捷的攻击检定时具劣势。\n<br /><strong>恶心症Slimy Doom。</strong>患者开始不受控地流血。患病生物进行体质检定和体质豁免时具有劣势。另外每当该生物受到伤害时都会陷入震慑状态，直至其下一回合结束。\n<br /></div>",
+      "value": "<p>你的触碰带着疾病。你对触及范围内一个生物发动一次近战法术攻击。若命中，则该目标中毒。</p><p>该中毒目标的每一回合结束时，必须进行一次体质豁免。若该目标累计三次该豁免成功，则其不再中毒且该法术终止。若该目标累计三次该豁免失败，其亦不再中毒，但必须从以下描述的疾病中选择其一。随后该目标将受选定的疾病影响直至该法术持续时间结束。</p><p>由于法术对目标引发的是自然疾病，因此任何移除疾病或改善疾病状况的效应都可以对受术生物产生影响。</p><blockquote><p><strong>失明症Blinding Sickness。</strong>痛苦缠绕着患病者的意志，并使其眼睛变成奶白色。患病生物进行感知检定和感知豁免时具有劣势，并且承受&amp;Reference[condition=blinded apply=false]{目盲}状态。</p><p><strong>腐热症Filth Fever。</strong>患者身体发起严重的高烧。患病生物进行力量检定和力量豁免时，以及发动基于力量的攻击检定时具有劣势。</p><p><strong>烂肉症Flesh Rot。</strong>患者的肌肤逐渐腐朽。患病生物进行魅力检定时具有劣势，并且具有所有伤害类型的伤害易伤。</p><p><strong>脑热症Mindfire。</strong>患者头脑发热。患病生物进行智力检定和智力豁免时具有劣势，并且其在战斗中视为受到困惑术 confusion效应影响。</p><p><strong>癫痫症Seizure。</strong>患者全身颤抖不止。患病生物进行敏捷检定和敏捷豁免时，以及发动基于敏捷的攻击检定时具劣势。</p><p><strong>恶心症Slimy Doom。</strong>患者开始不受控地流血。患病生物进行体质检定和体质豁免时具有劣势。另外每当该生物受到伤害时都会陷入震慑状态，直至其下一回合结束。</p></blockquote>",
       "chat": ""
     },
     "source": {
@@ -599,7 +160,8 @@
     },
     "duration": {
       "value": "7",
-      "units": "day"
+      "units": "day",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -609,9 +171,10 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -631,10 +194,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -659,26 +218,43 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "mkQJc9HxQciTvVLM"
+            "_id": "mkQJc9HxQciTvVLM",
+            "uuid": null,
+            "level": {},
+            "_stats": {
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "coreVersion": "14.368",
+              "systemId": "dnd5e",
+              "systemVersion": "6.0.5",
+              "createdTime": 1753606078604,
+              "modifiedTime": 1756371549773,
+              "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+              "exportSource": null
+            }
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -721,7 +297,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -729,7 +306,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -740,21 +316,71 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "otherActivityId": "",
         "attackMode": "oneHanded",
         "ammunition": "",
-        "otherActivityUuid": ""
+        "otherActivityUuid": "",
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "attackRollPerTarget": "default",
+        "fumbleThreshold": 1
       }
     },
-    "identifier": "contagion"
+    "identifier": "contagion",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -763,8 +389,8 @@
   "sort": 33700000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

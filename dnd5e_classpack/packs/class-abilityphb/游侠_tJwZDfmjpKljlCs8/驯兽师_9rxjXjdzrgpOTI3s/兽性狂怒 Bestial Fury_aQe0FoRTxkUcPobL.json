@@ -2,14 +2,14 @@
   "_id": "aQe0FoRTxkUcPobL",
   "name": "兽性狂怒 Bestial Fury",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_KillCommand.png",
+  "img": "icons/magic/nature/wolf-paw-glow-large-orange.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第11级起，当你命令野兽伴侣执行攻击动作时，它可以发动两次攻击。若其拥有多重攻击动作，也可以执行该动作。</p>",
+      "value": "<p> 第11级起，当你命令野兽伴侣执行攻击动作时，它可以发动两次攻击。或者，若其拥有“多重攻击Multiattack”动作项，则它也可以执行该动作项。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "驯兽师等级 11",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "bestial-fury",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 11,
+      "repeatable": false,
+      "items": [
+        "subclass:beast-master"
+      ]
     },
     "properties": []
   },
@@ -39,12 +42,7 @@
   "folder": "9rxjXjdzrgpOTI3s",
   "sort": 27600000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +62,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757160776004,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

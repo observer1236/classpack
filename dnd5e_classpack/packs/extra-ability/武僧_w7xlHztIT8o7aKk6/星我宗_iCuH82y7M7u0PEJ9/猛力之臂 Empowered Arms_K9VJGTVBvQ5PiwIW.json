@@ -1,14 +1,14 @@
 {
   "name": "猛力之臂 Empowered Arms",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ability_bastion_monk.jpg",
+  "img": "icons/magic/unholy/hand-light-pink.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>当你同时召唤@UUID[Compendium.dnd5e_classpack.extra-ability.Qctmiuim4M9SfU1E]{星我之臂}和@UUID[Compendium.dnd5e_classpack.extra-ability.vimr3VI7xsnK1ydv]{星我之容}时，你可以让你的星我之躯出现（不需要任何动作），这个幽光般的躯体如同一件盔甲般复盖着你的身体，与星我之臂和星我之容相连。你来决定它的外观。</p><p>当星我之躯出现时，你将获得如下增益：</p><ul><li><strong>注能之臂</strong>。你的每回合中有一次机会，当你用星我之臂攻击命中目标时，你可以对目标造成额外伤害，相当于你的武艺骰。</li></ul>",
+      "value": "<p>当你的@UUID[Compendium.dnd5e_classpack.extra-ability.Item.Qctmiuim4M9SfU1E]{星我之臂}和@UUID[Compendium.dnd5e_classpack.extra-ability.Item.vimr3VI7xsnK1ydv]{星我之容}同时存在时，你可以使你的星我之躯也出现（无需任何动作），这个幽光般的躯体如同一件盔甲般覆盖着你的物理躯体，与星我之臂和星我之容相连。它的外观由你决定。</p>\n<p>星我之躯存在期间，你将获得如下增益：</p>\n<ul><li><strong>猛力之臂Empowered Arms。</strong>当你在自己回合用星我之臂攻击命中目标时，你可以对目标造成额外伤害，其数值相当于你的武艺骰。这种额外伤害每回合只能产生一次。</li>\n</ul>",
       "chat": ""
     },
     "source": {
@@ -25,8 +25,11 @@
     "cover": null,
     "crewed": false,
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 11,
+      "repeatable": false,
+      "items": [
+        "subclass:way-of-the-astral-self"
+      ]
     },
     "properties": [],
     "activities": {
@@ -48,18 +51,20 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "",
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "units": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -71,7 +76,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -108,15 +114,100 @@
                 "mode": "whole",
                 "number": null,
                 "formula": ""
-              }
+              },
+              "modifiers": []
             }
           ]
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
-    "identifier": "",
-    "advancement": [],
+    "identifier": "empowered-arms",
+    "advancement": {},
     "enchant": {}
   },
   "effects": [],
@@ -147,18 +238,12 @@
       "reactionCondition": ""
     },
     "core": {},
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1725892381990,
     "modifiedTime": 1757865035929,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

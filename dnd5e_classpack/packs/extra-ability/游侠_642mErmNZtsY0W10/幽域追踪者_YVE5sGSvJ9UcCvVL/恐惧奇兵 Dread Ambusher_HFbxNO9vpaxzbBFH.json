@@ -1,15 +1,15 @@
 {
   "_id": "HFbxNO9vpaxzbBFH",
-  "name": "恐惧奇兵 Dread Ambusher",
+  "name": "恐惧伏击 Dread Ambusher",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Mage_PotentSpirit.png",
+  "img": "icons/skills/melee/strike-dagger-skull-white.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         你精通于伏击的艺术。你在你的先攻投上获得一个等同于你的感知调整值的加值。</p>\n<p>         在每一场战斗的你的第一个回合的开始，你的移动速度增加10尺，直到那个回合结束。如果你在那个回合进行攻击动作，你可以做一次额外的武器攻击作为那一个动作的一部分。如果那次攻击命中，目标受到额外[[/r 1d8]]的武器伤害。</p>",
+      "value": "<p>在第3级时，你精通于伏击的艺术。你的先攻检定获得等同于你感知调整值的加值。</p>\n<p>在每一场战斗中你的第一个回合的开始时，你的步行速度增加10尺，持续直至该回合结束。如果你在该回合进行攻击动作，则你可以做一次额外的武器攻击，作为那次攻击动作的一部分。如果那次攻击成功命中，目标还将受到额外[[/r 1d8]]{1d8}点伤害，额外伤害类型与武器相同。</p>",
       "chat": ""
     },
     "source": {
@@ -42,17 +42,19 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "units": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -64,7 +66,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -99,21 +102,107 @@
                 "mode": "whole",
                 "number": null,
                 "formula": ""
-              }
+              },
+              "modifiers": []
             }
           ]
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
-    "identifier": "-dread-ambusher",
-    "advancement": [],
+    "identifier": "dread-ambusher",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -121,13 +210,7 @@
   "folder": "YVE5sGSvJ9UcCvVL",
   "sort": 17500000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -145,18 +228,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "dreadAmbusher",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757408528982,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

@@ -1,15 +1,15 @@
 {
   "_id": "isja3NVg13Ebf1OV",
-  "name": "听声辨谎 Ear for Deceit",
+  "name": "辨谎之耳 Ear for Deceit",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Arcane_MindMastery.png",
+  "img": "icons/magic/sonic/projectile-sound-rings-wave.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         当你在3级选择此范型时，你的双耳变得锐利，能发现谎言。当你进行一次感知（洞察）检定来察觉一个生物是否在说谎时，你可以将[[/r d20]]投中7或更低的结果都视为8。</p>",
+      "value": "<p>当你在3级选择此范型时，你发掘出了凭音辨认谎言的能力。当你进行一次感知（洞悉）检定来察觉一个生物是否在说谎时，你可以将[[/r d20]]{d20}骰中7或更低的骰值视为8。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "审判官等级 3",
     "activities": {},
     "identifier": "-ear-for-deceit",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "ahTCOE32oH5O41Ik",
   "sort": 38000000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +60,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

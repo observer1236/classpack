@@ -2,14 +2,14 @@
   "_id": "i4N9p6sGcAfNp0b9",
   "name": "高等预兆 Greater Portent",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Achievement_Reputation_KirinTor.png",
+  "img": "icons/magic/perception/orb-eye-scrying.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>        第14级起，你梦中的景象更为清晰精确的在你意识中描绘出了将要发生的一切。你的@UUID[Compendium.dnd5e_classpack.class-abilityphb.JSOUfGgqLBJAj0Dp]{预兆}特性获得三个预知骰，而不再是两个。</p>",
+      "value": "<p> 第14级起，你梦中的景象更为清晰精确的在你意识中描绘出了将要发生的一切。在你的@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.JSOUfGgqLBJAj0Dp]{预兆}特性中，每次长休你都可以投掷三枚D20，而不再是两枚。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "预言学派等级 14",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "greater-portent",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 14,
+      "repeatable": false,
+      "items": [
+        "subclass:school-of-divination"
+      ]
     },
     "properties": [
       "trait"
@@ -50,12 +53,7 @@
       "alwaysActive": false,
       "effects": []
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -75,9 +73,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757097557817,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

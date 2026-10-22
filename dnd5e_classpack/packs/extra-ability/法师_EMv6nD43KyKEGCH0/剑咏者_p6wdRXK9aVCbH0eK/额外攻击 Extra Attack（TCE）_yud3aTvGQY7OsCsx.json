@@ -1,15 +1,15 @@
 {
   "_id": "yud3aTvGQY7OsCsx",
-  "name": "额外攻击 Extra Attack（TCE）",
+  "name": "额外攻击 Extra Attack(TCE)",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/INV_Weapon_Shortblade_37.png",
+  "img": "icons/skills/melee/spear-tips-triple-orange.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>你在自己回合执行“攻击”动作时可以发动两次攻击而非一次攻击。此外，你还可以施展一个戏法以替代其中一次攻击。</p>\n<p>（*众所周知的歧义。不过根据译者的理解，原文指的应该是只能替换一次，且仅能替换法师戏法。）</p>",
+      "value": "<p>你在自己回合执行“攻击”动作时可以发动两次攻击而非一次攻击。</p>\n<p>不仅如此，你还可以将自己回合“攻击”动作中的这些攻击之中的一次替换为施展一个戏法。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "剑咏者等级 6",
     "activities": {},
     "identifier": "-extra-attacktce",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "p6wdRXK9aVCbH0eK",
   "sort": 52300000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +60,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757417096694,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

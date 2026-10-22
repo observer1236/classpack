@@ -1,5 +1,5 @@
 {
-  "name": "图腾精魂-虎 Totem Spirit: Tiger",
+  "name": "图腾精魂：虎 Totem Spirit: Tiger",
   "type": "feat",
   "img": "icons/creatures/abilities/cougar-pounce-stalk-black.webp",
   "system": {
@@ -8,7 +8,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<ul><li><strong>虎 Tiger</strong>。当狂暴时，你可以使你的跳远距离增加10尺，并使你的跳高距离增加3尺。虎之精魂将强化你的跳跃能力。</li></ul>",
+      "value": "<ul><li><p>狂暴期间，你增加10尺的跳跃距离和3尺的跳高距离。虎之精魂赋予你飞跃的能力。 </p></li></ul>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "cover": null,
     "crewed": false,
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "activities": {},
-    "identifier": "-",
-    "advancement": [],
+    "identifier": "totem-spirit-tiger",
+    "advancement": {},
     "enchant": {}
   },
   "effects": [],
@@ -62,17 +63,12 @@
       "otherCondition": ""
     },
     "core": {},
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1724854634027,
     "modifiedTime": 1757174602305,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

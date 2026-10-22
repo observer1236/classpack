@@ -1,8 +1,8 @@
 {
   "_id": "wYaXI0hCvrfrTzpT",
-  "name": "多重攻击: 箭雨",
+  "name": "箭雨 Volley",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_LongShots.png",
+  "img": "icons/skills/ranged/arrows-flying-salvo-blue.webp",
   "system": {
     "description": {
       "value": "<p>你使用你的动作指定你的远程武器射程内你能看见的某点，并分别对该点周围10尺范围内任意数量的生物发动一次远程攻击。发动该特性时，你必须有足够的弹药用以攻击敌人，且要为每个目标进行独立的攻击检定。</p>",
@@ -38,12 +38,9 @@
           "targets": [
             {
               "type": "itemUses",
-              "target": "",
               "value": "1",
-              "scaling": {
-                "mode": "",
-                "formula": ""
-              }
+              "target": "",
+              "scaling": {}
             }
           ],
           "scaling": {
@@ -53,17 +50,19 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "units": "",
+          "units": "any",
           "special": "",
           "override": false
         },
@@ -71,15 +70,16 @@
           "template": {
             "count": "",
             "contiguous": false,
-            "type": "square",
+            "type": "radius",
             "size": "20",
             "width": "",
             "height": "",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
-            "type": "",
+            "type": "enemy",
             "choice": false,
             "special": ""
           },
@@ -97,16 +97,107 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "name": ""
       }
     },
-    "identifier": "-",
-    "advancement": [],
+    "identifier": "volley",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -114,21 +205,15 @@
   "folder": "CZlNTgVXzHGO0sCA",
   "sort": 42200000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
       "itemCondition": "",
       "reactionCondition": "",
       "otherCondition": "",
-      "effectCondition": ""
+      "effectCondition": "",
+      "onUseMacroName": "[postActiveEffects]ItemMacro"
     },
     "midiProperties": {
       "autoFailFriendly": false,
@@ -138,15 +223,43 @@
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
+    },
+    "dae": {
+      "macro": {
+        "name": "箭雨 Volley",
+        "img": "icons/skills/ranged/arrows-flying-salvo-blue.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const attacks = macroItem.actor.items.contents\n  .filter(item => item.type === \"weapon\")\n  .flatMap(item => item.system.activities.filter(activity =>\n    activity.type === \"attack\" && activity.getActionType() === \"rwak\"\n  ));\nif (!attacks.length) return;\n\nconst uuid = attacks.length === 1 ? attacks[0].uuid\n  : await dnd5eClasspack.dialogUtils.buttonDialog(\n    \"选择远程攻击\", \"\",\n    attacks.map(activity => [\n      `${activity.item.name} · ${activity.name}`,\n      activity.uuid,\n      { image: activity.item.img }\n    ])\n  );\nif (!uuid) return;\n\nconst attack = fromUuidSync(uuid);\nconst attackMode = attack.item.system.attackModes.find(mode =>\n  attack.getActionType(mode.value) === \"mwak\"\n)?.value;\n\nfor (const target of [...workflow.targets]) {\n  await MidiQOL.completeActivityUse(uuid, {\n    attackMode,\n    consume: { resources: true, spellSlot: false, action: false },\n    midiOptions: {\n      targetUuids: [target.document.uuid],\n      ignoreUserTargets: true,\n      workflowOptions: { targetConfirmation: \"never\" }\n    }\n  }, { configure: false }, { create: true });\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
     }
   },
   "ownership": {
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757093086420,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

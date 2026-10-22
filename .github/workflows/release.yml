@@ -14,6 +14,11 @@ on:
         description: 'Release tag to attach the archive to. Leave empty to build the archive without attaching.'
         required: false
         default: ''
+      keep_all_icons:
+        description: 'Include unused legacy Nicons images for existing world and actor copies.'
+        type: boolean
+        required: false
+        default: false
   release:
     types: [published, edited]
 
@@ -26,6 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.release.tag_name || inputs.tag || github.ref }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v7
@@ -34,6 +41,10 @@ jobs:
 
       - name: Install Foundry VTT CLI
         run: npm install -g @foundryvtt/foundryvtt-cli
+
+      # Read references while pack JSON and embedded macros are still available.
+      - name: Plan release icons
+        run: node tools/release-icons.mjs --plan reports/release-icons.json
 
       # Update module.json in the working tree so the release archive and the
       # standalone manifest carry the correct version and point at this repo's
@@ -52,10 +63,11 @@ jobs:
           const version = tag.replace(/^v/i, "");
           if (version) data.version = version;
           const base = `https://github.com/${process.env.REPO}/releases`;
-          // `manifest` stays on "latest" so Foundry always detects new versions;
-          // `download` is pinned to this release's tag so each manifest points
-          // at its own archive (falls back to latest for untagged manual runs).
-          data.manifest = `${base}/latest/download/module.json`;
+          // Prereleases use their own manifest because GitHub's latest excludes them.
+          const prerelease = version.includes("-") || data.version.includes("-");
+          data.manifest = prerelease && tag
+            ? `${base}/download/${tag}/module.json`
+            : `${base}/latest/download/module.json`;
           data.download = tag
             ? `${base}/download/${tag}/dnd5e_classpack.zip`
             : `${base}/latest/download/dnd5e_classpack.zip`;
@@ -99,8 +111,17 @@ jobs:
 
       # The archive must contain the module at its root so it can be extracted
       # straight into Foundry's Data/modules/ directory.
+      - name: Stage module archive
+        env:
+          KEEP_ALL_ICONS: ${{ inputs.keep_all_icons && 'true' || 'false' }}
+        run: |
+          args=()
+          if [ "$KEEP_ALL_ICONS" = "true" ]; then args+=(--keep-all-icons); fi
+          node tools/release-icons.mjs --plan reports/release-icons.json --stage build/release "${args[@]}"
+
       - name: Build module archive
-        run: zip -r dnd5e_classpack.zip dnd5e_classpack
+        working-directory: build/release
+        run: zip -r ../../dnd5e_classpack.zip dnd5e_classpack
 
       # For manual runs, upload the archive as a workflow artifact so it can be
       # downloaded from the Actions run page. Release runs attach it to the
@@ -124,5 +145,7 @@ jobs:
           tag: ${{ github.event.release.tag_name || inputs.tag }}
           omitName: true
           omitBody: true
+          prerelease: ${{ github.event.release.prerelease || contains(github.event.release.tag_name || inputs.tag, '-') }}
+          omitPrereleaseDuringUpdate: true
           artifacts: dnd5e_classpack.zip,dnd5e_classpack/module.json
           token: ${{ secrets.GITHUB_TOKEN }}

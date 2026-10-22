@@ -2,14 +2,14 @@
   "_id": "SoROktB6wHO25o9l",
   "name": "造物表演 Performance Of Creation",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Paladin_SelflessHealer.png",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>以一个动作，你可以引导造物之歌的魔力来创造一个由你选择的非魔法物品，它会在你选择的距离你10尺内的一处未被占据的空间里生成。它必须要生成在一个可以支撑它的地方——这可以是在也体内或者一个表面上。这件物品的价值不能超过你吟游诗人等级*20gp，它必须是中型或者更小的物品。这件物品会闪烁着柔和的微光。当一个生物触碰它的时候，会听到轻微的音乐。在被创造出等同于你的熟练加值数的小时之后，这件物品会消失。例如，玩家手册中的装备章节里的物品大多数都是可以通过此方法创造的。</p>\n<p>每当你用这一特性创造出一件物品后，直到下一次长休结束前你都不能再次使用这个能力。你可以消耗一个2环或者更高级的法术位去重制这个能力的使用次数。你同时只能保持一件以此法被创造出的物品。如果在你使用这个能力创造物品时已经有一件被创造出来的物品了，那么那个旧的物品会立刻消失不见。</p>\n<p>你创造的物品都大小限制会随着你的吟游诗人等级提高而增长。6级时你可以创造出大型物品，14级时你可以创造去巨型物品。</p>",
+      "value": "<p>以一个动作，你可以引导造物之歌的魔力来创造一个你选择的非魔法物品，它会在你选择的距离你10尺内的一处未占据空间里生成。它必须要生成在液体中或是表面上的一个可以支撑它的地方。这件物品的价值不能超过你吟游诗人等级的二十倍gp，而且必须是中型或者更小的物品。这件物品会闪烁着柔和的微光。当一个生物触碰它的时候，会听到轻微的音乐。在被创造出等同于你的熟练加值数的小时之后，这件物品会消失。你可以通过此方法创造的各种物品，玩家手册中的装备章节里的物品大多数物品就是很好的例子。</p>\n<p>每当你用这一特性创造出一件物品后，直到下一次长休结束前你都不能再次使用这个能力。你也可以消耗一个二环或更高环阶的法术位去再次使用这个能力。你同时只能保持一件以此法被创造出的物品。如果在你使用这个能力创造物品时已经有一件被创造出来的物品了，那么那个旧的物品会立刻消失不见。</p>\n<p>你创造的物品都大小限制会随着你的吟游诗人等级提高而增长。6级时你可以创造出大型物品，14级时你可以创造去巨型物品。</p>",
       "chat": ""
     },
     "source": {
@@ -42,14 +42,16 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "2",
           "units": "hour",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -66,7 +68,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -88,17 +91,105 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-performance-of-creation",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": [
+        "subclass:college-of-creation"
+      ]
     },
     "properties": []
   },
@@ -130,19 +221,12 @@
       "removeAttackDamageButtons": "default",
       "reactionCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757420910468,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

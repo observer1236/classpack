@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
   "system": {
     "description": {
-      "value": "<p>　　你从@UUID[Compendium.dnd5e_classpack.spell-table.RKaer4UuaANHQ9pI]{牧师法术列表}中选择两种戏法习得。这些戏法对你来说是圣武士法术，这些戏法的施法关键属性是魅力。当你提升此职业的等级时，你能够将一个已知戏法替换为牧师法术列表中的另一个戏法。</p>",
+      "value": "<p>从@UUID[Compendium.dnd5e_classpack.spell-table.JournalEntry.RKaer4UuaANHQ9pI]{牧师法术列表}中选择两种戏法。你习得这些戏法，它们对你来说是圣武士法术，这些戏法的施法属性是魅力。当你提升此职业的等级时，你能够将一个已知戏法替换为牧师法术列表中的另一个戏法。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     },
     "requirements": "圣武士等级 2",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "fighting-style-blessed-warrior",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 2,
+      "repeatable": false,
+      "items": [
+        "class:paladin"
+      ]
     },
     "properties": []
   },
@@ -39,12 +42,7 @@
   "folder": "Sqfiu1DXRmlJ0II4",
   "sort": 52400000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -67,9 +65,9 @@
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757864955983,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

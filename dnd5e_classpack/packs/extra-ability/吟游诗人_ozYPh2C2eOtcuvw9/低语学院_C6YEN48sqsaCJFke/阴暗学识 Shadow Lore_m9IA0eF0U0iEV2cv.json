@@ -2,14 +2,14 @@
   "_id": "m9IA0eF0U0iEV2cv",
   "name": "阴暗学识 Shadow Lore",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_BeastWithin.png",
+  "img": "icons/magic/control/hypnosis-mesmerism-eye-tan.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         14级时，你学会了在言语中织入黑暗魔法激发一个生物最深的恐惧。</p>\n<p>         以一个动作，你对一个30尺内，能听见你的声音的生物发出一段魔法的低语。目标必须进行一次感知豁免检定，对抗你的法术豁免DC。若它与你没有共通的语言，或是它不能听见你的声音，它会自动在豁免中成功。在一次成功的豁免检定中，你的低语声听起来就像是不知所云的呢喃，并且没有效果。</p>\n<p>         若目标在豁免检定中失败，他将在接下来的8小时内被你魅惑，或直到你或你的盟友攻击了它、伤害了它，或是迫使它进行一次豁免检定。他认为这段低语描述了他最为困窘的秘密。尽管你不会了解到这个秘密，目标坚信你已经知道了。</p>\n<p>         当被以此法魅惑时，该生物因为畏惧你会公开他的秘密而遵循你的命令。他不会为了你让自己的生命受到威胁，或是为你战斗，除非他已经这么做。他偏向于你，并会像密友那样提供关爱和恩惠。</p>\n<p>         当此效果结束时，该生物不会明白为什么他会对你如此恐惧。</p>\n<p>         一旦你使用了此特性，直到你完成了一次长休前，你都不能再次使用它。</p>",
+      "value": "<p>从14级起，你学会了在言语中织入黑暗魔法激发一个生物内心最深处的恐惧。</p>\n<p>以一个动作，你对一个30尺内，能听见你的声音的生物发出一段魔法低语。目标必须进行一次对抗你的法术豁免DC的感知豁免。若它与你没有共通的语言、或是它不能听见你的声音，它的豁免将自动成功。豁免成功时，你的低语声听起来就像是一段不知所云的呢喃，且没有任何效果。</p>\n<p>豁免失败时，他将被你 &Reference[condition=charmed apply=false]{魅惑Charmed} ，持续8小时。如果你或你的盟友攻击了它、伤害了它、或是迫使它进行一次豁免检定这一状态也将提前结束。他认为这段低语描述了他最为困窘的秘密。尽管你并不会因此了解到这个秘密是什么，但是目标会坚信你已经知道了。</p>\n<p>当被以此法魅惑时，该生物因为畏惧你会公开他的秘密而遵循你的命令。不过它不会为了你而进行危及自身性命的事，也不会为你战斗（除非他已经倾向于这么做了）。它会视你为挚友，并会像密友那样提供关爱和恩惠。</p>\n<p>当此效应结束时，该生物将无法明白为何他会对你如此恐惧。</p>\n<p>一旦你使用了此特性，直到你完成一次长休前你都不能再次使用它。</p>",
       "chat": ""
     },
     "source": {
@@ -52,14 +52,16 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "8",
           "units": "hour",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -76,7 +78,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -94,7 +97,10 @@
         },
         "damage": {
           "onSave": "half",
-          "parts": []
+          "parts": [],
+          "critical": {
+            "allow": false
+          }
         },
         "save": {
           "ability": [
@@ -103,19 +109,107 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
     "identifier": "-shadow-lore",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 14,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -144,19 +238,12 @@
       "itemCondition": "",
       "effectCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

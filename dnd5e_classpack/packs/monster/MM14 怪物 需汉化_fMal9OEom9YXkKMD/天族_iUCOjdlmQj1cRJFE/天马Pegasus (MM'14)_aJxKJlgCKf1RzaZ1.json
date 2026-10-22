@@ -1,5 +1,5 @@
 {
-  "name": "天马Pegasus (MM'14)",
+  "name": "天马 Pegasus (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1753640855909,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",
     "exportSource": null
   },
   "_id": "aJxKJlgCKf1RzaZ1",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Pegasus.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Pegasus.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 18,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 15,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 15,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 13,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 2,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,29 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": 90,
-        "swim": null,
-        "walk": 60,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "60",
+          "fly": "90"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 0,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 0,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "str",
       "exhaustion": 0,
@@ -520,9 +511,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,18 +534,19 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p><span style=\"font-family:宋体\">被称为天马的白翼之马翱翔于天际，正是那幅优美又壮丽的绝景。它们降落在坚实地面时，只会停留片刻以饮用山泉和洁净的湖水。任何声音或其他生物的响动都会惊吓到它们，使它们再一次飞向云端。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>高贵的坐骑Noble Mounts。</strong></em></span><span style=\"font-family:宋体\">天马是极其珍贵而又迅速可靠的坐骑，比狮鹫、骏鹰和飞龙更快更平稳。然而，这些野生又害羞的动物具有与类人生物相当的智力，所以无法以传统棒打加安抚的方式驯养。一匹天马必须由一位善良生物说服才能成为坐骑，而此时它也同时与其新同伴订下了一份终身的契约。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>生于诸位面Born of the Planes。</strong></em></span><span style=\"font-family:宋体\">天马的起源可以追溯到奔放之野的奥林匹亚林地Olympian Glades of Arborea，他们在那里翱翔于位面的天空中，并作为精灵众神忠诚的坐骑。而这些神灵也闻名于委派天马前往物质位面去帮助那些需要帮助的人们。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>天马之巢Pegasi Nests。</strong></em></span><span style=\"font-family:宋体\">天马的伴侣终生相伴，并在难以接近之地筑巢，然后一起生育下一代。</span></p><p>The white winged horses known as pegasi soar through the skies, a vision of grace and majesty. When they touch down on solid ground, they linger only for a moment, drinking from mountain springs and pristine lakes. Any sound or sign of another creature startles them, sending them off to fly once more among the clouds.</p><div data-roll-name-ancestor=\"Noble Mounts\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Noble Mounts.</span> Pegasi are highly prized as swift and reliable steeds, being faster and less temperamental than griffons, hippogriffs, and wyverns. However, these wild and shy creatures are as intelligent as humanoids, and so can't be traditionally broken and tamed. A pegasus must be persuaded to serve a good-aligned creature as a mount, but when it does so, it forges a lifelong bond with its new companion.</p></div><div data-roll-name-ancestor=\"Born of the Planes\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Born of the Planes.</span> Pegasi trace their origins to the Olympian Glades of Arborea, where they soar through the skies of that plane and serve as faithful mounts to the Seldarine, the pantheon of elven gods. These gods have been known to send pegasi to the Material Plane to aid those in need.</p></div><div data-roll-name-ancestor=\"Pegasi Nests\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Pegasi Nests.</span> Pegasi mate for life, build their nests in hard-to-reach locations, and give birth to live young.</p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\"><span style=\"font-family:宋体\"><em>“看！天马！它在空中翱翔时赛过巨龙。在我们之中只有最强大的人才敢奢望让一匹天马成为自己坐骑。你不觉得这与我们骏马的纹章特别般配吗？”</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 116.25pt 0pt 0pt;text-align:right\"><span style=\"font-family:宋体\"><em>泰伦维德奥利安 Tyllenvane d’Orien，龙纹后裔，欧瑞恩家族House Orien的骄傲</em></span></p><p class=\"rd__quote-line rd__quote-line--last\">“<em>Behold, the pegasus. It can outrace a dragon in the open sky, and only the best among us can ever hope to ride one. A fitting emblem for our great house, don't you think?</em>”</p><p><span class=\"rd__quote-by\">— Tyllenvane d'Orien, dragonmarked scion arguing to change the symbol of House Orien from the unicorn to the pegasus</span></p></div></div></div>",
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p><span style=\"font-family:宋体\">被称为天马的白翼之马翱翔于天际，正是那幅优美又壮丽的绝景。它们降落在坚实地面时，只会停留片刻以饮用山泉和洁净的湖水。任何声音或其他生物的响动都会惊吓到它们，使它们再一次飞向云端。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>高贵的坐骑Noble Mounts。</strong></em></span><span style=\"font-family:宋体\">天马是极其珍贵而又迅速可靠的坐骑，比狮鹫、骏鹰和飞龙更快更平稳。然而，这些野生又害羞的动物具有与类人生物相当的智力，所以无法以传统棒打加安抚的方式驯养。一匹天马必须由一位善良生物说服才能成为坐骑，而此时它也同时与其新同伴订下了一份终身的契约。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>生于诸位面Born of the Planes。</strong></em></span><span style=\"font-family:宋体\">天马的起源可以追溯到奔放之野的奥林匹亚林地Olympian Glades of Arborea，他们在那里翱翔于位面的天空中，并作为精灵众神忠诚的坐骑。而这些神灵也闻名于委派天马前往物质位面去帮助那些需要帮助的人们。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>天马之巢Pegasi Nests。</strong></em></span><span style=\"font-family:宋体\">天马的伴侣终生相伴，并在难以接近之地筑巢，然后一起生育下一代。</span></p></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\"><span style=\"font-family:宋体\"><em>“看！天马！它在空中翱翔时赛过巨龙。在我们之中只有最强大的人才敢奢望让一匹天马成为自己坐骑。你不觉得这与我们骏马的纹章特别般配吗？”</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 116.25pt 0pt 0pt;text-align:right\"><span style=\"font-family:宋体\"><em>泰伦维德奥利安 Tyllenvane d'Orien，龙纹后裔，欧瑞恩家族House Orien的骄傲</em></span></p></div></div></div>",
         "public": ""
       },
       "alignment": "混乱善良Chaotic Good",
@@ -590,12 +579,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -647,10 +636,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Pegasus",
+    "name": "天马 Pegasus (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -661,12 +652,9 @@
       "src": "systems/dnd5e/tokens/celestial/Pegasus.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -717,7 +705,7 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -741,7 +729,8 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 2
   },
   "items": [
     {
@@ -758,7 +747,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+6</span><span style=\"font-family:'STHeiti light'\">，触及</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">11</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">2d6+4</span><span style=\"font-family:'STHeiti light'\">）点钝击伤害。</span></p><p><em>Melee Weapon Attack:</em> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <em>Hit:</em> 11 ([[/damage 2d6 + 4 type=bludgeoning]]) damage.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+6</span><span style=\"font-family:'STHeiti light'\">，触及</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">11</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">[[/damage 2d6 + 4 type=bludgeoning]]</span><span style=\"font-family:'STHeiti light'\">）点钝击伤害。</span></p></div>",
           "chat": ""
         },
         "range": {
@@ -792,7 +781,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -826,7 +816,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -840,15 +831,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -865,7 +860,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -873,7 +869,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -884,18 +879,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "hooves",
@@ -913,12 +956,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -934,7 +975,8 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -945,11 +987,15 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null,
-        "mastery": ""
+        "mastery": "",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -985,9 +1031,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,

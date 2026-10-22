@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
   "system": {
     "description": {
-      "value": "<p>当你自身回合内使用契约武器执行攻击动作时，你可以发动两次攻击而非一次。</p>",
+      "value": "<p> <em>5</em><em>级，刃之魔契</em></p>\n<p> 当你自身回合内使用契约武器执行攻击动作时，你可以发动两次攻击而非一次。</p>",
       "chat": ""
     },
     "source": {
@@ -23,15 +23,18 @@
       "value": "class",
       "subtype": "eldritchInvocation"
     },
-    "requirements": "邪术师等级 5， 刃之魔契",
+    "requirements": "魔契师等级 5，刃之魔契",
     "activities": {},
-    "identifier": "-",
-    "advancement": [],
+    "identifier": "eldritch-invocations-thirsting-blade",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": 5,
-      "repeatable": false
+      "repeatable": false,
+      "items": [
+        "feat:pact-of-the-blade"
+      ]
     },
     "properties": [
       "mgc"
@@ -41,14 +44,7 @@
   "folder": "o5aPffxN3VG2SeQa",
   "sort": 800000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -71,9 +67,9 @@
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757419204289,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

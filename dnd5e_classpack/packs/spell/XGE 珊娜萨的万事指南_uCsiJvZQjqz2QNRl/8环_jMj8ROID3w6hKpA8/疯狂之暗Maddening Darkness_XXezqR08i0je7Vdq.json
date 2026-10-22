@@ -30,25 +30,15 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "dae": {
       "macro": {
         "name": "疯狂之暗Maddening Darkness",
         "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",
         "type": "script",
         "scope": "global",
-        "command": "if (args[0].macroPass === \"preActiveEffects\" || args[0].tag === \"OnUse\") {\n  return await game.modules.get(\"ActiveAuras\").api.AAHelpers.applyTemplate(args);\n}",
-        "author": "WqWGW8MuBm7BNHxt",
+        "command": "",
+        "author": "dvg25zW2MvzsvMOU",
         "ownership": {
           "default": 3
         },
@@ -70,77 +60,10 @@
     }
   },
   "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",
-  "effects": [
-    {
-      "name": "疯狂之暗Maddening Darkness",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.XXezqR08i0je7Vdq",
-      "duration": {
-        "rounds": 10,
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "disabled": false,
-      "_id": "l4ELovLtpTpdSwgb",
-      "changes": [
-        {
-          "key": "flags.midi-qol.OverTime",
-          "mode": 2,
-          "value": "turn=start, label=疯狂之暗Maddening Darkness, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=8d8, damageType=psychic, saveDamage=halfdamage, rollMode=publicroll, allowIncapacitated=true",
-          "priority": 20
-        }
-      ],
-      "description": "",
-      "transfer": false,
-      "statuses": [],
-      "flags": {
-        "dae": {
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": true,
-          "durationExpression": "",
-          "macroRepeat": "none",
-          "specialDuration": [],
-          "enableCondition": "",
-          "disableCondition": ""
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "tint": "#ffffff",
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
-        "createdTime": null,
-        "modifiedTime": 1786655499041,
-        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",
-      "type": "base",
-      "system": {},
-      "sort": 0,
-      "_key": "!items.effects!XXezqR08i0je7Vdq.l4ELovLtpTpdSwgb"
-    }
-  ],
+  "effects": [],
   "system": {
     "description": {
-      "value": "<p>魔法黑暗从范围内你指定的一点延伸至半径60尺的球形范围，直到法术结束。黑暗会蔓延过拐角。生物的黑暗视觉不能看穿这片黑暗。非魔法的光源，以及8环和8环以下法术创造的光亮不能照亮这片区域。<br />尖叫声，低语声，以及疯狂的大笑声时不时能从球形范围内听见。每当一名生物在范围内开始回合，它必须进行一次感知豁免，失败时将受到8d8精神伤害，成功则只承受一半。</p>",
+      "value": "<p>魔法黑暗从范围内你指定的一点延伸至半径 60 尺的球形范围，直到法术结束。黑暗会蔓延过拐角。生物的黑暗视觉不能看穿这片黑暗。非魔法的光源，以及八环和八环以下法术创造的光亮不能照亮这片区域。</p><p>尖叫声，低语声，以及疯狂的大笑声时不时能从球形范围内听见。每当一名生物在范围内开始回合，它必须进行一次感知豁免，失败时将受到[[/damage 8d8 type=psychic]]{8d8}心灵伤害，成功则只承受一半。</p>",
       "chat": ""
     },
     "source": {
@@ -156,7 +79,8 @@
     },
     "duration": {
       "value": "10",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -168,7 +92,8 @@
         "type": "sphere",
         "size": "60",
         "contiguous": false,
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -189,10 +114,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -218,26 +139,43 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "l4ELovLtpTpdSwgb"
+            "_id": "l4ELovLtpTpdSwgb",
+            "uuid": null,
+            "level": {},
+            "_stats": {
+              "coreVersion": "14.368",
+              "systemId": "dnd5e",
+              "systemVersion": "6.0.5",
+              "createdTime": null,
+              "modifiedTime": 1786655499041,
+              "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -267,7 +205,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -275,29 +214,267 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
           "automationOnly": false,
-          "otherActivityCompatible": true,
+          "otherActivityCompatible": false,
           "identifier": "",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "rollAs": "target"
+        },
+        "otherActivityId": "none",
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": true,
+          "dispositionFilter": 0,
+          "excludeSource": false,
+          "oncePerTurn": false,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": [
+            {
+              "trigger": "turnStart",
+              "action": "useActivity",
+              "targetId": "豁免"
+            }
+          ]
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "name": ""
+      },
+      "OWp7deoUXWJ5q2KL": {
+        "type": "save",
+        "name": "",
+        "_id": "OWp7deoUXWJ5q2KL",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "",
+          "override": true,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 8,
+              "denomination": 8,
+              "bonus": "",
+              "modifiers": [],
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": true,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
           "postRemoveConditionText": ""
         },
-        "otherActivityId": "none"
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
-    "identifier": "maddening-darkness"
+    "identifier": "maddening-darkness",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -306,8 +483,8 @@
   "sort": 7900000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711692207107,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

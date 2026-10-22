@@ -2,14 +2,14 @@
   "_id": "eXk4FM2eHvy3WS67",
   "name": "逝者遗物Tokens Of The Departed",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Warlock_Haunt.png",
+  "img": "icons/equipment/neck/amulet-simple-rough-teal.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>当生命终结于你的眼前，你可从离去的灵魂中抓取出一小片其生命精华的具现化象征：当你30尺内一个可见生物死亡时，你可以以一个反应张开一只空手，使得一个微型的饰物——一个魂器——出现在你的掌心。DM决定魂器的外观或者让你骰玩家手册中的饰品表来决定。你最多可以同时持有魂器的数目等同于你熟练加值的魂器且当你所持魂器数目达到上限时你不再能制造新的魂器。</p>\n<p>你能以下列方式使用魂器：</p>\n<ul>\n<li>当你随身携带着魂器时，由于你的生命力受到了魂器内蕴藏的生命精华的强化，你在死亡豁免检定和体质豁免检定上具有优势。</li>\n<li>当你在你的回合里造成偷袭伤害时，你可以销毁你的一个魂器，在不消耗能力使用次数的情况下，瞬间使用墓穴惊嚎。</li>\n<li>以一个动作，你可以销毁一个你的魂器，无论它在哪里。若你如此做，你可以向与魂器相关的灵体一个问题。灵体将出现在你面前并以它生前所知的一种语言回答。它并无义务对你诚实，并由于其对自由的渴望将回答地尽量简略。DM应当决定在这个灵体只知道他生前所知。</li>\n</ul>",
+      "value": "<p>当生命终结于你的眼前，你可从离去的灵魂中抓取出一小片其生命精华的具现化象征：当你30尺内一个可见生物死亡时，你可以以一个反应张开一只空闲的手，使得一个微型的饰品出现在你的掌中，那是一个魂器。DM决定魂器的外观，或者让你骰《玩家手册》中的饰品表来决定它的外观。</p>\n<p>你最多可以同时持有你的熟练加值个的魂器，当你所持魂器数目达到上限时你不再能制造新的魂器。</p>\n<p>你能以下列方式使用魂器：</p>\n<ul> <li> 当你随身携带着魂器时，由于你的生命力受到了魂器内蕴藏的生命精华的强化，你在死亡豁免和体质豁免上具有优势。 </li><li> 当你在你的回合里造成偷袭攻击伤害时，你可以销毁你的一个魂器，在不消耗能力使用次数的情况下，立刻使用墓穴惊嚎特性。 </li><li> 以一个动作，你可以销毁一个你的魂器（无论它在哪里）。当你如此做时，你可以向与魂器相关的灵魂一个问题。灵魂将出现在你面前并以它生前所知的一种语言回答。它并无义务对你诚实，并由于其对自由的渴望将回答地尽可能的简略。这个灵魂应当只会知道他生前所知的事实，不过一切以你的DM为准。</li></ul>",
       "chat": ""
     },
     "source": {
@@ -42,13 +42,15 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -65,7 +67,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": "spec"
+            "units": "spec",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -87,17 +90,105 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "tokens-of-the-departed",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 9,
+      "repeatable": false,
+      "items": [
+        "subclass:phantom"
+      ]
     },
     "properties": []
   },
@@ -105,14 +196,7 @@
   "folder": "AC7FtXGN0G19Ba8I",
   "sort": 34900000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 2,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -130,18 +214,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "tokensOfTheDeparted",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757420910468,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

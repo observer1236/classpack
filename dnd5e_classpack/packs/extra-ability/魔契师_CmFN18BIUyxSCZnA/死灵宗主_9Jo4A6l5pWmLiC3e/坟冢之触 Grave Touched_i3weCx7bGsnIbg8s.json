@@ -2,14 +2,14 @@
   "_id": "i3weCx7bGsnIbg8s",
   "name": "坟冢之触 Grave Touched",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/spell_animarevendreth_missile.jpg",
+  "img": "icons/magic/death/hand-withered-gray.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>你宗主的力量对你的身体和魔法产生了深远的影响。你不需要吃、喝、呼吸。</p>\n<p>此外，每你的回合一次，当你用攻击检定命中一个生物并对该生物投掷伤害骰时，你可以将伤害类型替换为暗蚀伤害。当你使用@UUID[Compendium.dnd5e_classpack.extra-ability.39YlsyoJXTtDSGf4]{战栗形态}时，你可以在确定目标受到该暗蚀伤害的数值时，额外投掷一枚伤害骰。</p>",
+      "value": "<p>你宗主的力量对你的身体和魔法产生了深远的影响。你不需要吃、喝、呼吸。</p>\n<p>此外，每个你的回合中一次，当你用攻击检定命中一个生物并对该生物投掷伤害骰时，你可以将伤害类型替换为暗蚀伤害。当你使用@UUID[Compendium.dnd5e_classpack.extra-ability.Item.39YlsyoJXTtDSGf4]{战栗形态}时，你可以在决定目标受到该暗蚀伤害的数值时，额外投掷一枚伤害骰。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,15 @@
     },
     "requirements": "死灵宗主等级 6",
     "activities": {},
-    "identifier": "-grave-touched",
-    "advancement": [],
+    "identifier": "grave-touched",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "9Jo4A6l5pWmLiC3e",
   "sort": 37300000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -62,18 +58,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "graveTouched",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757415271945,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

@@ -2,14 +2,14 @@
   "_id": "E0L7yAUqsq3jghRa",
   "name": "不懈 Tireless Spirit",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/000151.png",
+  "img": "icons/magic/life/heart-glowing-red.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         从10级开始，当你投先攻且没有剩余的@UUID[Compendium.dnd5e_classpack.extra-ability.8h2z8Kfz7wXyIvwM]{战意}使用次数时，你重新获得一次使用机会。</p>",
+      "value": "<p>10级起，当你投掷先攻时，若你@UUID[Compendium.dnd5e_classpack.extra-ability.Item.8h2z8Kfz7wXyIvwM]{战意}的使用次数已被用尽时，你将重获一次使用次数。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "武士等级 10",
     "activities": {},
     "identifier": "-tireless-spirit",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 10,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -63,17 +64,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757682364619,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -2,14 +2,14 @@
   "_id": "yTvrp3vJbgTI2DnP",
   "name": "调节密度 Adjust Density",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/003126.png",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         2级起，使用一个动作，你能魔法地改一个物件或生物的重量，目标必须变位于你30尺内，且你能看见目标。物件和生物必须为大型或更小的。目标的重量减半或者翻倍，持续时间至多一分钟，或在你的专注终止（如同你专注法术一样）时提前结束。</p>\n<p>         当一个生物的重量通过该效果减半时，该生物的移动速度增加10尺，跳跃距离变为正常的两倍，并且在进行力量检定或者力量豁免时具有劣势。当一个生物的重量通过该效果翻倍时，该生物的移动速度减少10尺，并且在进行力量检定或者力量豁免时具有优势。</p>\n<p>         当在该职业到达10级时，你能对一个巨型或更小的物件或生物使用本特性。</p>",
+      "value": "<p>以一个动作，你能魔法性的修改你周围30尺内的、一个你可见的物件或生物的重量。目标物件或目标生物的体型必须为大型或更小。你将目标的重量减半或翻倍，持续至多一分钟，若你的专注终止（如同你正专注于一个法术一样），它将提前结束。</p>\n<p>生物的重量因此特性减半期间，该生物的移动速度增加10尺，其跳跃的距离变为正常的两倍，但在进行力量检定或力量豁免时具有劣势。</p>\n<p>生物的重量因此特性翻倍期间，该生物的移动速度减少10尺，但在进行力量检定或力量豁免时具有优势。</p>\n<p>当你在此职业到达第10级时，你可以对巨型或更小的物件或生物使用本特性。</p>",
       "chat": ""
     },
     "source": {
@@ -42,14 +42,16 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "1",
           "units": "minute",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -66,7 +68,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -88,32 +91,113 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": true
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "-adjust-density",
-    "advancement": [],
+    "identifier": "adjust-density",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 2,
+      "repeatable": false,
+      "items": []
     },
-    "properties": []
+    "properties": [
+      "mgc"
+    ]
   },
   "effects": [],
   "folder": "e8uUlfrnkbMmJzV8",
   "sort": 51800000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -131,18 +215,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "adjustDensity",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757420910468,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

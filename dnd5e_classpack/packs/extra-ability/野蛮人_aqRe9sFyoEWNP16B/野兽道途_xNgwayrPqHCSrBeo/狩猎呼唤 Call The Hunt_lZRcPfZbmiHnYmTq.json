@@ -1,11 +1,11 @@
 {
   "_id": "lZRcPfZbmiHnYmTq",
-  "name": "狩猎呼唤 Call The Hunt",
+  "name": "狩猎之唤 Call The Hunt",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ABILITY_HUNTER_BESTIALDISCIPLINE.png",
+  "img": "icons/creatures/mammals/wolf-howl-moon-black.webp",
   "system": {
     "description": {
-      "value": "<p>你内在的野兽已经成长的如此强大，你可以把你的其狂暴的战意散播到他人身上，并且这些加入你狩猎的人也会让你更加的强韧。当你进入@UUID[Compendium.dnd5e_classpack.class-abilityphb.gLNFWGL05O0FUNTD]{狂暴}时，你可以选择你视野中，30尺以内，一定数量的（小于等于你的体质调整值，大于等于1），自愿接受该特性的生物。每个加入你狩猎的生物会给你5临时生命值。直到你的狂暴终止前，加入你狩猎的生物每回合一次进行攻击检定并造成伤害时，可以增加一个[[/r d6]]的伤害骰子。</p>\n<p>你每天可以使用该能力的次数等于你的熟练加值。每完成一次长休之后你补充齐所有已消耗的使用次数。</p>",
+      "value": "<p>你内心的那匹强大野兽使你能激发盟友的凶性，并强化自己的耐性。当你进入@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.gLNFWGL05O0FUNTD]{狂暴}时，你可以选择你周围30尺内的数个你可见的其他自愿生物，其数量至多等同于你的你的体质调整值（至少1）个。</p>\n<p> 你获得等同于接受狩猎之唤特性的生物数量五倍点的临时生命值。直至你的狂暴结束前，被选择的这些生物可以分别在每个自己的回合中使用一次以下能力：</p>\n<ul> <li> 当攻击检定命中一个目标并造成伤害时，可以掷一个[[/r d6]]{d6}，并在伤害中获得骰出结果的加值。</li></ul>\n<p> 你能使用狩猎之唤的次数等于你的熟练加值次，完成一次长休后，你重获所有已消耗的次数。</p>",
       "chat": ""
     },
     "source": {
@@ -59,13 +59,15 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -82,7 +84,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -117,19 +120,107 @@
                 "mode": "whole",
                 "number": null,
                 "formula": ""
-              }
+              },
+              "modifiers": []
             }
           ]
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
     "identifier": "-call-the-hunt",
-    "advancement": [],
+    "advancement": {},
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 14,
+      "repeatable": false,
+      "items": [
+        "subclass:path-of-the-beast"
+      ]
     },
     "properties": []
   },
@@ -159,29 +250,16 @@
       "itemCondition": "",
       "effectCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 5,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "callTheHunt",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
   "ownership": {
     "default": 0
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

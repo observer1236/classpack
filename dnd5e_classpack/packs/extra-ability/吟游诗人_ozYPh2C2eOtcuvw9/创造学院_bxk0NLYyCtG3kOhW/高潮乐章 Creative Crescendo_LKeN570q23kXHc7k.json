@@ -1,15 +1,15 @@
 {
   "_id": "LKeN570q23kXHc7k",
-  "name": "高潮乐章 Creative Crescendo",
+  "name": "渐强创音 Creative Crescendo",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ability_priest_wordsofmeaning.png",
+  "img": "icons/magic/light/explosion-star-glow-yellow.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>当你使用@UUID[Compendium.dnd5e_classpack.extra-ability.SoROktB6wHO25o9l]{造物表演}特性创造物品时，你可以一次性不只一件物品。你能一次创造的物品数量等于你的魅力调整值（最低为两件物品）。如果同时创造的物品总数超过了这个数值，那么你可以选择你先前创造的物品中的哪几件将会消失不见。你所创造的物品中只有一件可以达到你创造物品的大小峰值，其他的必须是小型或者微型。</p>\n<p>你的@UUID[Compendium.dnd5e_classpack.extra-ability.SoROktB6wHO25o9l]{造物表演}特性不再有使用所创造物品的价值限制。</p>",
+      "value": "<p>当你使用@UUID[Compendium.dnd5e_classpack.extra-ability.Item.SoROktB6wHO25o9l]{造物表演}特性创造物品时，你可以一次性创造多件物品，其数量等于你的魅力调整值（最低为两件物品）。如果你创造新的物品后，物品的总数超过了这个上限，那么你可以选择你先前创造的物品中的哪几件将会消失不见。你所创造的物品中只有一件可以达到你创造物品的大小峰值，其他的必须是小型或者微型。</p>\n<p>你的创造表演特性不再会有创造物品的价值限制。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     "requirements": "创造学院等级 14",
     "activities": {},
     "identifier": "-creative-crescendo",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 14,
+      "repeatable": false,
+      "items": [
+        "subclass:college-of-creation"
+      ]
     },
     "properties": []
   },
@@ -63,17 +66,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757408842406,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

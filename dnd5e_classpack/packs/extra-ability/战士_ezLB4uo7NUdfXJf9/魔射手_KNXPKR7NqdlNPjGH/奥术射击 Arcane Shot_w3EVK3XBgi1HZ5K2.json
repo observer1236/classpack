@@ -2,14 +2,14 @@
   "_id": "w3EVK3XBgi1HZ5K2",
   "name": "奥术射击 Arcane Shot",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_ZenArchery.png",
+  "img": "icons/skills/ranged/arrow-flying-spiral-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         3级时，你学会在射击时施放一些特殊的魔法效果。当你获得这个特性时，你学会两种你选择的@UUID[Compendium.dnd5e_classpack.extra-ability.HqwYiStgiunCmEG7]{奥术射击选项}。</p>\n<p>         每个回合，当你以一个攻击动作的一部分来用@UUID[Compendium.dnd5e_classpack.itempack.567A278AA577CF7D]{短弓}或者@UUID[Compendium.dnd5e_classpack.itempack.3EE9A77945B5824F]{长弓}射出箭矢时，你可以为你的箭矢挑选一个你拥有的奥术射击选项。你可以在箭矢击中一名角色时决定是否使用该选项，除非该选项不包括一个攻击骰。你拥有两次使用该特性的机会，而且你在完成一次短休或长休后重新获得所有被消耗的的使用次数。</p>\n<p>         当你到达一定战士等级时（7级、10级、15级、18级）你会获得一个额外的你选择的奥术射击选项。所有的选项在你成为18级战士时都会提升。</p>",
+      "value": "<p>在3级时，你学会了在射击时为箭矢施放一些特殊的魔法效应。当你获得这个特性时，你习得两种由你选择的@UUID[Compendium.dnd5e_classpack.extra-ability.Item.HqwYiStgiunCmEG7]{奥术射击选项}（见下方的“奥术射击选项”一节）。</p>\n<p>每回合一次，当你在攻击动作中，来用@UUID[Compendium.dnd5e_classpack.itempack.Item.567A278AA577CF7D]{短弓}或者@UUID[Compendium.dnd5e_classpack.itempack.Item.3EE9A77945B5824F]{长弓}射出箭矢时，你可以为你的箭矢挑选一个你拥有的奥术射击选项并适用。除非一个选项写明了它不需要攻击检定，否则你均可以在射出箭矢命中生物后再决定是否使用选项。你拥有两次使用此能力的机会，而且你在完成一次短休或长休后重新获得所有已被消耗的使用次数。</p>\n<p>当你到达特定战士等级时，你可以习得一个额外的奥术射击选项：7级，10级，15级和18级。而所有的选项在你战士等级达到18级时将会获得强化。</p>",
       "chat": ""
     },
     "source": {
@@ -46,7 +46,8 @@
           "targets": [
             {
               "type": "itemUses",
-              "value": "1"
+              "value": "1",
+              "scaling": {}
             }
           ],
           "scaling": {
@@ -56,13 +57,15 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -78,7 +81,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -103,19 +107,105 @@
         "sort": 0,
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": true
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-arcane-shot",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
-    "properties": []
+    "properties": [
+      "mgc"
+    ]
   },
   "effects": [],
   "folder": "KNXPKR7NqdlNPjGH",
@@ -145,19 +235,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 2,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757403095401,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

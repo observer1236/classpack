@@ -2,14 +2,14 @@
   "_id": "fP9l4SdYuSPi0ofQ",
   "name": "增强联结 Expansive Bond",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_AuraMastery.png",
+  "img": "icons/magic/control/energy-stream-link-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>你的@UUID[Compendium.dnd5e_classpack.extra-ability.39vgDk1ARYUxfuoE]{勇气联结}和@UUID[Compendium.dnd5e_classpack.extra-ability.viW2PkM3OfKDK0o9]{保护联结}的生效范围变为联结生物在彼此60尺内。此外，当生物使用保护联结来为其他人承受伤害时，该生物对那次伤害具有抗性。</p>",
+      "value": "<p>你的@UUID[Compendium.dnd5e_classpack.extra-ability.Item.39vgDk1ARYUxfuoE]{勇气联结}和@UUID[Compendium.dnd5e_classpack.extra-ability.Item.viW2PkM3OfKDK0o9]{保护联结}的现在能在两个联结生物之间距离不超过60尺时被应用。此外，当一个生物使用保护联结来为其他人承受伤害时，还能被视为具有对那次伤害的抗性。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     "requirements": "和平领域等级 17",
     "activities": {},
     "identifier": "-expansive-bond",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 17,
+      "repeatable": false,
+      "items": [
+        "subclass:peace-domain"
+      ]
     },
     "properties": []
   },
@@ -63,24 +66,13 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "expansiveBond",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757414423757,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

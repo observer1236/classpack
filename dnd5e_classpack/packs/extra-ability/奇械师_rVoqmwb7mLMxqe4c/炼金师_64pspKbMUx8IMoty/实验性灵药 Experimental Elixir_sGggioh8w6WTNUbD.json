@@ -2,14 +2,14 @@
   "_id": "sGggioh8w6WTNUbD",
   "name": "实验性灵药 Experimental Elixir",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Racial_BetterLivingThroughChemistry.png",
+  "img": "icons/consumables/potions/bottle-bulb-corked-green.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         从第3级起，每当你完成一次长休，你能在一个你接触的空瓶中魔法性的制造出一剂实验性灵药。当某人饮用灵药时，通过实验性灵药表来掷骰决定灵药的效果。以一个动作，一个生物能自己饮用灵药，或是将灵药给一个失能生物饮用。</p>\n<p>         你需要拥有@UUID[Compendium.dnd5e_classpack.itempack.EFBBAE8B63126638]{炼金工具}才能制造实验性灵药，你通过此特征创造的所有灵药会一直存在到被饮用，或是你一下次长休结束时。</p>\n<p>         当你达到某些特定等级时，将能够在长休结束时制造更多灵药：6级时2剂，15级时3剂。每剂灵药都需要掷骰决定效果。每一剂灵药都需要用独立的烧瓶盛放。</p>\n<p>         你能通过消耗一枚1环或更高环的法术位来制造额外的实验性灵药。要这么做的话，你需要以一个动作接触一个空烧瓶来制造灵药，然后从实验性灵药表中选择这剂灵药的效果。</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<th>[[/r d6]]</th>\n<th>效果</th>\n</tr>\n<tr>\n<td>1</td>\n<td>治疗。饮用者恢复[[/r 2d4]]+你智力调整值的生命值。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>疾速。饮用者在1小时内速度增加10尺。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>韧性。饮用者在10分钟内AC+1。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>勇气。饮用者在1分钟内，能够在每个攻击检定和豁免检定中增加一个[[/r d4]]。</td>\n</tr>\n<tr>\n<td>5</td>\n<td>飞行。饮用者在10分钟内获得10尺飞行速度。</td>\n</tr>\n<tr>\n<td>5</td>\n<td>变形。饮用者的身体像被施展了法术@UUID[Compendium.dnd5e_classpack.spell.RzU9orr1mmUeZOcl]{变身术 Alter Self}。饮用者选择其变化效应，效果持续10分钟。</td>\n</tr>\n</tbody>\n</table>",
+      "value": "<p>每当你完成一次长休，你能在一个你接触的空的 扁瓶flask 中魔法性的制造出一瓶实验性灵药通过实验性灵药表来掷骰决定这瓶灵药在被某人饮用时的效果。</p>\n<p>生物能以一个动作饮用这瓶灵药、或是将灵药灌给一个失能生物饮用。</p>\n<p>你能通过消耗一枚1环或更高环的法术位来制造额外的实验性灵药。</p>\n<p>此时，你以一个动作接触一个空的 扁瓶flask ，在其中充入灵药，然后从实验性灵药表中选择这瓶灵药的效果。</p>\n<p>你必须要拥有@UUID[Compendium.dnd5e_classpack.itempack.Item.EFBBAE8B63126638]{炼金工具}才能制造实验性灵药，你通过此特性创造的任何灵药会一直存在，直到被饮用、或是你的下一次长休结束时。</p>\n<p>当你在本职业达到某些特定等级时，你将能够在长休结束时制造更多灵药：6级时2瓶，15级时3瓶。</p>\n<p>每一瓶灵药都需要掷骰决定效果，且都需要用独立的 扁瓶flask 盛放。</p>\n<h4><strong>实验性灵药</strong></h4>\n<table><thead><tr><th><strong>[[/r d6]]{d6}</strong></th><th><strong>效果</strong></th></tr></thead><tbody><tr><td> <p>1</p></td><td><strong>治疗。</strong>饮用者恢复等同于 [[/r 2d4]]{2d4}+你智力调整值 的生命值。</td></tr><tr><td> <p>2</p></td><td><strong>疾速。</strong>饮用者的速度增加10尺，持续1小时。</td></tr><tr><td> <p>3</p></td><td><strong>韧性。</strong>饮用者的AC获得+1加值，持续10分钟。</td></tr><tr><td> <p>4</p></td><td><strong>气魄。</strong>饮用者在接下来的一分钟内，能够在每个攻击检定与豁免检定中投掷一枚[[/r d4]]{d4}并将结果加入到检定中。</td></tr><tr><td> <p>5</p></td><td><strong>飞行。</strong>饮用者获得10尺飞行速度，持续10分钟。</td></tr><tr><td> <p>6</p></td><td><strong>变形。</strong>饮用者的身体产生如同受到法术<em>@UUID[Compendium.dnd5e_classpack.spell.Item.eTtyu3Vpu1sZupC8]{变身术}Alter Self</em>一样的变化。法术的变化具体怎样由饮用者决定，该效果会持续10分钟。</td></tr></tbody></table>",
       "chat": ""
     },
     "source": {
@@ -57,17 +57,19 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "units": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -79,7 +81,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -101,44 +104,119 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": true
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-experimental-elixir",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
-    "properties": []
+    "properties": [
+      "mgc"
+    ]
   },
   "effects": [],
   "folder": "64pspKbMUx8IMoty",
   "sort": 46400000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "experimentalElixir",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

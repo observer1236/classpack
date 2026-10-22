@@ -5,7 +5,7 @@
   "img": "icons/consumables/plants/leaf-veins-glowing-green.webp",
   "system": {
     "description": {
-      "value": "<p>你学会两个来自@UUID[Compendium.dnd5e_classpack.spell-table.VkCAjMpSgvgRIEDA]{德鲁伊法术表}的你自选的戏法。它们对你视作游侠法术，感知是你施展他们的施法关键属性。当你升级时，你可以将其中一个戏法替换为德鲁伊法术列表中的另一个戏法。</p>",
+      "value": "<p> 你学会两个来自@UUID[Compendium.dnd5e_classpack.spell-table.JournalEntry.VkCAjMpSgvgRIEDA]{德鲁伊法术列表}的你自选的戏法。它们对你视作游侠法术，感知是你施展他们的施法属性。当你升级时，你可以将其中一个戏法替换为德鲁伊法术列表中的另一个戏法。 </p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     },
     "requirements": "游侠等级 2",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "fighting-style-druidic-warrior",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 2,
+      "repeatable": false,
+      "items": [
+        "class:ranger"
+      ]
     },
     "properties": []
   },
@@ -39,12 +42,7 @@
   "folder": "642mErmNZtsY0W10",
   "sort": 30900000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -67,9 +65,9 @@
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757864842041,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

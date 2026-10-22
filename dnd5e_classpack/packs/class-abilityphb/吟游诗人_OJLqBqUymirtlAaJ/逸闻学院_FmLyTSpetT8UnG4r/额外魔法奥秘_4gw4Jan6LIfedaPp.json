@@ -1,15 +1,15 @@
 {
   "_id": "4gw4Jan6LIfedaPp",
-  "name": "额外魔法奥秘",
+  "name": "额外魔法奥秘 Additional Magical Secrets",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/INV_Scroll_06.png",
+  "img": "icons/sundries/scrolls/scroll-magical-yellow.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第6级时，你从任意职业的法术列表里选择两个法术加入已知法术中。你选择的法术必须是你当前等级可以施展的环阶或戏法。所选法术对你而言视为吟游诗人法术，但不包含在“@UUID[Compendium.dnd5e_classpack.class-table.s2sjbxLGthOUbzcA]{吟游诗人职业表}”上“已知法术”一栏的所记录的数量之内。</p>",
+      "value": "<p> 第6级时，你从任意职业的法术列表里选择两个法术加入已知法术中。你选择的法术必须是你当前等级可以施展的环阶或戏法。所选法术对你而言视为吟游诗人法术，但不包含在“@UUID[Compendium.dnd5e_classpack.class-table.JournalEntry.s2sjbxLGthOUbzcA]{诗人职业表}”上“已知法术”一栏的所记录的数量之内。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "轶闻学院等级 6",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "additional-magical-secrets",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": [
+        "subclass:college-of-lore"
+      ]
     },
     "properties": []
   },
@@ -39,12 +42,7 @@
   "folder": "FmLyTSpetT8UnG4r",
   "sort": 7700000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +62,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757093073673,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

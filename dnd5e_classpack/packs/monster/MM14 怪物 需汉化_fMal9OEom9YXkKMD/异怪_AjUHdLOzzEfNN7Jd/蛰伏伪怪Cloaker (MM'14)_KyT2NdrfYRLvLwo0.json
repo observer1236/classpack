@@ -1,5 +1,5 @@
 {
-  "name": "蛰伏伪怪Cloaker (MM'14)",
+  "name": "斗篷怪 Cloaker (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757246451148,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "KyT2NdrfYRLvLwo0",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Cloaker.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Cloaker.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 17,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 15,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 13,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 14,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,12 @@
     },
     "attributes": {
       "ac": {
-        "calc": "natural",
-        "flat": 14
+        "flat": 14,
+        "calcs": [
+          "natural"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +478,29 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": 40,
-        "swim": null,
-        "walk": 10,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "10",
+          "fly": "40"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 60,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,18 +533,19 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>    蛰伏伪怪Cloaker因其形似深色皮斗篷Cloak而得名。这些隐匿的掠食者潜伏在偏僻的地城和洞穴中，随时准备捕杀在黑暗中漫步独行或受伤的猎物。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>伪装潜伏者Camouflaged Lurkers。</strong></em>蛰伏伪怪的身体跟鱼一样由软组织和肌肉组成。它只要展开尾和鳍就能飞起，并隐秘的穿梳于洞窟的黑暗与阴影中，如同鱼贴着海床畅游水中一般。它背部长着两排纽扣状的黑色圆形眼斑，肩部乳白色的爪子就像是斗篷头罩的骨质扣子。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    蛰伏伪怪展开身体飞行攻击时，会露出其灰白的腹部，并暴露出其掠食者的本性。只见其两排利齿上一双红眼隐隐发光，长长的尾巴则在身后来回挥舞。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>投机掠食者Opportunistic Predators。</strong></em>蛰伏伪怪狩猎时会保持在安全距离的阴影中滑翔，并跟随那些穿行于幽暗地域的其他生物。它们尾随类人生物的团队，并在其经历战斗后趁机捕食队伍里的伤员。它们也会追猎幽暗地域中的兽群，以捕食其中的老弱病残者。</p></div></div><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    蛰伏伪怪会迅速出击，并尽快的包裹、吞食猎物。虽然鲜少直面过于危险或是成群的敌人，但其进食时依然懂得用鞭子般灵活的尾巴进行防御。而它们还可以制造自身的幻象分身以作为一种额外的防御手段。</p><p><em style=\"mso-bidi-font-style:normal\"><strong>    扰心低吟Haunting Moan。</strong></em>蛰伏伪怪的思维在其他生命看来都极其怪异，而且它们彼此间还会用大多生物无法听见的次声波进行交流。当这种次声的强度提高时，蛰伏伪怪就能发出能被听见的低吟，并以此引发其他生物内心的恐惧与绝望。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>秘密集会Cloaker Conclaves。</strong></em>蛰伏伪怪偏好独居，有时也会以防御或交流情报为目的召来同类。其交流的主要内容是关于诸如新威胁、合适的狩猎场以及影响栖息地的新情况等。集会结束后，蛰伏伪怪们再次分道扬镳。</p><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Cloakers earned their names for the resemblance they bear to dark leathery cloaks. Lurking in remote dungeons and caves, these stealthy predators wait to slay lone or injured prey stumbling through the darkness.</p><div data-roll-name-ancestor=\"Camouflaged Lurkers\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\"><em><strong>Camouflaged Lurkers.</strong></em></span> Like a stingray, a cloaker's body is composed of cartilage and muscle. With its tail and fins unfurled, it flies through darkness and lurks among the shadows of caverns the same way a stingray glides through water and hides on the ocean floor. Parallel rows of round, black eyespots run along its back like buttons, and the ivory-colored claws on its cowl resemble bone clasps.</p><p>When a cloaker unfurls and moves to attack, it reveals its pale underside and makes its true nature evident. Red eyes glow above rows of sharp teeth, and a long pendulous tail whips behind it.</p></div><div data-roll-name-ancestor=\"Opportunistic Predators\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\"><em><strong>Opportunistic Predators.</strong></em></span> When hunting, cloakers glide through the shadows at a safe distance behind groups of other creatures traversing the Underdark. They follow parties of humanoids to prey on the wounded after a battle, or pursue herds of Underdark beasts, attacking the sick, the weak, or the straggling.</p><p>Cloakers strike quickly and consume their meals as swiftly as possible, enveloping and devouring their victims. While it feeds, a cloaker uses its swift, whiplike tail for defense, although it rarely takes a stand against dangerous foes or groups of creatures. As an added defense, cloakers can create illusory duplicates of themselves.</p></div><div data-roll-name-ancestor=\"Haunting Moan\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\"><em><strong>Haunting Moan.</strong></em></span> Cloakers' thoughts are alien to other life-forms, and they communicate with one another through subsonic moans inaudible to most creatures. At higher intensities, a cloaker's haunting moan becomes audible, evoking sensations of doom and dread in creatures that hear it.</p></div><div data-roll-name-ancestor=\"Cloaker Conclaves\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\"><em><strong>Cloaker Conclaves.</strong></em></span> Cloakers prefer isolation, but they sometimes convene with other cloakers for defense or to exchange information about new dangers, suitable hunting grounds, or developments that might affect their habitats. When this convergence is complete, the cloakers separate again.</p></div></div></div>",
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>    蛰伏伪怪Cloaker因其形似深色皮斗篷Cloak而得名。这些隐匿的掠食者潜伏在偏僻的地城和洞穴中，随时准备捕杀在黑暗中漫步独行或受伤的猎物。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>伪装潜伏者Camouflaged Lurkers。</strong></em>蛰伏伪怪的身体跟鱼一样由软组织和肌肉组成。它只要展开尾和鳍就能飞起，并隐秘的穿梳于洞窟的黑暗与阴影中，如同鱼贴着海床畅游水中一般。它背部长着两排纽扣状的黑色圆形眼斑，肩部乳白色的爪子就像是斗篷头罩的骨质扣子。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    蛰伏伪怪展开身体飞行攻击时，会露出其灰白的腹部，并暴露出其掠食者的本性。只见其两排利齿上一双红眼隐隐发光，长长的尾巴则在身后来回挥舞。</p></div><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>投机掠食者Opportunistic Predators。</strong></em>蛰伏伪怪狩猎时会保持在安全距离的阴影中滑翔，并跟随那些穿行于幽暗地域的其他生物。它们尾随类人生物的团队，并在其经历战斗后趁机捕食队伍里的伤员。它们也会追猎幽暗地域中的兽群，以捕食其中的老弱病残者。</p></div></div><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    蛰伏伪怪会迅速出击，并尽快的包裹、吞食猎物。虽然鲜少直面过于危险或是成群的敌人，但其进食时依然懂得用鞭子般灵活的尾巴进行防御。而它们还可以制造自身的幻象分身以作为一种额外的防御手段。</p><p><em style=\"mso-bidi-font-style:normal\"><strong>    扰心低吟Haunting Moan。</strong></em>蛰伏伪怪的思维在其他生命看来都极其怪异，而且它们彼此间还会用大多生物无法听见的次声波进行交流。当这种次声的强度提高时，蛰伏伪怪就能发出能被听见的低吟，并以此引发其他生物内心的恐惧与绝望。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>秘密集会Cloaker Conclaves。</strong></em>蛰伏伪怪偏好独居，有时也会以防御或交流情报为目的召来同类。其交流的主要内容是关于诸如新威胁、合适的狩猎场以及影响栖息地的新情况等。集会结束后，蛰伏伪怪们再次分道扬镳。</p>",
         "public": ""
       },
       "alignment": "混乱中立Chaotic Neutral",
@@ -584,12 +572,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -639,10 +627,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Cloaker",
+    "name": "斗篷怪 Cloaker (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -653,12 +643,9 @@
       "src": "systems/dnd5e/tokens/aberration/Cloaker.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1.5,
       "scaleY": 1.5,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -709,7 +696,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -733,7 +720,8 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 2
   },
   "items": [
     {
@@ -750,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>蛰伏伪怪发动两次攻击：一次啃咬，一次尾击。</p><p>The cloaker makes two attacks: one with its bite and one with its tail.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>蛰伏伪怪发动两次攻击：一次啃咬，一次尾击。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -764,7 +752,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "IatmEf4WFvwaw2Y4": {
             "_id": "IatmEf4WFvwaw2Y4",
@@ -781,20 +769,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -822,7 +815,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -830,7 +824,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -841,15 +834,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "multiattack",
@@ -858,7 +897,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -894,9 +934,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757183094317,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -920,7 +960,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中+6，触及5尺，单一生物。<em style=\"mso-bidi-font-style:normal\">命中：</em>10（2d6+3）点穿刺伤害，若目标为大型或更小体型，则蛰伏伪怪附着于目标身上。如果蛰伏伪怪的攻击具有优势，则附着到目标头部，并导致目标陷入目盲且在附着期间无法呼吸。附着时，蛰伏伪怪只能啃咬被附着的目标，且其攻击检定具有优势。蛰伏伪怪可以消耗5尺移动力脱离附着。任何生物（包括被附着的目标），都可以用动作进行一次DC 16的力量检定以尝试脱离附着。</p><p><em>Melee Weapon Attack:</em> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one creature. <em>Hit:</em> 10 ([[/damage 2d6 + 3 type=piercing]]) damage, and if the target is Large or smaller, the cloaker attaches to it. If the cloaker has advantage against the target, the cloaker attaches to the target's head, and the target is &amp;Reference[condition=blinded] and unable to breathe while the cloaker is attached. While attached, the cloaker can make this attack only against the target and has advantage on the attack roll. The cloaker can detach itself by spending 5 feet of its movement. A creature, including the target, can take its action to detach the cloaker by succeeding on a [[/save ability=str dc=16]] check.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中+6，触及5尺，单一生物。<em style=\"mso-bidi-font-style:normal\">命中：</em>10（[[/damage 2d6 + 3 type=piercing]]）点穿刺伤害，若目标为大型或更小体型，则蛰伏伪怪附着于目标身上。如果蛰伏伪怪的攻击具有优势，则附着到目标头部，并导致目标陷入目盲且在附着期间无法呼吸。附着时，蛰伏伪怪只能啃咬被附着的目标，且其攻击检定具有优势。蛰伏伪怪可以消耗5尺移动力脱离附着。任何生物（包括被附着的目标），都可以用动作进行一次DC 16的力量检定以尝试脱离附着。</p></div>",
           "chat": ""
         },
         "range": {
@@ -954,7 +994,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -988,7 +1029,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1002,15 +1044,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1027,7 +1073,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1035,7 +1082,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1046,18 +1092,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "bite",
@@ -1075,12 +1169,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1096,7 +1188,8 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1107,11 +1200,15 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null,
-        "mastery": ""
+        "mastery": "",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1147,9 +1244,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757183053903,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1173,7 +1270,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中+6，触及10尺，单一生物。<em style=\"mso-bidi-font-style:normal\">命中：</em>7（1d8+3）点挥砍伤害。</p><p><em>Melee Weapon Attack:</em> [[/r 1d20+6]]{+6} to hit, reach 10 ft., one creature. <em>Hit:</em> 7 ([[/damage 1d8 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中+6，触及10尺，单一生物。<em style=\"mso-bidi-font-style:normal\">命中：</em>7（[[/damage 1d8 + 3 type=slashing]]）点挥砍伤害。</p></div>",
           "chat": ""
         },
         "range": {
@@ -1207,7 +1304,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1241,7 +1339,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1255,15 +1354,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1280,7 +1383,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1288,7 +1392,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1299,18 +1402,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "tail",
@@ -1328,12 +1479,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1349,7 +1498,8 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1360,11 +1510,15 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null,
-        "mastery": ""
+        "mastery": "",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1400,9 +1554,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757183072062,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1426,7 +1580,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>蛰伏伪怪周边60尺内，所有可以听见其低吟的非异怪生物必须进行一次DC 13的感知豁免，豁免失败者将陷入恐慌，直至蛰伏伪怪下回合结束。豁免成功，则该生物在接下来的24小时内免疫该蛰伏伪怪的低吟。</p><p>Each creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a [[/save ability=wis dc=13]] saving throw or become &amp;Reference[condition=frightened] until the end of the cloaker's next turn. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>蛰伏伪怪周边60尺内，所有可以听见其低吟的非异怪生物必须进行一次DC 13的感知豁免，豁免失败者将陷入恐慌，直至蛰伏伪怪下回合结束。豁免成功，则该生物在接下来的24小时内免疫该蛰伏伪怪的低吟。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1440,7 +1594,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "2EpCKk3bryUteLuk": {
             "_id": "2EpCKk3bryUteLuk",
@@ -1457,15 +1611,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1475,7 +1633,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1497,7 +1656,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "13"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1518,7 +1678,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1526,7 +1687,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1537,15 +1697,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "moan",
@@ -1554,7 +1761,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1590,9 +1798,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757183133057,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1616,7 +1824,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>并非身处明亮光照时，蛰伏伪怪可以用魔法创造三个自己的幻象分身。这些分身跟随本体移动模仿本体的动作，并且会互相变换位置令人无法追踪哪一个才是本体。蛰伏伪怪一旦进入明亮光照中其分身将随之立即消失。</p><p>生物攻击，或以伤害性法术指定已创造分身的蛰伏伪怪时，必须掷骰随机决定该次攻击的目标是本体还是分身。如果该生物没有视力或用其它感官定位，则不受此魔法效应影响。</p><p>分身拥有与本体一样的AC和豁免，攻击命中一个分身，或某个分身对一个造成伤害的效应豁免失败时，该分身即消失不见。</p><p>The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.</p><p>Whenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.</p><p>A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>并非身处明亮光照时，蛰伏伪怪可以用魔法创造三个自己的幻象分身。这些分身跟随本体移动模仿本体的动作，并且会互相变换位置令人无法追踪哪一个才是本体。蛰伏伪怪一旦进入明亮光照中其分身将随之立即消失。</p><p>生物攻击，或以伤害性法术指定已创造分身的蛰伏伪怪时，必须掷骰随机决定该次攻击的目标是本体还是分身。如果该生物没有视力或用其它感官定位，则不受此魔法效应影响。</p><p>分身拥有与本体一样的AC和豁免，攻击命中一个分身，或某个分身对一个造成伤害的效应豁免失败时，该分身即消失不见。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1635,7 +1843,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "rTkZttiCnBaL4OL2": {
             "_id": "rTkZttiCnBaL4OL2",
@@ -1659,20 +1867,25 @@
                 }
               ]
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1700,7 +1913,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1708,7 +1922,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1719,15 +1932,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "phantasms",
@@ -1736,7 +1995,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1772,9 +2032,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757183209939,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1798,7 +2058,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>蛰伏伪怪附着于一个生物时，任何对其造成的伤害减半（向下取整），而另一半伤害则由被附着的生物承受。</p><p>While attached to a creature, the cloaker takes only half the damage dealt to it (rounded down). and that creature takes the other half.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>蛰伏伪怪附着于一个生物时，任何对其造成的伤害减半（向下取整），而另一半伤害则由被附着的生物承受。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1812,7 +2072,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "damage-transfer",
         "cover": null,
@@ -1820,7 +2080,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1856,9 +2117,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757182977666,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1882,7 +2143,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>静止的蛰伏伪怪与普通的深色斗篷难以区分。</p><p>While the cloaker remains motionless without its underside exposed, it is indistinguishable from a dark leather cloak.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>静止的蛰伏伪怪与普通的深色斗篷难以区分。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1896,7 +2157,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "false-appearance",
         "cover": null,
@@ -1904,7 +2165,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1940,9 +2202,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757183015968,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1966,7 +2228,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>身处明亮光照时，蛰伏伪怪依赖视觉所进行的攻击检定和感知（察觉）检定具有劣势。</p><p>While in bright light, the cloaker has disadvantage on attack rolls and Wisdom (&amp;Reference[skill=Perception]) checks that rely on sight.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>身处明亮光照时，蛰伏伪怪依赖视觉所进行的攻击检定和感知（察觉）检定具有劣势。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1980,7 +2242,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "light-sensitivity",
         "cover": null,
@@ -1988,7 +2250,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2024,9 +2287,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757183035698,
         "lastModifiedBy": "LRML3lp2BSfvniU2",

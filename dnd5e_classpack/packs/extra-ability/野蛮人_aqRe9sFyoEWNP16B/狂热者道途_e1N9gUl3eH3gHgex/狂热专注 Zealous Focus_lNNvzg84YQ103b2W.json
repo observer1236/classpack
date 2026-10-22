@@ -1,15 +1,15 @@
 {
   "_id": "lNNvzg84YQ103b2W",
-  "name": "狂热专注 Zealous Focus",
+  "name": "专心炽志 Fanatical Focus",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_PureOfHeart.png",
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         在6级时，驱使你愤怒的神力也能庇护你免遭损害。若你在@UUID[Compendium.dnd5e_classpack.class-abilityphb.gLNFWGL05O0FUNTD]{狂暴}时未通过一次豁免检定，你可以重新投掷该豁免检定，但你必须接受第二次投掷的数值。你每次狂暴只能使用此能力一次。</p>",
+      "value": "<p>在6级时，驱使你愤怒的神力也能庇护你免遭干扰。@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.gLNFWGL05O0FUNTD]{狂暴}期间，若你豁免检定失败，你可以重新投掷该豁免检定，但你必须接受重骰后的结果。你每次狂暴中只能使用此能力一次。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "狂热者等级 6",
     "activities": {},
     "identifier": "-zealous-focus",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -63,17 +64,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757416298317,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

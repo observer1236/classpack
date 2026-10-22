@@ -2,14 +2,14 @@
   "_id": "BqELBEclWwg3sLnc",
   "name": "重力井 Gravity Well",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/003128.png",
+  "img": "icons/magic/control/debuff-energy-hold-levitate-teal-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         6级起， 你学会了如何在一个活体上操纵重力：无论何时你对一个生物释放法术，只要该目标自愿被移动，或是法术攻击命中了该目标，亦或是该目标在对抗这道法术的豁免时失败了，你就能让该目标朝着一个由你选择且未被占据的空间移动5尺。</p>",
+      "value": "<p>你习得了如何操纵活物周遭的重力：每当你将一道法术施展到一个生物身上时，你能移动该目标5尺至一处由你选择且未占据空间。这一特性只有在法术的目标自愿被你移动、或法术中的某次攻击命中了该目标、亦或该目标在对抗这道法术的某次豁免检定失败的情况下，才能生效。 </p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,15 @@
     },
     "requirements": "重力魔法等级 6",
     "activities": {},
-    "identifier": "-gravity-well",
-    "advancement": [],
+    "identifier": "gravity-well",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "e8uUlfrnkbMmJzV8",
   "sort": 14300000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -62,18 +58,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "gravityWell",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757408028972,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

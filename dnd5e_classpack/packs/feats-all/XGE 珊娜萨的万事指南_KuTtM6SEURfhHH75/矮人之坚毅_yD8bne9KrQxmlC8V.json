@@ -1,22 +1,17 @@
 {
   "_id": "yD8bne9KrQxmlC8V",
-  "name": "矮人之坚毅",
+  "name": "矮人坚毅 Dwarven Fortitude",
   "type": "feat",
   "img": "icons/magic/life/heart-red-blue.webp",
   "effects": [],
   "folder": "KuTtM6SEURfhHH75",
   "sort": 100000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "system": {
     "description": {
-      "value": "<p>你的血脉中流淌着矮人英雄的血液。你获得以下好处</p>\n<ul>\n<li>你的体质+1，最大20</li>\n<li>当你在战斗中使用回避动作时，你可以消耗一颗生命骰来治愈自己。扔一颗骰子，加上你的体质调整值，恢复那么多的血（最少为1）。</li>\n</ul>",
+      "value": "<p>你的血脉中流淌着矮人英雄的血液。你获得下列增益：</p>\n<ul>\n<li>你的体质+1，上限为20。</li>\n<li>当你在战斗中执行 &Reference[rule=dodge]{回避} 动作时，你可以消耗一颗生命骰来治愈自己。投掷那枚生命骰，你恢复其骰值外加上你的体质调整值点的生命值（恢复量最低为1点）。</li>\n</ul>",
       "chat": ""
     },
     "source": {
@@ -27,23 +22,57 @@
     },
     "cover": null,
     "uses": {
-      "max": "0",
+      "max": "",
       "spent": 0,
       "recovery": []
     },
     "type": {
       "value": "feat",
-      "subtype": ""
+      "subtype": "general"
     },
     "requirements": "矮人",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "dwarven-fortitude",
+    "advancement": {
+      "63c534b268abf1b1": {
+        "_id": "63c534b268abf1b1",
+        "type": "AbilityScoreImprovement",
+        "name": "属性值提升",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 1,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 0,
+          "max": 20,
+          "recommendation": null
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "flags": {},
+        "hint": ""
+      }
+    },
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -51,9 +80,9 @@
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275287302,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

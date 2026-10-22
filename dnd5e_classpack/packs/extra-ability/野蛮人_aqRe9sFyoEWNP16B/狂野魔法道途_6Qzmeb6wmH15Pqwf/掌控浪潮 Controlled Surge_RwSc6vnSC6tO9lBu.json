@@ -2,14 +2,14 @@
   "_id": "RwSc6vnSC6tO9lBu",
   "name": "掌控浪潮 Controlled Surge",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_ThunderKing_Overcharge.png",
+  "img": "icons/magic/light/explosion-glow-spiral-teal.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>每当你掷骰决定@UUID[Compendium.dnd5e_classpack.extra-ability.qzKSooNxo2zww1oE]{狂野魔法效果}时，你可以掷两次骰子并且选择其中之一作为所释放的狂野魔法效果。如果你掷出的两个骰子数值相同，那么你可以无视这个数字，任意选择一个狂野魔法列表里的效果。</p>",
+      "value": "<p>每当你投掷@UUID[Compendium.dnd5e_classpack.extra-ability.Item.qzKSooNxo2zww1oE]{狂野魔法表}时，你可以掷两次骰子并且选择其中之一作为生效的狂野魔法效应。如果你掷出的两个骰子数值相同，那么你可以无视这个数字，任选表中的一个效应生效。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     "requirements": "狂野魔法道途等级 14",
     "activities": {},
     "identifier": "-controlled-surge",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 14,
+      "repeatable": false,
+      "items": [
+        "subclass:path-of-wild-magic"
+      ]
     },
     "properties": []
   },
@@ -63,24 +66,13 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "controlledSurge",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757409641468,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

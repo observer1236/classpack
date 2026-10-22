@@ -1,15 +1,15 @@
 {
   "_id": "xrNIRqQXLSMzQZzY",
-  "name": "炼狱体质",
+  "name": "炼狱体质 Infernal Constitution",
   "type": "feat",
   "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
   "system": {
     "type": {
       "value": "feat",
-      "subtype": ""
+      "subtype": "general"
     },
     "description": {
-      "value": "<p>恶魔之血支撑着你，解锁一些类似恶魔领主拥有的韧性。你获得以下好处：</p>\n<ul>\n<li>体质+1，不能超过20</li>\n<li>你获得寒冷与毒性抗力</li>\n<li>你在对抗毒素时取优势。</li>\n</ul>",
+      "value": "<p>邪魔之血令你变得无比强大，为你解锁一些邪魔拥有的强大韧性。你获得下列增益：</p>\n<ul>\n<li>你的体质+1，上限为20。</li>\n<li>你获得寒冷伤害和毒素伤害的抗性</li>\n<li>你在对抗 &Reference[condition=poisoned apply=false]{中毒} 效应时所做的豁免具有优势。</li>\n</ul>",
       "chat": ""
     },
     "source": {
@@ -19,100 +19,110 @@
       "book": "XGE"
     },
     "uses": {
-      "max": "0",
+      "max": "",
       "spent": 0,
       "recovery": []
     },
     "requirements": "提夫林",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "infernal-constitution",
+    "advancement": {
+      "563cacc675a7bcf8": {
+        "_id": "563cacc675a7bcf8",
+        "type": "AbilityScoreImprovement",
+        "name": "属性值提升",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 1,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 0,
+          "max": 20,
+          "recommendation": null
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "flags": {},
+        "hint": ""
+      },
+      "224f681410ba455d": {
+        "_id": "224f681410ba455d",
+        "type": "Trait",
+        "name": "伤害抗性",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:cold"
+          ],
+          "choices": []
+        },
+        "value": {},
+        "level": 0,
+        "flags": {},
+        "hint": ""
+      },
+      "964451af6b661fa4": {
+        "_id": "964451af6b661fa4",
+        "type": "Trait",
+        "name": "毒素抗性",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:poison"
+          ],
+          "choices": []
+        },
+        "value": {},
+        "level": 0,
+        "flags": {},
+        "hint": ""
+      }
+    },
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
-  "effects": [
-    {
-      "name": "炼狱体质",
-      "origin": "Compendium.dnd5e_classpack.feats-all.Item.xrNIRqQXLSMzQZzY",
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "disabled": false,
-      "flags": {
-        "dnd5e": {}
-      },
-      "_id": "sItmZW1Zs4SJHlRv",
-      "changes": [
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "cold",
-          "priority": null
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "poison",
-          "priority": null
-        }
-      ],
-      "description": "",
-      "transfer": true,
-      "statuses": [],
-      "tint": "#ffffff",
-      "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
-      "type": "base",
-      "system": {},
-      "sort": 0,
-      "_key": "!items.effects!xrNIRqQXLSMzQZzY.sItmZW1Zs4SJHlRv"
-    }
-  ],
+  "effects": [],
   "folder": "KuTtM6SEURfhHH75",
   "sort": 100025,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xrNIRqQXLSMzQZzY",
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1724511333912,
     "modifiedTime": 1757275287302,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
-  },
-  "ownership": {
-    "default": 0
-  },
-  "_key": "!items!xrNIRqQXLSMzQZzY"
+  }
 }

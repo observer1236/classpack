@@ -2,14 +2,14 @@
   "_id": "jS55GVIF48378kJd",
   "name": "奥术守御 Arcane Ward",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_TwilightFireward.png",
+  "img": "icons/magic/defensive/shield-hex-purple.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>        第2级起，你可以编织周围的魔法来保护自己。你施展一个1环或更高环阶的防护系法术时，可以用该法术的一丝魔力创造一个保护自己的魔法结界，该结界将持续至你完成一次长休。结界的生命值等于你法师等级的两倍+你的智力调整值。每当你受到伤害时，结界都会代你承受伤害。如果伤害使结界的生命值降至0，则你将承受剩余的伤害。</p>\n<p>        奥术守御的生命值降至0时不再吸收伤害，但其魔法仍然存在。你施展1环或更高环阶的防护系法术时，结界回复两倍于该法术环阶数量的生命值。</p>\n<p>        创造奥术守御后，你必须完成一次长休才能再次创造新的奥术守御。</p>",
+      "value": "<p> 第2级起，你可以编织身边的魔法用作防护。你施展一道1环或更高环阶的防护系法术时，可以用该法术的一丝魔力创造一个保护自己的魔法结界，该结界将持续至你完成一次长休。结界的最大生命值等于你法师等级的两倍＋你的智力调整值。每当你受伤害时，该结界都会替你承受伤害。如果伤害使结界的生命值降至0，则你将承受剩余的伤害。</p>\n<p> 奥术守御的生命值降至0时不再吸收伤害，但其魔法仍然存在。你每次施展1环或更高环阶防护系法术时，结界都能以此恢复两倍于该法术环阶数量的生命值。</p>\n<p> 创造奥术守御后，你必须完成一次长休才能再次创造新的奥术守御。</p>",
       "chat": ""
     },
     "source": {
@@ -19,7 +19,7 @@
     },
     "uses": {
       "max": "1",
-      "spent": 1,
+      "spent": 0,
       "recovery": [
         {
           "period": "lr",
@@ -47,21 +47,25 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "CotpzvNWdiDJUcBC"
+            "_id": "CotpzvNWdiDJUcBC",
+            "uuid": null,
+            "level": {}
           }
         ],
         "range": {
-          "units": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -73,7 +77,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -95,39 +100,139 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": true
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "",
-    "advancement": [],
+    "identifier": "arcane-ward",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 2,
+      "repeatable": false,
+      "items": [
+        "subclass:school-of-abjuration"
+      ]
     },
-    "properties": []
+    "properties": [
+      "mgc"
+    ]
   },
   "effects": [
     {
       "name": "奥术守御",
-      "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_TwilightFireward.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.jS55GVIF48378kJd",
+      "img": "icons/magic/defensive/shield-hex-purple.webp",
+      "origin": null,
       "transfer": false,
       "_id": "CotpzvNWdiDJUcBC",
       "type": "base",
-      "system": {},
-      "changes": [],
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.jS55GVIF48378kJd",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -137,14 +242,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": 1749900877667,
         "modifiedTime": 1749900877667,
         "lastModifiedBy": "Y5bWIYpxDhkJkvP2",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!jS55GVIF48378kJd.CotpzvNWdiDJUcBC"
     }
   ],
@@ -160,14 +268,7 @@
       "alwaysActive": false,
       "effects": []
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -185,18 +286,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "arcaneWard",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757409180753,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

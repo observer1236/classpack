@@ -5,7 +5,7 @@
   "img": "icons/magic/acid/projectile-stream-bubbles.webp",
   "system": {
     "description": {
-      "value": "<p>施展@UUID[Compendium.dnd5e_classpack.spell.DREvt1bRjuglegTh]{魔能爆 Eldritch Blast}时，你可以将魅力调整值加到其每次命中所造成的伤害中。</p>",
+      "value": "<p> <em>@UUID[Compendium.dnd5e_classpack.spell.Item.DREvt1bRjuglegTh]{魔能爆}</em></p>\n<p> 施展<em>魔能爆eldritch blast</em>时，你可以将魅力调整值加到其每次命中所造成的伤害中。</p>",
       "chat": ""
     },
     "source": {
@@ -23,15 +23,18 @@
       "value": "class",
       "subtype": "eldritchInvocation"
     },
-    "requirements": "邪术师等级 2，魔能爆",
+    "requirements": "习得戏法魔能爆",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "agonizing-blast",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": 2,
-      "repeatable": false
+      "level": null,
+      "repeatable": false,
+      "items": [
+        "spell:eldritch-blast"
+      ]
     },
     "properties": [
       "mgc"
@@ -41,12 +44,7 @@
   "folder": "o5aPffxN3VG2SeQa",
   "sort": 3700000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,21 +62,15 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "agonizingBlast",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "ownership": {
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757264002951,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

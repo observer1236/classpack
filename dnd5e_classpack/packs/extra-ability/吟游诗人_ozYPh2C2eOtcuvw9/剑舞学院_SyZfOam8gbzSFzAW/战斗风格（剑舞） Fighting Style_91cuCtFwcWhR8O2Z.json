@@ -2,14 +2,14 @@
   "_id": "91cuCtFwcWhR8O2Z",
   "name": "战斗风格（剑舞） Fighting Style",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+  "img": "icons/skills/melee/weapons-crossed-daggers-orange.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>3级时，你可以选择一种战斗风格，以求专精。选择下述战斗风格之一。你不能多次选择同一种战斗风格，即使你今后仍可有选择战斗风格的机会。</p>\n<ul>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.VoKRG6XqUxTz4rT3]{战斗风格：对决}</li>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.9U4ePVABZME8Syk9]{战斗风格：双武器战斗}</li>\n</ul>",
+      "value": "<p>从3级起，你可以选择一种战斗风格作为你的专精。选择下述战斗风格之一。即使你今后仍可有选择战斗风格的机会，你也不能多次选择同一种战斗风格。 </p>\n<p><strong>决斗 Dueling。</strong> 单手持用一把近战武器，且并未同时持用其他武器时，你用该武器攻击的伤害掷骰获得 +2加值。</p>\n<p><strong>双武器战斗 Two-Weapon Fighting。</strong>当进行双持武器战斗时，你可以将相应属性调整值加到第二次攻击的伤害上。</p>\n<ul>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.VoKRG6XqUxTz4rT3]{战斗风格：对决}</li>\n<li>@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.9U4ePVABZME8Syk9]{战斗风格：双武器战斗}</li>\n</ul>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "剑舞学院等级 3",
     "activities": {},
     "identifier": "-fighting-style",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -63,17 +64,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757407802591,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

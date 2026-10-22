@@ -2,14 +2,14 @@
   "_id": "pLTSRjy7SLsMcuhm",
   "name": "光耀之魂 Radiant Soul",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Fanaticism.png",
+  "img": "icons/magic/nature/symbol-sun-yellow.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>从6级开始，你所连接的天界宗主允许你成为光耀能量释放的渠道。你获得对光耀伤害的抗性，当你施展一个造成光耀或火焰伤害的法术时，你可以将你的魅力调整值加到法术对其中一个目标造成的一次光耀或火焰伤害骰上。</p>",
+      "value": "<p>自6级起，你与你天界宗主的链接允许你化身为祂降下光耀能量的媒介。你获得对光耀伤害的抗性，而当你施展一个造成光耀伤害或火焰伤害的法术时，你可以将你的魅力调整值加到该法术对其中一个目标造成的一次光耀伤害骰或火焰伤害骰上。</p>",
       "chat": ""
     },
     "source": {
@@ -24,46 +24,36 @@
     },
     "requirements": "天界宗主等级 6",
     "activities": {},
-    "identifier": "-radiant-soul",
-    "advancement": [],
+    "identifier": "radiant-soul",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
   "effects": [
     {
       "_id": "VMMYc83NjapCkaEc",
-      "changes": [
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "radiant",
-          "priority": null
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "origin": "Compendium.dnd5e_classpack.extra-ability.pLTSRjy7SLsMcuhm",
       "transfer": true,
       "flags": {},
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -72,24 +62,47 @@
         "exportSource": null
       },
       "name": "获得光耀抗性",
-      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Fanaticism.png",
+      "img": "icons/magic/nature/symbol-sun-yellow.webp",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cACy9CiWaqGSCCxS",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "description": "",
       "statuses": [],
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!pLTSRjy7SLsMcuhm.VMMYc83NjapCkaEc"
     }
   ],
   "folder": "7rLcY6yGVlDZAsWH",
   "sort": 44500000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -107,18 +120,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "radiantSoul",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757416615051,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

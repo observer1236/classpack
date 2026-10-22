@@ -2,14 +2,14 @@
   "_id": "ky0dMTWSMVEztfGF",
   "name": "救赎使节 Emissary of Redemption",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_DevineAegis.png",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         在20级时，你成为了和平的化身，使你获得下述好处：</p>\n<ul>\n<li>你对于其他生物造成的所有伤害具有抗性（它们的攻击、法术、和其他效果）。</li>\n<li>当一个生物以一次攻击对你造成伤害时，它受到等同于其对你造成的一半伤害的光耀伤害。</li>\n</ul>\n<p>         当你对一个生物攻击、施法或以此特性以外的方式造成伤害，那么在完成一次长休之前此特性对该生物无效。</p>",
+      "value": "<p>在20级时，你成为了和平的化身，使你获得下述两条增益：</p>\n<ul><li>你具有其他生物造成的所有伤害的抗性（包括它们的攻击、法术、及其他效果）。</li> <li>当一个生物以一次攻击对你造成伤害时，它受到等同于其对你造成伤害数额一半的光耀伤害。</li> </ul>\n<p>当你对某一生物发动了攻击、施展了法术、或以此特性以外的方式对其造成了伤害，那么此特性将对该生物无效。这一无效将持续到你完成一次长休前，完成长休后，此特性将能再次对那些生物生效。</p>",
       "chat": ""
     },
     "source": {
@@ -30,41 +30,56 @@
     "requirements": "救赎之誓等级 20",
     "activities": {},
     "identifier": "-emissary-of-redemption",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 20,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
   "effects": [
     {
       "name": "伤害抗性",
-      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_DevineAegis.png",
-      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.ky0dMTWSMVEztfGF",
+      "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+      "origin": null,
       "_id": "m0Tnx1GE59ulaECt",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "system.traits.dr.all",
-          "mode": 0,
-          "value": "",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "ALL",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "XOsKMx6CWtl7CofF",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.ky0dMTWSMVEztfGF",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -81,9 +96,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -92,26 +105,24 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": 1751429796482,
         "modifiedTime": 1751429832187,
         "lastModifiedBy": "sPF2dtZDreDpJaW6",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!ky0dMTWSMVEztfGF.m0Tnx1GE59ulaECt"
     }
   ],
   "folder": "4nZW4d4YESN1sUmh",
   "sort": 40200000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -131,9 +142,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1751429739568,
     "lastModifiedBy": "sPF2dtZDreDpJaW6",

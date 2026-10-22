@@ -1,15 +1,15 @@
 {
   "_id": "TfwQk0GrG4xIfY12",
-  "name": "幻想杀手 Spell Breaker",
+  "name": "破法者 Spell Breaker",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Frost_ManaRecharge.png",
+  "img": "icons/magic/defensive/shield-barrier-deflect-gold.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>    从6级起，每次你使用1环或者更高环数的法术恢复了一名盟友的生命值，你同时可以选择作用于此生物的一个法术终止。被终止的法术等级不能高于你用来施放恢复法术所占用的法术位。</p>",
+      "value": "<p>从6级起，每次你使用1环或者更高环数的法术恢复了一名盟友的生命值，你同时可以选择作用于此生物之上的一个法术终止。被终止的法术环阶必须在你用来施放恢复法术所占用的法术位的环阶以下。</p>",
       "chat": ""
     },
     "source": {
@@ -25,15 +25,18 @@
     "requirements": "奥秘领域等级 6",
     "activities": {},
     "identifier": "-spell-breaker",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": []
     },
-    "properties": []
+    "properties": [
+      "mgc"
+    ]
   },
   "effects": [],
   "folder": "0ExFrstYeFAghKX6",
@@ -63,26 +66,21 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TfwQk0GrG4xIfY12",
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757410221740,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
-  },
-  "ownership": {
-    "default": 0
-  },
-  "_key": "!items!TfwQk0GrG4xIfY12"
+  }
 }

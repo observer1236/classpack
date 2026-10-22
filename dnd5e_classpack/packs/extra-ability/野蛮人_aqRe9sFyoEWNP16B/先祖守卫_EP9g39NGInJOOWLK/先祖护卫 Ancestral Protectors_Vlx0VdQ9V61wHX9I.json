@@ -2,14 +2,14 @@
   "_id": "Vlx0VdQ9V61wHX9I",
   "name": "先祖护卫 Ancestral Protectors",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_SwordandBoard.png",
+  "img": "icons/magic/death/undead-ghosts-trio-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>从你在3级时选择此道途开始，精魂战士会在你@UUID[Compendium.dnd5e_classpack.class-abilityphb.gLNFWGL05O0FUNTD]{狂暴}时出现。当你处于狂暴状态，你的回合内你攻击命中的第一个生物会成为战士的目标。直到你的下一个回合开始，目标对你以外的目标的攻击骰取劣势，若目标在一次攻击中击中了除你以外的生物，该生物对那次攻击有伤害抗性。若你的狂暴结束，此效果也随之提前结束。</p>",
+      "value": "<p>从你在3级时选择此道途开始，你进入@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.gLNFWGL05O0FUNTD]{狂暴}时一名精魂战士将出现在你身旁。狂暴期间，在每个你的回合中你攻击命中的第一个生物将成为这名精魂战士的目标，战士将阻挠目标对它人的攻击。直到你的下一个回合开始前，战士的目标对你以外的目标发动的攻击检定具有劣势，而若其在一次攻击中击中了除你以外的生物，该生物对那次攻击的伤害具有抗性。你的狂暴结束时，此效果也随之提前结束。</p>",
       "chat": ""
     },
     "source": {
@@ -25,28 +25,26 @@
     "requirements": "先祖守卫等级 3",
     "activities": {},
     "identifier": "-ancestral-protectors",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
   "effects": [
     {
       "name": "先祖护卫 Ancestral Protectors",
-      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.Vlx0VdQ9V61wHX9I",
+      "origin": null,
       "duration": {
-        "rounds": 1,
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "flags": {
@@ -68,15 +66,14 @@
         }
       },
       "_id": "BqUet7f94y30CHya",
-      "changes": [],
       "description": "",
       "transfer": false,
       "statuses": [],
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -84,10 +81,27 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_SwordandBoard.png",
+      "img": "icons/magic/death/undead-ghosts-trio-blue.webp",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.Vlx0VdQ9V61wHX9I",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!Vlx0VdQ9V61wHX9I.BqUet7f94y30CHya"
     }
   ],
@@ -118,24 +132,13 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "ancestralProtectors",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1724857162563,
     "modifiedTime": 1757413432382,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

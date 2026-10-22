@@ -1,5 +1,5 @@
 {
-  "name": "惧噬体Gibbering Mouther (MM'14)",
+  "name": "呓语之口 Gibbering Mouther (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757245824564,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "SCwJuli0NyBxIzSW",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Gibbering Mouther.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Gibbering%20Mouther.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 8,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 3,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 6,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,29 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": 10,
-        "walk": 10,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "10",
+          "swim": "10"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 60,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +511,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,18 +534,19 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>    惧噬体是所有创自邪秽巫术的恐怖之物里最邪恶、最堕落的一种。它是其受害者的眼、口与液化身体胡乱混合的产物。这些受害者因身体被摧毁而陷入疯狂，然后再被惧噬体吸收同化，而它们持续喋喋不休的疯狂又迫使其进一步吞噬所触碰到的一切东西。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>变形虫形态Amoeboid Form。</strong></em>惧噬体是一堆无定形的嘴与眼，它可以像泥怪一样向前挪动，或是用几张嘴咬紧地面再将自己臃肿的身躯推向后方。虽然移动得很慢，但它可以轻易的通过水面、泥沼和流沙。</p></div></div><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>疯狂之嘴Mouths of Madness。</strong></em>惧噬体感知到猎物时身上诸多的嘴巴便开始咕哝和喋喋不休，每张嘴发出各种不同的声音：深沉或尖锐，哀鸣或嚎叫，还有各种痛苦或狂喜的叫喊。这种不谐的杂音可以压制听者的感官，使大多数人惊恐地逃窜。剩下的人只能陷入疯狂或麻痹的站定，死盯着这个可怕的生物等待它慢慢将自己吞噬。</p></div></div><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>吞噬一切All-Consuming。</strong></em>惧噬体不由自主的吞没自己能触及的所有东西，淹没所有被它恐惧咆哮怔住的受害者，这堆七嘴八舌在啃噬吞咽活肉时却又霎时间一起陷入沉默。这怪物可以将接触到的石头液化，以阻碍那些抵受住呓语并试图逃跑的生物。</p></div></div><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    惧噬体所过之处有如风卷残云。而受害者身体的每一丝骨肉都被吞噬干净后，他曾经的嘴与眼便浮现在惧噬体的表面，并加入这怪物的呓语和下一次吞食盛宴。</p><p>Of all the terrors created by foul sorcery, gibbering mouthers are among the most wicked and depraved. This creature is the composite eyes, mouths, and liquefied matter of its former victims. Driven to insanity by the destruction of their bodies and absorption into the mouther, those victims gibber incoherent madness, forced to consume everything in reach.</p><div data-roll-name-ancestor=\"Amoeboid Form\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Amoeboid Form.</span> The gibbering mouther's body is an amorphous mass of mouths and eyes that propels itself by oozing forward, fastening several mouths to the ground and pulling its bulk behind. Though it moves slowly, it swims through water, mud, and quicksand with ease.</p></div><div data-roll-name-ancestor=\"Mouths of Madness\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Mouths of Madness.</span> When a gibbering mouther senses prey, its mouths begin to murmur and chatter, each with a different voice: deep or shrill, wailing or ululating, crying out in agony or ecstasy. This cacophonous gibbering overcomes the senses of any creature that hears it, causing most to flee in terror. Others are overcome with madness or stand &amp;Reference[condition=paralyzed], fixated on the horrific creature as it oozes forward to consume them.</p><div data-roll-name-ancestor=\"All-Consuming\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">All-Consuming.</span> Driven to devour any creature it can reach, a gibbering mouther flows over victims transfixed by its mad ranting, its multitudinous voices temporarily silenced as it gnaws and swallows living flesh. The monster liquefies stone with which it comes into contact, hindering creatures that overcome its gibbering and attempt to flee.</p><p>A gibbering mouther leaves nothing of its prey behind. However, even as the last of a victim's body is consumed, its eyes and mouth boil to the surface, ready to join the chorus of tormented gibbering that welcomes the monster's next meal.</p></div></div></div></div>",
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>    惧噬体是所有创自邪秽巫术的恐怖之物里最邪恶、最堕落的一种。它是其受害者的眼、口与液化身体胡乱混合的产物。这些受害者因身体被摧毁而陷入疯狂，然后再被惧噬体吸收同化，而它们持续喋喋不休的疯狂又迫使其进一步吞噬所触碰到的一切东西。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>变形虫形态Amoeboid Form。</strong></em>惧噬体是一堆无定形的嘴与眼，它可以像泥怪一样向前挪动，或是用几张嘴咬紧地面再将自己臃肿的身躯推向后方。虽然移动得很慢，但它可以轻易的通过水面、泥沼和流沙。</p></div></div><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>疯狂之嘴Mouths of Madness。</strong></em>惧噬体感知到猎物时身上诸多的嘴巴便开始咕哝和喋喋不休，每张嘴发出各种不同的声音：深沉或尖锐，哀鸣或嚎叫，还有各种痛苦或狂喜的叫喊。这种不谐的杂音可以压制听者的感官，使大多数人惊恐地逃窜。剩下的人只能陷入疯狂或麻痹的站定，死盯着这个可怕的生物等待它慢慢将自己吞噬。</p></div></div><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    <em style=\"mso-bidi-font-style:normal\"><strong>吞噬一切All-Consuming。</strong></em>惧噬体不由自主的吞没自己能触及的所有东西，淹没所有被它恐惧咆哮怔住的受害者，这堆七嘴八舌在啃噬吞咽活肉时却又霎时间一起陷入沉默。这怪物可以将接触到的石头液化，以阻碍那些抵受住呓语并试图逃跑的生物。</p></div></div><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">    惧噬体所过之处有如风卷残云。而受害者身体的每一丝骨肉都被吞噬干净后，他曾经的嘴与眼便浮现在惧噬体的表面，并加入这怪物的呓语和下一次吞食盛宴。</p><div data-roll-name-ancestor=\"Amoeboid Form\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Amoeboid Form.</span> </p></div></div></div>",
         "public": ""
       },
       "alignment": "绝对中立Neutral",
@@ -584,12 +573,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -638,10 +627,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Gibbering Mouther",
+    "name": "呓语之口 Gibbering Mouther (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -652,12 +643,9 @@
       "src": "systems/dnd5e/tokens/aberration/GibberingMouther.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -708,7 +696,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -732,7 +720,8 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
@@ -749,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>惧噬体发动一次啃咬攻击，如果条件允许则再使用一次致盲唾沫。</p><p>The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>惧噬体发动一次啃咬攻击，如果条件允许则再使用一次致盲唾沫。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -763,7 +752,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "rwCB5ZkzetCyQY2o": {
             "_id": "rwCB5ZkzetCyQY2o",
@@ -780,20 +769,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -821,7 +815,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -829,7 +824,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -840,15 +834,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "multiattack",
@@ -857,7 +897,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -893,9 +934,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757158763874,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -919,7 +960,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中[[/r 1d20+2]]{+2}，触及5尺，单一生物。<em style=\"mso-bidi-font-style:normal\">命中：</em>17（[[/damage 5d6 type=piercing]]）点伤害。如果该目标为中型或更小体型，则它必须进行一次[[/save ability=str dc=10]]的豁免，豁免失败则应击&amp;Reference[condition=prone]{倒地}。如果该生物被这次伤害杀死，则它将被惧噬体吸收同化。</p><p><em>Melee Weapon Attack:</em> [[/r 1d20+2]]{+2} to hit, reach 5 ft., one creature. <em>Hit:</em> 17 ([[/damage 5d6 type=piercing]]) damage. If the target is Medium or smaller, it must succeed on a [[/save ability=str dc=10]] saving throw or be knocked &amp;Reference[condition=prone]. If the target is killed by this damage, it is absorbed into the mouther.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中[[/r 1d20+2]]{+2}，触及5尺，单一生物。<em style=\"mso-bidi-font-style:normal\">命中：</em>17（[[/damage 5d6 type=piercing]]）点伤害。如果该目标为中型或更小体型，则它必须进行一次[[/save ability=str dc=10]]的豁免，豁免失败则应击&amp;Reference[condition=prone]{倒地}。如果该生物被这次伤害杀死，则它将被惧噬体吸收同化。</p></div>",
           "chat": ""
         },
         "range": {
@@ -953,7 +994,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -987,7 +1029,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1001,15 +1044,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1026,7 +1073,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1034,7 +1082,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1045,18 +1092,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           },
           "t9Ltg4XSOIqzwCI6": {
             "_id": "t9Ltg4XSOIqzwCI6",
@@ -1074,7 +1169,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1092,7 +1188,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "10"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1109,15 +1206,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1134,7 +1235,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1142,7 +1244,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1153,15 +1254,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "bites",
@@ -1179,12 +1327,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1200,7 +1346,8 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1211,11 +1358,15 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null,
-        "mastery": ""
+        "mastery": "",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1251,9 +1402,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757158760154,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1277,7 +1428,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>噬体向身边15尺内它能看见的一点吐出一团化学液。命中时的冲击力使液团爆发出一片炫目的闪光。闪光处周边5尺内的每个生物必须进行一次[[/save ability=dex dc=13]]的豁免，豁免失败者将陷入&amp;Reference[condition=blinded]{目盲}，直至该惧噬体下一回合结束时终止。</p><p>The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a [[/save ability=dex dc=13]] saving throw or be &amp;Reference[condition=blinded] until the end of the mouther's next turn.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>噬体向身边15尺内它能看见的一点吐出一团化学液。命中时的冲击力使液团爆发出一片炫目的闪光。闪光处周边5尺内的每个生物必须进行一次[[/save ability=dex dc=13]]的豁免，豁免失败者将陷入&amp;Reference[condition=blinded]{目盲}，直至该惧噬体下一回合结束时终止。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1297,7 +1448,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "BLgo8CECFHr5cFPD": {
             "_id": "BLgo8CECFHr5cFPD",
@@ -1321,15 +1472,19 @@
                 }
               ]
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1339,7 +1494,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1361,7 +1517,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "13"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1382,7 +1539,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1390,7 +1548,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1401,15 +1558,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "blinding-spittle",
@@ -1418,7 +1622,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1454,9 +1659,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757158767931,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1480,7 +1685,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>惧噬体周边10尺半径的地面成为面团状的&amp;Reference[rule=difficultterrain]{困难地形}。在该区域内开始其回合的每个生物都必须进行一次[[/save ability=str dc=10]]的豁免，豁免失败者其速度将降至0，直至其下一回合开始时结束。</p><p>The ground in a 10-foot radius around the mouther is doughlike &amp;Reference[rule=difficultterrain]{difficult terrain}. Each creature that starts its turn in that area must succeed on a [[/save ability=str dc=10]] saving throw or have its speed reduced to 0 until the start of its next turn.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>惧噬体周边10尺半径的地面成为面团状的&amp;Reference[rule=difficultterrain]{困难地形}。在该区域内开始其回合的每个生物都必须进行一次[[/save ability=str dc=10]]的豁免，豁免失败者其速度将降至0，直至其下一回合开始时结束。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1494,7 +1699,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "fjbHdGVLx3RiHBtd": {
             "_id": "fjbHdGVLx3RiHBtd",
@@ -1511,15 +1716,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1529,7 +1738,8 @@
                 "size": "10",
                 "width": "",
                 "height": "",
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1551,7 +1761,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "10"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1572,7 +1783,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1580,7 +1792,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1591,15 +1802,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "aberrant-ground",
@@ -1608,7 +1866,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1644,9 +1903,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757158755644,
         "lastModifiedBy": "LRML3lp2BSfvniU2",
@@ -1670,7 +1929,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>惧噬体看到任何未处于&amp;Reference[condition=incapacitated]{失能}状态的生物时便开始语无伦次的喋喋不休。任何可以听到惧噬体呓语的生物，在惧噬体周边20尺内开始其自己回合时，必须进行一次[[/save ability=wis dc=10]]的豁免。豁免失败时，该生物直至其下一回合开始前都无法执行反应，并掷一次[[/r d8]]以决定接下来自己会怎么做。骰值为1至4时，该生物什么都不用做。骰值为5至6时，该生物将无法执行任何动作或附赠动作，并花费自己所有的移动力向一个随机方向直线移动。骰值为7至8时，该生物在身边触及范围内随机指定一个生物并对其发动一次近战攻击，如果没有合适的攻击目标则什么都不用做。</p><p>The mouther babbles incoherently while it can see any creature and isn't &amp;Reference[condition=incapacitated]. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a [[/save ability=wis dc=10]] saving throw. On a failure, the creature can't take reactions until the start of its next turn and rolls a [[/r d8]] to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>惧噬体看到任何未处于&amp;Reference[condition=incapacitated]{失能}状态的生物时便开始语无伦次的喋喋不休。任何可以听到惧噬体呓语的生物，在惧噬体周边20尺内开始其自己回合时，必须进行一次[[/save ability=wis dc=10]]的豁免。豁免失败时，该生物直至其下一回合开始前都无法执行反应，并掷一次[[/r d8]]以决定接下来自己会怎么做。骰值为1至4时，该生物什么都不用做。骰值为5至6时，该生物将无法执行任何动作或附赠动作，并花费自己所有的移动力向一个随机方向直线移动。骰值为7至8时，该生物在身边触及范围内随机指定一个生物并对其发动一次近战攻击，如果没有合适的攻击目标则什么都不用做。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1684,7 +1943,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "SONo7pqzcQeBsCL0": {
             "_id": "SONo7pqzcQeBsCL0",
@@ -1701,15 +1960,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1719,7 +1982,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1741,7 +2005,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "10"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1762,7 +2027,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1770,7 +2036,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1781,15 +2046,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "gibbering",
@@ -1798,7 +2110,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1834,9 +2147,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1757158771839,
         "lastModifiedBy": "LRML3lp2BSfvniU2",

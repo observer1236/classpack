@@ -26,22 +26,34 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "vocal",
-        "somatic",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "investitureOfStone",
-        "source": "chris-premades",
-        "version": "0.0.0"
+    "dnd5e": {},
+    "chris-premades": {},
+    "dae": {
+      "macro": {
+        "name": "磐石赋权 Investiture of Stone",
+        "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const icecone = macroItem.system.activities.find(a => a.identifier == 'earthqueak')\nif (args[0] == 'on'){\n  await dnd5eClasspack.hideActivity(icecone.uuid, false);\n  await dnd5eClasspack.addFavorite(icecone.uuid);\n}\nif (args[0] == 'off'){\n  await dnd5eClasspack.hideActivity(icecone.uuid);\n  await dnd5eClasspack.removeFavorite(icecone.uuid);\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
       }
     }
   },
@@ -50,38 +62,15 @@
   "effects": [
     {
       "name": "磐石赋权Investiture of Stone",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.DNdfU6rBkEKZr7FR",
+      "origin": null,
       "duration": {
-        "rounds": 10,
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 10,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "_id": "EH5O7tBL1oFB0skr",
-      "changes": [
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "piercing",
-          "priority": 20
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "bludgeoning",
-          "priority": 20
-        },
-        {
-          "key": "system.traits.dr.value",
-          "mode": 2,
-          "value": "slashing",
-          "priority": 20
-        }
-      ],
       "description": "",
       "transfer": false,
       "statuses": [],
@@ -92,17 +81,23 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "applicationMode": "default",
+          "expiryMode": "default"
+        },
+        "core": {
+          "overlay": false
         }
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -112,28 +107,106 @@
       },
       "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Mi74kfE5V70Ja8VB",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "69fkNWTIrbKNedQ6",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "WuWiJB2IgubqxZpr",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.traits.dr.bypasses",
+            "type": "custom",
+            "value": "mgc",
+            "phase": "initial",
+            "_id": "gUHtcaIcCWGscKsE",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          },
+          {
+            "key": "macro.itemMacro",
+            "type": "custom",
+            "value": "",
+            "phase": "initial",
+            "_id": "PXjbeeOZ8ksmfKJu",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.DNdfU6rBkEKZr7FR",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
       "_key": "!items.effects!DNdfU6rBkEKZr7FR.EH5O7tBL1oFB0skr"
     },
     {
       "name": "摔倒",
       "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.DNdfU6rBkEKZr7FR",
+      "origin": null,
       "transfer": false,
       "_id": "Cb1l4jQT1BkgRHqK",
       "type": "base",
-      "system": {},
-      "changes": [],
+      "system": {
+        "changes": [],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.DNdfU6rBkEKZr7FR",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -155,9 +228,7 @@
           "specialDuration": []
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -166,20 +237,23 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": 1756294248879,
         "modifiedTime": 1756294264493,
         "lastModifiedBy": "vFLRCDyc5l72uRlV",
         "exportSource": null
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_key": "!items.effects!DNdfU6rBkEKZr7FR.Cb1l4jQT1BkgRHqK"
     }
   ],
   "system": {
     "description": {
-      "value": "<p>直到法术终结，岩石颗粒布满了你的躯体，你得到如下好处：<br />·你对于来自非魔法攻击的钝击，穿刺和挥砍伤害得到抗力。<br />·你可以使用你的动作，在以你为中心周围15英尺半径的地表创造出一阵小型地震。在地表上的其他生物必须通过一次敏捷豁免检定，否则会摔倒。<br />·你可以在由泥土或岩石造成的困难地形上移动而无需额外消耗移动力。你可以穿过固态的泥土或石头，像是穿过空气那样。这并未令穿过的物质变得不再凝固，但你不能在物质中结束你的移动。若你结束了移动，你将被排出到最近的未被占据的空间内，此法术终结，你在直到你下个回合结束前的时间内处于震慑状态。</p>",
+      "value": "<p>直到法术终结，岩石颗粒布满了你的躯体，你得到如下好处：</p><ul><li>你对于来自非魔法攻击的钝击，穿刺和挥砍伤害得到抗性。</li><li>你可以使用你的动作，在以你为中心周围 15 尺半径的地表创造出一阵小型地震。在地表上的其他生物必须通过一次[[/save activity=NXdNczElkmoMGfWN]]{敏捷豁免检定}，否则会摔倒。</li><li>你可以在由泥土或岩石造成的困难地形上移动而无需额外消耗移动力。你可以穿过固态的泥土或石头，像是穿过空气那样。这并未令穿过的物质变得不再凝固，但你不能在物质中结束你的移动。若你结束了移动，你将被排出到最近的未占据空间内，此法术终结，你在直到你下个回合结束前的时间内处于震慑状态。</li></ul>",
       "chat": ""
     },
     "source": {
@@ -195,7 +269,8 @@
     },
     "duration": {
       "value": "10",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -209,7 +284,8 @@
         "contiguous": false,
         "type": "radius",
         "size": "15",
-        "count": ""
+        "count": "",
+        "stationary": false
       }
     },
     "range": {
@@ -229,10 +305,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -257,16 +329,24 @@
           "spellSlot": false
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": true
+          "override": true,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "Cb1l4jQT1BkgRHqK"
+            "_id": "Cb1l4jQT1BkgRHqK",
+            "uuid": null,
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -282,7 +362,8 @@
             "type": "radius",
             "size": "15",
             "width": "5",
-            "count": ""
+            "count": "",
+            "stationary": false
           },
           "affects": {
             "choice": false,
@@ -311,7 +392,9 @@
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
-          }
+          },
+          "visible": true,
+          "bonus": ""
         },
         "sort": 0,
         "useConditionText": "",
@@ -325,7 +408,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -333,39 +417,93 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
           "automationOnly": false,
           "otherActivityCompatible": true,
-          "identifier": "",
+          "identifier": "earthqueak",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
           "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
+          "postRemoveConditionText": "",
+          "rollAs": "target"
         },
         "otherActivityId": "",
         "name": "地震",
         "_id": "NXdNczElkmoMGfWN",
         "img": "",
-        "appliedEffects": []
+        "behaviors": [],
+        "flags": {
+          "dnd5e_classpack": {
+            "hidden": true
+          }
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       },
-      "lR5FXgP35pPxQ6Ky": {
-        "type": "damage",
-        "sort": 0,
+      "E9vQLMOXwpO00PPh": {
+        "type": "utility",
+        "name": "",
+        "_id": "E9vQLMOXwpO00PPh",
+        "img": "",
+        "sort": -100000,
         "activation": {
           "type": "action",
-          "value": null,
           "override": false
         },
+        "behaviors": [],
         "consumption": {
           "scaling": {
             "allowed": false
@@ -374,37 +512,40 @@
           "targets": []
         },
         "description": {
+          "value": "",
           "chatFlavor": ""
         },
         "duration": {
           "units": "inst",
+          "expiry": null,
           "concentration": false,
           "override": false
         },
         "effects": [
           {
-            "_id": "EH5O7tBL1oFB0skr"
+            "_id": "EH5O7tBL1oFB0skr",
+            "uuid": null,
+            "level": {}
           }
         ],
+        "flags": {},
         "range": {
-          "override": true,
           "units": "self",
-          "special": ""
+          "override": false
         },
         "target": {
           "template": {
             "contiguous": false,
+            "stationary": false,
             "units": "ft",
-            "type": "",
-            "size": "15",
-            "count": ""
+            "type": ""
           },
           "affects": {
             "choice": false,
             "type": "self",
             "special": ""
           },
-          "override": false,
+          "override": true,
           "prompt": true
         },
         "uses": {
@@ -412,15 +553,25 @@
           "recovery": [],
           "max": ""
         },
-        "damage": {
-          "critical": {
-            "allow": false
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
           },
-          "parts": []
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
+        "otherActivityId": "none",
         "macroData": {
           "name": "",
           "command": ""
@@ -429,7 +580,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -437,34 +589,69 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
           "automationOnly": false,
           "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
           "identifier": "",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
+          "rollAs": "target",
           "preRemoveConditionText": "",
           "postRemoveConditionText": ""
         },
-        "name": "施放法术",
-        "_id": "lR5FXgP35pPxQ6Ky",
-        "img": "",
-        "appliedEffects": [
-          "EH5O7tBL1oFB0skr"
-        ]
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "investiture-of-stone"
+    "identifier": "investiture-of-stone",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -473,8 +660,8 @@
   "sort": 12100000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711703307595,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

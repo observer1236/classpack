@@ -1,15 +1,15 @@
 {
   "_id": "bag3ib2jXUYCe535",
-  "name": "活着的神话  Living Legend",
+  "name": "现世传说  Living Legend",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_AuraMastery.png",
+  "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         现在，你可以用壮举的传奇包装自己无论是真实的还是夸张的。以一个附赠动作，你可以在1分钟内获得以下好处</p>\n<ul>\n<li>你被赋予超凡脱俗的表征，在所有魅力属性检定中获得优势。</li>\n<li>在你的每回合中，当你进行武器攻击而未命中时，你可以将该次攻击改为命中。每回合你只能使用一次此能力。</li>\n<li>如果你的豁免失败了，你可以用反应重骰，你必须使用新的骰值。</li>\n</ul>\n<p>         一旦你使用了这个特性，直到你完成一次长休，或者消耗一个五环法术位来刷新，你都不能再使用。</p>",
+      "value": "<p>你能以传奇增幅使自己完成壮举伟业的能力无论是确有此事，抑或夸大其词。以一个附赠动作，你获得以下增益，持续1分钟：</p>\n<ul> <li> 一个超凡脱俗的存在赐福于你，你在与魅力相关的全部属性检定上获得优势。 </li><li> 每个你自己的回合一次，当你发动武器攻击但失手，你可以使其改为击中。 </li><li> 当你进行一次豁免检定并失败时，你可以用你的反应重骰之。你必须使用重骰之后的结果。</li></ul>\n<p>一旦你使用了此能力，你在完成一次长休之前你都不能再次使用它。你也可以消耗一个5环法术位以再次使用此能力。</p>",
       "chat": ""
     },
     "source": {
@@ -57,18 +57,26 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "1",
           "units": "minute",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "S5bP9VEvVJciETmN",
+            "uuid": null,
+            "level": {}
+          }
+        ],
         "range": {
-          "units": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -80,11 +88,12 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
-            "type": "",
+            "type": "self",
             "choice": false,
             "special": ""
           },
@@ -102,70 +111,162 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-living-legend",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 20,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
   "effects": [
     {
-      "name": "活着的神话  Living Legend",
-      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_AuraMastery.png",
-      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.bag3ib2jXUYCe535",
+      "name": "现世传说  Living Legend",
+      "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
+      "origin": null,
       "_id": "S5bP9VEvVJciETmN",
       "type": "base",
-      "system": {},
-      "changes": [],
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.bag3ib2jXUYCe535",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
-      "transfer": true,
+      "transfer": false,
       "statuses": [],
       "sort": 0,
       "flags": {},
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": 1751430413467,
         "modifiedTime": 1751430413467,
         "lastModifiedBy": "sPF2dtZDreDpJaW6",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!bag3ib2jXUYCe535.S5bP9VEvVJciETmN"
     }
   ],
   "folder": "qwBvXP2uIA1n4EBE",
   "sort": 32500000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -185,9 +286,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1751430412395,
     "lastModifiedBy": "sPF2dtZDreDpJaW6",

@@ -1,5 +1,5 @@
 {
-  "name": "凝胶方块Gelatinous Cube (MM'14)",
+  "name": "凝胶方块 Gelatinous Cube (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1753640855909,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",
     "exportSource": null
   },
   "_id": "JhMHgzEz1u5lRL4d",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Gelatinous Cube.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Gelatinous%20Cube.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 14,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 3,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 20,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 1,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 6,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 1,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,28 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": null,
-        "walk": 15,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "15"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 0,
-        "blindsight": 60,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 0,
+          "blindsight": 60,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "str",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,18 +533,19 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<p><span style=\"font-family:宋体\">凝胶方块静静的滑过地下城的走廊，在身后留下一条非常干净的通路，其行为模式十分容易预测。它们分解活体组织，只留下骨头和其他物质。<br />凝胶方块几乎全身透明，而这使得它们在攻击之前很难被发现。由于受害者的骨头、硬币和其他物品漂浮在其体内，因此有好好进食的凝胶方块会相对容易被发现。</span></p><p>Gelatinous cubes scour dungeon passages in silent, predictable patterns, leaving perfectly clean paths in their wake. They consume living tissue while leaving bones and other materials undissolved.</p><p>A gelatinous cube is all but transparent, making it hard to spot until it attacks. A cube that is well fed can be easier to spot, since its victims' bones, coins, and other objects can be seen suspended inside the creature.</p><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\"><span style=\"font-family:宋体\"><em style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">“地下城的地板极其干净。这就是我们的第一条线索。”</em></span></p><p class=\"rd__quote-line rd__quote-line--last\">“<em>The dungeon's floors were spotless. That should have been our first clue.</em>”</p><p><span style=\"font-family:宋体\"><em style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:right;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">出自加斯特空翎Jaster Hollowquill第一次探索地脉迷城Undermountain的日志</em></span></p><p><span class=\"rd__quote-by\">— From the journal of Jaster Hollowquill, on his first exploration of Undermountain</span></p></div></div>",
+        "value": "<p><span style=\"font-family:宋体\">凝胶方块静静的滑过地下城的走廊，在身后留下一条非常干净的通路，其行为模式十分容易预测。它们分解活体组织，只留下骨头和其他物质。<br>凝胶方块几乎全身透明，而这使得它们在攻击之前很难被发现。由于受害者的骨头、硬币和其他物品漂浮在其体内，因此有好好进食的凝胶方块会相对容易被发现。</span></p><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\"><span style=\"font-family:宋体\"><em style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">“地下城的地板极其干净。这就是我们的第一条线索。”</em></span></p><p class=\"rd__quote-line rd__quote-line--last\">“<em></em>”</p><p><span style=\"font-family:宋体\"><em style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:right;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">出自加斯特空翎Jaster Hollowquill第一次探索地脉迷城Undermountain的日志</em></span></p></div></div>",
         "public": ""
       },
       "alignment": "无阵营Unaligned",
@@ -584,12 +572,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -643,10 +631,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Gelatinous Cube",
+    "name": "凝胶方块 Gelatinous Cube (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -657,12 +647,9 @@
       "src": "systems/dnd5e/tokens/ooze/GelatinousCube.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 2,
       "scaleY": 2,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -713,13 +700,12 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [
-      {
-        "id": "blindsight",
+    "detectionModes": {
+      "blindsight": {
         "range": 60,
         "enabled": true
       }
-    ],
+    },
     "occludable": {
       "radius": 0
     },
@@ -743,7 +729,8 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 2
   },
   "items": [
     {
@@ -760,7 +747,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+4</span><span style=\"font-family:'STHeiti light'\">，触及</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">10</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">3d6</span><span style=\"font-family:'STHeiti light'\">）点强酸伤害。</span></p><p><em>Melee Weapon Attack:</em> [[/r 1d20+4]]{+4} to hit, reach 5 ft., one creature. <em>Hit:</em> 10 ([[/damage 3d6 type=acid]]) damage.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+4</span><span style=\"font-family:'STHeiti light'\">，触及</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">10</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">[[/damage 3d6 type=acid]]</span><span style=\"font-family:'STHeiti light'\">）点强酸伤害。</span></p></div>",
           "chat": ""
         },
         "range": {
@@ -794,7 +781,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -828,7 +816,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -842,15 +831,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -867,7 +860,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -875,7 +869,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -886,18 +879,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "pseudopod",
@@ -915,12 +956,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -936,7 +975,8 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -947,11 +987,15 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null,
-        "mastery": ""
+        "mastery": "",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -987,9 +1031,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1013,7 +1057,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">凝胶方块移动不超过其速度的距离。此时它可以进入大型或更小体型生物所在空间内。当凝胶方块以任何方式进入某生物所在空间时，该生物必须进行一次</span><span style=\"font-family:Calibri\">DC 12</span><span style=\"font-family:'STHeiti light'\">的敏捷豁免。</span><span style=\"font-family:Calibri\"><br /></span><span style=\"font-family:'STHeiti light'\">豁免成功的生物可以选择被方块向后或向侧面推离</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺。选择不被推开的生物将承受与豁免失败一样的后果。</span><span style=\"font-family:Calibri\"><br /></span><span style=\"font-family:'STHeiti light'\">豁免失败时，方块成功进入生物所占据的空间位置。该生物将受</span><span style=\"font-family:Calibri\">10</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">3d6</span><span style=\"font-family:'STHeiti light'\">）点强酸伤害并被吞没。被吞没的生物无法呼吸且被束缚，并在每次该方块的回合开始时受</span><span style=\"font-family:Calibri\">21</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">6d6</span><span style=\"font-family:'STHeiti light'\">）点强酸伤害。凝胶方块移动时，被吞没的生物也随之一起移动。</span><span style=\"font-family:Calibri\"><br /></span><span style=\"font-family:'STHeiti light'\">被吞没的生物可以用一个动作进行一次</span><span style=\"font-family:Calibri\">DC 12</span><span style=\"font-family:'STHeiti light'\">的力量检定以尝试逃脱。检定成功则意味着该生物成功逃脱，并进入方块周边</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺范围内的任一处空间位置。</span></p><p>The cube moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the cube enters a creature's space, the creature must make a [[/save ability=dex dc=12]] saving throw.</p><p>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p><p>On a failed save, the cube enters the creature's space, and the creature takes 10 ([[/damage 3d6 type=acid]]) damage and is engulfed. The engulfed creature can't breathe, is &amp;Reference[condition=restrained], and takes 21 ([[/damage 6d6 type=acid]]) damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.</p><p>An engulfed creature can try to escape by taking an action to make a [[/save ability=str dc=12]] check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">凝胶方块移动不超过其速度的距离。此时它可以进入大型或更小体型生物所在空间内。当凝胶方块以任何方式进入某生物所在空间时，该生物必须进行一次</span><span style=\"font-family:Calibri\">DC 12</span><span style=\"font-family:'STHeiti light'\">的敏捷豁免。</span><span style=\"font-family:Calibri\"><br></span><span style=\"font-family:'STHeiti light'\">豁免成功的生物可以选择被方块向后或向侧面推离</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺。选择不被推开的生物将承受与豁免失败一样的后果。</span><span style=\"font-family:Calibri\"><br></span><span style=\"font-family:'STHeiti light'\">豁免失败时，方块成功进入生物所占据的空间位置。该生物将受</span><span style=\"font-family:Calibri\">10</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">[[/damage 3d6 type=acid]]</span><span style=\"font-family:'STHeiti light'\">）点强酸伤害并被吞没。被吞没的生物无法呼吸且被束缚，并在每次该方块的回合开始时受</span><span style=\"font-family:Calibri\">21</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">[[/damage 6d6 type=acid]]</span><span style=\"font-family:'STHeiti light'\">）点强酸伤害。凝胶方块移动时，被吞没的生物也随之一起移动。</span><span style=\"font-family:Calibri\"><br></span><span style=\"font-family:'STHeiti light'\">被吞没的生物可以用一个动作进行一次</span><span style=\"font-family:Calibri\">DC 12</span><span style=\"font-family:'STHeiti light'\">的力量检定以尝试逃脱。检定成功则意味着该生物成功逃脱，并进入方块周边</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺范围内的任一处空间位置。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1027,7 +1071,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "h91wPufWQacS9HBR": {
             "_id": "h91wPufWQacS9HBR",
@@ -1044,15 +1088,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1062,7 +1110,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1084,7 +1133,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "12"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1105,7 +1155,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1113,7 +1164,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1124,20 +1174,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           },
           "ufq9Y3TcPoh4yazW": {
             "_id": "ufq9Y3TcPoh4yazW",
             "type": "damage",
-            "name": "Damage: 3d6 Acid Damage",
+            "name": "伤害: 3d6 强酸 伤害",
             "activation": {
               "type": "action",
               "value": null,
@@ -1150,20 +1247,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1193,7 +1295,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ]
             },
@@ -1209,7 +1312,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1217,7 +1321,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1228,19 +1331,65 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           },
           "ww62IP3cD5j0MNj8": {
             "_id": "ww62IP3cD5j0MNj8",
             "type": "damage",
-            "name": "Damage: 6d6 Acid Damage",
+            "name": "伤害: 6d6 强酸 伤害",
             "activation": {
               "type": "action",
               "value": null,
@@ -1253,20 +1402,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1296,7 +1450,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ]
             },
@@ -1312,7 +1467,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1320,7 +1476,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1331,13 +1486,59 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
@@ -1347,7 +1548,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1383,9 +1585,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1409,7 +1611,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">方块占据其所在空间位置的整个区域。其他生物可以进入该空间，但如此做的生物会承受凝胶方块的吞没能力，而其豁免具有劣势。</span><span style=\"font-family:Calibri\"><br /></span><span style=\"font-family:'STHeiti light'\">在方块体内的生物可以被他人看到，但仍处于全身掩护状态。</span><span style=\"font-family:Calibri\"><br /></span><span style=\"font-family:'STHeiti light'\">方块周边</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺范围内的一个生物可以用一个动作将方块内的生物或物件拖出。此时该生物还必须成功通过一次</span><span style=\"font-family:Calibri\">DC 12</span><span style=\"font-family:'STHeiti light'\">的力量检定，且该生物必须承受</span><span style=\"font-family:Calibri\">10</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">3d6</span><span style=\"font-family:'STHeiti light'\">）点强酸伤害。</span><span style=\"font-family:Calibri\"><br /></span><span style=\"font-family:'STHeiti light'\">方块至多可以同时容纳一个大型生物，或至多</span><span style=\"font-family:Calibri\">4</span><span style=\"font-family:'STHeiti light'\">个中型或更小体型的生物。</span></p><p>The cube takes up its entire space. Other creatures can enter the space, but a creature that does so is subjected to the cube's Engulf and has disadvantage on the saving throw.</p><p>Creatures inside the cube can be seen but have &amp;Reference[rule=totalcover]{total cover}.</p><p>A creature within 5 feet of the cube can take an action to pull a creature or object out of the cube. Doing so requires a successful [[/save ability=str dc=12]] check, and the creature making the attempt takes 10 ([[/damage 3d6 type=acid]]) damage.</p><p>The cube can hold only one Large creature or up to four Medium or smaller creatures inside it at a time.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">方块占据其所在空间位置的整个区域。其他生物可以进入该空间，但如此做的生物会承受凝胶方块的吞没能力，而其豁免具有劣势。</span><span style=\"font-family:Calibri\"><br></span><span style=\"font-family:'STHeiti light'\">在方块体内的生物可以被他人看到，但仍处于全身掩护状态。</span><span style=\"font-family:Calibri\"><br></span><span style=\"font-family:'STHeiti light'\">方块周边</span><span style=\"font-family:Calibri\">5</span><span style=\"font-family:'STHeiti light'\">尺范围内的一个生物可以用一个动作将方块内的生物或物件拖出。此时该生物还必须成功通过一次</span><span style=\"font-family:Calibri\">DC 12</span><span style=\"font-family:'STHeiti light'\">的力量检定，且该生物必须承受</span><span style=\"font-family:Calibri\">10</span><span style=\"font-family:'STHeiti light'\">（</span><span style=\"font-family:Calibri\">[[/damage 3d6 type=acid]]</span><span style=\"font-family:'STHeiti light'\">）点强酸伤害。</span><span style=\"font-family:Calibri\"><br></span><span style=\"font-family:'STHeiti light'\">方块至多可以同时容纳一个大型生物，或至多</span><span style=\"font-family:Calibri\">4</span><span style=\"font-family:'STHeiti light'\">个中型或更小体型的生物。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1423,7 +1625,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "0JN2T4iwLiZJdX70": {
             "_id": "0JN2T4iwLiZJdX70",
@@ -1441,20 +1643,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1484,7 +1691,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ]
             },
@@ -1500,7 +1708,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1508,7 +1717,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1519,13 +1727,59 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
@@ -1535,7 +1789,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1571,9 +1826,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1597,7 +1852,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">即使凝胶方块身处于肉眼可见的位置，观察者仍然需要成功通过一次</span><span style=\"font-family:Calibri\">DC 15</span><span style=\"font-family:'STHeiti light'\">的感知（察觉）检定来发现一个未移动且未发动攻击的方块。生物在未察觉的情况下尝试进入凝胶方块所在空间时，视为被凝胶方块突袭。</span></p><p>Even when the cube is in plain sight, it takes a successful [[/save ability=wis dc=15]] (&amp;Reference[skill=Perception]) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is @status[surprised] by the cube.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">即使凝胶方块身处于肉眼可见的位置，观察者仍然需要成功通过一次</span><span style=\"font-family:Calibri\">DC 15</span><span style=\"font-family:'STHeiti light'\">的感知（察觉）检定来发现一个未移动且未发动攻击的方块。生物在未察觉的情况下尝试进入凝胶方块所在空间时，视为被凝胶方块突袭。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1611,7 +1866,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "transparent",
         "cover": null,
@@ -1619,7 +1874,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1655,9 +1911,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,

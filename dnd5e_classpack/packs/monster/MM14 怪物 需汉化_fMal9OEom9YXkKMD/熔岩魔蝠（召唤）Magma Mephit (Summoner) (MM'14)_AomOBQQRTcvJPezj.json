@@ -1,5 +1,5 @@
 {
-  "name": "熔岩魔蝠（召唤）Magma Mephit (Summoner) (MM'14)",
+  "name": "熔岩魔蝠（召唤者） Magma Mephit (Summoner) (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180787977,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "AomOBQQRTcvJPezj",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Magma Mephit.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Magma%20Mephit.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 8,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 7,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 1,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,29 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": 30,
-        "swim": null,
-        "walk": 30,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "30",
+          "fly": "30"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 60,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "cha",
       "exhaustion": 0,
@@ -520,9 +511,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,18 +534,19 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--0\"><p><span style=\"font-family:'Roboto Condensed', sans-serif\">魔</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">蝠</span></span><span lang=\"EN-US\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">Mephits</span></span></p><p class=\"MsoNormal\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);margin-top:0.5em;margin-right:0px;margin-bottom:var(--h-mb-p);margin-left:0px;color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(241, 235, 232);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">    </span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">魔</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">蝠</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">外形跟小魔鬼相似，是一种栖息在诸元素位面而又变化多端的生物。魔</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">蝠</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">共六种，每种都代表两种元素的混合。</span><span lang=\"EN-US\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\"><br style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\" /></span></span><span style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">    </span></span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">魔幅们</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">是</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">不</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">老不死的魔术师，它们大量聚集在各元素位面和元素混沌中，有时还会找到前往物质位面的通路，并在那里寻找自己基础元素丰富之地作为自己喜好的居所。例如，由土与火合成的熔岩</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">魔幅喜欢</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">在火山里筑巢，而由气和水组成的</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">冰魔幅则</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">偏爱冰封的地带。</span></p><p class=\"MsoNormal\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);margin-top:0.5em;margin-right:0px;margin-bottom:var(--h-mb-p);margin-left:0px;color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(241, 235, 232);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">    </span></span><span style=\"font-family:'Roboto Condensed', sans-serif\"><em style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\">元素本质</strong></em></span><span lang=\"EN-US\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\"><em style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\">Elemental Nature</strong></em></span></span><span style=\"font-family:'Roboto Condensed', sans-serif\"><em style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\">。</strong></em>魔</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">蝠</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">不需要饮食和睡眠。</span><span lang=\"EN-US\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\"><br style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\" /><br style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\" /></span></span><span style=\"font-family:'Roboto Condensed', sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\">熔岩魔蝠Magma Mephit</strong></span></p><p class=\"MsoNormal\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);margin:0pt;color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(241, 235, 232);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><span style=\"font-family:'Roboto Condensed', sans-serif\">    由土与火组成的熔岩魔幅会发出一种暗红色的光芒，并且会释放出一滴滴熔融的岩浆。它们尝试理解别人的话语和行为时总是慢半拍。</span></p><p class=\"MsoNormal\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);margin:0pt;color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(241, 235, 232);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"></p><p class=\"MsoNormal\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);margin:0pt;color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(241, 235, 232);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">Mephits are capricious, imp-like creatures native to the elemental planes. They come in six varieties, each one representing the mixture of two elements.</p><p>Ageless tricksters, mephits gather in large numbers on the Elemental Planes and in the Elemental Chaos. They also find their way to the Material Plane, where they prefer to dwell in places where their base elements are abundant. For example, a magma mephit is composed of earth and fire, and it favors volcanic lairs, while an ice mephit, which is composed of air and water, favors frigid locales.</p><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Elemental Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Elemental Nature.</span> A mephit doesn't require food, drink, or sleep.</p></div></div></div></div><div data-roll-name-ancestor=\"Magma Mephit\" class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"2\"><span class=\"entry-title-inner\">Magma Mephit</span></h2><div class=\"rd__b  rd__b--2\"><p>Composed of earth and fire, magma mephits glow a dull red color as they perspire beads of molten lava. They are slow to comprehend the meaning of others' words and actions.</p></div></div>",
+        "value": "<div class=\"rd__b  rd__b--0\"><p><span style=\"font-family:'Roboto Condensed', sans-serif\">魔</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">蝠</span></span><span lang=\"EN-US\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">Mephits</span></span></p><p class=\"MsoNormal\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);margin-top:0.5em;margin-right:0px;margin-bottom:var(--h-mb-p);margin-left:0px;color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(241, 235, 232);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">    </span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">魔</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">蝠</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">外形跟小魔鬼相似，是一种栖息在诸元素位面而又变化多端的生物。魔</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">蝠</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">共六种，每种都代表两种元素的混合。</span><span lang=\"EN-US\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\"><br style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"></span></span><span style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">    </span></span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">魔幅们</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">是</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">不</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">老不死的魔术师，它们大量聚集在各元素位面和元素混沌中，有时还会找到前往物质位面的通路，并在那里寻找自己基础元素丰富之地作为自己喜好的居所。例如，由土与火合成的熔岩</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">魔幅喜欢</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">在火山里筑巢，而由气和水组成的</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">冰魔幅则</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">偏爱冰封的地带。</span></p><p class=\"MsoNormal\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);margin-top:0.5em;margin-right:0px;margin-bottom:var(--h-mb-p);margin-left:0px;color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(241, 235, 232);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">    </span></span><span style=\"font-family:'Roboto Condensed', sans-serif\"><em style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\">元素本质</strong></em></span><span lang=\"EN-US\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\"><em style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\">Elemental Nature</strong></em></span></span><span style=\"font-family:'Roboto Condensed', sans-serif\"><em style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\">。</strong></em>魔</span><span class=\"GramE\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\">蝠</span></span><span style=\"font-family:'Roboto Condensed', sans-serif\">不需要饮食和睡眠。</span><span lang=\"EN-US\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><span style=\"font-family:'Roboto Condensed', sans-serif\"><br style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"><br style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\"></span></span><span style=\"font-family:'Roboto Condensed', sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track)\">熔岩魔蝠Magma Mephit</strong></span></p><p class=\"MsoNormal\" style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);margin:0pt;color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(241, 235, 232);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><span style=\"font-family:'Roboto Condensed', sans-serif\">    由土与火组成的熔岩魔幅会发出一种暗红色的光芒，并且会释放出一滴滴熔融的岩浆。它们尝试理解别人的话语和行为时总是慢半拍。</span></p></div>",
         "public": ""
       },
       "alignment": "中立邪恶 Neutral Evil",
@@ -584,12 +573,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -646,10 +635,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Magma Mephit (Summoner)",
+    "name": "熔岩魔蝠（召唤者） Magma Mephit (Summoner) (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -657,15 +648,12 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/dnd5e_classpack/Nicons/img/bestiary/tokens/MM/Magma Mephit.webp",
+      "src": "https://5e.kiwee.top/img/bestiary/tokens/MM/Magma%20Mephit.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 0.8,
       "scaleY": 0.8,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -716,7 +704,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -732,7 +720,11 @@
         "texture": null
       }
     },
-    "flags": {},
+    "flags": {
+      "dnd5e": {
+        "lockScale": true
+      }
+    },
     "randomImg": false,
     "turnMarker": {
       "mode": 1,
@@ -740,7 +732,8 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
@@ -757,7 +750,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中+3，触及5尺。单一生物。<em style=\"mso-bidi-font-style:normal\">伤害：</em>3（1d4+1）点挥砍伤害外加2（1d4）点火焰伤害。</p><p><em>Melee Weapon Attack:</em> [[/r 1d20+3]]{+3} to hit, reach 5 ft., one creature. <em>Hit:</em> 3 ([[/damage 1d4 + 1 type=slashing]]) damage plus 2 ([[/damage 1d4 type=fire]]) damage.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击：</em>命中+3，触及5尺。单一生物。<em style=\"mso-bidi-font-style:normal\">伤害：</em>3（[[/damage 1d4 + 1 type=slashing]]）点挥砍伤害外加2（[[/damage 1d4 type=fire]]）点火焰伤害。</p></div>",
           "chat": ""
         },
         "range": {
@@ -791,7 +784,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -825,7 +819,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 },
                 {
                   "types": [
@@ -840,7 +835,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -854,15 +850,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -879,7 +879,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -887,7 +888,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -898,18 +898,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "claws",
@@ -927,12 +975,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -948,7 +994,8 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -959,11 +1006,15 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null,
-        "mastery": ""
+        "mastery": "",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -999,9 +1050,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755264470116,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1025,7 +1076,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>魔蝠呼出的火焰覆盖前方一处15尺的锥状区域。区域内的每个生物必须进行一次DC 11的敏捷豁免，豁免失败者将受到7（2d6）点火焰伤害，豁免成功则伤害减半。</p><p>The mephit exhales a 15-foot cone of fire. Each creature in that area must make a [[/save ability=dex dc=11]] saving throw, taking 7 ([[/damage 2d6 type=fire]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>魔蝠呼出的火焰覆盖前方一处15尺的锥状区域。区域内的每个生物必须进行一次DC 11的敏捷豁免，豁免失败者将受到7（[[/damage 2d6 type=fire]]）点火焰伤害，豁免成功则伤害减半。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1045,7 +1096,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "YLYDybFKqu6H1QFV": {
             "_id": "YLYDybFKqu6H1QFV",
@@ -1070,15 +1121,19 @@
                 }
               ]
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1088,7 +1143,8 @@
                 "size": "15",
                 "width": "",
                 "height": "",
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1110,7 +1166,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "11"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "half",
@@ -1128,7 +1185,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -1147,7 +1205,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1155,7 +1214,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1166,15 +1224,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "fire-breath",
@@ -1183,7 +1288,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1219,9 +1325,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755264487359,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1245,7 +1351,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><div><p class=\"MsoNormal\"><span style=\"FONT-FAMILY:'STHeiti\n\n\n\n\n\n\n\n light';mso-bidi-font-size:10.5pt;mso-ascii-font-family:宋体;mso-hansi-font-family:宋体\">魔幅有</span><span lang=\"EN-US\" style=\"mso-bidi-font-size:10.5pt;mso-fareast-font-family:'STHeiti light'\">25%</span><span style=\"FONT-FAMILY:'STHeiti\n\n\n\n\n\n\n\n light';mso-bidi-font-size:10.5pt;mso-ascii-font-family:宋体;mso-hansi-font-family:宋体\">的成功率召唤</span><span lang=\"EN-US\" style=\"mso-bidi-font-size:10.5pt;mso-fareast-font-family:'STHeiti light'\">1d4</span>只与自己同类的魔幅。被召唤<span class=\"GramE\">的魔幅将</span>出现在其召唤者<span lang=\"EN-US\" style=\"mso-bidi-font-size:10.5pt;mso-fareast-font-family:'STHeiti light'\">60</span>尺内的一处未被占领的空间位置中。它们将作为召唤者的盟友行动且不能召唤其他的魔幅。这些<span class=\"GramE\">魔幅持续</span>存在<span lang=\"EN-US\" style=\"mso-bidi-font-size:10.5pt;mso-fareast-font-family:'STHeiti light'\">1</span><span style=\"FONT-FAMILY:'STHeiti\n\n\n\n\n\n\n\n light';mso-bidi-font-size:10.5pt;mso-ascii-font-family:宋体;mso-hansi-font-family:宋体\">分钟，或直至其本身或者其召唤者死亡。其召唤者也可以用一个动作将其解散。</span></p><p class=\"MsoNormal\">The mephit has a [[/r 1d100]]{25 percent} chance of summoning [[/r 1d4]] mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</p></div></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><div><p class=\"MsoNormal\"><span style=\"FONT-FAMILY:'STHeiti\n\n\n\n\n\n\n\n light';mso-bidi-font-size:10.5pt;mso-ascii-font-family:宋体;mso-hansi-font-family:宋体\">魔幅有</span><span lang=\"EN-US\" style=\"mso-bidi-font-size:10.5pt;mso-fareast-font-family:'STHeiti light'\">25%</span><span style=\"FONT-FAMILY:'STHeiti\n\n\n\n\n\n\n\n light';mso-bidi-font-size:10.5pt;mso-ascii-font-family:宋体;mso-hansi-font-family:宋体\">的成功率召唤</span><span lang=\"EN-US\" style=\"mso-bidi-font-size:10.5pt;mso-fareast-font-family:'STHeiti light'\">[[/r 1d4]]</span>只与自己同类的魔幅。被召唤<span class=\"GramE\">的魔幅将</span>出现在其召唤者<span lang=\"EN-US\" style=\"mso-bidi-font-size:10.5pt;mso-fareast-font-family:'STHeiti light'\">60</span>尺内的一处未被占领的空间位置中。它们将作为召唤者的盟友行动且不能召唤其他的魔幅。这些<span class=\"GramE\">魔幅持续</span>存在<span lang=\"EN-US\" style=\"mso-bidi-font-size:10.5pt;mso-fareast-font-family:'STHeiti light'\">1</span><span style=\"FONT-FAMILY:'STHeiti\n\n\n\n\n\n\n\n light';mso-bidi-font-size:10.5pt;mso-ascii-font-family:宋体;mso-hansi-font-family:宋体\">分钟，或直至其本身或者其召唤者死亡。其召唤者也可以用一个动作将其解散。</span></p></div></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1264,7 +1370,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "SiDllPqA3DhsiwmC": {
             "_id": "SiDllPqA3DhsiwmC",
@@ -1288,20 +1394,25 @@
                 }
               ]
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1329,7 +1440,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1337,7 +1449,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1348,15 +1459,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "summon-mephits",
@@ -1365,7 +1522,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1401,9 +1559,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755264506130,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1427,7 +1585,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>魔幅死亡时，它的尸体会爆炸成一股岩浆，其周围5尺范围内的所有生物必须进行一次DC 11的敏捷豁免，豁免失败者将受到7（2d6）点火焰伤害，豁免成功则伤害减半。</p><p>When the mephit dies, it explodes in a burst of lava. Each creature within 5 feet of it must make a [[/save ability=dex dc=11]] saving throw, taking 7 ([[/damage 2d6 type=fire]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>魔幅死亡时，它的尸体会爆炸成一股岩浆，其周围5尺范围内的所有生物必须进行一次DC 11的敏捷豁免，豁免失败者将受到7（[[/damage 2d6 type=fire]]）点火焰伤害，豁免成功则伤害减半。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1441,7 +1599,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "W9P97HAwxMgQyQ1x": {
             "_id": "W9P97HAwxMgQyQ1x",
@@ -1459,15 +1617,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1477,7 +1639,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1499,7 +1662,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "11"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "half",
@@ -1517,7 +1681,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -1536,7 +1701,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1544,7 +1710,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1555,15 +1720,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "death-burst",
@@ -1572,7 +1784,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1608,9 +1821,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755264425255,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1634,7 +1847,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>魔蝠静止不动时和一堆普通的熔岩几乎一模一样。</p><p>While the mephit remains motionless, it is indistinguishable from an ordinary mound of magma.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>魔蝠静止不动时和一堆普通的熔岩几乎一模一样。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1648,7 +1861,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "false-appearance",
         "cover": null,
@@ -1656,7 +1869,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1692,9 +1906,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755264438252,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1706,7 +1920,7 @@
     },
     {
       "_id": "F7BGKEtAZsASG1kd",
-      "name": "Heat Metal",
+      "name": "灼热金属 Heat Metal",
       "type": "spell",
       "system": {
         "source": {
@@ -1718,7 +1932,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes [[/damage 2d8 type=fire]] damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.</p><p>If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.</p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"At Higher Levels\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">At Higher Levels.</span></span> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by [[/damage 1d8]] for each slot level above 2nd.</p></div></div>",
+          "value": "<p>指定施法距离内一件你能看见的人造金属物件（例如一把金属武器，或者一套金属质的重甲或中甲），并使该物件变得炽热。施展该法术时，任何与该物件有物理接触的生物均受到 [[/damage 2d8 type=fire]]{2d8} 的火焰伤害。直到法术终止前，你都可以在你随后的每个回合在以一个附赠动作来再次造成此伤害。</p><p>若握持或着装该物件的生物因此受到伤害，则该生物必须通过一次[[/save activity=dnd5eactivity000]]{体质豁免}，否则如果这个生物能丢下该物件，该生物就必须丢下该物件。如果该物件没有被丢下，则直至你的下一回合开始为止，该生物进行攻击检定和属性检定时具有劣势。</p><p><strong>升环施法效应。</strong>使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，伤害就增加 1d8。</p>",
           "chat": ""
         },
         "level": 2,
@@ -1739,7 +1953,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -1758,16 +1973,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1787,22 +1999,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1827,7 +2043,8 @@
                     "mode": "whole",
                     "number": 1,
                     "formula": ""
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -1841,7 +2058,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -1859,7 +2077,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1867,7 +2086,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1878,18 +2096,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "heat-metal"
+        "identifier": "heat-metal",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -1913,9 +2180,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1939,7 +2206,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>魔蝠天生可以施展<em style=\"mso-bidi-font-style:normal\">灼热金属heat metal</em>且无需任何材料成分。其施法属性为魅力。</p><div data-roll-name-ancestor=\"Innate Spellcasting (1/Day)\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Innate Spellcasting (1/Day).</span> The mephit can innately cast @UUID[.F7BGKEtAZsASG1kd] (spell save DC <span class=\"rd__dc\">10</span>), requiring no material components. Its innate spellcasting ability is Charisma.</p></div></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>魔蝠天生可以施展<em style=\"mso-bidi-font-style:normal\">灼热金属heat metal</em>且无需任何材料成分。其施法属性为魅力。</p></div><p>@UUID[.F7BGKEtAZsASG1kd]{灼热金属 Heat Metal}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1958,7 +2225,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "innate-spellcasting",
         "cover": null,
@@ -1966,7 +2233,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2002,9 +2270,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755264452180,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -2016,7 +2284,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "mmygK5C0NoS6VuBS",
   "sort": 7800000,
   "ownership": {
     "default": 0,

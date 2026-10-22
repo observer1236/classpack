@@ -1,5 +1,5 @@
 {
-  "name": "火矮人Azer (MM'14)",
+  "name": "火矮人 Azer (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1755063739190,
     "lastModifiedBy": "6hRHxqrGLI5zkF7v",
     "exportSource": null
   },
   "_id": "fV2JnWbFUg14vfNU",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Azer.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Azer.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 17,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 15,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 13,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 10,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,28 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": null,
-        "walk": 30,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "30"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 0,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 0,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "str",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,18 +533,19 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p><strong>火矮人Azer</strong></p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\">“我只要一百个火矮人奴隶，就可以建起一个让众神也为之动容的帝国。”</em></p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:right;MARGIN:0pt;mso-pagination:widow-orphan;text-align:right\"><em style=\"mso-bidi-font-style:normal\">火巨灵帕沙，阿克瑟斯?奥赛夸 Arakses al-Saqar</em></p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"></p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">火矮人是火元素位面的原住民，它们是工艺大师、采矿专家，还是火巨灵efreet的誓敌。火矮人的外观和举止类似男性矮人，不过这只是假象。其烈焰般的头发和胡须，正好彰显其金属皮肤下全由火焰构成的本质。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>铸成的生命Made, Not Born。</strong></em>火矮人不能生育。它们的身躯由另一个火矮人用青铜铸成，再由铸造者注入一份它的生命之火。每个火矮人都被雕刻成独特的外观。铸造的过程限制了人口的增长速度，因此火矮人相当稀少。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>火山居民Volcanic Dwellers。</strong></em>火矮人居住在火元素位面与土元素位面交界处一个火山林立的国度。火矮人们活动于层峦叠嶂下的火山口与岩浆户里，从中开采着闪耀的金属和宝石。火矮人小分队在隘口和地道间巡逻，抵御着火巨灵派来入侵国度的火蜥蜴掠夺者salamander raiders。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>火巨灵之敌Enemies of the Efreet。</strong></em>很久以前，火巨灵与火矮人曾是盟友。火矮人们还协助建造了火巨灵的家园黄铜之城City of Brass，并将其打造成世上最令人惊叹的奇观之一。然而在火矮人完工之际，火巨灵却背叛了盟友，甚至意图奴役火矮人以为防止城市的机密外泄。虽然火巨灵的奴役计划最终失败，但双方至今仍只是偶尔的劫掠和小规模冲突，并没有爆发全面的战争。火矮人们认为火巨灵是担心它们会公开进入黄铜之城的秘密通道，因而才不敢轻举妄动。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>金属与宝石大师Master of Metal and Fems。</strong></em>火矮人是工艺大师，能将火山中开采出的宝石和稀有金属铸造成美丽的工艺品。在它们认为这些珍宝的价值超越一切，并且时常派遣团队跨越位面前去寻找珍稀的金属和宝石。当火矮人被魔法召唤到主物质位面时，通常都是为了协助铸造精巧的魔法物品或艺术品。据说火矮人的技艺天下无双。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>活体火焰Living Fire。</strong></em>火矮人无需食物、饮水、睡眠。</p><p>Natives of the Elemental Plane of Fire, azers are master crafters, expert miners, and sworn foes of the efreet. In appearance and manner, an azer resembles a male dwarf, but this is a facade. Beneath its metallic looking skin, an azer is a being of fire, which outwardly manifests in its fiery hair and beard.</p><div data-roll-name-ancestor=\"Made, Not Born\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Made, Not Born.</span> Azers don't reproduce. They are each crafted from bronze by another azer and imbued with a portion of the crafter's inner flame. Each azer is sculpted with unique features. This crafting process limits the growth of the azer population and is the primary reason that these creatures remain rare.</p></div><div data-roll-name-ancestor=\"Volcanic Dwellers\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Volcanic Dwellers.</span> Azers dwell in a kingdom on the border between the Elemental Plane of Earth and the Elemental Plane of Fire-a range of mountains and volcanoes whose spires rise as a series of fortresses. Beneath mountain peaks, under volcanic calderas, and amid rivers of magma, azers extract gleaming metals and glittering gems from the earth. Squads of azer patrol the passes and tunnels of their realm, fending off the salamander raiders whose efreet masters order strikes against the azer kingdom.</p></div><div data-roll-name-ancestor=\"Enemies of the Efreet\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Enemies of the Efreet.</span> Long ago, the efreet and the azers were allies. Azers helped create the City of Brass, forging that home of the efreet into one of the most wondrous places in creation. When the azers had finished their work, the efreet betrayed them, making a failed attempt to enslave the azers so as to protect the secrets of the city. Despite occasional raids and skirmishes, however, the two sides have so far refrained from all-out conflict. The azers believe that only the threat of them revealing the hidden ways into the City of Brass keeps the efreet in check.</p></div><div data-roll-name-ancestor=\"Masters of Metal and Gems\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Masters of Metal and Gems.</span> Azers are masterful artisans, and create beautiful works from the gems and precious metals found in their volcanic habitat. They rate the value of such treasures above all other things, sometimes dispatching parties across the planes to seek out rare metals and gemstones.</p><p>When azers are called by magic to the Material Plane, it is typically to help forge an elaborate magic item or work of art, for it is said that their skill in such craft knows no equal.</p></div><div data-roll-name-ancestor=\"Living Fire\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Living Fire.</span> An azer doesn't require food, drink, or sleep.</p></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<em>Give me a hundred azer slaves, and I can forge an empire that would make the gods tremble.</em>”</p><p><span class=\"rd__quote-by\">— Arakses al-Saqar, efreeti pasha</span></p></div></div></div>",
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p><strong>火矮人Azer</strong></p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\">“我只要一百个火矮人奴隶，就可以建起一个让众神也为之动容的帝国。”</em></p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:right;MARGIN:0pt;mso-pagination:widow-orphan;text-align:right\"><em style=\"mso-bidi-font-style:normal\">火巨灵帕沙，阿克瑟斯?奥赛夸 Arakses al-Saqar</em></p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\">火矮人是火元素位面的原住民，它们是工艺大师、采矿专家，还是火巨灵efreet的誓敌。火矮人的外观和举止类似男性矮人，不过这只是假象。其烈焰般的头发和胡须，正好彰显其金属皮肤下全由火焰构成的本质。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>铸成的生命Made, Not Born。</strong></em>火矮人不能生育。它们的身躯由另一个火矮人用青铜铸成，再由铸造者注入一份它的生命之火。每个火矮人都被雕刻成独特的外观。铸造的过程限制了人口的增长速度，因此火矮人相当稀少。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>火山居民Volcanic Dwellers。</strong></em>火矮人居住在火元素位面与土元素位面交界处一个火山林立的国度。火矮人们活动于层峦叠嶂下的火山口与岩浆户里，从中开采着闪耀的金属和宝石。火矮人小分队在隘口和地道间巡逻，抵御着火巨灵派来入侵国度的火蜥蜴掠夺者salamander raiders。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>火巨灵之敌Enemies of the Efreet。</strong></em>很久以前，火巨灵与火矮人曾是盟友。火矮人们还协助建造了火巨灵的家园黄铜之城City of Brass，并将其打造成世上最令人惊叹的奇观之一。然而在火矮人完工之际，火巨灵却背叛了盟友，甚至意图奴役火矮人以为防止城市的机密外泄。虽然火巨灵的奴役计划最终失败，但双方至今仍只是偶尔的劫掠和小规模冲突，并没有爆发全面的战争。火矮人们认为火巨灵是担心它们会公开进入黄铜之城的秘密通道，因而才不敢轻举妄动。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>金属与宝石大师Master of Metal and Fems。</strong></em>火矮人是工艺大师，能将火山中开采出的宝石和稀有金属铸造成美丽的工艺品。在它们认为这些珍宝的价值超越一切，并且时常派遣团队跨越位面前去寻找珍稀的金属和宝石。当火矮人被魔法召唤到主物质位面时，通常都是为了协助铸造精巧的魔法物品或艺术品。据说火矮人的技艺天下无双。</p><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left;MARGIN:0pt;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\"><strong>活体火焰Living Fire。</strong></em>火矮人无需食物、饮水、睡眠。</p></div></div>",
         "public": ""
       },
       "alignment": "守序中立Lawful Neutral",
@@ -580,12 +568,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -639,10 +627,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Azer",
+    "name": "火矮人 Azer (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -653,12 +643,9 @@
       "src": "systems/dnd5e/tokens/elemental/Azer.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -709,7 +696,7 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -733,7 +720,8 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
@@ -750,7 +738,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击</em>：命中+5，触及5尺，单一目标。<em style=\"mso-bidi-font-style:normal\">命中：</em>7（1d8+3）点钝击伤害，双手持用时8（1d10+3）点钝击伤害，外加3（1d6）点火焰伤害。</p><p><em>Melee Weapon Attack:</em> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <em>Hit:</em> 7 ([[/damage 1d8 + 3 type=bludgeoning]]) damage, or 8 ([[/damage 1d10 + 3 type=bludgeoning]]) damage if used with two hands to make a melee attack, plus 3 ([[/damage 1d6 type=fire]]) damage.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><em style=\"mso-bidi-font-style:normal\">近战武器攻击</em>：命中+5，触及5尺，单一目标。<em style=\"mso-bidi-font-style:normal\">命中：</em>7（[[/damage 1d8 + 3 type=bludgeoning]]）点钝击伤害，双手持用时8（[[/damage 1d10 + 3 type=bludgeoning]]）点钝击伤害，外加3（[[/damage 1d6 type=fire]]）点火焰伤害。</p></div>",
           "chat": ""
         },
         "range": {
@@ -776,7 +764,7 @@
           "9gcGo0Vi8jeVeHIX": {
             "_id": "9gcGo0Vi8jeVeHIX",
             "type": "attack",
-            "name": "Attack: 1d8 Bludgeoning Damage ...",
+            "name": "攻击: 1d8 钝击 伤害 ...",
             "activation": {
               "type": "action",
               "value": 1,
@@ -786,7 +774,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -820,7 +809,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 },
                 {
                   "types": [
@@ -835,7 +825,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -849,15 +840,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -874,7 +869,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -882,7 +878,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -893,23 +888,71 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           },
           "oGyoIc8MDsXlMs0E": {
             "_id": "oGyoIc8MDsXlMs0E",
             "type": "attack",
-            "name": "Attack: 1d10 Bludgeoning Damage ...",
+            "name": "攻击: 1d10 钝击 伤害 ...",
             "activation": {
               "type": "action",
               "value": 1,
@@ -919,7 +962,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -953,7 +997,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 },
                 {
                   "types": [
@@ -968,7 +1013,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -982,15 +1028,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1007,7 +1057,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1015,7 +1066,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1026,21 +1076,68 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
-        "rarity": "",
         "identified": true,
         "equipped": true,
         "attunement": "",
@@ -1067,7 +1164,6 @@
         "container": null,
         "attuned": false,
         "cover": null,
-        "crewed": false,
         "damage": {
           "base": {
             "number": null,
@@ -1079,7 +1175,8 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1091,10 +1188,14 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1130,9 +1231,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755063351901,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1156,7 +1257,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>生物触碰火矮人，或者在其周边5尺范围内以近战攻击命中火矮人时，将受到5（1d10）点火焰伤害。</p><p>A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes 5 ([[/damage 1d10 type=fire]]) damage.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>生物触碰火矮人，或者在其周边5尺范围内以近战攻击命中火矮人时，将受到5（[[/damage 1d10 type=fire]]）点火焰伤害。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1170,7 +1271,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "1OtERiDewF79dqQv": {
             "_id": "1OtERiDewF79dqQv",
@@ -1188,20 +1289,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1231,7 +1337,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ]
             },
@@ -1247,7 +1354,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1255,7 +1363,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1266,13 +1373,59 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
@@ -1282,7 +1435,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1318,9 +1472,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755063264818,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1344,7 +1498,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>火矮人用金属质近战武器命中敌人时，将额外造成3（1d6）点火焰伤害（已包含在攻击项中）。</p><p>When the azer hits with a metal melee weapon, it deals an extra 3 ([[/damage 1d6 type=fire]]) damage (included in the attack).</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>火矮人用金属质近战武器命中敌人时，将额外造成3（[[/damage 1d6 type=fire]]）点火焰伤害（已包含在攻击项中）。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1358,7 +1512,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "SShFEJB65V3B3fnL": {
             "_id": "SShFEJB65V3B3fnL",
@@ -1376,20 +1530,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1419,7 +1578,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ]
             },
@@ -1435,7 +1595,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1443,7 +1604,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1454,13 +1614,59 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
             }
           }
         },
@@ -1470,7 +1676,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1506,9 +1713,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755063306349,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1532,7 +1739,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>火矮人向周边10尺范围发散出明亮光照，以及向外延伸10尺的微光光照。</p><p>The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p>火矮人向周边10尺范围发散出明亮光照，以及向外延伸10尺的微光光照。</p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -1546,7 +1753,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "illumination",
         "cover": null,
@@ -1554,7 +1761,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1590,9 +1798,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755063326980,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1608,7 +1816,7 @@
       "type": "equipment",
       "system": {
         "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><div class=\"WordSection1\"><div><p class=\"MsoNormal\" style=\"LAYOUT-GRID-MODE:char;MARGIN:2pt 0cm\"><span style=\"FONT-SIZE:10.5pt;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-size:14.0pt\">盾牌通常由木材或金属制成，可以单手进行持用。持用一面盾牌可以令你的护甲等级加</span>2<span style=\"FONT-SIZE:10.5pt;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-size:14.0pt\">。不过同一时间里你只能从一面盾牌中受益。</span><span lang=\"EN-US\" style=\"FONT-SIZE:10.5pt;mso-fareast-font-family:'STHeiti light'\"><br /></span>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p></div></div></div>",
+          "value": "<div class=\"rd__b  rd__b--2\"><div class=\"WordSection1\"><div><p class=\"MsoNormal\" style=\"LAYOUT-GRID-MODE:char;MARGIN:2pt 0cm\"><span style=\"FONT-SIZE:10.5pt;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-size:14.0pt\">盾牌通常由木材或金属制成，可以单手进行持用。持用一面盾牌可以令你的护甲等级加</span>2<span style=\"FONT-SIZE:10.5pt;mso-ascii-font-family:Cambria;mso-hansi-font-family:Cambria;mso-bidi-font-size:14.0pt\">。不过同一时间里你只能从一面盾牌中受益。</span><span lang=\"EN-US\" style=\"FONT-SIZE:10.5pt;mso-fareast-font-family:'STHeiti light'\"><br></span></p></div></div></div>",
           "chat": ""
         },
         "source": {
@@ -1630,10 +1838,8 @@
         },
         "attunement": "",
         "equipped": true,
-        "rarity": "",
         "identified": true,
         "cover": null,
-        "crewed": false,
         "uses": {
           "max": "",
           "spent": 0,
@@ -1641,8 +1847,7 @@
         },
         "armor": {
           "value": 2,
-          "dex": 0,
-          "magicalBonus": null
+          "dex": 0
         },
         "hp": {
           "value": 0,
@@ -1652,7 +1857,8 @@
         },
         "speed": {
           "value": null,
-          "conditions": ""
+          "conditions": "",
+          "units": "ft"
         },
         "strength": null,
         "proficient": 1,
@@ -1667,7 +1873,11 @@
         "properties": [],
         "activities": {},
         "attuned": false,
-        "identifier": "shield"
+        "identifier": "shield",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
       "ownership": {
@@ -1702,9 +1912,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": 1755063428824,
         "lastModifiedBy": "6hRHxqrGLI5zkF7v",
@@ -1717,23 +1927,12 @@
   ],
   "effects": [
     {
-      "changes": [
-        {
-          "key": "system.attributes.ac.bonus",
-          "value": "+4",
-          "mode": 2,
-          "priority": 7
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": 0,
-        "seconds": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null,
-        "combat": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "origin": null,
       "transfer": false,
@@ -1745,23 +1944,58 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "exportSource": null
       },
-      "name": "Other AC Bonus",
+      "name": "其他护甲等级加值 Other AC Bonus",
       "img": "systems/dnd5e/icons/svg/items/feature.svg",
       "_id": "rhyLI1UWJtG8DOkU",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "+4",
+            "priority": 7,
+            "type": "add",
+            "phase": "initial",
+            "_id": "OXdVGhOhy1kpZ01U",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "description": "",
       "tint": "#ffffff",
       "statuses": [],
       "sort": 0,
+      "start": {
+        "combat": null,
+        "round": null,
+        "time": 0,
+        "turn": null,
+        "combatant": null,
+        "initiative": null
+      },
+      "showIcon": 1,
+      "folder": null,
       "_key": "!actors.effects!fV2JnWbFUg14vfNU.rhyLI1UWJtG8DOkU"
     }
   ],

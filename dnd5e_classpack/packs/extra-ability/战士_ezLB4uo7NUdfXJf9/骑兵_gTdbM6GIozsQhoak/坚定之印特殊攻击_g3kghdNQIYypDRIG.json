@@ -1,14 +1,14 @@
 {
   "name": "坚定之印特殊攻击",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/1ability_toughness%20.png",
+  "img": "icons/skills/targeting/target-strike-triple-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         如果该敌人对除你之外的人造成了伤害，在你的下一个回合你可以用一个附赠动作对该敌人进行一次特殊近战攻击，你这次攻击骰有优势，且如果击中，攻击武器对目标额外造成等同于你战士等级一半的伤害。</p><p>         无论你标记了多少名角色，你能够使用的特殊攻击次数等同于你的力量调整值（至少为1），而且你在长休后重新获得所有被消耗的特殊攻击次数。</p>",
+      "value": "<p>此外，如果具有你印记的敌人对除你之外的任何其他人造成了伤害，则在下一个你的回合中，你可以以附赠动作对该敌人进行一次特殊的近战武器攻击。你的本次攻击检定具有优势，若击中，攻击用的武器还会对目标额外造成等同于你战士等级一半的伤害。</p>\n<p>无论你为多少名角色赋予了印记，你能够发动特殊攻击的次数等同于你的力量调整值次（至少1次），当你完成一次长休时，你重获全部已被消耗的次数。</p>",
       "chat": ""
     },
     "source": {
@@ -30,8 +30,9 @@
     "cover": null,
     "crewed": false,
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "activities": {
@@ -49,7 +50,8 @@
             {
               "type": "itemUses",
               "value": "1",
-              "target": ""
+              "target": "",
+              "scaling": {}
             }
           ],
           "scaling": {
@@ -59,14 +61,16 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "",
           "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -82,7 +86,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -112,18 +117,104 @@
               "number": null,
               "denomination": null,
               "bonus": "",
-              "types": []
+              "types": [],
+              "modifiers": [],
+              "scaling": {
+                "number": 1
+              }
             }
           ]
         },
         "sort": 0,
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
-    "identifier": "",
-    "advancement": [],
+    "identifier": "unwavering-mark-special-attack",
+    "advancement": {},
     "enchant": {}
   },
   "effects": [],
@@ -154,19 +245,12 @@
       "otherCondition": ""
     },
     "core": {},
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1725708187966,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

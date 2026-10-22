@@ -5,7 +5,7 @@
   "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
   "system": {
     "description": {
-      "value": "<p>变形生物以及由幻术和变化系魔法所变形的生物在你身边30尺视野范围内时，你将直接看出其真实形态。</p>",
+      "value": "<p> <em>15</em><em>级</em></p>\n<p> 变形生物以及由幻术和变化系魔法变形的生物在你身边30尺视线范围内时，你将直接看出其真实形态。</p>",
       "chat": ""
     },
     "source": {
@@ -23,15 +23,16 @@
       "value": "class",
       "subtype": "eldritchInvocation"
     },
-    "requirements": "邪术师等级 15",
+    "requirements": "魔契师等级 15",
     "activities": {},
-    "identifier": "-",
-    "advancement": [],
+    "identifier": "eldritch-invocations-witch-sight",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": 15,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
@@ -41,12 +42,7 @@
   "folder": "o5aPffxN3VG2SeQa",
   "sort": 1900000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -69,9 +65,9 @@
     "default": 0
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757263830785,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

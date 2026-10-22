@@ -1,6 +1,6 @@
 {
   "_id": "Fs3YJW6scuBDsPrE",
-  "name": "武术范型",
+  "name": "武术范型 Martial Archetype",
   "type": "feat",
   "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
   "system": {
@@ -9,7 +9,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<p>第3级时，你选择一种范型以体现你的战斗风格和技巧。你可以从以下范型中选择其一。随后，你将在第3、第7、第10、第15、第18级获得所选范型的相应特性。</p>\n<ul>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs01]{勇士}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs02]{战斗大师}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs03]{奥法骑士}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs04]{紫龙骑士（SCAG）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs05]{武士（XGE）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs06]{魔射手（XGE）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs07]{骑兵（XGE）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs08]{回音骑士（EGtW）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs09]{符文骑士（TCE）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.NOdNl8paEppqJs10]{灵能武士（TCE）}</li>\n</ul>",
+      "value": "<p> 第3级时，你选择一种范型以体现你的战斗风格和技巧。你可以从诸如勇士Champion、战斗大师Battle Master、奥法骑士Eldritch Knight等范型中选择其一。随后，你将在第3、第7、第10、第15、第18级获得所选范型的相应特性。</p>\n<ul>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs01]{勇士}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs02]{战斗大师}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs03]{奥法骑士}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs04]{紫龙骑士（SCAG）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs05]{武士（XGE）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs06]{魔射手（XGE）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs07]{骑兵（XGE）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs08]{回音骑士（EGtW）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs09]{符文骑士（TCE）}</li>\n<li>@UUID[Compendium.dnd5e_classpack.subclass.Item.NOdNl8paEppqJs10]{灵能武士（TCE）}</li>\n</ul>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,15 @@
     },
     "requirements": "战士等级 3",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "martial-archetype",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "0Iyyl84LrEbKBK1I",
   "sort": 14300000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +60,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749735916745,
     "lastModifiedBy": "00Hmaouu4SsMyc7n",

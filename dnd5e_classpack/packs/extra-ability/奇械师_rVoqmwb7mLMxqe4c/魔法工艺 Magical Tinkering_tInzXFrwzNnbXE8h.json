@@ -2,14 +2,14 @@
   "_id": "tInzXFrwzNnbXE8h",
   "name": "魔法工艺 Magical Tinkering",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_RewindTime.png",
+  "img": "icons/magic/symbols/cog-glowing-green.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         在第1级，你将学习如何在平凡的物品中注入魔法的火花。要使用这个能力，你必须手持@UUID[Compendium.dnd5e_classpack.itempack.E20CE7D30DE58B23]{修理工具}，或其他工匠工具。然后花费一个动作触摸一个微小的非魔法物体，从以下魔法属性中选择一个赋予它：</p>\n<ul>\n<li>该物体提供5尺半径的明亮照明，以及该范围外5尺范围的微光照明。</li>\n<li>无论何时，只要该物品被生物触碰，就会发出可在10尺外听到的录音信息。录入的信息在你将此属性赋予对象时决定，且时长不可超过6秒。</li>\n<li>物品不断地发出一种气味或一种非语言的声音（风声、浪声、鸟叫或类似的声音）。这一现象最多能传播10尺远。</li>\n<li>一个静态的视觉效果出现在物体的表面上。这个效果可以是一幅图片，最多25个单词的文本，线条和形状，或者这些元素的混合，如你所愿。</li>\n</ul>\n<p>         所选的魔法属性持续时间无限。你能够以一个动作触摸对象来消除这一魔法属性。</p>\n<p>         你能够通过此特性将魔力赋予多个物品，每次使用该特性时都需要触摸一个物品，并且单个物品一次只能承载一种魔法属性。你能够使用该特性影响的物品的最大数量等于你的智力调整值（最少一个物品）。如果你试图超过最大值，最老的魔法属性将立即结束，然后新的魔法属性生效。</p>",
+      "value": "<p> 你将学习如何在平凡的物品中注入魔法的火花。要使用这个能力，你必须手持着盗贼工具，或工匠工具，然后用一个动作去触摸一件微型的、非魔法的物件。你从以下魔法属性中选择一个赋予它：</p>\n<ul><li>该物体提供5尺半径的明亮光照，以及该范围外5尺范围的微光光照。</li> <li>无论何时，只要该物品被生物触碰，就会发出可在10英尺外听到的录音信息。录入的信息在你将此属性赋予对象时决定，且时长不可超过6秒。</li> <li>物品不断地发出一种气味或一种非语言的声音（风声、浪声、鸟叫或类似的声音）。这一现象最多能在10尺范围内被感知到。</li> <li>一个静态的视觉效果出现在物体的表面上。这个效果可以是一幅图片、一段最多25个单词的文本、一些线条、或一些形状，或者这些元素的混合体，如你所愿。</li> </ul>\n<p> 所选的魔法属性持续时间无限。你能够触摸对象，以一个动作来提前结束它的魔法属性。</p>\n<p> 你能够通过此特性将魔力赋予多个物件，每次使用该特性时都需要触摸一个物件，并且单个物件一次只能承载一个魔法属性。你能够使用该特性影响的物件的最大数量等于你的智力调整值（最少一个物品）。如果你试图影响超出上限的物件，最早的魔法属性会先立即结束，然后新的魔法属性才会生效。</p>",
       "chat": ""
     },
     "source": {
@@ -19,7 +19,7 @@
     },
     "uses": {
       "max": "max(@abilities.int.mod,1)",
-      "spent": 0,
+      "spent": 1,
       "recovery": []
     },
     "requirements": "奇械师等级 1",
@@ -52,13 +52,15 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -74,7 +76,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": "any"
+            "units": "any",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -96,17 +99,103 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-magical-tinkering",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -114,19 +203,12 @@
   "folder": "rVoqmwb7mLMxqe4c",
   "sort": 47000000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

@@ -1,5 +1,5 @@
 {
-  "name": "Death Tyrant (MM'14)",
+  "name": "亡眼暴君 Death Tyrant (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180787977,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "Y7Ffso4DAcnBAkvd",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Death Tyrant.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Death%20Tyrant.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 10,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 14,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 14,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 19,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 15,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 19,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 2,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,12 @@
     },
     "attributes": {
       "ac": {
-        "calc": "natural",
-        "flat": 19
+        "flat": 19,
+        "calcs": [
+          "natural"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +478,29 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": 20,
-        "swim": null,
-        "walk": 0,
         "units": "ft",
-        "hover": true
+        "hover": true,
+        "speeds": {
+          "walk": "0",
+          "fly": "20"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 120,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 120,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +533,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>On rare occasions, a beholder's sleeping mind drifts to places beyond its normal madness, imagining a reality in which it exists beyond death. When such dreams take hold, a beholder can transform, its flesh sloughing away to leave a death tyrant behind. This monster possesses the cunning and much of the magic it had in life, but it is fueled by the power of undeath. A death tyrant appears as a massive, naked skull, with a pinpoint of red light gleaming in its hollow eye socket. With its eyestalks rotted away, ten spectral eyes hover above the creature and glare in all directions.</p><div data-roll-name-ancestor=\"Deathly Despot\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Deathly Despot.</span></span> As they did when they were beholders, death tyrants lord their power over other creatures. Moreover, a beholder's ability to quash magical energy with its central eye gives way to a more sinister power in a death tyrant, which can transform former slaves and enemies into undead servants.</p><p>Zombies created by a death tyrant are used and discarded as needed. They stand guard at the entrances to the death tyrant's lair or guard its treasure vaults.</p><p>Acting as bait for traps or as combat fodder, zombies keep powerful enemies distracted while the death tyrant moves into position and prepares to destroy them.</p></div><div data-roll-name-ancestor=\"Armies of the Dead\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Armies of the Dead.</span></span> A death tyrant that embraces undeath becomes an engine of destruction. Driven by a hunger for power and security, it advances against humanoid settlements, using its eye rays to destroy every creature it encounters, then building an army of undead. If left unchecked, a death tyrant might wipe out the population of a city in weeks, then set its undead eye on wider conquest. As each settlement falls, the death tyrant's zombie forces build to overwhelming numbers.</p></div><div data-roll-name-ancestor=\"Undead Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Undead Nature.</span></span> A death tyrant doesn't require air, food, drink, or sleep.</p></div></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\"><span class=\"ve-flex-vh-center\"></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>A cluster of tiny lights descended from a dark crevice in the ceiling. These motes cast an eerie glow on the great, alien skull that hung beneath them.</i>”</p><p><span class=\"rd__quote-by\">— From the Journal of Jastus Hollowquill, explorer of Undermountain</span></p></div></div><div data-roll-name-ancestor=\"A Death Tyrant's Lair\" class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"4\"> <span class=\"entry-title-inner\">A Death Tyrant's Lair</span></h2> <p>A death tyrant's lair is usually the same site it held as a beholder, but it contains more trappings of death and decay. A death tyrant encountered in its lair has a challenge rating of 15 (13,000 XP).</p><p>The death tyrant can't repeat an effect until all three have been used, and it can't use the same effect on consecutive rounds.</p><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Lair Actions\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Lair Actions.</span></span> When fighting inside its lair, a death tyrant can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the death tyrant can take one lair action to cause one of the following effects:</p><ul class=\"rd__list\"><li class=\"rd__li \">An area that is a 50-foot cube within 120 feet of the tyrant is filled with spectral eyes and tentacles. To creatures other than the death tyrant, that area is lightly obscured and &amp;Reference[rule=difficultterrain]{difficult terrain} until initiative count 20 on the next round.</li><li class=\"rd__li \">Walls sprout spectral appendages until initiative count 20 on the round after next. Any creature, including one on the Ethereal Plane, that is hostile to the tyrant and starts its turn within 10 feet of a wall must succeed on a [[/save ability=dex dc=17]] saving throw or be &amp;Reference[condition=grappled]. Escaping requires a successful [[/save ability=str dc=17]] (&amp;Reference[skill=Athletics]) or Dexterity (&amp;Reference[skill=Acrobatics]) check.</li><li class=\"rd__li \">A spectral eye opens in the air at a point within 50 feet of the tyrant. One random eye ray of the tyrant shoots from that eye, which is considered to be an ethereal source, at a target of the tyrant's choice. The eye then closes and disappears.</li></ul><p>The death tyrant can't repeat an effect until all three have been used, and it can't use the same effect on consecutive rounds.</p></div></div><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Regional Effects\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Regional Effects.</span></span> A region containing a death tyrant's lair is warped by the creature's unnatural presence, which creates one or more of the following effects:</p><ul class=\"rd__list\"><li class=\"rd__li \">Creatures within 1 mile of the tyrant's lair sometimes feel as if they're being watched even when they aren't.</li><li class=\"rd__li \">When a creature hostile to the tyrant and aware of its existence finishes a long rest within 1 mile of the tyrant's lair, roll a [[/r d20]] for that creature. On a roll of 10 or lower, the creature is subjected to one random eye ray of the tyrant.</li></ul><p>If the death tyrant dies, these effects fade over the course of [[/r 1d10]] days.</p></div></div></div>",
+        "value": "<h3>亡眼暴君Death Tyrant</h3><p>眼魔沉睡时，其意识偶尔会走向一处比它平时更为疯狂的角落，然后便开始幻想其死后依然存在的可能性。一旦这种梦境定型，眼魔就会发生转变。它的血肉将全数脱落，只剩下一只亡眼暴君。这只生物与其生前一样狡诈并保有生前的大部分魔法，不同的是从此以后它只由不死的力量驱动。</p><p><strong>致命独裁Deathly Despot。</strong>亡眼暴君跟它们还是普通眼魔时一样以力量统领其他生物。而它们还以更邪恶的方式继承了眼魔主眼平息魔法的能力，即变成了将普通奴隶和敌人转化成不死仆役的能力。</p><p>亡眼暴君所创造的丧尸都是随用随弃。它们会被安置到亡眼暴君巢穴的入口作警卫，或是守护巢穴内的宝库。丧尸们还会被用来作触发陷阱的诱饵，或是用作战斗炮灰。它们帮亡眼暴君分散强大敌人的注意力，以让其主人就位并准备好将它们一起消灭。</p><p><strong>死亡大军Armies of the Dead。</strong>簇拥着亡灵的亡眼暴君是个毁灭之源。它们出于对力量与安全感的饥渴索求向周围的类人生物居住地发动袭击，并使用其眼波射线毁灭遭遇的所有生物，并建起其自己的亡灵大军。无人制止的亡眼暴君会在几周内杀光一座城市的所有居民，然后将其全部用作自己不死之眼创作的素材。一个个倒下的居民最后将使亡眼暴君的丧尸大军积累出一个压倒性的数目。</p><p><strong>亡灵本质Undead Nature。</strong>亡眼暴君不需要空气、食物、饮水和睡眠。</p><h3>亡眼暴君巢穴A Death Tyrant&#x27;s Lair</h3><p>亡眼暴君的巢穴通常也即是其还是眼魔时的巢穴，不过会包含有更多关于死亡和腐朽的陷阱。在亡眼暴君巢穴内与其遭遇时，亡眼暴君的挑战等级变为15（13,000 XP）。</p><h3>巢穴动作Lair Action</h3><p>在自己巢穴中作战时，亡眼暴君可以调动周围的魔力执行巢穴动作。先攻轮到20时（出现等值时视为后手），亡眼暴君可以执行一个巢穴动作并产生下列效应其一：</p><p>亡眼暴君周边120尺内一处50尺的立方区域内布满幽灵般的眼球与触须。除亡眼暴君外，生物在该区域内视为处于轻度遮蔽以及处于困难地形，并一直持续至下一轮先攻轮到20。</p><p>墙壁长出幽灵般的附肢，并一直持续至下一轮，先攻再次轮到20。任何与亡眼暴君敌对的生物（包括身处以太位面的生物）在这些墙壁周边10尺内开始其回合时，必须进行一次DC</p><p>17的敏捷豁免，豁免失败则受擒抱。以该方式被擒抱的生物可以进行一次DC</p><p>17的力量（运动）或敏捷（特技）检定以逃脱。</p><p>亡眼暴君周边50尺内一处空气中睁开一只幽灵般的眼球。眼球随机射出该亡眼暴君的一种眼波射线，并射向该暴君指定的一个它能看见的目标。这只眼球在射出射线后便合上消失不见。</p><p>直至所有三个动作都被用掉前，亡眼暴君都不能再使用已经用过的巢穴动作效应。而它也不能在连续的两轮里重复使用同一种效应。</p><h3>区域效应Regional Effects</h3><p>亡眼暴君巢穴内的区域被该生物的存在所扭曲，造成了下列一项或多项的效应：</p><p>亡眼暴君巢穴附近1里内的生物会时常有被监视的感觉，而事实上可能并没有。</p><p>亡眼暴君巢穴附近1里内，与暴君敌对的生物如果意识到暴君的存在，则其完成一次长休时必须掷一次d20。如果骰值为10或更低，则该生物立即被该暴君随机一种眼波射线击中。</p><p>亡眼暴君死亡后，这些效应将在1d10日里逐渐减弱消散。</p><p>“一簇微弱的光亮从天花板上黑暗的裂隙中降下。这些光点闪耀着诡异的光亮，映出其后悬浮着一个巨大的异形头骨。”</p><h3>出自加斯图斯空翎Jastus Hollowquill</h3><p>的地脉迷城Undermountain探索日志</p>",
         "public": ""
       },
-      "alignment": "Lawful Evil",
+      "alignment": "守序邪恶 Lawful Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -584,12 +572,12 @@
     },
     "resources": {
       "legact": {
-        "value": 3,
-        "max": 3
+        "max": 3,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": true,
@@ -648,10 +636,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Death Tyrant",
+    "name": "亡眼暴君 Death Tyrant (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -659,15 +649,12 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "modules/dnd5e_classpack/Nicons/img/bestiary/tokens/MM/Death Tyrant.webp",
+      "src": "https://5e.kiwee.top/img/bestiary/tokens/MM/Death%20Tyrant.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -718,7 +705,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -742,12 +729,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 2
   },
   "items": [
     {
       "_id": "UU3GpHG74iUC4DiN",
-      "name": "Bite",
+      "name": "啃咬 Bite",
       "type": "weapon",
       "system": {
         "source": {
@@ -759,7 +747,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 14 ([[/damage 4d6 type=piercing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：14（[[/damage 4d6 type=piercing]]）点穿刺伤害</p>",
           "chat": ""
         },
         "range": {
@@ -793,7 +781,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -827,7 +816,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -841,15 +831,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -866,7 +860,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -874,7 +869,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -885,18 +879,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "bite",
@@ -914,12 +956,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -934,7 +974,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -945,10 +986,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -966,9 +1011,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -980,7 +1025,7 @@
     },
     {
       "_id": "eeLPFFxgB2wbXDDA",
-      "name": "Eye Rays",
+      "name": "眼波射线 Eye Rays",
       "type": "feat",
       "system": {
         "source": {
@@ -992,7 +1037,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The death tyrant shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:</p><ul class=\"rd__list\"><li class=\"rd__li \">@UUID[.JOglwa5PER8Y1gb5]{1. Charm Ray}</li><li class=\"rd__li \">@UUID[.k2H74s2SdIhqwklN]{2. Paralyzing Ray}</li><li class=\"rd__li \">@UUID[.1LPcVe6MIzXNblD1]{3. Fear Ray}</li><li class=\"rd__li \">@UUID[.lTluxz0VE5RAxjhP]{4. Slowing Ray}</li><li class=\"rd__li \">@UUID[.42vnBjctTFzuE5Fb]{5. Enervation Ray}</li><li class=\"rd__li \">@UUID[.pH1J0QNJ05QwcpR0]{6. Telekinetic Ray}</li><li class=\"rd__li \">@UUID[.7O8Gs2amSVxrY3Iz]{7. Sleep Ray}</li><li class=\"rd__li \">@UUID[.kvvC8U3sKkE7Q1D6]{8. Petrification Ray}</li><li class=\"rd__li \">@UUID[.1N5ohPaeqkuhtr09]{9. Disintegration Ray}</li><li class=\"rd__li \">@UUID[.Izso9cj7d10tvcfP]{10. Death Ray}</li></ul></div>",
+          "value": "<p>亡眼暴君从下列选项中随机选择发射三束魔法眼波射线（重复则重骰），并指定身边120尺内它可以看到的一到三个目标： 1.魅惑射线Charm Ray。目标必须进行一次DC 17的感知豁免，豁免失败者将在1小时内受暴君魅惑，或是直至其受到来自该眼魔的伤害。 2.麻痹射线Paralyzing Ray。目标必须进行一次DC 17的体质豁免，豁免失败者将陷入1分钟的麻痹状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。 3.恐惧射线Fear Ray。目标必须进行一次DC 17的感知豁免，豁免失败者将陷入1分钟的恐慌状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。 4.缓慢射线Slowing Ray。目标必须进行一次DC 17的敏捷豁免，豁免失败者将在1分钟内速度减半。此外该生物无法执行反应，也无法在其回合里同时执行一个动作与一个附赠动作，而只能两者选其一。该生物可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。 5.弱能射线Enervation Ray。目标必须进行一次DC 17的体质豁免，豁免失败者将受到36（8d8）点暗蚀伤害，豁免成功则伤害减半。 6.念力射线Telekinetic Ray。目标必须进行一次DC 17的力量豁免，豁免失败者将被眼魔抓起并向任意方向移动至多30尺。目标被眼魔射线的念力抓住并陷入束缚，直至眼魔的下一回合开始时，或直至该眼魔陷入失能。 如果目标是一个未被着装或携带，且不超过300磅重的物件，则眼魔可以直接将它向任意方向移动至多30尺。该眼魔也可以使用该射线精确控制物件，比如操作简单的工具或是打开一扇门或一个容器。 7.睡眠射线Sleep Ray。目标必须进行一次DC 17的感知豁免，豁免失败者将沉睡1分钟并在此期间陷入昏迷，直至其受到伤害或由其他生物用一个动作唤醒。该射线对对构装和亡灵生物无效。 8.石化射线Petrification Ray。目标必须进行一次DC 17的敏捷豁免，豁免失败者将开始变成石头并陷入束缚。目标必须在其下一回合结束时再进行一次该豁免。豁免成功则终止该效应。豁免失败，则该生物陷入石化，直至受法术高等复原术greater restoration或其他魔法解除该效应为止。 9.解离射线Disintegration Ray。目标必须进行一次DC 17的敏捷豁免，豁免失败者将受到45（10d8）点力场伤害，如果该伤害将目标的生命值降至0，则其身体将化为一堆灰尘。 如果目标是一个大型或更小体型的非魔法物件，或者魔法造物，则它的豁免直接失败。如果目标是巨型或更大体型的物件，则解离射线可以分解其中10尺立方区域的部分。 10.致死射线Death Ray。目标必须进行一次DC 17的敏捷豁免，豁免失败者将受到55（10d10）点暗蚀伤害，如果目标因此生命降至0，则其直接死亡。</p><p>@UUID[.JOglwa5PER8Y1gb5]{魅惑射线 Eye Rays: 1. Charm Ray}、@UUID[.k2H74s2SdIhqwklN]{麻痹射线 Eye Rays: 2. Paralyzing Ray}、@UUID[.1LPcVe6MIzXNblD1]{恐惧射线 Eye Rays: 3. Fear Ray}、@UUID[.lTluxz0VE5RAxjhP]{缓慢射线 Eye Rays: 4. Slowing Ray}、@UUID[.42vnBjctTFzuE5Fb]{弱能射线 Eye Rays: 5. Enervation Ray}、@UUID[.pH1J0QNJ05QwcpR0]{念力射线 Eye Rays: 6. Telekinetic Ray}、@UUID[.7O8Gs2amSVxrY3Iz]{睡眠射线 Eye Rays: 7. Sleep Ray}、@UUID[.kvvC8U3sKkE7Q1D6]{石化射线 Eye Rays: 8. Petrification Ray}、@UUID[.1N5ohPaeqkuhtr09]{解离射线 Eye Rays: 9. Disintegration Ray}、@UUID[.Izso9cj7d10tvcfP]{致死射线 Eye Rays: 10. Death Ray}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1006,7 +1051,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "WsL0CW7o6jYn5IdF": {
             "_id": "WsL0CW7o6jYn5IdF",
@@ -1023,20 +1068,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1064,7 +1114,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1072,7 +1123,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1083,15 +1133,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "eye-rays",
@@ -1100,7 +1196,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1119,9 +1216,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1133,7 +1230,7 @@
     },
     {
       "_id": "JOglwa5PER8Y1gb5",
-      "name": "Eye Rays: 1. Charm Ray",
+      "name": "魅惑射线 Eye Rays: 1. Charm Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -1145,7 +1242,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The targeted creature must succeed on a [[/save ability=wis dc=17]] saving throw or be &amp;Reference[condition=charmed] by the death tyrant for 1 hour, or until the death tyrant harms the creature.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的感知豁免，豁免失败者将在1小时内受暴君魅惑，或是直至其受到来自该眼魔的伤害。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1159,7 +1256,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "3w9KLTygS83XqpIa": {
             "_id": "3w9KLTygS83XqpIa",
@@ -1176,15 +1273,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1194,7 +1295,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1216,7 +1318,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1237,7 +1340,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1245,7 +1349,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1256,15 +1359,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-1-charm-ray",
@@ -1273,7 +1423,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1292,9 +1443,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1306,7 +1457,7 @@
     },
     {
       "_id": "k2H74s2SdIhqwklN",
-      "name": "Eye Rays: 2. Paralyzing Ray",
+      "name": "麻痹射线 Eye Rays: 2. Paralyzing Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -1318,7 +1469,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The targeted creature must succeed on a [[/save ability=con dc=17]] saving throw or be &amp;Reference[condition=paralyzed] for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的体质豁免，豁免失败者将陷入1分钟的麻痹状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1332,7 +1483,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "ztM0JlMh2WNG9zQJ": {
             "_id": "ztM0JlMh2WNG9zQJ",
@@ -1349,15 +1500,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1367,7 +1522,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1389,7 +1545,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1410,7 +1567,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1418,7 +1576,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1429,15 +1586,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-2-paralyzing-ray",
@@ -1446,7 +1650,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1465,9 +1670,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1479,7 +1684,7 @@
     },
     {
       "_id": "1LPcVe6MIzXNblD1",
-      "name": "Eye Rays: 3. Fear Ray",
+      "name": "恐惧射线 Eye Rays: 3. Fear Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -1491,7 +1696,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The targeted creature must succeed on a [[/save ability=wis dc=17]] saving throw or be &amp;Reference[condition=frightened] for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的感知豁免，豁免失败者将陷入1分钟的恐慌状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1505,7 +1710,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "u2VCXhlzdK9JnSSy": {
             "_id": "u2VCXhlzdK9JnSSy",
@@ -1522,15 +1727,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1540,7 +1749,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1562,7 +1772,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1583,7 +1794,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1591,7 +1803,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1602,15 +1813,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-3-fear-ray",
@@ -1619,7 +1877,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1638,9 +1897,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1652,7 +1911,7 @@
     },
     {
       "_id": "lTluxz0VE5RAxjhP",
-      "name": "Eye Rays: 4. Slowing Ray",
+      "name": "缓慢射线 Eye Rays: 4. Slowing Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -1664,7 +1923,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The targeted creature must succeed on a [[/save ability=dex dc=17]] saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的敏捷豁免，豁免失败者将在1分钟内速度减半。此外该生物无法执行反应，也无法在其回合里同时执行一个动作与一个附赠动作，而只能两者选其一。该生物可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1678,7 +1937,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "c0fHdPgK19aref3W": {
             "_id": "c0fHdPgK19aref3W",
@@ -1695,15 +1954,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1713,7 +1976,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1735,7 +1999,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1756,7 +2021,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1764,7 +2030,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1775,15 +2040,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-4-slowing-ray",
@@ -1792,7 +2104,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1811,9 +2124,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1825,7 +2138,7 @@
     },
     {
       "_id": "42vnBjctTFzuE5Fb",
-      "name": "Eye Rays: 5. Enervation Ray",
+      "name": "弱能射线 Eye Rays: 5. Enervation Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -1837,7 +2150,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The targeted creature must make a [[/save ability=con dc=17]] saving throw, taking 36 ([[/damage 8d8 type=necrotic]]) damage on a failed save, or half as much damage on a successful one.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的体质豁免，豁免失败者将受到36（[[/damage 8d8 type=necrotic]]）点暗蚀伤害，豁免成功则伤害减半。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1851,7 +2164,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "7PErIjscz4HPrta2": {
             "_id": "7PErIjscz4HPrta2",
@@ -1869,15 +2182,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1887,7 +2204,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1909,7 +2227,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "half",
@@ -1927,7 +2246,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -1946,7 +2266,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1954,7 +2275,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1965,15 +2285,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-5-enervation-ray",
@@ -1982,7 +2349,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2001,9 +2369,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2015,7 +2383,7 @@
     },
     {
       "_id": "pH1J0QNJ05QwcpR0",
-      "name": "Eye Rays: 6. Telekinetic Ray",
+      "name": "念力射线 Eye Rays: 6. Telekinetic Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -2027,7 +2395,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the target is a creature, it must succeed on a [[/save ability=str dc=17]] saving throw or the death tyrant moves it up to 30 feet in any direction. It is &amp;Reference[condition=restrained] by the ray's telekinetic grip until the start of the death tyrant's next turn or until the death tyrant is &amp;Reference[condition=incapacitated].</p><p>If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The death tyrant can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的力量豁免，豁免失败者将被眼魔抓起并向任意方向移动至多30尺。目标被眼魔射线的念力抓住并陷入束缚，直至眼魔的下一回合开始时，或直至该眼魔陷入失能。 如果目标是一个未被着装或携带，且不超过300磅重的物件，则眼魔可以直接将它向任意方向移动至多30尺。该眼魔也可以使用该射线精确控制物件，比如操作简单的工具或是打开一扇门或一个容器。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2041,7 +2409,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "FuzScTPuBd8Q4b5H": {
             "_id": "FuzScTPuBd8Q4b5H",
@@ -2058,15 +2426,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -2076,7 +2448,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -2098,7 +2471,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -2119,7 +2493,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2127,7 +2502,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2138,15 +2512,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-6-telekinetic-ray",
@@ -2155,7 +2576,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2174,9 +2596,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2188,7 +2610,7 @@
     },
     {
       "_id": "7O8Gs2amSVxrY3Iz",
-      "name": "Eye Rays: 7. Sleep Ray",
+      "name": "睡眠射线 Eye Rays: 7. Sleep Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -2200,7 +2622,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The targeted creature must succeed on a [[/save ability=wis dc=17]] saving throw or fall asleep and remain &amp;Reference[condition=unconscious] for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的感知豁免，豁免失败者将沉睡1分钟并在此期间陷入昏迷，直至其受到伤害或由其他生物用一个动作唤醒。该射线对对构装和亡灵生物无效。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2214,7 +2636,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "9YMITzXzXxd3PeCT": {
             "_id": "9YMITzXzXxd3PeCT",
@@ -2231,15 +2653,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -2249,7 +2675,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -2271,7 +2698,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -2292,7 +2720,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2300,7 +2729,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2311,15 +2739,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-7-sleep-ray",
@@ -2328,7 +2803,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2347,9 +2823,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2361,7 +2837,7 @@
     },
     {
       "_id": "kvvC8U3sKkE7Q1D6",
-      "name": "Eye Rays: 8. Petrification Ray",
+      "name": "石化射线 Eye Rays: 8. Petrification Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -2373,7 +2849,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The targeted creature must make a [[/save ability=dex dc=17]] saving throw. On a failed save, the creature begins to turn to stone and is &amp;Reference[condition=restrained]. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is &amp;Reference[condition=petrified] until freed by the  @spell[greater restoration] spell or other magic.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的敏捷豁免，豁免失败者将开始变成石头并陷入束缚。目标必须在其下一回合结束时再进行一次该豁免。豁免成功则终止该效应。豁免失败，则该生物陷入石化，直至受法术高等复原术greater restoration或其他魔法解除该效应为止。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2387,7 +2863,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "BTqJZHXR6kovn6SF": {
             "_id": "BTqJZHXR6kovn6SF",
@@ -2404,15 +2880,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -2422,7 +2902,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -2444,7 +2925,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -2465,7 +2947,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2473,7 +2956,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2484,15 +2966,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-8-petrification-ray",
@@ -2501,7 +3030,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2520,9 +3050,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2534,7 +3064,7 @@
     },
     {
       "_id": "1N5ohPaeqkuhtr09",
-      "name": "Eye Rays: 9. Disintegration Ray",
+      "name": "解离射线 Eye Rays: 9. Disintegration Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -2546,7 +3076,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>If the target is a creature, it must succeed on a [[/save ability=dex dc=17]] saving throw or take 45 ([[/damage 10d8 type=force]]) damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.</p><p>If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的敏捷豁免，豁免失败者将受到45（[[/damage 10d8 type=force]]）点力场伤害，如果该伤害将目标的生命值降至0，则其身体将化为一堆灰尘。 如果目标是一个大型或更小体型的非魔法物件，或者魔法造物，则它的豁免直接失败。如果目标是巨型或更大体型的物件，则解离射线可以分解其中10尺立方区域的部分。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2560,7 +3090,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "vBw8XsTrQ73rlLPw": {
             "_id": "vBw8XsTrQ73rlLPw",
@@ -2578,15 +3108,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -2596,7 +3130,8 @@
                 "size": "10",
                 "width": "",
                 "height": "",
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -2618,7 +3153,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -2636,7 +3172,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -2655,7 +3192,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2663,7 +3201,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2674,15 +3211,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-9-disintegration-ray",
@@ -2691,7 +3275,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2710,9 +3295,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2724,7 +3309,7 @@
     },
     {
       "_id": "Izso9cj7d10tvcfP",
-      "name": "Eye Rays: 10. Death Ray",
+      "name": "致死射线 Eye Rays: 10. Death Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -2736,7 +3321,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The targeted creature must succeed on a [[/save ability=dex dc=17]] saving throw or take 55 ([[/damage 10d10 type=necrotic]]) damage. The target dies if the ray reduces it to 0 hit points.</p></div>",
+          "value": "<p>目标必须进行一次DC 17的敏捷豁免，豁免失败者将受到55（[[/damage 10d10 type=necrotic]]）点暗蚀伤害，如果目标因此生命降至0，则其直接死亡。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2750,7 +3335,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "GVB8vgSfSd0GBaas": {
             "_id": "GVB8vgSfSd0GBaas",
@@ -2768,15 +3353,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -2786,7 +3375,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -2808,7 +3398,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -2826,7 +3417,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {
@@ -2845,7 +3437,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2853,7 +3446,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2864,15 +3456,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "eye-rays-10-death-ray",
@@ -2881,7 +3520,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2900,9 +3540,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2914,7 +3554,7 @@
     },
     {
       "_id": "5MwrPzvaQhK7sjoE",
-      "name": "Negative Energy Cone",
+      "name": "负能量锥域 Negative Energy Cone",
       "type": "feat",
       "system": {
         "source": {
@@ -2926,7 +3566,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The death tyrant's central eye emits an &amp;Reference[condition=invisible], magical 150-foot cone of negative energy. At the start of each of its turns, the tyrant decides which way the cone faces and whether the cone is active.</p><p>Any creature in that area can't regain hit points. Any humanoid that dies there becomes a @creature[zombie] under the tyrant's command. The dead humanoid retains its place in the initiative order and animates at the start of its next turn, provided that its body hasn't been completely destroyed.</p></div>",
+          "value": "<p>巨眼暴君的主眼创造出一个150尺锥状区域的隐形负能量。暴君在每个其自己回合开始时决定该锥状范围的方向以及该力场是否激活。 区域内的任何生物无法恢复生命值，并且任何死于区域内的人型生物都会变成丧尸并听命于该暴君。这些死掉的人将保持其在先攻顺序中的位置，前提是其身体必须未被完全破坏。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2940,7 +3580,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "negative-energy-cone",
         "cover": null,
@@ -2948,7 +3588,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2967,9 +3608,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2981,7 +3622,7 @@
     },
     {
       "_id": "TmsJuql9v5eMtxuO",
-      "name": "Eye Ray",
+      "name": "眼波射线 Eye Ray",
       "type": "feat",
       "system": {
         "source": {
@@ -2993,7 +3634,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The death tyrant uses one random eye ray.</p></div>",
+          "value": "<p>亡眼暴君从下列选项中随机选择发射三束魔法眼波射线（重复则重骰），并指定身边120尺内它可以看到的一到三个目标： 1.魅惑射线Charm Ray。目标必须进行一次DC 17的感知豁免，豁免失败者将在1小时内受暴君魅惑，或是直至其受到来自该眼魔的伤害。 2.麻痹射线Paralyzing Ray。目标必须进行一次DC 17的体质豁免，豁免失败者将陷入1分钟的麻痹状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。 3.恐惧射线Fear Ray。目标必须进行一次DC 17的感知豁免，豁免失败者将陷入1分钟的恐慌状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。 4.缓慢射线Slowing Ray。目标必须进行一次DC 17的敏捷豁免，豁免失败者将在1分钟内速度减半。此外该生物无法执行反应，也无法在其回合里同时执行一个动作与一个附赠动作，而只能两者选其一。该生物可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。 5.弱能射线Enervation Ray。目标必须进行一次DC 17的体质豁免，豁免失败者将受到36（8d8）点暗蚀伤害，豁免成功则伤害减半。 6.念力射线Telekinetic Ray。目标必须进行一次DC 17的力量豁免，豁免失败者将被眼魔抓起并向任意方向移动至多30尺。目标被眼魔射线的念力抓住并陷入束缚，直至眼魔的下一回合开始时，或直至该眼魔陷入失能。 如果目标是一个未被着装或携带，且不超过300磅重的物件，则眼魔可以直接将它向任意方向移动至多30尺。该眼魔也可以使用该射线精确控制物件，比如操作简单的工具或是打开一扇门或一个容器。 7.睡眠射线Sleep Ray。目标必须进行一次DC 17的感知豁免，豁免失败者将沉睡1分钟并在此期间陷入昏迷，直至其受到伤害或由其他生物用一个动作唤醒。该射线对对构装和亡灵生物无效。 8.石化射线Petrification Ray。目标必须进行一次DC 17的敏捷豁免，豁免失败者将开始变成石头并陷入束缚。目标必须在其下一回合结束时再进行一次该豁免。豁免成功则终止该效应。豁免失败，则该生物陷入石化，直至受法术高等复原术greater restoration或其他魔法解除该效应为止。 9.解离射线Disintegration Ray。目标必须进行一次DC 17的敏捷豁免，豁免失败者将受到45（10d8）点力场伤害，如果该伤害将目标的生命值降至0，则其身体将化为一堆灰尘。 如果目标是一个大型或更小体型的非魔法物件，或者魔法造物，则它的豁免直接失败。如果目标是巨型或更大体型的物件，则解离射线可以分解其中10尺立方区域的部分。 10.致死射线Death Ray。目标必须进行一次DC 17的敏捷豁免，豁免失败者将受到55（10d10）点暗蚀伤害，如果目标因此生命降至0，则其直接死亡。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3007,7 +3648,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "Co1XqeWXOlCliEsP": {
             "_id": "Co1XqeWXOlCliEsP",
@@ -3031,20 +3672,25 @@
                 }
               ]
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3072,7 +3718,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3080,7 +3727,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3091,15 +3737,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "eye-ray",
@@ -3108,7 +3800,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -3127,9 +3820,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3141,7 +3834,7 @@
     },
     {
       "_id": "zTv0ILmQRaEhS8vN",
-      "name": "Legendary Actions",
+      "name": "传奇动作 Legendary Actions",
       "type": "feat",
       "system": {
         "source": {
@@ -3153,7 +3846,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p></p><div class=\"rd__b  rd__b--3\"><p>The death tyrant can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The death tyrant regains spent legendary actions at the start of its turn.</p></div><ul class=\"rd__list\"><li class=\"rd__li \">@UUID[.TmsJuql9v5eMtxuO]{Eye Ray}</li></ul></div>",
+          "value": "<p>该生物拥有3个传奇动作，用来选择执行下列动作项。每次只能执行一个传奇动作，且只能在另一生物的回合结束时执行。它在自己回合开始时恢复所有已消耗的传奇动作。</p><p>@UUID[.TmsJuql9v5eMtxuO]{眼波射线 Eye Ray}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3167,7 +3860,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "legendary-actions",
         "cover": null,
@@ -3175,7 +3868,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -3192,9 +3886,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3206,7 +3900,7 @@
     },
     {
       "_id": "tHVsA8lj9ff0rWGL",
-      "name": "An area that is a 50-foot cube within 120 feet of ...",
+      "name": "巢穴动作：幽影之眼",
       "type": "feat",
       "system": {
         "source": {
@@ -3218,7 +3912,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>An area that is a 50-foot cube within 120 feet of the tyrant is filled with spectral eyes and tentacles. To creatures other than the death tyrant, that area is lightly obscured and &amp;Reference[rule=difficultterrain]{difficult terrain} until initiative count 20 on the next round.</p></div>",
+          "value": "<p>暴君周边120尺内一处50尺立方区域充满幽影般的眼睛和触须。对死亡暴君以外的生物，该区域成为轻度遮蔽和困难地形，直至下一轮先攻轮到20。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3232,7 +3926,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "T4jbypJXUrVMPfvV": {
             "_id": "T4jbypJXUrVMPfvV",
@@ -3249,20 +3943,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3290,7 +3989,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3298,7 +3998,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3309,15 +4008,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "an-area-that-is-a-50-foot-cube-within-120-feet-of-",
@@ -3326,7 +4071,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -3345,9 +4091,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3359,7 +4105,7 @@
     },
     {
       "_id": "bLUEUSTLEvhhEKkC",
-      "name": "Walls sprout spectral appendages until initiative ...",
+      "name": "巢穴动作：幽影肢体",
       "type": "feat",
       "system": {
         "source": {
@@ -3371,7 +4117,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Walls sprout spectral appendages until initiative count 20 on the round after next. Any creature, including one on the Ethereal Plane, that is hostile to the tyrant and starts its turn within 10 feet of a wall must succeed on a [[/save ability=dex dc=17]] saving throw or be &amp;Reference[condition=grappled]. Escaping requires a successful [[/save ability=str dc=17]] (&amp;Reference[skill=Athletics]) or Dexterity (&amp;Reference[skill=Acrobatics]) check.</p></div>",
+          "value": "<p>墙壁长出幽影般的肢体，直至再下一轮先攻轮到20。任何敌视暴君的生物，包括以太位面的生物，如果在墙壁10尺内开始其回合，必须成功通过一次DC 17的敏捷豁免，否则被擒抱。挣脱需要成功通过一次DC 17的力量（运动）或敏捷（体操）检定。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3385,7 +4131,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "0TiGOKYNPAnL0FuJ": {
             "_id": "0TiGOKYNPAnL0FuJ",
@@ -3402,15 +4148,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -3420,7 +4170,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -3442,7 +4193,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "17"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -3463,7 +4215,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3471,7 +4224,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3482,15 +4234,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "walls-sprout-spectral-appendages-until-initiative-",
@@ -3499,7 +4298,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -3518,9 +4318,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3532,7 +4332,7 @@
     },
     {
       "_id": "t34h3RTCATSrNmD2",
-      "name": "A spectral eye opens in the air at a point within ...",
+      "name": "巢穴动作：幽影射线",
       "type": "feat",
       "system": {
         "source": {
@@ -3544,7 +4344,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A spectral eye opens in the air at a point within 50 feet of the tyrant. One random eye ray of the tyrant shoots from that eye, which is considered to be an ethereal source, at a target of the tyrant's choice. The eye then closes and disappears.</p></div>",
+          "value": "<p>暴君周边50尺内的一点张开一只幽影般的眼睛，向暴君选择的目标射出一条随机的眼射线。射线源头视为位于以太位面。随后这只眼睛闭合并消失。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3558,7 +4358,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "oYVe1zliTt6Mnouo": {
             "_id": "oYVe1zliTt6Mnouo",
@@ -3575,20 +4375,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -3616,7 +4421,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -3624,7 +4430,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -3635,15 +4440,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "a-spectral-eye-opens-in-the-air-at-a-point-within-",
@@ -3652,7 +4503,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -3671,9 +4523,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3685,7 +4537,7 @@
     },
     {
       "_id": "WtlFgy5RB5p3y0VY",
-      "name": "Regional Effects",
+      "name": "区域效应 Regional Effects",
       "type": "feat",
       "system": {
         "source": {
@@ -3697,7 +4549,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A region containing a death tyrant's lair is warped by the creature's unnatural presence, which creates one or more of the following effects:</p><ul class=\"rd__list\"><li class=\"rd__li \">Creatures within 1 mile of the tyrant's lair sometimes feel as if they're being watched even when they aren't.</li><li class=\"rd__li \">When a creature hostile to the tyrant and aware of its existence finishes a long rest within 1 mile of the tyrant's lair, roll a [[/r d20]] for that creature. On a roll of 10 or lower, the creature is subjected to one random eye ray of the tyrant.</li></ul><p>If the death tyrant dies, these effects fade over the course of [[/r 1d10]] days.</p></div>",
+          "value": "<p>亡眼暴君巢穴内的区域被该生物的存在所扭曲，造成了下列一项或多项的效应：</p><p>亡眼暴君巢穴附近1里内的生物会时常有被监视的感觉，而事实上可能并没有。</p><p>亡眼暴君巢穴附近1里内，与暴君敌对的生物如果意识到暴君的存在，则其完成一次长休时必须掷一次d20。如果骰值为10或更低，则该生物立即被该暴君随机一种眼波射线击中。</p><p>亡眼暴君死亡后，这些效应将在[[/r 1d10]]日里逐渐减弱消散。</p><p>“一簇微弱的光亮从天花板上黑暗的裂隙中降下。这些光点闪耀着诡异的光亮，映出其后悬浮着一个巨大的异形头骨。”</p><p>出自加斯图斯空翎Jastus Hollowquill</p><p>的地脉迷城Undermountain探索日志</p>",
           "chat": ""
         },
         "requirements": "",
@@ -3711,7 +4563,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "regional-effects",
         "cover": null,
@@ -3719,7 +4571,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -3738,9 +4591,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -3752,7 +4605,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "f12a539bc3086eec",
   "sort": 21100000,
   "ownership": {
     "default": 0,

@@ -1,16 +1,16 @@
 {
   "_id": "UdiF2PfBvmVstQ05",
-  "name": "永亡宗 Way of The Long Death（SCAG）",
+  "name": "永亡宗 Way of The Long Death(SCAG)",
   "type": "subclass",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Creature_Cursed_05%20-%201.png",
+  "img": "icons/magic/death/skull-humanoid-white-blue.webp",
   "effects": [],
   "folder": "b1hNUPJ6ajk0guML",
   "sort": 81348,
   "flags": {},
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -23,7 +23,7 @@
   },
   "system": {
     "description": {
-      "value": "<p>永亡宗的武僧迷醉于死亡的结构和意义。他们拘束生物并用精心准备的实验去捕捉，记录，理解他们死亡的瞬间。他们用这些知识去指导他们的武术，从而产生了致命的战斗风格。</p>",
+      "value": "<p>永亡宗的武僧迷醉于死亡的结构和意义。他们拘束生物并用精心准备的实验去捕捉，记录，理解他们死亡的瞬间。他们用这些知识去指导他们的武术，从而产生了致命的战斗风格。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.3enDH0S0L54atap0]{往生咒 Touch of Death}</h3><p>从3级你选择这个宗派起，你对死亡的研究允许你能在临近的生物逝去前抽取他们的生命力。当你使一个5尺距离内的生物生命值下降到0点时，你将获得等同于 你的感知调整值+武僧等级 点的临时生命值（最小1点）。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.287BQYB3OGGZhVth]{索命镰 Hour of Reaping}</h3><p>从6级起，你获得可以以一个动作展现出你灵魂本质中的死亡阴影来使周围的人感到惊惧和恐慌的能力。当你执行这个动作时，你周围30尺内的所有能看见你的生物必须通过一次感知豁免。若豁免失败，他们将陷入对你恐慌，直到你的下个回合结束。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.w0IMquliwMc0Awb4]{握生死 Mastery of Death}</h3><p>从11级起，你对死亡的熟悉使你可以避过它的抓捕。当你的生命值被降低为0时，你可以作为代替，花费1点气（无需任何动作）使自己变为1点生命值。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.Z3Jkvy9YLoHmo88I]{永亡触 Touch of the Long Death}</h3><p>从17级起，你可以引导死亡的能量传入生物的体内。以一个动作，你花费1到10点气并触碰一个你周围5尺内的生物。那个生物必须进行一次体质豁免，若失败将受到每点被耗费的气 2d10 的暗蚀伤害，豁免成功只会受到一半伤害。</p>",
       "chat": ""
     },
     "source": {
@@ -34,76 +34,92 @@
     },
     "identifier": "way-of-the-long-death",
     "classIdentifier": "monk",
-    "advancement": [
-      {
+    "advancement": {
+      "t6syhxntg6gb7f7r": {
         "_id": "t6syhxntg6gb7f7r",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.3enDH0S0L54atap0",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "ya6uqp8hw4r54zsx": {
         "_id": "ya6uqp8hw4r54zsx",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.287BQYB3OGGZhVth",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "itghiv65p8swreh0": {
         "_id": "itghiv65p8swreh0",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.w0IMquliwMc0Awb4",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 11,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "as1m1irim28remsg": {
         "_id": "as1m1irim28remsg",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.Z3Jkvy9YLoHmo88I",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 17,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",

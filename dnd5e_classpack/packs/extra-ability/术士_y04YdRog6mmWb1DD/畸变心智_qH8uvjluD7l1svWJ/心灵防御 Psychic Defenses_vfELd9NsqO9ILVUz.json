@@ -2,14 +2,14 @@
   "_id": "vfELd9NsqO9ILVUz",
   "name": "心灵防御 Psychic Defenses",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_warlock_HowlofTerror.png",
+  "img": "icons/magic/perception/third-eye-blue-red.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>6级起，你对心灵伤害获得抗性。此外，你在对抗魅惑或恐慌的豁免检定上获得优势。</p>",
+      "value": "<p>你获得心灵伤害的抗性。此外，你在对抗魅惑或恐慌的豁免检定上获得优势。</p>",
       "chat": ""
     },
     "source": {
@@ -24,46 +24,38 @@
     },
     "requirements": "畸变心智等级 6",
     "activities": {},
-    "identifier": "-psychic-defenses",
-    "advancement": [],
+    "identifier": "psychic-defenses",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": [
+        "subclass:aberrant-mind"
+      ]
     },
     "properties": []
   },
   "effects": [
     {
       "_id": "SyzruhE7HmnoUIut",
-      "changes": [
-        {
-          "key": "",
-          "mode": 2,
-          "value": "",
-          "priority": null
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "origin": "Compendium.dnd5e_classpack.extra-ability.vfELd9NsqO9ILVUz",
       "transfer": true,
       "flags": {},
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -72,24 +64,47 @@
         "exportSource": null
       },
       "name": "获得心灵抗性",
-      "img": "modules/dnd5e_classpack/Nicons/Ability_warlock_HowlofTerror.png",
+      "img": "icons/magic/perception/third-eye-blue-red.webp",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "",
+            "value": "",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "7ZKxINJz3oshS9IQ",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "description": "",
       "statuses": [],
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!vfELd9NsqO9ILVUz.SyzruhE7HmnoUIut"
     }
   ],
   "folder": "qH8uvjluD7l1svWJ",
   "sort": 48600000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -107,18 +122,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "psychicDefenses",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757416942216,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

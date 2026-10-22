@@ -2,14 +2,14 @@
   "_id": "KgKexdofASH0yWMb",
   "name": "梦幻舞步 Fancy Footwork",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ABILITY_HUNTER_POSTHASTE.png",
+  "img": "icons/skills/movement/figure-running-gray.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         从第 3 级选择该范型起，你学会了如何闪身避过攻击并化解对方追加的攻势。你在自己回合内对一个生物发动一次近战攻击后，该生物在你回合剩下的时间内都将无法对你发动借机攻击。</p>",
+      "value": "<p>从3级你选择此范型起，你习得如何无机可循的发动打击，让你的敌人无可借机。在你的回合中，如果你对某一生物发动了一次近战攻击，那个生物在你本回合的剩余时间内将无法对你进行借机攻击。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "游荡剑客等级 3",
     "activities": {},
     "identifier": "-fancy-footwork",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "1O7j5WYISRlRXm7o",
   "sort": 19900000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +60,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

@@ -2,14 +2,14 @@
   "_id": "XRvdSZXLaJYof2g7",
   "name": "反射闪避 Evasion",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_TigersLust.png",
+  "img": "icons/skills/movement/figure-running-gray.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第7级起，你敏锐的直觉让你可以躲过某些特定的区域效应（比如@UUID[Compendium.dnd5e_classpack.monsterspack.mNijwXPMhwR7yYfc]{蓝龙}的闪电吐息或是法术@UUID[Compendium.dnd5e_classpack.spell.Uh3zcz4PO4DXP3Dj]{火球术 Fireball}）。当你需要通过敏捷豁免来使伤害减半时，若你豁免成功则不再受到伤害，豁免失败则只受一半伤害。</p>",
+      "value": "<p>第7级起，你敏锐的直觉让你可以躲过某些特定的区域效应，比如@UUID[Compendium.dnd5e_classpack.monsterspack.Actor.mNijwXPMhwR7yYfc]{蓝龙}的闪电吐息或是法术<em>@UUID[Compendium.dnd5e_classpack.spell.Item.Uh3zcz4PO4DXP3Dj]{火球术}</em><em>fireball</em>。你在成为某一范围效应影响对象时，若该效应允许你通过成功的敏捷豁免来使伤害减半，则你在该豁免成功时不受伤害，而豁免失败时只受一半伤害。</p>",
       "chat": ""
     },
     "source": {
@@ -22,44 +22,63 @@
       "spent": null,
       "recovery": []
     },
-    "requirements": "武僧等级 7，游侠等级 7，游荡者等级 5",
+    "requirements": "武僧等级7、游荡者等级7，或猎人等级15选择反射闪避",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "evasion",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 7,
+      "repeatable": false,
+      "items": [
+        "class:monk",
+        "class:rogue",
+        "subclass:hunter"
+      ]
     },
     "properties": []
   },
   "effects": [
     {
       "name": "反射闪避",
-      "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_TigersLust.png",
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.XRvdSZXLaJYof2g7",
+      "img": "icons/skills/movement/figure-running-gray.webp",
+      "origin": null,
       "_id": "sHGb2wELMvAQtaXS",
       "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.superSaver.dex",
-          "mode": 2,
-          "value": "+1",
-          "priority": 20
-        }
-      ],
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.superSaver.dex",
+            "value": "(workflow?.saveActivity ?? activity)?.damage?.onSave === \"half\"",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "9zUcAqEFQk6hrotk",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.XRvdSZXLaJYof2g7",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false
+      },
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "description": "",
       "tint": "#ffffff",
@@ -73,12 +92,11 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "applicationMode": "dnd5e"
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -87,14 +105,17 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
+        "systemVersion": "6.0.5",
         "createdTime": 1756703381601,
         "modifiedTime": 1756703401666,
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!XRvdSZXLaJYof2g7.sHGb2wELMvAQtaXS"
     }
   ],
@@ -105,12 +126,7 @@
     "entityorder": {
       "order": 187
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -128,18 +144,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "evasion",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757091912322,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -2,14 +2,14 @@
   "_id": "kzxYHkb8jl79SJ7I",
   "name": "持久狂暴 Persistent Rage",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_InnerRage.png",
+  "img": "icons/skills/social/intimidation-impressing.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第15级起，你狂暴时的情绪高涨得难以抑制，以至于只有当你昏迷或是主动终止狂暴时才能使之提前结束。</p>",
+      "value": "<p> 第15级起，你狂暴期间的情绪高涨得难以抑制，以至于只有当你陷入昏迷或是主动终止才能使你的狂暴提前结束。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "野蛮人等级 15",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "persistent-rage",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 15,
+      "repeatable": false,
+      "items": [
+        "class:barbarian"
+      ]
     },
     "properties": []
   },
@@ -39,12 +42,7 @@
   "folder": "yHRuDCK2hvnV9bfU",
   "sort": 33900000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -62,18 +60,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "persistentRage",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757093227080,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

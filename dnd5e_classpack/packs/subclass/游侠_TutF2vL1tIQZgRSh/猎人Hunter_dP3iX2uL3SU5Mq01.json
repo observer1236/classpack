@@ -2,14 +2,14 @@
   "_id": "dP3iX2uL3SU5Mq01",
   "name": "猎人Hunter",
   "type": "subclass",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_ImprovedTracking.png",
+  "img": "systems/dnd5e/icons/classes/hunter.webp",
   "effects": [],
   "folder": "TutF2vL1tIQZgRSh",
   "sort": 50000,
   "flags": {},
   "system": {
     "description": {
-      "value": "<p>        选择猎人范型，意味着你接受文明社会与惊粟荒野间的交界作为你的战斗岗位。走上猎人之路后，你将学习专业的战斗技巧，并面临的各种威胁：从狂暴的食人魔和成群的兽人，到高耸的巨人和可怕的龙都是你前进的障碍。</p>",
+      "value": "<p>选择猎人范型，意味着你接受文明社会与惊粟荒野间的交界作为你的战斗岗位。走上猎人之路后，你将学习专业的战斗技巧，并面临的各种威胁：从狂暴的食人魔和成群的兽人，到高耸的巨人和可怕的龙都是你前进的障碍。</p><h3>@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.v4e9dpVoep1w4VAa]{猎物 Hunter's Prey}</h3><p>第3级时，你选择获得以下特性之一。<br><em><strong>巨像屠夫Colossus Slayer</strong></em>。你强而有力的攻击可以击倒最强壮的对手。当你用武器攻击命中敌人时，如果该敌人当前生命值低于其上限，则其额外受到1d8点伤害。你每回合只能造成一次这种额外伤害。<br><em><strong>巨人杀手Giant Killer</strong></em>。一个距离你5尺内的大型或更大体型生物对你发动攻击时，无论该次攻击是否命中，只要你能看见它就可以在该攻击结束后用一个反应对该生物发动攻击。<br><em><strong>灭族者Horde Breaker</strong></em>。进行武器攻击时，你可以用该武器对位于目标5尺内，且在你武器射程内的另一生物发动一次攻击。你在每个自己的回合里只能造成一次这种额外攻击。</p><h3>防守战术 Defensive Tactics</h3><p>第7级时，你选择获得以下特性之一。<br><em><strong>冲出重围Escape the Horde</strong></em>。以你为目标的借机攻击具有劣势。<br><em><strong>多重防御Multiattack Defense</strong></em>。你被生物的攻击命中时，你在本回合内对抗该敌人所有后续攻击的AC获得 +4加值。<br><em><strong>钢铁意志Steel Will</strong></em>。你对抗恐慌的豁免具有优势。</p><h3>多重攻击 Multiattack</h3><p>第11级时，你选择获得以下特性之一。<br><em><strong>箭雨Volley</strong></em>。你使用你的动作指定你的远程武器射程内你能看见的某点，并分别对该点周围10尺范围内任意数量的生物发动一次远程攻击。发动该特性时，你必须有足够的弹药用以攻击敌人，且要为每个目标进行独立的攻击检定。<br><em><strong>剑刃风暴Whirlwind Attack</strong></em>。你使用你的动作指定你身边5尺内任意数量的生物，并分别对其发动一次近战攻击，每个受此攻击的目标必须进行独立的攻击检定。</p><h3>高效猎人防术 Superior Hunter's Defense</h3><p>第15级时，你选择获得以下特性之一。<br><em><strong>反射闪避Evasion</strong></em>。你可以灵巧躲过某些特定的区域效应，比如红龙的火焰吐息或是法术<em>闪电束lightning bolt</em>。你在成为某一范围效应影响对象时，若该效应允许你通过成功的敏捷豁免来使伤害减半，则你在该豁免成功时不受伤害，而豁免失败时只受一半伤害。<br><em><strong>逆流而上Stand Against the Tide</strong></em>。当敌人对你的近战攻击未命中时，你可以用反应迫使敌人向你所指定的生物（除攻击者外）重新发动攻击。<br><em><strong>直觉闪避Uncanny Dodge</strong></em>。当一个你能看见的敌人攻击命中你时，你可以用反应让此次攻击的伤害减半。</p>",
       "chat": ""
     },
     "source": {
@@ -20,76 +20,92 @@
     },
     "identifier": "hunter",
     "classIdentifier": "ranger",
-    "advancement": [
-      {
+    "advancement": {
+      "3eev3140f4m4ifwe": {
         "_id": "3eev3140f4m4ifwe",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.v4e9dpVoep1w4VAa",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 3,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "8rgvc1g4t4jtszwl": {
         "_id": "8rgvc1g4t4jtszwl",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.NBKmI7pjkbpW90nT",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 7,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "glxpcb9suuqvu19u": {
         "_id": "glxpcb9suuqvu19u",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.jI2PKRsYc3cxRr1F",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 11,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "fzcpl7zzfmqyjd3i": {
         "_id": "fzcpl7zzfmqyjd3i",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Tr1uiVh2WfsHXcXl",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 15,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "WWGF6d0GkTfPXawy": {
         "_id": "WWGF6d0GkTfPXawy",
         "type": "ItemChoice",
         "configuration": {
@@ -103,29 +119,36 @@
           "type": "feat",
           "pool": [
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.VvGTtcw5UMCwTT1e"
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.VvGTtcw5UMCwTT1e",
+              "sort": 0
             },
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.cDiBqlWHtAh4l4vm"
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.cDiBqlWHtAh4l4vm",
+              "sort": 0
             },
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.8vJvWcin0pZpck0W"
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.8vJvWcin0pZpck0W",
+              "sort": 0
             }
           ],
           "spell": null,
           "restriction": {
             "type": "class",
-            "subtype": "huntersPrey"
-          }
+            "subtype": "huntersPrey",
+            "list": [],
+            "school": []
+          },
+          "sorting": "a"
         },
         "value": {
           "added": {},
           "replaced": {}
         },
-        "title": "猎物特性",
-        "hint": "第三级时，你获得以下特性其一："
+        "hint": "第三级时，你获得以下特性其一：",
+        "name": "猎物特性",
+        "flags": {}
       },
-      {
+      "fcJnxjEeni6IQiRr": {
         "_id": "fcJnxjEeni6IQiRr",
         "type": "ItemChoice",
         "configuration": {
@@ -139,29 +162,36 @@
           "type": "feat",
           "pool": [
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.r8uKpHYKpQY0fMdQ"
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.r8uKpHYKpQY0fMdQ",
+              "sort": 0
             },
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.oCr3QxfslqtWWVzL"
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.oCr3QxfslqtWWVzL",
+              "sort": 0
             },
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.oW9TdsaCSUH7Btn4"
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.oW9TdsaCSUH7Btn4",
+              "sort": 0
             }
           ],
           "spell": null,
           "restriction": {
             "type": "class",
-            "subtype": "defensiveTactic"
-          }
+            "subtype": "defensiveTactic",
+            "list": [],
+            "school": []
+          },
+          "sorting": "a"
         },
         "value": {
           "added": {},
           "replaced": {}
         },
-        "title": "防守战术特性",
-        "hint": "第7级时，你选择获得以下特性之一："
+        "hint": "第7级时，你选择获得以下特性之一：",
+        "name": "防守战术特性",
+        "flags": {}
       },
-      {
+      "r0f6VhKEec07pAxv": {
         "_id": "r0f6VhKEec07pAxv",
         "type": "ItemChoice",
         "configuration": {
@@ -175,26 +205,32 @@
           "type": "feat",
           "pool": [
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.wYaXI0hCvrfrTzpT"
+              "sort": 0,
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.XV0jtD6HgTAlUbJf"
             },
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.XV0jtD6HgTAlUbJf"
+              "sort": 0,
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.wYaXI0hCvrfrTzpT"
             }
           ],
           "spell": null,
           "restriction": {
             "type": "class",
-            "subtype": "multiattack"
-          }
+            "subtype": "multiattack",
+            "list": [],
+            "school": []
+          },
+          "sorting": "a"
         },
         "value": {
           "added": {},
           "replaced": {}
         },
-        "title": "多重攻击特性",
-        "hint": "第11级时，你选择获得以下特性之一."
+        "hint": "<p>第11级时，你选择获得以下特性之一.</p>",
+        "name": "多重攻击特性",
+        "flags": {}
       },
-      {
+      "NR7U9CIQLzVcVpg4": {
         "_id": "NR7U9CIQLzVcVpg4",
         "type": "ItemChoice",
         "configuration": {
@@ -208,33 +244,42 @@
           "type": "feat",
           "pool": [
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.nFxBGG5SqcoUb0vA"
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.nFxBGG5SqcoUb0vA",
+              "sort": 0
             },
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.WxUQn7muR2QrM9kH"
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.WxUQn7muR2QrM9kH",
+              "sort": 0
             },
             {
-              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.7dA5N00W7DLESP9V"
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.7dA5N00W7DLESP9V",
+              "sort": 0
             }
           ],
           "spell": null,
           "restriction": {
             "type": "class",
-            "subtype": "superiorHuntersDefense"
-          }
+            "subtype": "superiorHuntersDefense",
+            "list": [],
+            "school": []
+          },
+          "sorting": "a"
         },
         "value": {
           "added": {},
           "replaced": {}
         },
-        "title": "高效猎人防术",
-        "hint": "第15级时，你选择获得以下特性之一。"
+        "hint": "第15级时，你选择获得以下特性之一。",
+        "name": "高效猎人防术",
+        "flags": {}
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",
-      "preparation": {}
+      "preparation": {
+        "formula": ""
+      }
     }
   },
   "ownership": {
@@ -242,8 +287,8 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -2,14 +2,14 @@
   "_id": "r0PYs1ZzHMS20cU7",
   "name": "传心谈话 Telepathic Speech",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ability_warlock_soullink.png",
+  "img": "systems/dnd5e/icons/svg/trait-languages.svg",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>1级起，你能够在自己与他人的意识中构建一道心灵感应的链接。以一个附赠动作，你可以选择30尺内一个你可见的生物，只要你与其距离的里数不超过你的魅力调整值（至少1里），你与其能够通过心灵感应方式进行交流。你们必须使用对方知晓的语言进行心灵交流才能使其理解你通过心灵感应传达的话语。</p>\n<p>心灵感应的链接持续等同于你术士等级的分钟数。当你失能或死亡，或你使用此能力与其他生物构建链接时，其提前结束。</p>",
+      "value": "<p>你能够在自己与他人的意识中构建一道心灵感应的链接。以一个附赠动作，你可以选择30尺内一个你可见的生物创造这一链接。链接能使你与其能够通过心灵感应方式进行交流，但交流时，你们之间距离的里数不超过你的魅力调整值里（至少1里）。你们必须使用互相知晓的语言进行心灵交流，才能使其理解你通过心灵感应传达的话语。</p>\n<p>心灵感应的链接持续等同于你术士等级的分钟数。如果你陷入失能、死亡、或你使用此能力与其他生物构建链接时，这一链接会提前结束。</p>",
       "chat": ""
     },
     "source": {
@@ -42,14 +42,16 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "1",
           "units": "minute",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -66,7 +68,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "30",
@@ -88,17 +91,105 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "-telepathic-speech",
-    "advancement": [],
+    "identifier": "telepathic-speech",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": [
+        "subclass:aberrant-mind"
+      ]
     },
     "properties": []
   },
@@ -106,14 +197,7 @@
   "folder": "qH8uvjluD7l1svWJ",
   "sort": 45700000,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -131,18 +215,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "telepathicSpeech",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757420910468,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

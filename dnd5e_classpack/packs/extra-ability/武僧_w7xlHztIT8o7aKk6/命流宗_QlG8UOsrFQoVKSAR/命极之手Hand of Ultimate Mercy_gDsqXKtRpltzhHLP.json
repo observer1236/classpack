@@ -2,14 +2,14 @@
   "_id": "gDsqXKtRpltzhHLP",
   "name": "命极之手Hand of Ultimate Mercy",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ability_monk_serenity.png",
+  "img": "icons/magic/unholy/hand-light-green.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>你对生命能量的掌握打开了通往命流奥义的大门，以一个动作，你可以接触一个在过去24小时内死亡生物的尸体并消耗5点气，该生物则会复活，恢复相当于[[/r 4D10]]+你的感知调整值的生命值。如果该生物是在以下这些状态时死亡，它会在移除这些状态后复活：目盲、耳聋、麻痹、中毒和震慑。</p>\n<p>一旦你使用了这个特性，你就不能再使用它，直至你完成一次长休。</p>",
+      "value": "<p>你对生命能量的掌握打开了通往命流奥义的大门。以一个动作，你可以消耗5点气，触碰一个死亡不超过24小时的生物的尸体。该生物会起死回生，并恢复相当于 [[/r 4D10]]{4d10}+你的感知调整值 点的生命值。如果该生物死前具有以下这些状态，这些状态会在复活时被移除：目盲、耳聋、麻痹、中毒和震慑。</p>\n<p>一旦你使用了这个特性，直至你完成一次长休前你都不能再次使用它。</p>",
       "chat": ""
     },
     "source": {
@@ -57,17 +57,19 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "units": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -79,7 +81,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": "spec"
+            "units": "spec",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -116,21 +119,109 @@
                 "mode": "whole",
                 "number": null,
                 "formula": ""
-              }
+              },
+              "modifiers": []
             }
           ]
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
     "identifier": "hand-of-ultimate-mercy",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 17,
+      "repeatable": false,
+      "items": [
+        "subclass:way-of-the-mercy"
+      ]
     },
     "properties": []
   },
@@ -160,19 +251,12 @@
       "itemCondition": "",
       "effectCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

@@ -2,14 +2,14 @@
   "_id": "Rhx36WAuOqLOYRJ5",
   "name": "雷霆打击 Thunderbolt Strike",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_ThunderKing_LightningWhip.png",
+  "img": "icons/magic/lightning/bolt-strike-beam-yellow.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>        第6级起，当你对一个大型或更小体型的生物造成闪电伤害时，你还可以同时将其往远离你的方向推动至多10尺</p>",
+      "value": "<p> 第6级起，当你对一个大型或更小体型的生物造成闪电伤害时，你还可以同时将其往远离你的方向推动至多10尺。</p>",
       "chat": ""
     },
     "source": {
@@ -24,18 +24,96 @@
     },
     "requirements": "风暴领域等级 6",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "thunderbolt-strike",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": [
+        "subclass:tempest-domain"
+      ]
     },
     "properties": []
   },
-  "effects": [],
+  "effects": [
+    {
+      "name": "雷霆打击 Thunderbolt Strike",
+      "img": "icons/magic/lightning/bolt-strike-beam-yellow.webp",
+      "system": {
+        "magical": false,
+        "origin": {
+          "item": "Compendium.dnd5e_classpack.class-abilityphb.Item.Rhx36WAuOqLOYRJ5",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "type": "custom",
+            "value": "ItemMacro,postActiveEffects",
+            "phase": "initial",
+            "_id": "iabgevevyW5ti3eL",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "conditions": "{}",
+        "rider": {
+          "statuses": []
+        }
+      },
+      "type": "base",
+      "_id": "DaN8gy6Qu7wgsGNB",
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.Rhx36WAuOqLOYRJ5",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1792084925574,
+        "modifiedTime": 1792084993259,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Rhx36WAuOqLOYRJ5.DaN8gy6Qu7wgsGNB"
+    }
+  ],
   "folder": "69kHgFUkU3qQZigm",
   "sort": 21400000,
   "flags": {
@@ -63,25 +141,41 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "thunderboltStrike",
-        "source": "chris-premades",
-        "version": "0.0.0"
+    "dnd5e": {},
+    "chris-premades": {},
+    "dae": {
+      "macro": {
+        "name": "雷霆打击 Thunderbolt Strike",
+        "img": "icons/magic/lightning/bolt-strike-beam-yellow.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "if (args[0].macroPass !== \"postActiveEffects\") return;\n\nfor (const damage of workflow.damageList ?? []) {\n  if (!damage.damageDetail.some(d =>\n    d.type === \"lightning\" && d.value > 0\n  )) continue;\n\n  const target = (await fromUuid(damage.targetUuid)).object;\n  if (![\"tiny\", \"sm\", \"med\", \"lg\"].includes(\n    target.actor.system.traits.size\n  )) continue;\n\n  const push = await dnd5eClasspack.dialogUtils.confirm(\n    \"雷霆打击\",\n    `<p>是否推动 ${foundry.utils.escapeHTML(target.name)}？</p>`\n  );\n  if (!push) continue;\n\n  const distance = await dnd5eClasspack.dialogUtils.numberDialog(\n    \"雷霆打击\",\n    \"\",\n    {\n      label: `${target.name}：推动距离（尺）`,\n      name: \"distance\",\n      options: { currentValue: 10, min: 0, max: 10, step: 1 }\n    }\n  );\n\n  const feet = Math.clamp(Number(distance) || 0, 0, 10);\n  if (!feet) continue;\n\n  await dnd5eClasspack.push(\n    target,\n    workflow.token,\n    feet,\n    { animate: true, checkCollision: true }\n  );\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
       }
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757102388442,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

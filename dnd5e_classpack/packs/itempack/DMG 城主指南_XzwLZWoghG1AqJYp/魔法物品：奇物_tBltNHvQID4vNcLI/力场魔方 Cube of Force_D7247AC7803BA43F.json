@@ -34,18 +34,11 @@
       "idv": false,
       "ida": false
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 36,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "system": {
     "description": {
-      "value": "<p><em>奇物（需同调）</em></p>\n<p>这个立方体棱长约1寸，每个面上有独特标记，并且可以被按压。它共有36发充能，每天黎明时会恢复1d20发充能。 立方体的每个面都有不同效果。你可以用一个动作来按下立方体某一面，这将消耗如下表所示的充能。如果立方体充能不足，则什么也不会发生。否则，按下后将产生一股无形力场构成的障壁，形成一个棱长15尺的立方体。障壁以你为中心移动，持续1分钟，直到你用一个动作按下立方体的第六个面，或立方体耗尽了充能。你可以按下不同的面来改变障壁的效果，但这会消耗相应的充能并重置持续时间。（译者注：这段话逻辑有问题，但原文如此。）</p>\n<p>如果由于你的移动使障壁与不能穿过它的固体接触，则在障壁持续时间内你无法更加靠近该固体。</p>\n<h3>力场魔方各面效果 Cube of Force Faces</h3>\n<table>\n<thead>\n<tr>\n<th><strong>面</strong></th>\n<th><strong>消耗充能</strong></th>\n<th><strong>效果</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>气体、风和雾无法穿过障壁。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>2</td>\n<td>无生命体无法穿过障壁。你可以决定墙壁、地板和天花板是否可以穿过。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>3</td>\n<td>生命体无法穿过障壁。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>4</td>\n<td>法术效果无法穿过障壁。</td>\n</tr>\n<tr>\n<td>5</td>\n<td>5</td>\n<td>没有任何东西能穿过障壁。你可以决定墙壁、地板和天花板是否可以穿过。</td>\n</tr>\n<tr>\n<td>6</td>\n<td>0</td>\n<td>解除障壁。</td>\n</tr>\n</tbody>\n</table>\n<p>当障壁成为某些特定法术目标，或是与某些特定法术、魔法物品效果接触时，立方体将失去一部分充能，如下表所示。</p>\n<table>\n<thead>\n<tr>\n<th><strong>法术或物品</strong></th>\n<th><strong>充能损失</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.spell.j4LqpyfXhYoUpUCz]{解离术 Disintegrate}</td>\n<td>[[/r 1d12]]</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.C97A969AF2AF17AE]{音爆号角 Horn of Blasting}</td>\n<td>[[/r 1d10]]</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.spell.EoIuyVnLAF4DyTO7]{穿墙术 Passwall}</td>\n<td>[[/r 1d6]]</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.spell.oxvIiEKCQhht8JrO]{虹光喷射 Prismatic Spray}</td>\n<td>[[/r 1d20]]</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.spell.agTzLRmgNSVghaGk]{火墙术 Wall of Fire}</td>\n<td>[[/r 1d4]]</td>\n</tr>\n</tbody>\n</table>",
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>这个立方体棱长约1寸，每个面上有独特标记，并且可以被按压。它共有36发充能，每天黎明时会恢复1d20发充能。 立方体的每个面都有不同效果。你可以用一个动作来按下立方体某一面，这将消耗如下表所示的充能。如果立方体充能不足，则什么也不会发生。否则，按下后将产生一股无形力场构成的障壁，形成一个棱长15尺的立方体。障壁以你为中心移动，持续1分钟，直到你用一个动作按下立方体的第六个面，或立方体耗尽了充能。你可以按下不同的面来改变障壁的效果，但这会消耗相应的充能并重置持续时间。（译者注：这段话逻辑有问题，但原文如此。）</p>\n<p>如果由于你的移动使障壁与不能穿过它的固体接触，则在障壁持续时间内你无法更加靠近该固体。</p>\n<h4>力场魔方各面效果 Cube of Force Faces</h4>\n<table>\n<thead>\n<tr>\n<th><strong>面</strong></th>\n<th><strong>消耗充能</strong></th>\n<th><strong>效果</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>1</td>\n<td>气体、风和雾无法穿过障壁。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>2</td>\n<td>无生命体无法穿过障壁。你可以决定墙壁、地板和天花板是否可以穿过。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>3</td>\n<td>生命体无法穿过障壁。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>4</td>\n<td>法术效果无法穿过障壁。</td>\n</tr>\n<tr>\n<td>5</td>\n<td>5</td>\n<td>没有任何东西能穿过障壁。你可以决定墙壁、地板和天花板是否可以穿过。</td>\n</tr>\n<tr>\n<td>6</td>\n<td>0</td>\n<td>解除障壁。</td>\n</tr>\n</tbody>\n</table>\n<p>当障壁成为某些特定法术目标，或是与某些特定法术、魔法物品效果接触时，立方体将失去一部分充能，如下表所示。</p>\n<table>\n<thead>\n<tr>\n<th><strong>法术或物品</strong></th>\n<th><strong>充能损失</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.spell.j4LqpyfXhYoUpUCz]{解离术 Disintegrate}</td>\n<td>[[/r 1d12]]</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.C97A969AF2AF17AE]{音爆号角 Horn of Blasting}</td>\n<td>[[/r 1d10]]</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.spell.EoIuyVnLAF4DyTO7]{穿墙术 Passwall}</td>\n<td>[[/r 1d6]]</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.spell.oxvIiEKCQhht8JrO]{虹光喷射 Prismatic Spray}</td>\n<td>[[/r 1d20]]</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.spell.agTzLRmgNSVghaGk]{火墙术 Wall of Fire}</td>\n<td>[[/r 1d4]]</td>\n</tr>\n</tbody>\n</table>",
       "chat": ""
     },
     "source": {
@@ -65,7 +58,6 @@
     },
     "attunement": "required",
     "equipped": false,
-    "rarity": "rare",
     "identified": true,
     "uses": {
       "max": "36",
@@ -83,7 +75,8 @@
         },
         "scaling": {
           "number": 1
-        }
+        },
+        "modifiers": []
       },
       "replace": false
     },
@@ -95,7 +88,6 @@
       "subtype": ""
     },
     "container": null,
-    "magicalBonus": null,
     "properties": [
       "mgc"
     ],
@@ -128,14 +120,16 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "1",
           "units": "minute",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -151,7 +145,8 @@
             "size": "15",
             "width": "",
             "height": "",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -173,16 +168,104 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-cube-of-force",
-    "attuned": false
+    "attuned": false,
+    "rarities": [
+      "rare"
+    ]
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1713010441792,
     "modifiedTime": 1757877439758,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

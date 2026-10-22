@@ -1,5 +1,5 @@
 {
-  "name": "Sea Hag (MM'14)",
+  "name": "海鬼婆 Sea Hag (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1757180775294,
     "lastModifiedBy": "LRML3lp2BSfvniU2",
     "exportSource": null
   },
   "_id": "ld07sSAWeZWGqstz",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Sea Hag.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Sea%20Hag.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 13,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 12,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 13,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,12 @@
     },
     "attributes": {
       "ac": {
-        "calc": "natural",
-        "flat": 14
+        "flat": 14,
+        "calcs": [
+          "natural"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +478,29 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": 40,
-        "walk": 30,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "30",
+          "swim": "40"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 60,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 60,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,21 +533,22 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>Sea hags live in dismal and polluted underwater lairs, surrounded by merrow and other aquatic monsters.</p><p>Beauty drives a sea hag to fits of anger. When confronted with something beautiful, the hag might simply attack it or deface it. If something beautiful gives hope, a sea hag wants it to cause despair. If it inspires courage, the sea hag wants it to cause fear.</p><div data-roll-name-ancestor=\"Ugly Inside and Out\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Ugly Inside and Out.</span></span> Sea hags are by far the ugliest of all hags, with slimy scales covering their pallid skin. A sea hag's hair resembles seaweed and covers her emaciated body, and her glassy eyes seem as lifeless as a doll's. Although a sea hag can hide her true form under a veil of illusion, the hag is cursed to forever appear ugly. Her illusory form appears haggard at best.</p></div><div data-roll-name-ancestor=\"Covens\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Covens.</span></span> A sea hag that is part of a coven (see the \"Hag Covens\" sidebar) has a challenge rating of 4 (1,100 XP).</p></div></div></div><div data-roll-name-ancestor=\"Hags\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Hags</span></h1> <p>Hags represent all that is evil and cruel. Though they resemble withered crones, there is nothing mortal about these monstrous creatures, whose forms reflect only the wickedness in their hearts.</p><div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Faces of Evil\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Faces of Evil.</span></span> Ancient beings with origins in the Feywild, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.</p><p>All hags possess magical powers, and some have an affinity for spellcasting. They can alter their forms or curse their foes, and their arrogance inspires them to view their magic as a challenge to the magic of the gods, whom they blaspheme at every opportunity.</p><p>Hags name themselves in darkly whimsical ways, claiming monikers such as Black Morwen, Peggy Pigknuckle, Grandmother Titchwillow, Nanna Shug, Rotten Ethel, or Auntie Wormtooth.</p></div><div data-roll-name-ancestor=\"Monstrous Motherhood\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Monstrous Motherhood.</span></span> Hags propagate by snatching and devouring human infants. After stealing a baby from its cradle or its mother's womb, the hag consumes the poor child. A week later, the hag gives birth to a daughter who looks human until her thirteenth birthday, whereupon the child transforms into the spitting image of her hag mother.</p><p>Hags sometimes raise the daughters they spawn, creating covens. A hag might also return the child to its grieving parents, only to watch from the shadows as the child grows up to become a horror.</p></div><div data-roll-name-ancestor=\"Dark Bargains\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Dark Bargains.</span></span> Arrogant to a fault, hags believe themselves to be the most cunning of creatures, and they treat all others as inferior. Even so, a hag is open to dealing with mortals as long as those mortals show the proper respect and deference. Over their long lives, hags accumulate much knowledge of local lore, dark creatures, and magic, which they are pleased to sell.</p><p>Hags enjoy watching mortals bring about their own downfall, and a bargain with a hag is always dangerous. The terms of such bargains typically involve demands to compromise principles or give up something dear-especially if the thing lost diminishes or negates the knowledge gained through the bargain.</p></div><div data-roll-name-ancestor=\"A Foul Nature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">A Foul Nature.</span></span> Hags love the macabre and festoon their garb with dead things and accentuate their appearance with bones, bits of flesh, and filth. They nurture blemishes and pick at wounds to produce weeping, suppurating flesh. Attractive creatures evoke disgust in a hag, which might \"help\" such creatures by disfiguring or transforming them.</p><p>This embrace of the disturbing and unpleasant extends to all aspects of a hag's life. A hag might fly in a magical giant's skull, landing it on a tree shaped to resemble an enormous headless body. Another might travel with a menagerie of monsters and slaves kept in cages, and disguised by illusions to lure unwary creatures close. Hags sharpen their teeth on millstones and spin cloth from the intestines of their victims, reacting with glee to the horror their actions invoke.</p></div><div data-roll-name-ancestor=\"Dark Sorority\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"8\"> <span class=\"entry-title-inner\">Dark Sorority.</span></span> Hags maintain contact with each other and share knowledge. Through such contacts, it is likely that any given hag knows of every other hag in existence. Hags don't like each other, but they abide by an ageless code of conduct. Hags announce their presence before crossing into another hag's territory, bring gifts when entering another hag's dwelling, and break no oaths given to other hags-as long as the oath isn't given with the fingers crossed.</p><p>Some humanoids make the mistake of thinking that the hags' rules of conduct apply to all creatures. When confronted by such an individual, a hag might find it amusing to string the fool along for a while before teaching it a permanent lesson.</p></div><div data-roll-name-ancestor=\"Dark Lairs\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"9\"> <span class=\"entry-title-inner\">Dark Lairs.</span></span> Hags dwell in dark and twisted woods, bleak moors, storm-lashed seacoasts, and gloomy swamps. In time, the landscape around a hag's lair reflects the creature's noxiousness, such that the land itself can attack and kill trespassers. Trees twisted by darkness attack passersby, while vines snake through the undergrowth to snare and drag off creatures one at a time. Foul stinking fogs turn the air to poison, and conceal pools of quicksand and sinkholes that consume unwary wanderers.</p><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Lair Actions\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"10\"> <span class=\"entry-title-inner\">Lair Actions.</span></span> The following lair actions are options for grandmothers and powerful aunties. Grandmothers usually have three to five lair actions, aunties usually only one (if they have any at all). Unless otherwise noted, any lair action that requires a creature to make a saving throw uses the save DC of the hag's most powerful ability.</p><p>On initiative count 20 (losing initiative ties), the hag can take a lair action to cause one of the following effects, but can't use the same effect two rounds in a row:</p><ul class=\"rd__list\"><li class=\"rd__li \">Until initiative count 20 on the next round, the hag can pass through solid walls, doors, ceilings, and floors as if the surfaces weren't there.</li><li class=\"rd__li \">The hag targets any number of doors and windows that she can see, causing each one to either open or close as she wishes. Closed doors can be magically locked (requiring a successful [[/save ability=str dc=20]] check to force open) until she chooses to make them unlocked, or until she uses this lair action again to open them.</li></ul><p>A powerful sea hag might have the following additional lair actions:</p><ul class=\"rd__list\"><li class=\"rd__li \">The hag fills up to four 10-foot cubes of water with ink. The inky areas are heavily obscured for 1 minute, although a steady, strong underwater current disperses the ink on initiative count 10. The hag ignores the obscuring effect of the ink.</li><li class=\"rd__li \">The hag chooses one humanoid within the lair and instantly creates a simulacrum of that creature (as if created with the @spell[simulacrum] spell). This hideous simulacrum is formed out of seaweed, slime, half-eaten fish, and other garbage, but still generally resembles the creature it is imitating. This simulacrum obeys the hag's commands and is destroyed on initiative count 20 on the next round.</li></ul></div><p></p></div><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Regional Effects\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"11\"> <span class=\"entry-title-inner\">Regional Effects.</span></span> Each hag's lair is the source of three to five regional effects; the home of a grandmother, an auntie, or a coven has more effects than the lair of a single hag, including some that can directly harm intruders. Any regional effect that requires a creature to make a saving throw uses the save DC of the hag's most powerful ability. These effects either end immediately if the hag dies or abandons the lair, or take up to [[/r 2d10]] days to fade away.</p><p>The region within 1 mile of a grandmother hag's lair is warped by the creature's fell magic, which creates one or more of the following effects:</p><ul class=\"rd__list\"><li class=\"rd__li \">Birds, rodents, snakes, spiders, or toads (or some other creatures appropriate to the hag) are found in great profusion.</li><li class=\"rd__li \">Beasts that have an Intelligence score of 2 or lower are &amp;Reference[condition=charmed] by the hag and directed to be aggressive toward intruders in the area.</li><li class=\"rd__li \">Strange carved figurines, twig fetishes, or rag dolls magically appear in trees.</li></ul><p>A powerful sea hag creates one or more of the following additional regional effects within 1 mile of her lair:</p><ul class=\"rd__list\"><li class=\"rd__li \">Most surfaces are covered by a thin film of slime, which is slick and sticks to anything that touches it.</li><li class=\"rd__li \">Currents and tides are exceptionally strong and treacherous. Any ability check made to safely navigate or control a vessel moving through these waters has disadvantage.</li><li class=\"rd__li \">Shores are littered with dead, rotting fish. The hag can sense when one of the fish is handled and cause it to speak with her voice.</li></ul></div><p></p></div></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Hag Covens\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"12\"> <span class=\"entry-title-inner\">Hag Covens</span><span class=\"ve-flex-vh-center\"></span></h4> <p>When hags must work together, they form covens, in spite of their selfish natures. A coven is made up of hags of any type, all of whom are equals within the group. However, each of the hags continues to desire more personal power.</p><p>A coven consists of three hags so that any arguments between two hags can be settled by the third. If more than three hags ever come together, as might happen if two covens come into conflict, the result is usually chaos.</p><div data-roll-name-ancestor=\"Shared Spellcasting\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"13\"> <span class=\"entry-title-inner\">Shared Spellcasting.</span></span> While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:</p><ul class=\"rd__list rd__list-no-bullets\"><li class=\"rd__li \">1st level (4 slots): @spell[identify], @spell[ray of sickness]</li><li class=\"rd__li \">2nd level (3 slots): @spell[hold person], @spell[locate object]</li><li class=\"rd__li \">3rd level (3 slots): @spell[bestow curse], @spell[counterspell], @spell[lightning bolt]</li><li class=\"rd__li \">4th level (3 slots): @spell[phantasmal killer], @spell[polymorph]</li><li class=\"rd__li \">5th level (2 slots): @spell[contact other plane], @spell[scrying]</li><li class=\"rd__li \">6th level (1 slot): @spell[eyebite]</li></ul><p>For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier.</p></div><div data-roll-name-ancestor=\"Hag Eye\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"14\"> <span class=\"entry-title-inner\">Hag Eye.</span></span> A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and &amp;Reference[rule=darkvision] with a radius of 60 feet. If it is destroyed, each coven member takes [[/damage 3d10 type=psychic]] damage and is &amp;Reference[condition=blinded] for 24 hours.</p><p>A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while &amp;Reference[condition=blinded]. During the ritual, if the hags take any action other than performing the ritual, they must start over.</p></div></div></div></div></div><div class=\"rd__b-special rd__b-inset\" data-roll-name-ancestor=\"Hag Covens\"><h4 class=\"rd__h rd__h--2-inset\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Hag Covens</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h4> <p>When hags must work together, they form covens, in spite of their selfish natures. A coven is made up of hags of any type, all of whom are equals within the group. However, each of the hags continues to desire more personal power.</p><p>A coven consists of three hags so that any arguments between two hags can be settled by the third. If more than three hags ever come together, as might happen if two covens come into conflict, the result is usually chaos.</p><div class=\"rd__b  rd__b--3\"><p></p><div data-roll-name-ancestor=\"Shared Spellcasting (Coven Only)\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Shared Spellcasting (Coven Only).</span></span> While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>1st level (4 slots): <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"identify_phb\" data-vet-is-allow-redirect=\"true\">identify</span>, <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"ray%20of%20sickness_phb\" data-vet-is-allow-redirect=\"true\">ray of sickness</span></p></li><li class=\"rd__li  rd__li-spell\"><p>2nd level (3 slots): <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"hold%20person_phb\" data-vet-is-allow-redirect=\"true\">hold person</span>, <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"locate%20object_phb\" data-vet-is-allow-redirect=\"true\">locate object</span></p></li><li class=\"rd__li  rd__li-spell\"><p>3rd level (3 slots): <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"bestow%20curse_phb\" data-vet-is-allow-redirect=\"true\">bestow curse</span>, <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"counterspell_phb\" data-vet-is-allow-redirect=\"true\">counterspell</span>, <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"lightning%20bolt_phb\" data-vet-is-allow-redirect=\"true\">lightning bolt</span></p></li><li class=\"rd__li  rd__li-spell\"><p>4th level (3 slots): <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"phantasmal%20killer_phb\" data-vet-is-allow-redirect=\"true\">phantasmal killer</span>, <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"polymorph_phb\" data-vet-is-allow-redirect=\"true\">polymorph</span></p></li><li class=\"rd__li  rd__li-spell\"><p>5th level (2 slots): <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"contact%20other%20plane_phb\" data-vet-is-allow-redirect=\"true\">contact other plane</span>, <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"scrying_phb\" data-vet-is-allow-redirect=\"true\">scrying</span></p></li><li class=\"rd__li  rd__li-spell\"><p>6th level (1 slot): <span class=\"bold\" data-vet-page=\"spells.html\" data-vet-source=\"PHB\" data-vet-hash=\"eyebite_phb\" data-vet-is-allow-redirect=\"true\">eyebite</span></p></li></ul></div><div class=\"rd__b  rd__b--3\"><p>For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier.</p></div></div><div data-roll-name-ancestor=\"Hag Eye\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Hag Eye.</span></span> A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes <span class=\"roller render-roller\" title=\"Click to roll. SHIFT to roll a critical hit, CTRL to half damage (rounding down).\" data-packed-dice=\"{&quot;type&quot;:&quot;dice&quot;,&quot;rollable&quot;:true,&quot;toRoll&quot;:&quot;3d10&quot;,&quot;displayText&quot;:&quot;3d10&quot;,&quot;subType&quot;:&quot;damage&quot;}\">3d10</span> psychic damage and is <span class=\"bold\" data-vet-page=\"conditionsdiseases.html\" data-vet-source=\"PHB\" data-vet-hash=\"blinded_phb\" data-vet-is-allow-redirect=\"true\">blinded</span> for 24 hours.</p><p>A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while <span class=\"bold\" data-vet-page=\"conditionsdiseases.html\" data-vet-source=\"PHB\" data-vet-hash=\"blinded_phb\" data-vet-is-allow-redirect=\"true\">blinded</span>. During the ritual, if the hags take any action other than performing the ritual, they must start over.</p></div></div>",
+        "value": "<h3>海鬼婆Sea Hag</h3><p>海鬼婆生活在阴沉肮脏的水下巢穴里，周围生活着梅洛merrow等其他水生怪物。</p><p>世间的美让海鬼婆愤怒。当遇到美的事物时，海鬼婆会马上发动攻击，至少也要毁掉它的美。如果美好带来希望，海鬼婆就让它遭遇绝望；如果它激发勇气，海鬼婆就让它引起恐慌。</p><p><strong>彻底丑陋Ugly Inside and Out。</strong>海鬼婆是鬼婆里面最丑陋的一种。它苍白的皮肤上长着粘糊糊的鳞片，它的头发像海藻覆盖着它瘦弱的身体，它的眼睛看起来像洋娃娃一样毫无生气。就算海鬼婆用幻象掩盖住其真实形态，鬼婆的诅咒也会让它显出丑陋，至少让它显得憔悴不堪。</p><p><strong>鬼婆集会Covens。</strong>海鬼婆作为鬼婆集会一员时（见“鬼婆集会”）拥有挑战等级：4（1,100</p><p>XP）。</p>",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "混乱邪恶 Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
@@ -587,12 +575,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": true,
@@ -643,10 +631,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Sea Hag",
+    "name": "海鬼婆 Sea Hag (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -657,12 +647,9 @@
       "src": "systems/dnd5e/tokens/fey/SeaHag.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -713,7 +700,7 @@
       "saturation": -1,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -737,12 +724,13 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
       "_id": "l3bbOMNk4bkoVwjL",
-      "name": "Claws",
+      "name": "爪击 Claws",
       "type": "weapon",
       "system": {
         "source": {
@@ -754,7 +742,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+5]]{+5} to hit, reach 5 ft., one target. <i>Hit:</i> 10 ([[/damage 2d6 + 3 type=slashing]]) damage.</p></div>",
+          "value": "<p>近战武器攻击：命中+5，触及5尺，单一目标。命中：10（[[/damage 2d6 + 3 type=slashing]]）点挥砍伤害。</p>",
           "chat": ""
         },
         "range": {
@@ -788,7 +776,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -822,7 +811,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -836,15 +826,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -861,7 +855,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -869,7 +864,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -880,18 +874,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "claws",
@@ -909,12 +951,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -929,7 +969,8 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -940,10 +981,14 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -961,9 +1006,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -975,7 +1020,7 @@
     },
     {
       "_id": "f72sbWkWkUCqecdx",
-      "name": "Death Glare",
+      "name": "死亡怒视 Death Glare",
       "type": "feat",
       "system": {
         "source": {
@@ -987,7 +1032,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hag targets one &amp;Reference[condition=frightened] creature she can see within 30 feet of her. If the target can see the hag, it must succeed on a [[/save ability=wis dc=11]] saving throw against this magic or drop to 0 hit points.</p></div>",
+          "value": "<p>鬼婆指定其30尺内一个它能看到的受恐慌生物。如果该目标可以看到鬼婆，则它必须进行一次DC 11的感知豁免以抵抗该魔法，豁免失败则生命值降为0。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1001,7 +1046,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "IPFL8lgVnJKTqo4v": {
             "_id": "IPFL8lgVnJKTqo4v",
@@ -1018,15 +1063,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1036,7 +1085,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "1",
@@ -1058,7 +1108,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "11"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1079,7 +1130,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1087,7 +1139,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1098,15 +1149,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "death-glare",
@@ -1115,7 +1213,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1134,9 +1233,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1148,7 +1247,7 @@
     },
     {
       "_id": "jpfLOKUDzmkpyJXY",
-      "name": "Illusory Appearance",
+      "name": "幻形 Illusory Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -1160,7 +1259,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.</p><p>The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a [[/save ability=int dc=16]] (&amp;Reference[skill=Investigation]) check to discern that the hag is disguised.</p></div>",
+          "value": "<p>鬼婆让自己和随身携带的物品笼罩在一层魔法幻象中，使它看上去像体型相仿的另一种丑陋的类人生物。鬼婆可以用一个附赠动作终止幻象。鬼婆死亡时，幻象也随之消失。 这种效应产生的变化无法瞒过任何物理性的检查。鬼婆可以幻化成没有爪子的生物，但它的手摸上去的感觉依然是爪子。看到幻象的生物必需花费一个动作来观察该幻象，成功通过一次DC 16的智力（调查）检定即可以看穿鬼婆的伪装。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1174,7 +1273,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "puoCqe1Dq8c8TO88": {
             "_id": "puoCqe1Dq8c8TO88",
@@ -1191,20 +1290,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1232,7 +1336,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1240,7 +1345,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1251,15 +1355,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "illusory-appearance",
@@ -1268,7 +1418,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1287,9 +1438,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1301,7 +1452,7 @@
     },
     {
       "_id": "pAAxINBpydgjjCTf",
-      "name": "Amphibious",
+      "name": "水陆两栖 Amphibious",
       "type": "feat",
       "system": {
         "source": {
@@ -1313,7 +1464,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hag can breathe air and water.</p></div>",
+          "value": "<p>鬼婆可以在空气和水中呼吸。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1327,7 +1478,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "amphibious",
         "cover": null,
@@ -1335,7 +1486,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1354,9 +1506,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1368,7 +1520,7 @@
     },
     {
       "_id": "8Wz8D54fD2J5JEq8",
-      "name": "Horrific Appearance",
+      "name": "恐怖形象 Horrific Appearance",
       "type": "feat",
       "system": {
         "source": {
@@ -1380,7 +1532,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Any humanoid that starts its turn within 30 feet of the hag and can see the hag's true form must make a [[/save ability=wis dc=11]] saving throw. On a failed save, the creature is &amp;Reference[condition=frightened] for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours.</p><p>Unless the target is @status[surprised] or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag.</p></div>",
+          "value": "<p>任意类人生物在鬼婆30尺范围内开始其自己回合时，如果看到鬼婆的真实形态，则该生物必需进行一次DC 11的感知豁免。豁免失败的生物将陷入受其恐慌的状态，并持续1分钟。该生物每个其自己回合结束时可以再进行一次该豁免。这时如果鬼婆还在其视线范围内，则检定具有劣势。如果再次的检定成功，终止该生物自身的恐慌效应，且该生物在随后的24小时内免疫该鬼婆的恐怖形象。 除非目标被突袭或者鬼婆忽然露出真实形态，否则目标可以移开视线避开鬼婆从而跳过最初的豁免检定。该生物开始它自己的下一回合前，由于视线避开鬼婆而使它对该鬼婆发动的攻击检定具有劣势。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1394,7 +1546,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "bvoLmzYOiyCyDCgq": {
             "_id": "bvoLmzYOiyCyDCgq",
@@ -1411,15 +1563,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
@@ -1429,7 +1585,8 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "count": "",
@@ -1451,7 +1608,8 @@
               "dc": {
                 "calculation": "",
                 "formula": "11"
-              }
+              },
+              "visible": true
             },
             "damage": {
               "onSave": "none",
@@ -1472,7 +1630,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1480,7 +1639,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1491,15 +1649,62 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "horrific-appearance",
@@ -1508,7 +1713,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1527,9 +1733,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1541,7 +1747,7 @@
     },
     {
       "_id": "qf3u9QAJbcuQbSv6",
-      "name": "Until initiative count 20 on the next round, the ...",
+      "name": "巢穴动作：穿行墙壁",
       "type": "feat",
       "system": {
         "source": {
@@ -1553,7 +1759,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Until initiative count 20 on the next round, the hag can pass through solid walls, doors, ceilings, and floors as if the surfaces weren't there.</p></div>",
+          "value": "<p>直至下一轮先攻轮到20，该鬼婆可以穿过实体墙壁、门、天花板和地板，如同它们不存在一样。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1567,7 +1773,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "C0RZSQxL0JVpJFas": {
             "_id": "C0RZSQxL0JVpJFas",
@@ -1584,20 +1790,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1625,7 +1836,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1633,7 +1845,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1644,15 +1855,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "until-initiative-count-20-on-the-next-round-the-",
@@ -1661,7 +1918,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1680,9 +1938,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1694,7 +1952,7 @@
     },
     {
       "_id": "YbEj9RVVkyDieWrm",
-      "name": "The hag targets any number of doors and windows ...",
+      "name": "巢穴动作：开闭门窗",
       "type": "feat",
       "system": {
         "source": {
@@ -1706,7 +1964,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hag targets any number of doors and windows that she can see, causing each one to either open or close as she wishes. Closed doors can be magically locked (requiring a successful [[/save ability=str dc=20]] check to force open) until she chooses to make them unlocked, or until she uses this lair action again to open them.</p></div>",
+          "value": "<p>该鬼婆指定任意数量它能看见的门窗，使其随自己的意愿打开或关闭。关闭的门窗可以被魔法锁住，需要成功通过一次DC 20的力量检定才能强行打开。这种锁定持续至它主动解锁，或再次用此巢穴动作将门窗打开。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1720,7 +1978,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "kh7E2aUni8Om4vEe": {
             "_id": "kh7E2aUni8Om4vEe",
@@ -1737,20 +1995,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1778,7 +2041,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1786,7 +2050,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1797,15 +2060,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "the-hag-targets-any-number-of-doors-and-windows-",
@@ -1814,7 +2123,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1833,9 +2143,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1847,7 +2157,7 @@
     },
     {
       "_id": "dJSq2rFSEirMoV7O",
-      "name": "The hag fills up to four 10-foot cubes of water with ink. ...",
+      "name": "巢穴动作：墨汁水域",
       "type": "feat",
       "system": {
         "source": {
@@ -1859,7 +2169,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hag fills up to four 10-foot cubes of water with ink. The inky areas are heavily obscured for 1 minute, although a steady, strong underwater current disperses the ink on initiative count 10. The hag ignores the obscuring effect of the ink.</p></div>",
+          "value": "<p>该鬼婆令至多四处10尺立方的水域充满墨汁。区域处于重度遮蔽，持续1分钟；但稳定而强劲的水流会在先攻轮到10时驱散墨汁。该鬼婆无视墨汁造成的遮蔽。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -1873,7 +2183,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "eiAx6lX9QPKr3QCt": {
             "_id": "eiAx6lX9QPKr3QCt",
@@ -1890,20 +2200,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1931,7 +2246,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1939,7 +2255,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1950,15 +2265,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "the-hag-fills-up-to-four-10-foot-cubes-of-water-with-ink-",
@@ -1967,7 +2328,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -1986,9 +2348,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2000,7 +2362,7 @@
     },
     {
       "_id": "2I0tSyZ81oOHyChZ",
-      "name": "The hag chooses one humanoid within the lair and ...",
+      "name": "巢穴动作：污秽拟像",
       "type": "feat",
       "system": {
         "source": {
@@ -2012,7 +2374,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>The hag chooses one humanoid within the lair and instantly creates a simulacrum of that creature (as if created with the @spell[simulacrum] spell). This hideous simulacrum is formed out of seaweed, slime, half-eaten fish, and other garbage, but still generally resembles the creature it is imitating. This simulacrum obeys the hag's commands and is destroyed on initiative count 20 on the next round.</p></div>",
+          "value": "<p>该鬼婆选择巢穴内一个类人生物，立即如同施展拟像术一样创造其拟像。这个丑陋的拟像由海草、黏液、吃剩的鱼和其他垃圾组成，但整体仍像被模仿的生物。拟像服从鬼婆的命令，并在下一轮先攻轮到20时被摧毁。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2026,7 +2388,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "2oMpTprei0GB33mF": {
             "_id": "2oMpTprei0GB33mF",
@@ -2043,20 +2405,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2084,7 +2451,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2092,7 +2460,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2103,15 +2470,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "the-hag-chooses-one-humanoid-within-the-lair-and-",
@@ -2120,7 +2533,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2139,9 +2553,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2153,7 +2567,7 @@
     },
     {
       "_id": "zzkQkypEg3UjBUII",
-      "name": "Regional Effects",
+      "name": "区域效应",
       "type": "feat",
       "system": {
         "source": {
@@ -2165,7 +2579,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Each hag's lair is the source of three to five regional effects; the home of a grandmother, an auntie, or a coven has more effects than the lair of a single hag, including some that can directly harm intruders. Any regional effect that requires a creature to make a saving throw uses the save DC of the hag's most powerful ability. These effects either end immediately if the hag dies or abandons the lair, or take up to [[/r 2d10]] days to fade away.</p><p>The region within 1 mile of a grandmother hag's lair is warped by the creature's fell magic, which creates one or more of the following effects:</p><ul class=\"rd__list\"><li class=\"rd__li \">Birds, rodents, snakes, spiders, or toads (or some other creatures appropriate to the hag) are found in great profusion.</li><li class=\"rd__li \">Beasts that have an Intelligence score of 2 or lower are &amp;Reference[condition=charmed] by the hag and directed to be aggressive toward intruders in the area.</li><li class=\"rd__li \">Strange carved figurines, twig fetishes, or rag dolls magically appear in trees.</li></ul><p>A powerful sea hag creates one or more of the following additional regional effects within 1 mile of her lair:</p><ul class=\"rd__list\"><li class=\"rd__li \">Most surfaces are covered by a thin film of slime, which is slick and sticks to anything that touches it.</li><li class=\"rd__li \">Currents and tides are exceptionally strong and treacherous. Any ability check made to safely navigate or control a vessel moving through these waters has disadvantage.</li><li class=\"rd__li \">Shores are littered with dead, rotting fish. The hag can sense when one of the fish is handled and cause it to speak with her voice.</li></ul></div>",
+          "value": "<p>每处鬼婆巢穴都可能产生三至五种区域效应。祖母、姨婆或集会的巢穴往往具有更多效应，其中一些会直接伤害入侵者。需要豁免的效应使用该鬼婆最强能力的豁免DC。鬼婆死亡或弃巢后，效应立即结束，或在[[/r 2d10]]日内逐渐消散。</p><p>鬼婆祖母的巢穴周边1里可能产生以下一种或多种效应：鸟类、啮齿动物、蛇、蜘蛛或蟾蜍等合适生物异常繁盛；智力为2或更低的野兽被鬼婆魅惑，并敌视区域内的入侵者；树上凭空出现奇异雕像、枝条护符或布娃娃。</p><p>强大的海鬼婆还会产生以下一种或多种效应：</p><p>大多数表面覆盖一层光滑的黏液，并会粘在触碰它的物体上。</p><p>水流和潮汐异常强劲而危险，在这些水域安全航行或操纵船只所作的属性检定具有劣势。</p><p>海岸散布腐败死鱼。鬼婆能够感知有人触碰其中一条鱼，并令鱼用它的声音说话。</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2179,7 +2593,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "regional-effects",
         "cover": null,
@@ -2187,7 +2601,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2206,9 +2621,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2220,7 +2635,7 @@
     }
   ],
   "effects": [],
-  "folder": "fMal9OEom9YXkKMD",
+  "folder": "6748f2cd8c8f81df",
   "sort": 30200000,
   "ownership": {
     "default": 0,

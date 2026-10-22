@@ -1,15 +1,15 @@
 {
   "_id": "lWw9NHXiINtblmGx",
-  "name": "阳光箭 Radiant Sun Bolt",
+  "name": "耀阳箭 Radiant Sun Bolt",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_Flashoflight.png",
+  "img": "icons/magic/light/projectile-beam-yellow.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>从3级起，选择了这个范型的武僧可以投掷出灼热的箭矢。</p>\n<p>你可以在攻击动作中使用一种特殊的远程法术攻击（射程30尺）。你熟练于这次攻击，并且可以在攻击和伤害骰上加上敏捷调整值。它造成光耀伤害，伤害骰为[[/r 1d4]]。伤害骰会随着你的等级增长而改变，参考@UUID[Compendium.dnd5e_classpack.class-table.mslFlzSOAGX87lXV]{武僧表}中的武艺栏。</p>\n<p>如果你在自己的回合内用攻击动作使用这种特殊攻击，你可以花费1点气，并且再用附赠动作用阳光箭进行两次额外的攻击。</p>\n<p>当你得到额外攻击能力时，你可以在作为攻击动作一部分的任意某次攻击中使用这种特殊攻击。</p>",
+      "value": "<p>从3级选择此宗派起，你可以投掷出魔法圣光形成的灼热箭矢。</p>\n<p>你可以在 攻击Attack 动作中发动一种新的特殊攻击：一次30尺范围的远程法术攻击。你熟练于这种攻击，且可以在攻击检定与其伤害掷骰上使用你的敏捷调整值。它造成光耀伤害，伤害骰为[[/r 1d4]]{1d4}。这一攻击的伤害骰大小会随着你的等级增长而改变，其大小即@UUID[Compendium.dnd5e_classpack.class-table.JournalEntry.mslFlzSOAGX87lXV]{武僧职业表}中的 武艺Martial Arts 一列。</p>\n<p>如果你在自己的回合内执行了 攻击Attack 动作，并在其中使用了这一特殊攻击作为攻击动作的一部分，你就可以花费1点气，再用附赠动作进行两次额外的此种特殊攻击。</p>\n<p>当你获得 额外攻击Extra Attack 特性后，你在 攻击Attack 动作中的每一次攻击都可以用于发动此种特殊攻击。 </p>",
       "chat": ""
     },
     "source": {
@@ -45,13 +45,15 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -68,7 +70,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -117,21 +120,113 @@
                 "mode": "whole",
                 "number": null,
                 "formula": ""
-              }
+              },
+              "modifiers": []
             }
           ]
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": true
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "attackMode": "oneHanded",
+        "ammunition": "",
+        "otherActivityUuid": "",
+        "attackRollPerTarget": "default",
+        "fumbleThreshold": 1
       }
     },
     "identifier": "-radiant-sun-bolt",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     }
   },
   "effects": [],
@@ -163,19 +258,12 @@
       "idv": false,
       "ida": false
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 0,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757420910468,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

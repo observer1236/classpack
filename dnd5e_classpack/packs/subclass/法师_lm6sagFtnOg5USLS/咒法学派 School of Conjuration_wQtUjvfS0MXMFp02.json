@@ -2,15 +2,15 @@
   "_id": "wQtUjvfS0MXMFp02",
   "name": "咒法学派 School of Conjuration",
   "type": "subclass",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Arcane_Blast.png",
+  "img": "icons/magic/symbols/runes-star-blue.webp",
   "effects": [],
   "folder": "lm6sagFtnOg5USLS",
   "sort": 25000,
   "flags": {},
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275023121,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -23,7 +23,7 @@
   },
   "system": {
     "description": {
-      "value": "<p>        作为一名咒法师，你偏爱那些凭空创造物件和生物的法术。你可以招来翻滚的致死雾气，或召唤出为你而战的生物。你掌握了足够精熟的技术后还可以学习传送类的法术，甚至可依此在弹指间跨越遥远的距离，乃至传送到另一存在位面。</p><p><strong>咒法学者Conjuration Savant</strong></p><p>        从第2级你选择该学派起,你向法术书中抄写咒法系法术的时间和金钱花费减半。</p>",
+      "value": "<p>    作为一名咒法师，你偏爱那些凭空创造物件和生物的法术。你可以招来翻滚的致死雾气，或召唤出为你而战的生物。你掌握了足够精熟的技术后还可以学习传送类的法术，甚至可依此在弹指间跨越遥远的距离，乃至传送到另一存在位面。</p><h3>咒法学者 Conjuration Savant</h3><p>    从第2级你选择该学派起，你向法术书中抄写咒法系法术的时间和金钱花费减半。</p><h3>@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.waTvPqhqVZXTppag]{次级咒术 Minor Conjuration}</h3><p>    从第2级你选择该学派起，你可以用你的动作咒唤一件非活化的物件。该物件将出现在你手中，或者你周边10尺范围内一处那你能看见且未占据空间的地面上。该物件每边长度不得大于3尺，重量不得大于10磅。其形状必须是你曾经见过的一件非魔法物件的形状。该物件看起来明显是由魔法构成且散发着出5尺范围的微光光照。<br>     该物件将在1小时后消失不见。当你再次使用该特性，或当其受到伤害或造成伤害时，物件也会提前消失。</p><h3>@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.HgAQFcV5JFxGLmKf]{王车易位 Benign Transposition}</h3><p>    第6级起，你可以用你的动作传送至多30尺，至一处你能看见且未占据空间。你也可以指定一处传送距离内被一个小型或中型生物所占据的空间，如果该生物愿意，则你与它将同时传送至对方的位置上。<br>     你必须完成一次长休，或施展一个环阶不低于1环的咒法系法术才能再次使用该特性。</p><h3>@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.2nTyBQmmiE1eTJqf]{咒法专注 Focused Conjuration}</h3><p>    第10级起，你在专注于咒法系法术期间，你的专注不会因承受伤害而被打断。</p><h3>@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.OrjrCoFkRfkWUOmM]{强韧召唤 Durable Summons}</h3><p>    第14级起，被你用咒法系法术召唤出来或创造出来的生物都将具有30点临时生命值。</p>",
       "chat": ""
     },
     "source": {
@@ -34,76 +34,92 @@
     },
     "identifier": "school-of-conjuration",
     "classIdentifier": "wizard",
-    "advancement": [
-      {
+    "advancement": {
+      "u6mkf8avr1c7kg3x": {
         "_id": "u6mkf8avr1c7kg3x",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.waTvPqhqVZXTppag",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 2,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "m7xdaseh3xfcxnki": {
         "_id": "m7xdaseh3xfcxnki",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.HgAQFcV5JFxGLmKf",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "hges9zqopy5eooq6": {
         "_id": "hges9zqopy5eooq6",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.2nTyBQmmiE1eTJqf",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 10,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "4ji7jkn04mibz987": {
         "_id": "4ji7jkn04mibz987",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.class-abilityphb.OrjrCoFkRfkWUOmM",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 14,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",

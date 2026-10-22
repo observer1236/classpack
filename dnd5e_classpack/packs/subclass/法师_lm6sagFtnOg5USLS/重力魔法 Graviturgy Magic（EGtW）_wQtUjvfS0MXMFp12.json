@@ -1,16 +1,16 @@
 {
   "_id": "wQtUjvfS0MXMFp12",
-  "name": "重力魔法 Graviturgy Magic（EGtW）",
+  "name": "重力魔法 Graviturgy Magic(EGtW)",
   "type": "subclass",
-  "img": "modules/dnd5e_classpack/Nicons/003123.png",
+  "img": "icons/magic/movement/portal-vortex-orange.webp",
   "effects": [],
   "folder": "lm6sagFtnOg5USLS",
   "sort": 100098,
   "flags": {},
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757275090371,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
@@ -23,7 +23,7 @@
   },
   "system": {
     "description": {
-      "value": "<p>         理解并掌控着将物体的物质聚合或分离的力量，重力奥术传承的学生们通过学习来更进一步掌控扭曲并操纵重力的狂暴能量来增益自己，或是为他们的敌人带来恐怖的伤害。</p>",
+      "value": "<p> 理解并掌控着将物体的物质聚合或分离的力量，重力奥术传承的学生们通过学习来更进一步掌控扭曲并操纵重力的狂暴能量来增益自己，或是为他们的敌人带来恐怖的伤害。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.yTvrp3vJbgTI2DnP]{调节密度 Adjust Density}</h3><p><em>第2级重力魔法特性</em><br>以一个动作，你能魔法性的修改你周围30尺内的、一个你可见的物件或生物的重量。目标物件或目标生物的体型必须为大型或更小。你将目标的重量减半或翻倍，持续至多一分钟，若你的专注终止（如同你正专注于一个法术一样），它将提前结束。<br>生物的重量因此特性减半期间，该生物的移动速度增加10尺，其跳跃的距离变为正常的两倍，但在进行力量检定或力量豁免时具有劣势。<br>生物的重量因此特性翻倍期间，该生物的移动速度减少10尺，但在进行力量检定或力量豁免时具有优势。<br>当你在此职业到达第10级时，你可以对巨型或更小的物件或生物使用本特性。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.BqELBEclWwg3sLnc]{重力井 Gravity Well}</h3><p><em>第6级重力魔法特性</em><br>你习得了如何操纵活物周遭的重力：每当你将一道法术施展到一个生物身上时，你能移动该目标5尺至一处由你选择且未占据空间。这一特性只有在法术的目标自愿被你移动、或法术中的某次攻击命中了该目标、亦或该目标在对抗这道法术的某次豁免检定失败的情况下，才能生效。 </p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.kQbdBnEVZWpyM4oT]{狂暴牵引 Violent Attraction}</h3><p><em>第10级重力魔法特性</em><br>当处于你周围60尺范围内且你可见的生物（除你以外）发动的武器攻击命中时，你都能用你的反应增幅这次攻击的速度，使被攻击的目标额外受到1d10点伤害，此额外伤害的类型与武器的伤害类型相同。<br>此外，当你周围60尺范围内的生物承受坠落伤害时，你也能用你的反应来增幅这次坠落，使坠落伤害增加2d10。<br>你能使用本特性的次数等于你的智力调整值（最少一次）。在你完成一次长休后你重获全部已消耗的使用次数。</p><h3>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.u9tfHLloCMBfZfmA]{事件视界 Event Horizon}</h3><p><em>第14级重力魔法特性</em><br>以一个动作，你能魔法性的散发出由重力能量引起的拖拽其他生物的强大力场。力场会存在至多1分钟，若你的专注终止（如同你正专注于一个法术一样）它也会提前结束。<br>在持续时间内，当一个处于你周围30尺范围内、且与你敌对的生物开始其回合时，该生物必须进行一次力量豁免对抗你的法术豁免DC。豁免失败时，该生物将受到2d10的力场伤害，且移动速度降低至0尺，持续直至该生物的下一个回合开始。豁免成功时，该生物只会受到半数的伤害，且每移动一尺需要额外花费2尺的移动力。<br>一旦你使用了本特性，直到你完成一次长休前你都无法再次使用它。你也可以花费一个3环或更高的法术位来再次使用它。</p>",
       "chat": ""
     },
     "source": {
@@ -34,76 +34,92 @@
     },
     "identifier": "graviturgy-magic",
     "classIdentifier": "wizard",
-    "advancement": [
-      {
+    "advancement": {
+      "u6mkf8avr1c7kg3x": {
         "_id": "u6mkf8avr1c7kg3x",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.yTvrp3vJbgTI2DnP",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 2,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "m7xdaseh3xfcxnki": {
         "_id": "m7xdaseh3xfcxnki",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.BqELBEclWwg3sLnc",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 6,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "hges9zqopy5eooq6": {
         "_id": "hges9zqopy5eooq6",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.kQbdBnEVZWpyM4oT",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 10,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "4ji7jkn04mibz987": {
         "_id": "4ji7jkn04mibz987",
         "type": "ItemGrant",
         "configuration": {
           "items": [
             {
               "uuid": "Compendium.dnd5e_classpack.extra-ability.u9tfHLloCMBfZfmA",
-              "optional": false
+              "optional": false,
+              "sort": 0
             }
           ],
           "optional": false,
-          "spell": null
+          "spell": null,
+          "sorting": "m"
         },
         "value": {},
         "level": 14,
-        "title": "职业特性"
+        "name": "职业特性",
+        "flags": {},
+        "hint": ""
       },
-      {
+      "e3gsf2ut9jhagiu4": {
         "_id": "e3gsf2ut9jhagiu4",
         "type": "ScaleValue",
         "configuration": {
@@ -122,9 +138,11 @@
           }
         },
         "value": {},
-        "title": "调节密度特性限制"
+        "name": "调节密度特性限制",
+        "flags": {},
+        "hint": ""
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": "",

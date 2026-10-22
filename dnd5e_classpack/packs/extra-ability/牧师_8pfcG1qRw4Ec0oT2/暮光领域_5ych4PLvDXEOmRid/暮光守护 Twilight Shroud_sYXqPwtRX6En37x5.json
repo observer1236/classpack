@@ -2,14 +2,14 @@
   "_id": "sYXqPwtRX6En37x5",
   "name": "暮光守护 Twilight Shroud",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/spell_shadow_twilight.png",
+  "img": "icons/magic/nature/symbol-moon-stars-white.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>暮光拥抱着你并提供保护：处于你@UUID[Compendium.dnd5e_classpack.extra-ability.RF3cORN1AMVCqgJu]{暮光圣域}的球体内的你和你的盟友处于半身掩护。</p>",
+      "value": "<p> 你创造的暮光会拥抱着你们，保护你们——处于你@UUID[Compendium.dnd5e_classpack.extra-ability.Item.RF3cORN1AMVCqgJu]{暮光圣域}的球体内的你和你的盟友将获得半身掩护。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     "requirements": "暮光领域等级 17",
     "activities": {},
     "identifier": "-twilight-shroud",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 17,
+      "repeatable": false,
+      "items": [
+        "subclass:twilight-domain"
+      ]
     },
     "properties": []
   },
@@ -63,24 +66,13 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "twilightShroud",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757416755168,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

@@ -1,15 +1,15 @@
 {
   "_id": "ug1Y5YXiU65DLpsB",
-  "name": "额外攻击 (战士)",
+  "name": "额外攻击(战士) Extra Attack",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_WeaponMastery.png",
+  "img": "icons/skills/melee/spear-tips-triple-orange.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>第5级起，你在自己回合内执行攻击动作时可以发动两次攻击而非一次。</p>\n<p>第11级后，你可以攻击三次。第20级后，你可以攻击四次。</p>",
+      "value": "<p> 第5级起，你在自己回合内执行攻击动作时可以发动两次攻击而非一次。</p>\n<p> 第11级后，你可以攻击三次。第20级后可以攻击四次。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "战士等级 5",
     "activities": {},
-    "identifier": "-",
-    "advancement": [],
+    "identifier": "extra-attack-fighter",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 5,
+      "repeatable": false,
+      "items": [
+        "class:fighter"
+      ]
     },
     "properties": []
   },
@@ -39,12 +42,7 @@
   "folder": "0Iyyl84LrEbKBK1I",
   "sort": 41000000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +62,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749735743712,
     "lastModifiedBy": "00Hmaouu4SsMyc7n",

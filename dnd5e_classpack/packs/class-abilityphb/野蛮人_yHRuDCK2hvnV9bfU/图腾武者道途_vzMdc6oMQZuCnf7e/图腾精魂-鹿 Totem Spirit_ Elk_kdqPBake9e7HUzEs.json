@@ -1,5 +1,5 @@
 {
-  "name": "图腾精魂-鹿 Totem Spirit: Elk",
+  "name": "图腾精魂：鹿 Totem Spirit: Elk",
   "type": "feat",
   "img": "icons/creatures/mammals/deer-antlers-glowing-blue.webp",
   "system": {
@@ -8,7 +8,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<ul><li><strong>鹿 Elk</strong>。当你狂暴且未穿着重甲时，你的步行速度增加15尺。鹿之精魂将使你格外迅捷。</li></ul>",
+      "value": "<ul><li><p>狂暴期间，若你未着重甲，你的步行速度增加15尺。鹿之精魂的庇佑使你格外迅捷。</p></li></ul>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "cover": null,
     "crewed": false,
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "activities": {},
-    "identifier": "-",
-    "advancement": [],
+    "identifier": "totem-spirit-elk",
+    "advancement": {},
     "enchant": {}
   },
   "effects": [],
@@ -62,17 +63,12 @@
       "otherCondition": ""
     },
     "core": {},
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1724854634027,
     "modifiedTime": 1757174636894,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

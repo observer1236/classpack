@@ -2,14 +2,14 @@
   "_id": "g473FXNMREvpFY5E",
   "name": "锻造祝福 Blessing of The Forge",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Paladin_GaurdedbytheLight.png",
+  "img": "icons/skills/trades/construction-carpentry-hammer.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>从1级起，你获得将魔法灌输到武器或护甲中的能力。在长休的结束，你可以触摸一件非魔法护甲或者简易或军用武器，直到你下一次长休或者你死亡，若是护甲，其AC获得+1加值；若是武器，其攻击骰和伤害骰获得+1加值。</p>\n<p>一旦你使用过此特性，直到你完成一次长休，你无法再次使用它。</p>",
+      "value": "<p>在1级，你获得将魔法注入到武器或护甲中的能力。在长休结束时，你可以触摸一件非魔法护甲，或者非魔法的简易或军用武器，将其变为一件魔法物品。若是护甲，其ac获得+1加值；若是武器，其攻击检定和伤害掷骰获得+1加值。这一魔法转化将一直持续到直到你下一次长休为止，如果你死亡，它也会提前结束。</p>\n<p>一旦你使用了此特性，直到你完成一次长休为止你都无法再次使用它。</p>",
       "chat": ""
     },
     "source": {
@@ -29,93 +29,257 @@
     },
     "requirements": "锻造领域等级 1",
     "activities": {
-      "dnd5eactivity000": {
-        "_id": "dnd5eactivity000",
-        "type": "utility",
+      "Z3rEbndJhil1W85O": {
+        "type": "enchant",
+        "name": "",
+        "_id": "Z3rEbndJhil1W85O",
+        "img": "",
+        "sort": 0,
         "activation": {
-          "type": "special",
-          "value": null,
-          "condition": "",
-          "override": false
+          "type": "action",
+          "override": false,
+          "condition": ""
         },
+        "behaviors": [],
         "consumption": {
-          "targets": [
-            {
-              "type": "itemUses",
-              "target": "",
-              "value": "1",
-              "scaling": {
-                "mode": "",
-                "formula": ""
-              }
-            }
-          ],
           "scaling": {
-            "allowed": false,
-            "max": ""
+            "allowed": false
           },
-          "spellSlot": true
+          "spellSlot": true,
+          "targets": []
         },
         "description": {
+          "value": "",
           "chatFlavor": ""
         },
         "duration": {
+          "units": "inst",
+          "expiry": null,
           "concentration": false,
-          "units": "",
-          "special": "",
           "override": false
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "vEsfbrSubFQsEqSD",
+            "uuid": null,
+            "level": {},
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "flags": {},
         "range": {
-          "units": "",
-          "special": "",
-          "override": false
+          "units": "self",
+          "override": false,
+          "special": ""
         },
         "target": {
           "template": {
-            "count": "",
             "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": ""
+            "stationary": false,
+            "units": "ft",
+            "type": ""
           },
           "affects": {
-            "count": "",
-            "type": "",
             "choice": false,
-            "special": ""
+            "type": ""
           },
-          "prompt": true,
-          "override": false
+          "override": false,
+          "prompt": true
         },
         "uses": {
           "spent": 0,
-          "max": "",
-          "recovery": []
+          "recovery": [],
+          "max": ""
         },
-        "roll": {
-          "formula": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "enchant": {
+          "self": false
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "categories": [
+            "simpleM",
+            "simpleR",
+            "martialM",
+            "martialR"
+          ],
+          "properties": [],
+          "type": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
           "name": "",
-          "prompt": false,
-          "visible": false
+          "command": ""
         },
-        "sort": 0
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
       }
     },
     "identifier": "-blessing-of-the-forge",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
-  "effects": [],
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "锻造祝福 Blessing of The Forge",
+      "img": "icons/skills/trades/construction-carpentry-hammer.webp",
+      "disabled": true,
+      "transfer": false,
+      "_id": "vEsfbrSubFQsEqSD",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "type": "add",
+            "value": "mgc",
+            "phase": "initial",
+            "_id": "FZSPVIBvIrV71695",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          },
+          {
+            "key": "system.magicalBonus",
+            "type": "add",
+            "value": "+1",
+            "phase": "initial",
+            "_id": "K2yCNo5XlzfYkvC2",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "longRest",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "applicationMode": "default",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_key": "!items.effects!g473FXNMREvpFY5E.vEsfbrSubFQsEqSD"
+    }
+  ],
   "folder": "AmI7cHUa4xUbjoOu",
   "sort": 36000000,
   "flags": {
@@ -140,35 +304,22 @@
       "itemCondition": "",
       "effectCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "blessingOfTheForge",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!g473FXNMREvpFY5E",
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
-  },
-  "ownership": {
-    "default": 0
-  },
-  "_key": "!items!g473FXNMREvpFY5E"
+  }
 }

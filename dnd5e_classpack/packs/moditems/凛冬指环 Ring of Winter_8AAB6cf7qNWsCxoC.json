@@ -5,32 +5,21 @@
   "img": "icons/equipment/finger/ring-cabochon-gold.webp",
   "effects": [
     {
-      "changes": [
-        {
-          "key": "system.traits.di.value",
-          "mode": 2,
-          "value": "cold",
-          "priority": null
-        }
-      ],
       "disabled": false,
       "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
       },
       "tint": "#ffffff",
       "transfer": true,
       "flags": {},
       "_id": "ry4mj3y03vzu5h6e",
       "_stats": {
-        "coreVersion": "13.351",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -41,30 +30,51 @@
       "name": "+ 冷冻抗性",
       "img": "icons/equipment/finger/ring-cabochon-gold.webp",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "cold",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "pYNPFPJOzf8GBSWT",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
       "description": "",
       "origin": null,
       "statuses": [],
       "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_key": "!items.effects!8AAB6cf7qNWsCxoC.ry4mj3y03vzu5h6e"
     }
   ],
   "folder": null,
   "sort": 0,
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 12,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749710928408,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",
@@ -77,7 +87,7 @@
   },
   "system": {
     "description": {
-      "value": "<p><em>指环（需同调）</em></p>\n<p>Artus Cimber 拥有这一物品已经超过一个世纪了。凛冬指环是一个黄金圆环，会根据佩戴者的手指尺寸改变大小紧密贴合。一层薄霜覆于戒指外层，正常的温度无法将其融化。这一指环摸上去冰冷刺骨，并且会在刚开始时让佩戴的手失去知觉，但同调完成后这一冰冷就不再被感知到。</p>\n<p>凛冬指环拥有智能，会尝试控制佩戴它的任意生物，如果它成功了，它会控制佩戴者对周围的一切人与物造成恶劣伤害，并会试图挑起敌人的怒火，无情地带领它的佩戴者走向毁灭。</p>\n<p><strong>智能 Sentience</strong>。凛冬指环的智能为混乱邪恶，智力14，感知14，魅力17。这枚指环通过向携带者或佩戴者传输情感进行沟通，它拥有正常听力以及60尺正常视力。这枚戒指渴求毁灭，喜欢不分情况向其他人施加伤害。</p>\n<p><strong>无法检测 Nondetection</strong>。凛冬指环蔑视一切试图通过魔法定位它的尝试。无论是置换本身还是穿戴者都无法被预言法术定位，也无法通过魔法预言道具进行观察。</p>\n<p><strong>冻结时间 Frozen Time</strong>。只要你带着指环，你就不会自然老去。这一效应类似于假死状态，戒指被移除并不会导致你避过的时间立刻回馈给你。这个指环并不能使佩戴者巫师魔法或是超自然的老化效果，比如说幽魂的恐惧面容。</p>\n<p><strong>冷冻免疫 Cold Immunity</strong>。当完成同调并佩戴指环时，你对冷冻伤害免疫，亦不会再经受任何极度严寒导致的力竭状态。</p>\n<p><strong>魔法 Magic</strong>。凛冬指环具有十二次充能，每天都会在黎明重新完全充能。戴着戒指时，你可以使用必要数量的充能发动如下特性：</p>\n<ul>\n<li>你可以以一个动作花费一次充能降低120尺球形范围内的温度，球心为三百尺内视线所及之处。这片区域内每分钟会下降二十华氏度，最低可以降至-30华氏度。一旦温度下降至32度以下就会在表面形成冰洁和霜冻。这一效应在你不使用戒指以一个动作结束效应之前永久保持，结束后这片区域的温度会以每分钟10度回升至正常。</li>\n<li>你可以通过消耗必要数量的充能从指环施放如下法术（法术豁免DC17）：@UUID[Compendium.dnd5e_classpack.spell.naXxMtlZiJr9JYdU]{毕格比之手}（Bigby’s Hand,两次充能，这个巨手由冰霜构成，免疫冰冻伤害，使用金刚拳时造成钝击伤害而非力场伤害），@UUID[Compendium.dnd5e_classpack.spell.z9HXB89B3uO5NHW8]{寒冰锥}（两次充能），@UUID[Compendium.dnd5e_classpack.spell.oLtyOvrWeLNEJDIE]{冰化术}（三次充能，类似石化术效应，但是将目标变为具有石质的密度和耐久的冰），@UUID[Compendium.dnd5e_classpack.spell.u2MG84qW8YLuECHa]{冰风暴}（两次充能），@UUID[Compendium.dnd5e_classpack.spell.7ogt8uGRk3Ts8fXZ]{欧提路克冰封法球}（三次充能），@UUID[Compendium.dnd5e_classpack.spell.InxRn0MsZsH5wslj]{雪雨暴}（一次充能），@UUID[Compendium.dnd5e_classpack.spell.1oL8DBOVZMuhaKpw]{荆棘丛生}（一次充能；棘刺由冰构成）或者@UUID[Compendium.dnd5e_classpack.spell.kZ9PSqGyiR7bGViM]{冰墙术}（两次充能）。</li>\n<li>你可以以一个动作花费必要的充能创造一个无生命的的冰制物件（两次充能）或是具有生命的冰霜生物（四次充能）。这个冰制物品不具有任何可以动的部件，且必须能够容纳于10尺的方格之中，同时具有金属或石头的密度与耐久（这由你决定）。冰霜生物必须以CR2或以下的野兽为模板。这个冰霜生物具有原模板野兽的数据，但是有如下变更：这一生命是对火焰具有易伤的构装体，对寒冷和毒素伤害免疫，并免疫下列效应：魅惑、力竭、恐慌、麻痹、石化以及中毒。这个冰霜生物只遵从创造者的指令。这个冰制物件或是冰霜生物会在你六十尺内未被占据的空间出现。它会在二十四小时或是生命值归零后融化成一滩正常的水。在极度炎热条件下，它会每分钟失去5（[[/r 1d10]]）点生命值。在必要情况下，用DMG第八章的指引来决定无生命物件的生命值。</li>\n</ul>\n<p><strong>其他特性 Other Properties</strong>。根据传言，凛冬指环具有一些只能由一个不会被指环破坏其意志的邪恶存在才能发动的特性。霜巨人始终相信这枚指环可以冻结整个世界，而一个侍奉卡林珊帕夏pasha的风巨灵层宣扬这妹纸换可以用于召唤并控制白龙，也可以用于强大的原初者 Iceprimordial 克瑞欧纳克斯。</p>\n<p><strong>摧毁指环 Destroying the Ring</strong>。这枚指环近乎不可摧毁，即便是最强烈的魔法高温也能抵抗。如果它被戴在最强大的至高妖精，也就是夏之女王的手上，这枚戒指将会融化，然后被永远摧毁。</p>",
+      "value": "<p><em>指环（需同调）</em></p>\n<p>Artus Cimber 拥有这一物品已经超过一个世纪了。凛冬指环是一个黄金圆环，会根据佩戴者的手指尺寸改变大小紧密贴合。一层薄霜覆于戒指外层，正常的温度无法将其融化。这一指环摸上去冰冷刺骨，并且会在刚开始时让佩戴的手失去知觉，但同调完成后这一冰冷就不再被感知到。</p>\n<p>凛冬指环拥有智能，会尝试控制佩戴它的任意生物，如果它成功了，它会控制佩戴者对周围的一切人与物造成恶劣伤害，并会试图挑起敌人的怒火，无情地带领它的佩戴者走向毁灭。</p>\n<p><strong>智能 Sentience</strong>。凛冬指环的智能为混乱邪恶，智力14，感知14，魅力17。这枚指环通过向携带者或佩戴者传输情感进行沟通，它拥有正常听力以及60尺正常视力。这枚戒指渴求毁灭，喜欢不分情况向其他人施加伤害。</p>\n<p><strong>无法检测 Nondetection</strong>。凛冬指环蔑视一切试图通过魔法定位它的尝试。无论是置换本身还是穿戴者都无法被预言法术定位，也无法通过魔法预言道具进行观察。</p>\n<p><strong>冻结时间 Frozen Time</strong>。只要你带着指环，你就不会自然老去。这一效应类似于假死状态，戒指被移除并不会导致你避过的时间立刻回馈给你。这个指环并不能使佩戴者巫师魔法或是超自然的老化效果，比如说幽魂的恐惧面容。</p>\n<p><strong>冷冻免疫 Cold Immunity</strong>。当完成同调并佩戴指环时，你对冷冻伤害免疫，亦不会再经受任何极度严寒导致的力竭状态。</p>\n<p><strong>魔法 Magic</strong>。凛冬指环具有十二次充能，每天都会在黎明重新完全充能。戴着戒指时，你可以使用必要数量的充能发动如下特性：</p>\n<ul>\n<li>你可以以一个动作花费一次充能降低120尺球形范围内的温度，球心为三百尺内视线所及之处。这片区域内每分钟会下降二十华氏度，最低可以降至-30华氏度。一旦温度下降至32度以下就会在表面形成冰洁和霜冻。这一效应在你不使用戒指以一个动作结束效应之前永久保持，结束后这片区域的温度会以每分钟10度回升至正常。</li>\n<li>你可以通过消耗必要数量的充能从指环施放如下法术（法术豁免DC17）：@UUID[Compendium.dnd5e_classpack.spell.naXxMtlZiJr9JYdU]{毕格比之手}（Bigby's Hand,两次充能，这个巨手由冰霜构成，免疫冰冻伤害，使用金刚拳时造成钝击伤害而非力场伤害），@UUID[Compendium.dnd5e_classpack.spell.z9HXB89B3uO5NHW8]{寒冰锥}（两次充能），@UUID[Compendium.dnd5e_classpack.spell.oLtyOvrWeLNEJDIE]{冰化术}（三次充能，类似石化术效应，但是将目标变为具有石质的密度和耐久的冰），@UUID[Compendium.dnd5e_classpack.spell.u2MG84qW8YLuECHa]{冰风暴}（两次充能），@UUID[Compendium.dnd5e_classpack.spell.7ogt8uGRk3Ts8fXZ]{欧提路克冰封法球}（三次充能），@UUID[Compendium.dnd5e_classpack.spell.InxRn0MsZsH5wslj]{雪雨暴}（一次充能），@UUID[Compendium.dnd5e_classpack.spell.1oL8DBOVZMuhaKpw]{荆棘丛生}（一次充能；棘刺由冰构成）或者@UUID[Compendium.dnd5e_classpack.spell.kZ9PSqGyiR7bGViM]{冰墙术}（两次充能）。</li>\n<li>你可以以一个动作花费必要的充能创造一个无生命的的冰制物件（两次充能）或是具有生命的冰霜生物（四次充能）。这个冰制物品不具有任何可以动的部件，且必须能够容纳于10尺的方格之中，同时具有金属或石头的密度与耐久（这由你决定）。冰霜生物必须以CR2或以下的野兽为模板。这个冰霜生物具有原模板野兽的数据，但是有如下变更：这一生命是对火焰具有易伤的构装体，对寒冷和毒素伤害免疫，并免疫下列效应：魅惑、力竭、恐慌、麻痹、石化以及中毒。这个冰霜生物只遵从创造者的指令。这个冰制物件或是冰霜生物会在你六十尺内未被占据的空间出现。它会在二十四小时或是生命值归零后融化成一滩正常的水。在极度炎热条件下，它会每分钟失去5（[[/r 1d10]]）点生命值。在必要情况下，用DMG第八章的指引来决定无生命物件的生命值。</li>\n</ul>\n<p><strong>其他特性 Other Properties</strong>。根据传言，凛冬指环具有一些只能由一个不会被指环破坏其意志的邪恶存在才能发动的特性。霜巨人始终相信这枚指环可以冻结整个世界，而一个侍奉卡林珊帕夏pasha的风巨灵层宣扬这妹纸换可以用于召唤并控制白龙，也可以用于强大的原初者 Iceprimordial 克瑞欧纳克斯。</p>\n<p><strong>摧毁指环 Destroying the Ring</strong>。这枚指环近乎不可摧毁，即便是最强烈的魔法高温也能抵抗。如果它被戴在最强大的至高妖精，也就是夏之女王的手上，这枚戒指将会融化，然后被永远摧毁。</p>",
       "chat": ""
     },
     "source": {
@@ -96,7 +106,6 @@
     },
     "attunement": "required",
     "equipped": true,
-    "rarity": "artifact",
     "identified": true,
     "uses": {
       "max": "12",
@@ -105,8 +114,7 @@
     },
     "armor": {
       "value": null,
-      "dex": null,
-      "magicalBonus": null
+      "dex": null
     },
     "hp": {
       "value": 0,
@@ -116,7 +124,8 @@
     },
     "speed": {
       "value": null,
-      "conditions": ""
+      "conditions": "",
+      "units": "ft"
     },
     "strength": null,
     "proficient": 1,
@@ -157,13 +166,15 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -180,7 +191,8 @@
             "size": "120",
             "width": "",
             "height": "",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -202,14 +214,104 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-ring-of-winter",
     "container": null,
     "cover": null,
-    "crewed": false,
-    "properties": []
+    "properties": [],
+    "rarities": [
+      "artifact"
+    ],
+    "crew": {
+      "value": []
+    }
   },
   "_key": "!items!8AAB6cf7qNWsCxoC"
 }

@@ -1,14 +1,14 @@
 {
   "name": "术法点 Sorcery Points",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Shaman_RepulsionTotem.png",
+  "img": "icons/magic/unholy/orb-contained-pink.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "",
+      "value": "<p> 开始时，你拥有2个术法点。此后你每提升一个术士等级，都会获得更多的术法点，详见“术士职业表”中“术法点”一栏。你的术法点永远不能超过表中所列对应你当前等级的数值。而已消耗的术法点则可以通过完成一次长休进行恢复。</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,15 @@
     "crewed": false,
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [
       "mgc"
     ],
     "activities": {},
     "identifier": "sorcery-points",
-    "advancement": [],
+    "advancement": {},
     "enchant": {}
   },
   "effects": [],
@@ -73,21 +74,8 @@
       "otherCondition": ""
     },
     "core": {},
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 2,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
-    "chris-premades": {
-      "info": {
-        "identifier": "sorceryPoints",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "dnd5e": {},
+    "chris-premades": {}
   },
   "ownership": {
     "default": 0,
@@ -95,8 +83,8 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1724330589900,
     "modifiedTime": 1757419486896,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

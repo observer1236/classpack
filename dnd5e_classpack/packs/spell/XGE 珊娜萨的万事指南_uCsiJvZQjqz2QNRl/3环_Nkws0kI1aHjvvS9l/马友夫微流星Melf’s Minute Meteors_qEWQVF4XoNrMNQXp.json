@@ -1,6 +1,6 @@
 {
   "_id": "qEWQVF4XoNrMNQXp",
-  "name": "马友夫微流星Melf’s Minute Meteors",
+  "name": "马友夫微流星Melf's Minute Meteors",
   "type": "spell",
   "flags": {
     "midi-qol": {
@@ -12,7 +12,8 @@
       "itemCondition": "",
       "effectCondition": "",
       "reactionCondition": "",
-      "otherCondition": ""
+      "otherCondition": "",
+      "onUseMacroName": "[preItemRoll]ItemMacro,[postActiveEffects]ItemMacro"
     },
     "midiProperties": {
       "confirmTargets": "always",
@@ -29,42 +30,49 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "migratedProperties": [
-        "somatic",
-        "material",
-        "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
+    "dnd5e": {},
+    "dae": {
+      "macro": {
+        "name": "马友夫微流星Melf's Minute Meteors",
+        "img": "icons/magic/earth/projectiles-fire-stone-salvo.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const spell = await fromUuid(macroItem.uuid);\nconst release = spell.system.activities.find(a => a.identifier === \"release-meteors\");\nconst explosion = spell.system.activities.find(a => a.identifier === \"meteor-explosion\");\n// 消耗会更新物品并重建行动，始终读取当前行动的次数。\nconst uses = () => spell.system.activities.get(explosion.id).uses;\n\nif (args[0] === \"off\") {\n  await dnd5eClasspack.removeFavorite(release.uuid);\n  await dnd5eClasspack.hideActivity(release.uuid);\n  await spell.update({\n    [`system.activities.${explosion.id}.uses.spent`]: Number(uses().max),\n    \"flags.world.minuteMeteors\":\n      new foundry.data.operators.ForcedDeletion()\n  });\n  return;\n}\nif (args[0] === \"on\") return;\n\nconst pass = args[0].macroPass;\nconst identifier = workflow.activity.identifier;\nif (![\"cast-meteors\", \"release-meteors\"].includes(identifier)) return;\n\nasync function chooseCount(initial = false) {\n  const remaining = uses().value;\n  if (remaining <= 0) return 0;\n  const options = [];\n  if (initial) options.push({ value: \"0\", label: \"暂不释放\" });\n  options.push({ value: \"1\", label: \"1 颗\" });\n  if (remaining >= 2) options.push({ value: \"2\", label: \"2 颗\" });\n  return Number(await dnd5eClasspack.dialogUtils.selectDialog(\n    \"马友夫微流星\", \"\", {\n      label: `剩余 ${remaining} 颗`, name: \"count\", options: { options }\n    }\n  ));\n}\n\nasync function explode(count) {\n  const state = spell.getFlag(\"world\", \"minuteMeteors\");\n  for (let i = 0; i < count; i++) {\n    if (uses().value <= 0) break;\n    const spent = uses().spent;\n    // 仅解除本次使用副本的隐藏；角色上的爆炸行动始终隐藏。\n    const copy = spell.clone({\n      [`system.activities.${explosion.id}.flags.dnd5e_classpack.hidden`]: false,\n      [`system.activities.${explosion.id}.midiProperties.forceConsumeDialog`]: \"never\",\n      [`system.activities.${explosion.id}.midiProperties.forceDamageDialog`]: \"never\",\n      [`system.activities.${explosion.id}.save.dc.calculation`]: \"\",\n      [`system.activities.${explosion.id}.save.dc.formula`]: String(state.dc),\n      [`system.activities.${explosion.id}.save.dc.bonus`]: \"\"\n    }, { keepId: true });\n    const result = await MidiQOL.completeActivityUse(\n      copy.system.activities.get(explosion.id),\n      {\n        scaling: 0,\n        create: { measuredTemplate: true },\n        consume: { resources: true, spellSlot: false, action: false },\n        concentration: { begin: false },\n        midiOptions: { ignoreUserTargets: true }\n      },\n      { configure: false },\n      { create: true }\n    );\n    if (!result || result.aborted || uses().spent === spent) break;\n  }\n  if (uses().value <= 0) {\n    const effect = await fromUuid(state.effect);\n    const concentration = MidiQOL.getConcentrationEffect(spell.actor, spell);\n    if (concentration) await spell.actor.endConcentration(concentration.id);\n    else if (effect) await effect.delete();\n  }\n}\n\nif (pass === \"preItemRoll\" && identifier === \"release-meteors\") {\n  args[0].options.dialog.configure = false;\n  workflow.meteorCount = await chooseCount();\n  if (!workflow.meteorCount) return false;\n}\n\nif (pass !== \"postActiveEffects\") return;\n\nif (identifier === \"cast-meteors\") {\n  const effect = spell.actor.effects.find(e => e.system?.origin?.message === workflow.itemCardUuid);\n  if (!effect) return ui.notifications.warn(\"马友夫微流星：未找到本次施法应用的自身效果。\");\n  const maximum = 6 + 2 * Math.max(0, workflow.spellLevel - 3);\n  await spell.update({\n    [`system.activities.${explosion.id}.uses.max`]: String(maximum),\n    [`system.activities.${explosion.id}.uses.spent`]: 0,\n    \"flags.world.minuteMeteors\": { effect: effect.uuid, dc: explosion.save.dc.value }\n  });\n  await dnd5eClasspack.hideActivity(release.uuid, false);\n  await dnd5eClasspack.addFavorite(release.uuid);\n  await explode(await chooseCount(true));\n} else {\n  await explode(workflow.meteorCount);\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
       }
     }
   },
-  "img": "modules/dnd5e_classpack/Nicons/ability_warlock_burningembers.png",
+  "img": "icons/magic/earth/projectiles-fire-stone-salvo.webp",
   "effects": [
     {
-      "name": "马友夫微流星Melf’s Minute Meteors",
-      "origin": "Compendium.dnd5e_classpack.spell.Item.qEWQVF4XoNrMNQXp",
+      "name": "马友夫微流星Melf's Minute Meteors",
+      "origin": null,
       "duration": {
-        "rounds": 10,
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
+        "value": 10,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
       },
       "disabled": false,
       "_id": "AYy2cbyHvMwFLaRz",
-      "changes": [
-        {
-          "key": "macro.createItem",
-          "mode": 0,
-          "value": "Compendium.dnd5e_classpack.itempack.Item.qArSIVB9hoDrZbQQ",
-          "priority": 20
-        }
-      ],
       "description": "",
       "transfer": false,
       "statuses": [],
@@ -75,17 +83,16 @@
           "selfTargetAlways": false,
           "dontApply": false,
           "stackable": "noneName",
-          "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [],
           "enableCondition": "",
-          "disableCondition": ""
+          "disableCondition": "",
+          "applicationMode": "default",
+          "expiryMode": "default"
         },
         "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
+          "riders": {}
         },
         "core": {
           "overlay": false
@@ -93,26 +100,54 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "13.351",
+        "coreVersion": "14.369",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
-        "createdTime": null,
-        "modifiedTime": 1753200882986,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "systemVersion": "6.0.6",
+        "createdTime": 1792071388684,
+        "modifiedTime": 1792071400021,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
       },
-      "img": "modules/dnd5e_classpack/Nicons/ability_warlock_burningembers.png",
+      "img": "icons/magic/earth/projectiles-fire-stone-salvo.webp",
       "type": "base",
-      "system": {},
+      "system": {
+        "changes": [
+          {
+            "key": "macro.itemMacro",
+            "value": "",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "AUHSLqH9CILQhoDM",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.qEWQVF4XoNrMNQXp",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true
+      },
       "sort": 0,
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
       "_key": "!items.effects!qEWQVF4XoNrMNQXp.AYy2cbyHvMwFLaRz"
     }
   ],
   "system": {
     "description": {
-      "value": "<p>你在你所在的空间内制造出六颗微型流星。它们会悬浮在空气中，在法术的持续时间内以你为中心绕转。当你释放此法术——及在你之后的每个回合中通过使用一个附赠动作——你能释放一到两颗流星，让它们袭击你周围120英尺范围内的一点。一旦流星到达目的地，或是撞击到了固体表面，它会发生爆炸。在流星爆炸点周围5英尺的生物均必须进行一次敏捷豁免检定。检定失败者受到2d6点火焰伤害，检定成功则只受到上述伤害的一半。</p><p><strong>升环效果：</strong>当你使用4环或更高的法术位施放该法术时，使用的法术位每高一环，创造出的流星数量就增加两颗。</p><p></p><p>本法术实现原理为通过dae的macro.createitem, 施展后请手动调整召唤出的流星可用次数以匹配法术位与施法者（默认数量为6）</p>",
+      "value": "<p>你在你所在的空间内制造出 6 颗微型流星。它们会悬浮在空气中，在法术的持续时间内以你为中心绕转。当你释放此法术——及在你之后的每个回合中通过使用一个附赠动作——你能释放一到两颗流星，让它们袭击你周围 120 尺范围内的一点。一旦流星到达目的地，或是撞击到了固体表面，它会发生爆炸。在流星爆炸点周围 5 尺的生物均必须进行一次敏捷豁免检定。检定失败者受到 [[/damage 2d6 type=fire]]{2d6} 点火焰伤害，检定成功则只受到上述伤害的一半。</p><p><strong>升环施法效应。</strong>当你使用四环或更高的法术位施放该法术时，使用的法术位每高一环，创造出的流星数量就增加两颗。</p>",
       "chat": ""
     },
     "source": {
@@ -128,7 +163,8 @@
     },
     "duration": {
       "value": "10",
-      "units": "minute"
+      "units": "minute",
+      "expiry": null
     },
     "target": {
       "affects": {
@@ -138,9 +174,10 @@
         "special": ""
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "contiguous": false,
-        "type": ""
+        "type": "",
+        "stationary": false
       }
     },
     "range": {
@@ -160,10 +197,6 @@
       "consumed": false,
       "cost": 0,
       "supply": 0
-    },
-    "preparation": {
-      "mode": "prepared",
-      "prepared": false
     },
     "properties": [
       "vocal",
@@ -190,26 +223,35 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [
           {
-            "_id": "AYy2cbyHvMwFLaRz"
+            "_id": "AYy2cbyHvMwFLaRz",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
-          "override": false
+          "override": false,
+          "units": "self"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "choice": false
@@ -227,10 +269,370 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0,
+        "sort": -200000,
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
+        "macroData": {
+          "name": "创造流星",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "cast-meteors",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "rollAs": "target"
+        },
+        "otherActivityId": "none",
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "name": "创造流星"
+      },
+      "bThn3VIl09Kz2MX4": {
+        "type": "save",
+        "name": "流星爆炸",
+        "_id": "bThn3VIl09Kz2MX4",
+        "img": "icons/magic/earth/projectiles-fire-stone-salvo.webp",
+        "sort": 100000,
+        "activation": {
+          "type": "",
+          "override": true,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "scaling": {
+                "mode": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {
+          "dnd5e_classpack": {
+            "hidden": true
+          }
+        },
+        "range": {
+          "units": "ft",
+          "override": true,
+          "special": "",
+          "value": "120"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "5",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": "6"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "modifiers": [],
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
+          "name": "流星爆炸",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "otherActivityAsParentType": true,
+          "identifier": "meteor-explosion",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": true,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
+      },
+      "8Dc9meOtzyGlZRJr": {
+        "type": "utility",
+        "name": "释放流星",
+        "_id": "8Dc9meOtzyGlZRJr",
+        "img": "",
+        "sort": -100000,
+        "activation": {
+          "type": "bonus",
+          "override": true,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {
+          "dnd5e_classpack": {
+            "hidden": true
+          }
+        },
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
         "macroData": {
           "name": "",
           "command": ""
@@ -239,7 +641,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -247,29 +650,66 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
           "automationOnly": false,
-          "otherActivityCompatible": true,
-          "identifier": "",
+          "otherActivityCompatible": false,
+          "otherActivityAsParentType": true,
+          "identifier": "release-meteors",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
+          "rollAs": "target",
           "preRemoveConditionText": "",
           "postRemoveConditionText": ""
         },
-        "otherActivityId": "none"
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
-    "identifier": "melfs-minute-meteors"
+    "identifier": "melfs-minute-meteors",
+    "method": "spell",
+    "prepared": 0
   },
   "ownership": {
     "default": 0
@@ -278,8 +718,8 @@
   "sort": 10900000,
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1711700770700,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -103,6 +103,21 @@
     min-width: 0;
 }
 
+.cp-dialog-slot--amount > .cp-dialog-select {
+    flex: 0 0 5rem;
+    width: 5rem;
+}
+
+.cp-dialog-slot--amount > .cp-dialog-caption {
+    flex: 1 1 0;
+}
+
+.cp-dialog-slot--amount .cp-dialog-text {
+    min-width: 0;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
 .cp-dialog-multi {
     display: flex;
     align-items: flex-end;
@@ -117,4 +132,108 @@
 
 .cp-dialog-multi > multi-select {
     flex: 2 1 0;
+}
+
+.classpack-dialog-compact .window-content {
+    gap: 0.5rem;
+}
+
+.classpack-dialog-compact .form-footer:not(:has(button)) {
+    display: none;
+}
+
+.cp-dialog--compact .cp-dialog-lead {
+    margin: 0;
+    text-align: left;
+}
+
+.cp-roll-context {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cp-roll-remaining {
+    flex-shrink: 0;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.cp-roll-dice {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.75rem 0 0.25rem;
+}
+
+.cp-dialog-dice {
+    display: block;
+}
+
+.cp-roll-dice.dice-tooltip .dice .dice-rolls,
+.cp-dialog-dice.dice-tooltip .dice .dice-rolls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cp-roll-dice.dice-tooltip .dice .dice-rolls .roll,
+.cp-dialog-dice.dice-tooltip .dice .dice-rolls .roll {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    line-height: 48px;
+    background-size: 48px 48px;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.cp-dialog--compact .cp-dialog-set:not(.cp-dialog-set--stacked) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.cp-dialog--compact .cp-dialog-tile {
+    height: auto;
+    min-height: 40px;
+    margin: 0;
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+.cp-dialog--compact .cp-dialog-tile:has(.cp-dialog-tile-value, .cp-dialog-dice) {
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.cp-dialog--compact .cp-dialog-tile:has(.cp-dialog-dice) {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.cp-dialog--compact .cp-dialog-tile-value {
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+.cp-dialog--compact .cp-dialog-tile-text {
+    text-align: center;
+}
+
+.classpack-roll-interventions {
+    margin: 0.25rem 0;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.4;
+    text-align: left;
 }

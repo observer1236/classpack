@@ -1,15 +1,15 @@
 {
   "_id": "4sBphHebB1yIIcaO",
-  "name": "妖冶嫺都 Otherworldly Glamour",
+  "name": "妖冶娴都 Otherworldly Glamour",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/ability_ardenweald_priest.jpg",
+  "img": "icons/magic/control/control-influence-crown-gold.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>你的妖精本质给予了你超脱凡俗的魅力。因此，每当你进行一次魅力检定时，你可以在结果中加入等于你的感知调整值的加值(最低为1)。</p>\n<p>另外，你得到下列技能中你选择的一项的熟练：欺瞒，表演，游说。</p>",
+      "value": "<p>你的妖精本质给予了你超脱凡俗的魅惑力。因此，每当你进行一次魅力检定时，你都可以在那次检定中获得等同于你的感知调整值的加值（至少+1）。</p>\n<p>另外，你获得下列技能之一的熟练项（由你选择）：欺瞒、表演、或游说。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     "requirements": "妖精漫游者等级 3",
     "activities": {},
     "identifier": "-otherworldly-glamour",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": [
+        "subclass:fey-wanderer"
+      ]
     },
     "properties": []
   },
@@ -39,12 +42,7 @@
   "folder": "GoWqtrzbwAjcDL22",
   "sort": 8800000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +62,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757407432127,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

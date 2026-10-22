@@ -4,7 +4,7 @@
   "img": "modules/dnd5e_classpack/Nicons/ability_evoker_timespiral.png",
   "system": {
     "description": {
-      "value": "<p>龙气力量从你体内散发，守护你的盟友并惩罚一切敢于对它们动武之徒。以一个附赠动作，你可以在你身边10尺内具现出一股持续1分钟的龙力灵光。在持续时间内，你获得以下1种好处：</p><ul><li><strong>骇人威仪。</strong>当你散发出此灵光时，或在维持此灵光时用一个附赠动作，选择灵光范围内的一个生物。目标必须成功通过相当于你气豁免DC的感知豁免，否则对你恐慌1分钟。目标可以在每次自己回合结束时重复一次豁免，豁免成功则效应中止。</li><li><strong>抗性。</strong>你启动此灵光时选择一种伤害类型：强酸，冷冻，火焰，闪电或毒素。你和你灵光内的盟友对所选伤害类型具有抗性。</li></ul><p>一旦你散发出此灵光，直到你完成一次长休你都无法再这么做，除非你花费3点气来再次使用它。</p>",
+      "value": "<p>龙气力量从你体内散发，守护你的盟友并惩罚一切敢于对它们动武之徒。以一个附赠动作，你可以在你身边10尺内具现出一股持续1分钟的龙力灵光。在持续时间内，你获得以下增益：</p>\n<ul><li><p><strong>抗性Resistance。</strong>你启动此灵光时选择一种伤害类型：强酸，寒冷，火焰，闪电或毒素。你和你灵光内的盟友对所选伤害类型具有抗性。 </p>\n</li></ul>\n<p>一旦你散发出此灵光，直到你完成一次长休你都无法再这么做，除非你花费3点气来再次使用它。</p>",
       "chat": ""
     },
     "source": {
@@ -31,7 +31,8 @@
     "requirements": "神龙宗等级 11",
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "activities": {
@@ -63,14 +64,16 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
           "value": "1",
           "units": "minute",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
@@ -86,7 +89,8 @@
             "size": "10",
             "width": "",
             "height": "",
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -108,11 +112,96 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "--aspect-of-the-wyrm",
-    "advancement": [],
+    "advancement": {},
     "enchant": {}
   },
   "effects": [],
@@ -146,19 +235,12 @@
       "idv": false,
       "ida": false
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
-    "coreVersion": "13.351",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
     "createdTime": 1725894537751,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

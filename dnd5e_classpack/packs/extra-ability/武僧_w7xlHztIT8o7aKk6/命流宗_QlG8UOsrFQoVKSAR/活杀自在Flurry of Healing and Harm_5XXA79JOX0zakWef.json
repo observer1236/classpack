@@ -2,14 +2,14 @@
   "_id": "5XXA79JOX0zakWef",
   "name": "活杀自在Flurry of Healing and Harm",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_ChiCocoon.png",
+  "img": "icons/magic/unholy/hand-light-green.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>你现在能施以疾风般的治疗与伤害。当你使用@UUID[Compendium.dnd5e_classpack.class-abilityphb.vLuoFN1x3tRWTPdm]{疾风连击}时，你现在可以用你的@UUID[Compendium.dnd5e_classpack.extra-ability.R9VbDJOCQk2Mb9eG]{予命之手}代替每一次徒手打击，而不用花费气来治疗。</p>\n<p>另外，当你进行徒手攻击时，你可以使用@UUID[Compendium.dnd5e_classpack.extra-ability.bolUalIQ1Ad2I6Mg]{夺命之手}进行攻击，而不必花费夺命之手所须的气，你仍然在每回合只能使用夺命之手一次。</p>",
+      "value": "<p>你现在能施以疾风般的治疗与伤害。当你使用@UUID[Compendium.dnd5e_classpack.class-abilityphb.Item.vLuoFN1x3tRWTPdm]{疾风连击}时，每一次徒手打击都可以替换为使用你的@UUID[Compendium.dnd5e_classpack.extra-ability.Item.R9VbDJOCQk2Mb9eG]{予命之手}（无需额外花费气）。</p>\n<p>另外，当你在疾风连击中发动的徒手打击命中时，你可以使用@UUID[Compendium.dnd5e_classpack.extra-ability.Item.bolUalIQ1Ad2I6Mg]{夺命之手}而不需要消耗额外的气。不过你仍然只能在每回合中使用一次夺命之手。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,16 @@
     "requirements": "命流宗等级 11",
     "activities": {},
     "identifier": "flurry-of-healing-and-harm",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 11,
+      "repeatable": false,
+      "items": [
+        "subclass:way-of-the-mercy"
+      ]
     },
     "properties": []
   },
@@ -63,17 +66,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757407512329,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

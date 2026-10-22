@@ -2,14 +2,14 @@
   "_id": "xbOa0YKgVBU7Ytlf",
   "name": "亡者余声Whispers Of The Dead",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_DeathKnight_SoulReaper.png",
+  "img": "icons/magic/death/undead-ghosts-trio-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>死者的回响依附着你，一个幽灵般的存在会向你分享它的知识。每当你完成一次短休或长休时，你可以选择一项你没有熟练的工具或者技能并且获得该熟练，当你用这个能力来选择一项不同的熟练时，你会失去原来的熟练项。</p>",
+      "value": "<p>死者的回响依附着你，一个幽灵般的存在会向你分享它的知识。每当你完成一次短休或长休时，你可以选择一项你缺乏熟练的技能或工具，并获得它的熟练项。当你用这个能力来获得一项不同的熟练时，你会失去原来选择的那项熟练项。</p>",
       "chat": ""
     },
     "source": {
@@ -30,13 +30,16 @@
     "requirements": "鬼魅等级 3",
     "activities": {},
     "identifier": "whispers-of-the-dead",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 3,
+      "repeatable": false,
+      "items": [
+        "subclass:phantom"
+      ]
     },
     "properties": []
   },
@@ -44,12 +47,7 @@
   "folder": "AC7FtXGN0G19Ba8I",
   "sort": 51200000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -67,18 +65,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "whispersOfTheDead",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

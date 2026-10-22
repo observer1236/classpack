@@ -2,14 +2,14 @@
   "_id": "AVUZ9OuiFXpfOOla",
   "name": "精魂集会 Spirit Session",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/spell_animaardenweald_groundstate.jpg",
+  "img": "icons/magic/death/undead-ghosts-trio-blue.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>精魂赐予你超自然的洞悉能力。你可以进行一个小时的仪式，使用精魂法器来与精魂们沟通（这可以在短休或长休中进行）。你可以召集等同于你熟练加值数目的自愿生物来参与仪式（包括你自己）。仪式结束时，你可以从任意职业的法术列表中选择一个法术，你暂时性地习得该法术。</p>\n<p>你习得的法术的环级需小于或等于参加仪式的生物数目，该法术必须为预言或死灵学派，并且必须是你可以施放的环级的法术。该法术对你而言是诗人法术，但不计入你已知的诗人法术数量中。</p>\n<p>一旦你举行了仪式，直到开始一次长休前都不能再次这样做，你临时习得的法术持续直到你开始一次长休。</p>",
+      "value": "<p>精魂赐予你超自然的洞悉能力。你可以进行一个小时的仪式，使用精魂法器来与精魂们沟通（这可以在短休或长休中进行）。你可以召集等同于你熟练加值数目的自愿生物来参与仪式（可以包括你自己）。仪式结束时，你可以从任意职业的法术列表中选择一个法术，你暂时性地习得该法术。 </p>\n<p>你习得的法术的环级需等于参加仪式的生物数目，该法术必须为预言或死灵学派，并且必须是你可以施放的环级的法术。该法术对你而言是诗人法术，但不计入你已知的诗人法术数量中。 </p>\n<p>一旦你举行了仪式，直到开始一次长休前都不能再次这样做，你临时习得的法术持续直到你开始一次长休。</p>",
       "chat": ""
     },
     "source": {
@@ -52,17 +52,19 @@
           "spellSlot": true
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "",
+          "value": ""
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "units": "inst",
           "special": "",
-          "override": false
+          "override": false,
+          "expiry": null
         },
         "effects": [],
         "range": {
-          "units": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -74,7 +76,8 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "",
@@ -96,17 +99,103 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "-spirit-session",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -135,19 +224,12 @@
       "itemCondition": "",
       "effectCondition": ""
     },
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 1,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1749883542518,
     "lastModifiedBy": "uXKCmWFprrvnSIDm",

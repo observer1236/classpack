@@ -2,14 +2,14 @@
   "_id": "grUcT3G8QKVf8H10",
   "name": "预言专家 Expert Divination",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Arcane_FocusedPower.png",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>        第6级起，你对施展预言法术的技巧驾轻就熟，几乎不用使什么力气。你用法术位施展一个环阶不低于2环的预言系法术时,可以回复一个已耗用的法术位。所回复的法术位环阶必须比你正施展的预言系法术所用的法术位低，且不能高于5环。</p>",
+      "value": "<p> 第6级起，你对施展预言法术的技巧驾轻就熟，几乎不用使什么力气。你用法术位施展一道环阶不低于二环的预言系法术时，你恢复一个已消耗的法术位。所恢复的法术位环阶必须低于你正施展的预言系法术，且不能高于五环。 </p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "预言学派等级 6",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "expert-divination",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 6,
+      "repeatable": false,
+      "items": [
+        "subclass:school-of-divination"
+      ]
     },
     "properties": [
       "trait",
@@ -51,12 +54,7 @@
       "alwaysActive": false,
       "effects": []
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -74,18 +72,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "expertDivination",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757272815168,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

@@ -2,14 +2,14 @@
   "_id": "ZLgr8uSYlPn3jYNq",
   "name": "自然侍僧 Acolyte of Nature",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_druid_symbiosis.png",
+  "img": "icons/magic/nature/leaf-hand-green.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>        第1级时，你习得一个自选的德鲁伊戏法。你还可以获得以下技能之一的熟练项:驯兽、自然、求生。</p>",
+      "value": "<p> 第1级时，你习得一个自选的德鲁伊戏法。你还可以获得以下技能之一的熟练项：驯兽、自然、生存。这个戏法不计入你的已知戏法数量中。</p>",
       "chat": ""
     },
     "source": {
@@ -24,14 +24,17 @@
     },
     "requirements": "自然领域等级 1",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "acolyte-of-nature",
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": [
+        "subclass:nature-domain"
+      ]
     },
     "properties": []
   },
@@ -72,17 +75,12 @@
       "reactionCondition": "",
       "otherCondition": ""
     },
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757407639810,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",

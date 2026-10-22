@@ -2,14 +2,14 @@
   "_id": "i7WUteJZQLyoN9Jn",
   "name": "炼金术掌握 Alchemical Savant",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Shaman_RepulsionTotem.png",
+  "img": "icons/sundries/documents/blueprint-recipe-alchemical.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>         在第5级，你对魔法化学物质的掌握变得非常熟练，这将提高你通过炼金物质造成的治疗和伤害效果。当你使用@UUID[Compendium.dnd5e_classpack.itempack.EFBBAE8B63126638]{炼金工具}作为法器施法时，你在法术的一次掷骰中获得加值。该掷骰必须恢复生命值或是造成强酸、火焰、黯蚀或毒素伤害，获得的加值等于你的智力调整值（最低+1）。</p>",
+      "value": "<p>你对魔法化学物质的掌握变得非常熟练，这使得你通过炼金物质造成的治疗和伤害更加有效。</p>\n<p>当你使用@UUID[Compendium.dnd5e_classpack.itempack.Item.EFBBAE8B63126638]{炼金工具}作为法器施展任何法术时，你在法术的一次掷骰中获得等同于你的智力调整值（最低+1）的加值。该掷骰必须是恢复的生命值量，或是造成强酸、火焰、暗蚀、或毒素伤害。</p>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "炼金师等级 5",
     "activities": {},
     "identifier": "-alchemical-savant",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 5,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "64pspKbMUx8IMoty",
   "sort": 37400000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -62,18 +58,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "alchemicalSavant",
-        "source": "chris-premades",
-        "version": "0.0.0"
-      }
-    }
+    "chris-premades": {}
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757415329054,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

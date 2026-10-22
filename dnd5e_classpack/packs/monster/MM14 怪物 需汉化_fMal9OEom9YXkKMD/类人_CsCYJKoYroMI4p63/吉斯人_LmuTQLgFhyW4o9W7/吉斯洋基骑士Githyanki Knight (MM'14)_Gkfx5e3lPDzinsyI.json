@@ -1,5 +1,5 @@
 {
-  "name": "吉斯洋基骑士Githyanki Knight (MM'14)",
+  "name": "吉斯洋基骑士 Githyanki Knight (MM'14)",
   "type": "npc",
   "flags": {
     "plutonium": {
@@ -11,16 +11,16 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1753640855909,
     "modifiedTime": 1753640855909,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",
     "exportSource": null
   },
   "_id": "Gkfx5e3lPDzinsyI",
-  "img": "modules/dnd5e_classpack/Nicons/img/bestiary/MM/Githyanki.webp",
+  "img": "https://5e.kiwee.top/img/bestiary/MM/Githyanki.webp",
   "system": {
     "currency": {
       "pp": 0,
@@ -34,10 +34,6 @@
         "value": 16,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -46,6 +42,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -57,10 +61,6 @@
         "value": 14,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -69,6 +69,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -80,10 +88,6 @@
         "value": 15,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -92,6 +96,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -103,10 +115,6 @@
         "value": 14,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -115,6 +123,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -126,10 +142,6 @@
         "value": 14,
         "proficient": 1,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -138,6 +150,14 @@
           }
         },
         "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
           "roll": {
             "min": null,
             "max": null,
@@ -149,10 +169,6 @@
         "value": 15,
         "proficient": 0,
         "max": null,
-        "bonuses": {
-          "check": "",
-          "save": "0"
-        },
         "check": {
           "roll": {
             "min": null,
@@ -164,33 +180,20 @@
           "roll": {
             "min": null,
             "max": null,
+            "mode": 0,
+            "bonus": "0"
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
             "mode": 0
           }
         }
       }
     },
     "bonuses": {
-      "mwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rwak": {
-        "attack": "",
-        "damage": ""
-      },
-      "msak": {
-        "attack": "",
-        "damage": ""
-      },
-      "rsak": {
-        "attack": "",
-        "damage": ""
-      },
-      "abilities": {
-        "check": "",
-        "save": "",
-        "skill": ""
-      },
       "spell": {
         "dc": ""
       }
@@ -205,7 +208,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -218,7 +220,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -231,7 +232,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -244,7 +244,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -257,7 +256,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -270,7 +268,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -283,7 +280,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -296,7 +292,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -309,7 +304,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -322,7 +316,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -335,7 +328,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -348,7 +340,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -361,7 +352,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -374,7 +364,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -387,7 +376,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -400,7 +388,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -413,7 +400,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       },
@@ -426,7 +412,6 @@
         },
         "value": 0,
         "bonuses": {
-          "check": "",
           "passive": ""
         }
       }
@@ -480,8 +465,13 @@
     },
     "attributes": {
       "ac": {
-        "calc": "default",
-        "flat": null
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
       },
       "init": {
         "ability": "dex",
@@ -489,28 +479,28 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonus": ""
+        }
       },
       "movement": {
-        "burrow": null,
-        "climb": null,
-        "fly": null,
-        "swim": null,
-        "walk": 30,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "speeds": {
+          "walk": "30"
+        },
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
       },
       "senses": {
-        "darkvision": 0,
-        "blindsight": 0,
-        "tremorsense": 0,
-        "truesight": 0,
         "units": "ft",
-        "special": ""
+        "special": "",
+        "ranges": {
+          "darkvision": 0,
+          "blindsight": 0,
+          "tremorsense": 0,
+          "truesight": 0
+        }
       },
       "spellcasting": "int",
       "exhaustion": 0,
@@ -520,9 +510,6 @@
           "min": null,
           "max": null,
           "mode": 0
-        },
-        "bonuses": {
-          "save": ""
         },
         "limit": 1
       },
@@ -546,18 +533,19 @@
           "mode": 0
         },
         "success": 0,
-        "failure": 0,
-        "bonuses": {
-          "save": ""
-        }
+        "failure": 0
       },
       "spell": {
         "level": 0
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
       "biography": {
-        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p><span style=\"font-family:宋体\">驾驶星舰，骑着红龙的吉斯洋基人掠夺了无数个世界。它们用羽毛、珠子、宝石和贵金属装饰着自己的盔甲，还有武器传说中杀敌无数的银剑。从夺心魔手中赢回自由后，吉斯洋基人便在它们恐怖的巫妖女王维拉基斯Vlaakith统治下成为了残酷的征服者。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>星界劫掠者</strong></em></span><span style=\"font-family:宋体\"><em><strong>Astral Raiders</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">吉斯洋基人鄙视其他所有种族，它们从自己在星光位面的据点前往多元宇宙的每个角落进行毁灭性的劫掠。战争是吉斯洋基文化的终极表现，而它们无情的黑眼睛也从不带有一丝怜悯。每次掠夺过后，它们都会为破碎的幸存者们留下足够苟延残喘的食物和资源。假以时日，吉斯洋基们便会再次回来征服这些敌人，一次又一次地对它们施以掠夺。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>吉斯的追随者</strong></em></span><span style=\"font-family:宋体\"><em><strong>Followers of Gith</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">在它们自己的语言中，吉斯洋基githyanki意为“吉斯的追随者”。在吉斯的指导下，吉斯洋基进入了军事化的社会，建起严格的种姓制度，并致力于与对抗本族的受害者和誓敌们进行持续的斗争。在它们的首领吉斯死去后，她的不死顾问维拉基斯Vlaakith取代了她的位置。此后，巫妖女王便禁止其人民崇拜除自己以外的任何存在。<br />所有敌人中，吉斯洋基最恨它们从前的主人夺心魔们。而它们的近亲吉斯泽莱人则在它们的敌人名单中排行第二。吉斯洋基人对所有其他生物都报以简单的蔑视，这种仇外自豪感决定了它们眼中所有其他人都是劣等种族的既定观点。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>银剑</strong></em></span><span style=\"font-family:宋体\"><em><strong>Silver Swords</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">远古时代里，吉斯骑士们创造出这种特殊的武器来对抗它们的夺心魔主人。这些银剑可以引导持用者的意志原力，并在制造物理伤害的同时造成心灵伤害。吉斯洋基人只有通过必要的特殊训练，并掌握如何以意志维持这种利刃的存在之后，才能成为一名骑士。银剑等同于一把巨剑，且它在其创造者手中时具有<em>+3巨剑greatsword</em>的属性。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:宋体\">在吉斯洋基人眼中，每把<em>银剑silver sword</em>都是无价的遗物和艺术品。吉斯洋基骑士将追捕并消灭任何胆敢携带或持用银剑的非吉斯洋基人，并将其回收到自己的人民手中。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>红龙骑士</strong></em></span><span style=\"font-family:宋体\"><em><strong>Red Dragon Riders</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">吉斯在进行反抗灵吸怪的起义时也曾寻求盟友。她的顾问维拉基斯提起邪恶龙族的女神提亚马特Tiamat，随后吉斯便冒险进入九层地狱与之会面。时至今日已经只剩提亚马特本人知道她们之间到底发生了何事，但吉斯也确实将龙后的红龙配偶埃菲洛蒙Ephelomon带回了星光位面，而对方还声明自己一族将永远成为吉斯洋基的盟友。并非所有红龙都尊重这个历史久远的盟誓，但它们中的大多数至少不会将吉斯洋基人当做敌人。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>凡间的前哨站</strong></em></span><span style=\"font-family:宋体\"><em><strong>Outposts in the Mortal Realm</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">由于生活在星光位面的生物不会衰老，吉斯洋基人在物质位面的偏远地区建立了一些养育所来培养自己的后代。这些养育所同时也是军事学院，用以训练年轻的吉斯洋基人掌握灵能和战斗技能。每当吉斯洋基人长大成人并杀死一个夺心魔完成某个神圣仪式后，它便可以被接纳加入星光位面正式成为其同胞的一份子。</span></p><h1><span style=\"font-family:黑体\"><strong>吉斯人</strong></span></h1><p><span style=\"font-family:宋体\">好战的吉斯洋基人和善思的吉斯泽莱人是同一人种被分割开的两部分，最终形成了两种彼此互相鄙视的文化。在还没有吉斯洋基人和吉斯泽莱人之前，这些生物都属于一个被夺心魔奴役的种族。它们多次尝试推翻奴役自己的主人，却又不断被镇压，直至一个伟大领袖——吉斯Gith出现。<br />经历一连串流血事件后，吉斯和她的追随者们终于摆脱灵吸怪主人们的枷锁，然而在战斗之后又出现了另一位名叫泽锡蒙Zerthimon的领导人。泽锡蒙质问吉斯的动机，声称她严格的军事领导和对复仇的渴望只不过是对她的人民另一种形式的奴役。两名领袖的追随者之间产生了裂痕，并使它们最终分裂为两个种族，其敌意也延续至今。<br />没人知道这些高大而瘦弱的生物在被夺心魔奴役和改变之前的样子，究竟是和平还是野蛮，是高雅还是原始。乃至它们种族最初的名字都已经遗失在那个遥远的年代。</span></p><p>The githyanki plunder countless worlds from the decks of their astral vessels and the backs of red dragons. Feathers, beads, gems, and precious metals decorate their armor and weapons-the legendary silver swords with which they cut through their foes. Since winning their freedom from the mind flayers, the githyanki have become ruthless conquerors under the rulership of their dread lich-queen, Vlaakith.</p><div data-roll-name-ancestor=\"Astral Raiders\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Astral Raiders.</span> The githyanki despise all other races, undertaking devastating raids that take them from their strongholds in the Astral Plane to the far flung corners of the multiverse. War is the ultimate expression of githyanki culture, and their pitiless black eyes know no mercy. After a raid, they leave shattered survivors enough food and resources to weakly endure. Later, the githyanki return to their conquered foes, plundering them again and again.</p></div><div data-roll-name-ancestor=\"Followers of Gith\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Followers of Gith.</span> In their own language, githyanki means \"followers of Gith.\" Under the guidance of Gith, the githyanki stratified into a militaristic society, with a strict caste system, dedicated to the ongoing fight against the victims and sworn enemies of their race. When their leader Gith perished, she was replaced by her undead adviser, Vlaakith. The lich-queen forbade worship of all beings except herself.</p><p>Of all their enemies, the githyanki most hate their former masters, the mind flayers. Their close kin, the githzerai, are second in their enmity. All other creatures are treated with simple contempt by the githyanki, whose xenophobic pride defines their view of inferior races.</p></div><div data-roll-name-ancestor=\"Silver Swords\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Silver Swords.</span> In ancient times, gith knights created special weapons to combat their mind flayer masters.</p><p>These silver swords channel the force of the wielder's will, dealing psychic as well as physical damage. A githyanki can't become a knight until it masters the singular discipline needed to will such a blade into existence. A silver sword is equivalent to a @item[greatsword|phb], and takes on the properties of a @item[+3 greatsword] in the hands of its creator.</p><p>In the eyes of the githyanki, each silver sword is a priceless relic and a work of art. Githyanki knights will hunt down and destroy any non-githyanki that dares to carry or wield a silver sword, reclaiming it for their people.</p></div><div data-roll-name-ancestor=\"Red Dragon Riders\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Red Dragon Riders.</span> In the uprising against the illithids, Gith sought allies. Her adviser Vlaakith appealed to @deity[Tiamat|dawn war|DMG], the goddess of evil dragonkind, and Gith ventured into the Nine Hells to meet with her. Only Tiamat now knows what passed between them, but Vlaakith returned to the Astral Plane with the Dragon Queen's red dragon consort Ephelomon, who proclaimed that his kind would forever act as allies to the githyanki. Not all red dragons honor the alliance kindled so long ago, but most at least don't consider the githyanki their enemies.</p><div data-roll-name-ancestor=\"Outposts in the Mortal Realm\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Outposts in the Mortal Realm.</span> Since creatures that dwell on the Astral Plane don't age, the githyanki establish creches in remote areas of the Material Plane to raise their young. Doubling as military academies, these creches train young githyanki to harness their psychic and combat abilities. When a githyanki grows to adulthood and slays a mind flayer as part of a sacred rite of passage, it is permitted to rejoin its people on the Astral Plane.</p></div></div></div></div><div data-roll-name-ancestor=\"Gith\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"6\"><span class=\"entry-title-inner\">Gith</span></h1><p>The warlike githyanki and the contemplative githzerai are a sundered people-two cultures that utterly despise one another. Before there were githyanki or githzerai, these creatures were a single race enslaved by the @creature[mind flayer||mind flayers]. Although they attempted to overthrow their masters many times, their rebellions were repeatedly crushed until a great leader named Gith arose.</p><p>After much bloodshed, Gith and her followers threw off the yoke of their illithid masters, but another leader named Zerthimon emerged in the aftermath of battle.</p><p>Zerthimon challenged Gith's motives, claiming that her strict martial leadership and desire for vengeance amounted to little more than another form of slavery for her people. A rift erupted between followers of each leader, and they eventually became the two races whose enmity endures to this day.</p><p>Whether these tall, gaunt creatures were peaceful or savage, cultured or primitive before the @creature[mind flayer||mind flayers] enslaved and changed them, none can say. Not even the original name of their race remains from that distant time.</p><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\"><span style=\"font-family:宋体\"><em>“吉斯洋基和吉斯泽莱因夺心魔们的奴役伤害而留下了深刻的疤痕，以至于它们忘记了两者曾经是团结在一起的一个种族。赢得自由后，它们却因某些无人可解的仇恨发动了战争。”</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt;text-align:right\"><span style=\"font-family:宋体\"><em>——位面逸闻大师，阿里斯图</em></span><span style=\"font-family:'MS Mincho'\"><em>?</em></span><span style=\"font-family:宋体\"><em>黄Aristul the Yellow</em></span></p><p class=\"rd__quote-line rd__quote-line--last\">“<em>The githyanki and the githzerai were so profoundly scarred by their enslavement to the mind flayers that they forget they were one race, united. Having won their freedom, they wage war against each other with a hatred none can fully comprehend.</em>”</p><p><span class=\"rd__quote-by\">— Aristul the Yellow, master of planar lore</span></p></div></div></div>",
+        "value": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p><span style=\"font-family:宋体\">驾驶星舰，骑着红龙的吉斯洋基人掠夺了无数个世界。它们用羽毛、珠子、宝石和贵金属装饰着自己的盔甲，还有武器传说中杀敌无数的银剑。从夺心魔手中赢回自由后，吉斯洋基人便在它们恐怖的巫妖女王维拉基斯Vlaakith统治下成为了残酷的征服者。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>星界劫掠者</strong></em></span><span style=\"font-family:宋体\"><em><strong>Astral Raiders</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">吉斯洋基人鄙视其他所有种族，它们从自己在星光位面的据点前往多元宇宙的每个角落进行毁灭性的劫掠。战争是吉斯洋基文化的终极表现，而它们无情的黑眼睛也从不带有一丝怜悯。每次掠夺过后，它们都会为破碎的幸存者们留下足够苟延残喘的食物和资源。假以时日，吉斯洋基们便会再次回来征服这些敌人，一次又一次地对它们施以掠夺。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>吉斯的追随者</strong></em></span><span style=\"font-family:宋体\"><em><strong>Followers of Gith</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">在它们自己的语言中，吉斯洋基githyanki意为“吉斯的追随者”。在吉斯的指导下，吉斯洋基进入了军事化的社会，建起严格的种姓制度，并致力于与对抗本族的受害者和誓敌们进行持续的斗争。在它们的首领吉斯死去后，她的不死顾问维拉基斯Vlaakith取代了她的位置。此后，巫妖女王便禁止其人民崇拜除自己以外的任何存在。<br>所有敌人中，吉斯洋基最恨它们从前的主人夺心魔们。而它们的近亲吉斯泽莱人则在它们的敌人名单中排行第二。吉斯洋基人对所有其他生物都报以简单的蔑视，这种仇外自豪感决定了它们眼中所有其他人都是劣等种族的既定观点。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>银剑</strong></em></span><span style=\"font-family:宋体\"><em><strong>Silver Swords</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">远古时代里，吉斯骑士们创造出这种特殊的武器来对抗它们的夺心魔主人。这些银剑可以引导持用者的意志原力，并在制造物理伤害的同时造成心灵伤害。吉斯洋基人只有通过必要的特殊训练，并掌握如何以意志维持这种利刃的存在之后，才能成为一名骑士。银剑等同于一把巨剑，且它在其创造者手中时具有<em>+3巨剑greatsword</em>的属性。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:宋体\">在吉斯洋基人眼中，每把<em>银剑silver sword</em>都是无价的遗物和艺术品。吉斯洋基骑士将追捕并消灭任何胆敢携带或持用银剑的非吉斯洋基人，并将其回收到自己的人民手中。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>红龙骑士</strong></em></span><span style=\"font-family:宋体\"><em><strong>Red Dragon Riders</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">吉斯在进行反抗灵吸怪的起义时也曾寻求盟友。她的顾问维拉基斯提起邪恶龙族的女神提亚马特Tiamat，随后吉斯便冒险进入九层地狱与之会面。时至今日已经只剩提亚马特本人知道她们之间到底发生了何事，但吉斯也确实将龙后的红龙配偶埃菲洛蒙Ephelomon带回了星光位面，而对方还声明自己一族将永远成为吉斯洋基的盟友。并非所有红龙都尊重这个历史久远的盟誓，但它们中的大多数至少不会将吉斯洋基人当做敌人。</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt\"><span style=\"font-family:黑体\"><em><strong>凡间的前哨站</strong></em></span><span style=\"font-family:宋体\"><em><strong>Outposts in the Mortal Realm</strong></em></span><span style=\"font-family:黑体\"><em><strong>。</strong></em></span><span style=\"font-family:宋体\">由于生活在星光位面的生物不会衰老，吉斯洋基人在物质位面的偏远地区建立了一些养育所来培养自己的后代。这些养育所同时也是军事学院，用以训练年轻的吉斯洋基人掌握灵能和战斗技能。每当吉斯洋基人长大成人并杀死一个夺心魔完成某个神圣仪式后，它便可以被接纳加入星光位面正式成为其同胞的一份子。</span></p><h1><span style=\"font-family:黑体\"><strong>吉斯人</strong></span></h1><p><span style=\"font-family:宋体\">好战的吉斯洋基人和善思的吉斯泽莱人是同一人种被分割开的两部分，最终形成了两种彼此互相鄙视的文化。在还没有吉斯洋基人和吉斯泽莱人之前，这些生物都属于一个被夺心魔奴役的种族。它们多次尝试推翻奴役自己的主人，却又不断被镇压，直至一个伟大领袖——吉斯Gith出现。<br>经历一连串流血事件后，吉斯和她的追随者们终于摆脱灵吸怪主人们的枷锁，然而在战斗之后又出现了另一位名叫泽锡蒙Zerthimon的领导人。泽锡蒙质问吉斯的动机，声称她严格的军事领导和对复仇的渴望只不过是对她的人民另一种形式的奴役。两名领袖的追随者之间产生了裂痕，并使它们最终分裂为两个种族，其敌意也延续至今。<br>没人知道这些高大而瘦弱的生物在被夺心魔奴役和改变之前的样子，究竟是和平还是野蛮，是高雅还是原始。乃至它们种族最初的名字都已经遗失在那个遥远的年代。</span></p><div data-roll-name-ancestor=\"Astral Raiders\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Astral Raiders.</span> </p></div></div></div><div data-roll-name-ancestor=\"Gith\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"6\"><span class=\"entry-title-inner\">Gith</span></h1><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\"><span style=\"font-family:宋体\"><em>“吉斯洋基和吉斯泽莱因夺心魔们的奴役伤害而留下了深刻的疤痕，以至于它们忘记了两者曾经是团结在一起的一个种族。赢得自由后，它们却因某些无人可解的仇恨发动了战争。”</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt;text-align:right\"><span style=\"font-family:宋体\"><em>——位面逸闻大师，阿里斯图</em></span><span style=\"font-family:'MS Mincho'\"><em>?</em></span><span style=\"font-family:宋体\"><em>黄Aristul the Yellow</em></span></p><p class=\"rd__quote-line rd__quote-line--last\">“<em></em>”</p></div></div></div>",
         "public": ""
       },
       "alignment": "守序邪恶Lawful Evil",
@@ -580,12 +568,12 @@
     },
     "resources": {
       "legact": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
-        "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -634,10 +622,12 @@
         "communication": {}
       },
       "important": false
-    }
+    },
+    "identifier": "",
+    "rolls": {}
   },
   "prototypeToken": {
-    "name": "Githyanki Knight",
+    "name": "吉斯洋基骑士 Githyanki Knight (MM'14)",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
@@ -645,15 +635,12 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/dnd5e_classpack/Nicons/img/bestiary/tokens/MM/Githyanki Knight.webp",
+      "src": "https://5e.kiwee.top/img/bestiary/tokens/MM/Githyanki%20Knight.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
-      "offsetX": 0,
-      "offsetY": 0,
       "fit": "contain",
       "scaleX": 1,
       "scaleY": 1,
-      "rotation": 0,
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
@@ -704,7 +691,7 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "occludable": {
       "radius": 0
     },
@@ -728,7 +715,8 @@
       "src": null,
       "disposition": false
     },
-    "movementAction": null
+    "movementAction": null,
+    "depth": 1
   },
   "items": [
     {
@@ -745,7 +733,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">吉斯洋基人发动两次银剑攻击。</span></p><p>The githyanki makes two silver greatsword attacks.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">吉斯洋基人发动两次银剑攻击。</span></p></div>",
           "chat": ""
         },
         "requirements": "",
@@ -759,7 +747,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {
           "vJUCcdCgabmqceaY": {
             "_id": "vJUCcdCgabmqceaY",
@@ -776,20 +764,25 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -817,7 +810,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -825,7 +819,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -836,15 +829,61 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "multiattack",
@@ -853,7 +892,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -889,9 +929,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -915,7 +955,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+9，触及5</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">13（2d6+6）点挥砍伤害外加10（3d6</span><span style=\"font-family:'STHeiti light'\">）点心灵伤害。该攻击视为魔法武器攻击。当目标以星界躯体（等同于使用法术<em>星界投影</em></span><span style=\"font-family:Calibri\"><em style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">astral projection</em>）受该攻击的重击命中时，该吉斯洋基人可以切断连接该目标与其物质躯体的连接银线，并代替所造成的所有伤害。</span></p><p><em>Melee Weapon Attack:</em> [[/r 1d20+9]]{+9} to hit, reach 5 ft., one target. <em>Hit:</em> 13 ([[/damage 2d6 + 6 type=slashing]]) damage plus 10 ([[/damage 3d6 type=psychic]]) damage. This is a magic weapon attack. On a critical hit against a target in an astral body (as with the @spell[astral projection] spell), the githyanki can cut the silvery cord that tethers the target to its material body, instead of dealing damage.</p></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\"><em>近战武器攻击：</em>命中</span><span style=\"font-family:Calibri\">+9，触及5</span><span style=\"font-family:'STHeiti light'\">尺，单一目标。<em>命中：</em></span><span style=\"font-family:Calibri\">13（[[/damage 2d6 + 6 type=slashing]]）点挥砍伤害外加10（[[/damage 3d6 type=psychic]]</span><span style=\"font-family:'STHeiti light'\">）点心灵伤害。该攻击视为魔法武器攻击。当目标以星界躯体（等同于使用法术<em>星界投影</em></span><span style=\"font-family:Calibri\"><em style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">astral projection</em>）受该攻击的重击命中时，该吉斯洋基人可以切断连接该目标与其物质躯体的连接银线，并代替所造成的所有伤害。</span></p></div>",
           "chat": ""
         },
         "range": {
@@ -949,7 +989,8 @@
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -983,7 +1024,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 },
                 {
                   "types": [
@@ -998,7 +1040,8 @@
                   },
                   "custom": {
                     "enabled": false
-                  }
+                  },
+                  "modifiers": []
                 }
               ],
               "critical": {},
@@ -1012,15 +1055,19 @@
               "spellSlot": true,
               "targets": []
             },
-            "description": {},
+            "description": {
+              "value": ""
+            },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "uses": {
               "spent": 0,
@@ -1037,7 +1084,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1045,7 +1093,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1056,18 +1103,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "silver-greatsword",
@@ -1085,12 +1180,10 @@
           "value": 0,
           "denomination": "gp"
         },
-        "rarity": "",
         "attunement": "",
         "attuned": false,
         "equipped": true,
         "cover": null,
-        "crewed": false,
         "ammunition": {},
         "armor": {
           "value": null
@@ -1106,7 +1199,8 @@
             "scaling": {
               "number": 1
             },
-            "bonus": ""
+            "bonus": "",
+            "modifiers": []
           },
           "versatile": {
             "number": null,
@@ -1117,11 +1211,15 @@
             },
             "scaling": {
               "number": 1
-            }
+            },
+            "modifiers": []
           }
         },
-        "magicalBonus": null,
-        "mastery": ""
+        "mastery": "",
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -1157,9 +1255,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1171,7 +1269,7 @@
     },
     {
       "_id": "Tn7zerA5C8li1gbl",
-      "name": "Plane Shift",
+      "name": "异界传送 Plane Shift",
       "type": "spell",
       "system": {
         "source": {
@@ -1183,7 +1281,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM's discretion.</p><p>Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.</p><p>You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.</p></div>",
+          "value": "<p>你和至多八个自愿生物手拉手站成一圈，然后被传送到一个不同的存在位面中。你可以概括地指名一个目的地（比如火元素位面的黄铜城，或者九层地狱第二层迪斯帕特的宫殿），然后你将出现在目的地里或其附近。假设你想到达黄铜城，按照 DM 的判断，你可能会传送到达它的钢铁大道上，或它的灰烬之门前，又或者与城市隔着火焰之海相望之处。</p><p>另外，如果你知道某个处于另一位面的传送法阵的印记序列，则该法术可以把你带到该法阵处。如果该传送法阵太小而装不下所有你传送的生物，则他们会出现在离传送法阵最近的未占据空间里。</p><p>你可以用该法术放逐一个非自愿的生物到另一位面。指定一个你触及范围内的生物并对它进行一次近战法术攻击。命中时，此生物必须进行一次[[/save activity=dnd5eactivity100]]{魅力豁免}。豁免失败者将被传送到你指定位面的一个随机地点。被这样传送走的生物必须自行寻找回到你现在位面的路。</p>",
           "chat": ""
         },
         "level": 7,
@@ -1203,7 +1301,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "8",
@@ -1222,7 +1321,8 @@
         },
         "duration": {
           "value": "0",
-          "units": "inst"
+          "units": "inst",
+          "expiry": null
         },
         "uses": {
           "max": "1",
@@ -1233,10 +1333,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1256,22 +1352,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1313,7 +1413,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1321,7 +1422,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1332,18 +1432,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           },
           "dnd5eactivity100": {
             "_id": "dnd5eactivity100",
@@ -1362,22 +1510,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1398,7 +1550,8 @@
               "dc": {
                 "calculation": "spellcasting",
                 "formula": ""
-              }
+              },
+              "visible": true
             },
             "uses": {
               "spent": 0,
@@ -1416,7 +1569,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1424,7 +1578,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1435,18 +1588,67 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
-        "identifier": "plane-shift"
+        "identifier": "plane-shift",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -1472,9 +1674,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1486,7 +1688,7 @@
     },
     {
       "_id": "x9e8Fn2MNCwrbXTQ",
-      "name": "Telekinesis",
+      "name": "心灵遥控 Telekinesis",
       "type": "spell",
       "system": {
         "source": {
@@ -1498,7 +1700,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.</p><div data-roll-name-ancestor=\"Creature\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Creature.</span></span> You can try to move a Huge or smaller creature. Make an ability check with your spellcasting ability contested by the creature's Strength check. If you win the contest, you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is &amp;Reference[condition=restrained] in your telekinetic grip. A creature lifted upward is suspended in mid-air.</p><p>On subsequent rounds, you can use your action to attempt to maintain your telekinetic grip on the creature by repeating the contest.</p></div><div data-roll-name-ancestor=\"Object\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Object.</span></span> You can try to move an object that weighs up to 1,000 pounds. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell.</p><p>If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's Strength check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.</p><p>You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial.</p></div></div>",
+          "value": "<p>你获得以意念移动操纵生物或物件的能力。施展该法术时，你可以对施法距离内一个你能看见的生物或物件以你的意念造成下列详述的效应。你也可以在随后法术持续时间内的自己的任一回合里以一个动作实现该行为。你可以一轮接一轮地影响同一个目标，也可以在任何时候选择一个新的目标。如果你改变了目标，则之前的目标将不再受该法术影响。</p><p><strong>生物Creature。</strong>你可以尝试移动一个巨型或更小的生物。以你的施法属性进行一次属性检定，并与目标生物的力量检定进行对抗。如果你在对抗中胜出，则你可以使该生物朝任何方向（包括竖直向上）移动 30 尺，但不能让它离开施法距离。在你的下一回合结束前，该生物将被你的遥控抓握束缚。而被朝正上方抬起的生物会在半空中悬停。</p><p>在随后的回合中，你可以再次进行前面进行过的对抗来尝试继续抓住该生物（消耗一个动作）。</p><p><strong>物件Object。</strong>你可以尝试移动一个重量不超过 1000 磅的物件。如果该物品没有被任何生物所着装或携带，则你可以自动使它朝任何方向移动 30 尺，但不能让它离开施法距离。</p><p>如果该物件已被着装或携带，则你必须以你的施法属性进行一次属性检定，并与该生物的力量检定进行对抗。如果你在对抗中胜出，则你可以把目标物件从该生物身上拿走，并且使该物体朝任意方向移动 30 尺（但不能让它离开施法距离）。</p><p>你可以使用心灵遥控来对物体进行精密操作，例如操纵一件简单的工具，打开一扇门或一个容器，把东西放进或拿出一个打开的容器中，或是把一个小瓶子里的东西倒出来。</p>",
           "chat": ""
         },
         "level": 5,
@@ -1518,7 +1720,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -1537,7 +1740,8 @@
         },
         "duration": {
           "value": "10",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "1",
@@ -1548,10 +1752,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1571,22 +1771,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1615,7 +1819,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1623,7 +1828,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1634,18 +1838,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "telekinesis"
+        "identifier": "telekinesis",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -1668,9 +1920,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1682,7 +1934,7 @@
     },
     {
       "_id": "Mfm7i1YmClbhBKb6",
-      "name": "Jump",
+      "name": "跳跃术 Jump",
       "type": "spell",
       "system": {
         "source": {
@@ -1694,7 +1946,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>You touch a creature. The creature's <span class=\"bold\">jump distance</span> is tripled until the spell ends.</p></div>",
+          "value": "<p>你触碰一个生物，并使该生物的跳跃距离在法术持续时间内增至三倍。</p>",
           "chat": ""
         },
         "level": 1,
@@ -1714,7 +1966,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -1733,7 +1986,8 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "3",
@@ -1744,10 +1998,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1767,22 +2017,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -1811,7 +2065,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1819,7 +2074,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -1830,18 +2084,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "jump"
+        "identifier": "jump",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -1867,9 +2169,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -1881,7 +2183,7 @@
     },
     {
       "_id": "NMpuczaLDdtjlhdQ",
-      "name": "Misty Step",
+      "name": "迷踪步 Misty Step",
       "type": "spell",
       "system": {
         "source": {
@@ -1893,7 +2195,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p></div>",
+          "value": "<p>你短暂地被银白的雾气所笼罩，传送到至多 30 尺内一个你能看见且未被占据的位置。</p>",
           "chat": ""
         },
         "level": 2,
@@ -1911,7 +2213,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": "ft"
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "30",
@@ -1930,7 +2233,8 @@
         },
         "duration": {
           "value": "0",
-          "units": "inst"
+          "units": "inst",
+          "expiry": null
         },
         "uses": {
           "max": "3",
@@ -1941,10 +2245,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -1964,22 +2264,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2008,7 +2312,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2016,7 +2321,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2027,18 +2331,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "misty-step"
+        "identifier": "misty-step",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -2062,9 +2414,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2076,7 +2428,7 @@
     },
     {
       "_id": "bezkdeZHFxkLPzab",
-      "name": "Nondetection",
+      "name": "回避侦测 Nondetection",
       "type": "spell",
       "system": {
         "source": {
@@ -2088,7 +2440,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic or perceived through magical scrying sensors.</p></div>",
+          "value": "<p>在法术持续时间内，你将触碰的目标隐藏起来，使其在法术持续时间内躲开来自预言魔法的侦测。目标可以是一个自愿生物，一处地点或一个在各个方向上不超过 10 尺的物件。目标在持续时间内不能成为预言魔法的目标，也不能通过魔法探知传感器被感测到。</p>",
           "chat": ""
         },
         "level": 3,
@@ -2108,7 +2460,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -2127,7 +2480,8 @@
         },
         "duration": {
           "value": "8",
-          "units": "hour"
+          "units": "hour",
+          "expiry": null
         },
         "uses": {
           "max": "3",
@@ -2138,10 +2492,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2161,22 +2511,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2205,7 +2559,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2213,7 +2568,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2224,18 +2578,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "nondetection"
+        "identifier": "nondetection",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -2259,9 +2661,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2273,7 +2675,7 @@
     },
     {
       "_id": "MVH51IXhVRCMYEZX",
-      "name": "Tongues",
+      "name": "巧言术 Tongues",
       "type": "spell",
       "system": {
         "source": {
@@ -2285,7 +2687,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.</p></div>",
+          "value": "<p>该法术赋予你所触碰生物听懂任何语言的能力。此外，当目标生物说话时，任何能听见其话语且掌握至少一门语言的生物都能听懂它的话。</p>",
           "chat": ""
         },
         "level": 3,
@@ -2304,7 +2706,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -2323,7 +2726,8 @@
         },
         "duration": {
           "value": "1",
-          "units": "hour"
+          "units": "hour",
+          "expiry": null
         },
         "uses": {
           "max": "3",
@@ -2334,10 +2738,6 @@
             }
           ],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "innate",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2357,22 +2757,26 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2401,7 +2805,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2409,7 +2814,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2420,18 +2824,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
+              "postRemoveConditionText": "",
+              "rollAs": "target"
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "tongues"
+        "identifier": "tongues",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -2457,9 +2909,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2471,7 +2923,7 @@
     },
     {
       "_id": "aHQxG5jZ7eudD9pV",
-      "name": "Mage Hand",
+      "name": "法师之手 Mage Hand",
       "type": "spell",
       "system": {
         "source": {
@@ -2483,7 +2935,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p></div>",
+          "value": "<p>一只漂浮的幽灵手出现在施法距离内你指定的一点。幽灵手持续存在至法术终止，或直至你以一个动作解散该法术。如果幽灵手距你的距离超过 30 尺，或者当你再次施展了该法术时，则现存的幽灵手消失不见。</p><p>你可以用动作控制幽灵手，并通过幽灵手实现一个行为：你可以操控一个物件，或者打开一扇未上锁的门或容器，或者将一件物品放入容器或从容器中取出，或者将小瓶中的内容物倾倒出来。你每次你使用幽灵手时可以令其移动至多 30 尺。</p><p>该幽灵手不能攻击，也不能激活魔法物品或承载超过 10 磅重的物质。</p>",
           "chat": ""
         },
         "level": 0,
@@ -2502,7 +2954,8 @@
         "target": {
           "template": {
             "contiguous": false,
-            "units": ""
+            "units": "ft",
+            "stationary": false
           },
           "affects": {
             "count": "1",
@@ -2521,16 +2974,13 @@
         },
         "duration": {
           "value": "1",
-          "units": "minute"
+          "units": "minute",
+          "expiry": null
         },
         "uses": {
           "max": "",
           "recovery": [],
           "spent": 0
-        },
-        "preparation": {
-          "mode": "always",
-          "prepared": true
         },
         "activities": {
           "dnd5eactivity000": {
@@ -2550,21 +3000,25 @@
               "spellSlot": true
             },
             "description": {
-              "chatFlavor": ""
+              "chatFlavor": "",
+              "value": ""
             },
             "duration": {
               "units": "inst",
               "concentration": false,
-              "override": false
+              "override": false,
+              "expiry": null
             },
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
               "template": {
                 "contiguous": false,
-                "units": "ft"
+                "units": "ft",
+                "stationary": false
               },
               "affects": {
                 "choice": false
@@ -2583,7 +3037,8 @@
             "match": {
               "attacks": false,
               "proficiency": false,
-              "saves": false
+              "saves": false,
+              "disposition": false
             },
             "profiles": [
               {
@@ -2598,7 +3053,6 @@
               }
             ],
             "summon": {
-              "identifier": "",
               "mode": "",
               "prompt": true
             },
@@ -2619,7 +3073,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2627,7 +3082,6 @@
               "triggeredActivityConditionText": "",
               "triggeredActivityTargets": "targets",
               "triggeredActivityRollAs": "self",
-              "forceDialog": false,
               "confirmTargets": "default",
               "autoTargetType": "any",
               "autoTargetAction": "default",
@@ -2638,17 +3092,66 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
               "saveRemoves": true,
               "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
-            }
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "img": null,
+            "behaviors": [],
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityId": null,
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "templateOrigin": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "friendlySummon": false
           }
         },
-        "identifier": "mage-hand"
+        "identifier": "mage-hand",
+        "method": "spell",
+        "prepared": 2
       },
       "ownership": {
         "default": 0,
@@ -2674,9 +3177,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2700,7 +3203,7 @@
           "revision": 1
         },
         "description": {
-          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">吉斯洋基人天生施法属性为智力（法术豁免</span><span style=\"font-family:Calibri\">DC 13，法术攻击命中+5</span><span style=\"font-family:'STHeiti light'\">）。它天生可以施展以下法术而不需要任何相应的法术成分：</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 0pt 0pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:'STHeiti light'\">随意：@UUID[Compendium.dnd5e_classpack.spell.Item.H5gghxp0hfT3BAlC]{法师之手 Mage Hand}<em>法师之手</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 0pt 0pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:Calibri\">每项3/</span><span style=\"font-family:'STHeiti light'\">日：<em>@UUID[Compendium.dnd5e_classpack.spell.Item.1B8U6kl0egesx3FK]{跳跃术 Jump}，</em>@UUID[Compendium.dnd5e_classpack.spell.Item.Cnzcy1Tu7gt6xYHm]{迷踪步 Misty Step}</span><span style=\"font-family:Calibri\"><em>，@UUID[Compendium.dnd5e_classpack.spell.Item.VT60UFGIZOZhPgMi]{回避侦测 Nondetection}</em></span><span style=\"font-family:'STHeiti light'\">（仅自身），<em>@UUID[Compendium.dnd5e_classpack.spell.Item.uXksyb9oAbbHFCt9]{巧言术}</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 0pt 6pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:Calibri\">每项1/</span><span style=\"font-family:'STHeiti light'\">日：</span><span style=\"font-family:Calibri\"><em>@UUID[Compendium.dnd5e_classpack.spell.Item.VveuAHLNPiAY0yd5]{异界传送 Plane Shift}，</em></span><span style=\"font-family:'STHeiti light'\"><em>@UUID[Compendium.dnd5e_classpack.spell.Item.MTNfEcCXSJZ2m2nG]{心灵遥控 Telekinesis}</em></span></p><div data-roll-name-ancestor=\"Innate Spellcasting (Psionics)\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Innate Spellcasting (Psionics).</span> The githyanki's innate spellcasting ability is Intelligence (spell save DC <span class=\"rd__dc\">13</span>, [[/r 1d20+5]]{+5} to hit with spell attacks). It can innately cast the following spells, requiring no components:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li  rd__li-spell\"><p>At will: @UUID[.aHQxG5jZ7eudD9pV] (the hand is invisible)</p></li><li class=\"rd__li  rd__li-spell\"><p>3/day each: @UUID[.Mfm7i1YmClbhBKb6], @UUID[.NMpuczaLDdtjlhdQ], @UUID[.bezkdeZHFxkLPzab] (self only), @UUID[.MVH51IXhVRCMYEZX]</p></li><li class=\"rd__li  rd__li-spell\"><p>1/day each: @UUID[.Tn7zerA5C8li1gbl], @UUID[.x9e8Fn2MNCwrbXTQ]</p></li></ul></div></div>",
+          "value": "<div class=\"rd__b  rd__b--3\"><p><span style=\"font-family:'STHeiti light'\">吉斯洋基人天生施法属性为智力（法术豁免</span><span style=\"font-family:Calibri\">DC 13，法术攻击命中+5</span><span style=\"font-family:'STHeiti light'\">）。它天生可以施展以下法术而不需要任何相应的法术成分：</span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 0pt 0pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:'STHeiti light'\">随意：@UUID[Compendium.dnd5e_classpack.spell.Item.H5gghxp0hfT3BAlC]{法师之手 Mage Hand}<em>法师之手</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 0pt 0pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:Calibri\">每项3/</span><span style=\"font-family:'STHeiti light'\">日：<em>@UUID[Compendium.dnd5e_classpack.spell.Item.1B8U6kl0egesx3FK]{跳跃术 Jump}，</em>@UUID[Compendium.dnd5e_classpack.spell.Item.Cnzcy1Tu7gt6xYHm]{迷踪步 Misty Step}</span><span style=\"font-family:Calibri\"><em>，@UUID[Compendium.dnd5e_classpack.spell.Item.VT60UFGIZOZhPgMi]{回避侦测 Nondetection}</em></span><span style=\"font-family:'STHeiti light'\">（仅自身），<em>@UUID[Compendium.dnd5e_classpack.spell.Item.uXksyb9oAbbHFCt9]{巧言术}</em></span></p><p class=\"MsoNormal\" style=\"color:rgb(0, 0, 0);font-family:'Noto Sans SC';font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;margin:0pt 0pt 6pt 29pt;line-height:12pt;text-indent:-8pt\"><span style=\"font-family:Calibri\">每项1/</span><span style=\"font-family:'STHeiti light'\">日：</span><span style=\"font-family:Calibri\"><em>@UUID[Compendium.dnd5e_classpack.spell.Item.VveuAHLNPiAY0yd5]{异界传送 Plane Shift}，</em></span><span style=\"font-family:'STHeiti light'\"><em>@UUID[Compendium.dnd5e_classpack.spell.Item.MTNfEcCXSJZ2m2nG]{心灵遥控 Telekinesis}</em></span></p></div><p>@UUID[.MVH51IXhVRCMYEZX]{巧言术 Tongues}、@UUID[.Mfm7i1YmClbhBKb6]{跳跃术 Jump}、@UUID[.NMpuczaLDdtjlhdQ]{迷踪步 Misty Step}、@UUID[.Tn7zerA5C8li1gbl]{异界传送 Plane Shift}、@UUID[.aHQxG5jZ7eudD9pV]{法师之手 Mage Hand}、@UUID[.bezkdeZHFxkLPzab]{回避侦测 Nondetection}、@UUID[.x9e8Fn2MNCwrbXTQ]{心灵遥控 Telekinesis}</p>",
           "chat": ""
         },
         "requirements": "",
@@ -2714,7 +3217,7 @@
           "subtype": ""
         },
         "properties": [],
-        "advancement": [],
+        "advancement": {},
         "activities": {},
         "identifier": "innate-spellcasting-psionics",
         "cover": null,
@@ -2722,7 +3225,8 @@
         "enchant": {},
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         }
       },
       "ownership": {
@@ -2758,9 +3262,9 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
@@ -2833,10 +3337,8 @@
           "denomination": "gp"
         },
         "attunement": "",
-        "rarity": "",
         "identified": true,
         "cover": null,
-        "crewed": false,
         "uses": {
           "max": "",
           "spent": null,
@@ -2844,8 +3346,7 @@
         },
         "armor": {
           "value": 18,
-          "dex": 0,
-          "magicalBonus": null
+          "dex": 0
         },
         "hp": {
           "value": 0,
@@ -2855,7 +3356,8 @@
         },
         "speed": {
           "value": null,
-          "conditions": ""
+          "conditions": "",
+          "units": "ft"
         },
         "strength": 15,
         "proficient": null,
@@ -2867,18 +3369,25 @@
           "baseItem": "plate"
         },
         "container": null,
-        "properties": [],
+        "properties": [
+          "stealthDisadvantage",
+          "gear"
+        ],
         "activities": {},
         "identifier": "-plate-armor",
         "attuned": false,
-        "equipped": true
+        "equipped": true,
+        "rarities": [],
+        "crew": {
+          "value": []
+        }
       },
       "_stats": {
         "compendiumSource": "Compendium.dnd5e_classpack.itempack.Item.312C25C77938011B",
         "duplicateSource": null,
-        "coreVersion": "13.351",
+        "coreVersion": "14.368",
         "systemId": "dnd5e",
-        "systemVersion": "4.3.9",
+        "systemVersion": "6.0.5",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,

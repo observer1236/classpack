@@ -2,14 +2,14 @@
   "_id": "Cnl1XvqavxBl4WUo",
   "name": "额外牧师法术 Additional Cleric Spells",
   "type": "feat",
-  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_HopeAndGrace.png",
+  "img": "icons/sundries/books/book-symbol-canterbury-cross.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>下方列出的法术是对玩家手册中牧师法术列表的补充。若一个法术能够以仪式施法的方式施展，那么仪式标签会记在法术名字后方。除了标有星号(说明这是一个来自第三章的法术)的法术以外，其他法术均来自玩家手册。萨娜珊的万事指南中也提供了更多的法术。</p>\n<table>\n<tbody>\n<tr>\n<th>环阶</th>\n<th>法术</th>\n</tr>\n<tr>\n<td>三环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.XfYgB18GC8OgETjG]{活力灵光}@UUID[Compendium.dnd5e_classpack.spell.TH2wXQ3yssrGZ821]{魂灵环绕*}</td>\n</tr>\n<tr>\n<td>四环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.9WDd3gopYOGyYnrT]{生命灵光}@UUID[Compendium.dnd5e_classpack.spell.ujZGFLEqgI0L6oli]{净化灵光}</td>\n</tr>\n<tr>\n<td>五环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.aJR797NIkIG7k9uN]{召唤天界生物*}</td>\n</tr>\n<tr>\n<td>六环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.oU9SfwCYsV2eiZiQ]{阳炎射线}</td>\n</tr>\n<tr>\n<td>八环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.P8biBjQGeqe3c7M8]{阳炎爆}</td>\n</tr>\n<tr>\n<td>九环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.FfrtzwJUyOdNzB5q]{律令医疗}</td>\n</tr>\n</tbody>\n</table>",
+      "value": "<p>下方列出的法术是对《玩家手册》中牧师法术列表的补充。若一个法术能够以仪式施法的方式施展，那么仪式标签会记在法术名字后方。除了标有星号(说明这是一个来自第三章的法术)的法术以外，其他法术均来自玩家手册。萨娜珊的万事指南中也提供了更多的法术。</p>\n<table>\n<tbody>\n<tr>\n<th>环阶</th>\n<th>法术</th>\n</tr>\n<tr>\n<td>三环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.XfYgB18GC8OgETjG]{活力灵光}@UUID[Compendium.dnd5e_classpack.spell.TH2wXQ3yssrGZ821]{魂灵环绕}</td>\n</tr>\n<tr>\n<td>四环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.9WDd3gopYOGyYnrT]{生命灵光}@UUID[Compendium.dnd5e_classpack.spell.ujZGFLEqgI0L6oli]{净化灵光}</td>\n</tr>\n<tr>\n<td>五环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.aJR797NIkIG7k9uN]{召唤天界生物*}</td>\n</tr>\n<tr>\n<td>六环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.oU9SfwCYsV2eiZiQ]{阳炎射线}</td>\n</tr>\n<tr>\n<td>八环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.P8biBjQGeqe3c7M8]{阳炎爆}</td>\n</tr>\n<tr>\n<td>九环</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.FfrtzwJUyOdNzB5q]{律令医疗}</td>\n</tr>\n</tbody>\n</table>",
       "chat": ""
     },
     "source": {
@@ -25,13 +25,14 @@
     "requirements": "牧师等级 1",
     "activities": {},
     "identifier": "-additional-cleric-spells",
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": null,
-      "repeatable": false
+      "level": 1,
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -39,12 +40,7 @@
   "folder": "8pfcG1qRw4Ec0oT2",
   "sort": 14800000,
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -64,9 +60,9 @@
     }
   },
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757408134878,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

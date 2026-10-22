@@ -3,14 +3,7 @@
   "name": "幸运 Lucky",
   "type": "feat",
   "flags": {
-    "dnd5e": {
-      "persistSourceMigration": true,
-      "migratedUses": 3,
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -28,18 +21,20 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "chris-premades": {
-      "info": {
-        "identifier": "lucky",
-        "source": "chris-premades",
-        "version": "0.0.0"
+    "chris-premades": {},
+    "dnd5e_classpack": {
+      "automations": {
+        "lucky2014": {
+          "enabled": true,
+          "version": "2.0.0"
+        }
       }
     }
   },
   "img": "icons/skills/trades/academics-investigation-puzzles.webp",
   "system": {
     "description": {
-      "value": "<p>你的离奇运气让你可以在最危险的时刻化险为夷。</p><p>你获得3点幸运点。当你进行攻击检定、属性检定、豁免检定时，你可以花费1幸运点来骰一个额外的d20。你可以选择在掷骰完成后，但结果公布前花费你这1幸运点。此后，你来选择该次攻击检定、属性检定或豁免检定要使用哪粒d20的结果。</p><p>你也可以在被攻击时选择花费1点幸运点骰一次d20。然后由你决定攻击者该使用哪粒d20。</p><p>若不止一个生物决定花费幸运点影响同一个骰值，则幸运点互相抵消，即并不会有额外的d20掷骰行为。</p><p>完成一次长休后你可以恢复所有的幸运点。</p>",
+      "value": "<p>你的离奇运气让你可以在最危险的时刻化险为夷。</p>\n<p> 你获得3点幸运点。当你进行攻击检定、属性检定、豁免检定时，你可以花费1幸运点来掷一个额外的d20。你可以选择在掷骰完成后，但结果公布前花费你这1幸运点。此后，你来选择该次攻击检定、属性检定或豁免检定要使用哪粒d20的结果。</p>\n<p> 你也可以在被攻击时选择花费1点幸运点骰一次d20。然后由你决定攻击者该使用哪粒d20。</p>\n<p> 若不止一个生物决定花费幸运点影响同一个骰值，则幸运点互相抵消，即并不会有额外的d20掷骰行为。</p>\n<p> 完成一次长休后你可以恢复所有的幸运点。</p>",
       "chat": ""
     },
     "source": {
@@ -61,117 +56,31 @@
     },
     "type": {
       "value": "feat",
-      "subtype": ""
+      "subtype": "general"
     },
     "requirements": "",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "lucky",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
   "ownership": {
     "default": 0
   },
-  "effects": [
-    {
-      "name": "幸运",
-      "img": "icons/skills/trades/academics-investigation-puzzles.webp",
-      "origin": "Compendium.dnd5e_classpack.feats-all.Item.Zxh8VEiQwezfcnvk",
-      "_id": "Ayad46HPMTSkWNvw",
-      "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "flags.midi-qol.optional.幸运.attack.fail.all",
-          "mode": 2,
-          "value": "reroll-kh",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.幸运.save.fail.all",
-          "mode": 2,
-          "value": "reroll-kh",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.幸运.label",
-          "mode": 2,
-          "value": "幸运",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.幸运.count",
-          "mode": 2,
-          "value": "itemUses.幸运",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.NAME.check.fail.all",
-          "mode": 2,
-          "value": "",
-          "priority": 20
-        }
-      ],
-      "disabled": false,
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "transfer": true,
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "macroRepeat": "none",
-          "specialDuration": []
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
-        "createdTime": 1756991299214,
-        "modifiedTime": 1756991430292,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "exportSource": null
-      },
-      "_key": "!items.effects!Zxh8VEiQwezfcnvk.Ayad46HPMTSkWNvw"
-    }
-  ],
+  "effects": [],
   "folder": "qiJofEGkS1454LSL",
   "sort": 1600000,
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757865323475,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

@@ -3,12 +3,7 @@
   "name": "长柄武器大师 Polearm Master",
   "type": "feat",
   "flags": {
-    "dnd5e": {
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
-    },
+    "dnd5e": {},
     "midi-qol": {
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
@@ -30,7 +25,7 @@
   "img": "icons/skills/melee/hand-grip-staff-blue.webp",
   "system": {
     "description": {
-      "value": "<p>你可以用触及武器与敌人近身缠斗。你获得下列增益：</p><ul><li><p>当你只使用长柄刀、戟、长棍或矛执行攻击动作时，可以用附赠动作以武器手柄的末端发动一次近战攻击。这次攻击与主攻击使用同样的调整值，其伤害骰为d4，伤害类型为钝击伤害。</p></li><li><p>当你持握长柄刀、戟、长矛、长棍或矛时，进入你触及范围的生物会引发你的借机攻击。</p></li></ul>",
+      "value": "<p>你可以用触及武器与敌人近身缠斗。你获得下列增益：</p>\n<ul><li>当你只使用长柄刀、戟、长棍或矛执行攻击动作时，可以用附赠动作以武器手柄的末端发动一次近战攻击。这次攻击与主攻击使用同样的调整值，其伤害骰为d4，伤害类型为钝击伤害。</li> <li>当你持握长柄刀、戟、长矛、长棍或矛时，进入你此类武器的触及范围的生物会引发你的借机攻击。</li></ul>",
       "chat": ""
     },
     "source": {
@@ -41,23 +36,24 @@
     },
     "cover": null,
     "uses": {
-      "max": "0",
+      "max": "",
       "spent": 0,
       "recovery": []
     },
     "type": {
       "value": "feat",
-      "subtype": ""
+      "subtype": "general"
     },
     "requirements": "",
     "activities": {},
-    "identifier": "",
-    "advancement": [],
+    "identifier": "polearm-master",
+    "advancement": {},
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": []
   },
@@ -68,9 +64,9 @@
   "folder": "qiJofEGkS1454LSL",
   "sort": 3700000,
   "_stats": {
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.4",
+    "systemVersion": "6.0.5",
     "createdTime": null,
     "modifiedTime": 1757865421410,
     "lastModifiedBy": "qKmljmeCDhGDkX2L",

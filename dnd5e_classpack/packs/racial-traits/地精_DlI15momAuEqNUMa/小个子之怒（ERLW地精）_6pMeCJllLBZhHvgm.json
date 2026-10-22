@@ -2,7 +2,7 @@
   "name": "小个子之怒（ERLW地精）",
   "type": "feat",
   "_id": "6pMeCJllLBZhHvgm",
-  "img": "modules/dnd5e_classpack/Nicons/img/races/ERLW/Goblinoids.webp",
+  "img": "icons/magic/control/buff-strength-muscle-damage-red.webp",
   "system": {
     "activities": {},
     "uses": {
@@ -14,23 +14,24 @@
       "value": "<p>当你对比你大型的生物使用攻击或魔法，并造成伤害时，你可以对它造成额外伤害。这个额外伤害等同于你的等级。此特性在你完成一次短休息或长休息前无法再次使用。</p>",
       "chat": ""
     },
-    "identifier": "-",
+    "identifier": "erlw",
     "source": {
       "revision": 1,
       "rules": "2024"
     },
-    "advancement": [],
+    "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "level": null,
-      "repeatable": false
+      "repeatable": false,
+      "items": []
     },
     "properties": [],
     "requirements": "",
     "type": {
-      "value": "",
+      "value": "race",
       "subtype": ""
     }
   },
@@ -59,18 +60,14 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "dnd5e": {
-      "riders": {
-        "activity": []
-      }
-    }
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.368",
     "systemId": "dnd5e",
-    "systemVersion": "4.3.9",
+    "systemVersion": "6.0.5",
     "createdTime": 1756029605359,
     "modifiedTime": 1756544420586,
     "lastModifiedBy": "sPF2dtZDreDpJaW6",
