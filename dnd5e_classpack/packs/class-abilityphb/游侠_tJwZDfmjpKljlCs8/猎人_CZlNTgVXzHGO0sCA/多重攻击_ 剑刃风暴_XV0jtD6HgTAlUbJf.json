@@ -24,7 +24,163 @@
       "subtype": "multiattack"
     },
     "requirements": "猎人等级 11",
-    "activities": {},
+    "activities": {
+      "tOYRYHG6gjqfcyeY": {
+        "type": "utility",
+        "name": "",
+        "_id": "tOYRYHG6gjqfcyeY",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "5",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "enemy",
+            "count": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
+      }
+    },
     "identifier": "whirlwind-attack",
     "advancement": {},
     "crewed": false,
@@ -48,7 +204,8 @@
       "reactionCondition": "",
       "otherCondition": "",
       "effectCondition": "",
-      "fumbleThreshold": null
+      "fumbleThreshold": null,
+      "onUseMacroName": "[postActiveEffects]ItemMacro"
     },
     "midiProperties": {
       "autoFailFriendly": false,
@@ -58,6 +215,34 @@
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
+    },
+    "dae": {
+      "macro": {
+        "name": "剑刃风暴 Whirlwind Attack",
+        "img": "icons/skills/melee/sword-twirl-orange.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const attacks = macroItem.actor.items.contents\n  .filter(item => item.type === \"weapon\")\n  .flatMap(item => item.system.activities.filter(activity =>\n    activity.type === \"attack\" && activity.getActionType() === \"mwak\"\n  ));\nif (!attacks.length) return;\n\nconst uuid = attacks.length === 1 ? attacks[0].uuid\n  : await dnd5eClasspack.dialogUtils.buttonDialog(\n    \"选择近战攻击\", \"\",\n    attacks.map(activity => [\n      `${activity.item.name} · ${activity.name}`,\n      activity.uuid,\n      { image: activity.item.img }\n    ])\n  );\nif (!uuid) return;\n\nconst attack = fromUuidSync(uuid);\nconst attackMode = attack.item.system.attackModes.find(mode =>\n  attack.getActionType(mode.value) === \"mwak\"\n)?.value;\n\nfor (const target of [...workflow.targets]) {\n  await MidiQOL.completeActivityUse(uuid, {\n    attackMode,\n    consume: { resources: true, spellSlot: false, action: false },\n    midiOptions: {\n      targetUuids: [target.document.uuid],\n      ignoreUserTargets: true,\n      workflowOptions: { targetConfirmation: \"never\" }\n    }\n  }, { configure: false }, { create: true });\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
     }
   },
   "ownership": {

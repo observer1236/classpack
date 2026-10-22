@@ -36,7 +36,7 @@
       "duration": {
         "value": 1,
         "units": "rounds",
-        "expiry": "turnStart",
+        "expiry": "targetEnd",
         "expired": false
       },
       "disabled": false,
@@ -57,7 +57,13 @@
             "1Attack:mwak",
             "1Attack:rwak"
           ],
-          "applicationMode": "dnd5e"
+          "applicationMode": "dnd5e",
+          "enableCondition": "",
+          "disableCondition": "",
+          "expiryMode": "default"
+        },
+        "core": {
+          "overlay": false
         }
       },
       "tint": "#ffffff",

@@ -27,7 +27,7 @@
         "img": "icons/creatures/mammals/ox-bull-horned-glowing-orange.webp",
         "type": "script",
         "scope": "global",
-        "command": "",
+        "command": "const fireline = macroItem.system.activities.find(a => a.identifier == 'fireline')\nif (args[0] == 'on'){\n  await dnd5eClasspack.hideActivity(fireline.uuid, false);\n  await dnd5eClasspack.addFavorite(fireline.uuid);\n}\nif (args[0] == 'off'){\n  await dnd5eClasspack.hideActivity(fireline.uuid);\n  await dnd5eClasspack.removeFavorite(fireline.uuid);\n}",
         "author": "dvg25zW2MvzsvMOU",
         "ownership": {
           "default": 3
@@ -81,6 +81,16 @@
             "value": "cold",
             "phase": "initial",
             "_id": "XDLD0hKk3gXLKVsK",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          },
+          {
+            "key": "macro.itemMacro",
+            "type": "custom",
+            "value": "",
+            "phase": "initial",
+            "_id": "h3XKNOBWZ0bKSlsp",
             "conditions": "{}",
             "replacement": "",
             "priority": null
@@ -400,7 +410,11 @@
           "override": true
         },
         "effects": [],
-        "flags": {},
+        "flags": {
+          "dnd5e_classpack": {
+            "hidden": true
+          }
+        },
         "range": {
           "units": "self",
           "override": true,
@@ -506,9 +520,9 @@
           "autoTargetType": "any",
           "autoTargetAction": "default",
           "automationOnly": false,
-          "otherActivityCompatible": true,
+          "otherActivityCompatible": false,
           "otherActivityAsParentType": true,
-          "identifier": "",
+          "identifier": "fireline",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
@@ -516,7 +530,7 @@
           "ignoreFullCover": false,
           "removeChatButtons": "default",
           "magicEffect": false,
-          "magicDamage": false,
+          "magicDamage": true,
           "noConcentrationCheck": false,
           "skipConcentrationCheck": false,
           "autoCEEffects": "default"
@@ -586,7 +600,11 @@
           "override": true
         },
         "effects": [],
-        "flags": {},
+        "flags": {
+          "dnd5e_classpack": {
+            "hidden": true
+          }
+        },
         "range": {
           "units": "self",
           "override": true,

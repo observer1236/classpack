@@ -29,7 +29,35 @@
       "ignoreTotalCover": false
     },
     "dnd5e": {},
-    "chris-premades": {}
+    "chris-premades": {},
+    "dae": {
+      "macro": {
+        "name": "寒冰赋权Investiture of Ice",
+        "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const icecone = macroItem.system.activities.find(a => a.identifier == 'icecone')\nif (args[0] == 'on'){\n  await dnd5eClasspack.hideActivity(icecone.uuid, false);\n  await dnd5eClasspack.addFavorite(icecone.uuid);\n}\nif (args[0] == 'off'){\n  await dnd5eClasspack.hideActivity(icecone.uuid);\n  await dnd5eClasspack.removeFavorite(icecone.uuid);\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
+    }
   },
   "img": "icons/magic/control/silhouette-hold-change-blue.webp",
   "_id": "lnwjh9uocouD1DBT",
@@ -52,12 +80,19 @@
         "dae": {
           "disableIncapacitated": false,
           "selfTarget": false,
-          "selfTargetAlways": false,
+          "selfTargetAlways": true,
           "dontApply": false,
           "stackable": "noneName",
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "applicationMode": "default",
+          "expiryMode": "default"
+        },
+        "core": {
+          "overlay": false
         }
       },
       "tint": "#ffffff",
@@ -95,6 +130,36 @@
             "_id": "HCkJBLBBTkOUYizO",
             "conditions": "{}",
             "replacement": ""
+          },
+          {
+            "key": "macro.itemMacro",
+            "type": "custom",
+            "value": "",
+            "phase": "initial",
+            "_id": "9xxbu9YpJ4dXWIOf",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.ignoredDifficultTerrain",
+            "type": "add",
+            "value": "ice",
+            "phase": "initial",
+            "_id": "w64jhueKWHm6IkPm",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.ignoredDifficultTerrain",
+            "type": "add",
+            "value": "snow",
+            "phase": "initial",
+            "_id": "xneMJdLFDF5ZZusN",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
           }
         ],
         "origin": {
@@ -153,7 +218,7 @@
       "duration": {
         "value": 6,
         "units": "seconds",
-        "expiry": "turnStart",
+        "expiry": "sourceStart",
         "expired": false
       },
       "description": "",
@@ -171,7 +236,10 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "applicationMode": "default",
+          "expiryMode": "default",
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {}
@@ -288,8 +356,11 @@
           {
             "_id": "YLLXUlpH703iwy6g",
             "uuid": null,
-            "level": {},
-            "onSave": false
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -354,7 +425,8 @@
             "calculation": "spellcasting",
             "formula": ""
           },
-          "visible": true
+          "visible": true,
+          "bonus": ""
         },
         "sort": 0,
         "useConditionText": "",
@@ -382,7 +454,7 @@
           "autoTargetAction": "default",
           "automationOnly": false,
           "otherActivityCompatible": true,
-          "identifier": "",
+          "identifier": "icecone",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
@@ -414,9 +486,16 @@
         "_id": "zSfE90Z7M7OJ3UIR",
         "img": "",
         "behaviors": [],
-        "flags": {},
+        "flags": {
+          "dnd5e_classpack": {
+            "hidden": true
+          }
+        },
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
           "requireMagic": false
@@ -446,14 +525,32 @@
         "otherActivityAsParentType": true,
         "friendlySave": "default"
       },
-      "Jem9RlDyfMpEEUsc": {
-        "type": "damage",
-        "sort": 0,
+      "HA14HhYTdaiXJisF": {
+        "type": "utility",
+        "name": "",
+        "_id": "HA14HhYTdaiXJisF",
+        "img": "",
+        "sort": -100000,
         "activation": {
           "type": "action",
-          "value": null,
           "override": false
         },
+        "behaviors": [
+          {
+            "name": "",
+            "_id": "oujtxTIaQlCqouR7",
+            "type": "difficultTerrain",
+            "config": {
+              "types": [
+                "ice"
+              ]
+            },
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
         "consumption": {
           "scaling": {
             "allowed": false
@@ -462,42 +559,40 @@
           "targets": []
         },
         "description": {
-          "chatFlavor": "",
-          "value": ""
+          "value": "",
+          "chatFlavor": ""
         },
         "duration": {
           "units": "inst",
+          "expiry": null,
           "concentration": false,
-          "override": false,
-          "expiry": null
+          "override": false
         },
         "effects": [
           {
             "_id": "fz2vlFxHHG3JXGU2",
             "uuid": null,
-            "level": {}
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
+        "flags": {},
         "range": {
-          "override": true,
           "units": "self",
-          "special": ""
+          "override": false
         },
         "target": {
           "template": {
             "contiguous": false,
-            "units": "ft",
-            "type": "sphere",
-            "size": "10",
-            "count": "",
-            "stationary": false
+            "stationary": false,
+            "units": "ft"
           },
           "affects": {
-            "choice": false,
-            "type": "self",
-            "special": ""
+            "choice": false
           },
-          "override": true,
+          "override": false,
           "prompt": true
         },
         "uses": {
@@ -505,15 +600,25 @@
           "recovery": [],
           "max": ""
         },
-        "damage": {
-          "critical": {
-            "allow": false
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
           },
-          "parts": []
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
+        "otherActivityId": "none",
         "macroData": {
           "name": "",
           "command": ""
@@ -531,24 +636,24 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "confirmTargets": "default",
-          "autoTargetType": "any",
-          "autoTargetAction": "default",
-          "automationOnly": false,
-          "otherActivityCompatible": true,
-          "identifier": "",
-          "displayActivityName": false,
-          "rollMode": "default",
-          "chooseEffects": false,
-          "toggleEffect": false,
-          "ignoreFullCover": false,
           "triggeredActivityConsume": true,
           "triggeredActivityConfigure": true,
           "autoConsume": false,
           "forceConsumeDialog": "default",
           "forceRollDialog": "default",
           "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
           "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
           "removeChatButtons": "default",
           "magicEffect": false,
           "magicDamage": false,
@@ -559,30 +664,21 @@
         "isOverTimeFlag": false,
         "overTimeProperties": {
           "saveRemoves": true,
+          "rollAs": "target",
           "preRemoveConditionText": "",
-          "postRemoveConditionText": "",
-          "rollAs": "target"
+          "postRemoveConditionText": ""
         },
-        "name": "施放法术",
-        "_id": "Jem9RlDyfMpEEUsc",
-        "img": "",
-        "behaviors": [],
-        "flags": {},
-        "visibility": {
-          "level": {},
-          "requireAttunement": false,
-          "requireIdentification": false,
-          "requireMagic": false
-        },
-        "otherActivityId": null,
         "regionBehavior": {
-          "enabled": false,
-          "dispositionFilter": -1,
+          "enabled": true,
+          "dispositionFilter": 0,
           "excludeSource": true,
-          "oncePerTurn": true,
+          "oncePerTurn": false,
           "wallRestriction": "none",
           "regionVisibility": 2,
-          "attachToken": "default",
+          "attachToken": "caster",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
           "templateOrigin": "default",
           "rules": []
         },
@@ -596,7 +692,8 @@
           "animationType": "",
           "animationSpeed": 5,
           "animationIntensity": 5
-        }
+        },
+        "otherActivityAsParentType": true
       }
     },
     "identifier": "investiture-of-ice",

@@ -38,12 +38,9 @@
           "targets": [
             {
               "type": "itemUses",
-              "target": "",
               "value": "1",
-              "scaling": {
-                "mode": "",
-                "formula": ""
-              }
+              "target": "",
+              "scaling": {}
             }
           ],
           "scaling": {
@@ -65,7 +62,7 @@
         },
         "effects": [],
         "range": {
-          "units": "self",
+          "units": "any",
           "special": "",
           "override": false
         },
@@ -73,7 +70,7 @@
           "template": {
             "count": "",
             "contiguous": false,
-            "type": "square",
+            "type": "radius",
             "size": "20",
             "width": "",
             "height": "",
@@ -82,7 +79,7 @@
           },
           "affects": {
             "count": "",
-            "type": "",
+            "type": "enemy",
             "choice": false,
             "special": ""
           },
@@ -101,19 +98,23 @@
           "visible": false
         },
         "sort": 0,
-        "img": null,
+        "img": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": false
+          "requireMagic": false,
+          "identifier": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
-        "otherActivityId": null,
+        "otherActivityId": "",
         "macroData": {
           "name": "",
           "command": ""
@@ -185,7 +186,8 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
-        "otherActivityAsParentType": true
+        "otherActivityAsParentType": true,
+        "name": ""
       }
     },
     "identifier": "volley",
@@ -210,7 +212,8 @@
       "itemCondition": "",
       "reactionCondition": "",
       "otherCondition": "",
-      "effectCondition": ""
+      "effectCondition": "",
+      "onUseMacroName": "[postActiveEffects]ItemMacro"
     },
     "midiProperties": {
       "autoFailFriendly": false,
@@ -220,6 +223,34 @@
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
+    },
+    "dae": {
+      "macro": {
+        "name": "箭雨 Volley",
+        "img": "icons/skills/ranged/arrows-flying-salvo-blue.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const attacks = macroItem.actor.items.contents\n  .filter(item => item.type === \"weapon\")\n  .flatMap(item => item.system.activities.filter(activity =>\n    activity.type === \"attack\" && activity.getActionType() === \"rwak\"\n  ));\nif (!attacks.length) return;\n\nconst uuid = attacks.length === 1 ? attacks[0].uuid\n  : await dnd5eClasspack.dialogUtils.buttonDialog(\n    \"选择远程攻击\", \"\",\n    attacks.map(activity => [\n      `${activity.item.name} · ${activity.name}`,\n      activity.uuid,\n      { image: activity.item.img }\n    ])\n  );\nif (!uuid) return;\n\nconst attack = fromUuidSync(uuid);\nconst attackMode = attack.item.system.attackModes.find(mode =>\n  attack.getActionType(mode.value) === \"mwak\"\n)?.value;\n\nfor (const target of [...workflow.targets]) {\n  await MidiQOL.completeActivityUse(uuid, {\n    attackMode,\n    consume: { resources: true, spellSlot: false, action: false },\n    midiOptions: {\n      targetUuids: [target.document.uuid],\n      ignoreUserTargets: true,\n      workflowOptions: { targetConfirmation: \"never\" }\n    }\n  }, { configure: false }, { create: true });\n}",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
     }
   },
   "ownership": {
