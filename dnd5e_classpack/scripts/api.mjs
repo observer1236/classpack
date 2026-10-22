@@ -19,6 +19,7 @@
 
 import { canUpdateToken, firstOwner, log, MODULE_ID, SOCKET_NAME, registerHandlebarsHelpers, resolveOriginPoint, resolveToken, resolveUserId, toSocketSafeOptions } from "./api/utils.mjs";
 import { ClasspackDialogApp } from "./api/dialog-app.mjs";
+import { isCPRIntegrationEnabled, registerCPRIntegration } from "./integrations/cpr.mjs";
 import { ClasspackCrosshairs } from "./api/crosshairs.mjs";
 import { ClasspackTeleport } from "./api/teleport.mjs";
 import { createDialogUtils } from "./api/dialog-utils.mjs";
@@ -216,10 +217,13 @@ Hooks.once("socketlib.ready", () => {
     return;
   }
 
+  const registered = [];
   for (const [name, fn] of Object.entries(socketFunctions)) {
+    if (name.startsWith("cprTimed") && !isCPRIntegrationEnabled()) continue;
     api.socket.register(name, fn);
+    registered.push(name);
   }
-  log("info", "socket functions registered:", Object.keys(socketFunctions).join(", "));
+  log("info", "socket functions registered:", registered.join(", "));
 });
 
 Hooks.once("ready", () => {
@@ -243,3 +247,4 @@ Hooks.once("ready", () => {
 
 globalThis.dnd5eClasspack = api;
 globalThis.classpack = api;
+registerCPRIntegration(api);

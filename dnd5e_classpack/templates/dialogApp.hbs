@@ -1,4 +1,11 @@
 <div class="cp-dialog scrollable{{#if compact}} cp-dialog--compact{{/if}}">
+    {{#if timing}}
+        <div class="cp-dialog-timer">
+            <span data-cp-timed-status role="status"></span>
+            <span data-cp-timed-seconds></span>
+            <progress data-cp-timed-progress aria-label="{{localize 'Classpack.Timed.Progress'}}"></progress>
+        </div>
+    {{/if}}
     {{#if content}}<div class="cp-dialog-lead">{{{localize content}}}</div>{{/if}}
 
     {{#each groups}}
@@ -19,8 +26,8 @@
             <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
                 {{#each slots}}
                     <div class="cp-dialog-slot">
-                        <input type="checkbox" id="cp-switch-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" {{#if (gte ../picked ../limit)}}{{#unless checked}}disabled{{/unless}}{{/if}} {{#if checked}}checked{{/if}}>
-                        <label class="cp-dialog-caption" for="cp-switch-{{@../index}}-{{@index}}">
+                        <input type="checkbox" id="{{@root.idPrefix}}cp-switch-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" {{#if (gte ../picked ../limit)}}{{#unless checked}}disabled{{/unless}}{{/if}} {{#if checked}}checked{{/if}}>
+                        <label class="cp-dialog-caption" for="{{@root.idPrefix}}cp-switch-{{@../index}}-{{@index}}">
                             {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
                             <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
@@ -32,8 +39,8 @@
             <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
                 {{#each slots}}
                     <div class="cp-dialog-slot">
-                        <input type="radio" id="cp-radio-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{../group}}" value="{{name}}" {{#if checked}}checked{{/if}}>
-                        <label class="cp-dialog-caption" for="cp-radio-{{@../index}}-{{@index}}">
+                        <input type="radio" id="{{@root.idPrefix}}cp-radio-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{../group}}" value="{{name}}" {{#if checked}}checked{{/if}}>
+                        <label class="cp-dialog-caption" for="{{@root.idPrefix}}cp-radio-{{@../index}}-{{@index}}">
                             {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
                             <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
@@ -45,12 +52,12 @@
             <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
                 {{#each slots}}
                     <div class="cp-dialog-slot cp-dialog-slot--amount">
-                        <select id="cp-amount-{{@../index}}-{{@index}}" class="cp-dialog-select" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}">
+                        <select id="{{@root.idPrefix}}cp-amount-{{@../index}}-{{@index}}" class="cp-dialog-select" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}">
                             {{#each choices}}
                                 <option value="{{this}}" {{#if (gt this ../ceiling)}}disabled{{/if}} {{#if (eq this ../value)}}selected{{/if}}>{{this}}</option>
                             {{/each}}
                         </select>
-                        <label class="cp-dialog-caption" for="cp-amount-{{@../index}}-{{@index}}">
+                        <label class="cp-dialog-caption" for="{{@root.idPrefix}}cp-amount-{{@../index}}-{{@index}}">
                             {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
                             <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
@@ -62,12 +69,12 @@
             <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
                 {{#each slots}}
                     <div class="cp-dialog-slot">
-                        <select id="cp-menu-{{@../index}}-{{@index}}" class="cp-dialog-select" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}">
+                        <select id="{{@root.idPrefix}}cp-menu-{{@../index}}-{{@index}}" class="cp-dialog-select" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}">
                             {{#each entries}}
                                 <option value="{{value}}" {{#if (eq value ../value)}}selected{{/if}}>{{localize label}}</option>
                             {{/each}}
                         </select>
-                        <label class="cp-dialog-caption" for="cp-menu-{{@../index}}-{{@index}}">
+                        <label class="cp-dialog-caption" for="{{@root.idPrefix}}cp-menu-{{@../index}}-{{@index}}">
                             {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
                             <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
@@ -79,8 +86,8 @@
             <div class="cp-dialog-set">
                 {{#each slots}}
                     <div class="cp-dialog-multi">
-                        <label class="cp-dialog-text" for="cp-multi-{{@../index}}-{{@index}}">{{localize label option=i18nOption}}</label>
-                        <multi-select id="cp-multi-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" {{#if disabled}}disabled{{/if}} {{#if tooltip}}data-tooltip="{{tooltip}}"{{/if}}>
+                        <label class="cp-dialog-text" for="{{@root.idPrefix}}cp-multi-{{@../index}}-{{@index}}">{{localize label option=i18nOption}}</label>
+                        <multi-select id="{{@root.idPrefix}}cp-multi-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" {{#if disabled}}disabled{{/if}} {{#if tooltip}}data-tooltip="{{tooltip}}"{{/if}}>
                             {{#each entries}}
                                 <option value="{{value}}" {{#if selected}}selected{{/if}} {{#if disabled}}disabled{{/if}} {{#if tooltip}}data-tooltip="{{tooltip}}"{{/if}}>{{localize label}}</option>
                             {{/each}}
@@ -93,8 +100,8 @@
             <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
                 {{#each slots}}
                     <div class="cp-dialog-slot">
-                        <input type="text" id="cp-text-{{@../index}}-{{@index}}" class="cp-dialog-input" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" value="{{value}}">
-                        <label class="cp-dialog-caption" for="cp-text-{{@../index}}-{{@index}}">
+                        <input type="text" id="{{@root.idPrefix}}cp-text-{{@../index}}-{{@index}}" class="cp-dialog-input" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" value="{{value}}">
+                        <label class="cp-dialog-caption" for="{{@root.idPrefix}}cp-text-{{@../index}}-{{@index}}">
                             {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
                             <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
@@ -106,8 +113,8 @@
             <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
                 {{#each slots}}
                     <div class="cp-dialog-slot">
-                        <input type="number" id="cp-number-{{@../index}}-{{@index}}" class="cp-dialog-input" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" value="{{value}}">
-                        <label class="cp-dialog-caption" for="cp-number-{{@../index}}-{{@index}}">
+                        <input type="number" id="{{@root.idPrefix}}cp-number-{{@../index}}-{{@index}}" class="cp-dialog-input" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" value="{{value}}">
+                        <label class="cp-dialog-caption" for="{{@root.idPrefix}}cp-number-{{@../index}}-{{@index}}">
                             {{#if image}}<img class="cp-dialog-image" src="{{image}}" alt="" data-cp-token="{{name}}">{{/if}}
                             <span class="cp-dialog-text">{{localize label}}</span>
                         </label>
@@ -119,8 +126,8 @@
             <div class="cp-dialog-set{{#if rows}} cp-dialog-set--stacked{{/if}}">
                 {{#each slots}}
                     <div class="cp-dialog-slot">
-                        <label class="cp-dialog-text" for="cp-path-{{@../index}}-{{@index}}">{{localize label}}</label>
-                        <file-picker id="cp-path-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" type="{{type}}" value="{{value}}"></file-picker>
+                        <label class="cp-dialog-text" for="{{@root.idPrefix}}cp-path-{{@../index}}-{{@index}}">{{localize label}}</label>
+                        <file-picker id="{{@root.idPrefix}}cp-path-{{@../index}}-{{@index}}" data-cp-group="{{@../index}}" data-cp-slot="{{@index}}" name="{{name}}" type="{{type}}" value="{{value}}"></file-picker>
                     </div>
                 {{/each}}
             </div>
