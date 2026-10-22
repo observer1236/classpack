@@ -55,9 +55,18 @@ class ClasspackCrosshairs {
   refresh() {
     if (this.preview && !this.preview.destroyed) {
       this.preview.document.color = this.valid ? (this.config.fillColor ?? game.user.color) : "#ff3333";
+      this._refreshFill();
       this.preview.renderFlags.set({ refresh: true });
     }
     return this;
+  }
+  _refreshFill() {
+    // Core draws the Region fill outside the placeable, above the Token meshes.
+    // Adjust only our highlight; fading the Region itself does not fade its fill.
+    const alpha = Number.isFinite(this.fillAlpha) ? Math.max(0, Math.min(1, this.fillAlpha)) : 0;
+    for (const mesh of this.layer?._highlights?.children ?? []) {
+      if (mesh.region === this.preview) mesh.alpha = alpha;
+    }
   }
   async draw() { return this.refresh(); }
   _callback(name) {
@@ -116,6 +125,11 @@ class ClasspackCrosshairs {
         this._callback("show");
       }
     };
+    // Region.draw is asynchronous. Its highlight may not exist on the first move.
+    const onDraw = preview => {
+      if (preview === this.preview) this._refreshFill();
+    };
+    const drawHook = globalThis.Hooks?.on?.("drawRegion", onDraw);
     try {
       this.x ??= canvas.mousePosition.x; this.y ??= canvas.mousePosition.y;
       const shape = { type: "circle", x: this.x, y: this.y, radius: Math.max(1, this.radius) };
@@ -168,6 +182,7 @@ class ClasspackCrosshairs {
       console.error("ClassPack Region placement failed", error);
       ui.notifications.warn("ClassPack：放置失败，已取消操作。");
     } finally {
+      if (drawHook !== undefined) Hooks.off("drawRegion", drawHook);
       clearTimeout(timer);
       signal?.removeEventListener("abort", abort);
       this.inFlight = false;
