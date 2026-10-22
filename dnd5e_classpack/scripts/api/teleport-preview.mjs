@@ -2,10 +2,10 @@ import { tokenDocument } from "./geometry.mjs";
 
 /** Client-only native Token renderers. No scene documents, light or vision are created. */
 export class TeleportPreview {
-  constructor(tokens, { alpha = 0.5 } = {}) {
+  constructor(tokens, { alpha = 1 } = {}) {
     this.tokens = tokens;
     this.scene = tokenDocument(tokens[0]).parent;
-    this.alpha = Number.isFinite(alpha) ? Math.max(0, Math.min(1, alpha)) : 0.5;
+    this.alpha = Number.isFinite(alpha) ? Math.max(0, Math.min(1, alpha)) : 1;
     this.entries = [];
     this.closed = false;
   }

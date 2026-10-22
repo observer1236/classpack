@@ -7,7 +7,7 @@ import { TeleportPreview } from "./teleport-preview.mjs";
 const DEFAULTS = { animation: "none", isSynchronous: true, crosshairsConfig: {}, callbacks: {},
   range: 100, updates: {}, minimizeSheet: true, centerpoint: null, isGroup: false,
   validityFunctions: [], preserveOffsets: true, avoidOccupied: false, animate: false,
-  previewTokens: true, previewAlpha: 0.5 };
+  previewTokens: true, previewAlpha: 1 };
 
 class ClasspackTeleport {
   constructor(tokens, reference, options = {}) {
