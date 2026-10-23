@@ -3,7 +3,7 @@ import { MODULE_ID } from './utils.mjs';
 /** Rule providers run on the GM; generic infrastructure owns routing, prompts and resource commits. */
 export function createRollInterventionApi(api) {
   const providers = new Map(), completed = new Map();
-  let installed = false, filterInstalled = false;
+  let installed = false, filterInstalled = false, refreshingActors = false;
   const clone = value => foundry.utils.deepClone(value);
   const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const isEnabled = provider => provider.enabled?.() !== false;
@@ -145,10 +145,21 @@ export function createRollInterventionApi(api) {
     installed = true; return true;
   }
   function refreshActors() {
-    const actors = new Map([...(game.actors ?? []), ...(canvas.tokens?.placeables ?? []).map(token => token.actor)]
-      .filter(Boolean).map(actor => [actor.uuid, actor]));
-    for (const actor of actors.values()) if ([...providers.values()].some(provider => provider.automationId
-      && isEnabled(provider) && api.automations.find(actor, provider.automationId))) actor.prepareData();
+    if (refreshingActors) return;
+    refreshingActors = true;
+    try {
+      // Linked Tokens share their world Actor; distinct synthetic instances must each be reset.
+      const actors = new Set([...(game.actors ?? []), ...(globalThis.canvas?.tokens?.placeables ?? [])
+        .map(token => token.actor)].filter(Boolean));
+      for (const actor of actors) if ([...providers.values()].some(provider => provider.automationId
+        && isEnabled(provider) && api.automations.find(actor, provider.automationId))) {
+        // V14 reset rebuilds system data from source and automatically prepares it. Preparing
+        // the old model directly redefines dnd5e 6's non-configurable compatibility getters.
+        actor.reset();
+      }
+    } finally {
+      refreshingActors = false;
+    }
   }
   return Object.freeze({ register, beforePublish, resolve, install, installEffectFilter, refreshActors,
     suppressLegacyChange, get installed() { return installed; } });
