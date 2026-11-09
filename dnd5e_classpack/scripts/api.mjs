@@ -30,7 +30,7 @@ import { hideActivity, installActivityVisibility } from "./api/activity-visibili
 import { moveTokens, registerMovementActions } from "./api/movement.mjs";
 import { tokenDocument } from "./api/geometry.mjs";
 import { checkCompatibility, isCompatibleVersion } from "./compatibility.mjs";
-import { registerMigrationSettings, notifyPendingMigrations, worldMigrations } from "./migrations/index.mjs";
+import { registerMigrationSettings, worldMigrations } from "./migrations/index.mjs";
 
 import { createAutomationRegistry } from "./api/automations.mjs";
 import { createResourceApi } from "./api/resources.mjs";
@@ -238,10 +238,10 @@ Hooks.once("ready", () => {
       api.lucky2014.prepareLegacyBridge();
       api.rollInterventions.install();
       api.rolls.install();
+      api.lucky2014.install();
       api.rollInterventions.refreshActors();
     }
   } catch (error) { log("error", "Roll automation initialization failed:", error); }
-  notifyPendingMigrations();
   Hooks.callAll("dnd5eClasspackReady", api);
 });
 

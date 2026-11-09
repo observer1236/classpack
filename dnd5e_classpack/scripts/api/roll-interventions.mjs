@@ -28,6 +28,7 @@ export function createRollInterventionApi(api) {
   async function beforePublish(context) {
     const ids = [];
     for (const provider of [...providers.values()].sort((a, b) => a.priority - b.priority)) {
+      if (context.providerIds && !context.providerIds.includes(provider.id)) continue;
       if (!context.roll.options.classpackInterventions?.[provider.id] && (await collect(provider, context)).length) ids.push(provider.id);
     }
     if (!ids.length) return;
@@ -37,6 +38,7 @@ export function createRollInterventionApi(api) {
       id: foundry.utils.randomID(), requester: game.user.id, actorUuid: context.actor.uuid,
       targetActorUuids: context.targets.map(actor => actor.uuid), activityUuid: context.activity?.uuid,
       providerIds: ids, type: context.type, rollMode: context.rollMode, label: context.label,
+      attackOutcome: context.attackOutcome ? clone(context.attackOutcome) : undefined,
       roll: clone(context.roll.toJSON())
     });
     return CONFIG.Dice.D20Roll.fromData(data);
@@ -53,7 +55,7 @@ export function createRollInterventionApi(api) {
       const targets = (await Promise.all((request.targetActorUuids ?? []).map(uuid => fromUuid(uuid))))
         .filter(target => target?.documentName === 'Actor');
       const context = { actor, targets, activity: request.activityUuid ? await fromUuid(request.activityUuid) : null,
-        type: request.type, rollMode: request.rollMode, label: request.label,
+        type: request.type, rollMode: request.rollMode, label: request.label, attackOutcome: request.attackOutcome,
         roll: CONFIG.Dice.D20Roll.fromData(clone(request.roll)) };
       api.rolls.primaryD20(context.roll);
       const receipts = [];

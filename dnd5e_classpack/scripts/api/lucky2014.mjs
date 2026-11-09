@@ -13,12 +13,20 @@ export function registerLucky2014(api) {
   const enabled = () => game.modules.get('midi-qol')?.active && game.settings.get(MODULE_ID, setting) === true;
   const selectionStrategy = (context, spender) => game.settings.get(MODULE_ID, 'lucky2014AutomaticSelection') === true
     ? (context.type === 'attack' && spender.actor.uuid !== context.actor.uuid ? 'lowest' : 'highest') : null;
+  const failuresOnly = () => game.settings.get(MODULE_ID, 'lucky2014FailuresOnly') === true;
   api.rollInterventions.register({
     id, automationId: id, label: '幸运', enabled, cancelOnMultipleActors: true, selectionStrategy,
     types: ['attack', 'check', 'save', 'skill', 'tool', 'concentration', 'deathSave', 'initiative'],
     collect(context) {
       const actors = new Map([context.actor, ...(context.type === 'attack' ? context.targets : [])].map(actor => [actor.uuid, actor]));
       return [...actors.values()].flatMap(actor => {
+        if (failuresOnly()) {
+          if (context.type === 'attack') {
+            const outcome = context.attackOutcome;
+            if (!outcome || !(actor.uuid === context.actor.uuid
+              ? outcome.missActorUuids.length : outcome.hitActorUuids.includes(actor.uuid))) return [];
+          } else if (context.roll.isFailure !== true) return [];
+        }
         const item = api.automations.find(actor, id);
         return item ? [{ actor, item, amount: 1 }] : [];
       });
@@ -49,6 +57,57 @@ export function registerLucky2014(api) {
       name: '幸运自动选骰', hint: '自己的检定取高，受击时取低；关闭后手动选骰。',
       scope: 'world', config: true, type: Boolean, default: true
     });
+    game.settings.register(MODULE_ID, 'lucky2014FailuresOnly', {
+      name: '幸运仅在失败或被命中时触发',
+      hint: '自己的攻击未命中、豁免或检定失败，或敌人的攻击命中自己时才询问。攻击使用 Midi 的命中判定；没有 DC 或尚未判定命中的掷骰不询问。关闭后恢复每次掷骰询问。',
+      scope: 'world', config: true, type: Boolean, default: false
+    });
+  }
+  let installed = false;
+  const resolving = new WeakSet();
+  function install() {
+    if (installed) return false;
+    Hooks.on('midi-qol.hitsChecked', async workflow => {
+      if (!failuresOnly() || !enabled() || !api.rolls.installed || !api.rollInterventions.installed
+        || workflow.readOnly || workflow.aborted || !workflow.attackRoll || resolving.has(workflow)
+        || workflow.attackRoll.options.classpackInterventions?.[id]) return;
+      // Midi 14.6.9 sets include undrawn targets through documents; older sets contain Tokens.
+      const targets = Array.from(workflow.targets.documents ?? workflow.targets);
+      const hit = target => workflow.hitTargets.has(target) || workflow.hitTargetsEC?.has(target);
+      const context = { roll: workflow.attackRoll, actor: workflow.actor, workflow, activity: workflow.activity,
+        targets: targets.map(target => target.actor).filter(Boolean), type: 'attack', providerIds: [id],
+        attackOutcome: {
+          hitActorUuids: targets.filter(hit).map(target => target.actor?.uuid).filter(Boolean),
+          missActorUuids: targets.filter(target => !hit(target)).map(target => target.actor?.uuid).filter(Boolean)
+        }, rollMode: workflow.attackRoll.options.rollMode ?? CONFIG.Dice.BasicRoll.getMessageMode(),
+        label: `${workflow.actor.name}：${workflow.item?.name ?? '攻击'}` };
+      resolving.add(workflow);
+      try {
+        const selected = await api.rollInterventions.beforePublish(context);
+        if (!selected || workflow.aborted) return;
+        await workflow.setAttackRoll(selected);
+        if (selected.options.classpackInterventions?.[id]?.state === 'selected') {
+          api.rolls.syncNaturalResults(workflow);
+          await workflow.processAttackRoll();
+          const options = workflow.workflowOptions;
+          const hadReactionOption = Object.hasOwn(options, 'noProvokeReaction');
+          const previous = options.noProvokeReaction;
+          options.noProvokeReaction = true;
+          try {
+            workflow.hitTargetsEC = new Set();
+            await workflow.checkHits();
+          } finally {
+            if (hadReactionOption) options.noProvokeReaction = previous;
+            else delete options.noProvokeReaction;
+          }
+        }
+        await workflow.displayAttackRoll();
+      } finally {
+        resolving.delete(workflow);
+      }
+    });
+    installed = true;
+    return true;
   }
   function prepareLegacyBridge() {
     if (!enabled()) return;
@@ -57,7 +116,7 @@ export function registerLucky2014(api) {
       prepare: api.rolls.prepare, candidates: api.rolls.d20Candidates,
       chooseDie: (roll, extra, selected) => api.rolls.selectD20(roll, { additionalResults: [extra], selected }) };
   }
-  return Object.freeze({ version, registerSettings, prepareLegacyBridge,
+  return Object.freeze({ version, registerSettings, prepareLegacyBridge, install,
     match: item => api.automations.match(item, id), findItem: actor => api.automations.find(actor, id),
     configure: (item, options) => api.automations.configure(item, id, options), remaining: api.resources.remaining,
     get installed() { return api.rolls.installed && api.rollInterventions.installed; },
