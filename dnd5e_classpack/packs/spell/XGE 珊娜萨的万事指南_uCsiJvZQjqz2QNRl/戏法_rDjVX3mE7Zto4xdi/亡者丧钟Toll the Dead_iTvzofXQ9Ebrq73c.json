@@ -36,7 +36,7 @@
         "img": "icons/magic/death/skull-energy-light-purple.webp",
         "type": "script",
         "scope": "global",
-        "command": "if (args[0].macroPass !== \"preDamageRoll\") return;\n\nconst target = workflow.targets.first();\nif (!target) return;\n\nconst hp = target.actor.system.attributes.hp;\nworkflow.activity.damage.parts[0].denomination =\n  hp.value < hp.max ? 12 : 8;",
+        "command": "if (args[0].macroPass !== \"preDamageRoll\") return;\n\nconst target = workflow.targets.documents[0];\nif (!target) return;\n\nconst hp = target.actor.system.attributes.hp;\nworkflow.activity.damage.parts[0].denomination =\n  hp.value < hp.max ? 12 : 8;",
         "author": "dvg25zW2MvzsvMOU",
         "ownership": {
           "default": 3

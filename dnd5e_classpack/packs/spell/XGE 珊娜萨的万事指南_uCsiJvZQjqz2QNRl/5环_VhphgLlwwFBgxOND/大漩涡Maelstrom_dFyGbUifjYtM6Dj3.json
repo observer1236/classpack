@@ -386,7 +386,7 @@
         "otherActivityId": "none",
         "macroData": {
           "name": "Midi豁免",
-          "command": "if (args[0].macroPass !== \"postActiveEffects\") return;\nif (!workflow.failedSaves.size) return;\n\nconst region = canvas.scene.regions.find(r =>\n  r.behaviors.some(b =>\n    b.type === \"midi-qol.regionActivity\"\n    && !b.disabled\n    && b.system.rules.some(rule =>\n      rule.trigger === \"turnStart\"\n      && rule.action === \"useActivity\"\n      && rule.targetUuid === workflow.activity.uuid\n    )\n  )\n);\n\nif (!region) return;\n\nawait dnd5eClasspack.pull(\n  workflow.failedSaves,\n  region,\n  10,\n  { animate: true, checkCollision: true }\n);"
+          "command": "if (args[0].macroPass !== \"postActiveEffects\") return;\nif (!workflow.failedSaves.count) return;\n\nconst failed = workflow.failedSaves.documents;\nconst scene = failed[0]?.parent;\nif (!scene) return;\nconst region = scene.regions.find(r =>\n  r.behaviors.some(b =>\n    b.type === \"midi-qol.regionActivity\"\n    && !b.disabled\n    && b.system.rules.some(rule =>\n      rule.trigger === \"turnStart\"\n      && rule.action === \"useActivity\"\n      && rule.targetUuid === workflow.activity.uuid\n    )\n  )\n);\n\nif (!region) return;\n\nawait dnd5eClasspack.pull(\n  new MidiQOL.TokenDocumentSet(failed.filter(t => t.parent?.uuid === scene.uuid)),\n  region,\n  10,\n  { animate: true, checkCollision: true }\n);"
         },
         "ignoreTraits": {
           "idi": false,

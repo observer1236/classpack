@@ -222,19 +222,18 @@ export function createDialogUtils(openDialog) {
 
     const options = [];
     for (const tokenish of targets) {
-      const token = tokenish?.document ?? tokenish;
-      const doc = token?.document ?? token;
-      const label = doc.name ?? token.name ?? "?";
-      const image = doc.texture?.src ?? doc.img ?? token.texture?.src ?? undefined;
+      const tokenDocument = tokenish?.documentName === "Token" ? tokenish : tokenish.document;
+      const label = tokenDocument.name ?? "?";
+      const image = tokenDocument.texture?.src ?? tokenDocument.img;
       const isFirst = options.length === 0;
       options.push({
         label,
-        name: token.id ?? doc.id ?? doc.uuid,
+        name: tokenDocument.id ?? tokenDocument.uuid,
         options: {
           image,
           isChecked: isFirst,
           options: normalizedSelectOptions,
-          maxAmount: maxes[token.id ?? doc.id] ?? maxAmount,
+          maxAmount: maxes[tokenDocument.id] ?? maxAmount,
           minAmount
         }
       });

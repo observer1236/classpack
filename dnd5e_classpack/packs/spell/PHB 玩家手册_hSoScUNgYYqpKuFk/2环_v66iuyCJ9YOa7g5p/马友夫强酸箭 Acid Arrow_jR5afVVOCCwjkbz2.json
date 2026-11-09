@@ -309,7 +309,7 @@
         "midiProperties": {
           "ignoreTraits": [],
           "triggeredActivityId": "伤害",
-          "triggeredActivityConditionText": "!workflow.hitTargets.size",
+          "triggeredActivityConditionText": "!(workflow.isHit || workflow.isHitEC)",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
           "confirmTargets": "default",
