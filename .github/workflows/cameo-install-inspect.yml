@@ -61,7 +61,13 @@ jobs:
             Start-Sleep -Seconds 5
           }
           ClickButton 'Finished'
-          Start-Sleep -Seconds 5
+          Write-Host '=== Installed path inventory ==='
+          Get-ChildItem 'C:\Program Files (x86)\CnCTools\OS SHP Builder' -Force | Select-Object FullName,Length,Mode | Format-List
+          Write-Host '=== all relevant processes ==='
+          Get-Process | Where-Object {$_.ProcessName -match 'shp|builder|setup'} | Select-Object ProcessName,Path,MainWindowTitle | Format-List
+          Start-Sleep -Seconds 12
+          DumpWin
+          Snap 'postinstall'
           $dir='C:\Program Files (x86)\CnCTools\OS SHP Builder'
           Get-ChildItem $dir -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Extension -eq '.exe'} | ForEach-Object {Write-Host "EXE: $($_.FullName)"}
           $candidates=Get-ChildItem $dir -Recurse -Filter '*.exe' | Where-Object {$_.Name -match 'SHP|Builder'}
