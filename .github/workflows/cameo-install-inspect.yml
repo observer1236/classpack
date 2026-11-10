@@ -60,7 +60,19 @@ jobs:
             if(-not (ClickButton 'Next')){break}
             Start-Sleep -Seconds 5
           }
-          Get-ChildItem 'C:\Program Files (x86)\CnCTools' -Recurse -ErrorAction SilentlyContinue | Select-Object -First 60 FullName | ForEach-Object {Write-Host $_.FullName}
+          ClickButton 'Finished'
+          Start-Sleep -Seconds 5
+          $dir='C:\Program Files (x86)\CnCTools\OS SHP Builder'
+          Get-ChildItem $dir -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Extension -eq '.exe'} | ForEach-Object {Write-Host "EXE: $($_.FullName)"}
+          $candidates=Get-ChildItem $dir -Recurse -Filter '*.exe' | Where-Object {$_.Name -match 'SHP|Builder'}
+          foreach($candidate in $candidates) {
+            Write-Host "Launch editor: $($candidate.FullName)"
+            $app=Start-Process $candidate.FullName -PassThru
+            Start-Sleep -Seconds 6
+            DumpWin
+            Snap 'editor'
+            break
+          }
       - uses: actions/upload-artifact@v4
         with:
           name: cameo-install-screenshots
