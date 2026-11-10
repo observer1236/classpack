@@ -1,0 +1,55 @@
+name: SHP Builder missing-file trace
+on:
+  push:
+    branches: [phobos-engrave-win32-build]
+    paths: ['.github/workflows/cameo-file-trace.yml']
+  workflow_dispatch:
+jobs:
+  trace:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - name: Install resources, capture missing file via Process Monitor
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          Add-Type -TypeDefinition @'
+          using System; using System.Runtime.InteropServices;
+          public class Native {[DllImport("user32.dll")] public static extern IntPtr SendMessage(IntPtr h,uint m,IntPtr w,IntPtr l);}
+          '@
+          Add-Type -AssemblyName UIAutomationClient
+          Add-Type -AssemblyName UIAutomationTypes
+          $dir='C:\Program Files (x86)\CnCTools\OS SHP Builder'
+          Invoke-WebRequest 'https://www.ppmsite.com/downloads/SHP_Builder337.exe' -OutFile "$env:RUNNER_TEMP\installer.exe" -TimeoutSec 60
+          $install=Start-Process "$env:RUNNER_TEMP\installer.exe" -PassThru
+          Start-Sleep 3
+          $root=[System.Windows.Automation.AutomationElement]::RootElement
+          $next=$root.FindFirst([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty,'Next'))
+          if($next){[Native]::SendMessage([IntPtr]$next.Current.NativeWindowHandle,0x00F5,[IntPtr]::Zero,[IntPtr]::Zero)|Out-Null}
+          Start-Sleep -Seconds 12
+          Stop-Process -Id $install.Id -Force
+          $svn='https://svn.ppmsite.com/filedetails.php?path=%2FOS+SHP+Builder+3.3x%2FSHP_Builder.exe&repname=OS+SHP+Builder'
+          Invoke-WebRequest $svn -OutFile "$dir\SHP_Builder.exe" -TimeoutSec 90
+          Invoke-WebRequest 'https://download.sysinternals.com/files/ProcessMonitor.zip' -OutFile "$env:RUNNER_TEMP\procmon.zip" -TimeoutSec 90
+          Expand-Archive "$env:RUNNER_TEMP\procmon.zip" -DestinationPath "$env:RUNNER_TEMP\procmon" -Force
+          $mon="$env:RUNNER_TEMP\procmon\Procmon64.exe"
+          & $mon /AcceptEula /Quiet /Minimized /BackingFile "$env:RUNNER_TEMP\trace.pml"
+          Start-Sleep -Seconds 3
+          $p=Start-Process "$dir\SHP_Builder.exe" -WorkingDirectory $dir -PassThru
+          Start-Sleep -Seconds 8
+          & $mon /Terminate
+          Start-Sleep 3
+          & $mon /OpenLog "$env:RUNNER_TEMP\trace.pml" /SaveAs "$env:GITHUB_WORKSPACE\trace.csv"
+          Start-Sleep -Seconds 8
+          $lines=Get-Content "$env:GITHUB_WORKSPACE\trace.csv" | Where-Object {$_ -match 'SHP_Builder.exe' -and $_ -match 'NAME NOT FOUND|PATH NOT FOUND|FILE NOT FOUND'}
+          Write-Host "Failed file opens: $($lines.Count)"
+          $lines | Select-Object -Last 100 | ForEach-Object {Write-Host $_}
+          $lines | Set-Content "$env:GITHUB_WORKSPACE\missing.txt"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cameo-missing-file-diagnostic
+          path: |
+            missing.txt
+            trace.csv
+          retention-days: 2
