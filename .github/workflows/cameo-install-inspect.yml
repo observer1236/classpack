@@ -1,0 +1,67 @@
+name: Install SHP Builder and inspect Cameo UI
+on:
+  push:
+    branches: [phobos-engrave-win32-build]
+    paths: ['.github/workflows/cameo-install-inspect.yml']
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: windows-2022
+    timeout-minutes: 15
+    steps:
+      - name: Install and inspect
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          Add-Type -AssemblyName UIAutomationClient
+          Add-Type -AssemblyName UIAutomationTypes
+          Add-Type -AssemblyName System.Windows.Forms
+          Add-Type -AssemblyName System.Drawing
+          Add-Type -TypeDefinition @'
+          using System; using System.Runtime.InteropServices;
+          public class Native {
+            [DllImport("user32.dll")] public static extern IntPtr SendMessage(IntPtr hWnd,uint msg,IntPtr wParam,IntPtr lParam);
+          }
+          '@
+          function DumpWin {
+            $root=[System.Windows.Automation.AutomationElement]::RootElement
+            $wins=$root.FindAll([System.Windows.Automation.TreeScope]::Children,[System.Windows.Automation.Condition]::TrueCondition)
+            foreach($w in $wins) {
+              $name=$w.Current.Name
+              if($name -notmatch 'SHP|Installation|Builder|Cameo|Repair|Error') {continue}
+              Write-Host "WINDOW: $name / $($w.Current.ClassName)"
+              $els=$w.FindAll([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.Condition]::TrueCondition)
+              foreach($e in $els){if($e.Current.Name -or $e.Current.ClassName -match 'TButton|TEdit') {Write-Host "  $($e.Current.ControlType.ProgrammaticName) [$($e.Current.ClassName)] $($e.Current.Name)" }}
+            }
+          }
+          function ClickButton($pattern) {
+            $root=[System.Windows.Automation.AutomationElement]::RootElement
+            $e=$root.FindFirst([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty,$pattern))
+            if(!$e){Write-Host "Button not found $pattern";return $false}
+            Write-Host "Clicking $pattern"
+            [Native]::SendMessage([IntPtr]$e.Current.NativeWindowHandle,0x00F5,[IntPtr]::Zero,[IntPtr]::Zero)|Out-Null
+            return $true
+          }
+          function Snap($n) {
+            $b=[System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+            $bitmap=[System.Drawing.Bitmap]::new($b.Width,$b.Height)
+            $g=[System.Drawing.Graphics]::FromImage($bitmap)
+            $g.CopyFromScreen($b.Location,[System.Drawing.Point]::Empty,$b.Size)
+            $bitmap.Save("$env:GITHUB_WORKSPACE\step-$n.png")
+            $g.Dispose();$bitmap.Dispose()
+          }
+          Invoke-WebRequest 'https://www.ppmsite.com/downloads/SHP_Builder337.exe' -OutFile "$env:RUNNER_TEMP\SHP_Builder337.exe"
+          $p=Start-Process "$env:RUNNER_TEMP\SHP_Builder337.exe" -PassThru
+          Start-Sleep 5
+          for($i=0;$i -lt 7;$i++){
+            Write-Host "--- STEP $i ---"
+            DumpWin
+            Snap $i
+            if(-not (ClickButton 'Next')){break}
+            Start-Sleep -Seconds 5
+          }
+          Get-ChildItem 'C:\Program Files (x86)\CnCTools' -Recurse -ErrorAction SilentlyContinue | Select-Object -First 60 FullName | ForEach-Object {Write-Host $_.FullName}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cameo-install-screenshots
+          path: step-*.png
