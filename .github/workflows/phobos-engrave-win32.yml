@@ -1,23 +1,66 @@
-name: Phobos Engrave Win32 build probe
+name: Phobos Engrave Build48 experimental Win32
 on:
   push:
     branches:
       - phobos-engrave-win32-build
   workflow_dispatch:
+
 jobs:
-  toolchain:
+  engrave-win32:
     runs-on: windows-2022
     permissions:
       contents: read
     steps:
-      - name: Check Windows MSVC toolchain
+      - name: Checkout Phobos Build 48 and YRpp submodules
+        uses: actions/checkout@v4
+        with:
+          repository: Phobos-developers/Phobos
+          ref: build-48
+          submodules: recursive
+          fetch-depth: 0
+          path: phobos
+
+      - name: Check compiler, SDK and submodules
         shell: pwsh
         run: |
-          Write-Host "OS=$env:RUNNER_OS"
-          Write-Host "ARCH=$env:RUNNER_ARCH"
+          $ErrorActionPreference = 'Stop'
           $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
-          if (Test-Path $vswhere) {
-            & $vswhere -latest -products * -property installationPath
+          & $vswhere -latest -products * -property installationPath
+          Get-ChildItem "C:\Program Files (x86)\Windows Kits\10\Include" | Select-Object -Last 3
+          Push-Location phobos
+          git submodule status
+          Pop-Location
+
+      - name: Download and apply the historical PR 1293 patch to Build 48
+        id: apply-pr
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Push-Location phobos
+          Invoke-WebRequest "https://github.com/Phobos-developers/Phobos/pull/1293.diff" -OutFile "$env:RUNNER_TEMP\engrave-1293.diff"
+          $diff = Get-Item "$env:RUNNER_TEMP\engrave-1293.diff"
+          Write-Host "Downloaded PR patch: $($diff.Length) bytes"
+          git apply --3way --whitespace=nowarn "$env:RUNNER_TEMP\engrave-1293.diff"
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "::error::Historical PR does not apply cleanly to Build 48, needs a source port"
+            exit 1
           }
-          Get-Command msbuild.exe -ErrorAction SilentlyContinue | Format-List
-          Write-Host "Windows compiler probe complete"
+          git status --short
+          Pop-Location
+
+      - name: Compile Win32 Debug DLL
+        if: success()
+        shell: cmd
+        run: |
+          cd phobos
+          call scripts\build_debug.bat
+
+      - name: Upload compiled DLL + PDB
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Phobos-Build48-Engrave-experimental
+          path: |
+            phobos/Debug/Phobos.dll
+            phobos/Debug/Phobos.pdb
+          if-no-files-found: error
