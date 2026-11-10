@@ -1,0 +1,45 @@
+name: Inspect Cameo Generator UI
+on:
+  push:
+    branches: [phobos-engrave-win32-build]
+    paths: ['.github/workflows/cameo-ui-inspect.yml']
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: windows-2022
+    timeout-minutes: 12
+    steps:
+      - name: Launch and inspect SHP Builder windows
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          Invoke-WebRequest 'https://www.ppmsite.com/downloads/SHP_Builder337.exe' -OutFile "$env:RUNNER_TEMP\SHP_Builder337.exe"
+          Add-Type -AssemblyName UIAutomationClient
+          Add-Type -AssemblyName UIAutomationTypes
+          $p=Start-Process -FilePath "$env:RUNNER_TEMP\SHP_Builder337.exe" -PassThru
+          Start-Sleep -Seconds 5
+          $root=[System.Windows.Automation.AutomationElement]::RootElement
+          $cond=[System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::ProcessIdProperty,$p.Id)
+          $wins=$root.FindAll([System.Windows.Automation.TreeScope]::Children,$cond)
+          Write-Host "Windows count $($wins.Count)"
+          foreach($w in $wins){
+            Write-Host "WINDOW: $($w.Current.Name) / $($w.Current.ClassName)"
+            $elements=$w.FindAll([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.Condition]::TrueCondition)
+            Write-Host "Elements count $($elements.Count)"
+            for($i=0;$i -lt [Math]::Min($elements.Count,300);$i++){
+              $e=$elements.Item($i)
+              Write-Host ("{0:D3} Type={1} Name='{2}' Class='{3}' Automation='{4}'" -f $i,$e.Current.ControlType.ProgrammaticName,$e.Current.Name,$e.Current.ClassName,$e.Current.AutomationId)
+            }
+          }
+          Add-Type -AssemblyName System.Windows.Forms
+          Add-Type -AssemblyName System.Drawing
+          $b=[System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+          $bitmap=[System.Drawing.Bitmap]::new($b.Width,$b.Height)
+          $g=[System.Drawing.Graphics]::FromImage($bitmap)
+          $g.CopyFromScreen($b.Location,[System.Drawing.Point]::Empty,$b.Size)
+          $bitmap.Save("$env:GITHUB_WORKSPACE\desktop.png")
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cameo-ui-desktop
+          path: desktop.png
+          if-no-files-found: error
