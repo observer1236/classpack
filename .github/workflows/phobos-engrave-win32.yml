@@ -83,19 +83,19 @@ jobs:
           git status --short
           Pop-Location
 
-      - name: Compile Win32 Debug DLL
+      - name: Compile Win32 Release DLL
         if: success()
         shell: cmd
         run: |
           cd phobos
-          call scripts\build_debug.bat
+          call scripts\build_release.bat
 
-      - name: Upload compiled DLL + PDB
+      - name: Upload compiled Release DLL + optional PDB
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: Phobos-Build48-Engrave-experimental
+          name: Phobos-Build48-Engrave-Release-experimental
           path: |
-            phobos/Debug/Phobos.dll
-            phobos/Debug/Phobos.pdb
+            phobos/Release/Phobos.dll
+            phobos/Release/Phobos.pdb
           if-no-files-found: error
