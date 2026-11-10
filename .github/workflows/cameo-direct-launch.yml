@@ -59,6 +59,17 @@ jobs:
           Write-Host "Resource count: $((Get-ChildItem $installed -Recurse -File -ErrorAction SilentlyContinue | Measure-Object).Count)"
           $url='https://svn.ppmsite.com/filedetails.php?path=%2FOS+SHP+Builder+3.3x%2FSHP_Builder.exe&repname=OS+SHP+Builder'
           Invoke-WebRequest $url -OutFile "$installed\SHP_Builder.exe" -TimeoutSec 90
+          $missing=@('Images/Brush_1.bmp','Images/Brush_2.bmp','Images/Brush_3.bmp','Images/Brush_4.bmp','Images/Brush_5.bmp','Palettes/YR/isodes.pal')
+          foreach($relative in $missing){
+            $dest=Join-Path $installed ($relative -replace '/','\')
+            New-Item -ItemType Directory -Force -Path (Split-Path $dest) | Out-Null
+            $enc=[uri]::EscapeDataString('/OS SHP Builder 3.3x/'+$relative)
+            $url="https://svn.ppmsite.com/filedetails.php?path=$enc&repname=OS+SHP+Builder"
+            try {
+              Invoke-WebRequest $url -OutFile $dest -TimeoutSec 60
+              Write-Host "Obtained $relative $((Get-Item $dest).Length) bytes"
+            } catch {Write-Host "Failed to obtain $relative $_"}
+          }
           $main=Start-Process "$installed\SHP_Builder.exe" -WorkingDirectory $installed -PassThru
           Write-Host "Launched SVN editor PID=$($main.Id)"
           Start-Sleep -Seconds 5
