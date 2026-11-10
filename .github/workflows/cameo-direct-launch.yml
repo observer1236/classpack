@@ -83,10 +83,16 @@ jobs:
                 New-Item -ItemType Directory -Force $out|Out-Null
                 tar -xf $archive -C $out
                 Write-Host "Archive contents: $((Get-ChildItem $out -Recurse -File).Count)"
+                Get-ChildItem $out -Recurse -File | Select-Object -First 5 | ForEach-Object { Write-Host "ARCHIVE SAMPLE: $($_.FullName)" }
                 Get-ChildItem $out -Recurse -File | ForEach-Object {
                   $idx=$_.FullName.IndexOf('\'+$folder+'\')
-                  if ($idx -ge 0){
+                  if ($idx -lt 0){
+                    $rel=Join-Path $folder ($_.FullName.Substring($out.Length).TrimStart('\'))
+                    Write-Host "Fallback resource path: $rel"
+                  } else {
                     $rel=$_.FullName.Substring($idx+1)
+                  }
+                  if ($rel){
                     $dest=Join-Path $installed $rel
                     New-Item -ItemType Directory -Force (Split-Path $dest)|Out-Null
                     Copy-Item $_.FullName $dest -Force
