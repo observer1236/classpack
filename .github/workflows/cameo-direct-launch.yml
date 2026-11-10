@@ -1,0 +1,74 @@
+name: Direct SHP Builder launch diagnostic
+on:
+  push:
+    branches: [phobos-engrave-win32-build]
+    paths: ['.github/workflows/cameo-direct-launch.yml']
+  workflow_dispatch:
+jobs:
+  direct-launch:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - name: Setup editor and inspect its true launch
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          Add-Type -AssemblyName UIAutomationClient
+          Add-Type -AssemblyName UIAutomationTypes
+          Add-Type -AssemblyName System.Windows.Forms
+          Add-Type -AssemblyName System.Drawing
+          Add-Type -TypeDefinition @'
+          using System;
+          using System.Runtime.InteropServices;
+          public class Native {
+            [DllImport("user32.dll")] public static extern IntPtr SendMessage(IntPtr hwnd,uint msg,IntPtr w,IntPtr l);
+          }
+          '@
+          function Dump($label) {
+            Write-Host "========== $label =========="
+            Get-Process | Where-Object {$_.ProcessName -match 'shp|builder|install|setup'} | Select-Object Id,ProcessName,Path,MainWindowTitle | Format-Table
+            $r=[System.Windows.Automation.AutomationElement]::RootElement
+            $ws=$r.FindAll([System.Windows.Automation.TreeScope]::Children,[System.Windows.Automation.Condition]::TrueCondition)
+            foreach($w in $ws){
+              if($w.Current.Name -match 'SHP|Builder|Error|Installation|Repair|Warning|Exception|Application') {
+                Write-Host "WINDOW: $($w.Current.Name) / $($w.Current.ClassName)"
+                $es=$w.FindAll([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.Condition]::TrueCondition)
+                foreach($e in $es) {if($e.Current.Name){Write-Host "  $($e.Current.ControlType.ProgrammaticName) $($e.Current.Name)"}}
+              }
+            }
+            $b=[System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+            $bmp=[System.Drawing.Bitmap]::new($b.Width,$b.Height)
+            $g=[System.Drawing.Graphics]::FromImage($bmp)
+            $g.CopyFromScreen($b.Location,[System.Drawing.Point]::Empty,$b.Size)
+            $bmp.Save("$env:GITHUB_WORKSPACE\$label.png")
+            $g.Dispose();$bmp.Dispose()
+          }
+          $dir="$env:RUNNER_TEMP\CameoTool"
+          New-Item -ItemType Directory -Force -Path $dir | Out-Null
+          Invoke-WebRequest 'https://www.ppmsite.com/downloads/SHP_Builder337.exe' -OutFile "$dir\installer.exe" -TimeoutSec 60
+          $p=Start-Process "$dir\installer.exe" -WorkingDirectory $dir -PassThru
+          Start-Sleep -Seconds 3
+          $root=[System.Windows.Automation.AutomationElement]::RootElement
+          $e=$root.FindFirst([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty,'Next'))
+          if($e){[Native]::SendMessage([IntPtr]$e.Current.NativeWindowHandle,0x00F5,[IntPtr]::Zero,[IntPtr]::Zero)|Out-Null}
+          Start-Sleep -Seconds 18
+          Dump 'installer-partial'
+          $p.Refresh()
+          if(-not $p.HasExited){Stop-Process -Id $p.Id -Force}
+          $installed='C:\Program Files (x86)\CnCTools\OS SHP Builder'
+          Write-Host "Resource count: $((Get-ChildItem $installed -Recurse -File -ErrorAction SilentlyContinue | Measure-Object).Count)"
+          $url='https://svn.ppmsite.com/filedetails.php?path=%2FOS+SHP+Builder+3.3x%2FSHP_Builder.exe&repname=OS+SHP+Builder'
+          Invoke-WebRequest $url -OutFile "$installed\SHP_Builder.exe" -TimeoutSec 90
+          $main=Start-Process "$installed\SHP_Builder.exe" -WorkingDirectory $installed -PassThru
+          Write-Host "Launched SVN editor PID=$($main.Id)"
+          Start-Sleep -Seconds 5
+          $main.Refresh();Write-Host "Editor HasExited=$($main.HasExited)"
+          if($main.HasExited){Write-Host "ExitCode=$($main.ExitCode)"}
+          Dump 'direct-5s'
+          Start-Sleep -Seconds 10
+          Dump 'direct-15s'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: direct-launch-screenshots
+          path: '*.png'
