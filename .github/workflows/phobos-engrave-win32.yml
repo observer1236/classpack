@@ -71,6 +71,15 @@ jobs:
           $remaining = @(git diff --name-only --diff-filter=U)
           if ($remaining.Count -ne 0) { throw "Unresolved conflicts remain" }
           git add -A
+          # PR 1293 predates the Build48 MapClass::Instance reference migration.
+          $engravePath = "src/Ext/Bullet/Trajectories/EngraveTrajectory.cpp"
+          $engraveSource = [System.IO.File]::ReadAllText((Resolve-Path $engravePath))
+          $oldCount = ([regex]::Matches($engraveSource, "MapClass::Instance->")).Count
+          Write-Host "Migrating $oldCount old MapClass::Instance pointer accesses"
+          if ($oldCount -lt 2) { throw "Engrave MapClass usage changed; review manually" }
+          $engraveSource = $engraveSource.Replace("MapClass::Instance->", "MapClass::Instance.")
+          [System.IO.File]::WriteAllText((Resolve-Path $engravePath), $engraveSource)
+          git add -- $engravePath
           git status --short
           Pop-Location
 
