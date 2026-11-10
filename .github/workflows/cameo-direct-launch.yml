@@ -43,20 +43,9 @@ jobs:
             $bmp.Save("$env:GITHUB_WORKSPACE\$label.png")
             $g.Dispose();$bmp.Dispose()
           }
-          $dir="$env:RUNNER_TEMP\CameoTool"
-          New-Item -ItemType Directory -Force -Path $dir | Out-Null
-          Invoke-WebRequest 'https://www.ppmsite.com/downloads/SHP_Builder337.exe' -OutFile "$dir\installer.exe" -TimeoutSec 60
-          $p=Start-Process "$dir\installer.exe" -WorkingDirectory $dir -PassThru
-          Start-Sleep -Seconds 3
-          $root=[System.Windows.Automation.AutomationElement]::RootElement
-          $e=$root.FindFirst([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty,'Next'))
-          if($e){[Native]::SendMessage([IntPtr]$e.Current.NativeWindowHandle,0x00F5,[IntPtr]::Zero,[IntPtr]::Zero)|Out-Null}
-          Start-Sleep -Seconds 18
-          Dump 'installer-partial'
-          $p.Refresh()
-          if(-not $p.HasExited){Stop-Process -Id $p.Id -Force}
           $installed='C:\Program Files (x86)\CnCTools\OS SHP Builder'
-          Write-Host "Resource count: $((Get-ChildItem $installed -Recurse -File -ErrorAction SilentlyContinue | Measure-Object).Count)"
+          New-Item -ItemType Directory -Force -Path $installed | Out-Null
+          Write-Host "Using clean offline SVN resource directory"
           $url='https://svn.ppmsite.com/filedetails.php?path=%2FOS+SHP+Builder+3.3x%2FSHP_Builder.exe&repname=OS+SHP+Builder'
           Invoke-WebRequest $url -OutFile "$installed\SHP_Builder.exe" -TimeoutSec 90
           $missing=@('Images/Brush_1.bmp','Images/Brush_2.bmp','Images/Brush_3.bmp','Images/Brush_4.bmp','Images/Brush_5.bmp','Palettes/YR/isodes.pal')
@@ -117,9 +106,9 @@ jobs:
           $main.Refresh();Write-Host "Editor HasExited=$($main.HasExited)"
           if($main.HasExited){Write-Host "ExitCode=$($main.ExitCode)"}
           $root=[System.Windows.Automation.AutomationElement]::RootElement
-          $ok=$root.FindFirst([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty,'OK'))
+          $ok=$root.FindFirst([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty,'Cancel'))
           if($ok) {
-            Write-Host "Found preferences OK; enabled=$($ok.Current.IsEnabled)"
+            Write-Host "Found preferences Cancel; enabled=$($ok.Current.IsEnabled)"
             [Native]::SendMessage([IntPtr]$ok.Current.NativeWindowHandle,0x00F5,[IntPtr]::Zero,[IntPtr]::Zero)|Out-Null
           }
           Start-Sleep -Seconds 4
