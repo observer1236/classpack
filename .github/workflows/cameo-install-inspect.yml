@@ -7,7 +7,7 @@ on:
 jobs:
   probe:
     runs-on: windows-2022
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Install and inspect
         shell: pwsh
@@ -60,6 +60,17 @@ jobs:
             if(-not (ClickButton 'Next')){break}
             Start-Sleep -Seconds 5
           }
+          Write-Host 'Waiting for installer to finish downloading all resources...'
+          $finished=$false
+          for($t=0;$t -lt 90;$t++){
+            Start-Sleep -Seconds 5
+            $root=[System.Windows.Automation.AutomationElement]::RootElement
+            $e=$root.FindFirst([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty,'Finished'))
+            if($e -and $e.Current.IsEnabled){Write-Host "Installer finished after polling $t";$finished=$true;break}
+            if($t % 6 -eq 0){Write-Host "Installer ongoing $($t*5) seconds"}
+          }
+          Snap 'installation-completed'
+          if(-not $finished){ throw 'Installer did not complete in polling window' }
           ClickButton 'Finished'
           Write-Host '=== Installed path inventory ==='
           Get-ChildItem 'C:\Program Files (x86)\CnCTools\OS SHP Builder' -Force | Select-Object FullName,Length,Mode | Format-List
