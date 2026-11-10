@@ -70,7 +70,12 @@ jobs:
           Snap 'postinstall'
           $dir='C:\Program Files (x86)\CnCTools\OS SHP Builder'
           Get-ChildItem $dir -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Extension -eq '.exe'} | ForEach-Object {Write-Host "EXE: $($_.FullName)"}
-          Copy-Item "$env:RUNNER_TEMP\SHP_Builder337.exe" "$dir\SHP_Builder.exe" -Force
+          $svn='https://svn.ppmsite.com/filedetails.php?path=%2FOS+SHP+Builder+3.3x%2FSHP_Builder.exe&repname=OS+SHP+Builder'
+          Invoke-WebRequest $svn -OutFile "$dir\SHP_Builder.exe" -TimeoutSec 120
+          $file=Get-Item "$dir\SHP_Builder.exe"
+          Write-Host "SVN editor bytes=$($file.Length)"
+          $first=[IO.File]::ReadAllBytes($file.FullName)
+          if($first[0] -ne 77 -or $first[1] -ne 90) {throw 'SVN executable invalid'}
           Write-Host 'Launching installed editor from resources directory'
           $real=Start-Process -FilePath "$dir\SHP_Builder.exe" -WorkingDirectory $dir -PassThru
           Start-Sleep -Seconds 6
