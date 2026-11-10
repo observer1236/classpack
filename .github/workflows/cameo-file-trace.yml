@@ -30,6 +30,59 @@ jobs:
           Stop-Process -Id $install.Id -Force
           $svn='https://svn.ppmsite.com/filedetails.php?path=%2FOS+SHP+Builder+3.3x%2FSHP_Builder.exe&repname=OS+SHP+Builder'
           Invoke-WebRequest $svn -OutFile "$dir\SHP_Builder.exe" -TimeoutSec 90
+          $missing=@('Images/Brush_1.bmp','Images/Brush_2.bmp','Images/Brush_3.bmp','Images/Brush_4.bmp','Images/Brush_5.bmp','Palettes/YR/isodes.pal')
+          foreach($relative in $missing){
+            $dest=Join-Path $dir ($relative -replace '/','\')
+            New-Item -ItemType Directory -Force -Path (Split-Path $dest) | Out-Null
+            $enc=[uri]::EscapeDataString('/OS SHP Builder 3.3x/'+$relative)
+            $url="https://svn.ppmsite.com/filedetails.php?path=$enc&repname=OS+SHP+Builder"
+            try {
+              Invoke-WebRequest $url -OutFile $dest -TimeoutSec 60
+              Write-Host "Obtained $relative $((Get-Item $dest).Length) bytes"
+            } catch {Write-Host "Failed to obtain $relative $_"}
+          }
+          foreach($folder in @('Images','CameoBG','cscheme','Cursors','Palettes','winpal','Docs')){
+            $path=[uri]::EscapeDataString("/OS SHP Builder 3.3x/$folder/")
+            $url="https://svn.ppmsite.com/dl.php?isdir=1&path=$path&peg=113&repname=OS+SHP+Builder&rev=113"
+            $archive="$env:RUNNER_TEMP\$folder.bundle"
+            try {
+              Invoke-WebRequest -Uri $url -OutFile $archive -TimeoutSec 90
+              $size=(Get-Item $archive).Length
+              Write-Host "Downloaded directory $folder archive $size bytes"
+              if ($size -gt 1000) {
+                $out="$env:RUNNER_TEMP\svn-$folder"
+                New-Item -ItemType Directory -Force $out|Out-Null
+                tar -xf $archive -C $out
+                Write-Host "Archive contents: $((Get-ChildItem $out -Recurse -File).Count)"
+                Get-ChildItem $out -Recurse -File | Select-Object -First 5 | ForEach-Object { Write-Host "ARCHIVE SAMPLE: $($_.FullName)" }
+                Get-ChildItem $out -Recurse -File | ForEach-Object {
+                  $idx=$_.FullName.IndexOf('\'+$folder+'\')
+                  if ($idx -lt 0){
+                    $sub=$_.FullName.Substring($out.Length).TrimStart('\')
+                    $sub=$sub -replace '^[^\\]+\\',''
+                    $rel=Join-Path $folder $sub
+                    Write-Host "Fallback resource path: $rel"
+                  } else {
+                    $rel=$_.FullName.Substring($idx+1)
+                  }
+                  if ($rel){
+                    $dest=Join-Path $dir $rel
+                    New-Item -ItemType Directory -Force (Split-Path $dest)|Out-Null
+                    Copy-Item $_.FullName $dest -Force
+                  }
+                }
+              }
+            }catch {Write-Host "Directory archive $folder failed: $_"}
+          }
+          foreach($name in @('commlist.ini','structure.xml')){
+            $path=[uri]::EscapeDataString("/OS SHP Builder 3.3x/$name")
+            try {
+              Invoke-WebRequest "https://svn.ppmsite.com/filedetails.php?path=$path&repname=OS+SHP+Builder" -OutFile (Join-Path $dir $name) -TimeoutSec 60
+              Write-Host "Installed root $name"
+            }catch{Write-Host "Root $name unavailable"}
+          }
+          Write-Host "Total resource files: $((Get-ChildItem $dir -Recurse -File).Count)"
+
           Invoke-WebRequest 'https://download.sysinternals.com/files/ProcessMonitor.zip' -OutFile "$env:RUNNER_TEMP\procmon.zip" -TimeoutSec 90
           Expand-Archive "$env:RUNNER_TEMP\procmon.zip" -DestinationPath "$env:RUNNER_TEMP\procmon" -Force
           $mon="$env:RUNNER_TEMP\procmon\Procmon64.exe"
