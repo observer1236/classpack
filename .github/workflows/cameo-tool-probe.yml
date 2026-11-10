@@ -1,0 +1,30 @@
+name: Probe OS SHP Builder cameo tool
+on:
+  push:
+    branches: [phobos-engrave-win32-build]
+    paths: ['.github/workflows/cameo-tool-probe.yml']
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: windows-2022
+    timeout-minutes: 12
+    steps:
+      - name: Download and launch official SHP Builder
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          $url='https://www.ppmsite.com/downloads/SHP_Builder337.exe'
+          $exe=Join-Path $env:RUNNER_TEMP 'SHP_Builder337.exe'
+          Invoke-WebRequest -Uri $url -OutFile $exe -TimeoutSec 90
+          $sig=[IO.File]::ReadAllBytes($exe)
+          Write-Host "Downloaded $($sig.Length) bytes; MZ=$([char]$sig[0])$([char]$sig[1])"
+          if ($sig.Length -lt 100000 -or $sig[0] -ne 77 -or $sig[1] -ne 90) { throw 'Invalid executable' }
+          Write-Host "Signature check: $((Get-AuthenticodeSignature $exe).Status)"
+          $p=Start-Process -FilePath $exe -PassThru -WorkingDirectory $env:RUNNER_TEMP
+          Write-Host "Launched PID=$($p.Id)"
+          Start-Sleep -Seconds 12
+          $p.Refresh()
+          Write-Host "HasExited=$($p.HasExited)"
+          if ($p.HasExited) { Write-Host "ExitCode=$($p.ExitCode)" }
+          Write-Host 'Process list:'
+          Get-Process | Where-Object {$_.ProcessName -match 'SHP|Builder'} | Select-Object ProcessName,Id,MainWindowTitle | Format-Table
