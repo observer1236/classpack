@@ -116,6 +116,23 @@ jobs:
           Start-Sleep -Seconds 5
           $main.Refresh();Write-Host "Editor HasExited=$($main.HasExited)"
           if($main.HasExited){Write-Host "ExitCode=$($main.ExitCode)"}
+          $root=[System.Windows.Automation.AutomationElement]::RootElement
+          $ok=$root.FindFirst([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.PropertyCondition]::new([System.Windows.Automation.AutomationElement]::NameProperty,'OK'))
+          if($ok) {
+            Write-Host "Found preferences OK; enabled=$($ok.Current.IsEnabled)"
+            [Native]::SendMessage([IntPtr]$ok.Current.NativeWindowHandle,0x00F5,[IntPtr]::Zero,[IntPtr]::Zero)|Out-Null
+          }
+          Start-Sleep -Seconds 4
+          $windows=$root.FindAll([System.Windows.Automation.TreeScope]::Children,[System.Windows.Automation.Condition]::TrueCondition)
+          foreach($window in $windows){
+            if ($window.Current.Name -match 'SHP|Builder|Preferences|Open Source') {
+              Write-Host "MAIN: $($window.Current.Name) / $($window.Current.ClassName)"
+              $els=$window.FindAll([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.Condition]::TrueCondition)
+              Write-Host "Controls: $($els.Count)"
+              foreach($el in $els) { if($el.Current.Name) {Write-Host "CTRL: $($el.Current.ControlType.ProgrammaticName) - $($el.Current.Name)" }}
+            }
+          }
+          Dump 'after-preferences'
           Dump 'direct-5s'
           Start-Sleep -Seconds 10
           Dump 'direct-15s'
