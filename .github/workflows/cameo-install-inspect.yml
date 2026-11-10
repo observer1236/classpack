@@ -70,6 +70,12 @@ jobs:
           Snap 'postinstall'
           $dir='C:\Program Files (x86)\CnCTools\OS SHP Builder'
           Get-ChildItem $dir -Recurse -ErrorAction SilentlyContinue | Where-Object {$_.Extension -eq '.exe'} | ForEach-Object {Write-Host "EXE: $($_.FullName)"}
+          Copy-Item "$env:RUNNER_TEMP\SHP_Builder337.exe" "$dir\SHP_Builder.exe" -Force
+          Write-Host 'Launching installed editor from resources directory'
+          $real=Start-Process -FilePath "$dir\SHP_Builder.exe" -WorkingDirectory $dir -PassThru
+          Start-Sleep -Seconds 6
+          DumpWin
+          Snap 'actualeditor'
           $candidates=Get-ChildItem $dir -Recurse -Filter '*.exe' | Where-Object {$_.Name -match 'SHP|Builder'}
           foreach($candidate in $candidates) {
             Write-Host "Launch editor: $($candidate.FullName)"
