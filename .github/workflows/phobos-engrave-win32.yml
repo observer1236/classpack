@@ -40,11 +40,37 @@ jobs:
           Invoke-WebRequest "https://github.com/Phobos-developers/Phobos/pull/1293.diff" -OutFile "$env:RUNNER_TEMP\engrave-1293.diff"
           $diff = Get-Item "$env:RUNNER_TEMP\engrave-1293.diff"
           Write-Host "Downloaded PR patch: $($diff.Length) bytes"
-          git apply --3way --whitespace=nowarn "$env:RUNNER_TEMP\engrave-1293.diff"
+          git apply --3way --whitespace=nowarn "$env:RUNNER_TEMP\\engrave-1293.diff"
           if ($LASTEXITCODE -ne 0) {
-            Write-Host "::error::Historical PR does not apply cleanly to Build 48, needs a source port"
-            exit 1
+            Write-Host "Resolve known Build48/PR conflicts; preserve the Build48 consolidated FLH hook."
+            $expected = @(
+              'CREDITS.md',
+              'docs/New-or-Enhanced-Logics.md',
+              'docs/Whats-New.md',
+              'src/Ext/Techno/Hooks.Firing.cpp'
+            )
+            $unmerged = @(git diff --name-only --diff-filter=U)
+            Write-Host "Unmerged: $($unmerged -join ', ')"
+            foreach ($path in $unmerged) {
+              if ($path -notin $expected) { throw "Unexpected PR conflict in $path" }
+              git checkout --ours -- $path
+              if ($LASTEXITCODE -ne 0) { throw "Unable to restore Build48 version of $path" }
+              git add -- $path
+            }
+            $hookPath = "src/Ext/Techno/Hooks.Firing.cpp"
+            $text = [System.IO.File]::ReadAllText((Resolve-Path $hookPath))
+            $needle = '*pCoords = TechnoExt::GetFLHAbsoluteCoords(pThis, flh, allowOnTurret);'
+            $matches = [regex]::Matches($text, [regex]::Escape($needle))
+            if ($matches.Count -ne 1) { throw "Build48 consolidated FLH hook no longer matches" }
+            $replacement = 'if (auto const pExt = TechnoExt::ExtMap.TryFind(pThis))' + "`r`n" +
+              "`t`tpExt->LastWeaponFLH = flh;" + "`r`n`t" + $needle
+            $text = $text.Replace($needle, $replacement)
+            [System.IO.File]::WriteAllText((Resolve-Path $hookPath), $text)
+            git add -- $hookPath
           }
+          $remaining = @(git diff --name-only --diff-filter=U)
+          if ($remaining.Count -ne 0) { throw "Unresolved conflicts remain" }
+          git add -A
           git status --short
           Pop-Location
 
