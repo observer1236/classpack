@@ -103,7 +103,7 @@ jobs:
               }
             }catch {Write-Host "Directory archive $folder failed: $_"}
           }
-          foreach($name in @('commlist.ini','structure.xml')){
+          foreach($name in @('commlist.ini','structure.xml','SequenceGenerator.asdf','SHP_BUILDER.dat','SHP_Builder.cfg','grids.bmp','ts.bmp')){
             $path=[uri]::EscapeDataString("/OS SHP Builder 3.3x/$name")
             try {
               Invoke-WebRequest "https://svn.ppmsite.com/filedetails.php?path=$path&repname=OS+SHP+Builder" -OutFile (Join-Path $installed $name) -TimeoutSec 60
