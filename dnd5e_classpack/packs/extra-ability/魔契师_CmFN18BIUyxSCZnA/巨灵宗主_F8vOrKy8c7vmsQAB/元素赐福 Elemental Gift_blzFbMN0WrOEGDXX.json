@@ -1,11 +1,11 @@
 {
   "_id": "blzFbMN0WrOEGDXX",
-  "name": "元素赐福 Elemental Gift",
+  "name": "元素赐福：飞行 Elemental Gift: Flight",
   "type": "feat",
   "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
   "system": {
     "description": {
-      "value": "<p>你逐渐显露出你的巨灵宗主的特质。你对一种特定的伤害类型具有抗性，具体由你的宗主类型决定：钝击（土巨灵）、雷鸣（气巨灵）、火焰（火巨灵）、寒冷（水巨灵）。</p>\n<p> 此外，以一个附赠动作，你可以获得30尺飞行速度，并且可以悬浮，持续10分钟。你可以使用此附赠动作的次数等同于你的熟练加值次，在完成一次长休后你重获全部已消耗的使用次数。</p>",
+      "value": "<p>以一个附赠动作，你获得30尺飞行速度，并且可以悬浮，持续10分钟。你可以使用此附赠动作的次数等于你的熟练加值。完成一次长休后，你重获全部已消耗的使用次数。</p>",
       "chat": ""
     },
     "source": {
@@ -16,7 +16,7 @@
     "cover": null,
     "crewed": false,
     "uses": {
-      "max": "1",
+      "max": "@prof",
       "recovery": [
         {
           "period": "lr",
@@ -56,7 +56,7 @@
             "allowed": false,
             "max": ""
           },
-          "spellSlot": true
+          "spellSlot": false
         },
         "description": {
           "chatFlavor": "",
@@ -64,10 +64,11 @@
         },
         "duration": {
           "concentration": false,
-          "units": "inst",
+          "units": "minute",
           "special": "",
           "override": false,
-          "expiry": null
+          "expiry": null,
+          "value": "10"
         },
         "effects": [
           {
@@ -94,11 +95,11 @@
           },
           "affects": {
             "count": "",
-            "type": "",
+            "type": "self",
             "choice": false,
             "special": ""
           },
-          "prompt": true,
+          "prompt": false,
           "override": false
         },
         "uses": {
@@ -197,10 +198,11 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
-        "otherActivityAsParentType": true
+        "otherActivityAsParentType": true,
+        "name": "飞行"
       }
     },
-    "identifier": "yuan-elemental-gift",
+    "identifier": "elemental-gift-flight",
     "advancement": {},
     "enchant": {},
     "prerequisites": {
@@ -267,7 +269,7 @@
           "actor": null,
           "behavior": null,
           "effect": null,
-          "item": null,
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.blzFbMN0WrOEGDXX",
           "message": null
         },
         "conditions": "{}",

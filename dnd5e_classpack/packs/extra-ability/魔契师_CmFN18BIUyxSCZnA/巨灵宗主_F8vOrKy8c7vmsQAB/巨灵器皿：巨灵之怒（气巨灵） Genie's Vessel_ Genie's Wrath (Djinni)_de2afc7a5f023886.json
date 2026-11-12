@@ -1,0 +1,131 @@
+{
+  "_id": "de2afc7a5f023886",
+  "name": "巨灵器皿：巨灵之怒（气巨灵） Genie's Vessel: Genie's Wrath (Djinni)",
+  "type": "feat",
+  "img": "icons/magic/unholy/hand-weapon-glow-black-green.webp",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>触碰巨灵器皿时，在你自己的每个回合限一次，当你的攻击检定命中一个目标时，你可以对它造成等同于你熟练加值的额外雷鸣伤害。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "turnStart",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "巨灵宗主等级 1",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "name": "巨灵之怒",
+        "activation": {
+          "type": "special",
+          "condition": "你的回合内，触碰器皿且攻击命中"
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "range": {
+          "units": "any",
+          "override": true
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "prompt": true
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@prof"
+              },
+              "types": [
+                "thunder"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "identifier": "genies-wrath-djinni",
+    "advancement": {},
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": 1,
+      "repeatable": false,
+      "items": [
+        "subclass:the-genie"
+      ]
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "F8vOrKy8c7vmsQAB",
+  "sort": 13100000,
+  "flags": {
+    "dnd5e": {},
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.5",
+    "createdTime": null,
+    "modifiedTime": 1757407882425,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!de2afc7a5f023886"
+}

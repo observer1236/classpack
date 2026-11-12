@@ -51,7 +51,7 @@ export function installContentFiltering(policy) {
       prepareBrowse(this);
       const context = await original.apply(this, args), scope = contextFor(this.advancement);
       context.sections = Array.from(context.sections).map(section => section.isCurrentLevel ? { ...section,
-        items: policy.filterCandidates(section.items, scope) } : section);
+        items: policy.filterCandidates(section.items, { ...scope, fixed: isFixed(this.advancement) }) } : section);
       const originalCount = Array.from(this.pool ?? []).length;
       this.classpackSourcesEmpty = originalCount > 0 && !context.sections.some(s => s.isCurrentLevel && s.items.length);
       return context;

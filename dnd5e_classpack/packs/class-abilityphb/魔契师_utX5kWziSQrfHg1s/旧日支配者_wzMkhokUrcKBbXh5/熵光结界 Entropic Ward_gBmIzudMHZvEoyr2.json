@@ -37,7 +37,7 @@
         "_id": "dnd5eactivity000",
         "type": "utility",
         "activation": {
-          "type": "reactionpreattack",
+          "type": "special",
           "value": 1,
           "condition": "",
           "override": false
@@ -55,7 +55,7 @@
             "allowed": false,
             "max": ""
           },
-          "spellSlot": true
+          "spellSlot": false
         },
         "description": {
           "chatFlavor": "",
@@ -68,24 +68,7 @@
           "override": false,
           "expiry": null
         },
-        "effects": [
-          {
-            "_id": "a1WvCzt8rfy8OtSf",
-            "uuid": null,
-            "level": {},
-            "_stats": {
-              "compendiumSource": null,
-              "duplicateSource": null,
-              "coreVersion": "14.368",
-              "systemId": "dnd5e",
-              "systemVersion": "6.0.5",
-              "createdTime": 1757072538678,
-              "modifiedTime": 1757072583353,
-              "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-              "exportSource": null
-            }
-          }
-        ],
+        "effects": [],
         "range": {
           "units": "any",
           "special": "",
@@ -104,12 +87,11 @@
             "stationary": false
           },
           "affects": {
-            "count": "1",
-            "type": "creature",
+            "type": "self",
             "choice": false
           },
-          "prompt": true,
-          "override": false
+          "prompt": false,
+          "override": true
         },
         "uses": {
           "spent": 0,
@@ -125,7 +107,7 @@
         "sort": 0,
         "name": "",
         "img": "",
-        "useConditionText": "reaction === preAttack",
+        "useConditionText": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
@@ -138,8 +120,8 @@
         "effectConditionText": "",
         "otherActivityId": null,
         "macroData": {
-          "name": "",
-          "command": ""
+          "name": "记录熵光结界反应",
+          "command": "const pass = args[0].macroPass;\nconst defender = workflow.actor;\n\nif (pass === \"preItemRoll\") {\n  if (!workflow.workflowOptions.entropicWard || MidiQOL.hasUsedReaction(defender)) return false;\n} else if (pass === \"postActiveEffects\" && !workflow.aborted) {\n  await MidiQOL.setReactionUsed(defender);\n}"
         },
         "ignoreTraits": {
           "idi": false,
@@ -163,7 +145,7 @@
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
-          "automationOnly": false,
+          "automationOnly": true,
           "otherActivityCompatible": true,
           "otherActivityAsParentType": true,
           "identifier": "",
@@ -232,30 +214,40 @@
       "name": "熵光结界",
       "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
       "origin": null,
-      "transfer": false,
+      "transfer": true,
       "_id": "a1WvCzt8rfy8OtSf",
       "type": "base",
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.disadvantage.attack.all",
-            "value": "workflow?.actor?.uuid === \"@ward.attackerUuid\" && targetActorUuid === \"@actorUuid\" && (\"@ward.workflowId\" === \"\" || workflow.id === \"@ward.workflowId\")",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "Wg1eHzyR69NXkzu0",
-            "conditions": "{}",
-            "replacement": "origin"
-          },
-          {
             "key": "flags.midi-qol.onUseMacroName",
-            "value": "ItemMacro,postActiveEffects",
+            "value": "ItemMacro,isPreAttacked",
             "type": "custom",
             "priority": 20,
             "phase": "initial",
             "replacement": "",
             "conditions": "{}",
             "_id": "5218305ba999ec62"
+          },
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "value": "ItemMacro,isMissed",
+            "type": "custom",
+            "priority": 20,
+            "phase": "initial",
+            "replacement": "",
+            "conditions": "{}",
+            "_id": "cpWardOnMiss0001"
+          },
+          {
+            "key": "flags.midi-qol.grants.disadvantage.attack.all",
+            "value": "!!workflow?.classpackEntropicWard && workflow.classpackEntropicWard === workflow.targets.documents[0]?.actor?.uuid",
+            "type": "custom",
+            "priority": 20,
+            "phase": "initial",
+            "_id": "cpWardDisadv0001",
+            "conditions": "{}",
+            "replacement": ""
           }
         ],
         "rider": {
@@ -275,7 +267,7 @@
       "duration": {
         "value": null,
         "units": "seconds",
-        "expiry": "turnEnd",
+        "expiry": null,
         "expired": false
       },
       "description": "",
@@ -319,7 +311,7 @@
         "exportSource": null
       },
       "start": null,
-      "showIcon": 1,
+      "showIcon": 0,
       "folder": null,
       "_key": "!items.effects!gBmIzudMHZvEoyr2.a1WvCzt8rfy8OtSf"
     },
@@ -344,7 +336,7 @@
           },
           {
             "key": "flags.midi-qol.onUseMacroName",
-            "value": "ItemMacro,postActiveEffects",
+            "value": "ItemMacro,postAttackRoll",
             "type": "custom",
             "priority": 20,
             "phase": "initial",
@@ -380,7 +372,7 @@
       "flags": {
         "dae": {
           "applicationMode": "dnd5e",
-          "stackable": "noneName",
+          "stackable": "multi",
           "specialDuration": [],
           "selfTarget": false,
           "selfTargetAlways": false
@@ -423,10 +415,10 @@
       "rollAttackPerTarget": "default",
       "removeAttackDamageButtons": "default",
       "itemCondition": "",
-      "reactionCondition": "reaction === \"preAttack\"",
+      "reactionCondition": "",
       "otherCondition": "",
       "effectCondition": "",
-      "onUseMacroName": "[preActiveEffects]ItemMacro,[postActiveEffects]ItemMacro"
+      "onUseMacroName": "[preItemRoll]ActivityMacro,[postActiveEffects]ActivityMacro"
     },
     "midiProperties": {
       "autoFailFriendly": false,
@@ -441,7 +433,7 @@
       "macro": {
         "name": "熵光结界 Entropic Ward",
         "type": "script",
-        "command": "const pass = args[0]?.macroPass;\nif (pass === \"preActiveEffects\") {\n  const attackerActorUuid = workflow.targets.documents[0]?.actor?.uuid;\n  if (!attackerActorUuid) return { haltEffectsApplication: true };\n\n  const midiOptions = args[0]?.options?.usage?.midiOptions\n    ?? args[0]?.options?.config?.midiOptions ?? {};\n  const triggeringCardUuid = workflow.workflowOptions.itemCardUuid\n    ?? workflow.workflowOptions.workflowId ?? midiOptions.itemCardUuid ?? midiOptions.workflowId;\n  if (typeof triggeringCardUuid !== \"string\" || !triggeringCardUuid.startsWith(\"ChatMessage.\")) {\n    ui.notifications.warn(\"熵光结界：缺少触发攻击的卡片，未应用结界效果。\");\n    return { haltEffectsApplication: true };\n  }\n\n  const wardEffect = workflow.activity.item.effects.find(effect =>\n    effect.flags.dnd5e_classpack?.entropicWard === \"ward\");\n  if (!wardEffect) throw new Error(\"熵光结界：缺少结界效果模板\");\n  const changes = wardEffect.toObject().system.changes;\n  const attackCondition = changes.find(change => change.key === \"flags.midi-qol.disadvantage.attack.all\");\n  if (!attackCondition) throw new Error(\"熵光结界：缺少攻击劣势条件\");\n  attackCondition.value = `workflow?.actor?.uuid === ${JSON.stringify(attackerActorUuid)}\n    && targetActorUuid === ${JSON.stringify(workflow.actor.uuid)}\n    && workflow?.id === ${JSON.stringify(triggeringCardUuid)}`;\n  attackCondition.replacement = \"\";\n  wardEffect.updateSource({ \"system.changes\": changes });\n  return;\n}\nif (pass !== \"postActiveEffects\" || !workflow.attackRoll) return;\nconst context = MidiQOL.createConditionData({ workflow, actor: workflow.actor, target: workflow.targets.documents[0] });\nconst effects = workflow.actor.appliedEffects.filter(effect => {\n  const role = effect.flags.dnd5e_classpack?.entropicWard;\n  if (!role || effect.disabled || effect.isSuppressed) return false;\n  const key = role === \"ward\" ? \"flags.midi-qol.disadvantage.attack.all\" : \"flags.midi-qol.advantage.attack.all\";\n  const change = effect.system.changes.find(c => c.key === key);\n  return change && MidiQOL.evalCondition(change.value, context, { errorReturn: false });\n});\nfor (const effect of effects) {\n  if (effect.flags.dnd5e_classpack.entropicWard === \"ward\") {\n    const protectedActor = macroItem.actor;\n    const protectedTokens = workflow.targets.documents.filter(t => t.actor?.uuid === protectedActor?.uuid);\n    if (protectedActor && protectedTokens.length && protectedTokens.every(t => !workflow.hitTargets.has(t))) {\n      const template = macroItem.effects.find(e => e.flags.dnd5e_classpack?.entropicWard === \"counter\");\n      const data = template.toObject();\n      delete data._id; delete data._key;\n      data.origin = macroItem.uuid;\n      data.system.origin = { item: macroItem.uuid, actor: protectedActor.uuid };\n      data.system.changes.find(c => c.key === \"flags.midi-qol.advantage.attack.all\").value =\n        `targetActorUuid === ${JSON.stringify(workflow.actor.uuid)}`;\n      await MidiQOL.socket().executeAsGM(\"createEffects\", { actorUuid: protectedActor.uuid, effects: [data] });\n    }\n  }\n  await MidiQOL.socket().executeAsGM(\"removeEffects\", {\n    actorUuid: workflow.actor.uuid, effects: [effect.id], options: { \"expiry-reason\": \"midi-qol:entropicWardAttack\" }\n  });\n}\n"
+        "command": "const pass = args[0].macroPass;\nconst feature = macroItem;\nconst defender = feature.actor;\nconst counterId = \"368d3ab4828aa73a\";\nconst advantageKey = \"flags.midi-qol.advantage.attack.all\";\n\nif (pass === \"postAttackRoll\") {\n  const counters = defender.effects.filter(effect => {\n    const attackerUuid = effect.getFlag(\"dnd5e_classpack\", \"entropicWardAttacker\");\n    return effect.active && attackerUuid\n      && workflow.targets.documents.some(target => target.actor?.uuid === attackerUuid);\n  });\n  if (counters.length) await MidiQOL.removeEffects({\n    actorUuid: defender.uuid, effects: counters.map(effect => effect.id)\n  });\n  return;\n}\n\nif (pass === \"isMissed\") {\n  if (workflow.classpackEntropicWard !== defender.uuid) return;\n  delete workflow.classpackEntropicWard;\n\n  const attackerUuid = workflow.actor.uuid;\n  const counter = feature.effects.get(counterId).toObject();\n  delete counter._id;\n  counter.system.origin = { item: feature.uuid, actor: defender.uuid };\n  counter.flags.dnd5e_classpack.entropicWardAttacker = attackerUuid;\n  counter.system.changes.find(change => change.key === advantageKey).value =\n    `targetActorUuid === ${JSON.stringify(attackerUuid)}`;\n\n  await MidiQOL.createEffects({ actorUuid: defender.uuid, effects: [counter] });\n  return;\n}\n\nif (pass !== \"isPreAttacked\" || workflow.aborted || workflow.targets.count !== 1) return;\nif (workflow.classpackEntropicWard || feature.system.uses.value < 1 || MidiQOL.hasUsedReaction(defender)\n  || MidiQOL.checkIncapacitated(defender, false, false)) return;\n\nconst userId = dnd5eClasspack.firstOwner(defender, true);\nif (!userId) return;\nconst attacker = foundry.utils.escapeHTML(workflow.tokenDocument?.name ?? workflow.actor.name);\nconst confirmed = await dnd5eClasspack.dialogUtils.confirm(\n  feature.name, `<p>是否使用反应，使「${attacker}」的这次攻击检定具有劣势？</p>`, { userId }\n);\nif (!confirmed || workflow.aborted || MidiQOL.hasUsedReaction(defender)) return;\n\nconst result = await MidiQOL.completeActivityUse(feature.system.activities.contents[0].uuid, {\n  consume: { resources: true, spellSlot: false, action: false },\n  midiOptions: {\n    asUser: userId, workflowData: true,\n    workflowOptions: { entropicWard: true, noProvokeReaction: true, noTargetOnUseMacro: true }\n  }\n}, { configure: false });\nif (!result?.itemCardUuid || result.aborted) return;\n\nworkflow.classpackEntropicWard = defender.uuid;\n"
       }
     }
   },
