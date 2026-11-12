@@ -1,3 +1,13 @@
+/* The item header renders these black system glyphs as images, so they cannot inherit --icon-fill. */
+@scope (.theme-dark) to (.themed) {
+    :where(:scope, :scope *).dnd5e2.sheet.item .sheet-header img.document-image:is(
+        [src*="systems/dnd5e/icons/svg/trait-"],
+        [src*="systems/dnd5e/icons/svg/ability-score-improvement.svg"]
+    ) {
+        background-color: #c8bda6;
+    }
+}
+
 /* Styling for the classpack dialog window (ApplicationV2). */
 
 .cp-dialog-timer {
