@@ -9,7 +9,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<p>          第1级起，你的守护神在战斗中给你激励。当你执行攻击动作时，你可以用一个附赠动作发动一次武器攻击。</p>\n<p>         你可以使用该特性的次数等于你的感知调整值(至少为一次)。而你将在完成一次长休后重新恢复所有的使用次数。</p>",
+      "value": "<p>          第1级起，你的守护神在战斗中给你激励。当你执行攻击动作时，你可以用一个附赠动作发动一次武器攻击。</p><p>         你可以使用该特性的次数等于你的感知调整值(至少为一次)。而你将在完成一次长休后重新恢复所有的使用次数。</p>",
       "chat": ""
     },
     "source": {
@@ -120,8 +120,8 @@
         "effectConditionText": "",
         "otherActivityId": "",
         "macroData": {
-          "name": "",
-          "command": ""
+          "name": "发动武器攻击",
+          "command": "if (args[0].macroPass !== \"postActiveEffects\" || workflow.aborted) return;\n\nconst weapons = workflow.actor.items.filter(item =>\n  item.type === \"weapon\"\n  && item.system.equipped\n  && item.system.activities.some(activity =>\n    activity.type === \"attack\"\n    && activity.canUse\n    && !activity.midiProperties?.automationOnly\n  )\n);\n\nif (!weapons.length) {\n  ui.notifications.warn(\"当前没有已装备且可用于攻击的武器。\");\n  return;\n}\n\nlet weapon = weapons[0];\n\nif (weapons.length > 1) {\n  const weaponId = await dnd5eClasspack.dialogUtils.selectDialog(\"发动武器攻击\", \"\", {\n    label: \"武器\",\n    name: \"weapon\",\n    options: {\n      options: weapons.map(item => ({ label: item.name, value: item.id }))\n    }\n  });\n\n  if (!weaponId) return;\n  weapon = workflow.actor.items.get(weaponId);\n}\n\nawait MidiQOL.completeItemUse(weapon, {\n  midiOptions: {\n    workflowOptions: { targetConfirmation: \"always\" }\n  }\n});"
         },
         "ignoreTraits": {
           "idi": false,
@@ -234,7 +234,8 @@
       "effectCondition": "",
       "removeAttackDamageButtons": "default",
       "reactionCondition": "",
-      "otherCondition": ""
+      "otherCondition": "",
+      "onUseMacroName": "[postActiveEffects]ActivityMacro-dnd5eactivity000"
     },
     "dnd5e": {}
   },

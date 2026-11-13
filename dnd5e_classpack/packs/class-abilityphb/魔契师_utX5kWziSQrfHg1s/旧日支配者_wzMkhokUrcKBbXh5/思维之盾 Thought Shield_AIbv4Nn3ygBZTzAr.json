@@ -48,9 +48,22 @@
         "expiry": null,
         "expired": false
       },
-      "origin": "Compendium.dnd5e_classpack.class-abilityphb.AIbv4Nn3ygBZTzAr",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.AIbv4Nn3ygBZTzAr",
       "transfer": true,
-      "flags": {},
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
       "tint": "#ffffff",
       "_stats": {
         "coreVersion": "14.368",
@@ -77,6 +90,16 @@
             "_id": "dLb2rtjE2W7lMTfg",
             "conditions": "{}",
             "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "type": "custom",
+            "value": "ItemMacro,isDamaged",
+            "phase": "initial",
+            "_id": "MwFLh5EVZUVsx5U6",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
           }
         ],
         "origin": {

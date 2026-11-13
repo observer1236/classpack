@@ -36,7 +36,82 @@
     },
     "properties": []
   },
-  "effects": [],
+  "effects": [
+    {
+      "name": "战术之智 Tactical Wit",
+      "img": "icons/skills/targeting/crosshair-ringed-gray.webp",
+      "system": {
+        "magical": false,
+        "origin": {
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.fIq6d2zbCjD9v7DH",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "changes": [
+          {
+            "key": "system.attributes.init.roll.bonus",
+            "type": "add",
+            "value": "@prof",
+            "phase": "initial",
+            "_id": "fMtUoCRjreFPB8BG",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "conditions": "{}",
+        "rider": {
+          "statuses": []
+        }
+      },
+      "type": "base",
+      "_id": "u8zorOcBYaYfDgDE",
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.fIq6d2zbCjD9v7DH",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794227434662,
+        "modifiedTime": 1794227457336,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!fIq6d2zbCjD9v7DH.u8zorOcBYaYfDgDE"
+    }
+  ],
   "folder": "ZwjeHULFPeYGXJgZ",
   "sort": 35700000,
   "flags": {

@@ -1,11 +1,11 @@
 {
   "_id": "x3prcX8PAqlBjAQd",
-  "name": "魔能祈唤：苦痛魔爆 Eldritch Invocations: Agonizing Blast",
+  "name": "魔能祈唤: 苦痛魔爆 Eldritch Invocations: Agonizing Blast",
   "type": "feat",
   "img": "icons/magic/acid/projectile-stream-bubbles.webp",
   "system": {
     "description": {
-      "value": "<p> <em>@UUID[Compendium.dnd5e_classpack.spell.Item.DREvt1bRjuglegTh]{魔能爆}</em></p>\n<p> 施展<em>魔能爆eldritch blast</em>时，你可以将魅力调整值加到其每次命中所造成的伤害中。</p>",
+      "value": "<p>施展<em>@UUID[Compendium.dnd5e_classpack.spell.Item.DREvt1bRjuglegTh]{魔能爆}Eldritch Blast</em>时，你可以将魅力调整值加到其每次命中所造成的伤害中。</p>",
       "chat": ""
     },
     "source": {
@@ -26,7 +26,30 @@
     "requirements": "习得戏法魔能爆",
     "activities": {},
     "identifier": "agonizing-blast",
-    "advancement": {},
+    "advancement": {
+      "aOTcQUxqGQkAvtSF": {
+        "name": "",
+        "type": "ModifyItem",
+        "_id": "aOTcQUxqGQkAvtSF",
+        "configuration": {
+          "changes": [
+            {
+              "_id": "ZTKmNmYdF7NofLYW",
+              "uuid": null,
+              "identifiers": [
+                "spell:eldritch-blast"
+              ]
+            }
+          ]
+        },
+        "flags": {},
+        "value": {
+          "modified": []
+        },
+        "level": 0,
+        "hint": ""
+      }
+    },
     "crewed": false,
     "enchant": {},
     "prerequisites": {
@@ -40,7 +63,79 @@
       "mgc"
     ]
   },
-  "effects": [],
+  "effects": [
+    {
+      "name": "苦痛魔爆 Agonizing Blast",
+      "img": "icons/magic/acid/projectile-stream-bubbles.webp",
+      "type": "enchantment",
+      "transfer": false,
+      "_id": "ZTKmNmYdF7NofLYW",
+      "system": {
+        "changes": [
+          {
+            "key": "system.damage.base.bonus",
+            "type": "add",
+            "value": "@abilities.cha.mod",
+            "phase": "initial",
+            "_id": "GBQzrAJizZO1zWBh",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": true
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "applicationMode": "default",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794497108475,
+        "modifiedTime": 1794497632986,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!x3prcX8PAqlBjAQd.ZTKmNmYdF7NofLYW"
+    }
+  ],
   "folder": "o5aPffxN3VG2SeQa",
   "sort": 3700000,
   "flags": {

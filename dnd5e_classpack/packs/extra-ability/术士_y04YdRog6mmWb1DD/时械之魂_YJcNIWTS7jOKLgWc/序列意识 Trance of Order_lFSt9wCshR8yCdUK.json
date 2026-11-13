@@ -68,7 +68,13 @@
           "override": false,
           "expiry": null
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "dOrYzE7VUGQ7qdFu",
+            "uuid": null,
+            "level": {}
+          }
+        ],
         "range": {
           "units": "self",
           "special": "",
@@ -207,7 +213,107 @@
     },
     "properties": []
   },
-  "effects": [],
+  "effects": [
+    {
+      "name": "序列意识 Trance of Order",
+      "img": "icons/magic/perception/eye-ringed-green.webp",
+      "system": {
+        "origin": {
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.lFSt9wCshR8yCdUK",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "changes": [
+          {
+            "key": "system.rolls.ability.check.min",
+            "type": "override",
+            "value": 10,
+            "phase": "initial",
+            "_id": "Ki1Kstk3iOZxWIdd",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          },
+          {
+            "key": "system.rolls.ability.save.min",
+            "type": "override",
+            "value": 10,
+            "phase": "initial",
+            "_id": "J0PWDXmRilCuLC0i",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          },
+          {
+            "key": "system.rolls.attack.min",
+            "type": "override",
+            "value": 10,
+            "phase": "initial",
+            "_id": "JnuIKbkIdZGOSBgH",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "transfer": false,
+      "_id": "dOrYzE7VUGQ7qdFu",
+      "type": "base",
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "applicationMode": "default",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794490598353,
+        "modifiedTime": 1794490698858,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!lFSt9wCshR8yCdUK.dOrYzE7VUGQ7qdFu"
+    }
+  ],
   "folder": "YJcNIWTS7jOKLgWc",
   "sort": 40600000,
   "flags": {
