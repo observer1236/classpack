@@ -37,17 +37,17 @@
           "targets": [
             {
               "type": "itemUses",
-              "target": "",
               "value": "1",
+              "target": "",
               "scaling": {
-                "mode": "",
+                "mode": "amount",
                 "formula": ""
               }
             }
           ],
           "scaling": {
-            "allowed": false,
-            "max": ""
+            "allowed": true,
+            "max": "floor(@classes.druid.levels / 2)"
           },
           "spellSlot": true
         },
@@ -113,19 +113,23 @@
           "modifiers": []
         },
         "sort": 0,
-        "img": null,
+        "img": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": false
+          "requireMagic": false,
+          "identifier": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
-        "otherActivityId": null,
+        "otherActivityId": "",
         "macroData": {
           "name": "",
           "command": ""
@@ -196,7 +200,8 @@
           "animationType": "",
           "animationSpeed": 5,
           "animationIntensity": 5
-        }
+        },
+        "name": ""
       }
     },
     "identifier": "balm-of-the-summer-court",
@@ -237,10 +242,39 @@
       "itemCondition": "",
       "effectCondition": "",
       "reactionCondition": "",
-      "otherCondition": ""
+      "otherCondition": "",
+      "onUseMacroName": "[postActiveEffects]ItemMacro"
     },
     "dnd5e": {},
-    "chris-premades": {}
+    "chris-premades": {},
+    "dae": {
+      "macro": {
+        "name": "夏之王庭的芬馥 Balm of the Summer Court",
+        "img": "icons/magic/light/hand-sparks-smoke-green.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "if (args[0].macroPass !== \"postActiveEffects\") return;\n\nconst target = workflow.targets.documents[0];\nif (!target?.actor) return;\n\nconst spent = workflow.chatCard?.system?.deltas?.item\n  ?.[workflow.item.id]\n  ?.find(d => d.keyPath === \"system.uses.spent\")?.delta ?? 0;\n\nif (spent <= 0) return;\n\nawait MidiQOL.applyTokenDamage(\n  [{ value: spent, type: \"temphp\" }],\n  spent,\n  new Set([target]),\n  workflow.item,\n  new Set(),\n  { forceApply: true }\n);",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
+    }
   },
   "_stats": {
     "coreVersion": "14.368",

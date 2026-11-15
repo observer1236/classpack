@@ -153,6 +153,34 @@
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
+    },
+    "dae": {
+      "macro": {
+        "name": "思维之盾 Thought Shield",
+        "img": "icons/magic/defensive/barrier-shield-dome-pink.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "if (args[0].macroPass !== \"isDamaged\") return;\n\nconst attacker = workflow.token?.document ?? workflow.token;\nif (!attacker || workflow.actor?.uuid === actor.uuid) return;\n\nconst damage = (workflow.damageItem?.damageDetail ?? [])\n  .filter(d => d.type === \"psychic\" &&\n    !d.active?.absorption &&\n    !d.active?.type?.absorption)\n  .reduce((sum, d) => sum + Math.max(0, d.value ?? 0), 0);\n\nif (damage <= 0) return;\n\nawait MidiQOL.applyTokenDamage(\n  [{ damage, type: \"psychic\" }],\n  damage,\n  new Set([attacker]),\n  macroItem ?? null,\n  new Set(),\n  { forceApply: true }\n);",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
     }
   },
   "_stats": {

@@ -9,7 +9,7 @@
       "subtype": ""
     },
     "description": {
-      "value": "<p> 你展现出神圣力量的火花，以捍卫凡人的世界。以一个附赠动作，你获得以下增益，持续1分钟：</p>\n<ul> <li> 你获得120尺的真实视觉。 </li><li> 你对异怪、天族、元素、妖精、或邪魔发动的攻击检定具有优势。 </li><li> 当你对一个生物进行攻击、命中、并对其造成伤害时，你可以迫使其进行一次魅力豁免，豁免DC等同于你的法术豁免DC。豁免失败时，若该生物不属于此位面，则它将被魔法性地放逐回它原本的位面。豁免成功后，目标生物在24小时内免疫于此能力的放逐。</li></ul>\n<p> 一旦你使用了此能力，你在完成一次长休之前你都不能再次使用它。你也可以消耗一个5环法术位以再次使用此能力。</p>",
+      "value": "<p>你展现出神圣力量的火花，以捍卫凡人的世界。以一个附赠动作，你获得以下增益，持续1分钟：</p><ul><li><p>你获得120尺的真实视觉。</p></li><li><p>你对异怪、天族、元素、妖精、或邪魔发动的攻击检定具有优势。</p></li><li><p>当你对一个生物进行攻击、命中、并对其造成伤害时，你可以迫使其进行一次魅力豁免，豁免DC等同于你的法术豁免DC。豁免失败时，若该生物不属于此位面，则它将被魔法性地放逐回它原本的位面。豁免成功后，目标生物在24小时内免疫于此能力的放逐。</p></li></ul><p>一旦你使用了此能力，你在完成一次长休之前你都不能再次使用它。你也可以消耗一个5环法术位以再次使用此能力。</p>",
       "chat": ""
     },
     "source": {
@@ -225,7 +225,25 @@
       },
       "origin": "Compendium.dnd5e_classpack.extra-ability.rt2w2oWZgdNmOm3n",
       "transfer": false,
-      "flags": {},
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "applicationMode": "default",
+          "expiryMode": "default",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
       "tint": "#ffffff",
       "_stats": {
         "coreVersion": "14.368",
@@ -252,6 +270,16 @@
             "_id": "PlpQXOkpAjQWupUn",
             "conditions": "{}",
             "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.advantage.attack.all",
+            "type": "custom",
+            "value": "[\"aberration\", \"celestial\", \"elemental\", \"fey\", \"fiend\"].includes(typeOrRace)",
+            "phase": "initial",
+            "_id": "NAQyD17uXTb8IDRP",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
           }
         ],
         "origin": {
