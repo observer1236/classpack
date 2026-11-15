@@ -5,7 +5,7 @@
   "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
   "system": {
     "description": {
-      "value": "<p> <em>9级</em></p>\n<p> 你可以消耗你的邪术师法术位施展一个<em>@UUID[Compendium.dnd5e_classpack.spell.Item.D57cmKWEk3wx8iJf]{咒唤元素}conjure elemental</em>。你必须完成一次长休才能再次施展该法术。</p>",
+      "value": "<p>你可以消耗你的邪术师法术位施展一个<em>@UUID[Compendium.dnd5e_classpack.spell.Item.D57cmKWEk3wx8iJf]{咒唤元素}conjure elemental</em>。你必须完成一次长休才能再次施展该法术。</p>",
       "chat": ""
     },
     "source": {
@@ -157,12 +157,16 @@
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": true
+          "requireMagic": true,
+          "identifier": ""
         },
-        "otherActivityId": null,
+        "otherActivityId": "",
         "regionBehavior": {
           "enabled": false,
           "dispositionFilter": -1,

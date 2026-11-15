@@ -1,0 +1,74 @@
+{
+  "name": "驱散",
+  "type": "base",
+  "_id": "KvJaRblsaE6UHSbK",
+  "img": "icons/svg/terror.svg",
+  "system": {
+    "changes": [
+      {
+        "key": "flags.midi-qol.actions.reactionsMax",
+        "type": "override",
+        "value": 0,
+        "phase": "initial",
+        "_id": "RS1LLkk1tcJmJksr",
+        "conditions": "{}",
+        "replacement": "",
+        "priority": 99999
+      }
+    ],
+    "origin": {
+      "actor": null,
+      "behavior": null,
+      "effect": null,
+      "item": null,
+      "message": null
+    },
+    "conditions": "{}",
+    "magical": false,
+    "rider": {
+      "statuses": []
+    }
+  },
+  "disabled": false,
+  "start": null,
+  "duration": {
+    "value": 60,
+    "units": "seconds",
+    "expiry": null,
+    "expired": false
+  },
+  "description": "<p>被驱散的生物必须花费其回合内的所有移动力尽可能的远离你，且无法主动移动到距离你不超过30尺的空间中。该生物无法执行反应；其动作只能用于执行疾走动作、或花费动作从妨碍其移动的效应中挣脱。当该生物无路可走时，它将执行回避动作。</p>",
+  "origin": null,
+  "tint": "#ffffff",
+  "transfer": true,
+  "statuses": [],
+  "showIcon": 1,
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dae": {
+      "disableCondition": "",
+      "expiryMode": "default",
+      "macroRepeat": "none",
+      "disableIncapacitated": false,
+      "specialDuration": [
+        "isDamaged"
+      ]
+    },
+    "core": {
+      "overlay": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.369",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": 1794757992419,
+    "modifiedTime": 1794758569463,
+    "lastModifiedBy": "dvg25zW2MvzsvMOU",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!effects!KvJaRblsaE6UHSbK"
+}

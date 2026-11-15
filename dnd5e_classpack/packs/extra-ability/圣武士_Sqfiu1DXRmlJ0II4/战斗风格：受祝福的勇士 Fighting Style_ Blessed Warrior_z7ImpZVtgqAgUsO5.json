@@ -26,7 +26,130 @@
     "requirements": "圣武士等级 2",
     "activities": {},
     "identifier": "fighting-style-blessed-warrior",
-    "advancement": {},
+    "advancement": {
+      "gK871hrjVNjYp1pr": {
+        "name": "选择戏法",
+        "type": "ItemChoice",
+        "_id": "gK871hrjVNjYp1pr",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "0": {
+              "count": 2,
+              "replacement": false
+            },
+            "1": {
+              "count": null,
+              "replacement": true
+            },
+            "2": {
+              "count": null,
+              "replacement": true
+            },
+            "3": {
+              "count": null,
+              "replacement": true
+            },
+            "4": {
+              "count": null,
+              "replacement": true
+            },
+            "5": {
+              "count": null,
+              "replacement": true
+            },
+            "6": {
+              "count": null,
+              "replacement": true
+            },
+            "7": {
+              "count": null,
+              "replacement": true
+            },
+            "8": {
+              "count": null,
+              "replacement": true
+            },
+            "9": {
+              "count": null,
+              "replacement": true
+            },
+            "10": {
+              "count": null,
+              "replacement": true
+            },
+            "11": {
+              "count": null,
+              "replacement": true
+            },
+            "12": {
+              "count": null,
+              "replacement": true
+            },
+            "13": {
+              "count": null,
+              "replacement": true
+            },
+            "14": {
+              "count": null,
+              "replacement": true
+            },
+            "15": {
+              "count": null,
+              "replacement": true
+            },
+            "16": {
+              "count": null,
+              "replacement": true
+            },
+            "17": {
+              "count": null,
+              "replacement": true
+            },
+            "18": {
+              "count": null,
+              "replacement": true
+            },
+            "19": {
+              "count": null,
+              "replacement": true
+            },
+            "20": {
+              "count": null,
+              "replacement": true
+            }
+          },
+          "pool": [],
+          "restriction": {
+            "list": [
+              "class:cleric"
+            ],
+            "school": [],
+            "level": "0"
+          },
+          "sorting": "a",
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "spell",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "prepared": 2
+          },
+          "type": "spell"
+        },
+        "flags": {},
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": ""
+      }
+    },
     "crewed": false,
     "enchant": {},
     "prerequisites": {

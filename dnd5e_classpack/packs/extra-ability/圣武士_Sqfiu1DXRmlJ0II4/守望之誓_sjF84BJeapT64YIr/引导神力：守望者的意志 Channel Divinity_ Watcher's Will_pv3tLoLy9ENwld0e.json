@@ -73,7 +73,7 @@
             "stationary": false
           },
           "affects": {
-            "count": "1",
+            "count": "max(1,@abilities.cha.mod)",
             "type": "creature",
             "choice": false,
             "special": ""
@@ -98,15 +98,19 @@
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": true
+          "requireMagic": true,
+          "identifier": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
-        "otherActivityId": null,
+        "otherActivityId": "",
         "macroData": {
           "name": "",
           "command": ""
@@ -147,7 +151,8 @@
           "magicDamage": false,
           "noConcentrationCheck": false,
           "skipConcentrationCheck": false,
-          "autoCEEffects": "default"
+          "autoCEEffects": "default",
+          "targetMustBeSeen": true
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
@@ -181,7 +186,7 @@
         "otherActivityAsParentType": true
       }
     },
-    "identifier": "-channel-divinity-watchers-will",
+    "identifier": "channel-divinity-watchers-will",
     "advancement": {},
     "crewed": false,
     "enchant": {},

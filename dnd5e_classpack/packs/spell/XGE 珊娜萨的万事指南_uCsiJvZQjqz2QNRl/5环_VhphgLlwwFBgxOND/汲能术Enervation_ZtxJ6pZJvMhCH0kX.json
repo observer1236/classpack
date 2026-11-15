@@ -5,7 +5,7 @@
   "flags": {
     "midiProperties": {
       "confirmTargets": "always",
-      "saveDamage": "fulldam",
+      "saveDamage": "halfdam",
       "bonusSaveDamage": "fulldam",
       "autoFailFriendly": false,
       "autoSaveFriendly": false,
@@ -25,7 +25,7 @@
       "effectCondition": "",
       "reactionCondition": "",
       "otherCondition": "",
-      "onUseMacroName": "[postDamageRoll]ItemMacro"
+      "onUseMacroName": "[preTargeting]ItemMacro,[postActiveEffects]ItemMacro"
     },
     "dnd5e": {},
     "dae": {
@@ -34,7 +34,7 @@
         "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
         "type": "script",
         "scope": "global",
-        "command": "const workflow = args[0]?.workflow;\nif (!workflow) return console.log(\"宏触发但 workflow 不存在\");\nconsole.log(\"【调试】damageDetail:\", workflow.damageDetail);\n\nlet necroticTotal = 0;\n// 遍历 damageDetail（数组，每项包含 damageType & damage）\nif (Array.isArray(workflow.damageDetail)) {\n  workflow.damageDetail.forEach(entry => {\n    if (entry.type === \"necrotic\") necroticTotal += (entry.damage || 0);\n  });\n}\n\nif (necroticTotal === 0) {\n  return console.log(\"未造成黯蚀伤害，跳过治疗\");\n}\n\nconst healAmount = Math.floor(necroticTotal / 2);\nconsole.log(`黯蚀伤害总计 ${necroticTotal} → 回复 ${healAmount}`);\n\nlet casterToken = null;\nif (workflow.tokenUuid) {\n  const doc = await fromUuid(workflow.tokenUuid);\n  casterToken = doc?.object ?? null;\n} else if (workflow.tokenId) {\n  casterToken = canvas.tokens.get(workflow.tokenId);\n} else {\n  casterToken = canvas.tokens.controlled[0];\n}\nif (!casterToken) return console.log(\"无法找到施法者 token\");\n\nawait MidiQOL.applyTokenDamage(\n  [{ type: \"healing\", damage: healAmount }],\n  healAmount,\n  new Set([casterToken]),\n  workflow,\n  null\n);\n\nChatMessage.create({\n  content: `${casterToken.name} 从黯蚀伤害 ${necroticTotal} 中回复了 ${healAmount} 点生命（只针对黯蚀伤害）`\n});\n\nconsole.log(\"治疗已应用，仅针对黯蚀伤害\");",
+        "command": "const castId = \"dnd5eactivity000\";\nconst sustainId = \"tQNWZvNjROa3NT5n\";\nconst casterEffectId = \"cpEnervationSelf\";\nconst targetEffectId = \"g3BL9EqiAeBO2lIB\";\nconst hiddenPath = `system.activities.${sustainId}.flags.dnd5e_classpack.hidden`;\nconst linkPath = \"flags.dnd5e_classpack.enervation\";\n\nfunction connected(link) {\n  const source = fromUuidSync(link.source);\n  const target = fromUuidSync(link.target);\n  if (!source || !target || source.parent !== target.parent || target.actor.statuses.has(\"coverTotal\")) return false;\n  if (!source.object || !target.object) return true;\n  const distance = MidiQOL.getDistance(source.object, target.object, { wallsBlock: true, includeCover: true });\n  return distance >= 0 && distance <= link.range && MidiQOL.computeCoverBonus(source.object, target.object) !== Infinity;\n}\n\nasync function endConcentration(uuid) {\n  const effect = fromUuidSync(uuid);\n  if (!effect) return;\n  if (effect.parent.isOwner) await effect.parent.endConcentration(effect.id);\n  else await MidiQOL.removeEffects({ actorUuid: effect.parent.uuid, effects: [effect.id] });\n}\n\nif (args[0] === \"off\") {\n  const data = args.at(-1).efData;\n  const link = data.flags.dnd5e_classpack?.enervation;\n  if (!link) return;\n  if (data.system.origin.profile === casterEffectId) {\n    const spell = await fromUuid(macroItem.uuid);\n    if (spell?.getFlag(\"dnd5e_classpack\", \"enervation\")?.concentration === link.concentration) {\n      await spell.update({ [hiddenPath]: true, \"flags.dnd5e_classpack.-=enervation\": null });\n    }\n  }\n  await endConcentration(link.concentration);\n  return;\n}\nif (args[0] === \"on\") return;\n\nconst pass = args[0].macroPass;\nconst spell = await fromUuid(macroItem.uuid);\nconst caster = workflow.actor;\nconst activityId = workflow.activity.id;\nconst sustained = activityId === sustainId;\nconst link = spell.getFlag(\"dnd5e_classpack\", \"enervation\");\nconst combat = game.combat;\nconst combatant = combat?.started && combat.combatants.find(entry => entry.token?.uuid === link?.source);\nconst turn = combatant ? `${combat.id}:${combat.round}:${combat.turn}` : null;\n\nif (pass === \"preTargeting\") {\n  if (!sustained) return;\n  if (!link || !fromUuidSync(link.concentration)?.active) return false;\n  if (!connected(link)) {\n    await endConcentration(link.concentration);\n    return false;\n  }\n  if (combatant && (combat.combatant !== combatant || link.lastTurn === turn)) {\n    ui.notifications.warn(\"汲能术：只能在自己的回合持续汲能一次。\");\n    return false;\n  }\n  const midiOptions = args[0].options.usage.midiOptions;\n  midiOptions.targetsToUse = new MidiQOL.TokenDocumentSet([fromUuidSync(link.target)]);\n  midiOptions.workflowOptions.targetConfirmation = \"never\";\n  return;\n}\n\nif (pass === \"postPreambleComplete\") {\n  if (!link || workflow.aborted || workflow.outcome === \"invalid\" || workflow.item.uuid === spell.uuid) return;\n  const options = workflow.workflowOptions;\n  if (workflow.itemUsesReaction || workflow.itemUsesBonusAction || options.castUsesReaction || options.castUsesBonusAction) return;\n  if (workflow.activity.effectiveActivationType === \"action\") await endConcentration(link.concentration);\n  return;\n}\n\nif (pass !== \"postActiveEffects\" || workflow.aborted || workflow.outcome === \"invalid\") return;\nconst target = workflow.targets.documents[0];\nif (!target) return;\n\nif (activityId === castId) {\n  const concentration = caster.effects.get(workflow.concentrationId);\n  if (link && link.concentration !== concentration?.uuid) await endConcentration(link.concentration);\n  if (concentration?.active && workflow.saves.has(target)) {\n    await caster.endConcentration(concentration.id);\n  } else if (concentration?.active && workflow.failedSaves.has(target)) {\n    const fromThisCast = (effect, profile) => effect.active\n      && effect.system.origin?.effect === concentration.uuid && effect.system.origin.profile === profile;\n    const sourceEffect = caster.effects.find(effect => fromThisCast(effect, casterEffectId));\n    const targetEffect = target.actor.effects.find(effect => fromThisCast(effect, targetEffectId));\n    const state = {\n      concentration: concentration.uuid, source: workflow.tokenDocument.uuid, target: target.uuid,\n      range: MidiQOL.checkActivityRange(workflow.activity, workflow.token, new Set([target]), false).range\n        ?? Number(workflow.activity.range.value),\n      lastTurn: null\n    };\n\n    if (!sourceEffect || !targetEffect || !connected(state)) {\n      await caster.endConcentration(concentration.id);\n    } else {\n      const condition = `(${connected.toString()})(effect.flags.dnd5e_classpack.enervation)`;\n      await sourceEffect.update({\n        [linkPath]: state,\n        \"flags.dae.enableCondition\": condition,\n        \"system.changes\": [...sourceEffect.toObject().system.changes, {\n          key: \"flags.midi-qol.onUseMacroName\", value: `[postPreambleComplete]ItemMacro.${spell.uuid}`,\n          type: \"add\", phase: \"initial\", priority: 20\n        }]\n      });\n      await MidiQOL.updateEffects({ actorUuid: target.actor.uuid, updates: [{\n        _id: targetEffect.id, [linkPath]: state, \"flags.dae.enableCondition\": condition\n      }] });\n\n      const parts = spell.system.activities.get(sustainId).toObject().damage.parts;\n      parts[0].number = 4 + Math.max(0, workflow.spellLevel - spell.system.level);\n      if (fromUuidSync(concentration.uuid)?.active) await spell.update({\n        [linkPath]: state,\n        [hiddenPath]: false,\n        [`system.activities.${sustainId}.damage.parts`]: parts\n      });\n    }\n  }\n} else if (sustained) {\n  if (turn && link) await spell.update({ [`${linkPath}.lastTurn`]: turn });\n} else return;\n\nconst { autoApplyDamage } = MidiQOL.configSettings();\nif (!autoApplyDamage.includes(\"yes\") || (autoApplyDamage === \"yesCardNPC\" && target.actor.type === \"character\")) return;\nconst damage = workflow.damageList?.find(row => row.wasHit && row.targetUuid === target.uuid);\nif (!damage) return;\n\nconst absorbed = part => part.active?.absorption || part.active?.type?.absorption;\nconst { defaultDamage, combinedDamage } = damage.damageDetails;\nconst necrotic = defaultDamage\n  .filter(part => part.type === \"necrotic\" && part.value > 0 && !absorbed(part))\n  .reduce((total, part) => total + part.value, 0);\nconst total = combinedDamage\n  .filter(part => ![\"healing\", \"temphp\", \"maximum\", \"vitality\", \"midi-none\"].includes(part.type) && !absorbed(part))\n  .reduce((sum, part) => sum + part.value, 0);\nconst dealt = Math.min(necrotic, total);\nconst healing = Math.floor(dealt / 2);\nif (healing <= 0) return;\n\nconst healingDamage = [{ value: healing, type: \"healing\", properties: new Set([\"mgc\"]) }];\nif (autoApplyDamage === \"yesCardNPC\" && caster.type === \"character\") {\n  await caster.applyDamage(healingDamage);\n} else {\n  await MidiQOL.applyTokenDamage(\n    healingDamage, healing, new MidiQOL.TokenDocumentSet([workflow.tokenDocument]),\n    spell, new MidiQOL.TokenDocumentSet(), { workflow }\n  );\n}\n\nconst card = workflow.chatCard;\nif (card) await MidiQOL.addCardNote(card, `<p>汲能术：${dealt} 点暗蚀伤害，回复 ${healing} 点生命值。</p>`, {\n  anchor: \"bottom\", key: \"classpack-enervation-healing\",\n  whisper: card.blind ? game.users.filter(user => user.isGM).map(user => user.id) : card.whisper\n});\n",
         "author": "WqWGW8MuBm7BNHxt",
         "ownership": {
           "default": 3
@@ -78,10 +78,11 @@
           "selfTarget": false,
           "selfTargetAlways": false,
           "dontApply": false,
-          "stackable": "noneName",
+          "stackable": "multi",
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "expiryMode": "delete"
         }
       },
       "tint": "#ffffff",
@@ -99,7 +100,18 @@
       "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
       "type": "base",
       "system": {
-        "changes": [],
+        "changes": [
+          {
+            "key": "macro.itemMacro",
+            "value": "",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cpEnervationOff1",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
         "origin": {
           "actor": null,
           "behavior": null,
@@ -118,6 +130,79 @@
       "showIcon": 2,
       "folder": null,
       "_key": "!items.effects!ZtxJ6pZJvMhCH0kX.g3BL9EqiAeBO2lIB"
+    },
+    {
+      "name": "汲能术：持续汲能",
+      "origin": null,
+      "duration": {
+        "value": 10,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "_id": "cpEnervationSelf",
+      "description": "",
+      "transfer": false,
+      "statuses": [],
+      "flags": {
+        "dae": {
+          "disableIncapacitated": false,
+          "selfTarget": true,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "multi",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [],
+          "expiryMode": "delete"
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "macro.itemMacro",
+            "value": "",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cpEnervationOff2",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.spell.Item.ZtxJ6pZJvMhCH0kX",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 2,
+      "folder": null,
+      "_key": "!items.effects!ZtxJ6pZJvMhCH0kX.cpEnervationSelf"
     }
   ],
   "system": {
@@ -210,6 +295,12 @@
         "effects": [
           {
             "_id": "g3BL9EqiAeBO2lIB",
+            "onSave": false,
+            "uuid": null,
+            "level": {}
+          },
+          {
+            "_id": "cpEnervationSelf",
             "onSave": false,
             "uuid": null,
             "level": {}
@@ -316,7 +407,8 @@
           "magicDamage": false,
           "noConcentrationCheck": false,
           "skipConcentrationCheck": false,
-          "autoCEEffects": "default"
+          "autoCEEffects": "default",
+          "targetMustBeSeen": true
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
@@ -384,7 +476,7 @@
         "duration": {
           "units": "inst",
           "concentration": false,
-          "override": false,
+          "override": true,
           "expiry": null
         },
         "effects": [],
@@ -426,7 +518,7 @@
                 "necrotic"
               ],
               "scaling": {
-                "mode": "whole",
+                "mode": "",
                 "number": 1,
                 "formula": ""
               },
@@ -454,7 +546,7 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "confirmTargets": "default",
+          "confirmTargets": "never",
           "autoTargetType": "any",
           "autoTargetAction": "default",
           "automationOnly": false,
@@ -489,7 +581,11 @@
         "name": "持续伤害",
         "img": "",
         "behaviors": [],
-        "flags": {},
+        "flags": {
+          "dnd5e_classpack": {
+            "hidden": true
+          }
+        },
         "visibility": {
           "level": {},
           "requireAttunement": false,

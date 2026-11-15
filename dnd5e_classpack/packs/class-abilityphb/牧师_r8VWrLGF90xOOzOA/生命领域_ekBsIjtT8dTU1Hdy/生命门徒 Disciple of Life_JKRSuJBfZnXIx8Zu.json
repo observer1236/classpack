@@ -44,40 +44,20 @@
     {
       "name": "生命门徒",
       "img": "icons/magic/light/hand-sparks-smoke-teal.webp",
-      "origin": null,
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.JKRSuJBfZnXIx8Zu",
       "_id": "96EeRJYFjVge1Kal",
       "type": "base",
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.optional.生命门徒.activation",
-            "value": "item.level > 0 && item.itemType === \"spell\"",
-            "priority": 20,
-            "type": "add",
+            "key": "healing",
+            "type": "dnd5e.bonus",
+            "value": "2 + @roll.item.level",
             "phase": "initial",
-            "_id": "wDQqWKOtTzozim2g",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "flags.midi-qol.optional.生命门徒.damage.heal",
-            "value": "ItemMacro.Compendium.dnd5e_classpack.class-abilityphb.Item.JKRSuJBfZnXIx8Zu",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "SE57HQiY2SAR5tOs",
-            "conditions": "{}",
-            "replacement": ""
-          },
-          {
-            "key": "flags.midi-qol.optional.生命门徒.count",
-            "value": "every",
-            "priority": 20,
-            "type": "add",
-            "phase": "initial",
-            "_id": "aE7i4oRyUdmPAnHf",
-            "conditions": "{}",
-            "replacement": ""
+            "_id": "FKdnAIB0wSNoha3w",
+            "conditions": "\n{\n  \"o\": \"AND\",\n  \"v\": [\n    {\n      \"k\": \"roll.item.level\",\n      \"o\": \"gte\",\n      \"v\": 1\n    },\n    {\n      \"k\": \"roll.item.school\",\n      \"o\": \"empty\",\n      \"v\": false\n    }\n  ]\n}\n",
+            "replacement": "",
+            "priority": null
           }
         ],
         "rider": {
@@ -113,7 +93,8 @@
           "showIcon": false,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "expiryMode": "default"
         },
         "dnd5e": {
           "riders": {}
@@ -166,8 +147,8 @@
         "img": "icons/magic/light/hand-sparks-smoke-teal.webp",
         "type": "script",
         "scope": "global",
-        "command": "let spellLevel = workflow.castData.castLevel;\nlet spellLevelBonus =2 + Math.max(spellLevel, 1);\nreturn `+${spellLevelBonus}`",
-        "author": "WqWGW8MuBm7BNHxt",
+        "command": "",
+        "author": "dvg25zW2MvzsvMOU",
         "ownership": {
           "default": 3
         },

@@ -37,7 +37,7 @@ export function installContentFiltering(policy) {
       const scope = selectionContexts.at(-1);
       return original.call(this, scope ? { ...options, classpackContentContext: scope } : options, ...rest);
     });
-    wrap(browser.prototype, "_prepareResultsContext", original => function (context, ...rest) {
+    function prepareResultsContext(wrapped, context, ...rest) {
       const scope = this.options.classpackContentContext ?? {}, lists = Object.entries(context.filters.additional?.spelllist ?? {}).filter(([, v]) => v === 1).map(([k]) => k);
       const filters = { ...context.filters, additional: { ...context.filters.additional }, arbitrary: [...context.filters.arbitrary ?? []] };
       if (scope.actor && lists.some(l => l.startsWith("class:")) && policy.enabled("EGW") && policy.permitsDunamancy(scope.actor, lists)) {
@@ -45,13 +45,24 @@ export function installContentFiltering(policy) {
       }
       const blocked = policy.blocked({ ...scope, lists });
       if (blocked.length) filters.arbitrary.push({ o: "NOT", v: { k: "uuid", o: "in", v: new Set(blocked) } });
-      return original.call(this, { ...context, filters }, ...rest);
-    });
+      return wrapped({ ...context, filters }, ...rest);
+    }
+    const wrapper = globalThis.libWrapper;
+    if (wrapper) {
+      const target = "dnd5e.applications.CompendiumBrowser.prototype._prepareResultsContext";
+      const id = wrapper.register(MODULE_ID, target, prepareResultsContext, "WRAPPER");
+      undo.push(() => wrapper.unregister(MODULE_ID, id));
+      installed.push("_prepareResultsContext");
+    } else {
+      wrap(browser.prototype, "_prepareResultsContext", original => function (...args) {
+        return prepareResultsContext.call(this, original.bind(this), ...args);
+      });
+    }
     wrap(apps.ItemChoiceFlow.prototype, "_prepareContentContext", original => async function (...args) {
       prepareBrowse(this);
       const context = await original.apply(this, args), scope = contextFor(this.advancement);
       context.sections = Array.from(context.sections).map(section => section.isCurrentLevel ? { ...section,
-        items: policy.filterCandidates(section.items, scope) } : section);
+        items: policy.filterCandidates(section.items, { ...scope, fixed: isFixed(this.advancement) }) } : section);
       const originalCount = Array.from(this.pool ?? []).length;
       this.classpackSourcesEmpty = originalCount > 0 && !context.sections.some(s => s.isCurrentLevel && s.items.length);
       return context;

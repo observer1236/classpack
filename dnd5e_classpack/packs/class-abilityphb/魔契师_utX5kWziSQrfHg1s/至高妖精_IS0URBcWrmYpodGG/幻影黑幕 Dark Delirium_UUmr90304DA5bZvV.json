@@ -72,15 +72,21 @@
         "effects": [
           {
             "_id": "BT4VAN1nHnt9NjzZ",
-            "onSave": false,
             "uuid": null,
-            "level": {}
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
           },
           {
             "_id": "tZMySfFP4JNBbdGM",
             "uuid": null,
-            "level": {},
-            "onSave": false
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -129,7 +135,8 @@
             "calculation": "spellcasting",
             "formula": ""
           },
-          "visible": true
+          "visible": true,
+          "bonus": ""
         },
         "sort": 0,
         "name": "",
@@ -137,15 +144,19 @@
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": false
+          "requireMagic": true,
+          "identifier": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
-        "otherActivityId": null,
+        "otherActivityId": "",
         "macroData": {
           "name": "",
           "command": ""
@@ -178,11 +189,11 @@
           "identifier": "",
           "displayActivityName": false,
           "rollMode": "default",
-          "chooseEffects": false,
+          "chooseEffects": true,
           "toggleEffect": false,
           "ignoreFullCover": false,
           "removeChatButtons": "default",
-          "magicEffect": false,
+          "magicEffect": true,
           "magicDamage": false,
           "noConcentrationCheck": false,
           "skipConcentrationCheck": false,

@@ -266,9 +266,8 @@
           "durationExpression": "",
           "macroRepeat": "none",
           "specialDuration": [
-            "1Action",
-            "Bonus Action",
-            "Reaction"
+            "1Attack",
+            "1Spell"
           ]
         },
         "dnd5e": {
@@ -332,7 +331,7 @@
         "img": "icons/magic/air/fog-gas-smoke-purple-blue.webp",
         "type": "script",
         "scope": "global",
-        "command": "return await (async () => {\n  const api = globalThis.dnd5eClasspack;\n  if (!api?.teleport) return ui.notifications.warn(\"请先启用 ClassPack。\");\n  const caster = canvas.tokens.controlled[0] ?? (typeof token === \"undefined\" ? null : token);\n  if (!caster) return ui.notifications.warn(\"请先控制施法者的 Token。\");\n  let targets = Array.from(game.user.targets ?? []);\n  if (!targets.length) targets = [...canvas.tokens.controlled];\n  targets = targets.filter(target => target.id !== caster.id);\n  if (!targets.length) return ui.notifications.warn(\"请选择要传送的目标，目标不能包含施法者。\");\n  let mode = \"per-target\";\n  if (targets.length > 1) {\n    mode = await api.dialogUtils.selectDialog(\"传送模式\", \"\", {\n      label: \"落点\", name: \"mode\", options: { options: [\n        { value: \"per-target\", label: \"为每个目标分别选择落点\" },\n        { value: \"same-for-all\", label: \"为所有目标选择同一落点\" }\n      ] }\n    });\n    if (!mode) return;\n  }\n  const options = { centerpoint: caster, range: 30, timeout: 20000,\n    avoidOccupied: true, animate: false, preserveOffsets: false, previewTokens: true };\n  ui.notifications.info(\"选择 30 英尺范围内的落点；右键或 Esc 取消。\");\n  if (mode === \"same-for-all\") return api.teleport(targets, null, options);\n  for (const target of targets) {\n    const result = await api.teleport(target, null, options);\n    if (result?.cancelled) break;\n  }\n})();\n",
+        "command": "const api = globalThis.dnd5eClasspack;\nif (!api?.teleport) return ui.notifications.warn(\"请先启用 ClassPack。\");\nconst caster = workflow.token;\n\nconst range = dnd5e.utils.convertLength(60, \"ft\", canvas.scene.grid.units, { strict: false });\nreturn await api.teleport(caster, null, {\n  range, timeout: 20000, avoidOccupied: true, animate: false, previewTokens: true,\n  crosshairsConfig: { label: \"雾遁\" },\n  validityFunctions: [point => !caster.checkCollision(point, { type: \"sight\", mode: \"any\" })]\n});\n",
         "author": "WqWGW8MuBm7BNHxt",
         "ownership": {
           "default": 3

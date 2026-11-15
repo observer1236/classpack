@@ -25,7 +25,7 @@
     },
     "requirements": "战士等级 1，勇士等级 10，圣武士等级 2，游侠等级 2，剑舞学院等级 3；或战斗学徒专长",
     "activities": {},
-    "identifier": "-two-weapon-fighting",
+    "identifier": "two-weapon-fighting",
     "advancement": {},
     "crewed": false,
     "enchant": {},
@@ -34,8 +34,11 @@
       "repeatable": false,
       "items": [
         "feat:fighting-style",
+        "feat:fighting-style-blood-hunter",
+        "feat:fighting-style-swords",
         "feat:-fighting-style",
         "subclass:college-of-swords",
+        "feat:fighting-initiate",
         "feat:-fighting-initiatetce"
       ]
     },

@@ -30,7 +30,13 @@ export function createRollDisplayApi() {
     const flags = message.flags?.['midi-qol'];
     if (message.blind || flags?.forcedBlind || flags?.obscureRoll) return false;
     const attack = roll.options?.['midi-qol']?.rollType === 'attack';
-    if (attack && flags?.GMOnlyAttackRoll) return false;
+    if (attack) {
+      const records = message.system?.midi?.records;
+      if (records) {
+        const checked = Object.values(records).some(scene => Object.values(scene).some(record => typeof record.hitClass === 'string'));
+        if (globalThis.MidiQOL?.configSettings?.().autoCheckHit !== 'none' && !checked) return false;
+      } else if (flags && Object.getOwnPropertyDescriptor(flags, 'GMOnlyAttackRoll')?.value) return false;
+    }
     // Midi removes the tooltip when dice details are hidden, even if it keeps the attack total.
     if (attack && message.author?.isGM && !diceNode.querySelector('.dice-tooltip')) return false;
     return true;

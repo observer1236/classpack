@@ -1,6 +1,6 @@
 {
   "_id": "EgNBe3AD9qFILhwS",
-  "name": "魔能祈唤：幽影护甲 Eldritch Invocations: Armor of Shadows",
+  "name": "魔能祈唤: 幽影护甲 Eldritch Invocations: Armor of Shadows",
   "type": "feat",
   "img": "icons/magic/control/control-influence-rally-purple.webp",
   "system": {
@@ -71,12 +71,14 @@
           "template": {
             "contiguous": false,
             "units": "ft",
-            "stationary": false
+            "stationary": false,
+            "type": ""
           },
           "affects": {
-            "choice": false
+            "choice": false,
+            "type": "self"
           },
-          "override": false,
+          "override": true,
           "prompt": true
         },
         "uses": {
@@ -141,12 +143,16 @@
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
-          "requireMagic": true
+          "requireMagic": true,
+          "identifier": ""
         },
-        "otherActivityId": null,
+        "otherActivityId": "",
         "regionBehavior": {
           "enabled": false,
           "dispositionFilter": -1,

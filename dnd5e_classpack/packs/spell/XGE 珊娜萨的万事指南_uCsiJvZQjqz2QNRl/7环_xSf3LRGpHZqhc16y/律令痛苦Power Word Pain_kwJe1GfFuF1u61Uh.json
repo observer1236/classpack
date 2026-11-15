@@ -31,7 +31,7 @@
         "img": "icons/magic/control/fear-fright-mask-orange.webp",
         "type": "script",
         "scope": "global",
-        "command": "const activity = macroItem.system.activities.find(a => a.type == 'save');\nconst actor = workflow.actor;\nconst token = workflow.token;\nif (workflow.item.type !== 'spell') return;\nconst target = new Set([token]);\nconst usage = {\n  consume: false,\n  midiOptions: {\n    ignoreUserTargets: true,\n    workflowData: true,\n    workflowOptions: {\n      targetsToUse: target,\n      autoConsumeResource: \"both\"\n    }\n  }\n};\nconst dialog = {create : false};\nconst SaveWorkflow = await MidiQOL.completeActivityUse(activity,usage,dialog);\nif (SaveWorkflow.failedSaves.has(token)){\n  workflow.aborted = true;\n}",
+        "command": "const activity = macroItem.system.activities.find(a => a.type == 'save');\nconst token = workflow.tokenDocument;\nif (!activity || !token) return false;\nif (workflow.item.type !== 'spell') return;\nconst usage = {\n  consume: false,\n  midiOptions: {\n    ignoreUserTargets: true,\n    workflowData: true,\n    targetUuids: [token.uuid],\n    workflowOptions: {\n      autoConsumeResource: \"both\"\n    }\n  }\n};\nconst dialog = { configure: false };\nconst saveWorkflow = await MidiQOL.completeActivityUse(activity,usage,dialog);\nif (!saveWorkflow || saveWorkflow.aborted || saveWorkflow.failedSaves?.has(token)){\n  workflow.aborted = true;\n}",
         "author": "dvg25zW2MvzsvMOU",
         "ownership": {
           "default": 3
