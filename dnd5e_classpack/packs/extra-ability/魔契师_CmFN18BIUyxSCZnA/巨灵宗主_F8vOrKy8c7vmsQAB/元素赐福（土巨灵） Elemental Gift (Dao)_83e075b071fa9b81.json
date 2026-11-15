@@ -1,0 +1,124 @@
+{
+  "_id": "83e075b071fa9b81",
+  "name": "元素赐福（土巨灵） Elemental Gift (Dao)",
+  "type": "feat",
+  "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+  "system": {
+    "description": {
+      "value": "<p>你逐渐显露出土巨灵宗主的特质，获得钝击伤害抗性。</p><p>@UUID[Compendium.dnd5e_classpack.extra-ability.Item.blzFbMN0WrOEGDXX]{元素赐福：飞行}</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "巨灵宗主等级 6",
+    "activities": {},
+    "identifier": "elemental-gift-dao",
+    "advancement": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": 6,
+      "repeatable": false,
+      "items": [
+        "feat:genies-wrath-dao"
+      ]
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "7b08960bfe30c438",
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "origin": "Compendium.dnd5e_classpack.extra-ability.blzFbMN0WrOEGDXX",
+      "transfer": true,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.5",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "钝击伤害抗性",
+      "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "_id": "571ad63e24943291",
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "type": "add",
+            "phase": "initial",
+            "priority": 20,
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": "Compendium.dnd5e_classpack.extra-ability.Item.83e075b071fa9b81",
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!83e075b071fa9b81.7b08960bfe30c438"
+    }
+  ],
+  "folder": "F8vOrKy8c7vmsQAB",
+  "sort": 32800000,
+  "flags": {
+    "dnd5e": {}
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.5",
+    "coreVersion": "14.368",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!83e075b071fa9b81"
+}

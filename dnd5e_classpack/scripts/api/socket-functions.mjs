@@ -6,12 +6,14 @@ import { moveTokens } from "./movement.mjs";
 import { ClasspackDialogApp } from "./dialog-app.mjs";
 import { createActorItemsOnGM, addFavoriteOnGM, removeFavoriteOnGM } from "./actor-items.mjs";
 import { hideActivityOnGM } from "./activity-visibility.mjs";
+import { cprSocketFunctions } from "../integrations/cpr.mjs";
 
 /* -------------------------------------------------------------------------- *
  *  Local API + socket functions
  * -------------------------------------------------------------------------- */
 
 const socketFunctions = {
+  ...cprSocketFunctions,
   createActorItems: createActorItemsOnGM,
   addFavorite: addFavoriteOnGM,
   removeFavorite: removeFavoriteOnGM,

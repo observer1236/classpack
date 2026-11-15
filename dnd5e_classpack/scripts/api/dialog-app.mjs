@@ -18,6 +18,11 @@ const TEMPLATE = "modules/dnd5e_classpack/templates/dialogApp.hbs";
 class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
   #collected;
   #formContext;
+  #clock;
+  #deadline;
+  #renderedOnce = false;
+  #listeners;
+  #decided = false;
 
   constructor(args = []) {
     const [title, content, inputs, buttons, options] = args;
@@ -41,6 +46,8 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
     this.inputs = inputs ?? [];
     this.buttons = buttons;
     this.compact = options?.compact === true;
+    this.timing = options?.timing;
+    this.timingState = this.timing ? { ...this.timing.state } : null;
   }
 
   static DEFAULT_OPTIONS = {
@@ -74,6 +81,7 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
   static async formHandler(event, form, formData) {
     this.results = foundry.utils.expandObject(formData.object);
+    if (this.timing) await this.mergeResults(event.submitter?.name ?? "true");
   }
 
   static async confirm(event, target) {
@@ -81,6 +89,18 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
   }
 
   async mergeResults(value) {
+    if (this.timing) {
+      if (this.#decided) return false;
+      // Action clicks and native form submission can both reach this method.
+      // Read the live form so neither a previous submit nor a re-render is needed.
+      const result = value === "false" ? {} : foundry.utils.expandObject(
+        new foundry.applications.ux.FormDataExtended(this.element).object);
+      result.buttons = value === "true" ? true : value === "false" ? false : value;
+      this.#decided = true;
+      this.stopCountdown();
+      this.submit(result);
+      return;
+    }
     if (value === "false") {
       this.submit({ buttons: false });
       return false;
@@ -318,7 +338,56 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
   async _prepareContext() {
     if (!this.context) this.context = this.buildContext();
-    return this.context;
+    return this.timing ? { ...this.context, timing: this.timingState,
+      idPrefix: `${this.options.id ?? this.id}-` } : this.context;
+  }
+
+  /** Change an explicit request phase without re-rendering the form. */
+  setTiming(state) {
+    if (!this.timing || this.#decided) return;
+    this.stopCountdown();
+    this.timingState = { ...state };
+    this.#deadline = this.#renderedOnce && state.durationMs != null ? performance.now() + state.durationMs : null;
+    if (this.#renderedOnce) this.#tick();
+  }
+
+  stopCountdown() {
+    clearTimeout(this.#clock);
+    this.#clock = undefined;
+  }
+
+  #tick() {
+    this.stopCountdown();
+    const remainingMs = this.#deadline == null ? null : Math.max(0, this.#deadline - performance.now());
+    const seconds = remainingMs == null ? null : Math.ceil(remainingMs / 1000);
+    const status = this.element?.querySelector("[data-cp-timed-status]");
+    if (status) status.textContent = game.i18n.format(this.timingState.statusKey, { name: this.timingState.name ?? "" });
+    const label = this.element?.querySelector("[data-cp-timed-seconds]");
+    if (label) label.textContent = seconds == null ? "" : game.i18n.format("Classpack.Timed.Seconds", { seconds });
+    const bar = this.element?.querySelector("[data-cp-timed-progress]");
+    if (bar) {
+      bar.max = this.timingState.durationMs ?? 1;
+      bar.value = remainingMs ?? 0;
+      bar.hidden = remainingMs == null;
+    }
+    if (remainingMs === 0) {
+      this.timing.onTimeout();
+    } else if (remainingMs != null) this.#clock = setTimeout(() => this.#tick(), Math.min(100, remainingMs));
+  }
+
+  _onClose(options) {
+    this.#decided = true;
+    this.stopCountdown();
+    this.#listeners?.abort();
+    super._onClose(options);
+  }
+
+  async _preClose(options) {
+    if (this.timing) {
+      this.#decided = true;
+      this.stopCountdown();
+    }
+    await super._preClose(options);
   }
 
   /* -------------------------------------------------------------------- *
@@ -359,7 +428,9 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
       slot.value = element.value;
     }
 
-    this.render();
+    // A text field's blur/change precedes the button's click. Replacing that
+    // button here can swallow a timed decision. Only budgets/limits need redraw.
+    if (!this.timing || ["amounts", "toggles"].includes(group.kind)) this.render();
   }
 
   /**
@@ -367,6 +438,9 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
    * option image. Options without a matching canvas token are ignored.
    */
   _onRender(context) {
+    this.#listeners?.abort();
+    this.#listeners = new AbortController();
+    const listenerOptions = { signal: this.#listeners.signal };
     const nodes = this.element?.querySelectorAll("[data-cp-token]") ?? [];
     for (const node of nodes) {
       const tokenId = node.dataset.cpToken;
@@ -383,9 +457,16 @@ class ClasspackDialogApp extends HandlebarsApplicationMixin(ApplicationV2) {
       node.addEventListener("click", () => {
         const token = find();
         if (token) canvas.ping(token.center);
-      });
-      node.addEventListener("mouseenter", () => hover(true));
-      node.addEventListener("mouseleave", () => hover(false));
+      }, listenerOptions);
+      node.addEventListener("mouseenter", () => hover(true), listenerOptions);
+      node.addEventListener("mouseleave", () => hover(false), listenerOptions);
+    }
+    if (this.timing && !this.#decided) {
+      if (!this.#renderedOnce) {
+        this.#renderedOnce = true;
+        this.setTiming(this.timingState);
+        this.timing.onReady();
+      } else this.#tick();
     }
   }
 }

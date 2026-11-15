@@ -19,6 +19,7 @@
 
 import { canUpdateToken, firstOwner, log, MODULE_ID, SOCKET_NAME, registerHandlebarsHelpers, resolveOriginPoint, resolveToken, resolveUserId, toSocketSafeOptions } from "./api/utils.mjs";
 import { ClasspackDialogApp } from "./api/dialog-app.mjs";
+import { isCPRIntegrationEnabled, registerCPRIntegration } from "./integrations/cpr.mjs";
 import { ClasspackCrosshairs } from "./api/crosshairs.mjs";
 import { ClasspackTeleport } from "./api/teleport.mjs";
 import { createDialogUtils } from "./api/dialog-utils.mjs";
@@ -29,7 +30,7 @@ import { hideActivity, installActivityVisibility } from "./api/activity-visibili
 import { moveTokens, registerMovementActions } from "./api/movement.mjs";
 import { tokenDocument } from "./api/geometry.mjs";
 import { checkCompatibility, isCompatibleVersion } from "./compatibility.mjs";
-import { registerMigrationSettings, notifyPendingMigrations, worldMigrations } from "./migrations/index.mjs";
+import { registerMigrationSettings, worldMigrations } from "./migrations/index.mjs";
 
 import { createAutomationRegistry } from "./api/automations.mjs";
 import { createResourceApi } from "./api/resources.mjs";
@@ -118,9 +119,9 @@ const api = {
    *   moved token in point mode).
    * - `userId` / `user`: run the teleport (including its crosshair UI) on that
    *   user's client via socketlib.
-   * - `previewTokens` (default true): show native, translucent copies of the
+   * - `previewTokens` (default true): show native image copies of the
    *   moved tokens at their actual snapped destinations, including group offsets.
-   * - `previewAlpha` (default 0.5): opacity multiplier for these local previews.
+   * - `previewAlpha` (default 1): opacity multiplier for these local previews.
    * - If no user is specified and the local user lacks update permission for
    *   the moved tokens, the crosshair UI still runs on the
    *   local client, and only the final token position updates are sent to a GM
@@ -216,10 +217,13 @@ Hooks.once("socketlib.ready", () => {
     return;
   }
 
+  const registered = [];
   for (const [name, fn] of Object.entries(socketFunctions)) {
+    if (name.startsWith("cprTimed") && !isCPRIntegrationEnabled()) continue;
     api.socket.register(name, fn);
+    registered.push(name);
   }
-  log("info", "socket functions registered:", Object.keys(socketFunctions).join(", "));
+  log("info", "socket functions registered:", registered.join(", "));
 });
 
 Hooks.once("ready", () => {
@@ -234,12 +238,13 @@ Hooks.once("ready", () => {
       api.lucky2014.prepareLegacyBridge();
       api.rollInterventions.install();
       api.rolls.install();
+      api.lucky2014.install();
       api.rollInterventions.refreshActors();
     }
   } catch (error) { log("error", "Roll automation initialization failed:", error); }
-  notifyPendingMigrations();
   Hooks.callAll("dnd5eClasspackReady", api);
 });
 
 globalThis.dnd5eClasspack = api;
 globalThis.classpack = api;
+registerCPRIntegration(api);

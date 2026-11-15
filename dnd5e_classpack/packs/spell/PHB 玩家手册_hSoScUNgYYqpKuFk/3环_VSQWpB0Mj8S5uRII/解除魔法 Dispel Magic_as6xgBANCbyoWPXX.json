@@ -19,9 +19,38 @@
     "midi-qol": {
       "rollAttackPerTarget": "always",
       "itemCondition": "",
-      "effectCondition": ""
+      "effectCondition": "",
+      "onUseMacroName": "[postActiveEffects]"
     },
-    "dnd5e": {}
+    "dnd5e": {},
+    "dae": {
+      "macro": {
+        "name": "解除魔法 Dispel Magic",
+        "img": "icons/skills/melee/sword-damaged-broken-purple.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "",
+        "author": "dvg25zW2MvzsvMOU",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "14.369",
+          "systemId": "dnd5e",
+          "systemVersion": "6.0.6",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
+    }
   },
   "img": "icons/skills/melee/sword-damaged-broken-purple.webp",
   "effects": [],
@@ -141,8 +170,8 @@
         "useConditionReason": "",
         "effectConditionText": "",
         "macroData": {
-          "name": "",
-          "command": ""
+          "name": "Midi效用",
+          "command": "(async () => {\n  if (args?.[0]?.macroPass !== \"postActiveEffects\") return;\n\n  const wf = workflow;\n  if (!wf?.actor || wf.aborted || wf.activity?.type === \"check\") return;\n\n  const targets = wf.targets?.documents ?? [];\n  if (targets.length !== 1 || !targets[0]?.actor) {\n    ui.notifications.warn(\"解除魔法需要选择一个生物目标。\");\n    return;\n  }\n\n  const target = targets[0].actor;\n  const castLevel = Number(wf.castData?.castLevel ?? wf.spellLevel);\n  const casterToken = wf.tokenDocument ?? wf.token?.document;\n  const ability = wf.activity?.spellcastingAbility\n    ?? wf.actor.spellcastingAbility;\n\n  if (!Number.isFinite(castLevel)) return;\n\n  const templateSuffix =\n    ` ${game.i18n.localize(\"midi-qol.MeasuredTemplate\")}`;\n\n  const spells = new Map();\n\n  for (const effect of target.effects) {\n    if (\n      effect.disabled ||\n      effect.transfer ||\n      effect.system?.type === \"concentrating\" ||\n      effect.statuses?.has(CONFIG.specialStatusEffects.CONCENTRATING)\n    ) continue;\n\n    // Exclude Midi-QOL's template management effect.\n    const templateItem = effect.getFlag(\"dnd5e\", \"item\");\n\n    if (\n      effect.name?.endsWith(templateSuffix) &&\n      templateItem?.uuid &&\n      effect.origin === templateItem.uuid &&\n      effect.getFlag(\"dae\", \"stackable\") === \"noneName\" &&\n      effect.getFlag(\"dae\", \"expiryMode\") === \"delete\"\n    ) continue;\n\n    const manual = effect.getFlag(\"world\", \"dispelMagic\");\n    if (manual?.isSpell === false) continue;\n\n    const cast = effect.getFlag(\"midi-qol\", \"castData\");\n    const origin = effect.system?.origin ?? {};\n\n    let source = null;\n\n    for (const uuid of [\n      origin.activity,\n      cast?.itemUuid,\n      origin.item,\n      effect.origin\n    ]) {\n      if (!uuid) continue;\n\n      try {\n        source = await fromUuid(uuid);\n      } catch {\n        source = null;\n      }\n\n      if (source) break;\n    }\n\n    const spellItem = source?.item\n      ?? (source instanceof Item ? source : null);\n\n    const concentrationItem = source?.getFlag?.(\n      \"dnd5e\", \"item\"\n    );\n\n    const castFromSpell = cast?.itemUuid\n      && Number.isFinite(Number(cast.baseLevel));\n\n    if (\n      manual?.isSpell !== true &&\n      spellItem?.type !== \"spell\" &&\n      concentrationItem?.type !== \"spell\" &&\n      !castFromSpell\n    ) continue;\n\n    const level = Number(\n      cast?.castLevel\n      ?? manual?.level\n      ?? effect.getFlag(\"dnd5e\", \"spellLevel\")\n      ?? spellItem?.system?.level\n      ?? concentrationItem?.data?.system?.level\n    );\n\n    if (!Number.isFinite(level) || level < 0) continue;\n\n    // Group effects belonging to the same casting.\n    const key = origin.message\n      ?? origin.effect\n      ?? effect.getFlag(\"dnd5e\", \"dependentOn\")\n      ?? effect.uuid;\n\n    if (!spells.has(key)) {\n      spells.set(key, {\n        name: spellItem?.name ?? effect.name,\n        img: effect.img ?? spellItem?.img,\n        level,\n        ids: []\n      });\n    }\n\n    const spell = spells.get(key);\n    spell.ids.push(effect.id);\n    spell.level = Math.max(spell.level, level);\n  }\n\n  if (!spells.size) return;\n\n  const needsCheck = [...spells.values()]\n    .some(spell => spell.level > castLevel);\n\n  const checkActivity = needsCheck\n    ? wf.item.system.activities.find(a =>\n        a.type === \"check\" && a.name === \"Dispel Check\"\n      )\n    : null;\n\n  if (\n    needsCheck &&\n    (\n      !checkActivity ||\n      !casterToken?.uuid ||\n      !CONFIG.DND5E.abilities[ability]\n    )\n  ) {\n    ui.notifications.error(\n      \"缺少 Dispel Check Activity、施法者 Token 或施法属性。\"\n    );\n    return;\n  }\n\n  const results = [];\n\n  for (const spell of spells.values()) {\n    const dc = 10 + spell.level;\n\n    let total;\n    let success = spell.level <= castLevel;\n\n    if (!success) {\n      // Use a temporary Item so the Check Activity's\n      // ability and DC survive Midi's internal cloning.\n      const checkItem = wf.item.clone({}, { keepId: true });\n      const check = checkItem.system.activities.get(checkActivity.id);\n\n      check.updateSource({\n        check: {\n          ability,\n          dc: {\n            calculation: \"\",\n            formula: String(dc)\n          }\n        }\n      });\n\n      check.prepareFinalData();\n\n      const checkWf = await MidiQOL.completeActivityUse(\n        check,\n        {\n          consume: false,\n          midiOptions: {\n            targetUuids: [casterToken.uuid],\n            ignoreUserTargets: true,\n            fastForward: true,\n            workflowOptions: {\n              targetConfirmation: \"none\",\n              noProvokeReaction: true\n            }\n          }\n        },\n        { configure: false },\n        { create: true }\n      );\n\n      const roll = checkWf?.saveRoll?.(casterToken)\n        ?? checkWf?.tokenSaves?.[casterToken.uuid];\n\n      if (\n        checkWf?.aborted ||\n        !Number.isFinite(roll?.total)\n      ) {\n        ui.notifications.warn(\"解除魔法检定未完成。\");\n        break;\n      }\n\n      total = roll.total;\n\n      // Respect Midi's resolved check outcome.\n      success = checkWf.saves?.has(casterToken)\n        ?? (total >= dc);\n    }\n\n    if (success) {\n      await MidiQOL.removeEffects({\n        actorUuid: target.uuid,\n        effects: spell.ids\n      });\n    }\n\n    results.push({\n      name: spell.name,\n      img: spell.img,\n      level: spell.level,\n      success,\n      total,\n      dc\n    });\n  }\n\n  if (!results.length) return;\n\n  const escape = value =>\n    foundry.utils.escapeHTML(String(value));\n\n  const html = results.map(r => `\n    <div style=\"\n      display:flex;\n      align-items:center;\n      gap:8px;\n      margin:4px 0;\n    \">\n      ${r.img ? `\n        <img\n          src=\"${escape(r.img)}\"\n          width=\"24\"\n          height=\"24\"\n          style=\"\n            width:24px;\n            height:24px;\n            object-fit:cover;\n            border:0;\n            flex:none;\n          \"\n        >\n      ` : \"\"}\n      <span>\n        ${escape(r.name)}（${r.level}环）：\n        ${r.success ? \"解除成功\" : \"解除失败\"}\n        ${r.total === undefined\n          ? \"\"\n          : `（${r.total} / DC ${r.dc}）`}\n      </span>\n    </div>\n  `).join(\"\");\n\n  await MidiQOL.addCardNote(wf, html, {\n    anchor: \"bottom\",\n    key: \"dispel-magic.results\"\n  });\n})();"
         },
         "ignoreTraits": {
           "idi": false,
@@ -190,11 +219,14 @@
           "rollAs": "target"
         },
         "otherActivityId": "none",
-        "img": null,
+        "img": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
           "requireMagic": false
@@ -221,7 +253,175 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
-        "otherActivityAsParentType": true
+        "otherActivityAsParentType": true,
+        "name": ""
+      },
+      "wjfN7a2ckAfAXDQ5": {
+        "type": "check",
+        "name": "Dispel Check",
+        "_id": "wjfN7a2ckAfAXDQ5",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "",
+          "override": true,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "check": {
+          "associated": [],
+          "dc": {
+            "calculation": "",
+            "formula": ""
+          },
+          "visible": true,
+          "ability": "spellcasting",
+          "bonus": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "followUp": false,
+          "followUpTargets": "default",
+          "followUpCondition": "",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "targetMustBeSeen": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "statuses": []
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "damage": {
+          "onSave": "half",
+          "parts": [],
+          "critical": {
+            "allow": false
+          }
+        },
+        "friendlySave": "default"
       }
     },
     "identifier": "dispel-magic",

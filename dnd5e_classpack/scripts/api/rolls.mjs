@@ -155,7 +155,7 @@ export function createRollApi(api) {
       const original = rolls[index];
       if (!original._evaluated || !original.validD20Roll) continue;
       rolls[index] = await dispatch({ roll: original, actor, workflow, activity: config.subject?.item ? config.subject : workflow?.activity,
-        targets: type === 'attack' ? [...workflow.targets].map(token => token.actor).filter(Boolean) : [], type,
+        targets: type === 'attack' ? Array.from(workflow.targets.documents ?? workflow.targets).map(token => token.actor).filter(Boolean) : [], type,
         rollMode: message.rollMode ?? CONFIG.Dice.BasicRoll.getMessageMode(),
         label: `${actor.name}：${config.subject?.item?.name ?? type}`, config, message });
       if (type === 'attack' && rolls[index] !== original) syncNaturalResults(workflow);

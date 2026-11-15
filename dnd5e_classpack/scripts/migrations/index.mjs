@@ -159,10 +159,4 @@ export async function runWorldMigrations() {
   finally {running = false; report.worldDocumentsWritten = report.writes.length; report.complete = report.versionAfter === registry.at(-1).version;}
   return report;
 }
-export function notifyPendingMigrations() {
-  if (!game.user?.isGM) return;
-  try {
-    if (currentVersion() < registry.at(-1).version) ui.notifications.info("ClassPack 有待处理的世界迁移。请先运行世界迁移检查宏，再手动迁移。");
-  } catch (e) {ui.notifications.warn(e.message);}
-}
 export const worldMigrations = Object.freeze({check:checkWorldMigrations,run:runWorldMigrations,registry});
