@@ -31,6 +31,8 @@ import { moveTokens, registerMovementActions } from "./api/movement.mjs";
 import { tokenDocument } from "./api/geometry.mjs";
 import { checkCompatibility, isCompatibleVersion } from "./compatibility.mjs";
 import { registerMigrationSettings, worldMigrations } from "./migrations/index.mjs";
+import { migratePsiWarriorOnReady } from "./migrations/psi-warrior.mjs";
+import { migrateMercyOnReady } from "./migrations/way-of-mercy.mjs";
 
 import { createAutomationRegistry } from "./api/automations.mjs";
 import { createResourceApi } from "./api/resources.mjs";
@@ -242,6 +244,7 @@ Hooks.once("ready", () => {
       api.rollInterventions.refreshActors();
     }
   } catch (error) { log("error", "Roll automation initialization failed:", error); }
+  void migratePsiWarriorOnReady().then(migrateMercyOnReady);
   Hooks.callAll("dnd5eClasspackReady", api);
 });
 

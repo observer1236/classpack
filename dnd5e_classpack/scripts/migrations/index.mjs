@@ -1,4 +1,6 @@
 import {catalog} from "./catalog.mjs";
+import {registerMercyActivities, mercyMigrationPending} from "./way-of-mercy.mjs";
+import {registerPsiWarriorMigrationSetting, psiWarriorMigrationPending} from "./psi-warrior.mjs";
 import {equal, fieldState, renameReferences, provenance, evaluateTargets} from "./patches.mjs";
 
 const MODULE_ID = "dnd5e_classpack";
@@ -13,6 +15,8 @@ const bySource = new Map(catalog.entries.map(e=>[e.source,e]));
 let running = false;
 
 export function registerMigrationSettings() {
+  registerPsiWarriorMigrationSetting();
+  registerMercyActivities();
   game.settings.register(MODULE_ID, LEGACY, {name: "new-icon → spell 迁移标记", scope: "world", config: false, type: Boolean, default: false});
   game.settings.register(MODULE_ID, VERSION, {name: "ClassPack 世界迁移版本", scope: "world", config: false, type: Number, default: 0});
 }
@@ -121,6 +125,8 @@ export async function checkWorldMigrations() {
   const legacy = legacyOperations(docs), semantic = semanticGroups(docs);
   report.documentsScanned = docs.length;
   report.pending = registry.filter(m=>m.version>report.versionBefore);
+  report.psiWarrior = {pending: psiWarriorMigrationPending()};
+  report.wayOfMercy = {pending: mercyMigrationPending()};
   report.legacy = {pending:!report.legacyMarkerBefore,operations:legacy.map(publicOperation)};
   report.semantic = {confirmed:semantic.confirmed,unchanged:semantic.unchanged,groups:semantic.groups.map(g=>({...g,operations:g.operations.map(publicOperation)}))};
   report.reviews = semantic.reviews;

@@ -55,7 +55,7 @@
             "value": "2 + @roll.item.level",
             "phase": "initial",
             "_id": "FKdnAIB0wSNoha3w",
-            "conditions": "\n{\n  \"o\": \"AND\",\n  \"v\": [\n    {\n      \"k\": \"roll.item.level\",\n      \"o\": \"gte\",\n      \"v\": 1\n    },\n    {\n      \"k\": \"roll.item.school\",\n      \"o\": \"empty\",\n      \"v\": false\n    }\n  ]\n}\n",
+            "conditions": "\n{\n  \"o\": \"AND\",\n  \"v\": [\n    {\n      \"k\": \"roll.item.level\",\n      \"o\": \"gte\",\n      \"v\": 1\n    },\n    {\n      \"k\": \"roll.item.school\",\n      \"o\": \"empty\",\n      \"v\": false\n    },\n    {\n      \"k\": \"roll.damage.type\",\n      \"o\": \"exact\",\n      \"v\": \"healing\"\n    }\n  ]\n}\n",
             "replacement": "",
             "priority": null
           }
@@ -103,6 +103,9 @@
           "overlay": false
         }
       },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
@@ -114,9 +117,6 @@
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
-      "start": null,
-      "showIcon": 1,
-      "folder": null,
       "_key": "!items.effects!JKRSuJBfZnXIx8Zu.96EeRJYFjVge1Kal"
     }
   ],
@@ -170,6 +170,9 @@
     },
     "chris-premades": {}
   },
+  "ownership": {
+    "default": 0
+  },
   "_stats": {
     "coreVersion": "14.368",
     "systemId": "dnd5e",
@@ -180,9 +183,6 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
-  },
-  "ownership": {
-    "default": 0
   },
   "_key": "!items!JKRSuJBfZnXIx8Zu"
 }

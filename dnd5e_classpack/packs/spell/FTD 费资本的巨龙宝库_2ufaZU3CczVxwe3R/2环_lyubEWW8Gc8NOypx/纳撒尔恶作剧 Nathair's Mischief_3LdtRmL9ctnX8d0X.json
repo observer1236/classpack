@@ -4,7 +4,7 @@
   "img": "icons/magic/symbols/mask-yellow-orange.webp",
   "system": {
     "description": {
-      "value": "<p>你选择一个以施法范围内一点为原点，20尺矩形的范围。你在该范围内填满妖精与龙族的魔法。在恶作剧之涌表格里掷骰以决定产生的魔法效应。法术持续时间内、在你的每个回合开始时，你都重骰这个表格。在你重骰之前，你可以把这个矩形范围移动最多10尺。</p><blockquote><p><strong>恶作剧之涌</strong></p><table><thead><tr><th><strong>[[/r D4]]</strong></th><th><strong>效应</strong></th></tr></thead><tbody><tr><td>1</td><td>空气中弥漫着苹果派的味道，范围内的生物必须成功通过一次感知豁免，否则将被你魅惑，直至你的下回合开始。</td></tr><tr><td>2</td><td>一束束鲜花出现在四周，范围内的生物必须成功通过一次敏捷豁免，否则鲜花将往他们脸上喷水，使他们陷入目盲，直至你的下回合开始。</td></tr><tr><td>3</td><td>范围内的每个生物必须成功通过一次感知豁免，否则将开始咯咯笑，直至你的下回合开始。一个正在咯咯笑的生物陷入失能，并使用他的所有移动力向一个随机方向移动。</td></tr><tr><td>4</td><td>一滴滴蜜糖出现并在矩形内悬停，将其内变成困难地形，直至你的下回合开始。</td></tr></tbody></table></blockquote>",
+      "value": "<p>你选择一个以施法范围内一点为原点，20尺矩形的范围。你在该范围内填满妖精与龙族的魔法。在恶作剧之涌表格里掷骰以决定产生的魔法效应。法术持续时间内、在你的每个回合开始时，你都重骰这个表格。在你重骰之前，你可以把这个矩形范围移动最多10尺。</p><blockquote><p><strong>恶作剧之涌</strong></p><table><thead><tr><th><p><strong>[[/r D4]]</strong></p></th><th><p><strong>效应</strong></p></th></tr></thead><tbody><tr><td><p>1</p></td><td><p>空气中弥漫着苹果派的味道，范围内的生物必须成功通过一次感知豁免，否则将被你魅惑，直至你的下回合开始。</p></td></tr><tr><td><p>2</p></td><td><p>一束束鲜花出现在四周，范围内的生物必须成功通过一次敏捷豁免，否则鲜花将往他们脸上喷水，使他们陷入目盲，直至你的下回合开始。</p></td></tr><tr><td><p>3</p></td><td><p>范围内的每个生物必须成功通过一次感知豁免，否则将开始咯咯笑，直至你的下回合开始。一个正在咯咯笑的生物陷入失能，并使用他的所有移动力向一个随机方向移动。</p></td></tr><tr><td><p>4</p></td><td><p>一滴滴蜜糖出现并在矩形内悬停，将其内变成困难地形，直至你的下回合开始。</p></td></tr></tbody></table></blockquote>",
       "chat": ""
     },
     "source": {
@@ -59,8 +59,7 @@
     "properties": [
       "somatic",
       "material",
-      "concentration",
-      "mgc"
+      "concentration"
     ],
     "activities": {
       "dnd5eactivity000": {
@@ -89,7 +88,16 @@
           "override": false,
           "expiry": null
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "f70MV6Yl5dY4yK9S",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
         "range": {
           "override": false,
           "units": "self"
@@ -112,7 +120,7 @@
           "recovery": []
         },
         "roll": {
-          "formula": "",
+          "formula": "1d4",
           "name": "",
           "prompt": false,
           "visible": false
@@ -122,8 +130,8 @@
         "useConditionReason": "",
         "effectConditionText": "",
         "macroData": {
-          "name": "",
-          "command": ""
+          "name": "Midi效用",
+          "command": "const pass = args[0]?.macroPass;\nif (pass !== \"postPreambleComplete\" && pass !== \"postActiveEffects\") return;\n\nconst marker = \"flags.dnd5e_classpack.nathair\";\nconst combat = game.combat;\nconst turnKey = combat?.active ? `${combat.id}.${combat.round}.${combat.turn}` : null;\nconst socket = MidiQOL.socket();\nconst resolve = uuid => uuid ? fromUuid(uuid) : null;\n\nconst updateRegion = (region, update, behaviors) => game.user.isGM\n  ? (async () => {\n    if (update) await region.update(update);\n    if (behaviors?.length) {\n      await region.createEmbeddedDocuments(\"RegionBehavior\", behaviors);\n    }\n  })()\n  : socket.executeAsGM(\"setupRegion\", { regionUuid: region.uuid, update, behaviors });\n\nif (pass === \"postPreambleComplete\") {\n  const prepared = await prepare();\n  if (!prepared) return;\n\n  workflow._nathairPrepared = prepared;\n  // Midi 14.6.11 的通用自动掷骰沿用自动伤害开关。\n  workflow.workflowOptions.autoRollDamage = \"onHit\";\n  return;\n}\n\nconst prepared = workflow._nathairPrepared;\nif (!prepared) return;\ndelete workflow._nathairPrepared;\n\nconst { item } = prepared;\nlet { state } = prepared;\nconst region = await resolve(prepared.regionUuid);\n\nif (!region || !canvas.ready || canvas.scene?.id !== region.parent?.id ||\n    region.flags?.dnd5e_classpack?.nathair?.turnKey !== state.turnKey ||\n    (state.turnKey !== null && turnKey !== state.turnKey)) return;\n\nconst result = workflow.utilityRoll?.total;\nif (![1, 2, 3, 4].includes(result)) return;\n\n// 只绑定本次施法新应用的自施 AE。\nconst anchors = Array.from(workflow.actor.effects).filter(effect =>\n  effect.active && !effect.duration?.expired &&\n  !prepared.priorEffectIds.has(effect.id) &&\n  Array.from(effect.system?.changes ?? []).some(change =>\n    change.key === \"flags.midi-qol.ActivityOverTime\" &&\n    change.value === \"nathair-repeat\"\n  )\n);\n\nif (anchors.length !== 1) {\n  ui.notifications.warn(\n    \"纳撒尔恶作剧：找不到本次施法新应用的自施 OverTime AE，请检查主活动的效果列表和 DAE 自施设置。\"\n  );\n  return;\n}\n\nconst [anchor] = anchors;\nstate = { ...state, anchorUuid: anchor.uuid };\nawait updateRegion(region, {\n  [marker]: state,\n  \"flags.dnd5e.dependentOn\": anchor.uuid\n});\n\nconst descriptions = [\n  \"苹果派香气：感知豁免，失败则魅惑。\",\n  \"鲜花喷水：敏捷豁免，失败则目盲。\",\n  \"咯咯笑：感知豁免，失败则失能并随机移动。\",\n  \"悬浮蜜糖：区域成为困难地形。\"\n];\nstate = { ...state, result, actors: [] };\n\nif (result === 4) {\n  const terrain = region.behaviors.find(b => b.flags?.dnd5e_classpack?.nathairTerrain);\n  await updateRegion(region, {\n    [marker]: state,\n    ...(terrain ? { behaviors: [{ _id: terrain.id, disabled: false }] } : {})\n  });\n  await ChatMessage.create({\n    speaker: ChatMessage.getSpeaker({ actor: item.actor }),\n    content: `恶作剧之涌（4）：${descriptions[3]}`\n  });\n  return;\n}\n\nconst priorTargetIds = Array.from(game.user.targets ?? [], target => target.id);\nconst targets = MidiQOL.selectTargetsFromTemplates(\n  [region.uuid], state.casterTokenUuid ?? \"\", false, \"any\", \"always\"\n);\nconst selectedIds = new Set(targets.map(target => target.id));\n\ntry {\n  state.actors = [...new Set(targets.map(target => target.actor?.uuid).filter(Boolean))];\n  await updateRegion(region, { [marker]: state });\n  await ChatMessage.create({\n    speaker: ChatMessage.getSpeaker({ actor: item.actor }),\n    content: `恶作剧之涌（${result}）：${descriptions[result - 1]}`\n  });\n  if (!targets.length) return;\n\n  const baseSave = item.system.activities.find(a => a.identifier === \"nathair-save\");\n  if (!baseSave) {\n    ui.notifications.warn(\"纳撒尔恶作剧：未找到 Identifier 为 nathair-save 的豁免活动。\");\n    return;\n  }\n\n  const ability = result === 2 ? \"dex\" : \"wis\";\n  const rolledItem = item.clone({\n    system: { activities: { [baseSave.id]: { save: { ability: [ability] } } } }\n  }, { keepId: true });\n  const save = rolledItem.system.activities.get(baseSave.id);\n\n  await MidiQOL.completeActivityUse(save, { midiOptions: {\n    targetsToUse: new Set(targets),\n    checkGMstatus: false,\n    ignoreUserTargets: true,\n    workflowOptions: {\n      targetConfirmation: \"none\",\n      noProvokeReaction: true,\n      allowIncapacitated: true,\n      nathairRegionUuid: region.uuid,\n      nathairTurnKey: turnKey\n    }\n  } }, { configure: false }, { create: true });\n} finally {\n  if (canvas.scene?.id === region.parent?.id) {\n    const currentIds = new Set(Array.from(game.user.targets ?? [], target => target.id));\n    if (currentIds.size === selectedIds.size && [...currentIds].every(id => selectedIds.has(id))) {\n      canvas.tokens?.setTargets(priorTargetIds);\n    }\n  }\n}\n\nasync function prepare() {\n  const item = workflow.item;\n  let region;\n  for (const uuid of workflow.templateUuids ?? []) {\n    const doc = await resolve(uuid);\n    if (doc?.documentName === \"Region\") {\n      region = doc;\n      break;\n    }\n  }\n  if (!region || region.flags?.dnd5e_classpack?.nathair) return;\n\n  const casterTokenUuid = workflow.token?.document?.uuid ?? workflow.tokenUuid;\n  const state = { itemUuid: item.uuid, casterTokenUuid, anchorUuid: null, turnKey, actors: [] };\n\n  const config = workflow.activity.regionBehavior;\n  if (!config?.enabled || config.rules?.length || Number(config.moveDistance ?? 0) > 0) {\n    ui.notifications.warn(\n      \"纳撒尔恶作剧：请开启施法活动的 Region Behavior，将自动移动距离设为 0，并清空规则列表。\"\n    );\n    return;\n  }\n\n  await updateRegion(region, { [marker]: state }, [{\n    name: \"恶作剧之涌：蜜糖\",\n    type: \"dnd5e.difficultTerrain\",\n    disabled: true,\n    flags: { dnd5e_classpack: { nathairTerrain: true } },\n    system: { magical: true, types: [], ignoredDispositions: [] }\n  }]);\n\n  region = await resolve(region.uuid);\n  if (!region) return;\n  if (!canvas.ready || canvas.scene?.id !== region.parent?.id) {\n    ui.notifications.warn(\"纳撒尔恶作剧：请在区域所在的场景里结算。\");\n    return;\n  }\n\n  return {\n    item, state, regionUuid: region.uuid,\n    priorEffectIds: new Set(Array.from(workflow.actor.effects, effect => effect.id))\n  };\n}"
         },
         "ignoreTraits": {
           "idi": false,
@@ -138,12 +146,12 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "confirmTargets": "default",
+          "confirmTargets": "never",
           "autoTargetType": "any",
           "autoTargetAction": "default",
           "automationOnly": false,
-          "otherActivityCompatible": true,
-          "identifier": "",
+          "otherActivityCompatible": false,
+          "identifier": "nathair-cast",
           "displayActivityName": false,
           "rollMode": "default",
           "chooseEffects": false,
@@ -171,21 +179,24 @@
           "rollAs": "target"
         },
         "otherActivityId": "none",
-        "img": null,
+        "img": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
           "requireMagic": false
         },
         "regionBehavior": {
-          "enabled": false,
-          "dispositionFilter": -1,
-          "excludeSource": true,
-          "oncePerTurn": true,
-          "wallRestriction": "none",
+          "enabled": true,
+          "dispositionFilter": 0,
+          "excludeSource": false,
+          "oncePerTurn": false,
+          "wallRestriction": "move",
           "regionVisibility": 2,
           "attachToken": "default",
           "templateOrigin": "default",
@@ -202,14 +213,420 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
+        "otherActivityAsParentType": true,
+        "name": ""
+      },
+      "0OMvA8OPxZPBN8Gl": {
+        "type": "utility",
+        "name": "Overtime Roll",
+        "_id": "0OMvA8OPxZPBN8Gl",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "",
+          "override": true,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": "1d4"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
+          "name": "Overtime Roll",
+          "command": "const pass = args[0]?.macroPass;\nif (pass !== \"postPreambleComplete\" && pass !== \"postUtilityRollComplete\") return;\n\nconst marker = \"flags.dnd5e_classpack.nathair\";\nconst combat = game.combat;\nconst turnKey = combat?.active ? `${combat.id}.${combat.round}.${combat.turn}` : null;\nconst socket = MidiQOL.socket();\nconst resolve = uuid => uuid ? fromUuid(uuid) : null;\n\nconst isActive = async uuid => {\n  const anchor = await resolve(uuid);\n  return !!anchor?.active && !anchor.duration?.expired;\n};\n\nconst updateRegion = (region, update) => game.user.isGM\n  ? region.update(update)\n  : socket.executeAsGM(\"setupRegion\", { regionUuid: region.uuid, update });\n\nif (pass === \"postPreambleComplete\") {\n  const prepared = await prepare();\n  if (!prepared) {\n    workflow.aborted = true;\n    return;\n  }\n\n  workflow._nathairPrepared = prepared;\n  workflow.workflowOptions.autoRollDamage = \"onHit\";\n  return;\n}\n\nconst prepared = workflow._nathairPrepared;\nif (!prepared) return;\ndelete workflow._nathairPrepared;\n\nconst { item } = prepared;\nlet { state } = prepared;\nconst region = await resolve(prepared.regionUuid);\n\nif (!region || !canvas.ready || canvas.scene?.id !== region.parent?.id ||\n    !await isActive(state.anchorUuid) ||\n    region.flags?.dnd5e_classpack?.nathair?.turnKey !== state.turnKey ||\n    (state.turnKey !== null && turnKey !== state.turnKey)) return;\n\nconst result = workflow.utilityRoll?.total;\nif (![1, 2, 3, 4].includes(result)) return;\n\nconst descriptions = [\n  \"苹果派香气：感知豁免，失败则魅惑。\",\n  \"鲜花喷水：敏捷豁免，失败则目盲。\",\n  \"咯咯笑：感知豁免，失败则失能并随机移动。\",\n  \"悬浮蜜糖：区域成为困难地形。\"\n];\nstate = { ...state, result, actors: [] };\n\nif (result === 4) {\n  const terrain = region.behaviors.find(b => b.flags?.dnd5e_classpack?.nathairTerrain);\n  await updateRegion(region, {\n    [marker]: state,\n    ...(terrain ? { behaviors: [{ _id: terrain.id, disabled: false }] } : {})\n  });\n  await ChatMessage.create({\n    speaker: ChatMessage.getSpeaker({ actor: item.actor }),\n    content: `恶作剧之涌（4）：${descriptions[3]}`\n  });\n  return;\n}\n\nconst priorTargetIds = Array.from(game.user.targets ?? [], target => target.id);\nconst targets = MidiQOL.selectTargetsFromTemplates(\n  [region.uuid], state.casterTokenUuid ?? \"\", false, \"any\", \"always\"\n);\nconst selectedIds = new Set(targets.map(target => target.id));\n\ntry {\n  state.actors = [...new Set(targets.map(target => target.actor?.uuid).filter(Boolean))];\n  await updateRegion(region, { [marker]: state });\n  await ChatMessage.create({\n    speaker: ChatMessage.getSpeaker({ actor: item.actor }),\n    content: `恶作剧之涌（${result}）：${descriptions[result - 1]}`\n  });\n  if (!targets.length) return;\n\n  const baseSave = item.system.activities.find(a => a.identifier === \"nathair-save\");\n  if (!baseSave) {\n    ui.notifications.warn(\"纳撒尔恶作剧：未找到 Identifier 为 nathair-save 的豁免活动。\");\n    return;\n  }\n\n  const ability = result === 2 ? \"dex\" : \"wis\";\n  const rolledItem = item.clone({\n    system: { activities: { [baseSave.id]: { save: { ability: [ability] } } } }\n  }, { keepId: true });\n  const save = rolledItem.system.activities.get(baseSave.id);\n\n  await MidiQOL.completeActivityUse(save, { midiOptions: {\n    targetsToUse: new Set(targets),\n    checkGMstatus: false,\n    ignoreUserTargets: true,\n    workflowOptions: {\n      targetConfirmation: \"none\",\n      noProvokeReaction: true,\n      allowIncapacitated: true,\n      nathairRegionUuid: region.uuid,\n      nathairTurnKey: turnKey\n    }\n  } }, { configure: false }, { create: true });\n} finally {\n  if (canvas.scene?.id === region.parent?.id) {\n    const currentIds = new Set(Array.from(game.user.targets ?? [], target => target.id));\n    if (currentIds.size === selectedIds.size && [...currentIds].every(id => selectedIds.has(id))) {\n      canvas.tokens?.setTargets(priorTargetIds);\n    }\n  }\n}\n\nasync function prepare() {\n  const tick = await resolve(workflow.workflowOptions?.overTimeEffectUuid);\n  const token = combat?.combatant?.token;\n  if (!turnKey || !tick?.active || tick.duration?.expired ||\n      !token?.actor || token.actor.uuid !== tick.parent?.uuid) return;\n\n  const origin = tick.system?.origin;\n  const castActivity = await resolve(origin?.activity);\n  const item = castActivity?.item\n    ?? await resolve(origin?.item)\n    ?? await resolve(workflow.item.uuid);\n  if (!item?.system?.activities || item.actor?.uuid !== token.actor.uuid) return;\n\n  const regions = Array.from(token.parent?.regions ?? []).filter(region => {\n    const state = region.flags?.dnd5e_classpack?.nathair;\n    return state?.itemUuid === item.uuid &&\n      (!state.casterTokenUuid || state.casterTokenUuid === token.uuid) &&\n      state.anchorUuid === tick.uuid;\n  });\n  if (regions.length !== 1) return;\n\n  let [region] = regions;\n  let state = region.flags.dnd5e_classpack.nathair;\n  if (state.turnKey === turnKey || !await isActive(state.anchorUuid)) return;\n\n  // 登记本回合，清理上一轮的困难地形和受术状态。\n  const previousActors = state.actors;\n  state = { ...state, turnKey, result: null, actors: [] };\n  await updateRegion(region, { [marker]: state });\n\n  const terrain = region.behaviors.find(b => b.flags?.dnd5e_classpack?.nathairTerrain);\n  if (terrain && !terrain.disabled) {\n    await updateRegion(region, { behaviors: [{ _id: terrain.id, disabled: true }] });\n  }\n\n  for (const uuid of previousActors) {\n    const actor = await resolve(uuid);\n    if (!actor) continue;\n    const effects = Array.from(actor.effects)\n      .filter(e => e.flags?.dnd5e_classpack?.nathairResult === region.uuid)\n      .map(e => e.id);\n    if (effects.length) await MidiQOL.removeEffects({ actorUuid: actor.uuid, effects });\n  }\n\n  const stillCurrent = async () =>\n    `${game.combat?.id}.${game.combat?.round}.${game.combat?.turn}` === turnKey &&\n    await isActive(state.anchorUuid);\n\n  region = await resolve(region.uuid);\n  if (!region || !await stillCurrent()) return;\n  if (!canvas.ready || canvas.scene?.id !== region.parent?.id) {\n    ui.notifications.warn(\"纳撒尔恶作剧：请在战斗所在的场景里结算。\");\n    return;\n  }\n\n  const directions = {\n    n: [0, -1], ne: [1, -1], e: [1, 0], se: [1, 1],\n    s: [0, 1], sw: [-1, 1], w: [-1, 0], nw: [-1, -1]\n  };\n\n  const choice = await foundry.applications.api.DialogV2.wait({\n    window: { title: \"纳撒尔恶作剧：重掷前移动区域\" },\n    content: `\n      <p><label>方向 <select name=\"direction\">\n        <option value=\"n\">北</option><option value=\"ne\">东北</option>\n        <option value=\"e\">东</option><option value=\"se\">东南</option>\n        <option value=\"s\">南</option><option value=\"sw\">西南</option>\n        <option value=\"w\">西</option><option value=\"nw\">西北</option>\n      </select></label></p>\n      <p><label>距离（尺）\n        <input name=\"distance\" type=\"number\" min=\"0\" max=\"10\" step=\"any\" value=\"10\">\n      </label></p>`,\n    buttons: [\n      {\n        action: \"move\",\n        label: \"移动并重掷\",\n        callback: (_event, _button, dialog) => ({\n          direction: dialog.element.querySelector('[name=\"direction\"]').value,\n          distance: dialog.element.querySelector('[name=\"distance\"]').valueAsNumber\n        })\n      },\n      { action: \"stay\", label: \"原地重掷\", default: true, callback: () => null }\n    ],\n    rejectClose: false\n  });\n\n  if (!await stillCurrent()) return;\n  region = await resolve(region.uuid);\n  if (!region) return;\n\n  const direction = Object.hasOwn(directions, choice?.direction)\n    ? directions[choice.direction] : null;\n  const distance = Number.isFinite(choice?.distance)\n    ? Math.max(0, Math.min(10, choice.distance)) : 0;\n\n  if (direction && distance > 0) {\n    const scene = region.parent;\n    const [x, y] = direction;\n    const pixels = distance * scene.dimensions.distancePixels;\n    const length = Math.hypot(x, y);\n    const dx = x * pixels / length;\n    const dy = y * pixels / length;\n\n    const shapes = region.shapes.map(shape => {\n      const shifted = shape.clone({}, { parent: scene });\n      shifted.move({ x: shape.origin.x + dx, y: shape.origin.y + dy });\n      return shifted.toObject();\n    });\n\n    await updateRegion(region, { shapes });\n    region = await resolve(region.uuid);\n  }\n\n  if (!region || !await stillCurrent()) return;\n  if (!canvas.ready || canvas.scene?.id !== region.parent?.id) {\n    ui.notifications.warn(\"纳撒尔恶作剧：请在区域所在的场景里结算。\");\n    return;\n  }\n\n  return { item, state, regionUuid: region.uuid };\n}"
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "followUp": false,
+          "followUpTargets": "default",
+          "followUpCondition": "",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "otherActivityAsParentType": true,
+          "identifier": "nathair-repeat",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "targetMustBeSeen": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "statuses": []
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "turnChoice": "start"
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
         "otherActivityAsParentType": true
+      },
+      "kTEN1p4xgdqBBrfd": {
+        "type": "save",
+        "name": "",
+        "_id": "kTEN1p4xgdqBBrfd",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "",
+          "override": true,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "critical": {
+            "allow": false
+          },
+          "parts": []
+        },
+        "save": {
+          "ability": [],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": "none",
+        "macroData": {
+          "name": "Midi豁免",
+          "command": "if (args[0] === \"each\") {\n  // DAE 在咯咯笑生物自己的回合开始时调用。\n  if (lastArgValue.turn !== \"startTurn\" || !effect?.active) return;\n\n  const combatant = game.combat?.combatant;\n  const state = effect.flags?.dnd5e_classpack;\n  const source = state?.nathairSourceToken;\n  if (!combatant?.token ||\n      combatant.token.uuid !== state?.nathairAffectedToken ||\n      combatant.token.uuid === source) return;\n\n  const direction = await new Roll(\"1d8\").evaluate();\n  const directions = [\"北\", \"东北\", \"东\", \"东南\", \"南\", \"西南\", \"西\", \"西北\"];\n  await direction.toMessage({\n    speaker: ChatMessage.getSpeaker({ token: combatant.token }),\n    flavor: `咯咯笑：本回合用可用移动力向${directions[direction.total - 1]}移动，遇到障碍时在可到达的位置停下。`\n  });\n  return;\n}\n\nif (args[0]?.macroPass === \"preItemRoll\") {\n  return !!workflow.workflowOptions?.nathairRegionUuid;\n}\nif (args[0]?.macroPass !== \"postSave\") return;\n\nconst region = await fromUuid(workflow.workflowOptions?.nathairRegionUuid);\nconst state = region?.flags?.dnd5e_classpack?.nathair;\n\nconst isActive = async uuid => {\n  const anchor = uuid ? await fromUuid(uuid) : null;\n  return !!anchor?.active && !anchor.duration?.expired;\n};\n\nif (!state ||\n    state.turnKey !== workflow.workflowOptions.nathairTurnKey ||\n    !await isActive(state.anchorUuid)) return;\n\nconst status = ({ 1: \"charmed\", 2: \"blinded\", 3: \"incapacitated\" })[state.result];\nif (!status) return;\n\nconst names = {\n  charmed: \"苹果派香气：魅惑\",\n  blinded: \"鲜花喷水：目盲\",\n  incapacitated: \"咯咯笑：失能\"\n};\nconst laughing = status === \"incapacitated\";\n\nconst failed = new Map();\nfor (const target of workflow.failedSaves ?? []) {\n  if (!target.actor) continue;\n  const alreadyApplied = Array.from(target.actor.effects).some(e =>\n    e.flags?.dnd5e_classpack?.nathairResult === region.uuid && e.statuses.has(status)\n  );\n  if (!alreadyApplied) failed.set(target.actor.uuid, target);\n}\n\nfor (const token of failed.values()) {\n  if (!await isActive(state.anchorUuid)) break;\n\n  const actor = token.actor;\n  if (actor.system?.traits?.ci?.value?.has?.(status)) continue;\n\n  const data = {\n    name: `纳撒尔恶作剧：${names[status]}`,\n    img: workflow.item.img,\n    transfer: false,\n    statuses: [status],\n    duration: { units: \"seconds\", value: null, expiry: \"sourceStart\" },\n    system: {\n      origin: {\n        actor: workflow.actor.uuid,\n        item: workflow.item.uuid,\n        activity: workflow.activity.uuid\n      },\n      changes: laughing ? [{\n        key: \"macro.activityMacro\",\n        value: workflow.activity.uuid,\n        type: \"custom\",\n        phase: \"initial\",\n        priority: 20,\n        replacement: \"\"\n      }] : []\n    },\n    flags: {\n      dnd5e: { dependentOn: state.anchorUuid },\n      ...(laughing ? { dae: { macroRepeat: \"startEveryTurn\" } } : {}),\n      dnd5e_classpack: {\n        nathairResult: region.uuid,\n        nathairSourceToken: state.casterTokenUuid,\n        nathairAffectedToken: token.document?.uuid ?? token.uuid\n      }\n    }\n  };\n\n  if (game.user.isGM) {\n    await actor.createEmbeddedDocuments(\"ActiveEffect\", [data]);\n  } else {\n    await MidiQOL.socket().executeAsGM(\"createEffects\", {\n      actorUuid: actor.uuid, effects: [data]\n    });\n  }\n}"
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "followUp": false,
+          "followUpTargets": "default",
+          "followUpCondition": "",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "never",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "otherActivityAsParentType": true,
+          "identifier": "nathair-save",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "targetMustBeSeen": false,
+          "removeChatButtons": "default",
+          "magicEffect": true,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "statuses": []
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "friendlySave": "default"
       }
     },
     "identifier": "nathairs-mischief",
     "method": "spell",
     "prepared": 0
   },
-  "effects": [],
+  "effects": [
+    {
+      "name": "纳撒尔恶作剧 Nathair's Mischief",
+      "img": "icons/magic/symbols/mask-yellow-orange.webp",
+      "system": {
+        "origin": {
+          "item": "Compendium.dnd5e_classpack.spell.Item.3LdtRmL9ctnX8d0X",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "changes": [
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "type": "add",
+            "value": "nathair-repeat",
+            "phase": "initial",
+            "_id": "oyjSCb93Ri7eAuv1",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "transfer": false,
+      "_id": "f70MV6Yl5dY4yK9S",
+      "type": "base",
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "applicationMode": "default",
+          "expiryMode": "delete",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": true,
+          "dontApply": false,
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.369",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": 1794809360885,
+        "modifiedTime": 1794809433386,
+        "lastModifiedBy": "dvg25zW2MvzsvMOU",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!3LdtRmL9ctnX8d0X.f70MV6Yl5dY4yK9S"
+    }
+  ],
   "flags": {
     "dynamiceffects": {
       "equipActive": false,
@@ -225,7 +642,8 @@
       "effectCondition": "",
       "removeAttackDamageButtons": "default",
       "reactionCondition": "",
-      "otherCondition": ""
+      "otherCondition": "",
+      "onUseMacroName": "[postPreambleComplete]ActivityMacro-dnd5eactivity000,[postActiveEffects]ActivityMacro-dnd5eactivity000,[postUtilityRollComplete]ActivityMacro-0OMvA8OPxZPBN8Gl,[postPreambleComplete]ActivityMacro-0OMvA8OPxZPBN8Gl,[preItemRoll]ActivityMacro-kTEN1p4xgdqBBrfd,[postSave]ActivityMacro-kTEN1p4xgdqBBrfd"
     },
     "midiProperties": {
       "confirmTargets": "always",

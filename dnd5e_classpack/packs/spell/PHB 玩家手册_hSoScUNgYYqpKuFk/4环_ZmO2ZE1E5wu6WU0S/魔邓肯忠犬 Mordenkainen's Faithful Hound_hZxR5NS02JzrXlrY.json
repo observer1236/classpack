@@ -105,6 +105,9 @@
           "overlay": false
         }
       },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
@@ -116,9 +119,6 @@
         "lastModifiedBy": "WqWGW8MuBm7BNHxt",
         "exportSource": null
       },
-      "showIcon": 2,
-      "start": null,
-      "folder": null,
       "_key": "!items.effects!hZxR5NS02JzrXlrY.iFzYw1EyPwirtf14"
     }
   ],
@@ -202,7 +202,8 @@
           "targets": []
         },
         "description": {
-          "value": ""
+          "value": "",
+          "chatFlavor": ""
         },
         "duration": {
           "units": "inst",
@@ -214,7 +215,10 @@
           {
             "_id": "iFzYw1EyPwirtf14",
             "uuid": null,
-            "level": {}
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -235,30 +239,42 @@
         },
         "uses": {
           "spent": 0,
-          "recovery": []
+          "recovery": [],
+          "max": ""
         },
-        "bonuses": {},
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
         "creatureSizes": [],
         "creatureTypes": [],
         "match": {
-          "attacks": false,
-          "proficiency": false,
+          "attacks": true,
+          "proficiency": true,
           "saves": false,
-          "disposition": false
+          "disposition": false,
+          "ability": ""
         },
         "profiles": [
           {
+            "count": "",
+            "name": "",
             "_id": "2xZJGJv1F5VYjUSd",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.XmTdvhMlzvgXDybp",
             "level": {
               "min": null,
               "max": null
             },
-            "types": [],
-            "uuid": "Compendium.dnd5e_classpack.summons.Actor.XmTdvhMlzvgXDybp"
+            "types": []
           }
         ],
         "summon": {
-          "prompt": true
+          "prompt": true,
+          "mode": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
@@ -312,16 +328,19 @@
           "postRemoveConditionText": "",
           "rollAs": "target"
         },
-        "img": null,
+        "img": "",
         "behaviors": [],
         "flags": {},
         "visibility": {
-          "level": {},
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
           "requireMagic": false
         },
-        "otherActivityId": null,
+        "otherActivityId": "",
         "regionBehavior": {
           "enabled": false,
           "dispositionFilter": -1,
@@ -344,7 +363,9 @@
           "animationSpeed": 5,
           "animationIntensity": 5
         },
-        "friendlySummon": false
+        "friendlySummon": false,
+        "name": "",
+        "tempHP": ""
       }
     },
     "identifier": "mordenkainens-faithful-hound",

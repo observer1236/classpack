@@ -1,15 +1,15 @@
 {
-  "_id": "w6wzRcoxxL5rrnxe",
-  "name": "念力控物(免费) Telekinetic Movement",
+  "_id": "2dqkKB0KNItEKuCk",
+  "name": "壁垒之力 Bulwark of Force",
   "type": "feat",
-  "img": "icons/magic/movement/abstract-ribbons-red-orange.webp",
+  "img": "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp",
   "system": {
     "type": {
       "value": "class",
       "subtype": ""
     },
     "description": {
-      "value": "<p>你可以用意念移动一个物体或生物。你可以使用一个动作选中一个最多大型的物体或一个除你以外的自愿生物。如果你可以看见目标且目标在你30尺范围内，你就可以将其移动至多30尺至另一个对你可见的未占据空间内。另外，如果目标是一个微型物件，你可以从你的手中给出或收回。无论采取哪种方式，你都可以或水平、或垂直、或任意方向地移动它。</p>\n<p>当你使用该异能后，直到你完成一次短休或长休为止你都不能再次使用它。你也可以消耗一枚灵能骰来再次使用该异能。</p>",
+      "value": "<p>你可以使用念力庇护你自己和其他人。你可以使用一个附赠动作选择数个30尺范围内你可见生物（可以包括你），其数量等同于你的智力调整值（最少1个生物）。每个被选中的生物获得一分钟 半身掩护half cover 的保护，该保护将会在你失能时提前结束。</p>\n<p>当你使用此附赠动作后，直到你完成一次长休为止你都不能再次使用它。你也可以消耗一枚灵能骰来再次使用它。</p>",
       "chat": ""
     },
     "source": {
@@ -22,18 +22,18 @@
       "spent": 0,
       "recovery": [
         {
-          "period": "sr",
+          "period": "lr",
           "type": "recoverAll"
         }
       ]
     },
-    "requirements": "灵能武士等级 3",
+    "requirements": "灵能武士等级 10",
     "activities": {
       "dnd5eactivity000": {
         "_id": "dnd5eactivity000",
         "type": "utility",
         "activation": {
-          "type": "action",
+          "type": "bonus",
           "value": 1,
           "condition": "",
           "override": false
@@ -51,7 +51,7 @@
             "allowed": false,
             "max": ""
           },
-          "spellSlot": true
+          "spellSlot": false
         },
         "description": {
           "chatFlavor": "",
@@ -83,8 +83,8 @@
             "stationary": false
           },
           "affects": {
-            "count": "1",
-            "type": "object",
+            "count": "max(@abilities.int.mod, 1)",
+            "type": "creature",
             "choice": false,
             "special": ""
           },
@@ -103,7 +103,169 @@
           "visible": false
         },
         "sort": 0,
-        "name": "",
+        "name": "免费使用",
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
+      },
+      "vZXnOtXH7hJT4seL": {
+        "_id": "vZXnOtXH7hJT4seL",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Compendium.dnd5e_classpack.extra-ability.Item.sE0eWBfIdzrqoNWO",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false,
+          "expiry": null
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "count": "max(@abilities.int.mod, 1)",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": null,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "name": "消耗 1 枚灵能骰",
         "img": "",
         "behaviors": [],
         "flags": {},
@@ -191,13 +353,13 @@
         "otherActivityAsParentType": true
       }
     },
-    "identifier": "telekinetic-movement",
+    "identifier": "bulwark-of-force",
     "advancement": {},
     "cover": null,
     "crewed": false,
     "enchant": {},
     "prerequisites": {
-      "level": 3,
+      "level": null,
       "repeatable": false,
       "items": [
         "subclass:psi-warrior"
@@ -207,7 +369,7 @@
   },
   "effects": [],
   "folder": "lWuuznvhf9tYdVAU",
-  "sort": 49300000,
+  "sort": 6800000,
   "flags": {
     "midiProperties": {
       "confirmTargets": "default",
@@ -240,8 +402,8 @@
     "systemId": "dnd5e",
     "systemVersion": "6.0.5",
     "createdTime": null,
-    "modifiedTime": 1749883542518,
-    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "modifiedTime": 1757427471331,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
@@ -249,5 +411,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!items!w6wzRcoxxL5rrnxe"
+  "_key": "!items!2dqkKB0KNItEKuCk"
 }

@@ -463,13 +463,14 @@
         "max": 3
       },
       "senses": {
-        "units": null,
+        "units": "ft",
         "special": "",
         "ranges": {
           "darkvision": null,
           "blindsight": null,
           "tremorsense": null,
-          "truesight": null
+          "truesight": 30,
+          "devilsSight": null
         }
       },
       "spellcasting": "str",
@@ -694,7 +695,8 @@
             "activation": {
               "type": "action",
               "value": null,
-              "override": false
+              "override": false,
+              "condition": ""
             },
             "consumption": {
               "scaling": {
@@ -704,7 +706,8 @@
               "targets": []
             },
             "description": {
-              "value": ""
+              "value": "",
+              "chatFlavor": ""
             },
             "duration": {
               "units": "inst",
@@ -721,27 +724,37 @@
               "template": {
                 "contiguous": false,
                 "units": "ft",
-                "stationary": false
+                "stationary": false,
+                "type": ""
               },
               "affects": {
-                "choice": false
+                "choice": false,
+                "type": ""
               },
               "override": false,
               "prompt": true
             },
             "uses": {
               "spent": 0,
-              "recovery": []
+              "recovery": [],
+              "max": ""
             },
             "attack": {
               "critical": {
                 "threshold": null
               },
               "flat": false,
-              "type": {}
+              "type": {
+                "value": "",
+                "classification": ""
+              },
+              "ability": "",
+              "bonus": ""
             },
             "damage": {
-              "critical": {},
+              "critical": {
+                "bonus": ""
+              },
               "includeBase": true,
               "parts": []
             },
@@ -785,7 +798,7 @@
               "otherActivityAsParentType": true,
               "removeChatButtons": "default",
               "magicEffect": false,
-              "magicDamage": false,
+              "magicDamage": true,
               "noConcentrationCheck": false,
               "skipConcentrationCheck": false,
               "autoCEEffects": "default"
@@ -801,14 +814,18 @@
             "attackMode": "oneHanded",
             "ammunition": "",
             "otherActivityUuid": "",
-            "img": null,
+            "img": "",
             "behaviors": [],
             "flags": {},
             "visibility": {
-              "level": {},
+              "level": {
+                "min": null,
+                "max": null
+              },
               "requireAttunement": false,
               "requireIdentification": false,
-              "requireMagic": false
+              "requireMagic": false,
+              "identifier": ""
             },
             "regionBehavior": {
               "enabled": false,
@@ -834,7 +851,8 @@
             },
             "otherActivityAsParentType": true,
             "attackRollPerTarget": "default",
-            "fumbleThreshold": 1
+            "fumbleThreshold": 1,
+            "name": ""
           }
         },
         "uses": {
