@@ -378,7 +378,7 @@
   ],
   "system": {
     "description": {
-      "value": "<p>你将现实与时间线之间的壁垒粉碎，使一个生物陷入混沌与疯狂。目标必须通过一个感知豁免，否则将无法执行任何反应直到法术结束。被影响的生物必须在其回合开始时掷一枚[[/r 1d10]]，其结果决定目标身上发生了什么。参照下方表格“崩坏现实效果”</p><p>在其回合结束时，受影响的生物能重复其感知豁免，若成功，则法术结束。</p><blockquote><p><strong>崩坏现实效果</strong></p><table><thead><tr><th><strong>[[/r 1d10]]</strong></th><th><strong>效果</strong></th></tr></thead><tbody><tr><td>1~2</td><td><strong>遥远国度之瞥。</strong>目标受到6d12点心灵伤害并且陷入震慑到其本回合结束。</td></tr><tr><td>3~5</td><td><strong>崩碎裂缝。</strong>目标必须通过一个敏捷豁免，若失败则受到8d12点力场伤害，若豁免成功则受到一半伤害。</td></tr><tr><td>6~8</td><td><strong>虫洞。</strong>该目标与其身上所着装、携带的一切东西被传送到他30尺内你能看到的未占据空间。目标受到10d12点力场伤害并倒地。</td></tr><tr><td>9~10</td><td><strong>暗虚之冻。</strong>目标受到10d12寒冷伤害并且目盲到本回合结束。</td></tr></tbody></table></blockquote>",
+      "value": "<p>你将现实与时间线之间的壁垒粉碎，使一个生物陷入混沌与疯狂。目标必须通过一个感知豁免，否则将无法执行任何反应直到法术结束。被影响的生物必须在其回合开始时掷一枚[[/r 1d10]]，其结果决定目标身上发生了什么。参照下方表格“崩坏现实效果”</p><p>在其回合结束时，受影响的生物能重复其感知豁免，若成功，则法术结束。</p><blockquote><p><strong>崩坏现实效果</strong></p><table><thead><tr><th><strong>[[/r 1d10]]</strong></th><th><strong>效果</strong></th></tr></thead><tbody><tr><td>1~2</td><td><strong>遥远国度之瞥。</strong>目标受到6d12点心灵伤害并且陷入&amp;Reference[condition=stunned apply=false]{震慑}到其本回合结束。</td></tr><tr><td>3~5</td><td><strong>崩碎裂缝。</strong>目标必须通过一个敏捷豁免，若失败则受到8d12点力场伤害，若豁免成功则受到一半伤害。</td></tr><tr><td>6~8</td><td><strong>虫洞。</strong>该目标与其身上所着装、携带的一切东西被传送到他30尺内你能看到的未占据空间。目标受到10d12点力场伤害并&amp;Reference[condition=prone apply=false]{倒地}。</td></tr><tr><td>9~10</td><td><strong>暗虚之冻。</strong>目标受到10d12寒冷伤害并且&amp;Reference[condition=blinded apply=false]{目盲}到本回合结束。</td></tr></tbody></table></blockquote>",
       "chat": ""
     },
     "source": {

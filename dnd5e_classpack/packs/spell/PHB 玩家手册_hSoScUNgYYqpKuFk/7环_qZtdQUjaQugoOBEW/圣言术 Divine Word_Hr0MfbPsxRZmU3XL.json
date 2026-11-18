@@ -191,7 +191,7 @@
   ],
   "system": {
     "description": {
-      "value": "<p>你吟诵一句神圣的箴言，其中充盈了创世黎明的力量。在施法距离内指定任意数量的你能看见的生物，并迫使每个能够听到圣言的生物进行一次[[/save activity=dnd5eactivity000]]{魅力豁免}。豁免失败者基于其当前生命值承受以下效应：</p><ul><li><strong>生命值为 50 或更少：</strong>耳聋 1 分钟。</li><li><strong>生命值为 40 或更少：</strong>耳聋并目盲 10 分钟。</li><li><strong>生命值为 30 或更少：</strong>耳聋、目盲并被震慑 1 小时。</li><li><strong>生命值为 20 或更少：</strong>即死。</li></ul><p>对于受术的天族、元素生物、妖精或邪魔，其豁免失败时不需考虑其当前生命值，并直接将其遣返回其原属位面（本来就处于原属位面则无效）。在随后 24 小时内，该生物不能通过任何方式回到当前位面，除非使用祈愿术的效应。</p>",
+      "value": "<p>你吟诵一句神圣的箴言，其中充盈了创世黎明的力量。在施法距离内指定任意数量的你能看见的生物，并迫使每个能够听到圣言的生物进行一次[[/save activity=dnd5eactivity000]]{魅力豁免}。豁免失败者基于其当前生命值承受以下效应：</p><ul><li><strong>生命值为 50 或更少：</strong>&amp;Reference[condition=deafened apply=false]{耳聋} 1 分钟。</li><li><strong>生命值为 40 或更少：</strong>耳聋并&amp;Reference[condition=blinded apply=false]{目盲} 10 分钟。</li><li><strong>生命值为 30 或更少：</strong>耳聋、目盲并被&amp;Reference[condition=stunned apply=false]{震慑} 1 小时。</li><li><strong>生命值为 20 或更少：</strong>即死。</li></ul><p>对于受术的天族、元素生物、妖精或邪魔，其豁免失败时不需考虑其当前生命值，并直接将其遣返回其原属位面（本来就处于原属位面则无效）。在随后 24 小时内，该生物不能通过任何方式回到当前位面，除非使用祈愿术的效应。</p>",
       "chat": ""
     },
     "source": {
