@@ -27,8 +27,8 @@ function currentVersion() {
 }
 function requireEnvironment() {
   if (!game.user?.isGM) throw new Error("只有 GM 可以检查或迁移世界。");
-  if (Number(game.release?.generation) !== 14 || game.system?.id !== "dnd5e" || !/^6\.0\./.test(game.system.version)) {
-    throw new Error("世界迁移需要 FVTT 14 和 dnd5e 6.0.x。");
+  if (Number(game.release?.generation) !== 14 || game.system?.id !== "dnd5e" || !/^6\.[01]\./.test(game.system.version)) {
+    throw new Error("世界迁移需要 FVTT 14 和 dnd5e 6.0.x 或 6.1.x。");
   }
 }
 function requireWriter() {

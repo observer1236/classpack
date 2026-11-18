@@ -21,7 +21,7 @@ export function inspectCompatibility() {
   }
   const system = Array.from(manifest.relationships.systems).find(entry => entry.id === "dnd5e");
   if (game.system.id !== "dnd5e" || !isCompatibleVersion(game.system.version, system?.compatibility)) {
-    issues.push({ severity: "ERROR", id: "dnd5e", message: `需要 dnd5e ${system?.compatibility?.minimum ?? "6.0.6"}+（6.0.x），当前为 ${game.system.id} ${game.system.version}。` });
+    issues.push({ severity: "ERROR", id: "dnd5e", message: `需要 dnd5e ${system?.compatibility?.minimum ?? "6.1.0"}+（6.1.x），当前为 ${game.system.id} ${game.system.version}。` });
   }
   for (const relation of ["requires", "recommends"]) {
     for (const requirement of manifest.relationships[relation] ?? []) {
@@ -47,7 +47,7 @@ export function checkCompatibility() {
   const report = inspectCompatibility();
   for (const issue of report.issues) console.warn(`[${MODULE_ID}] ${issue.severity}: ${issue.message}`);
   if (report.issues.length && game.user.isGM) {
-    ui.notifications.warn(`ClassPack 6.0.x 兼容检查：${report.issues.map(issue => issue.message).join(" ")}`);
+    ui.notifications.warn(`ClassPack 兼容检查：${report.issues.map(issue => issue.message).join(" ")}`);
   }
   return report;
 }

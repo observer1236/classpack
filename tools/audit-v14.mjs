@@ -324,7 +324,7 @@ export async function auditRepository(root) {
   const summary = { errors: findings.filter(f => f.severity === "ERROR").length, reviews: findings.filter(f => f.severity === "REVIEW").length,
     info: Object.keys(totals).length, totals, ruleCounts };
   const fingerprint = createHash("sha256").update([...inputs].sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0).map(([filename, hash]) => `${filename}\0${hash}\n`).join("")).digest("hex");
-  return { schemaVersion: 1, generatedAt: new Date().toISOString(), target: { foundry: "14.368", dnd5e: "6.0.x", midi: "14.6.x", dae: "14.6.x", aura: "2.x" },
+  return { schemaVersion: 1, generatedAt: new Date().toISOString(), target: { foundry: "14.369", dnd5e: "6.1.x", midi: "14.7.x", dae: "14.6.10+", aura: "2.x" },
     complete: !failed, exitCode: failed ? 2 : summary.errors ? 1 : 0, source: { fileCount: inputs.size, sha256: fingerprint }, summary,
     limitations: ["Static sources only; no macros or migrations executed", "Localized activity identifiers and external UUIDs require REVIEW",
       "JavaScript lexical scan does not evaluate aliases or computed expressions", "Formula context is UNKNOWN until semantic validation"], findings };

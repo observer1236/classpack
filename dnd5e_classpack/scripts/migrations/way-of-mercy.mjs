@@ -168,7 +168,7 @@ export function mercyMigrationPending() {
 let running = false;
 export async function migrateMercyOnReady() {
   if (!game.user?.isGM || Number(game.release?.generation) !== 14 || game.system?.id !== "dnd5e"
-    || !/^6\.0\./.test(game.system.version) || running) return;
+    || !/^6\.[01]\./.test(game.system.version) || running) return;
   const activeGM = () => game.users.activeGM ?? game.users.find(user => user.isGM && user.active);
   if (activeGM()?.id !== game.user.id || !mercyMigrationPending()) return;
   const assertWriter = () => {
